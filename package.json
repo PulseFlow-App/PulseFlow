@@ -1,0 +1,13 @@
+{
+  "name": "pulse-landing-page",
+  "version": "1.0.0",
+  "description": "Pulse Landing Page - The Lifestyle Experiment",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/index.html",
+    "start": "live-server --port=3000 --open=/index.html"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
+
