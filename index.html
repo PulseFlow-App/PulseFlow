@@ -1,12 +1,14 @@
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulse | Your daily wellness pulse</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <style>
         body {
             font-family: 'Quicksand', sans-serif;
@@ -17,17 +19,29 @@
 
         /* Material Animation for Background Columns */
         @keyframes scroll-up {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-50%); }
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-50%);
+            }
         }
+
         @keyframes scroll-down {
-            0% { transform: translateY(-50%); }
-            100% { transform: translateY(0); }
+            0% {
+                transform: translateY(-50%);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
         }
 
         .animate-scroll-up {
             animation: scroll-up 80s linear infinite;
         }
+
         .animate-scroll-down {
             animation: scroll-down 80s linear infinite;
         }
@@ -41,6 +55,7 @@
         .no-scrollbar::-webkit-scrollbar {
             display: none;
         }
+
         .no-scrollbar {
             -ms-overflow-style: none;
             scrollbar-width: none;
@@ -66,7 +81,7 @@
             transform: translateY(-4px);
             background: rgba(40, 40, 40, 0.6);
             border-color: rgba(255, 255, 255, 0.15);
-            box-shadow: 0 10px 40px -10px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
         }
 
         /* Fade mask for image columns */
@@ -80,86 +95,178 @@
             background: rgba(0, 0, 0, 0.7);
             backdrop-filter: blur(4px);
         }
-        .modal-enter { opacity: 0; }
-        .modal-enter-active { opacity: 1; transition: opacity 0.2s ease; }
-        .modal-exit { opacity: 1; }
-        .modal-exit-active { opacity: 0; transition: opacity 0.2s ease; }
+
+        .modal-enter {
+            opacity: 0;
+        }
+
+        .modal-enter-active {
+            opacity: 1;
+            transition: opacity 0.2s ease;
+        }
+
+        .modal-exit {
+            opacity: 1;
+        }
+
+        .modal-exit-active {
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
     </style>
 </head>
+
 <body class="antialiased min-h-screen flex flex-col relative selection:bg-indigo-500/30 selection:text-indigo-200">
 
     <!-- FLOATING BACKGROUND WALLS -->
-    <div class="fixed inset-0 z-0 overflow-hidden bg-[#050505] pointer-events-none select-none flex justify-between items-center">
-        
+    <div
+        class="fixed inset-0 z-0 overflow-hidden bg-[#050505] pointer-events-none select-none flex justify-between items-center">
+
         <!-- Center Vignette (Keeps text readable) -->
-        <div class="absolute inset-0 z-20 bg-[radial-gradient(circle_at_center,rgba(5,5,5,1)_0%,rgba(5,5,5,0.8)_30%,rgba(5,5,5,0)_100%)] w-full h-full"></div>
+        <div
+            class="absolute inset-0 z-20 bg-[radial-gradient(circle_at_center,rgba(5,5,5,1)_0%,rgba(5,5,5,0.8)_30%,rgba(5,5,5,0)_100%)] w-full h-full">
+        </div>
         <div class="absolute inset-0 z-20 bg-gradient-to-b from-[#050505] via-transparent to-[#050505] h-full"></div>
 
         <!-- LEFT SIDE WALL -->
-        <div class="h-[150vh] -translate-y-[10%] w-[45%] flex gap-4 md:gap-6 opacity-60 fade-mask-y transform -skew-y-3 -translate-x-12 md:-translate-x-4 transition-all duration-700">
+        <div
+            class="h-[150vh] -translate-y-[10%] w-[45%] flex gap-4 md:gap-6 opacity-60 fade-mask-y transform -skew-y-3 -translate-x-12 md:-translate-x-4 transition-all duration-700">
             <!-- Col 1 -->
             <div class="flex flex-col gap-5 animate-scroll-up w-1/3">
-                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=400&auto=format&fit=crop" class="w-full h-64 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=400&auto=format&fit=crop" class="w-full h-48 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=400&auto=format&fit=crop" class="w-full h-56 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-64 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-48 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-56 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
                 <!-- Duplicates -->
-                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=400&auto=format&fit=crop" class="w-full h-64 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=400&auto=format&fit=crop" class="w-full h-48 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=400&auto=format&fit=crop" class="w-full h-56 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-64 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-48 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-56 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
             </div>
             <!-- Col 2 -->
             <div class="flex flex-col gap-5 animate-scroll-down w-1/3 pt-20">
-                <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=400&auto=format&fit=crop" class="w-full h-52 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=400&auto=format&fit=crop" class="w-full h-72 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=400&auto=format&fit=crop" class="w-full h-48 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
+                <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-52 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-72 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-48 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
                 <!-- Duplicates -->
-                <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=400&auto=format&fit=crop" class="w-full h-52 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=400&auto=format&fit=crop" class="w-full h-72 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=400&auto=format&fit=crop" class="w-full h-48 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
+                <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-52 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-72 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-48 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
             </div>
-             <!-- Col 3 -->
-             <div class="flex flex-col gap-5 animate-scroll-up w-1/3 pt-10">
-                <img src="https://images.unsplash.com/photo-1556910103-1c02745a30bf?q=80&w=400&auto=format&fit=crop" class="w-full h-60 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=400&auto=format&fit=crop" class="w-full h-64 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1434494878563-614298468647?q=80&w=400&auto=format&fit=crop" class="w-full h-52 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
+            <!-- Col 3 -->
+            <div class="flex flex-col gap-5 animate-scroll-up w-1/3 pt-10">
+                <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-60 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-64 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1540206395-68808572332f?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-52 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
                 <!-- Duplicates -->
-                <img src="https://images.unsplash.com/photo-1556910103-1c02745a30bf?q=80&w=400&auto=format&fit=crop" class="w-full h-60 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=400&auto=format&fit=crop" class="w-full h-64 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1434494878563-614298468647?q=80&w=400&auto=format&fit=crop" class="w-full h-52 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
+                <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-60 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-64 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1540206395-68808572332f?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-52 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
             </div>
         </div>
 
         <!-- RIGHT SIDE WALL -->
-        <div class="h-[150vh] -translate-y-[10%] w-[45%] flex gap-4 md:gap-6 opacity-60 fade-mask-y transform skew-y-3 translate-x-12 md:translate-x-4 transition-all duration-700">
+        <div
+            class="h-[150vh] -translate-y-[10%] w-[45%] flex gap-4 md:gap-6 opacity-60 fade-mask-y transform skew-y-3 translate-x-12 md:translate-x-4 transition-all duration-700">
             <!-- Col 1 -->
             <div class="flex flex-col gap-5 animate-scroll-down w-1/3 pt-12">
-                <img src="https://images.unsplash.com/photo-1517960413843-0aee8e2b3285?q=80&w=400&auto=format&fit=crop" class="w-full h-64 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=400&auto=format&fit=crop" class="w-full h-52 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=400&auto=format&fit=crop" class="w-full h-72 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                 <!-- Duplicates -->
-                <img src="https://images.unsplash.com/photo-1517960413843-0aee8e2b3285?q=80&w=400&auto=format&fit=crop" class="w-full h-64 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=400&auto=format&fit=crop" class="w-full h-52 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=400&auto=format&fit=crop" class="w-full h-72 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
+                <img src="https://images.unsplash.com/photo-1517960413843-0aee8e2b3285?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-64 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-52 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-72 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <!-- Duplicates -->
+                <img src="https://images.unsplash.com/photo-1517960413843-0aee8e2b3285?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-64 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-52 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-72 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
             </div>
             <!-- Col 2 -->
             <div class="flex flex-col gap-5 animate-scroll-up w-1/3">
-                <img src="https://images.unsplash.com/photo-1544367563-12123d8965cd?q=80&w=400&auto=format&fit=crop" class="w-full h-56 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?q=80&w=400&auto=format&fit=crop" class="w-full h-64 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1502904550040-7534597429ae?q=80&w=400&auto=format&fit=crop" class="w-full h-48 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                 <!-- Duplicates -->
-                <img src="https://images.unsplash.com/photo-1544367563-12123d8965cd?q=80&w=400&auto=format&fit=crop" class="w-full h-56 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?q=80&w=400&auto=format&fit=crop" class="w-full h-64 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1502904550040-7534597429ae?q=80&w=400&auto=format&fit=crop" class="w-full h-48 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-56 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-64 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1502904550040-7534597429ae?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-48 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <!-- Duplicates -->
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-56 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-64 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1502904550040-7534597429ae?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-48 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
             </div>
-             <!-- Col 3 -->
-             <div class="flex flex-col gap-5 animate-scroll-down w-1/3 pt-24">
-                <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=400&auto=format&fit=crop" class="w-full h-48 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1571388208497-71bedc66e932?q=80&w=400&auto=format&fit=crop" class="w-full h-72 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1522844990610-d39d9dd9e9fe?q=80&w=400&auto=format&fit=crop" class="w-full h-60 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                 <!-- Duplicates -->
-                <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=400&auto=format&fit=crop" class="w-full h-48 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1571388208497-71bedc66e932?q=80&w=400&auto=format&fit=crop" class="w-full h-72 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
-                <img src="https://images.unsplash.com/photo-1522844990610-d39d9dd9e9fe?q=80&w=400&auto=format&fit=crop" class="w-full h-60 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500" alt="">
+            <!-- Col 3 -->
+            <div class="flex flex-col gap-5 animate-scroll-down w-1/3 pt-24">
+                <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-48 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1571388208497-71bedc66e932?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-72 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-60 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <!-- Duplicates -->
+                <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-48 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1571388208497-71bedc66e932?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-72 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?q=80&w=400&auto=format&fit=crop"
+                    class="w-full h-60 object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                    alt="">
             </div>
         </div>
     </div>
@@ -169,181 +276,317 @@
 
         <!-- NAVIGATION -->
         <nav class="flex w-full max-w-7xl mx-auto px-6 py-6 items-center justify-between">
-            <a href="index.html" class="glass-panel px-4 py-2 rounded-full flex items-center gap-3 hover:opacity-90 transition-opacity">
+            <a href="index.html"
+                class="glass-panel px-4 py-2 rounded-full flex items-center gap-3 hover:opacity-90 transition-opacity">
                 <div class="relative w-3 h-3">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-3 w-3 bg-indigo-500"></span>
                 </div>
                 <span class="text-sm font-bold tracking-tight uppercase">Pulse</span>
             </a>
-            
+
         </nav>
 
         <!-- HERO SECTION -->
         <main class="flex-grow flex flex-col items-center justify-center text-center px-4 pt-10 pb-20 relative">
-            
+
             <!-- Headline -->
             <h1 class="text-6xl md:text-8xl tracking-tight text-white mb-6 leading-[1.1] font-medium drop-shadow-2xl">
                 Your daily<br class="md:hidden"> wellness pulse.
             </h1>
 
             <!-- Subheadline -->
-            <p class="text-lg md:text-xl text-neutral-300 max-w-2xl mx-auto leading-relaxed mb-10 font-medium drop-shadow-lg">
+            <p
+                class="text-lg md:text-xl text-neutral-300 max-w-2xl mx-auto leading-relaxed mb-10 font-medium drop-shadow-lg">
                 One score. Clear insights. Less noise.
             </p>
 
             <!-- CTAs -->
             <div class="flex flex-col sm:flex-row items-center gap-4 w-full justify-center mb-16">
-                <a href="https://app.pulseflow.site" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 bg-white text-black text-sm font-bold rounded-full hover:bg-neutral-200 transition-all flex items-center justify-center gap-2 group shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:scale-105 active:scale-95">
+                <a href="https://app.pulseflow.site" target="_blank" rel="noopener noreferrer"
+                    class="w-full sm:w-auto px-8 py-4 bg-white text-black text-sm font-bold rounded-full hover:bg-neutral-200 transition-all flex items-center justify-center gap-2 group shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:scale-105 active:scale-95">
                     Get started
-                    <iconify-icon icon="solar:arrow-right-linear" class="text-lg group-hover:translate-x-1 transition-transform"></iconify-icon>
+                    <iconify-icon icon="solar:arrow-right-linear"
+                        class="text-lg group-hover:translate-x-1 transition-transform"></iconify-icon>
                 </a>
-                <button id="join-btn" type="button" class="w-full sm:w-auto px-8 py-4 glass-panel text-white text-sm font-bold rounded-full hover:bg-white/10 transition-all hover:scale-105 active:scale-95 text-center">
+                <button id="join-btn" type="button"
+                    class="w-full sm:w-auto px-8 py-4 glass-panel text-white text-sm font-bold rounded-full hover:bg-white/10 transition-all hover:scale-105 active:scale-95 text-center">
                     Notify me
                 </button>
-                <a href="thesis.html" class="w-full sm:w-auto px-8 py-4 glass-panel text-white text-sm font-bold rounded-full hover:bg-white/10 transition-all hover:scale-105 active:scale-95 text-center">
+                <a href="thesis.html"
+                    class="w-full sm:w-auto px-8 py-4 glass-panel text-white text-sm font-bold rounded-full hover:bg-white/10 transition-all hover:scale-105 active:scale-95 text-center">
                     Thesis
                 </a>
             </div>
 
             <!-- Social Proof -->
-            <a href="https://pump.fun/coin/5ymQv4PBZDgECa4un7tYwXSVSWgFbfz79qg83dpppump" target="_blank" rel="noopener noreferrer" class="glass-panel px-8 py-4 rounded-3xl flex items-center justify-center hover:bg-white/10 transition-all hover:scale-105 active:scale-95 cursor-pointer group">
+            <a href="https://pump.fun/coin/5ymQv4PBZDgECa4un7tYwXSVSWgFbfz79qg83dpppump" target="_blank"
+                rel="noopener noreferrer"
+                class="glass-panel px-8 py-4 rounded-3xl flex items-center justify-center hover:bg-white/10 transition-all hover:scale-105 active:scale-95 cursor-pointer group">
                 <div class="flex flex-col items-center gap-1">
-                    <span id="pulse-volume" class="text-2xl font-bold text-white group-hover:text-indigo-300 transition-colors">Loading...</span>
+                    <span id="pulse-volume"
+                        class="text-2xl font-bold text-white group-hover:text-indigo-300 transition-colors">Loading...</span>
                     <span class="text-[10px] uppercase tracking-widest text-neutral-400">$PULSE</span>
                 </div>
             </a>
         </main>
     </div>
 
-    <!-- FEATURE CARDS (main value) -->
-    <section class="relative z-30 px-6 py-24 bg-[#050505] rounded-t-[3rem] shadow-[0_-20px_60px_rgba(0,0,0,0.8)] border-t border-white/5">
+    <!-- VISUAL SHOWCASE -->
+    <section
+        class="relative z-30 px-6 py-24 bg-[#050505] rounded-t-[3rem] shadow-[0_-20px_60px_rgba(0,0,0,0.8)] border-t border-white/5">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-xs text-indigo-400 font-bold uppercase tracking-widest mb-12 flex items-center gap-2">
-                <span class="w-8 h-px bg-indigo-500/50"></span>
-                What Pulse does
-            </h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-                <!-- Daily Pulse score -->
-                <div class="p-8 rounded-[32px] relative overflow-hidden group cursor-pointer bg-gradient-to-b from-indigo-900/40 to-indigo-950/20 border border-indigo-500/30">
-                    <div class="absolute inset-0 bg-indigo-500/5 group-hover:bg-indigo-500/10 transition-colors"></div>
-                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/20 flex items-center justify-center mb-6 text-indigo-300 group-hover:scale-110 transition-transform shadow-[0_0_20px_rgba(99,102,241,0.2)]">
-                        <iconify-icon icon="solar:bolt-linear" class="text-2xl"></iconify-icon>
+
+            <!-- Main Visual: Animated Pulse Score -->
+            <div class="flex flex-col lg:flex-row items-center gap-12 mb-20">
+                <!-- Left: Score Visualization -->
+                <div class="flex-1 flex items-center justify-center">
+                    <div class="relative w-80 h-80">
+                        <!-- Outer glow rings -->
+                        <div
+                            class="absolute inset-0 rounded-full bg-gradient-to-br from-indigo-500/20 to-purple-500/20 blur-3xl animate-pulse">
+                        </div>
+
+                        <!-- Main circle -->
+                        <div
+                            class="relative w-full h-full rounded-full border-8 border-neutral-800/50 flex items-center justify-center backdrop-blur-sm">
+                            <!-- Animated gradient border -->
+                            <div class="absolute inset-0 rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 opacity-50"
+                                style="mask: radial-gradient(circle, transparent 60%, black 61%); -webkit-mask: radial-gradient(circle, transparent 60%, black 61%);">
+                            </div>
+
+                            <!-- Score display -->
+                            <div class="relative z-10 text-center">
+                                <div id="pulse-score-display"
+                                    class="text-8xl font-bold bg-gradient-to-br from-indigo-400 to-purple-400 bg-clip-text text-transparent mb-2">
+                                    87</div>
+                                <div class="text-sm text-neutral-400 uppercase tracking-widest">Your Pulse</div>
+                            </div>
+                        </div>
+
+                        <!-- Floating indicators -->
+                        <div
+                            class="absolute -top-4 left-1/2 -translate-x-1/2 glass-panel px-4 py-2 rounded-full flex items-center gap-2">
+                            <iconify-icon icon="solar:moon-stars-linear" class="text-indigo-400"></iconify-icon>
+                            <span class="text-xs text-white font-medium">8.2h</span>
+                        </div>
+                        <div
+                            class="absolute top-1/2 -right-6 -translate-y-1/2 glass-panel px-4 py-2 rounded-full flex items-center gap-2">
+                            <iconify-icon icon="solar:heart-pulse-linear" class="text-pink-400"></iconify-icon>
+                            <span class="text-xs text-white font-medium">Good</span>
+                        </div>
+                        <div
+                            class="absolute -bottom-4 left-1/2 -translate-x-1/2 glass-panel px-4 py-2 rounded-full flex items-center gap-2">
+                            <iconify-icon icon="solar:bolt-linear" class="text-yellow-400"></iconify-icon>
+                            <span class="text-xs text-white font-medium">High</span>
+                        </div>
                     </div>
-                    <h3 class="text-xl text-white mb-3 font-semibold">Daily Pulse score</h3>
-                    <p class="text-sm text-indigo-200/70 leading-relaxed">
-                        One number (0–100) for how your body is doing today; updates as you log, based on your baseline.
-                    </p>
                 </div>
 
-                <!-- Body signals & routine -->
-                <div class="glass-card p-8 rounded-[32px] group cursor-pointer">
-                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-neutral-800 to-black border border-white/10 flex items-center justify-center mb-6 text-white group-hover:scale-110 transition-transform shadow-lg">
-                        <iconify-icon icon="solar:heart-pulse-linear" class="text-2xl"></iconify-icon>
+                <!-- Right: Quick Stats -->
+                <div class="flex-1 grid grid-cols-2 gap-4">
+                    <div class="glass-card p-6 rounded-3xl group hover:scale-105 transition-transform cursor-pointer">
+                        <iconify-icon icon="solar:bolt-linear" class="text-4xl text-indigo-400 mb-3"></iconify-icon>
+                        <div class="text-3xl font-bold text-white mb-1">0–100</div>
+                        <div class="text-xs text-neutral-400">Daily score</div>
                     </div>
-                    <h3 class="text-xl text-white mb-3 font-semibold">Body signals & routine</h3>
-                    <p class="text-sm text-neutral-400 leading-relaxed">
-                        Log sleep, energy, mood; get short, actionable insights instead of raw charts.
-                    </p>
+                    <div class="glass-card p-6 rounded-3xl group hover:scale-105 transition-transform cursor-pointer">
+                        <iconify-icon icon="solar:heart-pulse-linear"
+                            class="text-4xl text-pink-400 mb-3"></iconify-icon>
+                        <div class="text-3xl font-bold text-white mb-1">3</div>
+                        <div class="text-xs text-neutral-400">Body signals</div>
+                    </div>
+                    <div class="glass-card p-6 rounded-3xl group hover:scale-105 transition-transform cursor-pointer">
+                        <iconify-icon icon="solar:chat-round-dots-linear"
+                            class="text-4xl text-purple-400 mb-3"></iconify-icon>
+                        <div class="text-3xl font-bold text-white mb-1">AI</div>
+                        <div class="text-xs text-neutral-400">Insights</div>
+                    </div>
+                    <div class="glass-card p-6 rounded-3xl group hover:scale-105 transition-transform cursor-pointer">
+                        <iconify-icon icon="solar:shield-check-linear"
+                            class="text-4xl text-green-400 mb-3"></iconify-icon>
+                        <div class="text-3xl font-bold text-white mb-1">100%</div>
+                        <div class="text-xs text-neutral-400">Private</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- App Blocks -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <!-- Body Signals -->
+                <div
+                    class="glass-card p-6 rounded-2xl flex flex-col items-center text-center group hover:scale-105 transition-all cursor-pointer">
+                    <iconify-icon icon="solar:heart-pulse-linear"
+                        class="text-5xl text-pink-400 mb-3 group-hover:scale-110 transition-transform"></iconify-icon>
+                    <span class="text-sm text-white font-medium">Body Signals</span>
                 </div>
 
-                <!-- AI that explains -->
-                <div class="glass-card p-8 rounded-[32px] group cursor-pointer">
-                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-neutral-800 to-black border border-white/10 flex items-center justify-center mb-6 text-white group-hover:scale-110 transition-transform shadow-lg">
-                        <iconify-icon icon="solar:chat-round-dots-linear" class="text-2xl"></iconify-icon>
-                    </div>
-                    <h3 class="text-xl text-white mb-3 font-semibold">AI that explains</h3>
-                    <p class="text-sm text-neutral-400 leading-relaxed">
-                        "What this means today" in plain language; suggestions you can act on.
-                    </p>
+                <!-- Work Routine -->
+                <div
+                    class="glass-card p-6 rounded-2xl flex flex-col items-center text-center group hover:scale-105 transition-all cursor-pointer">
+                    <iconify-icon icon="solar:laptop-linear"
+                        class="text-5xl text-indigo-400 mb-3 group-hover:scale-110 transition-transform"></iconify-icon>
+                    <span class="text-sm text-white font-medium">Work Routine</span>
                 </div>
 
-                <!-- Premium -->
-                <div class="glass-card p-8 rounded-[32px] group cursor-pointer">
-                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-neutral-800 to-black border border-white/10 flex items-center justify-center mb-6 text-white group-hover:scale-110 transition-transform shadow-lg">
-                        <iconify-icon icon="solar:star-linear" class="text-2xl"></iconify-icon>
-                    </div>
-                    <h3 class="text-xl text-white mb-3 font-semibold">Premium</h3>
-                    <p class="text-sm text-neutral-400 leading-relaxed">
-                        Unlimited requests, long-term trends, personal baselines; subscribe in the app.
-                    </p>
+                <!-- Nutrition -->
+                <div
+                    class="glass-card p-6 rounded-2xl flex flex-col items-center text-center group hover:scale-105 transition-all cursor-pointer">
+                    <iconify-icon icon="solar:leaf-linear"
+                        class="text-5xl text-green-400 mb-3 group-hover:scale-110 transition-transform"></iconify-icon>
+                    <span class="text-sm text-white font-medium">Nutrition</span>
                 </div>
 
-                <!-- Your data -->
-                <div class="glass-card p-8 rounded-[32px] group cursor-pointer">
-                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-neutral-800 to-black border border-white/10 flex items-center justify-center mb-6 text-white group-hover:scale-110 transition-transform shadow-lg">
-                        <iconify-icon icon="solar:shield-check-linear" class="text-2xl"></iconify-icon>
-                    </div>
-                    <h3 class="text-xl text-white mb-3 font-semibold">Your data</h3>
-                    <p class="text-sm text-neutral-400 leading-relaxed">
-                        Encrypted, exportable, never sold; you choose what to connect.
-                    </p>
+                <!-- Movement -->
+                <div
+                    class="glass-card p-6 rounded-2xl flex flex-col items-center text-center group hover:scale-105 transition-all cursor-pointer">
+                    <iconify-icon icon="solar:running-linear"
+                        class="text-5xl text-orange-400 mb-3 group-hover:scale-110 transition-transform"></iconify-icon>
+                    <span class="text-sm text-white font-medium">Movement</span>
+                </div>
+
+                <!-- Recovery -->
+                <div
+                    class="glass-card p-6 rounded-2xl flex flex-col items-center text-center group hover:scale-105 transition-all cursor-pointer">
+                    <iconify-icon icon="solar:moon-stars-linear"
+                        class="text-5xl text-purple-400 mb-3 group-hover:scale-110 transition-transform"></iconify-icon>
+                    <span class="text-sm text-white font-medium">Recovery</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SHORT BULLETS (compact list) -->
-    <section class="relative z-30 px-6 py-16 bg-[#080808] border-t border-white/5">
-        <div class="max-w-3xl mx-auto">
-            <ul class="space-y-4 text-neutral-300 text-sm md:text-base">
-                <li class="flex items-start gap-3">
-                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-500/70 mt-2 shrink-0"></span>
-                    One daily score (0–100) — your body, your baseline.
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-500/70 mt-2 shrink-0"></span>
-                    Body signals and routine check-ins — sleep, energy, mood.
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-500/70 mt-2 shrink-0"></span>
-                    Clear, actionable insights — not more dashboards.
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-500/70 mt-2 shrink-0"></span>
-                    Premium: unlimited requests, trends, baselines (subscribe in-app).
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-500/70 mt-2 shrink-0"></span>
-                    Your data stays yours — encrypted, exportable, never sold.
-                </li>
-            </ul>
+
+    <!-- VISUAL FLOW: How it Works -->
+    <section class="relative z-30 px-6 py-20 bg-[#080808] border-t border-white/5">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                <!-- Step 1: Track -->
+                <div
+                    class="flex-1 glass-card p-8 rounded-3xl text-center group hover:scale-105 transition-all cursor-pointer">
+                    <div
+                        class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center">
+                        <iconify-icon icon="solar:smartphone-linear" class="text-3xl text-white"></iconify-icon>
+                    </div>
+                    <div class="text-4xl font-bold text-white mb-2">Track</div>
+                    <div class="text-sm text-neutral-400">Sleep • Energy • Mood</div>
+                </div>
+
+                <!-- Arrow -->
+                <iconify-icon icon="solar:arrow-right-linear"
+                    class="text-3xl text-indigo-500/50 hidden md:block"></iconify-icon>
+                <iconify-icon icon="solar:arrow-down-linear"
+                    class="text-3xl text-indigo-500/50 md:hidden"></iconify-icon>
+
+                <!-- Step 2: Score -->
+                <div
+                    class="flex-1 glass-card p-8 rounded-3xl text-center group hover:scale-105 transition-all cursor-pointer">
+                    <div
+                        class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                        <iconify-icon icon="solar:bolt-linear" class="text-3xl text-white"></iconify-icon>
+                    </div>
+                    <div class="text-4xl font-bold text-white mb-2">Score</div>
+                    <div class="text-sm text-neutral-400">Get your 0–100 Pulse</div>
+                </div>
+
+                <!-- Arrow -->
+                <iconify-icon icon="solar:arrow-right-linear"
+                    class="text-3xl text-indigo-500/50 hidden md:block"></iconify-icon>
+                <iconify-icon icon="solar:arrow-down-linear"
+                    class="text-3xl text-indigo-500/50 md:hidden"></iconify-icon>
+
+                <!-- Step 3: Improve -->
+                <div
+                    class="flex-1 glass-card p-8 rounded-3xl text-center group hover:scale-105 transition-all cursor-pointer">
+                    <div
+                        class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-pink-500 to-orange-500 flex items-center justify-center">
+                        <iconify-icon icon="solar:chart-2-linear" class="text-3xl text-white"></iconify-icon>
+                    </div>
+                    <div class="text-4xl font-bold text-white mb-2">Improve</div>
+                    <div class="text-sm text-neutral-400">AI insights & trends</div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- ABOUT PULSE (off-app: app vs token) -->
-    <section class="relative z-30 px-6 py-24 bg-[#050505] border-t border-white/5">
-        <div class="max-w-2xl mx-auto text-center">
-            <h2 class="text-xs text-indigo-400 font-bold uppercase tracking-widest mb-6 flex items-center justify-center gap-2">
-                <span class="w-8 h-px bg-indigo-500/50"></span>
-                About Pulse
-            </h2>
-            <p class="text-lg text-neutral-300 leading-relaxed mb-8">
-                Pulse is an app you can use every day. $PULSE is how the system evolves.
-            </p>
-            <ul class="space-y-3 text-sm text-neutral-400 text-left max-w-md mx-auto mb-10">
-                <li class="flex items-start gap-3">
-                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-500/70 mt-2 shrink-0"></span>
-                    Governance and product direction
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-500/70 mt-2 shrink-0"></span>
-                    Pulse Lab and experiments
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-500/70 mt-2 shrink-0"></span>
-                    Rewards for participation
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-500/70 mt-2 shrink-0"></span>
-                    You don&rsquo;t need crypto to use Pulse.
-                </li>
-            </ul>
-            <a href="https://app.pulseflow.site" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 glass-panel text-white text-sm font-semibold rounded-full hover:bg-white/10 transition-all">
-                Get started in the app
-                <iconify-icon icon="solar:arrow-right-linear" class="text-lg"></iconify-icon>
-            </a>
+    <!-- ECOSYSTEM: App + Token -->
+    <section class="relative z-30 px-6 py-20 bg-[#050505] border-t border-white/5">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- App Card -->
+                <div
+                    class="glass-card p-10 rounded-[40px] border-2 border-indigo-500/30 group hover:border-indigo-500/50 transition-all">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center">
+                            <iconify-icon icon="solar:smartphone-linear" class="text-3xl text-white"></iconify-icon>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-white">Pulse App</div>
+                            <div class="text-sm text-neutral-400">Daily wellness</div>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <iconify-icon icon="solar:check-circle-linear"
+                                class="text-xl text-green-400"></iconify-icon>
+                            <span class="text-sm text-neutral-300">Track your wellness</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <iconify-icon icon="solar:check-circle-linear"
+                                class="text-xl text-green-400"></iconify-icon>
+                            <span class="text-sm text-neutral-300">Get AI insights</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <iconify-icon icon="solar:check-circle-linear"
+                                class="text-xl text-green-400"></iconify-icon>
+                            <span class="text-sm text-neutral-300">No crypto needed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Token Card -->
+                <div
+                    class="glass-card p-10 rounded-[40px] border-2 border-purple-500/30 group hover:border-purple-500/50 transition-all">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                            <iconify-icon icon="solar:dollar-linear" class="text-3xl text-white"></iconify-icon>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-white">$PULSE</div>
+                            <div class="text-sm text-neutral-400">Ecosystem token</div>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <iconify-icon icon="solar:check-circle-linear"
+                                class="text-xl text-purple-400"></iconify-icon>
+                            <span class="text-sm text-neutral-300">Governance</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <iconify-icon icon="solar:check-circle-linear"
+                                class="text-xl text-purple-400"></iconify-icon>
+                            <span class="text-sm text-neutral-300">Pulse Lab access</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <iconify-icon icon="solar:check-circle-linear"
+                                class="text-xl text-purple-400"></iconify-icon>
+                            <span class="text-sm text-neutral-300">Rewards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center mt-12">
+                <a href="https://app.pulseflow.site" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-sm font-bold rounded-full hover:scale-105 transition-all shadow-[0_0_30px_rgba(99,102,241,0.3)]">
+                    Start tracking
+                    <iconify-icon icon="solar:arrow-right-linear" class="text-lg"></iconify-icon>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -351,14 +594,19 @@
     <div id="join-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4" aria-hidden="true">
         <div id="join-modal-backdrop" class="absolute inset-0 modal-backdrop" tabindex="-1"></div>
         <div class="relative glass-panel rounded-2xl w-full max-w-md p-8 border border-white/10 shadow-2xl">
-            <button id="join-modal-close" type="button" class="absolute top-4 right-4 p-1 rounded-full text-neutral-400 hover:text-white hover:bg-white/10 transition-colors" aria-label="Close">
+            <button id="join-modal-close" type="button"
+                class="absolute top-4 right-4 p-1 rounded-full text-neutral-400 hover:text-white hover:bg-white/10 transition-colors"
+                aria-label="Close">
                 <iconify-icon icon="solar:close-circle-linear" class="text-2xl"></iconify-icon>
             </button>
             <h3 class="text-xl font-semibold text-white mb-2">Join the experiment</h3>
-            <p class="text-sm text-neutral-400 mb-6">Leave your email. We&rsquo;ll notify you when the experiment opens.</p>
+            <p class="text-sm text-neutral-400 mb-6">Leave your email. We&rsquo;ll notify you when the experiment opens.
+            </p>
             <form id="join-form" class="space-y-4">
-                <input type="email" name="email" id="join-email" required placeholder="you@example.com" class="w-full px-4 py-3 rounded-xl bg-neutral-900/80 border border-white/10 text-white placeholder-neutral-500 focus:outline-none focus:border-indigo-500/50 focus:ring-1 focus:ring-indigo-500/30 transition-colors" />
-                <button type="submit" id="join-submit" class="w-full py-3.5 bg-white text-black text-sm font-bold rounded-xl hover:bg-neutral-200 transition-all flex items-center justify-center gap-2">
+                <input type="email" name="email" id="join-email" required placeholder="you@example.com"
+                    class="w-full px-4 py-3 rounded-xl bg-neutral-900/80 border border-white/10 text-white placeholder-neutral-500 focus:outline-none focus:border-indigo-500/50 focus:ring-1 focus:ring-indigo-500/30 transition-colors" />
+                <button type="submit" id="join-submit"
+                    class="w-full py-3.5 bg-white text-black text-sm font-bold rounded-xl hover:bg-neutral-200 transition-all flex items-center justify-center gap-2">
                     <span id="join-submit-text">Notify me</span>
                     <iconify-icon id="join-submit-icon" icon="solar:arrow-right-linear" class="text-lg"></iconify-icon>
                 </button>
@@ -383,9 +631,12 @@
             </div>
 
             <div class="flex items-center gap-8">
-                <a href="docs.html" class="text-xs font-medium text-neutral-500 hover:text-white transition-colors">Docs</a>
-                <a href="https://x.com/pulse_build" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-neutral-500 hover:text-white transition-colors">X</a>
-                <a href="https://t.me/pulse_build" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-neutral-500 hover:text-white transition-colors">Telegram</a>
+                <a href="docs.html"
+                    class="text-xs font-medium text-neutral-500 hover:text-white transition-colors">Docs</a>
+                <a href="https://x.com/pulse_build" target="_blank" rel="noopener noreferrer"
+                    class="text-xs font-medium text-neutral-500 hover:text-white transition-colors">X</a>
+                <a href="https://t.me/pulse_build" target="_blank" rel="noopener noreferrer"
+                    class="text-xs font-medium text-neutral-500 hover:text-white transition-colors">Telegram</a>
             </div>
 
             <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-neutral-900 border border-neutral-800">
@@ -396,6 +647,30 @@
     </footer>
 
     <script>
+        // --- Animated Pulse Score Counter ---
+        (function () {
+            const scoreDisplay = document.getElementById('pulse-score-display');
+            if (scoreDisplay) {
+                let currentScore = 0;
+                const targetScore = 87;
+                const duration = 2000; // 2 seconds
+                const increment = targetScore / (duration / 16); // 60fps
+
+                const animateScore = () => {
+                    currentScore += increment;
+                    if (currentScore < targetScore) {
+                        scoreDisplay.textContent = Math.floor(currentScore);
+                        requestAnimationFrame(animateScore);
+                    } else {
+                        scoreDisplay.textContent = targetScore;
+                    }
+                };
+
+                // Start animation after a short delay
+                setTimeout(animateScore, 500);
+            }
+        })();
+
         // --- Join modal (email collection) ---
         const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mgokjapv';
 
@@ -481,7 +756,7 @@
         // --- Token volume ---
         // Token address
         const TOKEN_ADDRESS = '5ymQv4PBZDgECa4un7tYwXSVSWgFbfz79qg83dpppump';
-        
+
         // Format volume number
         function formatVolume(volume) {
             if (!volume || isNaN(volume)) return '—';
@@ -492,28 +767,28 @@
             }
             return volume.toFixed(0);
         }
-        
+
         // Fetch token volume from pump.fun
         async function fetchTokenVolume() {
             const volumeElement = document.getElementById('pulse-volume');
-            
+
             try {
                 // Method 1: Try pump.fun frontend API
                 const apiUrl = `https://frontend-api.pump.fun/coins/${TOKEN_ADDRESS}`;
                 const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(apiUrl)}`;
-                
+
                 const response = await fetch(proxyUrl);
                 const data = await response.json();
-                
+
                 if (data.contents) {
                     try {
                         const tokenData = JSON.parse(data.contents);
                         // Try different possible volume fields
-                        const volume = tokenData.volume_usd || 
-                                     tokenData.volume || 
-                                     tokenData.usd_market_cap ||
-                                     tokenData.market_cap;
-                        
+                        const volume = tokenData.volume_usd ||
+                            tokenData.volume ||
+                            tokenData.usd_market_cap ||
+                            tokenData.market_cap;
+
                         if (volume) {
                             volumeElement.textContent = formatVolume(volume);
                             return;
@@ -525,19 +800,19 @@
             } catch (error) {
                 console.log('API method failed:', error);
             }
-            
+
             // Method 2: Try alternative API endpoint
             try {
                 const altApiUrl = `https://frontend-api.pump.fun/coins/${TOKEN_ADDRESS}/stats`;
                 const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(altApiUrl)}`;
-                
+
                 const response = await fetch(proxyUrl);
                 const data = await response.json();
-                
+
                 if (data.contents) {
                     const stats = JSON.parse(data.contents);
                     const volume = stats.volume_24h || stats.volume || stats.total_volume;
-                    
+
                     if (volume) {
                         volumeElement.textContent = formatVolume(volume);
                         return;
@@ -546,22 +821,22 @@
             } catch (error) {
                 console.log('Alternative API failed:', error);
             }
-            
+
             // Method 3: Try fetching the page HTML and parsing
             try {
                 const pageUrl = `https://pump.fun/coin/${TOKEN_ADDRESS}`;
                 const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(pageUrl)}`;
-                
+
                 const response = await fetch(proxyUrl);
                 const data = await response.json();
-                
+
                 if (data.contents) {
                     const html = data.contents;
                     // Look for JSON data in script tags or data attributes
                     const jsonMatch = html.match(/window\.__INITIAL_STATE__\s*=\s*({.+?});/s) ||
-                                    html.match(/"volume[^"]*":\s*([\d.]+)/i) ||
-                                    html.match(/volume[:\s]+[\$]?([\d,]+(?:\.\d+)?[kKmM]?)/i);
-                    
+                        html.match(/"volume[^"]*":\s*([\d.]+)/i) ||
+                        html.match(/volume[:\s]+[\$]?([\d,]+(?:\.\d+)?[kKmM]?)/i);
+
                     if (jsonMatch) {
                         let volume = jsonMatch[1] || jsonMatch[2];
                         if (typeof volume === 'string') {
@@ -582,18 +857,18 @@
             } catch (error) {
                 console.log('Page parsing failed:', error);
             }
-            
+
             // If all methods fail, show loading indicator
             volumeElement.textContent = '—';
         }
-        
+
         // Fetch volume on page load
         fetchTokenVolume();
-        
+
         // Update every 30 seconds
         setInterval(fetchTokenVolume, 30000);
     </script>
 
 </body>
-</html>
 
+</html>
