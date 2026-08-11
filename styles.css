@@ -28,8 +28,9 @@ body {
   color: var(--ink);
   background: var(--sand);
   font-family: var(--font-body);
+  font-size: 1.125rem;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.55;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -85,7 +86,7 @@ a {
   color: var(--white);
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.1rem;
   letter-spacing: -0.02em;
   text-shadow: 0 1px 12px rgba(43, 33, 28, 0.35);
 }
@@ -99,14 +100,14 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.5rem;
-  padding: 0 1rem;
+  min-height: 2.65rem;
+  padding: 0 1.1rem;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.92);
   color: var(--ink);
   text-decoration: none;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1rem;
   backdrop-filter: blur(8px);
 }
 
@@ -162,7 +163,7 @@ a {
 .hero-brand {
   margin: 0 0 0.85rem;
   font-family: var(--font-display);
-  font-size: clamp(2.4rem, 8vw, 4.25rem);
+  font-size: clamp(2.65rem, 8.5vw, 4.6rem);
   font-weight: 800;
   letter-spacing: -0.045em;
   line-height: 0.95;
@@ -172,7 +173,7 @@ a {
   margin: 0;
   max-width: 18ch;
   font-family: var(--font-display);
-  font-size: clamp(1.35rem, 3.8vw, 2rem);
+  font-size: clamp(1.5rem, 4.2vw, 2.25rem);
   font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1.2;
@@ -180,7 +181,7 @@ a {
 
 .hero-tagline {
   margin: 1rem 0 0;
-  font-size: 1.05rem;
+  font-size: 1.18rem;
   color: rgba(255, 255, 255, 0.86);
 }
 
@@ -195,12 +196,12 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 3rem;
-  padding: 0 1.25rem;
+  min-height: 3.15rem;
+  padding: 0 1.35rem;
   border-radius: 999px;
   text-decoration: none;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   transition:
     transform 0.25s var(--ease),
     background 0.25s var(--ease),
@@ -232,17 +233,18 @@ a {
 
 .eyebrow {
   margin: 0 0 0.75rem;
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--primary-dark);
 }
 
-.band h2 {
+.band h2,
+.features-intro h2 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(1.75rem, 4vw, 2.4rem);
+  font-size: clamp(1.95rem, 4.4vw, 2.7rem);
   font-weight: 750;
   letter-spacing: -0.035em;
   line-height: 1.15;
@@ -251,8 +253,8 @@ a {
 .lede {
   margin: 1.1rem 0 0;
   color: var(--muted);
-  font-size: 1.05rem;
-  max-width: 38ch;
+  font-size: 1.2rem;
+  max-width: 40ch;
 }
 
 .problem {
@@ -277,34 +279,111 @@ a {
 .role-name {
   font-family: var(--font-display);
   font-weight: 750;
-  font-size: 1.15rem;
+  font-size: 1.28rem;
   color: var(--primary-dark);
 }
 
 .role-copy {
   color: var(--muted);
+  font-size: 1.1rem;
 }
 
-.feature-list {
-  list-style: none;
-  margin: 2rem 0 0;
-  padding: 0;
-  display: grid;
-  gap: 1.15rem;
+.features-section {
+  padding: 5rem 0 4rem;
+  background:
+    radial-gradient(80% 50% at 10% 0%, rgba(242, 106, 54, 0.08), transparent),
+    var(--sand);
 }
 
-.feature-list li {
-  padding-left: 1rem;
-  border-left: 3px solid var(--secondary);
+.features-intro {
+  width: min(100% - 2.5rem, 42rem);
+  margin: 0 auto 1.5rem;
+}
+
+.features-hint {
+  margin: 0.85rem 0 0;
   color: var(--muted);
+  font-size: 1rem;
+  font-weight: 700;
 }
 
-.feature-list strong {
+.feature-rail {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(16.5rem, 78vw);
+  gap: 1rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: max(1.25rem, calc((100% - 42rem) / 2));
+  padding: 0.35rem max(1.25rem, calc((100% - 42rem) / 2)) 1.25rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(242, 106, 54, 0.45) transparent;
+}
+
+.feature-rail:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
+}
+
+.feature-card {
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  min-height: 22rem;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: 0 18px 40px rgba(43, 33, 28, 0.08);
+  transform-origin: center;
+  transition: transform 0.35s var(--ease);
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+}
+
+.feature-visual {
+  flex: 0 0 auto;
+}
+
+.feature-visual svg {
+  width: 100%;
+  height: auto;
   display: block;
-  margin-bottom: 0.2rem;
-  color: var(--ink);
+}
+
+.feature-copy {
+  display: grid;
+  gap: 0.45rem;
+  padding: 1.15rem 1.2rem 1.35rem;
+}
+
+.feature-copy h3 {
+  margin: 0;
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 1.35rem;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+
+.feature-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.45;
+}
+
+.tone-coral .feature-copy h3,
+.tone-warm .feature-copy h3,
+.tone-deep .feature-copy h3 {
+  color: var(--primary-dark);
+}
+
+.tone-ink .feature-copy h3,
+.tone-night .feature-copy h3 {
+  color: var(--ink);
 }
 
 .close {
@@ -338,7 +417,7 @@ a {
   padding: 1.5rem 0 max(2rem, env(safe-area-inset-bottom));
   border-top: 1px solid rgba(43, 33, 28, 0.08);
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 1.02rem;
 }
 
 .footer-brand {
@@ -360,7 +439,7 @@ a {
 
 .footer-tag {
   margin: 0.1rem 0 0;
-  font-size: 0.82rem;
+  font-size: 0.95rem;
 }
 
 .site-footer a {
@@ -436,9 +515,24 @@ a {
     padding-bottom: 4.5rem;
   }
 
-  .band {
+  .band,
+  .features-intro {
     width: min(100% - 4rem, 44rem);
+  }
+
+  .band {
     padding: 6.5rem 0;
+  }
+
+  .features-section {
+    padding: 6.5rem 0 5rem;
+  }
+
+  .feature-rail {
+    grid-auto-columns: minmax(18rem, 22rem);
+    gap: 1.15rem;
+    scroll-padding-inline: max(2rem, calc((100% - 44rem) / 2));
+    padding-inline: max(2rem, calc((100% - 44rem) / 2));
   }
 
   .roles {
@@ -454,7 +548,8 @@ a {
   .animate-rise,
   .reveal,
   .hero-media img,
-  .close-mark {
+  .close-mark,
+  .feature-card {
     animation: none !important;
     transition: none !important;
     opacity: 1 !important;

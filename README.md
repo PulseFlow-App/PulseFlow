@@ -1,4 +1,4 @@
-# Pulse Flow Ops — marketing site
+# Pulse Flow Ops - marketing site
 
 Landing page for **pulseflow.site**.
 
