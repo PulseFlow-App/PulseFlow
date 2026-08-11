@@ -35,7 +35,6 @@ body {
   font-weight: 500;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
 }
 
 img {
@@ -67,8 +66,8 @@ a {
   min-height: 100dvh;
   padding: 0 0 4rem;
   position: relative;
-  overflow-x: hidden;
   background: var(--sand);
+  overflow-x: clip;
 }
 
 .pf-wrap::before {
@@ -214,17 +213,24 @@ a {
   flex-shrink: 0;
 }
 
+.pf-carousel {
+  width: min(100% - 2.5rem, 28rem);
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
 .pf-cards {
-  --rail-pad: 1.25rem;
   display: flex;
+  flex-flow: row nowrap;
   gap: 0.85rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   overflow-x: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
-  scroll-padding-inline: var(--rail-pad);
-  padding: 0.25rem var(--rail-pad) 0.75rem;
-  position: relative;
-  z-index: 2;
+  padding: 0.25rem 0 0.75rem;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
 }
@@ -239,9 +245,12 @@ a {
 }
 
 .pf-card {
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   scroll-snap-stop: always;
-  flex: 0 0 calc(100vw - (var(--rail-pad) * 2));
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   background: var(--paper);
   border-radius: 1.4rem;
   padding: 1.15rem 1.15rem 1.4rem;
@@ -253,7 +262,7 @@ a {
 }
 
 .pf-card-art {
-  height: min(42dvh, 18rem);
+  height: min(38dvh, 16rem);
   border-radius: 1rem;
   display: flex;
   align-items: center;
@@ -261,7 +270,7 @@ a {
   margin-bottom: 1.25rem;
   position: relative;
   overflow: hidden;
-  flex: 1 1 auto;
+  flex: 0 0 auto;
 }
 
 .pf-card-art svg {
@@ -395,12 +404,8 @@ a {
     padding-right: 2rem;
   }
 
-  .pf-cards {
-    --rail-pad: max(2rem, calc((100vw - 28rem) / 2));
-  }
-
-  .pf-card {
-    flex-basis: min(28rem, calc(100vw - 4rem));
+  .pf-carousel {
+    width: min(100% - 4rem, 28rem);
   }
 }
 
