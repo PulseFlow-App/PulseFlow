@@ -35,10 +35,9 @@ if (rail && dotsHost) {
 
   rail.addEventListener(
     "scroll",
-    () => {
-      window.requestAnimationFrame(sync);
-    },
+    () => window.requestAnimationFrame(sync),
     { passive: true },
   );
+  window.addEventListener("resize", sync, { passive: true });
   sync();
 }
