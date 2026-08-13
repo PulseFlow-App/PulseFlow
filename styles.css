@@ -310,6 +310,73 @@ a {
   background: var(--coral);
 }
 
+.pf-plan {
+  max-width: 520px;
+  margin: 8px auto 36px;
+  padding: 28px var(--pad);
+  position: relative;
+  z-index: 2;
+  background: var(--paper);
+  border-radius: 28px;
+  border: 1px solid rgba(22, 35, 31, 0.08);
+}
+
+.pf-plan-eyebrow {
+  margin: 0 0 8px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--coral-dark);
+}
+
+.pf-plan-title {
+  margin: 0;
+  font-size: clamp(26px, 5.5vw, 34px);
+  letter-spacing: -0.7px;
+  line-height: 1.15;
+}
+
+.pf-plan-lead {
+  margin: 14px 0 18px;
+  color: var(--ink-soft);
+  font-size: 16px;
+}
+
+.pf-plan-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.pf-plan-list li {
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(232, 98, 61, 0.06);
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.pf-plan-list strong {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.pf-plan-note {
+  margin: 16px 0 18px;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.pf-plan .pf-btn-primary {
+  display: inline-flex;
+}
+
 .pf-close {
   max-width: 420px;
   margin: 12px auto 0;
@@ -368,6 +435,93 @@ a {
 .pf-footer a {
   font-weight: 700;
   color: var(--coral-dark);
+}
+
+.pf-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 18px;
+}
+
+.pf-legal {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 28px var(--pad) 48px;
+  position: relative;
+  z-index: 2;
+}
+
+.pf-legal-kicker {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--coral-dark);
+}
+
+.pf-legal h1 {
+  margin: 0;
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.pf-legal-meta {
+  margin: 8px 0 22px;
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+.pf-legal h2 {
+  margin: 28px 0 10px;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.pf-legal p,
+.pf-legal li {
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.pf-legal p {
+  margin: 0 0 12px;
+}
+
+.pf-legal ul {
+  margin: 0 0 12px;
+  padding-left: 1.2rem;
+}
+
+.pf-legal li {
+  margin-bottom: 6px;
+}
+
+.pf-legal strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.pf-legal a {
+  color: var(--coral-dark);
+  font-weight: 700;
+}
+
+.pf-legal-note {
+  margin-top: 20px !important;
+  font-size: 13px !important;
+}
+
+.pf-legal-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 18px;
+  margin-top: 28px !important;
 }
 
 @media (min-width: 720px) {
