@@ -565,7 +565,7 @@ a {
 }
 
 .pf-owners-hero {
-  padding: 28px var(--pad) 12px;
+  padding: 44px var(--pad) 18px;
   position: relative;
   z-index: 2;
   max-width: 720px;
@@ -573,8 +573,8 @@ a {
 
 .pf-owners-pulse {
   max-width: 640px;
-  margin: 20px auto 32px;
-  padding: 24px var(--pad);
+  margin: 28px auto 48px;
+  padding: 28px var(--pad);
   position: relative;
   z-index: 2;
   background: linear-gradient(
@@ -601,17 +601,17 @@ a {
 
 .pf-owners-features {
   display: grid;
-  gap: 36px;
+  gap: 50px;
   max-width: 960px;
   margin: 0 auto;
-  padding: 8px var(--pad) 36px;
+  padding: 18px var(--pad) 60px;
   position: relative;
   z-index: 2;
 }
 
 .pf-owners-feature {
   display: grid;
-  gap: 20px;
+  gap: 28px;
   align-items: center;
 }
 
@@ -640,9 +640,9 @@ a {
 
 .pf-phone {
   margin: 0 auto;
-  width: min(100%, 280px);
-  padding: 10px;
-  border-radius: 28px;
+  width: min(100%, 340px);
+  padding: 12px;
+  border-radius: 32px;
   background: var(--paper);
   border: 1px solid var(--sand-deep);
   box-shadow: 0 22px 44px -28px rgba(22, 35, 31, 0.35);
@@ -650,7 +650,7 @@ a {
 
 .pf-phone img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 24px;
   border: 1px solid rgba(22, 35, 31, 0.06);
 }
 
@@ -701,7 +701,7 @@ a {
   }
 
   .pf-phone {
-    width: min(100%, 300px);
+    width: min(100%, 360px);
   }
 
   .pf-owners-feature.is-text-only {
