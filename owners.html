@@ -9,7 +9,7 @@
     <title>For villa owners · Pulse Flow Ops</title>
     <meta
       name="description"
-      content="Pulse Flow Ops gives villa owners one honest read on property status, bills, and urgent work. Built for rental ops, not generic dashboards."
+      content="One glance on ops readiness, scheduled work, vendor orders with proof, and bill approval. Built for villa owners who are done calling to ask how it is going."
     />
     <meta name="theme-color" content="#E8623D" />
     <link rel="icon" href="/favicon.png" type="image/png" />
@@ -17,7 +17,7 @@
     <meta property="og:title" content="Pulse Flow Ops for owners" />
     <meta
       property="og:description"
-      content="One honest read on whether your villas need attention right now."
+      content="Stop calling to ask how it is going. See readiness, work, spend, and proof in one app."
     />
     <meta property="og:image" content="/icons/icon-512.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,13 +26,13 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=10" />
+    <link rel="stylesheet" href="/styles.css?v=12" />
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
 
-    <div class="pf-wrap">
-      <header class="pf-nav">
+    <div class="pf-wrap pf-owners-page">
+      <header class="pf-nav pf-owners-nav">
         <a class="pf-logo" href="/">
           <img
             class="pf-pulse-mark"
@@ -46,114 +46,214 @@
         <a class="pf-cta" href="https://app.pulseflow.site">Open app</a>
       </header>
 
-      <main id="main">
+      <main id="main" class="pf-owners-main">
         <section class="pf-owners-hero">
           <p class="pf-owners-badge">For owners</p>
           <h1 class="pf-headline">
-            You do not need another dashboard to <em>interpret.</em>
+            Stop calling to ask <em>how it is going.</em>
           </h1>
           <p class="pf-sub">
-            You need one honest, current read on whether each villa needs
-            attention right now.
+            One glance shows readiness, urgent work, and what still needs you.
+            Not another dashboard to interpret.
           </p>
-          <a class="pf-btn-primary" href="https://app.pulseflow.site/register"
-            >Start with Pulse Flow Ops</a
-          >
-          <figure class="pf-phone" style="margin-top: 28px">
+          <div class="pf-owners-hero-actions">
+            <a class="pf-btn-primary" href="https://app.pulseflow.site/register"
+              >Start with Pulse Flow Ops</a
+            >
+            <a class="pf-owners-link" href="#demo-now">Try the demo</a>
+          </div>
+          <figure class="pf-phone pf-phone-hero">
             <img
-              src="/assets/screenshots/owner-dashboard.png"
+              src="/assets/screenshots/owner-home.png"
               width="390"
               height="844"
-              alt="Pulse Flow Ops owner dashboard with ops readiness and villa status counts"
+              alt="Owner home with ops readiness score, villa status counts, and urgent tasks"
               loading="eager"
             />
           </figure>
         </section>
 
-        <section class="pf-owners-pulse" aria-labelledby="why-pulse">
-          <h2 id="why-pulse">Why Pulse</h2>
-          <p>
-            A pulse is the first vital sign checked because it tells you
-            instantly whether something needs attention. Pulse Flow Ops gives
-            you one honest reading per villa: occupied or empty, paid or
-            pending, on track or urgent. Not a spreadsheet of everything.
-          </p>
-        </section>
-
-        <div class="pf-owners-features">
-          <article class="pf-owners-feature">
-            <div class="pf-owners-feature-copy">
-              <p class="pf-owners-feature-num">01 · Live status</p>
-              <h2>See each villa's state as your manager updates it</h2>
+        <div class="pf-owners-topics">
+          <article class="pf-owners-topic">
+            <div class="pf-owners-topic-copy">
+              <p class="pf-owners-feature-num">01 · The whole day</p>
+              <h2>A number you can trust instead of a status call</h2>
               <p>
-                Occupied, turnover, available, and maintenance show on every
-                property card when your on-site manager changes status. You open
-                the app and know which villa needs attention without a status
-                call.
+                Ops readiness, occupancy, and every urgent task stay on Home.
+                Below the fold, check-ins and a week chart show quiet versus
+                chaotic without reading a single chat thread.
               </p>
             </div>
-            <figure class="pf-phone">
-              <img
-                src="/assets/screenshots/owner-villas.png"
-                width="390"
-                height="844"
-                alt="Pulse Flow Ops villa list with occupied, turnover, and maintenance status per property"
-                loading="lazy"
-              />
-            </figure>
+            <div class="pf-phone-pair">
+              <figure class="pf-phone">
+                <img
+                  src="/assets/screenshots/owner-home.png"
+                  width="390"
+                  height="844"
+                  alt="Dashboard with ops readiness and villa statuses"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="pf-phone">
+                <img
+                  src="/assets/screenshots/owner-home-below.png"
+                  width="390"
+                  height="844"
+                  alt="Urgent tasks plus check-in calendar and weekly task chart"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
           </article>
 
-          <article class="pf-owners-feature is-reverse">
-            <div class="pf-owners-feature-copy">
-              <p class="pf-owners-feature-num">02 · Bill approval</p>
-              <h2>Approve expenses with the villa and reason attached</h2>
+          <article class="pf-owners-topic">
+            <div class="pf-owners-topic-copy">
+              <p class="pf-owners-feature-num">02 · Scheduled work</p>
+              <h2>Proof the job is assigned, not just promised</h2>
               <p>
-                Staff submit bills with the property name, category, and
-                description filled in. You review pending totals, filter by
-                villa or period, and tap Mark paid when the charge is right.
+                Every task carries a villa, time window, and who is doing it.
+                Filter Mine or Urgent when you only care about what still burns.
               </p>
             </div>
-            <figure class="pf-phone">
-              <img
-                src="/assets/screenshots/owner-bills.png"
-                width="390"
-                height="844"
-                alt="Pulse Flow Ops Finances screen with pending bills, villa names, and Mark paid actions"
-                loading="lazy"
-              />
-            </figure>
+            <div class="pf-phone-solo">
+              <figure class="pf-phone">
+                <img
+                  src="/assets/screenshots/owner-tasks.png"
+                  width="390"
+                  height="844"
+                  alt="Tasks list with villa, time window, assignee, and urgent badges"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
           </article>
 
-          <article class="pf-owners-feature">
-            <div class="pf-owners-feature-copy">
-              <p class="pf-owners-feature-num">03 · Urgent work</p>
-              <h2>Urgent tasks sit on your home screen, not in chat history</h2>
+          <article class="pf-owners-topic">
+            <div class="pf-owners-topic-copy">
+              <p class="pf-owners-feature-num">03 · Vendors</p>
+              <h2>Orders that cannot get lost in translation</h2>
               <p>
-                When a turnover, repair, or vendor visit cannot wait, it shows
-                on your dashboard with the villa name and due date. You see it
-                the moment you open the app.
+                Linked vendors get a structured order: what, where, when, and
+                details. Outside contacts stay one tap away on Call, WhatsApp, or
+                LINE. No more wondering if anyone actually called the plumber.
               </p>
             </div>
-            <figure class="pf-phone">
-              <img
-                src="/assets/screenshots/owner-urgent-tasks.png"
-                width="390"
-                height="844"
-                alt="Pulse Flow Ops urgent tasks list with villa names and due dates"
-                loading="lazy"
-              />
-            </figure>
+            <div class="pf-phone-pair">
+              <figure class="pf-phone">
+                <img
+                  src="/assets/screenshots/owner-contacts.png"
+                  width="390"
+                  height="844"
+                  alt="Contacts with Order, Call, and WhatsApp actions per vendor"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="pf-phone">
+                <img
+                  src="/assets/screenshots/owner-order.png"
+                  width="390"
+                  height="844"
+                  alt="Order a vendor form with villa, date, time window, and details"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
           </article>
 
-          <article class="pf-owners-feature is-text-only">
-            <div class="pf-owners-feature-copy">
-              <p class="pf-owners-feature-num">04 · Team chat</p>
-              <h2>One ops thread with your manager, not three apps</h2>
+          <article class="pf-owners-topic">
+            <div class="pf-owners-topic-copy">
+              <p class="pf-owners-feature-num">04 · Paper trail</p>
+              <h2>Seen and agreed, not just sent</h2>
               <p>
-                Company workspaces include a single team chat for your ops
-                group. Bookings, handoffs, and day-of updates stay in one place
-                instead of scattered across WhatsApp, LINE, and email threads.
+                The service order lands in team chat as a card. Staff tap Read
+                and agreed. Bill submissions and job confirmations also show in
+                Notifications, away from chat noise.
               </p>
+            </div>
+            <div class="pf-phone-pair">
+              <figure class="pf-phone">
+                <img
+                  src="/assets/screenshots/owner-messages.png"
+                  width="390"
+                  height="844"
+                  alt="Team chat with an embedded service order card"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="pf-phone">
+                <img
+                  src="/assets/screenshots/owner-notifications.png"
+                  width="390"
+                  height="844"
+                  alt="Notifications feed with bill submitted and job confirmed"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+          </article>
+
+          <article class="pf-owners-topic">
+            <div class="pf-owners-topic-copy">
+              <p class="pf-owners-feature-num">05 · Money</p>
+              <h2>Check exposure in five seconds</h2>
+              <p>
+                Filter by period, villa, and category. Total, paid, and pending
+                sit up top. Each pending line has a receipt-style card and
+                one-tap Mark paid, so you control the money without chasing
+                anyone for a spreadsheet.
+              </p>
+            </div>
+            <div class="pf-phone-pair">
+              <figure class="pf-phone">
+                <img
+                  src="/assets/screenshots/owner-finances.png"
+                  width="390"
+                  height="844"
+                  alt="Finances overview with total, paid, and pending totals"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="pf-phone">
+                <img
+                  src="/assets/screenshots/owner-finances-detail.png"
+                  width="390"
+                  height="844"
+                  alt="Pending bills by villa with Mark paid buttons"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+          </article>
+
+          <article class="pf-owners-topic">
+            <div class="pf-owners-topic-copy">
+              <p class="pf-owners-feature-num">06 · Reputation</p>
+              <h2>Who is reliable when it is time to renew</h2>
+              <p>
+                Rate teammates and vendors weekly. Stars roll into a company
+                leaderboard so “was this company any good” becomes a record, not
+                a vague memory.
+              </p>
+            </div>
+            <div class="pf-phone-pair">
+              <figure class="pf-phone">
+                <img
+                  src="/assets/screenshots/owner-endorsements.png"
+                  width="390"
+                  height="844"
+                  alt="Weekly endorsements with star ratings for each teammate"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="pf-phone">
+                <img
+                  src="/assets/screenshots/owner-leaderboard.png"
+                  width="390"
+                  height="844"
+                  alt="Company leaderboard ranked by average stars"
+                  loading="lazy"
+                />
+              </figure>
             </div>
           </article>
         </div>
@@ -162,8 +262,8 @@
           <p class="pf-demo-eyebrow">Demo</p>
           <h2 id="demo-now">Try the demo now</h2>
           <p class="pf-demo-lead">
-            Open the app and sign in with the preloaded owner demo. You
-            can explore the full owner experience right away.
+            Open the app and sign in with the preloaded owner demo. Explore the
+            full owner experience right away.
           </p>
 
           <div class="pf-demo-grid">
@@ -183,13 +283,18 @@
                 Tap the demo login link, enter the credentials, then open the
                 Home screen.
               </p>
-              <a class="pf-btn-primary pf-demo-btn" href="https://app.pulseflow.site/login"
+              <a
+                class="pf-btn-primary pf-demo-btn"
+                href="https://app.pulseflow.site/login"
                 >Open demo login</a
               >
             </div>
 
             <div class="pf-demo-qr">
-              <a href="https://app.pulseflow.site/login" aria-label="Open demo login">
+              <a
+                href="https://app.pulseflow.site/login"
+                aria-label="Open demo login"
+              >
                 <img
                   class="pf-qr-img"
                   src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fapp.pulseflow.site%2Flogin"
@@ -213,15 +318,18 @@
         </section>
 
         <section class="pf-owners-close">
-          <img src="/assets/pulse-mark.svg" width="64" height="64" alt="" />
+          <img
+            class="pf-owners-close-mark"
+            src="/assets/pulse-mark.svg"
+            width="64"
+            height="64"
+            alt=""
+          />
           <h2>Built for villa ops, by someone who runs them</h2>
           <p>
-            Pulse Flow Ops comes from day-to-day rental operations work, not a
-            generic property management system dressed up for hospitality.
-          </p>
-          <p class="pf-owners-langs">
-            The app supports English, Thai, and seven other languages so your
-            local managers and staff can work in the language they use on site.
+            Day-to-day rental operations, not a generic property system dressed
+            up for hospitality. English, Thai, and seven other languages for
+            the people who work on site.
           </p>
           <a class="pf-btn-primary" href="https://app.pulseflow.site"
             >Open Pulse Flow Ops</a
