@@ -39,6 +39,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -608,6 +609,7 @@ a {
 
 .pf-phone-hero {
   margin-top: 28px;
+  width: min(68vw, 280px);
 }
 
 .pf-owners-pulse {
@@ -695,9 +697,11 @@ a {
   color: var(--coral-dark);
 }
 
+/* Phone frame: width-only sizing. Image keeps natural aspect ratio. */
 .pf-phone {
   margin: 0;
-  width: min(100%, 300px);
+  width: min(68vw, 280px);
+  height: auto;
   padding: 10px;
   border-radius: 32px;
   background: var(--paper);
@@ -706,23 +710,31 @@ a {
 }
 
 .pf-phone img {
+  display: block;
   width: 100%;
+  height: auto;
+  max-width: none;
+  object-fit: contain;
+  object-position: top center;
   border-radius: 24px;
   border: 1px solid rgba(22, 35, 31, 0.06);
 }
 
+/* Mobile: always stack, smaller than full viewport */
 .pf-phone-pair,
 .pf-phone-solo {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 16px 20px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
   width: 100%;
 }
 
-.pf-phone-pair .pf-phone {
-  width: min(100%, 250px);
+.pf-phone-pair .pf-phone,
+.pf-phone-solo .pf-phone {
+  width: min(68vw, 280px);
 }
 
 .pf-owners-close {
@@ -757,17 +769,25 @@ a {
   line-height: 1.55;
 }
 
+/* Desktop: side-by-side pairs, still width-only (no fixed height) */
 @media (min-width: 760px) {
-  .pf-phone-pair .pf-phone {
-    width: min(100%, 300px);
-  }
-
+  .pf-phone,
+  .pf-phone-hero,
   .pf-phone-solo .pf-phone {
     width: min(100%, 320px);
   }
 
-  .pf-phone-hero {
-    width: min(100%, 340px);
+  .pf-phone-pair {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .pf-phone-pair .pf-phone {
+    width: min(100%, 300px);
+    flex: 0 0 auto;
   }
 }
 
@@ -776,12 +796,13 @@ a {
     gap: 28px;
   }
 
-  .pf-phone-pair {
-    gap: 24px;
-  }
-
   .pf-phone-pair .pf-phone {
     width: min(100%, 320px);
+  }
+
+  .pf-phone-hero,
+  .pf-phone-solo .pf-phone {
+    width: min(100%, 340px);
   }
 }
 
