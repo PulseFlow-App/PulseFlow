@@ -832,3 +832,259 @@ a {
     gap: 28px;
   }
 }
+
+/* Subscription page */
+.pf-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.pf-sub-hero {
+  padding: 36px var(--pad) 8px;
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+}
+
+.pf-sub-trial {
+  max-width: 760px;
+  margin: 28px auto 36px;
+  padding: 28px var(--pad);
+  position: relative;
+  z-index: 2;
+  background: var(--paper);
+  border-radius: 28px;
+  border: 1px solid rgba(22, 35, 31, 0.08);
+}
+
+.pf-sub-trial h2 {
+  margin: 0 0 14px;
+  font-size: clamp(1.45rem, 4vw, 1.85rem);
+  letter-spacing: -0.03em;
+}
+
+.pf-sub-trial-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.pf-sub-trial-list li {
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(232, 98, 61, 0.06);
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.pf-sub-trial-list strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.pf-sub-trial-note {
+  margin: 16px 0 0;
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.pf-sub-tiers {
+  display: grid;
+  gap: 20px;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 8px var(--pad) 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.pf-tier {
+  background: var(--paper);
+  border: 1px solid var(--sand-deep);
+  border-radius: 28px;
+  padding: 26px 22px 24px;
+  box-shadow: 0 18px 34px -22px rgba(22, 35, 31, 0.22);
+}
+
+.pf-tier-mid {
+  border-color: rgba(31, 111, 99, 0.28);
+}
+
+.pf-tier-full {
+  border-color: rgba(232, 98, 61, 0.35);
+  background: linear-gradient(
+    165deg,
+    #fff 0%,
+    rgba(232, 98, 61, 0.06) 100%
+  );
+}
+
+.pf-tier-eyebrow {
+  margin: 0 0 8px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--coral-dark);
+}
+
+.pf-tier-name {
+  margin: 0;
+  font-size: clamp(1.75rem, 4vw, 2.1rem);
+  letter-spacing: -0.03em;
+}
+
+.pf-tier-who {
+  margin: 10px 0 16px;
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.pf-tier-list {
+  margin: 0 0 18px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.pf-tier-list li {
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(22, 35, 31, 0.04);
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.pf-tier-list strong {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.pf-tier-note {
+  margin: -4px 0 16px;
+  font-size: 13px;
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+
+.pf-tier .pf-btn-primary {
+  width: 100%;
+  justify-content: center;
+}
+
+.pf-sub-referral {
+  max-width: 760px;
+  margin: 0 auto 20px;
+  padding: 28px var(--pad);
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(
+    145deg,
+    rgba(31, 111, 99, 0.1) 0%,
+    rgba(232, 98, 61, 0.08) 100%
+  );
+  border: 1px solid rgba(22, 35, 31, 0.08);
+  border-radius: 28px;
+}
+
+.pf-sub-referral h2 {
+  margin: 0 0 12px;
+  font-size: clamp(1.45rem, 4vw, 1.9rem);
+  letter-spacing: -0.03em;
+}
+
+.pf-sub-referral-lead {
+  margin: 0 0 14px;
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.pf-sub-referral-steps {
+  margin: 0 0 18px;
+  padding-left: 1.2rem;
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.pf-sub-referral-steps li {
+  margin-bottom: 6px;
+}
+
+.pf-sub-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.pf-sub-referral-row {
+  display: grid;
+  gap: 10px;
+}
+
+.pf-sub-input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid var(--sand-deep);
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-size: 15px;
+}
+
+.pf-sub-input:focus {
+  outline: 2px solid var(--coral);
+  outline-offset: 2px;
+}
+
+.pf-sub-referral-fine {
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+
+@media (min-width: 900px) {
+  .pf-sub-tiers {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    gap: 18px;
+  }
+
+  .pf-tier .pf-btn-primary {
+    margin-top: auto;
+  }
+
+  .pf-tier {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pf-sub-referral-row {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+}
