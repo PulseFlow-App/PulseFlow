@@ -26,7 +26,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=9" />
+    <link rel="stylesheet" href="/styles.css?v=10" />
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
@@ -268,6 +268,52 @@
                   body;
               });
           </script>
+        </section>
+
+        <section class="pf-demo" aria-labelledby="demo-now">
+          <p class="pf-demo-eyebrow">Demo</p>
+          <h2 id="demo-now">Try the demo now</h2>
+          <p class="pf-demo-lead">
+            Open the app and sign in with the preloaded owner demo. You can
+            walk the Full company seat before you pick a plan.
+          </p>
+
+          <div class="pf-demo-grid">
+            <div class="pf-demo-credentials">
+              <p class="pf-demo-kicker">Owner demo login</p>
+              <ul class="pf-demo-list">
+                <li>
+                  <span>Email</span>
+                  <code>owner@pulseflow.site</code>
+                </li>
+                <li>
+                  <span>Password</span>
+                  <code>TestPass123!</code>
+                </li>
+              </ul>
+              <p class="pf-demo-note">
+                Tap the demo login link, enter the credentials, then open the
+                Home screen.
+              </p>
+              <a class="pf-btn-primary pf-demo-btn" href="https://app.pulseflow.site/login"
+                >Open demo login</a
+              >
+            </div>
+
+            <div class="pf-demo-qr">
+              <a href="https://app.pulseflow.site/login" aria-label="Open demo login">
+                <img
+                  class="pf-qr-img"
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fapp.pulseflow.site%2Flogin"
+                  width="220"
+                  height="220"
+                  alt="QR code linking to app demo login"
+                  loading="lazy"
+                />
+              </a>
+              <p class="pf-demo-qr-caption">Scan to sign in</p>
+            </div>
+          </div>
         </section>
 
         <section class="pf-owners-close">
