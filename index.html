@@ -9,7 +9,7 @@
     <title>Pulse Flow Ops - The pulse of your rental operations</title>
     <meta
       name="description"
-      content="Pulse Flow Ops keeps villa status, jobs, contacts, and bills in one live pulse for owners, managers, and field teams."
+      content="Pulse Flow Ops keeps property status, jobs, contacts, and bills in one live pulse for owners, managers, and field teams."
     />
     <meta name="theme-color" content="#E8623D" />
     <link rel="icon" href="/favicon.png" type="image/png" />
@@ -26,7 +26,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=7" />
+    <link rel="stylesheet" href="/styles.css?v=14" />
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
@@ -43,7 +43,7 @@
           />
           Pulse Flow Ops
         </a>
-        <a class="pf-cta" href="https://app.pulseflow.site">Open app</a>
+        <a class="pf-cta" href="https://app.pulseflow.site/login">Open app</a>
       </header>
 
       <main id="main">
@@ -53,7 +53,7 @@
             Built for rental ops,<br />not generic <em>task lists.</em>
           </h1>
           <p class="pf-sub">
-            Villas, jobs, contacts, and bills - one shared pulse between you and
+            Properties, jobs, contacts, and bills - one shared pulse between you and
             your team, live on every screen.
           </p>
           <a class="pf-btn-primary" href="https://app.pulseflow.site"
@@ -124,7 +124,7 @@
                 />
               </svg>
             </div>
-            <h2 class="pf-tag" style="color: var(--coral-dark)">Villas</h2>
+            <h2 class="pf-tag" style="color: var(--coral-dark)">Properties</h2>
             <p class="pf-desc">
               Status, a map pin, notes, and a property photo so staff recognize
               the place on sight.
@@ -272,7 +272,42 @@
             </p>
           </article>
         </div>
-        <div className="pf-dots" aria-label="Feature slides"></div>
+        <div class="pf-dots" aria-label="Feature slides"></div>
+
+        <section class="pf-audience" aria-labelledby="why-app">
+          <p class="pf-audience-eyebrow">Why this app</p>
+          <h2 id="why-app" class="pf-audience-title">
+            Why do you need this app?
+          </h2>
+          <p class="pf-audience-lead">
+            Pick the seat that matches how you run rental properties. Owner tools
+            are live now. Manager and staff guides are next.
+          </p>
+          <div class="pf-audience-grid">
+            <a class="pf-audience-card" href="/owners">
+              <h3>Are you a property owner?</h3>
+              <p>
+                See occupancy, urgent work, and spend without calling for a
+                status update.
+              </p>
+              <span class="pf-audience-cta">Open the owners guide</span>
+            </a>
+            <div class="pf-audience-card is-soon">
+              <h3>Are you a property manager?</h3>
+              <p>
+                Day-to-day ops, reports for owners, and handoffs in one place.
+              </p>
+              <span class="pf-audience-cta">Coming soon</span>
+            </div>
+            <div class="pf-audience-card is-soon">
+              <h3>Are you staff working on a few properties?</h3>
+              <p>
+                Jobs, Read and agreed, and assigned properties on your phone.
+              </p>
+              <span class="pf-audience-cta">Coming soon</span>
+            </div>
+          </div>
+        </section>
 
         <section class="pf-plan" id="company">
           <p class="pf-plan-eyebrow">Company subscription</p>
@@ -280,7 +315,7 @@
             Personal is free.<br />Company unlocks the team.
           </h2>
           <p class="pf-plan-lead">
-            Solo operators keep villas, tasks, bills, and a simple phone book.
+            Solo operators keep properties, tasks, bills, and a simple phone book.
             A company plan (after the free trial) adds the tools that make a
             shared ops pulse work.
           </p>
@@ -290,7 +325,7 @@
               Unique join links - no shared passwords.
             </li>
             <li>
-              <strong>Assign villas to the team</strong>
+              <strong>Assign properties to the team</strong>
               Each person only sees the properties they run.
             </li>
             <li>
@@ -323,7 +358,7 @@
 
         <section class="pf-close">
           <img src="/assets/pulse-mark.svg" width="64" height="64" alt="" />
-          <h2>Put a pulse on every villa day.</h2>
+          <h2>Put a pulse on every rental day.</h2>
           <p>
             Open the app, invite your team, and run the next turnover from one
             place.
@@ -340,7 +375,6 @@
           <span>The pulse of your rental operations</span>
         </div>
         <div class="pf-footer-links">
-          <a href="/owners">For owners</a>
           <a href="/subscription">Plans</a>
           <a href="/terms">Terms</a>
           <a href="/privacy">Privacy</a>
@@ -349,6 +383,6 @@
       </footer>
     </div>
 
-    <script src="/script.js?v=6" defer></script>
+    <script src="/script.js?v=7" defer></script>
   </body>
 </html>

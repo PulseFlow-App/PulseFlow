@@ -41,3 +41,49 @@ if (rail && dotsHost) {
   window.addEventListener("resize", sync, { passive: true });
   sync();
 }
+
+const DEMO_ACCOUNTS = {
+  owner: {
+    label: "Owner demo login",
+    email: "owner@pulseflow.site",
+  },
+  employee: {
+    label: "Employee demo login",
+    email: "employee@pulseflow.site",
+  },
+};
+
+document.querySelectorAll("[data-demo-login]").forEach((section) => {
+  const roleButtons = [...section.querySelectorAll("[data-demo-role]")];
+  const links = [...section.querySelectorAll("[data-demo-link]")];
+  const emailEl = section.querySelector("[data-demo-email]");
+  const kickerEl = section.querySelector("[data-demo-kicker]");
+  const qrImg = section.querySelector("[data-demo-qr]");
+
+  const applyRole = (role) => {
+    const account = DEMO_ACCOUNTS[role];
+    if (!account) return;
+    const loginUrl = `https://app.pulseflow.site/login?demo=${encodeURIComponent(role)}`;
+    roleButtons.forEach((btn) => {
+      btn.classList.toggle(
+        "is-active",
+        btn.getAttribute("data-demo-role") === role,
+      );
+    });
+    if (emailEl) emailEl.textContent = account.email;
+    if (kickerEl) kickerEl.textContent = account.label;
+    links.forEach((link) => {
+      link.setAttribute("href", loginUrl);
+    });
+    if (qrImg) {
+      qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(loginUrl)}`;
+      qrImg.alt = `QR code for ${account.label}`;
+    }
+  };
+
+  roleButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      applyRole(btn.getAttribute("data-demo-role") || "owner");
+    });
+  });
+});

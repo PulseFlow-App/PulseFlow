@@ -6,10 +6,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title>For villa owners · Pulse Flow Ops</title>
+    <title>For property owners · Pulse Flow Ops</title>
     <meta
       name="description"
-      content="One glance on ops readiness, scheduled work, vendor orders with proof, and bill approval. Built for villa owners who are done calling to ask how it is going."
+      content="One glance on ops readiness, scheduled work, vendor orders with proof, and bill approval. Built for property owners who are done calling to ask how it is going."
     />
     <meta name="theme-color" content="#E8623D" />
     <link rel="icon" href="/favicon.png" type="image/png" />
@@ -26,7 +26,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=13" />
+    <link rel="stylesheet" href="/styles.css?v=14" />
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
@@ -43,14 +43,14 @@
           />
           Pulse Flow Ops
         </a>
-        <a class="pf-cta" href="https://app.pulseflow.site">Open app</a>
+        <a class="pf-cta" href="https://app.pulseflow.site/login">Open app</a>
       </header>
 
       <main id="main" class="pf-owners-main">
         <section class="pf-owners-hero">
           <p class="pf-owners-badge">For owners</p>
           <h1 class="pf-headline">
-            Know your villas are running right, without picking up the phone.
+            Know your properties are running right, without picking up the phone.
           </h1>
           <p class="pf-sub">
             Most owners only hear about a problem after a guest complains or a
@@ -69,7 +69,7 @@
               src="/assets/screenshots/owner-home.png"
               width="472"
               height="1024"
-              alt="Owner home with ops readiness score, villa status counts, and urgent tasks"
+              alt="Owner home with ops readiness score, property status counts, and urgent tasks"
               loading="eager"
             />
           </figure>
@@ -92,7 +92,7 @@
                   src="/assets/screenshots/owner-home.png"
                   width="472"
                   height="1024"
-                  alt="Dashboard with ops readiness and villa statuses"
+                  alt="Dashboard with ops readiness and property statuses"
                   loading="lazy"
                 />
               </figure>
@@ -111,7 +111,7 @@
           <article class="pf-owners-topic">
             <div class="pf-owners-topic-copy">
               <p class="pf-owners-feature-num">02 · Scheduled work</p>
-              <h2>Every task has a villa, a time, and an owner</h2>
+              <h2>Every task has a property, a time, and an owner</h2>
               <p>
                 Nothing gets assigned verbally and forgotten. Filter by Mine or
                 Urgent to see exactly what needs attention right now.
@@ -123,7 +123,7 @@
                   src="/assets/screenshots/owner-tasks.png"
                   width="472"
                   height="1024"
-                  alt="Tasks list with villa, time window, assignee, and urgent badges"
+                  alt="Tasks list with property, time window, assignee, and urgent badges"
                   loading="lazy"
                 />
               </figure>
@@ -155,7 +155,7 @@
                   src="/assets/screenshots/owner-order.png"
                   width="472"
                   height="1024"
-                  alt="Order a vendor form with villa, date, time window, and details"
+                  alt="Order a vendor form with property, date, time window, and details"
                   loading="lazy"
                 />
               </figure>
@@ -199,7 +199,7 @@
               <p class="pf-owners-feature-num">05 · Money</p>
               <h2>Know your spend without asking for a spreadsheet</h2>
               <p>
-                Filter by period, villa, or category. Total, paid, and pending
+                Filter by period, property, or category. Total, paid, and pending
                 amounts are always visible. Approve a pending bill with one tap.
               </p>
             </div>
@@ -218,7 +218,7 @@
                   src="/assets/screenshots/owner-finances-detail.png"
                   width="472"
                   height="1024"
-                  alt="Pending bills by villa with Mark paid buttons"
+                  alt="Pending bills by property with Mark paid buttons"
                   loading="lazy"
                 />
               </figure>
@@ -257,21 +257,34 @@
           </article>
         </div>
 
-        <section class="pf-demo" aria-labelledby="demo-now">
+        <section class="pf-demo" aria-labelledby="demo-now" data-demo-login>
           <p class="pf-demo-eyebrow">Demo</p>
           <h2 id="demo-now">Try the demo now</h2>
           <p class="pf-demo-lead">
-            Open the app and sign in with the preloaded owner demo. Explore the
-            full owner experience right away.
+            Choose a demo seat. The login form and QR open with that email and
+            password already filled in.
           </p>
+
+          <div class="pf-demo-roles" role="group" aria-label="Demo account">
+            <button
+              type="button"
+              class="pf-demo-role is-active"
+              data-demo-role="owner"
+            >
+              Owner
+            </button>
+            <button type="button" class="pf-demo-role" data-demo-role="employee">
+              Employee
+            </button>
+          </div>
 
           <div class="pf-demo-grid">
             <div class="pf-demo-credentials">
-              <p class="pf-demo-kicker">Owner demo login</p>
+              <p class="pf-demo-kicker" data-demo-kicker>Owner demo login</p>
               <ul class="pf-demo-list">
                 <li>
                   <span>Email</span>
-                  <code>owner@pulseflow.site</code>
+                  <code data-demo-email>owner@pulseflow.site</code>
                 </li>
                 <li>
                   <span>Password</span>
@@ -279,27 +292,29 @@
                 </li>
               </ul>
               <p class="pf-demo-note">
-                Tap the demo login link, enter the credentials, then open the
-                Home screen.
+                Open demo login, confirm the fields, then sign in to reach Home.
               </p>
               <a
                 class="pf-btn-primary pf-demo-btn"
-                href="https://app.pulseflow.site/login"
+                data-demo-link
+                href="https://app.pulseflow.site/login?demo=owner"
                 >Open demo login</a
               >
             </div>
 
             <div class="pf-demo-qr">
               <a
-                href="https://app.pulseflow.site/login"
+                data-demo-link
+                href="https://app.pulseflow.site/login?demo=owner"
                 aria-label="Open demo login"
               >
                 <img
                   class="pf-qr-img"
-                  src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fapp.pulseflow.site%2Flogin"
+                  data-demo-qr
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fapp.pulseflow.site%2Flogin%3Fdemo%3Downer"
                   width="220"
                   height="220"
-                  alt="QR code linking to app demo login"
+                  alt="QR code linking to prefilled demo login"
                   loading="lazy"
                 />
               </a>
@@ -325,7 +340,7 @@
             alt=""
           />
           <h2>
-            Built for real villa operations, not a generic property system
+            Built for real rental operations, not a generic property system
             adapted for hospitality.
           </h2>
           <p>
@@ -352,5 +367,6 @@
         </div>
       </footer>
     </div>
+    <script src="/script.js?v=7" defer></script>
   </body>
 </html>

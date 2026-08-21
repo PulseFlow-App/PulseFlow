@@ -17,7 +17,7 @@
     <meta property="og:title" content="Pulse Flow Ops plans" />
     <meta
       property="og:description"
-      content="Free, Basic, and Full plans for villa owners, managers, and field teams."
+      content="Free, Basic, and Full plans for property owners, managers, and field teams."
     />
     <meta property="og:image" content="/icons/icon-512.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,7 +26,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=10" />
+    <link rel="stylesheet" href="/styles.css?v=14" />
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
@@ -43,14 +43,14 @@
           />
           Pulse Flow Ops
         </a>
-        <a class="pf-cta" href="https://app.pulseflow.site">Open app</a>
+        <a class="pf-cta" href="https://app.pulseflow.site/login">Open app</a>
       </header>
 
       <main id="main">
         <section class="pf-sub-hero">
           <p class="pf-eyebrow">Plans</p>
           <h1 class="pf-headline">
-            Three tiers. Clear seats for each villa role.
+            Three tiers. Clear seats for each property role.
           </h1>
           <p class="pf-sub">
             Free covers personal ops and day-to-day field work. Basic unlocks
@@ -67,7 +67,7 @@
               <strong>Company owners (Full)</strong>
               New company workspaces get a
               <strong>30-day Full trial</strong>. Invite managers and staff,
-              assign villas, use team chat, book jobs, and run owner finances
+              assign properties, use team chat, book jobs, and run owner finances
               during the trial. After it ends, the owner subscribes to keep
               those company writes open.
             </li>
@@ -97,18 +97,18 @@
             <ul class="pf-tier-list">
               <li>
                 <strong>Personal workspace</strong>
-                Solo villas, tasks, bills, and a simple phone book. No team
+                Solo properties, tasks, bills, and a simple phone book. No team
                 invites, no company chat, no in-app job booking.
               </li>
               <li>
                 <strong>Company staff / cleaner</strong>
-                Assigned villas, jobs with Read &amp; agreed, bill submit,
-                contacts, and team chat. No company-wide invites or villa
+                Assigned properties, jobs with Read &amp; agreed, bill submit,
+                contacts, and team chat. No company-wide invites or property
                 assignment controls.
               </li>
               <li>
                 <strong>Company manager (limited)</strong>
-                Day-to-day ops on assigned villas: status updates, tasks,
+                Day-to-day ops on assigned properties: status updates, tasks,
                 contacts, bills, chat, and booking jobs when the company is on
                 Full. No CSV/PDF exports, no printable weekly ops pack, no
                 extended archive downloads.
@@ -129,12 +129,12 @@
             <ul class="pf-tier-list">
               <li>
                 <strong>Everything on Free manager seats</strong>
-                Live villa status, tasks, contacts, bills, chat, and job booking
+                Live property status, tasks, contacts, bills, chat, and job booking
                 (when the company Full plan is active).
               </li>
               <li>
                 <strong>Exports for reports</strong>
-                Download bills, tasks, and villa status as CSV/spreadsheet for
+                Download bills, tasks, and property status as CSV/spreadsheet for
                 presentations, owner updates, and accounting handoffs.
               </li>
               <li>
@@ -144,18 +144,18 @@
               </li>
               <li>
                 <strong>Extended job &amp; bill history</strong>
-                Pull longer date ranges and filter archives by villa, category,
+                Pull longer date ranges and filter archives by property, category,
                 and period before you export.
               </li>
               <li>
                 <strong>Handoff snapshots</strong>
-                Save a dated villa status snapshot for shift changes or
+                Save a dated property status snapshot for shift changes or
                 contractor briefings.
               </li>
             </ul>
             <p class="pf-tier-note">
               Basic is a manager add-on. It does not replace the owner’s Full
-              company subscription for invites, company villas, and team
+              company subscription for invites, company properties, and team
               tooling.
             </p>
             <a class="pf-btn-primary" href="https://app.pulseflow.site/register"
@@ -174,7 +174,7 @@
               <li>
                 <strong>Company workspace</strong>
                 Invite managers and staff with role + job title (link or QR),
-                assign villas, and keep one live inventory.
+                assign properties, and keep one live inventory.
               </li>
               <li>
                 <strong>Team ops</strong>
@@ -183,8 +183,8 @@
               </li>
               <li>
                 <strong>Owner finances</strong>
-                Spend by villa, period, and category; approve pending bills with
-                villa and reason attached.
+                Spend by property, period, and category; approve pending bills with
+                property and reason attached.
               </li>
               <li>
                 <strong>Manager Basic seats included</strong>
@@ -209,7 +209,7 @@
           <h2 id="referral">Invite 5. Get 1 year of Full free.</h2>
           <p class="pf-sub-referral-lead">
             Leave your email below, create your account, then share your
-            referral link with company teammates or other villa owners. When
+            referral link with company teammates or other property owners. When
             <strong>5 people</strong> join through your invites or referral
             link, we unlock <strong>1 year of Full</strong> on your company
             workspace at no charge.
@@ -270,21 +270,34 @@
           </script>
         </section>
 
-        <section class="pf-demo" aria-labelledby="demo-now">
+        <section class="pf-demo" aria-labelledby="demo-now" data-demo-login>
           <p class="pf-demo-eyebrow">Demo</p>
           <h2 id="demo-now">Try the demo now</h2>
           <p class="pf-demo-lead">
-            Open the app and sign in with the preloaded owner demo. You can
-            walk the Full company seat before you pick a plan.
+            Choose a demo seat. The login form and QR open with that email and
+            password already filled in.
           </p>
+
+          <div class="pf-demo-roles" role="group" aria-label="Demo account">
+            <button
+              type="button"
+              class="pf-demo-role is-active"
+              data-demo-role="owner"
+            >
+              Owner
+            </button>
+            <button type="button" class="pf-demo-role" data-demo-role="employee">
+              Employee
+            </button>
+          </div>
 
           <div class="pf-demo-grid">
             <div class="pf-demo-credentials">
-              <p class="pf-demo-kicker">Owner demo login</p>
+              <p class="pf-demo-kicker" data-demo-kicker>Owner demo login</p>
               <ul class="pf-demo-list">
                 <li>
                   <span>Email</span>
-                  <code>owner@pulseflow.site</code>
+                  <code data-demo-email>owner@pulseflow.site</code>
                 </li>
                 <li>
                   <span>Password</span>
@@ -292,22 +305,29 @@
                 </li>
               </ul>
               <p class="pf-demo-note">
-                Tap the demo login link, enter the credentials, then open the
-                Home screen.
+                Open demo login, confirm the fields, then sign in to reach Home.
               </p>
-              <a class="pf-btn-primary pf-demo-btn" href="https://app.pulseflow.site/login"
+              <a
+                class="pf-btn-primary pf-demo-btn"
+                data-demo-link
+                href="https://app.pulseflow.site/login?demo=owner"
                 >Open demo login</a
               >
             </div>
 
             <div class="pf-demo-qr">
-              <a href="https://app.pulseflow.site/login" aria-label="Open demo login">
+              <a
+                data-demo-link
+                href="https://app.pulseflow.site/login?demo=owner"
+                aria-label="Open demo login"
+              >
                 <img
                   class="pf-qr-img"
-                  src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fapp.pulseflow.site%2Flogin"
+                  data-demo-qr
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fapp.pulseflow.site%2Flogin%3Fdemo%3Downer"
                   width="220"
                   height="220"
-                  alt="QR code linking to app demo login"
+                  alt="QR code linking to prefilled demo login"
                   loading="lazy"
                 />
               </a>
@@ -336,7 +356,6 @@
         </div>
         <div class="pf-footer-links">
           <a href="/">Home</a>
-          <a href="/owners">For owners</a>
           <a href="/subscription">Plans</a>
           <a href="/terms">Terms</a>
           <a href="/privacy">Privacy</a>
@@ -344,5 +363,6 @@
         </div>
       </footer>
     </div>
+    <script src="/script.js?v=7" defer></script>
   </body>
 </html>
