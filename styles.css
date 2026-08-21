@@ -661,7 +661,15 @@ a.pf-audience-card:hover {
 
 .pf-owners-hero .pf-sub {
   margin-inline: auto;
-  max-width: 36ch;
+  max-width: 42ch;
+}
+
+.pf-owners-hero-extra {
+  margin: 12px auto 0;
+  max-width: 48ch;
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.55;
 }
 
 .pf-owners-hero-actions {
@@ -670,7 +678,7 @@ a.pf-audience-card:hover {
   align-items: center;
   justify-content: center;
   gap: 14px 18px;
-  margin-top: 8px;
+  margin-top: 16px;
 }
 
 .pf-owners-link {
@@ -738,8 +746,12 @@ a.pf-audience-card:hover {
 }
 
 .pf-owners-topic-copy {
-  max-width: 520px;
+  max-width: 560px;
   margin: 0 auto;
+}
+
+.pf-owners-topic-copy > p:last-child {
+  max-width: 52ch;
 }
 
 .pf-owners-topic h2 {
@@ -832,12 +844,8 @@ a.pf-audience-card:hover {
   text-wrap: balance;
 }
 
-.pf-owners-close p {
-  margin: 14px auto 22px;
-  max-width: 40ch;
-  color: var(--ink-soft);
-  font-size: 16px;
-  line-height: 1.55;
+.pf-owners-close .pf-btn-primary {
+  margin-top: 22px;
 }
 
 /* Desktop: side-by-side pairs, still width-only (no fixed height) */
