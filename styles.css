@@ -661,15 +661,7 @@ a.pf-audience-card:hover {
 
 .pf-owners-hero .pf-sub {
   margin-inline: auto;
-  max-width: 42ch;
-}
-
-.pf-owners-hero-extra {
-  margin: 12px auto 0;
-  max-width: 48ch;
-  color: var(--ink-soft);
-  font-size: 16px;
-  line-height: 1.55;
+  max-width: 36ch;
 }
 
 .pf-owners-hero-actions {
