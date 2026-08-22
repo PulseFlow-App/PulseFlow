@@ -1344,6 +1344,42 @@ a.pf-audience-card:hover {
   gap: 14px;
 }
 
+.pf-sub-tiers-two {
+  max-width: 880px;
+}
+
+@media (min-width: 720px) {
+  .pf-sub-tiers-two {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.pf-tier-included {
+  margin: 0 0 16px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(31, 111, 99, 0.08);
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.pf-sub-join {
+  max-width: 880px;
+  margin: -20px auto 32px;
+  padding: 0 var(--pad);
+  text-align: center;
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.pf-sub-join a {
+  font-weight: 800;
+  color: var(--coral-dark);
+}
+
 .pf-tier-compact {
   padding: 1.25rem 1.35rem;
 }
