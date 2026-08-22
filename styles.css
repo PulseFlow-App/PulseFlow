@@ -1339,3 +1339,60 @@ a.pf-audience-card:hover {
     align-items: center;
   }
 }
+
+.pf-sub-tiers-compact {
+  gap: 14px;
+}
+
+.pf-tier-compact {
+  padding: 1.25rem 1.35rem;
+}
+
+.pf-tier-list-tight {
+  gap: 0.35rem;
+  font-size: 0.92rem;
+}
+
+.pf-tier-list-tight li {
+  padding-left: 0;
+}
+
+.pf-tier-list-tight li::before {
+  display: none;
+}
+
+.pf-sub-referral-compact {
+  padding: 1.35rem 1.5rem;
+}
+
+.pf-sub-referral-compact h2 {
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.pf-sub-referral-compact .pf-sub-referral-lead {
+  margin-bottom: 1rem;
+  max-width: 36rem;
+}
+
+.pf-demo-compact .pf-demo-lead {
+  margin-bottom: 0.75rem;
+}
+
+.pf-demo-grid-compact {
+  gap: 1rem;
+}
+
+.pf-owners-close-compact {
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.pf-owners-close-compact h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.pf-owners-close-compact p {
+  display: none;
+}
