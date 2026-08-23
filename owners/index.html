@@ -6,18 +6,21 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title>For property owners · Pulse Flow Ops</title>
+    <title data-i18n="owners.meta_title">For property owners · Pulse Flow Ops</title>
     <meta
       name="description"
       content="Know what's happening across your properties. Tasks, staff, bills, maintenance, and check-ins in one place."
+      data-i18n-attr="content:owners.meta_description"
     />
     <meta name="theme-color" content="#E8623D" />
     <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="/icons/icon-192.png" />
-    <meta property="og:title" content="Pulse Flow Ops for property owners" />
+    <meta property="og:title" content="Pulse Flow Ops for property owners"
+      data-i18n-attr="content:owners.og_title" />
     <meta
       property="og:description"
       content="Know what's happening across your properties. Tasks, staff, bills, and check-ins in one place."
+      data-i18n-attr="content:owners.og_description"
     />
     <meta property="og:image" content="/icons/icon-512.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,10 +29,10 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=17" />
+    <link rel="stylesheet" href="/styles.css?v=18" />
   </head>
   <body>
-    <a class="skip" href="#main">Skip to content</a>
+    <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
 
     <div class="pf-wrap pf-owners-page">
       <header class="pf-nav pf-owners-nav">
@@ -43,23 +46,41 @@
           />
           Pulse Flow Ops
         </a>
-        <a class="pf-cta" href="https://app.pulseflow.site/login">Open app</a>
+        <div class="pf-nav-actions">
+          <label class="pf-lang">
+            <span class="pf-visually-hidden" data-i18n="nav.language"
+              >Language</span
+            >
+            <select
+              class="pf-lang-select"
+              data-locale-select
+              data-i18n-attr="aria-label:nav.language"
+              aria-label="Language"
+            ></select>
+          </label>
+          <a
+            class="pf-cta"
+            href="https://app.pulseflow.site/login"
+            data-i18n="nav.open_app"
+            >Open app</a
+          >
+        </div>
       </header>
 
       <main id="main" class="pf-owners-main">
         <section class="pf-owners-hero">
-          <p class="pf-owners-badge">For property owners</p>
-          <h1 class="pf-headline">
+          <p class="pf-owners-badge" data-i18n="owners.badge">For property owners</p>
+          <h1 class="pf-headline" data-i18n="owners.headline">
             Know what's happening across your properties.
           </h1>
-          <p class="pf-sub">
+          <p class="pf-sub" data-i18n="owners.sub">
             Tasks, staff, bills, maintenance, and check-ins in one place.
           </p>
           <div class="pf-owners-hero-actions">
-            <a class="pf-btn-primary" href="https://app.pulseflow.site/register"
+            <a class="pf-btn-primary" href="https://app.pulseflow.site/register" data-i18n="owners.cta_start"
               >Start with Pulse Flow Ops</a
             >
-            <a class="pf-owners-link" href="#demo-now">Try the demo</a>
+            <a class="pf-owners-link" href="#demo-now" data-i18n="owners.cta_demo">Try the demo</a>
           </div>
           <figure class="pf-phone pf-phone-hero">
             <img
@@ -67,6 +88,7 @@
               width="472"
               height="1024"
               alt="Owner home with occupancy, urgent tasks, and check-ins"
+              data-i18n-attr="alt:owners.hero_alt"
               loading="eager"
             />
           </figure>
@@ -75,9 +97,9 @@
         <div class="pf-owners-topics">
           <article class="pf-owners-topic">
             <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num">01 · Overview</p>
-              <h2>See everything at a glance</h2>
-              <p>
+              <p class="pf-owners-feature-num" data-i18n="owners.t1_num">01 · Overview</p>
+              <h2 data-i18n="owners.t1_title">See everything at a glance</h2>
+              <p data-i18n="owners.t1_desc">
                 Occupancy, urgent tasks, and upcoming check-ins are updated live
                 by your on-site manager. Know what needs attention without
                 opening a chat.
@@ -90,6 +112,7 @@
                   width="472"
                   height="1024"
                   alt="Dashboard with ops readiness and property statuses"
+                  data-i18n-attr="alt:owners.t1_alt1"
                   loading="lazy"
                 />
               </figure>
@@ -99,6 +122,7 @@
                   width="472"
                   height="1024"
                   alt="Urgent tasks and this week's check-ins"
+                  data-i18n-attr="alt:owners.t1_alt2"
                   loading="lazy"
                 />
               </figure>
@@ -107,9 +131,9 @@
 
           <article class="pf-owners-topic">
             <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num">02 · Properties</p>
-              <h2>Every property, status, and stay dates</h2>
-              <p>
+              <p class="pf-owners-feature-num" data-i18n="owners.t2_num">02 · Properties</p>
+              <h2 data-i18n="owners.t2_title">Every property, status, and stay dates</h2>
+              <p data-i18n="owners.t2_desc">
                 Company inventory first, then your personal list. Each card shows
                 occupancy, check-in and check-out, and location—so you and your
                 manager share the same picture without a spreadsheet.
@@ -122,6 +146,7 @@
                   width="472"
                   height="1024"
                   alt="Properties list with status, check-in and check-out dates, and location"
+                  data-i18n-attr="alt:owners.t2_alt"
                   loading="lazy"
                 />
               </figure>
@@ -130,9 +155,9 @@
 
           <article class="pf-owners-topic">
             <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num">03 · Tasks</p>
-              <h2>Every task has an owner</h2>
-              <p>
+              <p class="pf-owners-feature-num" data-i18n="owners.t3_num">03 · Tasks</p>
+              <h2 data-i18n="owners.t3_title">Every task has an owner</h2>
+              <p data-i18n="owners.t3_desc">
                 Every task has a property, deadline, and responsible person.
                 Filter by Mine or Urgent to see what needs attention now.
               </p>
@@ -144,6 +169,7 @@
                   width="472"
                   height="1024"
                   alt="Tasks list with property, deadline, and assignee"
+                  data-i18n-attr="alt:owners.t3_alt"
                   loading="lazy"
                 />
               </figure>
@@ -152,9 +178,9 @@
 
           <article class="pf-owners-topic">
             <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num">04 · Work orders</p>
-              <h2>Send clear jobs. Track them.</h2>
-              <p>
+              <p class="pf-owners-feature-num" data-i18n="owners.t4_num">04 · Work orders</p>
+              <h2 data-i18n="owners.t4_title">Send clear jobs. Track them.</h2>
+              <p data-i18n="owners.t4_desc">
                 Send the job details: what, where, and when. Contact anyone by
                 call, WhatsApp, or LINE, and see when they were contacted.
               </p>
@@ -166,6 +192,7 @@
                   width="472"
                   height="1024"
                   alt="Contacts with Order, Call, and WhatsApp actions"
+                  data-i18n-attr="alt:owners.t4_alt1"
                   loading="lazy"
                 />
               </figure>
@@ -175,6 +202,7 @@
                   width="472"
                   height="1024"
                   alt="Order form with what, where, and when"
+                  data-i18n-attr="alt:owners.t4_alt2"
                   loading="lazy"
                 />
               </figure>
@@ -183,9 +211,9 @@
 
           <article class="pf-owners-topic">
             <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num">05 · Confirmations</p>
-              <h2>Know what was seen and accepted</h2>
-              <p>
+              <p class="pf-owners-feature-num" data-i18n="owners.t5_num">05 · Confirmations</p>
+              <h2 data-i18n="owners.t5_title">Know what was seen and accepted</h2>
+              <p data-i18n="owners.t5_desc">
                 Staff confirm each job with Read &amp; Agreed before it becomes
                 assigned. Bills and job confirmations stay logged in
                 Notifications.
@@ -198,6 +226,7 @@
                   width="472"
                   height="1024"
                   alt="Team chat with a service order card"
+                  data-i18n-attr="alt:owners.t5_alt1"
                   loading="lazy"
                 />
               </figure>
@@ -207,6 +236,7 @@
                   width="472"
                   height="1024"
                   alt="Notifications with bills and job confirmations"
+                  data-i18n-attr="alt:owners.t5_alt2"
                   loading="lazy"
                 />
               </figure>
@@ -215,9 +245,9 @@
 
           <article class="pf-owners-topic">
             <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num">06 · Finances</p>
-              <h2>See what you spend</h2>
-              <p>
+              <p class="pf-owners-feature-num" data-i18n="owners.t6_num">06 · Finances</p>
+              <h2 data-i18n="owners.t6_title">See what you spend</h2>
+              <p data-i18n="owners.t6_desc">
                 Filter by period, property, or category. See total, paid, and
                 pending amounts. Approve bills in one tap.
               </p>
@@ -229,6 +259,7 @@
                   width="472"
                   height="1024"
                   alt="Finances with total, paid, and pending"
+                  data-i18n-attr="alt:owners.t6_alt1"
                   loading="lazy"
                 />
               </figure>
@@ -238,6 +269,7 @@
                   width="472"
                   height="1024"
                   alt="Pending bills with Mark paid"
+                  data-i18n-attr="alt:owners.t6_alt2"
                   loading="lazy"
                 />
               </figure>
@@ -246,9 +278,9 @@
 
           <article class="pf-owners-topic">
             <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num">07 · Performance</p>
-              <h2>Know who delivers</h2>
-              <p>
+              <p class="pf-owners-feature-num" data-i18n="owners.t7_num">07 · Performance</p>
+              <h2 data-i18n="owners.t7_title">Know who delivers</h2>
+              <p data-i18n="owners.t7_desc">
                 Rate staff and service providers weekly. Build a record of
                 performance and see who to keep, renew, or replace.
               </p>
@@ -260,6 +292,7 @@
                   width="472"
                   height="1024"
                   alt="Weekly star ratings for the team"
+                  data-i18n-attr="alt:owners.t7_alt1"
                   loading="lazy"
                 />
               </figure>
@@ -269,6 +302,7 @@
                   width="472"
                   height="1024"
                   alt="Company leaderboard by rating"
+                  data-i18n-attr="alt:owners.t7_alt2"
                   loading="lazy"
                 />
               </figure>
@@ -277,21 +311,22 @@
         </div>
 
         <section class="pf-demo" aria-labelledby="demo-now" data-demo-login>
-          <p class="pf-demo-eyebrow">Demo</p>
-          <h2 id="demo-now">Try it yourself</h2>
-          <p class="pf-demo-lead">
+          <p class="pf-demo-eyebrow" data-i18n="demo.eyebrow">Demo</p>
+          <h2 id="demo-now" data-i18n="demo.title">Try it yourself</h2>
+          <p class="pf-demo-lead" data-i18n="demo.lead">
             Choose a role. The login details are already filled in.
           </p>
 
-          <div class="pf-demo-roles" role="group" aria-label="Demo account">
+          <div class="pf-demo-roles" role="group" aria-label="Demo account" data-i18n-attr="aria-label:demo.account_label">
             <button
               type="button"
               class="pf-demo-role is-active"
               data-demo-role="owner"
+              data-i18n="demo.owner"
             >
               Owner
             </button>
-            <button type="button" class="pf-demo-role" data-demo-role="employee">
+            <button type="button" class="pf-demo-role" data-demo-role="employee" data-i18n="demo.employee">
               Employee
             </button>
           </div>
@@ -301,11 +336,11 @@
               <p class="pf-demo-kicker" data-demo-kicker>Owner demo login</p>
               <ul class="pf-demo-list">
                 <li>
-                  <span>Email</span>
+                  <span data-i18n="demo.email">Email</span>
                   <code data-demo-email>owner@pulseflow.site</code>
                 </li>
                 <li>
-                  <span>Password</span>
+                  <span data-i18n="demo.password">Password</span>
                   <code>TestPass123!</code>
                 </li>
               </ul>
@@ -313,6 +348,7 @@
                 class="pf-btn-primary pf-demo-btn"
                 data-demo-link
                 href="https://app.pulseflow.site/login?demo=owner"
+                data-i18n="demo.open_login"
                 >Open demo login</a
               >
             </div>
@@ -321,7 +357,7 @@
               <a
                 data-demo-link
                 href="https://app.pulseflow.site/login?demo=owner"
-                aria-label="Open demo login"
+                aria-label="Open demo login" data-i18n-attr="aria-label:demo.open_login"
               >
                 <img
                   class="pf-qr-img"
@@ -330,10 +366,11 @@
                   width="220"
                   height="220"
                   alt="QR code linking to prefilled demo login"
+                  data-i18n-attr="alt:demo.qr_alt"
                   loading="lazy"
                 />
               </a>
-              <p class="pf-demo-qr-caption">Scan to sign in</p>
+              <p class="pf-demo-qr-caption" data-i18n="demo.scan">Scan to sign in</p>
             </div>
           </div>
         </section>
@@ -346,8 +383,8 @@
             height="64"
             alt=""
           />
-          <h2>Open the app. See the day.</h2>
-          <a class="pf-btn-primary" href="https://app.pulseflow.site"
+          <h2 data-i18n="owners.close_title">Open the app. See the day.</h2>
+          <a class="pf-btn-primary" href="https://app.pulseflow.site" data-i18n="home.cta"
             >Open Pulse Flow Ops</a
           >
         </section>
@@ -356,17 +393,17 @@
       <footer class="pf-footer">
         <div>
           <strong>Pulse Flow Ops</strong>
-          <span>The pulse of your rental operations</span>
+          <span data-i18n="footer.tagline">The pulse of your rental operations</span>
         </div>
         <div class="pf-footer-links">
-          <a href="/">Home</a>
-          <a href="/subscription">Plans</a>
-          <a href="/terms">Terms</a>
-          <a href="/privacy">Privacy</a>
-          <a href="https://app.pulseflow.site">App</a>
+          <a href="/" data-i18n="footer.home">Home</a>
+          <a href="/subscription" data-i18n="footer.plans">Plans</a>
+          <a href="/terms" data-i18n="footer.terms">Terms</a>
+          <a href="/privacy" data-i18n="footer.privacy">Privacy</a>
+          <a href="https://app.pulseflow.site" data-i18n="footer.app">App</a>
         </div>
       </footer>
     </div>
-    <script src="/script.js?v=7" defer></script>
+    <script src="/script.js?v=8" defer></script>
   </body>
 </html>

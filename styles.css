@@ -97,6 +97,52 @@ a {
   z-index: 2;
 }
 
+.pf-nav-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.pf-lang {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.pf-lang-select {
+  appearance: none;
+  -webkit-appearance: none;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+  background: var(--paper)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%234A544F' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    no-repeat right 10px center;
+  border: 1px solid var(--sand-deep);
+  border-radius: 20px;
+  padding: 9px 28px 9px 12px;
+  min-width: 0;
+  max-width: 8.5rem;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.pf-lang-select:focus-visible {
+  outline: 2px solid var(--coral);
+  outline-offset: 2px;
+}
+
+[dir="rtl"] .pf-lang-select {
+  background-position: left 10px center;
+  padding: 9px 12px 9px 28px;
+}
+
+[dir="rtl"] .pf-nav-actions {
+  flex-direction: row-reverse;
+}
+
 .pf-logo {
   display: inline-flex;
   align-items: center;

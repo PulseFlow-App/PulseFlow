@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title>Plans · Pulse Flow Ops</title>
+    <title data-i18n="subscription.meta_title">Plans · Pulse Flow Ops</title>
     <meta
       name="description"
       content="Free for solo use and invited staff. Full for company owners — one subscription covers the team, including manager reporting."
@@ -20,10 +20,10 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=16" />
+    <link rel="stylesheet" href="/styles.css?v=18" />
   </head>
   <body>
-    <a class="skip" href="#main">Skip to content</a>
+    <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
 
     <div class="pf-wrap">
       <header class="pf-nav">
@@ -37,14 +37,32 @@
           />
           Pulse Flow Ops
         </a>
-        <a class="pf-cta" href="https://app.pulseflow.site/login">Open app</a>
+        <div class="pf-nav-actions">
+          <label class="pf-lang">
+            <span class="pf-visually-hidden" data-i18n="nav.language"
+              >Language</span
+            >
+            <select
+              class="pf-lang-select"
+              data-locale-select
+              data-i18n-attr="aria-label:nav.language"
+              aria-label="Language"
+            ></select>
+          </label>
+          <a
+            class="pf-cta"
+            href="https://app.pulseflow.site/login"
+            data-i18n="nav.open_app"
+            >Open app</a
+          >
+        </div>
       </header>
 
       <main id="main">
         <section class="pf-sub-hero">
-          <p class="pf-eyebrow">Plans</p>
-          <h1 class="pf-headline">Free, or Full.</h1>
-          <p class="pf-sub">
+          <p class="pf-eyebrow" data-i18n="subscription.eyebrow">Plans</p>
+          <h1 class="pf-headline" data-i18n="subscription.headline">Free, or Full.</h1>
+          <p class="pf-sub" data-i18n="subscription.sub">
             Use it yourself at no cost. Pay when you run the company workspace
             and invite a team.
           </p>
@@ -103,7 +121,7 @@
         </section>
 
         <section class="pf-demo pf-demo-compact" aria-labelledby="demo-now" data-demo-login>
-          <h2 id="demo-now">Demo</h2>
+          <h2 id="demo-now" data-i18n="demo.eyebrow">Demo</h2>
           <p class="pf-demo-lead">Prefilled owner or employee login.</p>
 
           <div class="pf-demo-roles" role="group" aria-label="Demo account">
@@ -111,10 +129,10 @@
               type="button"
               class="pf-demo-role is-active"
               data-demo-role="owner"
-            >
+             data-i18n="demo.role_owner">
               Owner
             </button>
-            <button type="button" class="pf-demo-role" data-demo-role="employee">
+            <button type="button" class="pf-demo-role" data-demo-role="employee" data-i18n="demo.role_employee">
               Employee
             </button>
           </div>
@@ -123,11 +141,11 @@
             <div class="pf-demo-credentials">
               <ul class="pf-demo-list">
                 <li>
-                  <span>Email</span>
+                  <span data-i18n="demo.email">Email</span>
                   <code data-demo-email>owner@pulseflow.site</code>
                 </li>
                 <li>
-                  <span>Password</span>
+                  <span data-i18n="demo.password">Password</span>
                   <code>TestPass123!</code>
                 </li>
               </ul>
@@ -169,17 +187,17 @@
       <footer class="pf-footer">
         <div>
           <strong>Pulse Flow Ops</strong>
-          <span>The pulse of your rental operations</span>
+          <span data-i18n="footer.tagline">The pulse of your rental operations</span>
         </div>
         <div class="pf-footer-links">
-          <a href="/">Home</a>
-          <a href="/subscription">Plans</a>
-          <a href="/terms">Terms</a>
-          <a href="/privacy">Privacy</a>
-          <a href="https://app.pulseflow.site">App</a>
+          <a href="/" data-i18n="footer.home">Home</a>
+          <a href="/subscription" data-i18n="footer.plans">Plans</a>
+          <a href="/terms" data-i18n="footer.terms">Terms</a>
+          <a href="/privacy" data-i18n="footer.privacy">Privacy</a>
+          <a href="https://app.pulseflow.site" data-i18n="footer.app">App</a>
         </div>
       </footer>
     </div>
-    <script src="/script.js?v=7" defer></script>
+    <script src="/script.js?v=8" defer></script>
   </body>
 </html>

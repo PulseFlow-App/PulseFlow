@@ -6,10 +6,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title>Pulse Flow Ops - The pulse of your rental operations</title>
+    <title data-i18n="home.meta_title">
+      Pulse Flow Ops - The pulse of your rental operations
+    </title>
     <meta
       name="description"
       content="Pulse Flow Ops keeps property status, jobs, contacts, and bills in one live pulse for owners, managers, and field teams."
+      data-i18n-attr="content:home.meta_description"
     />
     <meta name="theme-color" content="#E8623D" />
     <link rel="icon" href="/favicon.png" type="image/png" />
@@ -18,6 +21,7 @@
     <meta
       property="og:description"
       content="The pulse of your rental operations"
+      data-i18n-attr="content:home.og_description"
     />
     <meta property="og:image" content="/icons/icon-512.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,10 +30,10 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=15" />
+    <link rel="stylesheet" href="/styles.css?v=18" />
   </head>
   <body>
-    <a class="skip" href="#main">Skip to content</a>
+    <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
 
     <div class="pf-wrap">
       <header class="pf-nav">
@@ -43,20 +47,41 @@
           />
           Pulse Flow Ops
         </a>
-        <a class="pf-cta" href="https://app.pulseflow.site/login">Open app</a>
+        <div class="pf-nav-actions">
+          <label class="pf-lang">
+            <span class="pf-visually-hidden" data-i18n="nav.language"
+              >Language</span
+            >
+            <select
+              class="pf-lang-select"
+              data-locale-select
+              data-i18n-attr="aria-label:nav.language"
+              aria-label="Language"
+            ></select>
+          </label>
+          <a
+            class="pf-cta"
+            href="https://app.pulseflow.site/login"
+            data-i18n="nav.open_app"
+            >Open app</a
+          >
+        </div>
       </header>
 
       <main id="main">
         <section class="pf-hero">
-          <p class="pf-eyebrow">In the pulse</p>
-          <h1 class="pf-headline">
+          <p class="pf-eyebrow" data-i18n="home.eyebrow">In the pulse</p>
+          <h1 class="pf-headline" data-i18n="home.headline">
             Built for rental ops,<br />not generic <em>task lists.</em>
           </h1>
-          <p class="pf-sub">
-            Properties, jobs, contacts, and bills - one shared pulse between you and
-            your team, live on every screen.
+          <p class="pf-sub" data-i18n="home.sub">
+            Properties, jobs, contacts, and bills - one shared pulse between you
+            and your team, live on every screen.
           </p>
-          <a class="pf-btn-primary" href="https://app.pulseflow.site"
+          <a
+            class="pf-btn-primary"
+            href="https://app.pulseflow.site"
+            data-i18n="home.cta"
             >Open Pulse Flow Ops</a
           >
         </section>
@@ -77,10 +102,15 @@
               stroke-linejoin="round"
             />
           </svg>
-          Swipe the cards
+          <span data-i18n="home.swipe">Swipe the cards</span>
         </p>
 
-        <div class="pf-cards" tabindex="0" aria-label="Product features">
+        <div
+          class="pf-cards"
+          tabindex="0"
+          data-i18n-attr="aria-label:home.features_label"
+          aria-label="Product features"
+        >
           <article class="pf-card">
             <div
               class="pf-card-art"
@@ -119,8 +149,14 @@
                 />
               </svg>
             </div>
-            <h2 class="pf-tag" style="color: var(--coral-dark)">Properties</h2>
-            <p class="pf-desc">
+            <h2
+              class="pf-tag"
+              style="color: var(--coral-dark)"
+              data-i18n="home.card_properties"
+            >
+              Properties
+            </h2>
+            <p class="pf-desc" data-i18n="home.card_properties_desc">
               Status, a map pin, notes, and a property photo so staff recognize
               the place on sight.
             </p>
@@ -166,8 +202,10 @@
                 />
               </svg>
             </div>
-            <h2 class="pf-tag" style="color: var(--ink)">Jobs</h2>
-            <p class="pf-desc">
+            <h2 class="pf-tag" style="color: var(--ink)" data-i18n="home.card_jobs">
+              Jobs
+            </h2>
+            <p class="pf-desc" data-i18n="home.card_jobs_desc">
               Appointments with clear work windows, and a read &amp; agreed
               confirmation from the team.
             </p>
@@ -209,8 +247,14 @@
                 />
               </svg>
             </div>
-            <h2 class="pf-tag" style="color: var(--lagoon-dark)">Contacts</h2>
-            <p class="pf-desc">
+            <h2
+              class="pf-tag"
+              style="color: var(--lagoon-dark)"
+              data-i18n="home.card_contacts"
+            >
+              Contacts
+            </h2>
+            <p class="pf-desc" data-i18n="home.card_contacts_desc">
               Cleaners, plumbers, and electricians - one tap to call or message
               on LINE or WhatsApp.
             </p>
@@ -245,72 +289,109 @@
                 />
               </svg>
             </div>
-            <h2 class="pf-tag" style="color: var(--brass-dark)">Bills</h2>
-            <p class="pf-desc">
+            <h2
+              class="pf-tag"
+              style="color: var(--brass-dark)"
+              data-i18n="home.card_bills"
+            >
+              Bills
+            </h2>
+            <p class="pf-desc" data-i18n="home.card_bills_desc">
               Submit an expense, owner approves, everyone sees the running total
               in real time.
             </p>
           </article>
         </div>
-        <div class="pf-dots" aria-label="Feature slides"></div>
+        <div
+          class="pf-dots"
+          data-i18n-attr="aria-label:home.slides_label"
+          aria-label="Feature slides"
+        ></div>
 
         <section class="pf-audience" aria-labelledby="why-app">
-          <p class="pf-audience-eyebrow">Why this app</p>
-          <h2 id="why-app" class="pf-audience-title">
+          <p class="pf-audience-eyebrow" data-i18n="home.why_eyebrow">
+            Why this app
+          </p>
+          <h2 id="why-app" class="pf-audience-title" data-i18n="home.why_title">
             Why do you need this app?
           </h2>
-          <p class="pf-audience-lead">
+          <p class="pf-audience-lead" data-i18n="home.why_lead">
             Pick the seat that matches how you run rental properties. Open the
             guide that fits your role.
           </p>
           <div class="pf-audience-grid">
             <a class="pf-audience-card" href="/owners">
-              <h3>Are you a property owner?</h3>
-              <p>
+              <h3 data-i18n="home.audience_owner_title">
+                Are you a property owner?
+              </h3>
+              <p data-i18n="home.audience_owner_desc">
                 See occupancy, urgent work, and spend without calling for a
                 status update.
               </p>
-              <span class="pf-audience-cta">Open the owners guide</span>
+              <span class="pf-audience-cta" data-i18n="home.audience_owner_cta"
+                >Open the owners guide</span
+              >
             </a>
             <a class="pf-audience-card" href="/employees">
-              <h3>Are you a property manager?</h3>
-              <p>
+              <h3 data-i18n="home.audience_manager_title">
+                Are you a property manager?
+              </h3>
+              <p data-i18n="home.audience_manager_desc">
                 Day-to-day ops, reports for owners, and handoffs in one place.
               </p>
-              <span class="pf-audience-cta">Open the managers guide</span>
+              <span
+                class="pf-audience-cta"
+                data-i18n="home.audience_manager_cta"
+                >Open the managers guide</span
+              >
             </a>
             <a class="pf-audience-card" href="/staff">
-              <h3>Are you staff working on a few properties?</h3>
-              <p>
+              <h3 data-i18n="home.audience_staff_title">
+                Are you staff working on a few properties?
+              </h3>
+              <p data-i18n="home.audience_staff_desc">
                 Jobs, Read and agreed, and assigned properties on your phone.
               </p>
-              <span class="pf-audience-cta">Open the staff guide</span>
+              <span class="pf-audience-cta" data-i18n="home.audience_staff_cta"
+                >Open the staff guide</span
+              >
             </a>
           </div>
         </section>
 
         <section class="pf-plan" id="company" aria-labelledby="company-plans">
           <a class="pf-plan-card" href="/subscription">
-            <p class="pf-plan-eyebrow">Plans</p>
-            <h2 id="company-plans" class="pf-plan-title">
+            <p class="pf-plan-eyebrow" data-i18n="home.plan_eyebrow">Plans</p>
+            <h2
+              id="company-plans"
+              class="pf-plan-title"
+              data-i18n="home.plan_title"
+            >
               Personal is free. Company unlocks the team.
             </h2>
-            <p class="pf-plan-lead">
+            <p class="pf-plan-lead" data-i18n="home.plan_lead">
               Solo ops stay free. A company plan adds invites, assigned
               properties, chat, job booking, and team reputation.
             </p>
-            <span class="pf-plan-cta">See Free &amp; Full →</span>
+            <span class="pf-plan-cta" data-i18n="home.plan_cta"
+              >See Free &amp; Full →</span
+            >
           </a>
         </section>
 
         <section class="pf-close">
           <img src="/assets/pulse-mark.svg" width="64" height="64" alt="" />
-          <h2>Put a pulse on every rental day.</h2>
-          <p>
+          <h2 data-i18n="home.close_title">
+            Put a pulse on every rental day.
+          </h2>
+          <p data-i18n="home.close_lead">
             Open the app, invite your team, and run the next turnover from one
             place.
           </p>
-          <a class="pf-btn-primary" href="https://app.pulseflow.site"
+          <a
+            class="pf-btn-primary"
+            href="https://app.pulseflow.site"
+            data-i18n="home.cta"
             >Open Pulse Flow Ops</a
           >
         </section>
@@ -319,17 +400,19 @@
       <footer class="pf-footer">
         <div>
           <strong>Pulse Flow Ops</strong>
-          <span>The pulse of your rental operations</span>
+          <span data-i18n="footer.tagline"
+            >The pulse of your rental operations</span
+          >
         </div>
         <div class="pf-footer-links">
-          <a href="/subscription">Plans</a>
-          <a href="/terms">Terms</a>
-          <a href="/privacy">Privacy</a>
-          <a href="https://app.pulseflow.site">App</a>
+          <a href="/subscription" data-i18n="footer.plans">Plans</a>
+          <a href="/terms" data-i18n="footer.terms">Terms</a>
+          <a href="/privacy" data-i18n="footer.privacy">Privacy</a>
+          <a href="https://app.pulseflow.site" data-i18n="footer.app">App</a>
         </div>
       </footer>
     </div>
 
-    <script src="/script.js?v=7" defer></script>
+    <script src="/script.js?v=8" defer></script>
   </body>
 </html>
