@@ -1,4 +1,16 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/managers",
+      "destination": "/employees",
+      "permanent": true
+    },
+    {
+      "source": "/managers/(.*)",
+      "destination": "/employees",
+      "permanent": true
+    }
+  ]
 }
