@@ -55,7 +55,7 @@
     "card_contacts_desc": "Pulizie, idraulici ed elettricisti: un tap per chiamare o scrivere su LINE o WhatsApp.",
     "card_bills": "Fatture",
     "card_bills_desc": "Invia una spesa, il proprietario approva, tutti vedono il totale in tempo reale.",
-    "why_eyebrow": "Perché questa app",
+    "why_eyebrow": "Il tuo ruolo",
     "why_title": "Perché ti serve questa app?",
     "why_lead": "Scegli il posto che corrisponde a come gestisci gli affitti. Apri la guida del tuo ruolo.",
     "audience_owner_title": "Sei un proprietario?",
@@ -72,7 +72,8 @@
     "plan_lead": "Il solo resta gratis. Il piano azienda aggiunge inviti, proprietà assegnate, chat, prenotazione lavori e reputazione del team.",
     "plan_cta": "Vedi Free e Full →",
     "close_title": "Metti un polso su ogni giorno di affitto.",
-    "close_lead": "Apri l'app, invita il team e gestisci il prossimo turnover da un solo posto."
+    "close_lead": "Apri l'app, invita il team e gestisci il prossimo turnover da un solo posto.",
+    "cta_secondary": "Scopri di più"
   },
   "owners": {
     "meta_title": "Per i proprietari · Pulse Flow Ops",

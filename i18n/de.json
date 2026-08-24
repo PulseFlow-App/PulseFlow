@@ -55,7 +55,7 @@
     "card_contacts_desc": "Reinigung, Klempner, Elektriker – ein Tippen zum Anrufen oder Schreiben über LINE oder WhatsApp.",
     "card_bills": "Rechnungen",
     "card_bills_desc": "Ausgabe einreichen, Eigentümer genehmigt, alle sehen die laufende Summe in Echtzeit.",
-    "why_eyebrow": "Warum diese App",
+    "why_eyebrow": "Ihre Rolle",
     "why_title": "Warum brauchen Sie diese App?",
     "why_lead": "Wählen Sie den Platz, der zu Ihrer Art passt, Mietobjekte zu führen. Öffnen Sie den Leitfaden für Ihre Rolle.",
     "audience_owner_title": "Sind Sie Eigentümer?",
@@ -72,7 +72,8 @@
     "plan_lead": "Solo bleibt gratis. Der Firmenplan bringt Einladungen, zugewiesene Objekte, Chat, Jobbuchung und Team-Reputation.",
     "plan_cta": "Free & Full ansehen →",
     "close_title": "Legen Sie einen Puls auf jeden Miettag.",
-    "close_lead": "App öffnen, Team einladen und den nächsten Turnover von einem Ort aus steuern."
+    "close_lead": "App öffnen, Team einladen und den nächsten Turnover von einem Ort aus steuern.",
+    "cta_secondary": "Mehr erfahren"
   },
   "owners": {
     "meta_title": "Für Eigentümer · Pulse Flow Ops",

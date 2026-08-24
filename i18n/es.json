@@ -55,7 +55,7 @@
     "card_contacts_desc": "Limpieza, fontaneros y electricistas: un toque para llamar o escribir por LINE o WhatsApp.",
     "card_bills": "Facturas",
     "card_bills_desc": "Envía un gasto, el dueño aprueba y todos ven el total en tiempo real.",
-    "why_eyebrow": "Por qué esta app",
+    "why_eyebrow": "Tu rol",
     "why_title": "¿Por qué necesitas esta app?",
     "why_lead": "Elige el asiento que encaja con cómo gestionas alquileres. Abre la guía de tu rol.",
     "audience_owner_title": "¿Eres propietario?",
@@ -72,7 +72,8 @@
     "plan_lead": "Solo sigue gratis. El plan empresa añade invitaciones, propiedades asignadas, chat, reservas de trabajos y reputación del equipo.",
     "plan_cta": "Ver Free y Full →",
     "close_title": "Pon un pulso en cada día de alquiler.",
-    "close_lead": "Abre la app, invita a tu equipo y gestiona el próximo turnover desde un solo lugar."
+    "close_lead": "Abre la app, invita a tu equipo y gestiona el próximo turnover desde un solo lugar.",
+    "cta_secondary": "Más información"
   },
   "owners": {
     "meta_title": "Para propietarios · Pulse Flow Ops",

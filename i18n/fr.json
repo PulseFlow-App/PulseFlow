@@ -55,7 +55,7 @@
     "card_contacts_desc": "Femmes de ménage, plombiers, électriciens — un tap pour appeler ou écrire sur LINE ou WhatsApp.",
     "card_bills": "Factures",
     "card_bills_desc": "Soumettez une dépense, le propriétaire valide, tout le monde voit le total en temps réel.",
-    "why_eyebrow": "Pourquoi cette app",
+    "why_eyebrow": "Votre rôle",
     "why_title": "Pourquoi avez-vous besoin de cette app ?",
     "why_lead": "Choisissez le siège qui correspond à votre façon de gérer. Ouvrez le guide adapté à votre rôle.",
     "audience_owner_title": "Vous êtes propriétaire ?",
@@ -72,7 +72,8 @@
     "plan_lead": "Le solo reste gratuit. L'offre entreprise ajoute invitations, biens assignés, chat, réservation de missions et réputation d'équipe.",
     "plan_cta": "Voir Free & Full →",
     "close_title": "Mettez un pulse sur chaque jour de location.",
-    "close_lead": "Ouvrez l'app, invitez votre équipe, et gérez le prochain turnover depuis un seul endroit."
+    "close_lead": "Ouvrez l'app, invitez votre équipe, et gérez le prochain turnover depuis un seul endroit.",
+    "cta_secondary": "En savoir plus"
   },
   "owners": {
     "meta_title": "Pour les propriétaires · Pulse Flow Ops",
