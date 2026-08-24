@@ -3,6 +3,16 @@
   "cleanUrls": true,
   "redirects": [
     {
+      "source": "/subscription",
+      "destination": "/#plans",
+      "permanent": false
+    },
+    {
+      "source": "/subscription/(.*)",
+      "destination": "/#plans",
+      "permanent": false
+    },
+    {
       "source": "/managers",
       "destination": "/employees",
       "permanent": true

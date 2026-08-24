@@ -30,7 +30,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=19" />
+    <link rel="stylesheet" href="/styles.css?v=20" />
   </head>
   <body>
     <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
@@ -369,8 +369,8 @@
           </div>
         </section>
 
-        <section class="pf-plan" id="company" aria-labelledby="company-plans">
-          <a class="pf-plan-card" href="/subscription">
+        <section class="pf-plan" id="plans" aria-labelledby="company-plans">
+          <div class="pf-plan-card pf-plan-card-static">
             <p class="pf-plan-eyebrow" data-i18n="home.plan_eyebrow">Plans</p>
             <h2
               id="company-plans"
@@ -379,15 +379,122 @@
             >
               Personal and Company
             </h2>
-            <p class="pf-plan-lead" data-i18n="home.plan_lead">
-              Personal is free. Company is paid by the owner, and invited staff
-              use the app for free. Subscription billing is coming soon.
-              Meanwhile, enjoy the free app and share it with friends.
+            <ul class="pf-plan-options">
+              <li>
+                <strong data-i18n="home.plan_personal_label">Personal</strong>
+                <span data-i18n="home.plan_personal_desc"
+                  >Use the app on your own</span
+                >
+              </li>
+              <li>
+                <strong data-i18n="home.plan_company_label">Company</strong>
+                <span data-i18n="home.plan_company_desc"
+                  >Create a company account and invite employees</span
+                >
+              </li>
+            </ul>
+            <p class="pf-plan-note" data-i18n="home.plan_note">
+              Subscription billing is coming soon. At this moment, all registered
+              users are guaranteed 3 months full trial.
             </p>
-            <span class="pf-plan-cta" data-i18n="home.plan_cta"
-              >See Free &amp; Full →</span
+            <a
+              class="pf-btn-primary pf-plan-start"
+              href="https://app.pulseflow.site/register"
+              data-i18n="home.plan_cta"
+              >Start free</a
             >
-          </a>
+          </div>
+        </section>
+
+        <section
+          class="pf-sub-referral pf-sub-referral-compact"
+          id="referral"
+          aria-labelledby="referral-heading"
+        >
+          <h2 id="referral-heading" data-i18n="home.referral_title">
+            Invite 5 people → Get 1 year Full free
+          </h2>
+          <p class="pf-sub-referral-lead" data-i18n="home.referral_lead">
+            Copy your referral link in Profile. You can invite people to your
+            company, or simply to the app itself, both cases count.
+          </p>
+        </section>
+
+        <section
+          class="pf-demo pf-demo-compact"
+          id="demo-now"
+          aria-labelledby="demo-heading"
+          data-demo-login
+        >
+          <h2 id="demo-heading" data-i18n="home.demo_title">Demo</h2>
+          <p class="pf-demo-lead" data-i18n="home.demo_lead">
+            Prefilled owner or employee login.
+          </p>
+
+          <div
+            class="pf-demo-roles"
+            role="group"
+            aria-label="Demo account"
+            data-i18n-attr="aria-label:demo.account_label"
+          >
+            <button
+              type="button"
+              class="pf-demo-role is-active"
+              data-demo-role="owner"
+              data-i18n="demo.role_owner"
+            >
+              Owner
+            </button>
+            <button
+              type="button"
+              class="pf-demo-role"
+              data-demo-role="employee"
+              data-i18n="demo.role_employee"
+            >
+              Employee
+            </button>
+          </div>
+
+          <div class="pf-demo-grid pf-demo-grid-compact">
+            <div class="pf-demo-credentials">
+              <ul class="pf-demo-list">
+                <li>
+                  <span data-i18n="demo.email">Email</span>
+                  <code data-demo-email>owner@pulseflow.site</code>
+                </li>
+                <li>
+                  <span data-i18n="demo.password">Password</span>
+                  <code>TestPass123!</code>
+                </li>
+              </ul>
+              <a
+                class="pf-btn-primary pf-demo-btn"
+                data-demo-link
+                href="https://app.pulseflow.site/login?demo=owner"
+                data-i18n="demo.open_demo"
+                >Open demo</a
+              >
+            </div>
+            <div class="pf-demo-qr">
+              <a
+                data-demo-link
+                href="https://app.pulseflow.site/login?demo=owner"
+                data-i18n-attr="aria-label:demo.open_login"
+                aria-label="Open demo login"
+              >
+                <img
+                  class="pf-qr-img"
+                  data-demo-qr
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Fapp.pulseflow.site%2Flogin%3Fdemo%3Downer"
+                  width="180"
+                  height="180"
+                  alt=""
+                  data-i18n-attr="alt:demo.qr_alt"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+          </div>
         </section>
 
         <section class="pf-close">
@@ -416,7 +523,7 @@
           >
         </div>
         <div class="pf-footer-links">
-          <a href="/subscription" data-i18n="footer.plans">Plans</a>
+          <a href="/#plans" data-i18n="footer.plans">Plans</a>
           <a href="/terms" data-i18n="footer.terms">Terms</a>
           <a href="/privacy" data-i18n="footer.privacy">Privacy</a>
           <a href="https://app.pulseflow.site" data-i18n="footer.app">App</a>

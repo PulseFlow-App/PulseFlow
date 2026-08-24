@@ -470,7 +470,11 @@ a.pf-audience-card:hover {
     box-shadow 0.25s var(--ease);
 }
 
-.pf-plan-card:hover {
+.pf-plan-card-static {
+  cursor: default;
+}
+
+.pf-plan-card:not(.pf-plan-card-static):hover {
   transform: translateY(-2px);
   border-color: rgba(232, 98, 61, 0.35);
   box-shadow: 0 14px 32px rgba(22, 35, 31, 0.08);
@@ -498,6 +502,46 @@ a.pf-audience-card:hover {
   color: var(--ink-soft);
   font-size: 15px;
   line-height: 1.45;
+}
+
+.pf-plan-options {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.pf-plan-options li {
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: var(--sand);
+}
+
+.pf-plan-options strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.pf-plan-options span {
+  display: block;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+.pf-plan-note {
+  margin: 14px 0 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+.pf-plan-start {
+  width: 100%;
+  justify-content: center;
 }
 
 .pf-plan-cta {
