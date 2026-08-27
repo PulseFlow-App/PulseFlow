@@ -10,7 +10,8 @@
     "plans": "Offres",
     "terms": "Conditions",
     "privacy": "Confidentialité",
-    "app": "App"
+    "app": "App",
+    "support": "Assistance"
   },
   "demo": {
     "eyebrow": "Démo",
@@ -78,9 +79,9 @@
     "plan_personal_desc": "Utilisez l'app seul",
     "plan_company_label": "Entreprise",
     "plan_company_desc": "Créez un compte entreprise et invitez des employés",
-    "plan_note": "La facturation arrive bientôt. Pour l'instant, tous les inscrits ont 3 mois d'essai Full garantis.",
+    "plan_note": "La facturation n'est pas encore active. D'ici là, chaque utilisateur inscrit bénéficie de 3 mois de fonctionnalités complètes gratuites.",
     "referral_title": "Invitez 5 personnes → 1 an Full offert",
-    "referral_lead": "Copiez votre lien de parrainage dans Profil. Invitez vers votre entreprise ou simplement vers l'app - les deux comptent.",
+    "referral_lead": "Copiez votre lien de parrainage dans Profil. Inviter vers l'app ou comme staff dans votre entreprise compte tous les deux. Quand la facturation démarre, 5 inscriptions créditées débloquent 1 an Full à partir de cette date.",
     "demo_title": "Démo",
     "demo_lead": "Connexion propriétaire ou employé préremplie."
   },
@@ -237,14 +238,14 @@
     "free_cta": "Commencer gratuitement",
     "full_name": "Full",
     "full_who": "Pour les propriétaires. Payez une fois, toute l'entreprise en profite.",
-    "full_li1": "Essai 30 jours, puis un abonnement propriétaire",
+    "full_li1": "3 mois d accès complet maintenant; abonnement owner quand la facturation sera active",
     "full_li2": "Inviter l'équipe, assigner des biens, chat d'équipe",
     "full_li3": "Ordres de service, endorsements, finances propriétaire",
     "full_included": "Les gestionnaires invités ont le reporting complet automatiquement. Pas de frais par siège.",
     "full_cta": "Démarrer l'essai entreprise",
     "join": "Déjà invité dans une équipe ? Rejoignez avec votre lien",
     "referral_title": "Invitez 5 personnes → 1 an Full offert",
-    "referral_lead": "Copiez votre lien de parrainage dans Profil. Vous pouvez inviter vers votre entreprise, ou simplement vers l'app - les deux comptent.",
+    "referral_lead": "Copiez votre lien de parrainage dans Profil. Inviter vers l'app ou comme staff dans votre entreprise compte tous les deux. Quand la facturation démarre, 5 inscriptions créditées débloquent 1 an Full à partir de cette date.",
     "demo_title": "Démo",
     "demo_lead": "Connexion propriétaire ou employé préremplie.",
     "close_title": "Votre offre vit dans Profil",

@@ -10,7 +10,8 @@
     "plans": "Piani",
     "terms": "Termini",
     "privacy": "Privacy",
-    "app": "App"
+    "app": "App",
+    "support": "Supporto"
   },
   "demo": {
     "eyebrow": "Demo",
@@ -78,9 +79,9 @@
     "plan_personal_desc": "Usa l'app da solo",
     "plan_company_label": "Azienda",
     "plan_company_desc": "Crea un account azienda e invita dipendenti",
-    "plan_note": "La fatturazione arriverà presto. Ora tutti gli iscritti hanno 3 mesi di prova Full garantiti.",
+    "plan_note": "La fatturazione non è ancora attiva. Fino ad allora ogni utente registrato ottiene 3 mesi di funzioni complete gratis.",
     "referral_title": "Invita 5 persone → 1 anno Full gratis",
-    "referral_lead": "Copia il link referral nel Profilo. Puoi invitare in azienda o solo all'app: entrambi contano.",
+    "referral_lead": "Copia il link referral nel Profilo. Invitare all app o come staff nella tua azienda conta in entrambi i casi. Quando parte la fatturazione, 5 iscrizioni accreditate sbloccano 1 anno Full da quella data.",
     "demo_title": "Demo",
     "demo_lead": "Login proprietario o dipendente precompilato."
   },
@@ -237,14 +238,14 @@
     "free_cta": "Inizia gratis",
     "full_name": "Full",
     "full_who": "Per i proprietari. Paga una volta, tutta l'azienda ce l'ha.",
-    "full_li1": "Prova 30 giorni, poi un abbonamento proprietario",
+    "full_li1": "3 mesi di accesso completo ora; abbonamento owner quando la fatturazione sarà attiva",
     "full_li2": "Invita team, assegna proprietà, chat di team",
     "full_li3": "Ordini di servizio, endorsement, finanze proprietario",
     "full_included": "I manager invitati hanno reporting completo automaticamente. Nessun costo per posto.",
     "full_cta": "Avvia prova azienda",
     "join": "Già invitato in un team? Entra con il tuo link",
     "referral_title": "Invita 5 persone → 1 anno Full gratis",
-    "referral_lead": "Copia il link referral nel Profilo. Puoi invitare nella tua azienda o semplicemente all'app: entrambi contano.",
+    "referral_lead": "Copia il link referral nel Profilo. Invitare all app o come staff nella tua azienda conta in entrambi i casi. Quando parte la fatturazione, 5 iscrizioni accreditate sbloccano 1 anno Full da quella data.",
     "demo_title": "Demo",
     "demo_lead": "Login proprietario o dipendente precompilato.",
     "close_title": "Il tuo piano vive nel Profilo",

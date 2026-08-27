@@ -10,7 +10,8 @@
     "plans": "Pläne",
     "terms": "AGB",
     "privacy": "Datenschutz",
-    "app": "App"
+    "app": "App",
+    "support": "Support"
   },
   "demo": {
     "eyebrow": "Demo",
@@ -78,9 +79,9 @@
     "plan_personal_desc": "Nutzen Sie die App allein",
     "plan_company_label": "Firma",
     "plan_company_desc": "Erstellen Sie ein Firmenkonto und laden Sie Mitarbeiter ein",
-    "plan_note": "Abrechnung kommt bald. Aktuell erhalten alle registrierten Nutzer 3 Monate Full-Test garantiert.",
+    "plan_note": "Die Abrechnung ist noch nicht aktiv. Bis dahin erhalten alle registrierten Nutzer 3 Monate volle Funktionen kostenlos.",
     "referral_title": "5 Personen einladen → 1 Jahr Full gratis",
-    "referral_lead": "Kopieren Sie Ihren Empfehlungslink im Profil. Einladen in Ihre Firma oder einfach zur App - beides zählt.",
+    "referral_lead": "Kopieren Sie Ihren Empfehlungslink im Profil. Einladung zur App oder als Mitarbeiter in Ihre Firma zählt. Wenn die Abrechnung startet, schalten 5 gutgeschriebene Beitritte 1 Jahr Full ab diesem Datum frei.",
     "demo_title": "Demo",
     "demo_lead": "Vorausgefüllter Eigentümer- oder Mitarbeiter-Login."
   },
@@ -237,14 +238,14 @@
     "free_cta": "Kostenlos starten",
     "full_name": "Full",
     "full_who": "Für Eigentümer. Einmal zahlen, die ganze Firma bekommt es.",
-    "full_li1": "30-Tage-Test, dann ein Eigentümer-Abo",
+    "full_li1": "3 Monate voller Zugang jetzt; Owner-Abo wenn Abrechnung live ist",
     "full_li2": "Team einladen, Objekte zuweisen, Team-Chat",
     "full_li3": "Serviceaufträge, Empfehlungen, Eigentümer-Finanzen",
     "full_included": "Eingeladene Manager bekommen Reporting automatisch. Keine Extra-Sitzplätze.",
     "full_cta": "Firmen-Test starten",
     "join": "Schon eingeladen? Mit Ihrem Link beitreten",
     "referral_title": "5 Personen einladen → 1 Jahr Full gratis",
-    "referral_lead": "Kopieren Sie Ihren Empfehlungslink im Profil. Einladen in Ihre Firma oder einfach zur App - beides zählt.",
+    "referral_lead": "Kopieren Sie Ihren Empfehlungslink im Profil. Einladung zur App oder als Mitarbeiter in Ihre Firma zählt. Wenn die Abrechnung startet, schalten 5 gutgeschriebene Beitritte 1 Jahr Full ab diesem Datum frei.",
     "demo_title": "Demo",
     "demo_lead": "Vorausgefüllter Eigentümer- oder Mitarbeiter-Login.",
     "close_title": "Ihr Plan lebt im Profil",

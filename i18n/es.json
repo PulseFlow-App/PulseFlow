@@ -10,7 +10,8 @@
     "plans": "Planes",
     "terms": "Términos",
     "privacy": "Privacidad",
-    "app": "App"
+    "app": "App",
+    "support": "Soporte"
   },
   "demo": {
     "eyebrow": "Demo",
@@ -78,9 +79,9 @@
     "plan_personal_desc": "Usa la app por tu cuenta",
     "plan_company_label": "Empresa",
     "plan_company_desc": "Crea una cuenta de empresa e invita empleados",
-    "plan_note": "La facturación llegará pronto. Por ahora, todos los registrados tienen 3 meses de prueba Full garantizados.",
+    "plan_note": "La facturación aún no está activa. Hasta entonces, cada usuario registrado obtiene 3 meses de funciones completas gratis.",
     "referral_title": "Invita a 5 personas → 1 año Full gratis",
-    "referral_lead": "Copia tu enlace de referido en Perfil. Puedes invitar a tu empresa o solo a la app: ambos cuentan.",
+    "referral_lead": "Copia tu enlace de referido en Perfil. Invitar a la app o como staff a tu empresa cuenta en ambos casos. Cuando empiece la facturación, 5 registros acreditados desbloquean 1 año Full desde esa fecha.",
     "demo_title": "Demo",
     "demo_lead": "Login de propietario o empleado precargado."
   },
@@ -237,14 +238,14 @@
     "free_cta": "Empezar gratis",
     "full_name": "Full",
     "full_who": "Para propietarios. Paga una vez y toda la empresa lo tiene.",
-    "full_li1": "Prueba de 30 días, luego una suscripción de propietario",
+    "full_li1": "3 meses de acceso completo ahora; suscripción del owner cuando la facturación esté activa",
     "full_li2": "Invitar equipo, asignar propiedades, chat de equipo",
     "full_li3": "Órdenes de servicio, endosos, finanzas del propietario",
     "full_included": "Los gestores invitados obtienen reporting completo automáticamente. Sin cargos por plaza.",
     "full_cta": "Empezar prueba de empresa",
     "join": "¿Ya te invitaron a un equipo? Únete con tu enlace",
     "referral_title": "Invita a 5 personas → 1 año Full gratis",
-    "referral_lead": "Copia tu enlace de referido en Perfil. Puedes invitar a tu empresa o solo a la app: ambos cuentan.",
+    "referral_lead": "Copia tu enlace de referido en Perfil. Invitar a la app o como staff a tu empresa cuenta en ambos casos. Cuando empiece la facturación, 5 registros acreditados desbloquean 1 año Full desde esa fecha.",
     "demo_title": "Demo",
     "demo_lead": "Login de propietario o empleado precargado.",
     "close_title": "Tu plan vive en Perfil",

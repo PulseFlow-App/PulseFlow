@@ -6,10 +6,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title>Privacy Policy · Pulse Flow Ops</title>
+    <title data-i18n="privacy.meta_title">Privacy Policy · Pulse Flow Ops</title>
     <meta
       name="description"
       content="Privacy Policy for Pulse Flow Ops: how we handle account and operations data."
+      data-i18n-attr="content:privacy.meta_description"
     />
     <meta name="theme-color" content="#E8623D" />
     <link rel="icon" href="/favicon.png" type="image/png" />
@@ -19,10 +20,10 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=7" />
+    <link rel="stylesheet" href="/styles.css?v=8" />
   </head>
   <body>
-    <a class="skip" href="#main">Skip to content</a>
+    <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
     <div class="pf-wrap">
       <header class="pf-nav">
         <a class="pf-logo" href="/">
@@ -35,143 +36,193 @@
           />
           Pulse Flow Ops
         </a>
-        <a class="pf-cta" href="https://app.pulseflow.site/login">Open app</a>
+        <div class="pf-nav-actions">
+          <label class="pf-lang">
+            <span class="pf-visually-hidden" data-i18n="nav.language"
+              >Language</span
+            >
+            <select
+              class="pf-lang-select"
+              data-locale-select
+              data-i18n-attr="aria-label:nav.language"
+              aria-label="Language"
+            ></select>
+          </label>
+          <a
+            class="pf-cta"
+            href="https://app.pulseflow.site/login"
+            data-i18n="nav.open_app"
+            >Open app</a
+          >
+        </div>
       </header>
 
       <main id="main" class="pf-legal">
-        <p class="pf-legal-kicker">Legal</p>
-        <h1>Privacy Policy</h1>
-        <p class="pf-legal-meta">Pulse Flow Ops · Last updated: 13 August 2026</p>
+        <p class="pf-legal-kicker" data-i18n="privacy.kicker">Legal</p>
+        <h1 data-i18n="privacy.title">Privacy Policy</h1>
+        <p class="pf-legal-meta" data-i18n="privacy.updated">
+          Pulse Flow Ops · Last updated: 27 August 2026
+        </p>
 
-        <p>
+        <p data-i18n="privacy.intro">
           This Privacy Policy explains how Pulse Flow Ops collects, uses, and
           shares information when you use pulseflow.site, app.pulseflow.site, and
           related services (the “Service”).
         </p>
 
-        <h2>1. Information we collect</h2>
+        <h2 data-i18n="privacy.s1_title">1. Information we collect</h2>
         <ul>
-          <li>
+          <li data-i18n="privacy.s1_li1">
             <strong>Account data:</strong> name, email, role, organization, and
             authentication identifiers.
           </li>
-          <li>
-            <strong>Operations data:</strong> properties, tasks, contacts, messages,
-            service orders, bills, endorsements, notifications, and related
-            metadata.
+          <li data-i18n="privacy.s1_li2">
+            <strong>Operations data:</strong> properties, tasks, contacts,
+            messages, service orders, bills, endorsements, notifications, and
+            related metadata.
           </li>
-          <li>
-            <strong>Files:</strong> property photos and receipt images you upload.
+          <li data-i18n="privacy.s1_li3">
+            <strong>Files:</strong> property photos and receipt images you
+            upload.
           </li>
-          <li>
-            <strong>Billing data:</strong> Stripe processes card details for
-            company subscriptions. We store Stripe customer and subscription IDs,
-            not full card numbers.
+          <li data-i18n="privacy.s1_li4">
+            <strong>Billing data:</strong> when company billing is enabled,
+            Stripe processes card details. We store Stripe customer and
+            subscription IDs, not full card numbers.
           </li>
-          <li>
+          <li data-i18n="privacy.s1_li5">
+            <strong>Referral data:</strong> referral codes, invite links, and
+            join records used to track referral rewards.
+          </li>
+          <li data-i18n="privacy.s1_li6">
             <strong>Technical data:</strong> device/browser type, IP address,
             and basic usage logs needed to secure and operate the Service.
           </li>
         </ul>
 
-        <h2>2. How we use information</h2>
+        <h2 data-i18n="privacy.s2_title">2. How we use information</h2>
         <ul>
-          <li>Provide and improve rental operations features</li>
-          <li>Authenticate users and enforce organization roles</li>
-          <li>Send in-app notifications (jobs, chat, bills)</li>
-          <li>Process company subscriptions and prevent abuse</li>
-          <li>Respond to support requests and legal obligations</li>
+          <li data-i18n="privacy.s2_li1">
+            Provide and improve rental operations features
+          </li>
+          <li data-i18n="privacy.s2_li2">
+            Authenticate users and enforce organization roles
+          </li>
+          <li data-i18n="privacy.s2_li3">
+            Send in-app notifications (jobs, chat, bills)
+          </li>
+          <li data-i18n="privacy.s2_li4">
+            Process company subscriptions and referral rewards when billing is
+            active
+          </li>
+          <li data-i18n="privacy.s2_li5">
+            Respond to support requests and legal obligations
+          </li>
         </ul>
-        <p>We do not sell your personal information.</p>
+        <p data-i18n="privacy.s2_no_sell">
+          We do not sell your personal information.
+        </p>
 
-        <h2>3. Sharing</h2>
-        <p>We share data only as needed with:</p>
+        <h2 data-i18n="privacy.s3_title">3. Sharing</h2>
+        <p data-i18n="privacy.s3_intro">We share data only as needed with:</p>
         <ul>
-          <li>
+          <li data-i18n="privacy.s3_li1">
             Infrastructure providers (hosting, database, storage, auth) that
             process data on our instructions
           </li>
-          <li>Stripe for company payments</li>
-          <li>
+          <li data-i18n="privacy.s3_li2">
+            Stripe for company payments when billing is enabled
+          </li>
+          <li data-i18n="privacy.s3_li3">
             Your organization: teammates you invite can see data according to
             their role
           </li>
-          <li>
+          <li data-i18n="privacy.s3_li4">
             Authorities when required by law or to protect the Service and users
           </li>
         </ul>
 
-        <h2>4. Retention</h2>
-        <p>
-          We retain account and operations data while your organization is
-          active and for a reasonable period afterward for backups, disputes,
-          and legal compliance. You may request deletion of your account; some
-          records may remain where required by law (for example billing
-          history).
+        <h2 data-i18n="privacy.s4_title">4. Retention</h2>
+        <p data-i18n="privacy.s4_body">
+          We retain account and operations data while your organization is active
+          and for a reasonable period afterward for backups, disputes, and legal
+          compliance. You may request deletion of your account; some records may
+          remain where required by law (for example billing history).
         </p>
 
-        <h2>5. Security</h2>
-        <p>
+        <h2 data-i18n="privacy.s5_title">5. Security</h2>
+        <p data-i18n="privacy.s5_body">
           We use industry-standard safeguards. No method of transmission or
           storage is 100% secure; use strong passwords and limit who you invite.
         </p>
 
-        <h2>6. Your choices</h2>
+        <h2 data-i18n="privacy.s6_title">6. Your choices</h2>
         <ul>
-          <li>Update profile and organization settings in the app</li>
-          <li>Manage or cancel company billing via the billing portal</li>
-          <li>
+          <li data-i18n="privacy.s6_li1">
+            Update profile and organization settings in the app
+          </li>
+          <li data-i18n="privacy.s6_li2">
+            Manage or cancel company billing via the billing portal when
+            available
+          </li>
+          <li data-i18n="privacy.s6_li3">
             Contact us to access, correct, or delete personal data where
             applicable
           </li>
         </ul>
 
-        <h2>7. International use</h2>
-        <p>
+        <h2 data-i18n="privacy.s7_title">7. International use</h2>
+        <p data-i18n="privacy.s7_body">
           The Service may be hosted in regions chosen by our providers. If you
           use Pulse Flow Ops from another country, your information may be
           processed outside your home jurisdiction.
         </p>
 
-        <h2>8. Children</h2>
-        <p>
+        <h2 data-i18n="privacy.s8_title">8. Children</h2>
+        <p data-i18n="privacy.s8_body">
           The Service is for business operations and is not directed at children
           under 16. We do not knowingly collect data from children.
         </p>
 
-        <h2>9. Changes</h2>
-        <p>
+        <h2 data-i18n="privacy.s9_title">9. Changes</h2>
+        <p data-i18n="privacy.s9_body">
           We may update this Policy and will post the new version with a revised
           date. Continued use after changes means you accept the updated Policy.
         </p>
 
-        <h2>10. Contact</h2>
-        <p>
+        <h2 data-i18n="privacy.s10_title">10. Contact</h2>
+        <p data-i18n="privacy.s10_body">
           Privacy questions:
-          <a href="mailto:hello@pulseflow.site">hello@pulseflow.site</a>. See
-          also our <a href="/terms.html">Terms of Service</a>.
+          <a href="mailto:support@pulseflow.site">support@pulseflow.site</a>.
+          See also our <a href="/terms">Terms of Service</a>.
         </p>
 
         <p class="pf-legal-nav">
-          <a href="/terms.html">Terms of Service</a>
-          <a href="/">Back to home</a>
-          <a href="https://app.pulseflow.site">Open app</a>
+          <a href="/terms" data-i18n="privacy.nav_terms">Terms of Service</a>
+          <a href="/" data-i18n="privacy.nav_home">Back to home</a>
+          <a href="https://app.pulseflow.site" data-i18n="privacy.nav_app"
+            >Open app</a
+          >
         </p>
       </main>
 
       <footer class="pf-footer">
         <div>
           <strong>Pulse Flow Ops</strong>
-          <span>The pulse of your rental operations</span>
+          <span data-i18n="footer.tagline"
+            >The pulse of your rental operations</span
+          >
         </div>
         <div class="pf-footer-links">
-          <a href="/">Home</a>
-          <a href="/#plans">Plans</a>
-          <a href="/terms">Terms</a>
-          <a href="/privacy">Privacy</a>
-          <a href="https://app.pulseflow.site">App</a>
+          <a href="/" data-i18n="footer.home">Home</a>
+          <a href="/#plans" data-i18n="footer.plans">Plans</a>
+          <a href="/terms" data-i18n="footer.terms">Terms</a>
+          <a href="/privacy" data-i18n="footer.privacy">Privacy</a>
+          <a href="mailto:support@pulseflow.site" data-i18n="footer.support">Support</a>
+          <a href="https://app.pulseflow.site" data-i18n="footer.app">App</a>
         </div>
       </footer>
     </div>
+    <script src="/script.js?v=9" defer></script>
   </body>
 </html>
