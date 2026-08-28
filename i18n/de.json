@@ -38,8 +38,8 @@
     "open": "Open demo login"
   },
   "home": {
-    "meta_title": "Pulse Flow Ops - Der Puls Ihrer Mietbetriebe",
-    "meta_description": "Pulse Flow Ops hält Objektstatus, Jobs, Kontakte und Rechnungen in einem gemeinsamen Puls für Eigentümer, Manager und Teams vor Ort.",
+    "meta_title": "Pulse Flow - Der Puls Ihrer Mietbetriebe",
+    "meta_description": "Pulse Flow hält Objektstatus, Jobs, Kontakte und Rechnungen in einem gemeinsamen Puls für Eigentümer, Manager und Teams vor Ort.",
     "og_description": "Der Puls Ihrer Mietbetriebe",
     "eyebrow": "Im Puls",
     "headline": "Alle Immobilien-Ops in einer App steuern",
@@ -86,14 +86,14 @@
     "demo_lead": "Vorausgefüllter Eigentümer- oder Mitarbeiter-Login."
   },
   "owners": {
-    "meta_title": "Für Eigentümer · Pulse Flow Ops",
+    "meta_title": "Für Eigentümer · Pulse Flow",
     "meta_description": "Wissen, was auf Ihren Objekten passiert. Aufgaben, Team, Rechnungen, Wartung und Check-ins an einem Ort.",
-    "og_title": "Pulse Flow Ops für Eigentümer",
+    "og_title": "Pulse Flow für Eigentümer",
     "og_description": "Wissen, was auf Ihren Objekten passiert. Aufgaben, Team, Rechnungen und Check-ins an einem Ort.",
     "badge": "Für Eigentümer",
     "headline": "Wissen, was auf Ihren Objekten passiert.",
     "sub": "Aufgaben, Team, Rechnungen, Wartung und Check-ins an einem Ort.",
-    "cta_start": "Mit Pulse Flow Ops starten",
+    "cta_start": "Mit Pulse Flow starten",
     "cta_demo": "Demo testen",
     "hero_alt": "Eigentümer-Home mit Belegung, dringenden Aufgaben und Check-ins",
     "t1_num": "01 · Überblick",
@@ -132,14 +132,14 @@
     "close_title": "App öffnen. Den Tag sehen."
   },
   "employees": {
-    "meta_title": "Für Objektmanager · Pulse Flow Ops",
+    "meta_title": "Für Objektmanager · Pulse Flow",
     "meta_description": "Tagesgeschäft der Miet-Ops aus einem Puls steuern. Objekte, Aufgaben, Aufträge, Rechnungen und Teamleistung an einem Ort.",
-    "og_title": "Pulse Flow Ops für Objektmanager",
+    "og_title": "Pulse Flow für Objektmanager",
     "og_description": "Objekte, Jobs, Anbieter und Team aus einem gemeinsamen Ops-Puls koordinieren.",
     "badge": "Für Objektmanager",
     "headline": "Den Tag führen, ohne im Chat unterzugehen.",
     "sub": "Belegung, dringende Arbeit, Check-ins und Rechnungen - ein Puls zwischen Ihnen, Eigentümern und dem Team vor Ort.",
-    "cta_start": "Mit Pulse Flow Ops starten",
+    "cta_start": "Mit Pulse Flow starten",
     "cta_demo": "Demo testen",
     "hero_alt": "Manager-Home mit Bereitschaft, Belegung und dringenden Aufgaben",
     "t1_num": "01 · Überblick",
@@ -176,18 +176,18 @@
     "t7_alt2": "Firmen-Rangliste nach Bewertung",
     "close_title": "App öffnen. Den Tag führen.",
     "close": "Open the app. Run the day.",
-    "close_cta": "Open Pulse Flow Ops"
+    "close_cta": "Open Pulse Flow"
   },
   "staff": {
-    "meta_title": "Fürs Team vor Ort · Pulse Flow Ops",
+    "meta_title": "Fürs Team vor Ort · Pulse Flow",
     "meta_description": "Zugewiesene Objekte und Jobs auf dem Handy. Gelesen & bestätigt, erledigt markieren, Rechnungen einreichen , ohne Chatgruppen zu durchsuchen.",
-    "og_title": "Pulse Flow Ops fürs Team vor Ort",
+    "og_title": "Pulse Flow fürs Team vor Ort",
     "og_description": "Zugewiesene Objekte, klare Jobs, Gelesen & bestätigt und Rechnungen auf dem Handy.",
     "badge": "Fürs Team vor Ort",
     "headline": "Ihre Jobs, Ihre Objekte, auf einem Handybildschirm.",
     "sub": "Hören Sie auf, die letzte Anweisung in einer Gruppe zu suchen. Öffnen Sie die App und sehen Sie, was heute Ihres ist.",
     "extra": "Jobs mit Gelesen & bestätigt annehmen, Arbeit erledigen, Belege einreichen und im gleichen Puls wie Eigentümer und Manager bleiben , in der Sprache, in der Sie wirklich arbeiten.",
-    "cta_start": "Mit Pulse Flow Ops starten",
+    "cta_start": "Mit Pulse Flow starten",
     "cta_demo": "Demo testen",
     "hero_alt": "Aufgabenliste mit zugewiesenen Jobs, Zeiten und Objekten",
     "t1_num": "01 · Nur Ihr Ausschnitt",
@@ -225,7 +225,7 @@
     "close_title": "Heutige Jobs kennen. Jedes Briefing bestätigen. Den Kreis schließen, wenn Sie fertig sind."
   },
   "subscription": {
-    "meta_title": "Pläne · Pulse Flow Ops",
+    "meta_title": "Pläne · Pulse Flow",
     "meta_description": "Kostenlos für Solo und eingeladenes Personal. Full für Firmeneigentümer - ein Abo deckt das Team ab, inkl. Manager-Reporting.",
     "eyebrow": "Pläne",
     "headline": "Free oder Full.",

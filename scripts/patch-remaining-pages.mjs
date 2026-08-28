@@ -114,16 +114,16 @@ function patchEmployees(html) {
   html = common(html);
   const reps = [
     [
-      /<title>For property managers · Pulse Flow Ops<\/title>/,
-      '<title data-i18n="employees.meta_title">For property managers · Pulse Flow Ops</title>',
+      /<title>For property managers · Pulse Flow<\/title>/,
+      '<title data-i18n="employees.meta_title">For property managers · Pulse Flow</title>',
     ],
     [
       /content="Run day-to-day rental ops from one pulse\. Properties, tasks, work orders, bills, and team performance in one place\."/,
       'content="Run day-to-day rental ops from one pulse. Properties, tasks, work orders, bills, and team performance in one place." data-i18n-attr="content:employees.meta_description"',
     ],
     [
-      /content="Pulse Flow Ops for property managers"/,
-      'content="Pulse Flow Ops for property managers" data-i18n-attr="content:employees.og_title"',
+      /content="Pulse Flow for property managers"/,
+      'content="Pulse Flow for property managers" data-i18n-attr="content:employees.og_title"',
     ],
     [
       /content="Coordinate properties, jobs, vendors, and the team from one shared ops pulse\."/,
@@ -142,8 +142,8 @@ function patchEmployees(html) {
       '<p class="pf-sub" data-i18n="employees.sub">\n            Occupancy, urgent work, check-ins, and bills — one pulse between you,\n            owners of property, and the field team.\n          </p>',
     ],
     [
-      />Start with Pulse Flow Ops<\/a/,
-      ' data-i18n="employees.cta_start">Start with Pulse Flow Ops</a',
+      />Start with Pulse Flow<\/a/,
+      ' data-i18n="employees.cta_start">Start with Pulse Flow</a',
     ],
     [
       /<a class="pf-owners-link" href="#demo-now">Try the demo<\/a>/,
@@ -154,8 +154,8 @@ function patchEmployees(html) {
       '<h2 data-i18n="employees.close">Open the app. Run the day.</h2>',
     ],
     [
-      />Open Pulse Flow Ops<\/a/,
-      ' data-i18n="employees.close_cta">Open Pulse Flow Ops</a',
+      />Open Pulse Flow<\/a/,
+      ' data-i18n="employees.close_cta">Open Pulse Flow</a',
     ],
   ];
   for (const [from, to] of reps) {
@@ -231,8 +231,8 @@ function patchStaff(html) {
   html = common(html);
   const reps = [
     [
-      /<title>For field staff · Pulse Flow Ops<\/title>/,
-      '<title data-i18n="staff.meta_title">For field staff · Pulse Flow Ops</title>',
+      /<title>For field staff · Pulse Flow<\/title>/,
+      '<title data-i18n="staff.meta_title">For field staff · Pulse Flow</title>',
     ],
     [
       /<p class="pf-owners-badge">For field staff<\/p>/,
@@ -282,8 +282,8 @@ function patchStaff(html) {
 function patchSubscription(html) {
   html = common(html);
   html = html.replace(
-    /<title>Plans · Pulse Flow Ops<\/title>/,
-    '<title data-i18n="subscription.meta_title">Plans · Pulse Flow Ops</title>',
+    /<title>Plans · Pulse Flow<\/title>/,
+    '<title data-i18n="subscription.meta_title">Plans · Pulse Flow</title>',
   );
   html = html.replace(
     /<p class="pf-eyebrow">([\s\S]*?)<\/p>/,

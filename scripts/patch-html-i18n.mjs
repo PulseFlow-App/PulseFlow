@@ -79,16 +79,16 @@ function patchOwners(html) {
   html = common(html);
   const reps = [
     [
-      /<title>For property owners · Pulse Flow Ops<\/title>/,
-      '<title data-i18n="owners.meta_title">For property owners · Pulse Flow Ops</title>',
+      /<title>For property owners · Pulse Flow<\/title>/,
+      '<title data-i18n="owners.meta_title">For property owners · Pulse Flow</title>',
     ],
     [
       /content="Know what's happening across your properties\. Tasks, staff, bills, maintenance, and check-ins in one place\."/,
       'content="Know what\'s happening across your properties. Tasks, staff, bills, maintenance, and check-ins in one place."\n      data-i18n-attr="content:owners.meta_description"',
     ],
     [
-      /content="Pulse Flow Ops for property owners"/,
-      'content="Pulse Flow Ops for property owners"\n      data-i18n-attr="content:owners.og_title"',
+      /content="Pulse Flow for property owners"/,
+      'content="Pulse Flow for property owners"\n      data-i18n-attr="content:owners.og_title"',
     ],
     [
       /content="Know what's happening across your properties\. Tasks, staff, bills, and check-ins in one place\."/,
@@ -107,8 +107,8 @@ function patchOwners(html) {
       '<p class="pf-sub" data-i18n="owners.sub">\n            Tasks, staff, bills, maintenance, and check-ins in one place.\n          </p>',
     ],
     [
-      />Start with Pulse Flow Ops<\/a/,
-      ' data-i18n="owners.cta_start"\n              >Start with Pulse Flow Ops</a',
+      />Start with Pulse Flow<\/a/,
+      ' data-i18n="owners.cta_start"\n              >Start with Pulse Flow</a',
     ],
     [
       /<a class="pf-owners-link" href="#demo-now">Try the demo<\/a>/,

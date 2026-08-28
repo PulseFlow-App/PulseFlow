@@ -55,14 +55,14 @@ write("it", {
     feature_dot: "Mostra funzione {n}",
   },
   home: {
-    meta_title: "Pulse Flow Ops - Il polso delle tue operazioni di affitto",
+    meta_title: "Pulse Flow - Il polso delle tue operazioni di affitto",
     meta_description:
-      "Pulse Flow Ops tiene stato delle proprietà, lavori, contatti e fatture in un polso condiviso per proprietari, manager e team sul campo.",
+      "Pulse Flow tiene stato delle proprietà, lavori, contatti e fatture in un polso condiviso per proprietari, manager e team sul campo.",
     og_description: "Il polso delle tue operazioni di affitto",
     eyebrow: "Nel polso",
     headline: "Pensato per l'ops degli affitti,<br />non per <em>liste generiche.</em>",
     sub: "Proprietà, lavori, contatti e fatture: un polso condiviso tra te e il tuo team, live su ogni schermo.",
-    cta: "Apri Pulse Flow Ops",
+    cta: "Apri Pulse Flow",
     swipe: "Scorri le card",
     features_label: "Funzioni del prodotto",
     slides_label: "Slide delle funzioni",
@@ -104,16 +104,16 @@ write("it", {
       "Apri l'app, invita il team e gestisci il prossimo turnover da un solo posto.",
   },
   owners: {
-    meta_title: "Per i proprietari · Pulse Flow Ops",
+    meta_title: "Per i proprietari · Pulse Flow",
     meta_description:
       "Sai cosa succede sulle tue proprietà. Attività, staff, fatture, manutenzione e check-in in un posto solo.",
-    og_title: "Pulse Flow Ops per i proprietari",
+    og_title: "Pulse Flow per i proprietari",
     og_description:
       "Sai cosa succede sulle tue proprietà. Attività, staff, fatture e check-in in un posto solo.",
     badge: "Per i proprietari",
     headline: "Sai cosa succede sulle tue proprietà.",
     sub: "Attività, staff, fatture, manutenzione e check-in in un posto solo.",
-    cta_start: "Inizia con Pulse Flow Ops",
+    cta_start: "Inizia con Pulse Flow",
     cta_demo: "Prova la demo",
     hero_alt: "Home proprietario con occupazione, task urgenti e check-in",
     t1_num: "01 · Panoramica",
@@ -159,16 +159,16 @@ write("it", {
     close_title: "Apri l'app. Vedi la giornata.",
   },
   employees: {
-    meta_title: "Per i property manager · Pulse Flow Ops",
+    meta_title: "Per i property manager · Pulse Flow",
     meta_description:
       "Gestisci le ops quotidiane degli affitti da un solo polso. Proprietà, task, ordini, fatture e performance del team in un posto.",
-    og_title: "Pulse Flow Ops per i property manager",
+    og_title: "Pulse Flow per i property manager",
     og_description:
       "Coordina proprietà, lavori, fornitori e team da un polso ops condiviso.",
     badge: "Per i property manager",
     headline: "Guida la giornata senza annegare nella chat.",
     sub: "Occupazione, lavoro urgente, check-in e fatture: un polso tra te, i proprietari e il team sul campo.",
-    cta_start: "Inizia con Pulse Flow Ops",
+    cta_start: "Inizia con Pulse Flow",
     cta_demo: "Prova la demo",
     hero_alt: "Home manager con readiness, occupazione e task urgenti",
     t1_num: "01 · Panoramica",
@@ -207,10 +207,10 @@ write("it", {
     close_title: "Apri l'app. Guida la giornata.",
   },
   staff: {
-    meta_title: "Per lo staff sul campo · Pulse Flow Ops",
+    meta_title: "Per lo staff sul campo · Pulse Flow",
     meta_description:
       "Vedi proprietà e lavori assegnati sul telefono. Letto e accettato, segna fatto, invia fatture, senza scavare nei gruppi chat.",
-    og_title: "Pulse Flow Ops per lo staff sul campo",
+    og_title: "Pulse Flow per lo staff sul campo",
     og_description:
       "Proprietà assegnate, lavori chiari, Letto e accettato e fatture sul telefono.",
     badge: "Per lo staff sul campo",
@@ -218,7 +218,7 @@ write("it", {
     sub: "Smetti di cercare l'ultima istruzione in un gruppo. Apri l'app e vedi cosa è tuo oggi.",
     extra:
       "Accetta con Letto e accettato, segna il lavoro fatto, invia ricevute e resta sullo stesso polso di proprietari e manager, nella lingua in cui lavori davvero.",
-    cta_start: "Inizia con Pulse Flow Ops",
+    cta_start: "Inizia con Pulse Flow",
     cta_demo: "Prova la demo",
     hero_alt: "Elenco task con lavori assegnati, orari e proprietà",
     t1_num: "01 · Solo la tua fetta",
@@ -264,7 +264,7 @@ write("it", {
       "Conosci i lavori di oggi. Conferma ogni brief. Chiudi il cerchio quando hai finito.",
   },
   subscription: {
-    meta_title: "Piani · Pulse Flow Ops",
+    meta_title: "Piani · Pulse Flow",
     meta_description:
       "Gratis per uso personale e staff invitato. Full per proprietari azienda: un abbonamento copre il team, incluso il reporting manager.",
     eyebrow: "Piani",
@@ -329,7 +329,7 @@ write("ru", {
     feature_dot: "Показать функцию {n}",
   },
     home: {
-    meta_title: "Pulse Flow Ops - всё, что происходит с арендой вашей собственности, в одном месте",
+    meta_title: "Pulse Flow - всё, что происходит с арендой вашей собственности, в одном месте",
     meta_description:
       "Объекты, задачи, контакты и счета: всё для ежедневной работы. Данные обновляются сразу, на любом устройстве.",
     og_description: "Пульс вашей работы каждый день.",
@@ -337,7 +337,7 @@ write("ru", {
     headline: "Всё, что происходит с арендой вашей собственности - в одном месте.",
     sub:
       "Объекты, задачи, контакты и счета: всё, что нужно вам и команде для ежедневной работы. Данные обновляются сразу, на любом устройстве.",
-    cta: "Открыть Pulse Flow Ops",
+    cta: "Открыть Pulse Flow",
     swipe: "Листайте карточки",
     features_label: "Возможности продукта",
     slides_label: "Слайды функций",
@@ -354,7 +354,7 @@ write("ru", {
     card_bills_desc:
       "Сотрудник отправляет расход, владелец подтверждает - сумма и статус сразу видны команде.",
     why_eyebrow: "Ваша роль",
-    why_title: "Зачем вам Pulse Flow Ops?",
+    why_title: "Зачем вам Pulse Flow?",
     why_lead:
       "Выберите свою роль и посмотрите, как приложение помогает именно в вашей работе.",
     audience_owner_title: "Владелец недвижимости",
@@ -376,19 +376,19 @@ write("ru", {
     plan_cta: "Смотреть Free и Full →",
     close_title: "Пульс вашей работы каждый день.",
     close_lead:
-      "Откройте приложение, пригласите команду и управляйте следующей уборкой между заездами прямо из Pulse Flow Ops.",
+      "Откройте приложение, пригласите команду и управляйте следующей уборкой между заездами прямо из Pulse Flow.",
   },
   owners: {
-    meta_title: "Для владельцев · Pulse Flow Ops",
+    meta_title: "Для владельцев · Pulse Flow",
     meta_description:
       "Знайте, что происходит на объектах. Задачи, персонал, счета, обслуживание и заезды — в одном месте.",
-    og_title: "Pulse Flow Ops для владельцев",
+    og_title: "Pulse Flow для владельцев",
     og_description:
       "Знайте, что происходит на объектах. Задачи, персонал, счета и заезды — в одном месте.",
     badge: "Для владельцев",
     headline: "Знайте, что происходит на ваших объектах.",
     sub: "Задачи, персонал, счета, обслуживание и заезды — в одном месте.",
-    cta_start: "Начать с Pulse Flow Ops",
+    cta_start: "Начать с Pulse Flow",
     cta_demo: "Попробовать демо",
     hero_alt: "Домашний экран владельца: занятость, срочные задачи и заезды",
     t1_num: "01 · Обзор",
@@ -434,16 +434,16 @@ write("ru", {
     close_title: "Откройте приложение. Увидьте день.",
   },
   employees: {
-    meta_title: "Для управляющих · Pulse Flow Ops",
+    meta_title: "Для управляющих · Pulse Flow",
     meta_description:
       "Ведите ежедневный арендный ops из одного пульса. Объекты, задачи, наряды, счета и результативность команды — в одном месте.",
-    og_title: "Pulse Flow Ops для управляющих",
+    og_title: "Pulse Flow для управляющих",
     og_description:
       "Координируйте объекты, работы, подрядчиков и команду из общего ops-пульса.",
     badge: "Для управляющих",
     headline: "Ведите день, не тоня в чатах.",
     sub: "Занятость, срочная работа, заезды и счета — один пульс между вами, владельцами и полевой командой.",
-    cta_start: "Начать с Pulse Flow Ops",
+    cta_start: "Начать с Pulse Flow",
     cta_demo: "Попробовать демо",
     hero_alt: "Домашний экран менеджера: готовность, занятость и срочные задачи",
     t1_num: "01 · Обзор",
@@ -482,10 +482,10 @@ write("ru", {
     close_title: "Откройте приложение. Ведите день.",
   },
   staff: {
-    meta_title: "Для полевого персонала · Pulse Flow Ops",
+    meta_title: "Для полевого персонала · Pulse Flow",
     meta_description:
       "Назначенные объекты и задачи на телефоне. «Прочитано и согласовано», отметьте готово, отправьте счета — без поиска в чат-группах.",
-    og_title: "Pulse Flow Ops для полевого персонала",
+    og_title: "Pulse Flow для полевого персонала",
     og_description:
       "Назначенные объекты, понятные задачи, «прочитано и согласовано» и счета на телефоне.",
     badge: "Для полевого персонала",
@@ -493,7 +493,7 @@ write("ru", {
     sub: "Хватит искать последнюю инструкцию в группе. Откройте приложение и увидьте, что ваше сегодня.",
     extra:
       "Принимайте работы «прочитано и согласовано», отмечайте готово, отправляйте чеки и оставайтесь в одном пульсе с владельцами и менеджерами — на языке, на котором вы реально работаете.",
-    cta_start: "Начать с Pulse Flow Ops",
+    cta_start: "Начать с Pulse Flow",
     cta_demo: "Попробовать демо",
     hero_alt: "Список задач с назначенными работами, временем и объектами",
     t1_num: "01 · Только ваш срез",
@@ -539,7 +539,7 @@ write("ru", {
       "Знайте задачи на сегодня. Подтверждайте каждый бриф. Замыкайте цикл, когда закончили.",
   },
   subscription: {
-    meta_title: "Тарифы · Pulse Flow Ops",
+    meta_title: "Тарифы · Pulse Flow",
     meta_description:
       "Бесплатно для личного использования и приглашённого персонала. Full для владельцев компании — одна подписка на всю команду, включая отчётность менеджера.",
     eyebrow: "Тарифы",

@@ -38,8 +38,8 @@
     "open": "Open demo login"
   },
   "home": {
-    "meta_title": "Pulse Flow Ops - Le pouls de vos opérations locatives",
-    "meta_description": "Pulse Flow Ops réunit statut des biens, missions, contacts et factures dans un pulse partagé pour propriétaires, gestionnaires et équipes terrain.",
+    "meta_title": "Pulse Flow - Le pouls de vos opérations locatives",
+    "meta_description": "Pulse Flow réunit statut des biens, missions, contacts et factures dans un pulse partagé pour propriétaires, gestionnaires et équipes terrain.",
     "og_description": "Le pouls de vos opérations locatives",
     "eyebrow": "Dans le pulse",
     "headline": "Gérez toutes les ops immobilières dans une app",
@@ -86,14 +86,14 @@
     "demo_lead": "Connexion propriétaire ou employé préremplie."
   },
   "owners": {
-    "meta_title": "Pour les propriétaires · Pulse Flow Ops",
+    "meta_title": "Pour les propriétaires · Pulse Flow",
     "meta_description": "Sachez ce qui se passe sur vos biens. Tâches, équipe, factures, maintenance et check-ins au même endroit.",
-    "og_title": "Pulse Flow Ops pour les propriétaires",
+    "og_title": "Pulse Flow pour les propriétaires",
     "og_description": "Sachez ce qui se passe sur vos biens. Tâches, équipe, factures et check-ins au même endroit.",
     "badge": "Pour les propriétaires",
     "headline": "Sachez ce qui se passe sur vos biens.",
     "sub": "Tâches, équipe, factures, maintenance et check-ins au même endroit.",
-    "cta_start": "Commencer avec Pulse Flow Ops",
+    "cta_start": "Commencer avec Pulse Flow",
     "cta_demo": "Essayer la démo",
     "hero_alt": "Accueil propriétaire avec occupation, tâches urgentes et check-ins",
     "t1_num": "01 · Vue d'ensemble",
@@ -132,14 +132,14 @@
     "close_title": "Ouvrez l'app. Voyez la journée."
   },
   "employees": {
-    "meta_title": "Pour les gestionnaires · Pulse Flow Ops",
+    "meta_title": "Pour les gestionnaires · Pulse Flow",
     "meta_description": "Gérez l'ops locatif du quotidien depuis un seul pulse. Biens, tâches, ordres, factures et performance d'équipe au même endroit.",
-    "og_title": "Pulse Flow Ops pour les gestionnaires",
+    "og_title": "Pulse Flow pour les gestionnaires",
     "og_description": "Coordonnez biens, missions, prestataires et équipe depuis un pulse ops partagé.",
     "badge": "Pour les gestionnaires",
     "headline": "Menez la journée sans vous noyer dans le chat.",
     "sub": "Occupation, travail urgent, check-ins et factures - un pulse entre vous, les propriétaires et l'équipe terrain.",
-    "cta_start": "Commencer avec Pulse Flow Ops",
+    "cta_start": "Commencer avec Pulse Flow",
     "cta_demo": "Essayer la démo",
     "hero_alt": "Accueil gestionnaire avec readiness, occupation et tâches urgentes",
     "t1_num": "01 · Vue d'ensemble",
@@ -176,18 +176,18 @@
     "t7_alt2": "Classement entreprise par note",
     "close_title": "Ouvrez l'app. Menez la journée.",
     "close": "Open the app. Run the day.",
-    "close_cta": "Open Pulse Flow Ops"
+    "close_cta": "Open Pulse Flow"
   },
   "staff": {
-    "meta_title": "Pour l'équipe terrain · Pulse Flow Ops",
+    "meta_title": "Pour l'équipe terrain · Pulse Flow",
     "meta_description": "Voyez vos biens et missions assignés sur téléphone. Lu & Accepté, marquez terminé, envoyez des factures , sans fouiller les groupes de chat.",
-    "og_title": "Pulse Flow Ops pour l'équipe terrain",
+    "og_title": "Pulse Flow pour l'équipe terrain",
     "og_description": "Biens assignés, missions claires, Lu & Accepté et factures sur votre téléphone.",
     "badge": "Pour l'équipe terrain",
     "headline": "Vos missions, vos biens, sur un écran de téléphone.",
     "sub": "Arrêtez de chercher la dernière consigne dans un groupe. Ouvrez l'app et voyez ce qui est à vous aujourd'hui.",
     "extra": "Acceptez avec Lu & Accepté, marquez terminé, envoyez des reçus, et restez sur le même pulse que propriétaires et gestionnaires , dans la langue où vous travaillez vraiment.",
-    "cta_start": "Commencer avec Pulse Flow Ops",
+    "cta_start": "Commencer avec Pulse Flow",
     "cta_demo": "Essayer la démo",
     "hero_alt": "Liste des tâches avec missions assignées, horaires et biens",
     "t1_num": "01 · Seulement votre part",
@@ -225,7 +225,7 @@
     "close_title": "Connaître les missions du jour. Confirmer chaque brief. Boucler la boucle une fois terminé."
   },
   "subscription": {
-    "meta_title": "Offres · Pulse Flow Ops",
+    "meta_title": "Offres · Pulse Flow",
     "meta_description": "Gratuit pour l'usage solo et le personnel invité. Full pour les propriétaires d'entreprise - un abonnement couvre l'équipe, y compris le reporting manager.",
     "eyebrow": "Offres",
     "headline": "Free, ou Full.",

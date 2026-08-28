@@ -1,8 +1,8 @@
-# Pulse Flow Ops - marketing site
+# Pulse Flow - marketing site
 
 Landing page for **pulseflow.site**.
 
-- Brand: Pulse Flow Ops  
+- Brand: Pulse Flow  
 - Motto: The pulse of your rental operations  
 - App CTA: https://app.pulseflow.site  
 

@@ -38,8 +38,8 @@
     "open": "Open demo login"
   },
   "home": {
-    "meta_title": "Pulse Flow Ops - Il polso delle tue operazioni di affitto",
-    "meta_description": "Pulse Flow Ops tiene stato delle proprietà, lavori, contatti e fatture in un polso condiviso per proprietari, manager e team sul campo.",
+    "meta_title": "Pulse Flow - Il polso delle tue operazioni di affitto",
+    "meta_description": "Pulse Flow tiene stato delle proprietà, lavori, contatti e fatture in un polso condiviso per proprietari, manager e team sul campo.",
     "og_description": "Il polso delle tue operazioni di affitto",
     "eyebrow": "Nel polso",
     "headline": "Gestisci tutte le ops immobiliari in un'app",
@@ -86,14 +86,14 @@
     "demo_lead": "Login proprietario o dipendente precompilato."
   },
   "owners": {
-    "meta_title": "Per i proprietari · Pulse Flow Ops",
+    "meta_title": "Per i proprietari · Pulse Flow",
     "meta_description": "Sai cosa succede sulle tue proprietà. Attività, staff, fatture, manutenzione e check-in in un posto solo.",
-    "og_title": "Pulse Flow Ops per i proprietari",
+    "og_title": "Pulse Flow per i proprietari",
     "og_description": "Sai cosa succede sulle tue proprietà. Attività, staff, fatture e check-in in un posto solo.",
     "badge": "Per i proprietari",
     "headline": "Sai cosa succede sulle tue proprietà.",
     "sub": "Attività, staff, fatture, manutenzione e check-in in un posto solo.",
-    "cta_start": "Inizia con Pulse Flow Ops",
+    "cta_start": "Inizia con Pulse Flow",
     "cta_demo": "Prova la demo",
     "hero_alt": "Home proprietario con occupazione, task urgenti e check-in",
     "t1_num": "01 · Panoramica",
@@ -132,14 +132,14 @@
     "close_title": "Apri l'app. Vedi la giornata."
   },
   "employees": {
-    "meta_title": "Per i property manager · Pulse Flow Ops",
+    "meta_title": "Per i property manager · Pulse Flow",
     "meta_description": "Gestisci le ops quotidiane degli affitti da un solo polso. Proprietà, task, ordini, fatture e performance del team in un posto.",
-    "og_title": "Pulse Flow Ops per i property manager",
+    "og_title": "Pulse Flow per i property manager",
     "og_description": "Coordina proprietà, lavori, fornitori e team da un polso ops condiviso.",
     "badge": "Per i property manager",
     "headline": "Run the day without drowning in chat.",
     "sub": "Occupancy, urgent work, check-ins, and bills - one pulse between you, owners of property, and the field team.",
-    "cta_start": "Inizia con Pulse Flow Ops",
+    "cta_start": "Inizia con Pulse Flow",
     "cta_demo": "Prova la demo",
     "hero_alt": "Home manager con readiness, occupazione e task urgenti",
     "t1_num": "01 · Panoramica",
@@ -176,18 +176,18 @@
     "t7_alt2": "Classifica aziendale per valutazione",
     "close_title": "Open the app. Run the day.",
     "close": "Open the app. Run the day.",
-    "close_cta": "Open Pulse Flow Ops"
+    "close_cta": "Open Pulse Flow"
   },
   "staff": {
-    "meta_title": "Per lo staff sul campo · Pulse Flow Ops",
+    "meta_title": "Per lo staff sul campo · Pulse Flow",
     "meta_description": "Vedi proprietà e lavori assegnati sul telefono. Letto e accettato, segna fatto, invia fatture, senza scavare nei gruppi chat.",
-    "og_title": "Pulse Flow Ops per lo staff sul campo",
+    "og_title": "Pulse Flow per lo staff sul campo",
     "og_description": "Proprietà assegnate, lavori chiari, Letto e accettato e fatture sul telefono.",
     "badge": "Per lo staff sul campo",
     "headline": "I tuoi lavori, le tue proprietà, su uno schermo di telefono.",
     "sub": "Smetti di cercare l'ultima istruzione in un gruppo. Apri l'app e vedi cosa è tuo oggi.",
     "extra": "Accetta con Letto e accettato, segna il lavoro fatto, invia ricevute e resta sullo stesso polso di proprietari e manager, nella lingua in cui lavori davvero.",
-    "cta_start": "Inizia con Pulse Flow Ops",
+    "cta_start": "Inizia con Pulse Flow",
     "cta_demo": "Prova la demo",
     "hero_alt": "Elenco task con lavori assegnati, orari e proprietà",
     "t1_num": "01 · Solo la tua fetta",
@@ -225,7 +225,7 @@
     "close_title": "Conosci i lavori di oggi. Conferma ogni brief. Chiudi il cerchio quando hai finito."
   },
   "subscription": {
-    "meta_title": "Piani · Pulse Flow Ops",
+    "meta_title": "Piani · Pulse Flow",
     "meta_description": "Gratis per uso personale e staff invitato. Full per proprietari azienda: un abbonamento copre il team, incluso il reporting manager.",
     "eyebrow": "Piani",
     "headline": "Free, o Full.",

@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no">
   <head>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title>For field staff · Pulse Flow Ops</title>
+    <title data-i18n="staff.meta_title">For field staff · Pulse Flow</title>
     <meta
       name="description"
-      content="Assigned company properties and jobs, Read & agreed, personal properties you manage elsewhere, receipts. No digging through chat."
+      content="Know what's yours to do today. Assigned jobs, one-tap confirmations, receipts, and your properties - in one app."
+      data-i18n-attr="content:staff.meta_description"
     />
     <meta name="theme-color" content="#E8623D" />
     <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="/icons/icon-192.png" />
-    <meta property="og:title" content="Pulse Flow Ops for field staff" />
+    <meta
+      property="og:title"
+      content="Pulse Flow for field staff"
+      data-i18n-attr="content:staff.og_title"
+    />
     <meta
       property="og:description"
-      content="Assigned jobs, Read & agreed, personal checklist, and expense receipts on your phone."
+      content="Know what's yours to do today. Assigned jobs, confirmations, receipts, and your properties in one app."
+      data-i18n-attr="content:staff.og_description"
     />
     <meta property="og:image" content="/icons/icon-512.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,7 +35,7 @@
     <link rel="stylesheet" href="/styles.css?v=18" />
   </head>
   <body>
-    <a class="skip" href="#main">Skip to content</a>
+    <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
 
     <div class="pf-wrap pf-owners-page">
       <header class="pf-nav pf-owners-nav">
@@ -41,33 +47,57 @@
             height="28"
             alt=""
           />
-          Pulse Flow Ops
+          Pulse Flow
         </a>
-        <a class="pf-cta" href="https://app.pulseflow.site/login">Open app</a>
+        <div class="pf-nav-actions">
+          <label class="pf-lang">
+            <span class="pf-visually-hidden" data-i18n="nav.language"
+              >Language</span
+            >
+            <select
+              class="pf-lang-select"
+              data-locale-select
+              data-i18n-attr="aria-label:nav.language"
+              aria-label="Language"
+            ></select>
+          </label>
+          <a
+            class="pf-cta"
+            href="https://app.pulseflow.site/login"
+            data-i18n="nav.open_app"
+            >Open app</a
+          >
+        </div>
       </header>
 
       <main id="main" class="pf-owners-main">
         <section class="pf-owners-hero">
           <p class="pf-owners-badge" data-i18n="staff.badge">For field staff</p>
           <h1 class="pf-headline" data-i18n="staff.headline">
-            Your jobs. Confirm once. Finish the day.
+            Know what's yours to do today.
           </h1>
           <p class="pf-sub" data-i18n="staff.sub">
-            See assigned jobs, tap Read &amp; agreed, keep a personal checklist,
-            submit receipts, and manage only the properties that are yours to run.
+            Assigned jobs, one-tap confirmations, receipts, and your properties -
+            in one app.
           </p>
           <div class="pf-owners-hero-actions">
-            <a class="pf-btn-primary" href="https://app.pulseflow.site/register"
-              data-i18n="staff.cta_start">Start with Pulse Flow Ops</a
+            <a
+              class="pf-btn-primary"
+              href="https://app.pulseflow.site/register"
+              data-i18n="staff.cta_start"
+              >Start with Pulse Flow</a
             >
-            <a class="pf-owners-link" href="#demo-now" data-i18n="staff.cta_demo">Try the demo</a>
+            <a class="pf-owners-link" href="#demo-now" data-i18n="staff.cta_demo"
+              >Try the demo</a
+            >
           </div>
           <figure class="pf-phone pf-phone-hero">
             <img
               src="/assets/screenshots/staff-home.png"
               width="472"
               height="1024"
-              alt="Staff home with Read and agreed and ops readiness"
+              alt="Staff home with jobs waiting for confirmation and ops readiness"
+              data-i18n-attr="alt:staff.hero_alt"
               loading="eager"
             />
           </figure>
@@ -76,11 +106,13 @@
         <div class="pf-owners-topics">
           <article class="pf-owners-topic">
             <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num" data-i18n="staff.t1_num">01 · Overview</p>
-              <h2 data-i18n="staff.t1_title">Ready for the day, or jobs waiting for you</h2>
+              <p class="pf-owners-feature-num" data-i18n="staff.t1_num">
+                01 · Overview
+              </p>
+              <h2 data-i18n="staff.t1_title">See what's waiting for you today</h2>
               <p data-i18n="staff.t1_desc">
-                Ops readiness, jobs that need Read &amp; agreed, and notifications
-                for new work. No rebuilding the plan in WhatsApp.
+                Ops readiness, jobs that need your confirmation, and
+                notifications for new work. No digging through WhatsApp.
               </p>
             </div>
             <div class="pf-phone-pair">
@@ -89,7 +121,8 @@
                   src="/assets/screenshots/staff-home.png"
                   width="472"
                   height="1024"
-                  alt="Staff home showing a job waiting for Read and agreed"
+                  alt="Staff home showing a job waiting for confirmation"
+                  data-i18n-attr="alt:staff.t1_alt1"
                   loading="lazy"
                 />
               </figure>
@@ -99,6 +132,7 @@
                   width="472"
                   height="1024"
                   alt="Notifications for jobs, chat, and check-ins"
+                  data-i18n-attr="alt:staff.t1_alt2"
                   loading="lazy"
                 />
               </figure>
@@ -107,12 +141,13 @@
 
           <article class="pf-owners-topic">
             <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num" data-i18n="staff.t2_num">02 · Properties</p>
-              <h2 data-i18n="staff.t2_title">Assigned company properties + your own list</h2>
+              <p class="pf-owners-feature-num" data-i18n="staff.t2_num">
+                02 · Properties
+              </p>
+              <h2 data-i18n="staff.t2_title">See only the properties you run</h2>
               <p data-i18n="staff.t2_desc">
-                You only see company villas assigned to you, not the full
-                inventory. Add and manage your own personal properties for side
-                work elsewhere.
+                Company villas assigned to you, plus your own personal list.
+                Status, dates, and location on each card.
               </p>
             </div>
             <div class="pf-phone-solo">
@@ -122,6 +157,7 @@
                   width="472"
                   height="1024"
                   alt="Properties list with status, check-in and check-out dates"
+                  data-i18n-attr="alt:staff.t2_alt"
                   loading="lazy"
                 />
               </figure>
@@ -130,11 +166,13 @@
 
           <article class="pf-owners-topic">
             <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num" data-i18n="staff.t3_num">03 · Tasks</p>
-              <h2 data-i18n="staff.t3_title">Your helper list to finish the job</h2>
+              <p class="pf-owners-feature-num" data-i18n="staff.t3_num">
+                03 · Tasks
+              </p>
+              <h2 data-i18n="staff.t3_title">Know your checklist for each job</h2>
               <p data-i18n="staff.t3_desc">
-                Buy materials, notes, reminders. Your checklist, not the company
-                task board.
+                Materials, notes, reminders - your helper list to finish the job,
+                separate from the company board.
               </p>
             </div>
             <div class="pf-phone-solo">
@@ -144,6 +182,7 @@
                   width="472"
                   height="1024"
                   alt="My jobs with work windows by property"
+                  data-i18n-attr="alt:staff.t3_alt"
                   loading="lazy"
                 />
               </figure>
@@ -152,11 +191,15 @@
 
           <article class="pf-owners-topic">
             <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num" data-i18n="staff.t4_num">04 · Confirmations</p>
-              <h2 data-i18n="staff.t4_title">Tap Read &amp; agreed so they know you were reached</h2>
+              <p class="pf-owners-feature-num" data-i18n="staff.t4_num">
+                04 · Confirmations
+              </p>
+              <h2 data-i18n="staff.t4_title">
+                Know your confirmation closes the loop
+              </h2>
               <p data-i18n="staff.t4_desc">
-                Owner and manager see you got the brief. Confirmation stays in
-                the app, nothing lost in chat.
+                Confirm each job with one tap. Owner and manager see you were
+                reached - confirmation stays in the app, nothing lost in chat.
               </p>
             </div>
             <div class="pf-phone-pair">
@@ -166,6 +209,7 @@
                   width="472"
                   height="1024"
                   alt="Staff home with confirmed job and clear board"
+                  data-i18n-attr="alt:staff.t4_alt1"
                   loading="lazy"
                 />
               </figure>
@@ -174,7 +218,8 @@
                   src="/assets/screenshots/staff-home.png"
                   width="472"
                   height="1024"
-                  alt="Staff home with Read and agreed before confirmation"
+                  alt="Staff home before confirmation"
+                  data-i18n-attr="alt:staff.t4_alt2"
                   loading="lazy"
                 />
               </figure>
@@ -183,11 +228,13 @@
 
           <article class="pf-owners-topic">
             <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num" data-i18n="staff.t5_num">05 · Finances</p>
-              <h2 data-i18n="staff.t5_title">Submit receipts. You don't approve company totals.</h2>
+              <p class="pf-owners-feature-num" data-i18n="staff.t5_num">
+                05 · Finances
+              </p>
+              <h2 data-i18n="staff.t5_title">See what you submitted</h2>
               <p data-i18n="staff.t5_desc">
-                Expenses and reimbursements you send up. Owners and managers
-                handle Mark paid.
+                Photo the receipt, enter the amount, send it up. You see your
+                submissions - owners and managers handle approval.
               </p>
             </div>
             <div class="pf-phone-solo">
@@ -196,7 +243,8 @@
                   src="/assets/screenshots/staff-bills.png"
                   width="472"
                   height="1024"
-                  alt="Bills empty state for expenses and reimbursements"
+                  alt="Bills screen for expense submissions"
+                  data-i18n-attr="alt:staff.t5_alt1"
                   loading="lazy"
                 />
               </figure>
@@ -205,11 +253,13 @@
 
           <article class="pf-owners-topic">
             <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num" data-i18n="staff.t6_num">06 · Reputation</p>
-              <h2 data-i18n="staff.t6_title">Weekly stars build your record</h2>
+              <p class="pf-owners-feature-num" data-i18n="staff.t6_num">
+                06 · Reputation
+              </p>
+              <h2 data-i18n="staff.t6_title">Know your record travels with you</h2>
               <p data-i18n="staff.t6_desc">
-                Owners rate the team each week. Open your shareable profile from
-                the star icon, and carry that record to the next company.
+                Weekly stars from owners build a shareable profile. Carry that
+                history to your next contract or team.
               </p>
             </div>
             <div class="pf-phone-pair">
@@ -218,7 +268,8 @@
                   src="/assets/screenshots/owner-endorsements.png"
                   width="472"
                   height="1024"
-                  alt="Weekly star ratings for the team"
+                  alt="Endorsements and star ratings"
+                  data-i18n-attr="alt:staff.t6_alt1"
                   loading="lazy"
                 />
               </figure>
@@ -227,7 +278,8 @@
                   src="/assets/screenshots/owner-leaderboard.png"
                   width="472"
                   height="1024"
-                  alt="Company leaderboard by rating"
+                  alt="Leaderboard of team performance"
+                  data-i18n-attr="alt:staff.t6_alt2"
                   loading="lazy"
                 />
               </figure>
@@ -236,35 +288,52 @@
         </div>
 
         <section class="pf-demo" aria-labelledby="demo-now" data-demo-login>
-          <p class="pf-demo-eyebrow" data-i18n="staff.demo_eyebrow">Demo</p>
-          <h2 id="demo-now" data-i18n="staff.demo_title">Try it yourself</h2>
-          <p class="pf-demo-lead" data-i18n="staff.demo_lead">
-            Open the staff seat. Login details are already filled in.
+          <p class="pf-demo-eyebrow" data-i18n="demo.eyebrow">Demo</p>
+          <h2 id="demo-now" data-i18n="demo.title">Try it yourself</h2>
+          <p class="pf-demo-lead" data-i18n="demo.lead">
+            Choose a role. The login details are already filled in.
           </p>
 
-          <div class="pf-demo-roles" role="group" aria-label="Demo account">
+          <div
+            class="pf-demo-roles"
+            role="group"
+            aria-label="Demo account"
+            data-i18n-attr="aria-label:demo.account_label"
+          >
             <button
               type="button"
               class="pf-demo-role is-active"
               data-demo-role="employee"
+              data-i18n="demo.employee"
             >
-              Staff
+              Employee
             </button>
-            <button type="button" class="pf-demo-role" data-demo-role="owner">
+            <button
+              type="button"
+              class="pf-demo-role"
+              data-demo-role="owner"
+              data-i18n="demo.owner"
+            >
               Owner
             </button>
           </div>
 
           <div class="pf-demo-grid">
             <div class="pf-demo-credentials">
-              <p class="pf-demo-kicker" data-demo-kicker>Employee demo login</p>
+              <p
+                class="pf-demo-kicker"
+                data-demo-kicker
+                data-i18n="demo.kicker_employee"
+              >
+                Employee demo login
+              </p>
               <ul class="pf-demo-list">
                 <li>
-                  <span>Email</span>
+                  <span data-i18n="demo.email">Email</span>
                   <code data-demo-email>employee@pulseflow.site</code>
                 </li>
                 <li>
-                  <span>Password</span>
+                  <span data-i18n="demo.password">Password</span>
                   <code>TestPass123!</code>
                 </li>
               </ul>
@@ -272,6 +341,7 @@
                 class="pf-btn-primary pf-demo-btn"
                 data-demo-link
                 href="https://app.pulseflow.site/login?demo=employee"
+                data-i18n="demo.open_login"
                 >Open demo login</a
               >
             </div>
@@ -281,6 +351,7 @@
                 data-demo-link
                 href="https://app.pulseflow.site/login?demo=employee"
                 aria-label="Open demo login"
+                data-i18n-attr="aria-label:demo.open_login"
               >
                 <img
                   class="pf-qr-img"
@@ -289,10 +360,11 @@
                   width="220"
                   height="220"
                   alt="QR code linking to prefilled demo login"
+                  data-i18n-attr="alt:demo.qr_alt"
                   loading="lazy"
                 />
               </a>
-              <p class="pf-demo-qr-caption" data-i18n="staff.demo_scan">Scan to sign in</p>
+              <p class="pf-demo-qr-caption" data-i18n="demo.scan">Scan to sign in</p>
             </div>
           </div>
         </section>
@@ -305,28 +377,35 @@
             height="64"
             alt=""
           />
-          <h2 data-i18n="staff.close_title">Know today's jobs. Confirm. Close the loop.</h2>
-          <a class="pf-btn-primary" href="https://app.pulseflow.site"
-             data-i18n="staff.close_cta">Open Pulse Flow Ops</a
+          <h2 data-i18n="staff.close_title">
+            Know today's jobs. Confirm. Close the loop.
+          </h2>
+          <a
+            class="pf-btn-primary"
+            href="https://app.pulseflow.site"
+            data-i18n="staff.close_cta"
+            >Open Pulse Flow</a
           >
         </section>
       </main>
 
       <footer class="pf-footer">
         <div>
-          <strong>Pulse Flow Ops</strong>
-          <span>The pulse of your rental operations</span>
+          <strong>Pulse Flow</strong>
+          <span data-i18n="footer.tagline">The pulse of your rental operations</span>
         </div>
         <div class="pf-footer-links">
-          <a href="/">Home</a>
-          <a href="/#plans">Plans</a>
-          <a href="/terms">Terms</a>
-          <a href="/privacy">Privacy</a>
-          <a href="mailto:support@pulseflow.site" data-i18n="footer.support">Support</a>
-          <a href="https://app.pulseflow.site">App</a>
+          <a href="/" data-i18n="footer.home">Home</a>
+          <a href="/#plans" data-i18n="footer.plans">Plans</a>
+          <a href="/terms" data-i18n="footer.terms">Terms</a>
+          <a href="/privacy" data-i18n="footer.privacy">Privacy</a>
+          <a href="mailto:support@pulseflow.site" data-i18n="footer.support"
+            >Support</a
+          >
+          <a href="https://app.pulseflow.site" data-i18n="footer.app">App</a>
         </div>
       </footer>
     </div>
-    <script src="/script.js?v=7" defer></script>
+    <script src="/script.js?v=8" defer></script>
   </body>
 </html>
