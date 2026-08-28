@@ -39,6 +39,51 @@ function t(key, params) {
   return value;
 }
 
+const BRAND_NAME = "Pulse Flow";
+const BRAND_MARKUP = `<span class="pf-brand-name" translate="no" dir="ltr">${BRAND_NAME}</span>`;
+
+function createBrandSpan() {
+  const span = document.createElement("span");
+  span.className = "pf-brand-name";
+  span.setAttribute("translate", "no");
+  span.setAttribute("dir", "ltr");
+  span.textContent = BRAND_NAME;
+  return span;
+}
+
+function wrapBrandName(html) {
+  if (!html || !html.includes(BRAND_NAME) || html.includes("pf-brand-name")) {
+    return html;
+  }
+  return html.replace(/Pulse Flow/g, BRAND_MARKUP);
+}
+
+function markBrandNames() {
+  document.querySelectorAll(".pf-logo").forEach((logo) => {
+    if (logo.querySelector(".pf-brand-name")) return;
+    [...logo.childNodes].forEach((node) => {
+      if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) node.remove();
+    });
+    logo.appendChild(createBrandSpan());
+  });
+
+  document.querySelectorAll(".pf-footer strong").forEach((el) => {
+    el.textContent = "";
+    el.appendChild(createBrandSpan());
+  });
+
+  document
+    .querySelectorAll(
+      "[data-i18n], .pf-btn-primary, .pf-cta",
+    )
+    .forEach((el) => {
+      if (el.tagName === "TITLE") return;
+      if (!el.textContent.includes(BRAND_NAME)) return;
+      if (hasMarkup(el.innerHTML)) el.innerHTML = wrapBrandName(el.innerHTML);
+      else el.innerHTML = wrapBrandName(el.textContent);
+    });
+}
+
 function hasMarkup(value) {
   return /<\/?[a-z][\s\S]*>/i.test(value);
 }
@@ -52,7 +97,7 @@ function applyTranslations(dict) {
       document.title = value;
       return;
     }
-    if (hasMarkup(value)) el.innerHTML = value;
+    if (hasMarkup(value)) el.innerHTML = wrapBrandName(value);
     else el.textContent = value;
   });
 
@@ -75,6 +120,8 @@ function applyTranslations(dict) {
       }
     });
   });
+
+  markBrandNames();
 }
 
 function setDocumentLocale(locale) {

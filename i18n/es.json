@@ -222,7 +222,8 @@
     "demo_title": "Prueba la demo ahora",
     "demo_lead": "Abre el asiento de empleado para recorrer trabajos, acuerdos y propiedades asignadas en un flujo de tamaño teléfono.",
     "demo_note": "Abre el login demo, confirma los campos y entra.",
-    "close_title": "Conoce los trabajos de hoy. Confirma cada brief. Cierra el ciclo cuando termines."
+    "close_title": "Conoce los trabajos de hoy. Confirma cada brief. Cierra el ciclo cuando termines.",
+    "close_cta": "Open Pulse Flow"
   },
   "subscription": {
     "meta_title": "Planes · Pulse Flow",

@@ -222,7 +222,8 @@
     "demo_title": "Prova la demo ora",
     "demo_lead": "Apri il posto dipendente per passare tra lavori, accordi e proprietà assegnate in un flusso formato telefono.",
     "demo_note": "Apri il login demo, conferma i campi, poi accedi.",
-    "close_title": "Conosci i lavori di oggi. Conferma ogni brief. Chiudi il cerchio quando hai finito."
+    "close_title": "Conosci i lavori di oggi. Conferma ogni brief. Chiudi il cerchio quando hai finito.",
+    "close_cta": "Open Pulse Flow"
   },
   "subscription": {
     "meta_title": "Piani · Pulse Flow",

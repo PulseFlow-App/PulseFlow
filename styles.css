@@ -143,6 +143,38 @@ a {
   flex-direction: row-reverse;
 }
 
+[dir="rtl"] .pf-owners-hero-actions {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .pf-owners-page .pf-footer {
+  direction: rtl;
+}
+
+[dir="rtl"] .pf-owners-page .pf-owners-main,
+[dir="rtl"] .pf-owners-page .pf-owners-nav {
+  direction: rtl;
+}
+
+[dir="rtl"] .pf-demo-roles {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .pf-demo-grid {
+  direction: rtl;
+}
+
+.pf-brand-name {
+  unicode-bidi: isolate;
+  direction: ltr;
+  white-space: nowrap;
+}
+
+[dir="rtl"] .pf-brand-name {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
 .pf-logo {
   display: inline-flex;
   align-items: center;
@@ -859,14 +891,6 @@ a.pf-audience-card:hover {
   max-width: 52ch;
 }
 
-.pf-owners-topic h2 {
-  margin: 0 0 10px;
-  font-size: clamp(1.4rem, 3.6vw, 1.85rem);
-  letter-spacing: -0.03em;
-  line-height: 1.15;
-  text-wrap: balance;
-}
-
 .pf-owners-topic p {
   margin: 0 auto;
   max-width: 46ch;
@@ -876,13 +900,14 @@ a.pf-audience-card:hover {
 }
 
 .pf-owners-feature-num {
-  margin: 0 0 8px;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--coral-dark);
+  margin: 0 0 10px;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 3.4vw, 1.8rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  text-wrap: balance;
+  color: var(--ink);
 }
 
 /* Phone frame: width-only sizing. Image keeps natural aspect ratio. */

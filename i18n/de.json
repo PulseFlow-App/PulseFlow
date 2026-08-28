@@ -222,7 +222,8 @@
     "demo_title": "Demo jetzt testen",
     "demo_lead": "Öffnen Sie den Mitarbeiter-Platz und gehen Sie Jobs, Vereinbarungen und zugewiesene Objekte im Handyformat durch.",
     "demo_note": "Demo-Login öffnen, Felder prüfen, dann anmelden.",
-    "close_title": "Heutige Jobs kennen. Jedes Briefing bestätigen. Den Kreis schließen, wenn Sie fertig sind."
+    "close_title": "Heutige Jobs kennen. Jedes Briefing bestätigen. Den Kreis schließen, wenn Sie fertig sind.",
+    "close_cta": "Open Pulse Flow"
   },
   "subscription": {
     "meta_title": "Pläne · Pulse Flow",
