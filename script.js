@@ -40,7 +40,7 @@ function t(key, params) {
 }
 
 const BRAND_NAME = "Pulse Flow";
-const BRAND_MARKUP = `<span class="pf-brand-name" translate="no" dir="ltr">${BRAND_NAME}</span>`;
+const BRAND_ATTRS = `class="pf-brand-name" translate="no" dir="ltr"`;
 
 function createBrandSpan() {
   const span = document.createElement("span");
@@ -55,7 +55,14 @@ function wrapBrandName(html) {
   if (!html || !html.includes(BRAND_NAME) || html.includes("pf-brand-name")) {
     return html;
   }
-  return html.replace(/Pulse Flow/g, BRAND_MARKUP);
+  // Flex containers (.pf-btn-primary) collapse inter-element spaces, so keep
+  // the gap inside the brand span when it follows another word.
+  return html.replace(/Pulse Flow/g, (match, offset, full) => {
+    const before = full.slice(0, offset).replace(/[ \t]+$/, "");
+    const afterWord = before.length > 0 && /\S$/.test(before);
+    const label = afterWord ? `\u00A0${BRAND_NAME}` : BRAND_NAME;
+    return `<span ${BRAND_ATTRS}>${label}</span>`;
+  });
 }
 
 function markBrandNames() {
@@ -139,7 +146,40 @@ async function loadDict(locale) {
   return dict;
 }
 
-async function setLocale(locale, { persist = true } = {}) {
+function localeFromUrl() {
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const raw = (params.get("lang") || params.get("locale") || "")
+      .trim()
+      .toLowerCase();
+    if (raw && LOCALES.includes(raw)) return raw;
+  } catch (_) {
+    /* ignore */
+  }
+  return null;
+}
+
+function syncLocaleInUrl(locale) {
+  try {
+    const url = new URL(window.location.href);
+    const current = url.searchParams.get("lang") || url.searchParams.get("locale");
+    if (current === locale) {
+      if (url.searchParams.has("locale")) {
+        url.searchParams.delete("locale");
+        url.searchParams.set("lang", locale);
+        history.replaceState({}, "", url);
+      }
+      return;
+    }
+    url.searchParams.delete("locale");
+    url.searchParams.set("lang", locale);
+    history.replaceState({}, "", url);
+  } catch (_) {
+    /* ignore */
+  }
+}
+
+async function setLocale(locale, { persist = true, syncUrl = false } = {}) {
   const next = LOCALES.includes(locale) ? locale : "en";
   if (!dictCache.en) {
     try {
@@ -163,6 +203,7 @@ async function setLocale(locale, { persist = true } = {}) {
       /* ignore */
     }
   }
+  if (syncUrl) syncLocaleInUrl(next);
   setDocumentLocale(next);
   applyTranslations(dict);
   document.querySelectorAll("[data-locale-select]").forEach((sel) => {
@@ -172,6 +213,8 @@ async function setLocale(locale, { persist = true } = {}) {
 }
 
 function resolveInitialLocale() {
+  const fromUrl = localeFromUrl();
+  if (fromUrl) return fromUrl;
   try {
     const stored = localStorage.getItem(LOCALE_STORAGE_KEY);
     if (stored && LOCALES.includes(stored)) return stored;
@@ -198,7 +241,7 @@ function mountLanguageSwitchers() {
       });
     }
     sel.addEventListener("change", () => {
-      setLocale(sel.value);
+      setLocale(sel.value, { syncUrl: true });
     });
   });
 }
@@ -318,6 +361,12 @@ document.querySelectorAll("[data-demo-login]").forEach((section) => {
 });
 
 mountLanguageSwitchers();
-setLocale(resolveInitialLocale(), { persist: false }).catch(() => {
-  setDocumentLocale("en");
-});
+{
+  const fromUrl = localeFromUrl();
+  setLocale(resolveInitialLocale(), {
+    persist: true,
+    syncUrl: Boolean(fromUrl),
+  }).catch(() => {
+    setDocumentLocale("en");
+  });
+}
