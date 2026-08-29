@@ -311,6 +311,10 @@ const DEMO_ACCOUNTS = {
     email: "employee@pulseflow.site",
     labelKey: "demo.employee_login",
   },
+  guest: {
+    email: "guest@pulseflow.site",
+    labelKey: "demo.guest_login",
+  },
 };
 
 document.querySelectorAll("[data-demo-login]").forEach((section) => {

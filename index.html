@@ -85,7 +85,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=20" />
+    <link rel="stylesheet" href="/styles.css?v=23" />
   </head>
   <body>
     <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
@@ -421,6 +421,17 @@
                 >Open the staff guide</span
               >
             </a>
+            <a class="pf-audience-card pf-audience-card-guest" href="/guests">
+              <h3 data-i18n="home.audience_guest_title">
+                Invited by your host?
+              </h3>
+              <p data-i18n="home.audience_guest_desc">
+                Here's what this app does for your stay — open the guest guide.
+              </p>
+              <span class="pf-audience-cta" data-i18n="home.audience_guest_cta"
+                >Open the guest guide</span
+              >
+            </a>
           </div>
         </section>
 
@@ -458,6 +469,16 @@
               data-i18n="home.plan_cta"
               >Start free</a
             >
+            <p class="pf-plan-personal-note">
+              <span data-i18n="home.plan_personal_note"
+                >Just managing your own place?</span
+              >
+              <a
+                href="https://app.pulseflow.site/register"
+                data-i18n="home.plan_personal_link"
+                >Start free, no team required.</a
+              >
+            </p>
           </div>
         </section>
 
@@ -483,7 +504,7 @@
         >
           <h2 id="demo-heading" data-i18n="home.demo_title">Demo</h2>
           <p class="pf-demo-lead" data-i18n="home.demo_lead">
-            Prefilled owner or employee login.
+            Prefilled owner, employee, or guest login.
           </p>
 
           <div
@@ -507,6 +528,14 @@
               data-i18n="demo.role_employee"
             >
               Employee
+            </button>
+            <button
+              type="button"
+              class="pf-demo-role"
+              data-demo-role="guest"
+              data-i18n="demo.role_guest"
+            >
+              Guest
             </button>
           </div>
 

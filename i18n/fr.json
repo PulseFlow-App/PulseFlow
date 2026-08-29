@@ -35,7 +35,11 @@
     "role_employee": "Employee",
     "kicker_owner": "Owner demo login",
     "kicker_employee": "Employee demo login",
-    "open": "Open demo login"
+    "open": "Open demo login",
+    "guest": "Invité",
+    "guest_login": "Connexion démo invité",
+    "role_guest": "Invité",
+    "kicker_guest": "Connexion démo invité"
   },
   "home": {
     "meta_title": "Pulse Flow - Le pouls de vos opérations locatives",
@@ -83,7 +87,7 @@
     "referral_title": "Invitez 5 personnes → 1 an Full offert",
     "referral_lead": "Copiez votre lien de parrainage dans Profil. Inviter vers l'app ou comme staff dans votre entreprise compte tous les deux. Quand la facturation démarre, 5 inscriptions créditées débloquent 1 an Full à partir de cette date.",
     "demo_title": "Démo",
-    "demo_lead": "Connexion propriétaire ou employé préremplie."
+    "demo_lead": "Connexion propriétaire, employé ou invité préremplie."
   },
   "owners": {
     "meta_title": "Pour les propriétaires · Pulse Flow",
@@ -229,7 +233,7 @@
     "referral_title": "Invitez 5 personnes → 1 an Full offert",
     "referral_lead": "Copiez votre lien de parrainage dans Profil. Inviter vers l'app ou comme staff dans votre entreprise compte tous les deux. Quand la facturation démarre, 5 inscriptions créditées débloquent 1 an Full à partir de cette date.",
     "demo_title": "Démo",
-    "demo_lead": "Connexion propriétaire ou employé préremplie.",
+    "demo_lead": "Connexion propriétaire, employé ou invité préremplie.",
     "close_title": "Votre offre vit dans Profil",
     "sign_in": "Se connecter"
   }

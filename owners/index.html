@@ -9,7 +9,7 @@
     <title data-i18n="owners.meta_title">For property owners · Pulse Flow</title>
     <meta
       name="description"
-      content="Know what's happening across your properties. Tasks, staff, bills, maintenance, and check-ins in one app."
+      content="Run the company ops workspace: villas, bills, contacts, team, and invites in one app."
       data-i18n-attr="content:owners.meta_description"
     />
     <meta name="theme-color" content="#E8623D" />
@@ -20,11 +20,14 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://pulseflow.site/owners" />
-    <meta property="og:title" content="Pulse Flow for property owners"
-      data-i18n-attr="content:owners.og_title" />
+    <meta
+      property="og:title"
+      content="Pulse Flow for property owners"
+      data-i18n-attr="content:owners.og_title"
+    />
     <meta
       property="og:description"
-      content="Know what's happening across your properties. Tasks, staff, bills, maintenance, and check-ins in one app."
+      content="Run the company ops workspace: villas, bills, contacts, team, and invites in one app."
       data-i18n-attr="content:owners.og_description"
     />
     <meta
@@ -35,16 +38,12 @@
     <meta property="og:image:height" content="665" />
     <meta
       property="og:image:alt"
-      content="Pulse Flow - Run everything in one pulse. Property operations for owners and managers."
+      content="Pulse Flow - Run everything in one pulse."
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
       content="https://pulseflow.site/assets/og-image.jpg"
-    />
-    <meta
-      name="twitter:image:alt"
-      content="Pulse Flow - Run everything in one pulse. Property operations for owners and managers."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,7 +51,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=22" />
+    <link rel="stylesheet" href="/styles.css?v=23" />
   </head>
   <body>
     <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
@@ -91,230 +90,241 @@
       </header>
 
       <main id="main" class="pf-owners-main">
-        <section class="pf-owners-hero">
-          <p class="pf-owners-badge" data-i18n="owners.badge">For property owners</p>
+        <section class="pf-owners-hero is-text-only">
+          <p class="pf-owners-badge" data-i18n="owners.badge">
+            For property owners
+          </p>
           <h1 class="pf-headline" data-i18n="owners.headline">
-            Know what's happening across your properties.
+            Run the company from one pulse.
           </h1>
           <p class="pf-sub" data-i18n="owners.sub">
-            Tasks, staff, bills, maintenance, and check-ins in one app.
+            Properties, money, vendors, and the team — without chasing updates.
           </p>
           <div class="pf-owners-hero-actions">
-            <a class="pf-btn-primary" href="https://app.pulseflow.site/register" data-i18n="owners.cta_start"
+            <a
+              class="pf-btn-primary"
+              href="https://app.pulseflow.site/register"
+              data-i18n="owners.cta_start"
               >Start with Pulse Flow</a
             >
-            <a class="pf-owners-link" href="#demo-now" data-i18n="owners.cta_demo">Try the demo</a>
+            <a
+              class="pf-owners-link"
+              href="#demo-now"
+              data-i18n="owners.cta_demo"
+              >Try the demo</a
+            >
           </div>
-          <figure class="pf-phone pf-phone-hero">
-            <img
-              src="/assets/screenshots/owner-home.png"
-              width="472"
-              height="1024"
-              alt="Owner home with occupancy, urgent tasks, and check-ins"
-              data-i18n-attr="alt:owners.hero_alt"
-              loading="eager"
-            />
-          </figure>
         </section>
 
-        <div class="pf-owners-topics">
-          <article class="pf-owners-topic">
-            <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num" data-i18n="owners.t1_num">01 · One glance, whole operation</p>
-              <p data-i18n="owners.t1_desc">
-                Occupancy, urgent tasks, and today's check-ins update live from your on-site manager. Know what needs attention without opening a chat.
-              </p>
-            </div>
-            <div class="pf-phone-pair">
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/owner-home.png"
-                  width="472"
-                  height="1024"
-                  alt="Dashboard with ops readiness and property statuses"
-                  data-i18n-attr="alt:owners.t1_alt1"
-                  loading="lazy"
-                />
-              </figure>
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/owner-home-below.png"
-                  width="472"
-                  height="1024"
-                  alt="Urgent tasks and this week's check-ins"
-                  data-i18n-attr="alt:owners.t1_alt2"
-                  loading="lazy"
-                />
-              </figure>
-            </div>
-          </article>
+        <section
+          class="pf-guide-section"
+          aria-labelledby="owners-daily"
+        >
+          <h2
+            id="owners-daily"
+            class="pf-guide-section-title"
+            data-i18n="owners.daily_title"
+          >
+            What you use every day
+          </h2>
+          <p class="pf-guide-section-lead" data-i18n="owners.daily_lead">
+            Four screens that sell the owner seat.
+          </p>
 
-          <article class="pf-owners-topic">
-            <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num" data-i18n="owners.t2_num">02 · Every property, one view</p>
-              <p data-i18n="owners.t2_desc">
-                Company inventory first, then your own list. Each card carries status, stay dates, and location, so you and your manager work from the same data, not a spreadsheet.
-              </p>
-            </div>
-            <div class="pf-phone-solo">
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/owner-villas.png"
-                  width="472"
-                  height="1024"
-                  alt="Properties list with status, check-in and check-out dates, and location"
-                  data-i18n-attr="alt:owners.t2_alt"
-                  loading="lazy"
-                />
-              </figure>
-            </div>
-          </article>
+          <div class="pf-guide-daily">
+            <article class="pf-guide-flagship">
+              <div class="pf-guide-flagship-copy">
+                <h3 data-i18n="owners.f1_title">Home dashboard</h3>
+                <p data-i18n="owners.f1_desc">
+                  Occupancy, urgent work, and today's check-ins — live from the
+                  field, without opening a chat.
+                </p>
+              </div>
+              <div class="pf-phone-solo">
+                <figure class="pf-phone">
+                  <div class="pf-phone-screen">
+                    <img
+                      src="/assets/screenshots/owner-home.png"
+                      width="472"
+                      height="1024"
+                      alt="Owner home dashboard"
+                      data-i18n-attr="alt:owners.f1_alt"
+                      loading="eager"
+                    />
+                  </div>
+                </figure>
+              </div>
+            </article>
 
-          <article class="pf-owners-topic">
-            <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num" data-i18n="owners.t3_num">03 · Nothing falls through the cracks</p>
-              <p data-i18n="owners.t3_desc">
-                Every task carries a property, a deadline, and a name attached to it. See what needs attention right now.
-              </p>
-            </div>
-            <div class="pf-phone-solo">
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/owner-tasks.png"
-                  width="472"
-                  height="1024"
-                  alt="Tasks list with property, deadline, and assignee"
-                  data-i18n-attr="alt:owners.t3_alt"
-                  loading="lazy"
-                />
-              </figure>
-            </div>
-          </article>
+            <article class="pf-guide-flagship">
+              <div class="pf-guide-flagship-copy">
+                <h3 data-i18n="owners.f2_title">Villas inventory</h3>
+                <p data-i18n="owners.f2_desc">
+                  Company properties with status, stay dates, cleaning, and
+                  location — one list you and your manager share.
+                </p>
+              </div>
+              <div class="pf-phone-solo">
+                <figure class="pf-phone">
+                  <div class="pf-phone-screen">
+                    <img
+                      src="/assets/screenshots/owner-villas.png"
+                      width="472"
+                      height="1024"
+                      alt="Villas inventory"
+                      data-i18n-attr="alt:owners.f2_alt"
+                      loading="lazy"
+                    />
+                  </div>
+                </figure>
+              </div>
+            </article>
 
-          <article class="pf-owners-topic">
-            <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num" data-i18n="owners.t4_num">04 · One order, no confusion</p>
-              <p data-i18n="owners.t4_desc">
-                Send the details once: what, where, when. Call, WhatsApp, LINE, or bring a vendor into the app, and know exactly when they were reached.
-              </p>
-            </div>
-            <div class="pf-phone-pair">
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/owner-contacts.png"
-                  width="472"
-                  height="1024"
-                  alt="Contacts with Order, Call, and WhatsApp actions"
-                  data-i18n-attr="alt:owners.t4_alt1"
-                  loading="lazy"
-                />
-              </figure>
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/owner-order.png"
-                  width="472"
-                  height="1024"
-                  alt="Order form with what, where, and when"
-                  data-i18n-attr="alt:owners.t4_alt2"
-                  loading="lazy"
-                />
-              </figure>
-            </div>
-          </article>
+            <article class="pf-guide-flagship">
+              <div class="pf-guide-flagship-copy">
+                <h3 data-i18n="owners.f3_title">Bills · finance view</h3>
+                <p data-i18n="owners.f3_desc">
+                  Totals, categories, multi-currency, and mark paid — every
+                  receipt accounted for.
+                </p>
+              </div>
+              <div class="pf-phone-solo">
+                <figure class="pf-phone">
+                  <div class="pf-phone-screen">
+                    <img
+                      src="/assets/screenshots/owner-finances.png"
+                      width="472"
+                      height="1024"
+                      alt="Bills finance view"
+                      data-i18n-attr="alt:owners.f3_alt"
+                      loading="lazy"
+                    />
+                  </div>
+                </figure>
+              </div>
+            </article>
 
-          <article class="pf-owners-topic">
-            <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num" data-i18n="owners.t5_num">05 · Seen and accepted</p>
-              <p data-i18n="owners.t5_desc">
-                Staff confirm each job with one tap before it counts as assigned. Every bill and confirmation stays logged, in Notifications and in team chat.
-              </p>
-            </div>
-            <div class="pf-phone-pair">
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/owner-messages.png"
-                  width="472"
-                  height="1024"
-                  alt="Team chat with a service order card"
-                  data-i18n-attr="alt:owners.t5_alt1"
-                  loading="lazy"
-                />
-              </figure>
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/owner-notifications.png"
-                  width="472"
-                  height="1024"
-                  alt="Notifications with bills and job confirmations"
-                  data-i18n-attr="alt:owners.t5_alt2"
-                  loading="lazy"
-                />
-              </figure>
-            </div>
-          </article>
+            <article class="pf-guide-flagship">
+              <div class="pf-guide-flagship-copy">
+                <h3 data-i18n="owners.f4_title">Contacts + Order</h3>
+                <p data-i18n="owners.f4_desc">
+                  Vendor book with Call, WhatsApp, LINE, or in-app Order —
+                  what, where, and when in one send.
+                </p>
+              </div>
+              <div class="pf-phone-pair">
+                <figure class="pf-phone">
+                  <div class="pf-phone-screen">
+                    <img
+                      src="/assets/screenshots/owner-contacts.png"
+                      width="472"
+                      height="1024"
+                      alt="Contacts list"
+                      data-i18n-attr="alt:owners.f4_alt1"
+                      loading="lazy"
+                    />
+                  </div>
+                </figure>
+                <figure class="pf-phone">
+                  <div class="pf-phone-screen">
+                    <img
+                      src="/assets/screenshots/owner-order.png"
+                      width="472"
+                      height="1024"
+                      alt="Order form"
+                      data-i18n-attr="alt:owners.f4_alt2"
+                      loading="lazy"
+                    />
+                  </div>
+                </figure>
+              </div>
+            </article>
+          </div>
+        </section>
 
-          <article class="pf-owners-topic">
-            <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num" data-i18n="owners.t6_num">06 · Every expense is accounted for</p>
-              <p data-i18n="owners.t6_desc">
-                Filter by period, property, or category. Total, paid, and pending sit side by side. Approve a bill in one tap.
-              </p>
+        <section
+          class="pf-guide-section"
+          aria-labelledby="owners-included"
+        >
+          <h2
+            id="owners-included"
+            class="pf-guide-section-title"
+            data-i18n="owners.included_title"
+          >
+            Everything included
+          </h2>
+          <p class="pf-guide-section-lead" data-i18n="owners.included_lead">
+            The rest of the owner seat — text only, no screenshot parade.
+          </p>
+          <div class="pf-guide-included">
+            <div class="pf-guide-cluster">
+              <h3 data-i18n="owners.c1_title">Team &amp; reputation</h3>
+              <ul>
+                <li data-i18n="owners.c1_li1">
+                  Team chat with @mentions
+                </li>
+                <li data-i18n="owners.c1_li2">
+                  Weekly endorsements and company leaderboard
+                </li>
+                <li data-i18n="owners.c1_li3">
+                  Talent directory — skills, place, map
+                </li>
+                <li data-i18n="owners.c1_li4">
+                  Invite managers, field staff, guests, or anyone to the app
+                </li>
+                <li data-i18n="owners.c1_li5">
+                  Referral progress: invite 5 → 1 year Full
+                </li>
+              </ul>
             </div>
-            <div class="pf-phone-pair">
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/owner-finances.png"
-                  width="472"
-                  height="1024"
-                  alt="Finances with total, paid, and pending"
-                  data-i18n-attr="alt:owners.t6_alt1"
-                  loading="lazy"
-                />
-              </figure>
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/owner-finances-detail.png"
-                  width="472"
-                  height="1024"
-                  alt="Pending bills with Mark paid"
-                  data-i18n-attr="alt:owners.t6_alt2"
-                  loading="lazy"
-                />
-              </figure>
+            <div class="pf-guide-cluster">
+              <h3 data-i18n="owners.c2_title">Ops depth</h3>
+              <ul>
+                <li data-i18n="owners.c2_li1">
+                  Tasks across the company — assign, track, complete
+                </li>
+                <li data-i18n="owners.c2_li2">
+                  Jobs / service orders for linked contacts
+                </li>
+                <li data-i18n="owners.c2_li3">
+                  Villa access assignments for field staff
+                </li>
+                <li data-i18n="owners.c2_li4">
+                  Reports &amp; CSV: budget, bills, tasks, occupancy, handoffs
+                </li>
+                <li data-i18n="owners.c2_li5">
+                  Company billing (Stripe) when you leave trial
+                </li>
+              </ul>
             </div>
-          </article>
+            <div class="pf-guide-cluster">
+              <h3 data-i18n="owners.c3_title">On every account</h3>
+              <ul>
+                <li data-i18n="owners.c3_li1">
+                  Languages, profile, in-app notifications, optional Web Push
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-          <article class="pf-owners-topic">
-            <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num" data-i18n="owners.t7_num">07 · Who delivers</p>
-              <p data-i18n="owners.t7_desc">
-                Rate staff and service providers weekly. That builds a track record, so you know who to keep, renew, or replace.
-              </p>
-            </div>
-            <div class="pf-phone-pair">
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/owner-endorsements.png"
-                  width="472"
-                  height="1024"
-                  alt="Weekly star ratings for the team"
-                  data-i18n-attr="alt:owners.t7_alt1"
-                  loading="lazy"
-                />
-              </figure>
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/owner-leaderboard.png"
-                  width="472"
-                  height="1024"
-                  alt="Company leaderboard by rating"
-                  data-i18n-attr="alt:owners.t7_alt2"
-                  loading="lazy"
-                />
-              </figure>
-            </div>
-          </article>
-        </div>
+        <section
+          class="pf-guide-section pf-guide-note"
+          aria-labelledby="owners-hidden"
+        >
+          <h2
+            id="owners-hidden"
+            class="pf-guide-section-title"
+            data-i18n="owners.hidden_title"
+          >
+            What you don't see
+          </h2>
+          <p data-i18n="owners.hidden_body">
+            The field confirm queue and staff talent opt-in live on the staff
+            seat. Guest stay tools (house guide, support chat, deposits) are for
+            invited guests — not your ops home.
+          </p>
+        </section>
 
         <section class="pf-demo" aria-labelledby="demo-now" data-demo-login>
           <p class="pf-demo-eyebrow" data-i18n="demo.eyebrow">Demo</p>
@@ -323,7 +333,12 @@
             Choose a role. The login details are already filled in.
           </p>
 
-          <div class="pf-demo-roles" role="group" aria-label="Demo account" data-i18n-attr="aria-label:demo.account_label">
+          <div
+            class="pf-demo-roles"
+            role="group"
+            aria-label="Demo account"
+            data-i18n-attr="aria-label:demo.account_label"
+          >
             <button
               type="button"
               class="pf-demo-role is-active"
@@ -332,8 +347,21 @@
             >
               Owner
             </button>
-            <button type="button" class="pf-demo-role" data-demo-role="employee" data-i18n="demo.employee">
+            <button
+              type="button"
+              class="pf-demo-role"
+              data-demo-role="employee"
+              data-i18n="demo.employee"
+            >
               Employee
+            </button>
+            <button
+              type="button"
+              class="pf-demo-role"
+              data-demo-role="guest"
+              data-i18n="demo.role_guest"
+            >
+              Guest
             </button>
           </div>
 
@@ -363,7 +391,8 @@
               <a
                 data-demo-link
                 href="https://app.pulseflow.site/login?demo=owner"
-                aria-label="Open demo login" data-i18n-attr="aria-label:demo.open_login"
+                aria-label="Open demo login"
+                data-i18n-attr="aria-label:demo.open_login"
               >
                 <img
                   class="pf-qr-img"
@@ -376,7 +405,9 @@
                   loading="lazy"
                 />
               </a>
-              <p class="pf-demo-qr-caption" data-i18n="demo.scan">Scan to sign in</p>
+              <p class="pf-demo-qr-caption" data-i18n="demo.scan">
+                Scan to sign in
+              </p>
             </div>
           </div>
         </section>
@@ -390,8 +421,11 @@
             alt=""
           />
           <h2 data-i18n="owners.close_title">Open the app. See the day.</h2>
-          <a class="pf-btn-primary" href="https://app.pulseflow.site" data-i18n="home.cta"
-            >Open Pulse Flow</a
+          <a
+            class="pf-btn-primary"
+            href="https://app.pulseflow.site/register"
+            data-i18n="owners.cta_start"
+            >Start with Pulse Flow</a
           >
         </section>
       </main>
@@ -399,18 +433,22 @@
       <footer class="pf-footer">
         <div>
           <strong>Pulse Flow</strong>
-          <span data-i18n="footer.tagline">The pulse of your rental operations</span>
+          <span data-i18n="footer.tagline"
+            >The pulse of your rental operations</span
+          >
         </div>
         <div class="pf-footer-links">
           <a href="/" data-i18n="footer.home">Home</a>
           <a href="/#plans" data-i18n="footer.plans">Plans</a>
           <a href="/terms" data-i18n="footer.terms">Terms</a>
           <a href="/privacy" data-i18n="footer.privacy">Privacy</a>
-          <a href="mailto:support@pulseflow.site" data-i18n="footer.support">Support</a>
+          <a href="mailto:support@pulseflow.site" data-i18n="footer.support"
+            >Support</a
+          >
           <a href="https://app.pulseflow.site" data-i18n="footer.app">App</a>
         </div>
       </footer>
     </div>
-    <script src="/script.js?v=10" defer></script>
+    <script src="/script.js?v=11" defer></script>
   </body>
 </html>

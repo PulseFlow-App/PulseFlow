@@ -35,7 +35,11 @@
     "role_employee": "Employee",
     "kicker_owner": "Owner demo login",
     "kicker_employee": "Employee demo login",
-    "open": "Open demo login"
+    "open": "Open demo login",
+    "guest": "Huésped",
+    "guest_login": "Login demo de huésped",
+    "role_guest": "Huésped",
+    "kicker_guest": "Login demo de huésped"
   },
   "home": {
     "meta_title": "Pulse Flow - El pulso de tus operaciones de alquiler",
@@ -83,7 +87,7 @@
     "referral_title": "Invita a 5 personas → 1 año Full gratis",
     "referral_lead": "Copia tu enlace de referido en Perfil. Invitar a la app o como staff a tu empresa cuenta en ambos casos. Cuando empiece la facturación, 5 registros acreditados desbloquean 1 año Full desde esa fecha.",
     "demo_title": "Demo",
-    "demo_lead": "Login de propietario o empleado precargado."
+    "demo_lead": "Login de propietario, empleado o huésped precargado."
   },
   "owners": {
     "meta_title": "Para propietarios · Pulse Flow",
@@ -248,7 +252,7 @@
     "referral_title": "Invita a 5 personas → 1 año Full gratis",
     "referral_lead": "Copia tu enlace de referido en Perfil. Invitar a la app o como staff a tu empresa cuenta en ambos casos. Cuando empiece la facturación, 5 registros acreditados desbloquean 1 año Full desde esa fecha.",
     "demo_title": "Demo",
-    "demo_lead": "Login de propietario o empleado precargado.",
+    "demo_lead": "Login de propietario, empleado o huésped precargado.",
     "close_title": "Tu plan vive en Perfil",
     "sign_in": "Iniciar sesión"
   }

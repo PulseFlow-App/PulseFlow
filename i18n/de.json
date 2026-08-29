@@ -35,7 +35,11 @@
     "role_employee": "Employee",
     "kicker_owner": "Owner demo login",
     "kicker_employee": "Employee demo login",
-    "open": "Open demo login"
+    "open": "Open demo login",
+    "guest": "Gast",
+    "guest_login": "Gast-Demo-Login",
+    "role_guest": "Gast",
+    "kicker_guest": "Gast-Demo-Login"
   },
   "home": {
     "meta_title": "Pulse Flow - Der Puls Ihrer Mietbetriebe",
@@ -83,7 +87,7 @@
     "referral_title": "5 Personen einladen → 1 Jahr Full gratis",
     "referral_lead": "Kopieren Sie Ihren Empfehlungslink im Profil. Einladung zur App oder als Mitarbeiter in Ihre Firma zählt. Wenn die Abrechnung startet, schalten 5 gutgeschriebene Beitritte 1 Jahr Full ab diesem Datum frei.",
     "demo_title": "Demo",
-    "demo_lead": "Vorausgefüllter Eigentümer- oder Mitarbeiter-Login."
+    "demo_lead": "Vorausgefüllter Eigentümer-, Mitarbeiter- oder Gast-Login."
   },
   "owners": {
     "meta_title": "Für Eigentümer · Pulse Flow",
@@ -248,7 +252,7 @@
     "referral_title": "5 Personen einladen → 1 Jahr Full gratis",
     "referral_lead": "Kopieren Sie Ihren Empfehlungslink im Profil. Einladung zur App oder als Mitarbeiter in Ihre Firma zählt. Wenn die Abrechnung startet, schalten 5 gutgeschriebene Beitritte 1 Jahr Full ab diesem Datum frei.",
     "demo_title": "Demo",
-    "demo_lead": "Vorausgefüllter Eigentümer- oder Mitarbeiter-Login.",
+    "demo_lead": "Vorausgefüllter Eigentümer-, Mitarbeiter- oder Gast-Login.",
     "close_title": "Ihr Plan lebt im Profil",
     "sign_in": "Anmelden"
   }

@@ -9,7 +9,7 @@
     <title data-i18n="staff.meta_title">For field staff · Pulse Flow</title>
     <meta
       name="description"
-      content="Know what's yours to do today. Assigned jobs, one-tap confirmations, receipts, and your properties - in one app."
+      content="Jobs, confirmations, receipts, and your assigned properties — in one field app."
       data-i18n-attr="content:staff.meta_description"
     />
     <meta name="theme-color" content="#E8623D" />
@@ -27,7 +27,7 @@
     />
     <meta
       property="og:description"
-      content="Know what's yours to do today. Assigned jobs, confirmations, receipts, and your properties in one app."
+      content="Jobs, confirmations, receipts, and your assigned properties — in one field app."
       data-i18n-attr="content:staff.og_description"
     />
     <meta
@@ -36,18 +36,10 @@
     />
     <meta property="og:image:width" content="1024" />
     <meta property="og:image:height" content="665" />
-    <meta
-      property="og:image:alt"
-      content="Pulse Flow - Run everything in one pulse. Property operations for owners and managers."
-    />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
       content="https://pulseflow.site/assets/og-image.jpg"
-    />
-    <meta
-      name="twitter:image:alt"
-      content="Pulse Flow - Run everything in one pulse. Property operations for owners and managers."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -55,7 +47,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=22" />
+    <link rel="stylesheet" href="/styles.css?v=23" />
   </head>
   <body>
     <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
@@ -94,14 +86,13 @@
       </header>
 
       <main id="main" class="pf-owners-main">
-        <section class="pf-owners-hero">
+        <section class="pf-owners-hero is-text-only">
           <p class="pf-owners-badge" data-i18n="staff.badge">For field staff</p>
           <h1 class="pf-headline" data-i18n="staff.headline">
             Know what's yours to do today.
           </h1>
           <p class="pf-sub" data-i18n="staff.sub">
-            Assigned jobs, one-tap confirmations, receipts, and your properties -
-            in one app.
+            Confirm jobs, finish work, submit receipts — on your phone.
           </p>
           <div class="pf-owners-hero-actions">
             <a
@@ -110,187 +101,186 @@
               data-i18n="staff.cta_start"
               >Start with Pulse Flow</a
             >
-            <a class="pf-owners-link" href="#demo-now" data-i18n="staff.cta_demo"
+            <a
+              class="pf-owners-link"
+              href="#demo-now"
+              data-i18n="staff.cta_demo"
               >Try the demo</a
             >
           </div>
-          <figure class="pf-phone pf-phone-hero">
-            <img
-              src="/assets/screenshots/staff-home.png"
-              width="472"
-              height="1024"
-              alt="Staff home with jobs waiting for confirmation and ops readiness"
-              data-i18n-attr="alt:staff.hero_alt"
-              loading="eager"
-            />
-          </figure>
         </section>
 
-        <div class="pf-owners-topics">
-          <article class="pf-owners-topic">
-            <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num" data-i18n="staff.t1_num">01 · Waiting for you today</p>
-              <p data-i18n="staff.t1_desc">
-                Ops readiness, jobs that need your confirmation, and notifications for new work. No digging through WhatsApp.
-              </p>
-            </div>
-            <div class="pf-phone-pair">
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/staff-home.png"
-                  width="472"
-                  height="1024"
-                  alt="Staff home showing a job waiting for confirmation"
-                  data-i18n-attr="alt:staff.t1_alt1"
-                  loading="lazy"
-                />
-              </figure>
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/staff-notifications.png"
-                  width="472"
-                  height="1024"
-                  alt="Notifications for jobs, chat, and check-ins"
-                  data-i18n-attr="alt:staff.t1_alt2"
-                  loading="lazy"
-                />
-              </figure>
-            </div>
-          </article>
+        <section class="pf-guide-section" aria-labelledby="staff-daily">
+          <h2
+            id="staff-daily"
+            class="pf-guide-section-title"
+            data-i18n="staff.daily_title"
+          >
+            What you use every day
+          </h2>
+          <p class="pf-guide-section-lead" data-i18n="staff.daily_lead">
+            A field home that isn't the owner dashboard — plus jobs and bills.
+          </p>
 
-          <article class="pf-owners-topic">
-            <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num" data-i18n="staff.t2_num">02 · Only your properties</p>
-              <p data-i18n="staff.t2_desc">
-                Company villas assigned to you, plus your own personal list. Status, dates, and location on each card.
-              </p>
-            </div>
-            <div class="pf-phone-solo">
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/manager-villas.png"
-                  width="472"
-                  height="1024"
-                  alt="Properties list with status, check-in and check-out dates"
-                  data-i18n-attr="alt:staff.t2_alt"
-                  loading="lazy"
-                />
-              </figure>
-            </div>
-          </article>
+          <div class="pf-guide-daily">
+            <article class="pf-guide-flagship">
+              <div class="pf-guide-flagship-copy">
+                <h3 data-i18n="staff.f1_title">Field home</h3>
+                <p data-i18n="staff.f1_desc">
+                  Jobs waiting for your confirm, readiness, and what's hot today
+                  — built for on-site work.
+                </p>
+              </div>
+              <div class="pf-phone-solo">
+                <figure class="pf-phone">
+                  <div class="pf-phone-screen">
+                    <img
+                      src="/assets/screenshots/staff-home.png"
+                      width="472"
+                      height="1024"
+                      alt="Staff field home"
+                      data-i18n-attr="alt:staff.f1_alt"
+                      loading="eager"
+                    />
+                  </div>
+                </figure>
+              </div>
+            </article>
 
-          <article class="pf-owners-topic">
-            <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num" data-i18n="staff.t3_num">03 · Your own list, every job</p>
-              <p data-i18n="staff.t3_desc">
-                Materials, notes, reminders: your helper list to finish the job, separate from the company board.
-              </p>
-            </div>
-            <div class="pf-phone-solo">
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/staff-jobs.png"
-                  width="472"
-                  height="1024"
-                  alt="My jobs with work windows by property"
-                  data-i18n-attr="alt:staff.t3_alt"
-                  loading="lazy"
-                />
-              </figure>
-            </div>
-          </article>
+            <article class="pf-guide-flagship">
+              <div class="pf-guide-flagship-copy">
+                <h3 data-i18n="staff.f2_title">Jobs · confirm</h3>
+                <p data-i18n="staff.f2_desc">
+                  Work windows by property. One tap to confirm before it counts
+                  as yours.
+                </p>
+              </div>
+              <div class="pf-phone-solo">
+                <figure class="pf-phone">
+                  <div class="pf-phone-screen">
+                    <img
+                      src="/assets/screenshots/staff-jobs.png"
+                      width="472"
+                      height="1024"
+                      alt="Jobs list with confirm"
+                      data-i18n-attr="alt:staff.f2_alt"
+                      loading="lazy"
+                    />
+                  </div>
+                </figure>
+              </div>
+            </article>
 
-          <article class="pf-owners-topic">
-            <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num" data-i18n="staff.t4_num">04 · One tap, and it's done</p>
-              <p data-i18n="staff.t4_desc">
-                Confirm each job with one tap. Owner and manager see you were reached, logged in the app, nothing lost in chat.
-              </p>
-            </div>
-            <div class="pf-phone-pair">
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/staff-home-clear.png"
-                  width="472"
-                  height="1024"
-                  alt="Staff home with confirmed job and clear board"
-                  data-i18n-attr="alt:staff.t4_alt1"
-                  loading="lazy"
-                />
-              </figure>
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/staff-home.png"
-                  width="472"
-                  height="1024"
-                  alt="Staff home before confirmation"
-                  data-i18n-attr="alt:staff.t4_alt2"
-                  loading="lazy"
-                />
-              </figure>
-            </div>
-          </article>
+            <article class="pf-guide-flagship">
+              <div class="pf-guide-flagship-copy">
+                <h3 data-i18n="staff.f3_title">Bills · submit</h3>
+                <p data-i18n="staff.f3_desc">
+                  Photo the receipt, enter the amount, send it up. You see your
+                  submissions — owners approve.
+                </p>
+              </div>
+              <div class="pf-phone-solo">
+                <figure class="pf-phone">
+                  <div class="pf-phone-screen">
+                    <img
+                      src="/assets/screenshots/staff-bills.png"
+                      width="472"
+                      height="1024"
+                      alt="Staff bills submit"
+                      data-i18n-attr="alt:staff.f3_alt"
+                      loading="lazy"
+                    />
+                  </div>
+                </figure>
+              </div>
+            </article>
 
-          <article class="pf-owners-topic">
-            <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num" data-i18n="staff.t5_num">05 · What you submitted</p>
-              <p data-i18n="staff.t5_desc">
-                Photo the receipt, enter the amount, send it up. You see your submissions, owners and managers handle approval.
-              </p>
-            </div>
-            <div class="pf-phone-solo">
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/staff-bills.png"
-                  width="472"
-                  height="1024"
-                  alt="Bills screen for expense submissions"
-                  data-i18n-attr="alt:staff.t5_alt1"
-                  loading="lazy"
-                />
-              </figure>
-            </div>
-          </article>
+            <article class="pf-guide-flagship">
+              <div class="pf-guide-flagship-copy">
+                <h3 data-i18n="staff.f4_title">Talent &amp; reputation</h3>
+                <p data-i18n="staff.f4_desc">
+                  Opt in with skills and a map pin. Weekly stars build a
+                  shareable profile that travels with you.
+                </p>
+              </div>
+              <div class="pf-phone-solo">
+                <figure class="pf-phone">
+                  <div
+                    class="pf-phone-screen pf-phone-placeholder"
+                    role="img"
+                    aria-label="Screenshot coming soon"
+                    data-i18n-attr="aria-label:guide.screenshot_soon"
+                  >
+                    screenshot
+                  </div>
+                </figure>
+              </div>
+            </article>
+          </div>
+        </section>
 
-          <article class="pf-owners-topic">
-            <div class="pf-owners-topic-copy">
-              <p class="pf-owners-feature-num" data-i18n="staff.t6_num">06 · Your record travels with you</p>
-              <p data-i18n="staff.t6_desc">
-                Weekly stars from owners build a shareable profile. Carry that history to your next contract or team.
-              </p>
+        <section class="pf-guide-section" aria-labelledby="staff-included">
+          <h2
+            id="staff-included"
+            class="pf-guide-section-title"
+            data-i18n="staff.included_title"
+          >
+            Everything included
+          </h2>
+          <div class="pf-guide-included">
+            <div class="pf-guide-cluster">
+              <h3 data-i18n="staff.c1_title">On the company</h3>
+              <ul>
+                <li data-i18n="staff.c1_li1">
+                  Assigned villas only (limited chrome vs owner)
+                </li>
+                <li data-i18n="staff.c1_li2">Team chat with the company</li>
+                <li data-i18n="staff.c1_li3">
+                  Leaderboard as a team member
+                </li>
+                <li data-i18n="staff.c1_li4">
+                  Invite anyone to the app (referral link)
+                </li>
+              </ul>
             </div>
-            <div class="pf-phone-pair">
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/owner-endorsements.png"
-                  width="472"
-                  height="1024"
-                  alt="Endorsements and star ratings"
-                  data-i18n-attr="alt:staff.t6_alt1"
-                  loading="lazy"
-                />
-              </figure>
-              <figure class="pf-phone">
-                <img
-                  src="/assets/screenshots/owner-leaderboard.png"
-                  width="472"
-                  height="1024"
-                  alt="Leaderboard of team performance"
-                  data-i18n-attr="alt:staff.t6_alt2"
-                  loading="lazy"
-                />
-              </figure>
+            <div class="pf-guide-cluster">
+              <h3 data-i18n="staff.c2_title">Your side work</h3>
+              <ul>
+                <li data-i18n="staff.c2_li1">
+                  Personal villas for your own clients
+                </li>
+                <li data-i18n="staff.c2_li2">
+                  Languages, notifications, optional Web Push
+                </li>
+              </ul>
             </div>
-          </article>
-        </div>
+          </div>
+        </section>
+
+        <section
+          class="pf-guide-section pf-guide-note"
+          aria-labelledby="staff-hidden"
+        >
+          <h2
+            id="staff-hidden"
+            class="pf-guide-section-title"
+            data-i18n="staff.hidden_title"
+          >
+            What you don't see
+          </h2>
+          <p data-i18n="staff.hidden_body">
+            No Contacts Order, no talent browse of other workers, no reports
+            CSV, no mark-all-bills-paid finance tools, no villa ACL, and no guest
+            invite cards — those stay with owners and managers.
+          </p>
+        </section>
 
         <section class="pf-demo" aria-labelledby="demo-now" data-demo-login>
           <p class="pf-demo-eyebrow" data-i18n="demo.eyebrow">Demo</p>
-          <h2 id="demo-now" data-i18n="demo.title">Try it yourself</h2>
-          <p class="pf-demo-lead" data-i18n="demo.lead">
-            Choose a role. The login details are already filled in.
+          <h2 id="demo-now" data-i18n="staff.demo_title">Try it yourself</h2>
+          <p class="pf-demo-lead" data-i18n="staff.demo_lead">
+            Open the staff seat. Login details are already filled in.
           </p>
-
           <div
             class="pf-demo-roles"
             role="group"
@@ -299,29 +289,32 @@
           >
             <button
               type="button"
+              class="pf-demo-role"
+              data-demo-role="owner"
+              data-i18n="demo.role_owner"
+            >
+              Owner
+            </button>
+            <button
+              type="button"
               class="pf-demo-role is-active"
               data-demo-role="employee"
-              data-i18n="demo.employee"
+              data-i18n="demo.role_employee"
             >
               Employee
             </button>
             <button
               type="button"
               class="pf-demo-role"
-              data-demo-role="owner"
-              data-i18n="demo.owner"
+              data-demo-role="guest"
+              data-i18n="demo.role_guest"
             >
-              Owner
+              Guest
             </button>
           </div>
-
           <div class="pf-demo-grid">
             <div class="pf-demo-credentials">
-              <p
-                class="pf-demo-kicker"
-                data-demo-kicker
-                data-i18n="demo.kicker_employee"
-              >
+              <p class="pf-demo-kicker" data-demo-kicker>
                 Employee demo login
               </p>
               <ul class="pf-demo-list">
@@ -342,7 +335,6 @@
                 >Open demo login</a
               >
             </div>
-
             <div class="pf-demo-qr">
               <a
                 data-demo-link
@@ -361,7 +353,9 @@
                   loading="lazy"
                 />
               </a>
-              <p class="pf-demo-qr-caption" data-i18n="demo.scan">Scan to sign in</p>
+              <p class="pf-demo-qr-caption" data-i18n="demo.scan">
+                Scan to sign in
+              </p>
             </div>
           </div>
         </section>
@@ -389,7 +383,9 @@
       <footer class="pf-footer">
         <div>
           <strong>Pulse Flow</strong>
-          <span data-i18n="footer.tagline">The pulse of your rental operations</span>
+          <span data-i18n="footer.tagline"
+            >The pulse of your rental operations</span
+          >
         </div>
         <div class="pf-footer-links">
           <a href="/" data-i18n="footer.home">Home</a>
@@ -403,6 +399,6 @@
         </div>
       </footer>
     </div>
-    <script src="/script.js?v=10" defer></script>
+    <script src="/script.js?v=11" defer></script>
   </body>
 </html>

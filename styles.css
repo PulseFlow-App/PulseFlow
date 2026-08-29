@@ -451,6 +451,37 @@ a.pf-audience-card:hover {
   opacity: 0.82;
 }
 
+.pf-audience-card-guest {
+  background: transparent;
+  border-style: dashed;
+  border-color: rgba(31, 111, 99, 0.35);
+  box-shadow: none;
+}
+
+.pf-audience-card-guest:hover {
+  border-color: var(--lagoon);
+  background: rgba(31, 111, 99, 0.06);
+}
+
+.pf-audience-card-guest .pf-audience-cta {
+  color: var(--lagoon-dark);
+}
+
+.pf-plan-personal-note {
+  margin: 16px 0 0;
+  max-width: 40ch;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.pf-plan-personal-note a {
+  font-weight: 800;
+  color: var(--coral-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .pf-audience-card h3 {
   margin: 0;
   font-size: 1.15rem;
@@ -825,7 +856,136 @@ a.pf-audience-card:hover {
 
 .pf-phone-hero {
   margin-top: 28px;
-  width: min(68vw, 280px);
+  width: min(62vw, 240px);
+}
+
+/* Guide pages: hero text only, then flagship shots + text clusters */
+.pf-guide-section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 8px var(--pad) 48px;
+  position: relative;
+  z-index: 2;
+}
+
+.pf-guide-section-title {
+  margin: 0 0 8px;
+  font-size: clamp(1.35rem, 3.6vw, 1.75rem);
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+.pf-guide-section-lead {
+  margin: 0 0 28px;
+  max-width: 48ch;
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.pf-guide-daily {
+  display: grid;
+  gap: 56px;
+}
+
+.pf-guide-flagship {
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  text-align: center;
+}
+
+.pf-guide-flagship-copy {
+  max-width: 520px;
+}
+
+.pf-guide-flagship-copy h3 {
+  margin: 0 0 8px;
+  font-size: clamp(1.2rem, 3vw, 1.45rem);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.pf-guide-flagship-copy p {
+  margin: 0 auto;
+  max-width: 46ch;
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.pf-guide-included {
+  display: grid;
+  gap: 22px;
+  margin-top: 8px;
+}
+
+.pf-guide-cluster {
+  padding: 20px 18px;
+  border-radius: 20px;
+  background: rgba(251, 248, 241, 0.72);
+  border: 1px solid rgba(22, 35, 31, 0.08);
+}
+
+.pf-guide-cluster h3 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+}
+
+.pf-guide-cluster ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.pf-guide-cluster li {
+  position: relative;
+  padding-inline-start: 1.1em;
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.pf-guide-cluster li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--coral);
+}
+
+.pf-guide-note,
+.pf-guide-soon {
+  max-width: 640px;
+}
+
+.pf-guide-note p,
+.pf-guide-soon p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.pf-guide-soon ul {
+  margin: 14px 0 0;
+  padding-inline-start: 1.15em;
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.5;
+  display: grid;
+  gap: 6px;
+}
+
+.pf-owners-hero.is-text-only .pf-phone-hero {
+  display: none;
 }
 
 .pf-owners-pulse {
@@ -910,44 +1070,91 @@ a.pf-audience-card:hover {
   color: var(--ink);
 }
 
-/* Phone frame: width-only sizing. Image keeps natural aspect ratio. */
+/* Phone bezel + screen */
 .pf-phone {
+  position: relative;
   margin: 0;
-  width: min(68vw, 280px);
+  width: min(62vw, 248px);
   height: auto;
-  padding: 10px;
-  border-radius: 32px;
-  background: var(--paper);
-  border: 1px solid var(--sand-deep);
-  box-shadow: 0 22px 44px -28px rgba(22, 35, 31, 0.35);
+  padding: 11px;
+  border-radius: 40px;
+  background: linear-gradient(165deg, #2c342f 0%, #121816 78%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 28px 50px -30px rgba(22, 35, 31, 0.55);
+}
+
+.pf-phone::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  z-index: 2;
+  width: 72px;
+  height: 9px;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background: #0a0d0b;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.pf-phone-screen {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  background: #ebe4d4;
+  aspect-ratio: 9 / 19.5;
 }
 
 .pf-phone img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   max-width: none;
-  object-fit: contain;
+  object-fit: cover;
   object-position: top center;
-  border-radius: 24px;
-  border: 1px solid rgba(22, 35, 31, 0.06);
+  border: 0;
+  border-radius: 0;
 }
 
-/* Mobile: always stack, smaller than full viewport */
+.pf-phone-placeholder {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgba(251, 248, 241, 0.92), rgba(224, 213, 190, 0.85)),
+    repeating-linear-gradient(
+      -12deg,
+      transparent,
+      transparent 10px,
+      rgba(22, 35, 31, 0.03) 10px,
+      rgba(22, 35, 31, 0.03) 20px
+    );
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 .pf-phone-pair,
 .pf-phone-solo {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 18px;
   width: 100%;
 }
 
 .pf-phone-pair .pf-phone,
 .pf-phone-solo .pf-phone {
-  width: min(68vw, 280px);
+  width: min(58vw, 228px);
 }
 
 .pf-owners-close {

@@ -35,7 +35,11 @@
     "role_employee": "Employee",
     "kicker_owner": "Owner demo login",
     "kicker_employee": "Employee demo login",
-    "open": "Open demo login"
+    "open": "Open demo login",
+    "guest": "ဧည့်သည်",
+    "guest_login": "ဧည့်သည် ဒီမို ဝင်ရောက်မှု",
+    "role_guest": "ဧည့်သည်",
+    "kicker_guest": "ဧည့်သည် ဒီမို ဝင်ရောက်မှု"
   },
   "home": {
     "meta_title": "Pulse Flow - သင့်ငှားရမ်းလုပ်ငန်း၏ စည်းချက်",
@@ -83,7 +87,7 @@
     "referral_title": "လူ ၅ ဦး ဖိတ်ပါ → Full တစ်နှစ် အခမဲ့",
     "referral_lead": "Profile တွင် referral link ကူးယူပါ။ app သို့ သို့မဟုတ် company staff အဖြစ် ဖိတ်ခြင်း နှစ်ခုလုံး ရေတွက်သည်။ billing စတင်သောအခါ credited joins 5 ခု ဖြင့် ထိုနေ့မှ Full 1 နှစ် ရသည်။",
     "demo_title": "ဒီမို",
-    "demo_lead": "ကြိုတင်ဖြည့်ထားသော ပိုင်ရှင် သို့မဟုတ် ဝန်ထမ်း ဝင်ရောက်မှု။"
+    "demo_lead": "ကြိုတင်ဖြည့်ထားသော ပိုင်ရှင်၊ ဝန်ထမ်း သို့မဟုတ် ဧည့်သည် ဝင်ရောက်မှု။"
   },
   "owners": {
     "meta_title": "ပိုင်ရှင်များအတွက် · Pulse Flow",
@@ -248,7 +252,7 @@
     "referral_title": "လူ ၅ ဦး ဖိတ်ပါ → Full တစ်နှစ် အခမဲ့",
     "referral_lead": "Profile တွင် referral link ကူးယူပါ။ app သို့ သို့မဟုတ် company staff အဖြစ် ဖိတ်ခြင်း နှစ်ခုလုံး ရေတွက်သည်။ billing စတင်သောအခါ credited joins 5 ခု ဖြင့် ထိုနေ့မှ Full 1 နှစ် ရသည်။",
     "demo_title": "ဒီမို",
-    "demo_lead": "ကြိုတင်ဖြည့်ထားသော ပိုင်ရှင် သို့မဟုတ် ဝန်ထမ်း ဝင်ရောက်မှု။",
+    "demo_lead": "ကြိုတင်ဖြည့်ထားသော ပိုင်ရှင်၊ ဝန်ထမ်း သို့မဟုတ် ဧည့်သည် ဝင်ရောက်မှု။",
     "close_title": "သင့်အစီအစဉ်သည် ပရိုဖိုင်တွင် ရှိသည်",
     "sign_in": "ဝင်ရောက်ရန်"
   }
