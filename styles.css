@@ -458,6 +458,34 @@ a.pf-audience-card:hover {
   box-shadow: none;
 }
 
+@media (min-width: 800px) {
+  .pf-audience-card-guest {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0 1.25rem;
+    padding: 18px 22px;
+  }
+
+  .pf-audience-card-guest h3 {
+    flex: 1 1 28%;
+    min-width: 16rem;
+  }
+
+  .pf-audience-card-guest p {
+    flex: 1 1 40%;
+    margin-top: 0;
+    max-width: 52ch;
+  }
+
+  .pf-audience-card-guest .pf-audience-cta {
+    margin-top: 0;
+    padding-top: 0;
+    margin-inline-start: auto;
+    align-self: center;
+  }
+}
+
 .pf-audience-card-guest:hover {
   border-color: var(--lagoon);
   background: rgba(31, 111, 99, 0.06);
@@ -513,6 +541,10 @@ a.pf-audience-card:hover {
   .pf-audience-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
+  }
+
+  .pf-audience-card-guest {
+    grid-column: 1 / -1;
   }
 }
 
