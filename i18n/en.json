@@ -38,11 +38,11 @@
     "open": "Open demo login"
   },
   "home": {
-    "meta_title": "Pulse Flow - Run every property operations in one app",
+    "meta_title": "Pulse Flow - Run all property operations in one app",
     "meta_description": "Locations, jobs, contacts, and bills, one pulse you and your team keep together, wherever you are.",
-    "og_description": "Run every property operations in one app",
+    "og_description": "Run all property operations in one app",
     "eyebrow": "In the pulse",
-    "headline": "Run every property operations in one app",
+    "headline": "Run all property operations in one app",
     "sub": "Locations, jobs, contacts, and bills, one pulse you and your team keep together, wherever you are.",
     "cta": "Open Pulse Flow",
     "swipe": "Swipe the cards",
@@ -114,7 +114,7 @@
     "t5_desc": "Staff confirm each job with one tap before it counts as assigned. Every bill and confirmation stays logged, in Notifications and in team chat.",
     "t5_alt1": "Team chat with a service order card",
     "t5_alt2": "Notifications with bills and job confirmations",
-    "t6_num": "06 · Every baht, accounted for",
+    "t6_num": "06 · Every expense is accounted for",
     "t6_desc": "Filter by period, property, or category. Total, paid, and pending sit side by side. Approve a bill in one tap.",
     "t6_alt1": "Finances with total, paid, and pending",
     "t6_alt2": "Pending bills with Mark paid",
