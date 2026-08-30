@@ -190,7 +190,8 @@
     "o4": "Tasks across the company - assign, track, complete",
     "o5": "Jobs and service orders for linked contacts",
     "o6": "Contacts + Order and bills finance view",
-    "o7": "Optional push notifications"
+    "o7": "Optional push notifications",
+    "f4_alt": "Reports exports and handoff snapshot"
   },
   "staff": {
     "meta_title": "For field staff · Pulse Flow",
@@ -235,7 +236,9 @@
     "o3": "Assigned villas from your host",
     "o4": "Personal villas for your own clients",
     "o5": "Invite anyone to the app",
-    "o6": "Optional push notifications"
+    "o6": "Optional push notifications",
+    "f4_alt1": "Talent directory opt-in",
+    "f4_alt2": "Staff search on map"
   },
   "subscription": {
     "meta_title": "Plans · Pulse Flow",
@@ -374,7 +377,6 @@
     "sub": "Everything about your stay in one place: villa details, house guide, support, and your deposit and bills.",
     "cta_open": "Open the app",
     "cta_demo": "Try the guest demo",
-    "daily_title": "What you use during your stay",
     "f1_title": "Stay home",
     "f1_desc": "Your villa, your dates, and any notices from your host, all on one screen the moment you sign in.",
     "f2_title": "House guide",
