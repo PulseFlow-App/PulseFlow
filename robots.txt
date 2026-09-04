@@ -1,4 +1,42 @@
+# Pulse Flow — crawl policy (Q7 / Pavel): AI assistants may index for answers;
+# training stays off. Cloudflare Managed Content must match this or it prepends Disallow.
+
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no, use=reference
+Allow: /
+
+# Explicit allow for assistant / answer crawlers (overrides legacy CF Disallow once CF is opened)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
 User-agent: *
 Allow: /
 
-Sitemap: https://pulseflow.site/sitemap.xml
+Sitemap: https://www.pulseflow.site/sitemap.xml

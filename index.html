@@ -1,51 +1,80 @@
 <!DOCTYPE html>
-<html lang="en" translate="no">
+<html lang="en" dir="ltr" translate="no">
   <head>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title data-i18n="home.meta_title">
-      Pulse Flow - Run all property operations in one app
-    </title>
+    <title data-i18n="home.meta_title">Pulse Flow: run the whole property operation in one place
+      Pulse Flow: run the whole property operation in one place
+    
     <meta
       name="description"
-      content="Locations, jobs, contacts, and bills, one pulse you and your team keep together, wherever you are."
+      content="Properties, jobs, vendors, bills and guests in one workspace. Owner, manager and staff see the same picture, each in their own language."
       data-i18n-attr="content:home.meta_description"
     />
     <meta name="theme-color" content="#E8623D" />
     <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="/icons/icon-192.png" />
-    <link rel="canonical" href="https://pulseflow.site/" />
+    <link rel="canonical" href="https://www.pulseflow.site/" />
+    <link rel="alternate" hreflang="en" href="https://www.pulseflow.site/" />
+    <link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru" />
+    <link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th" />
+    <link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my" />
+    <link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr" />
+    <link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de" />
+    <link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es" />
+    <link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it" />
+    <link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he" />
+    <link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar" />
+    <link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/" />
     <meta name="robots" content="index, follow" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+    <meta property="og:locale:alternate" content="th_TH" />
+    <meta property="og:locale:alternate" content="my_MM" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="de_DE" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta property="og:locale:alternate" content="it_IT" />
+    <meta property="og:locale:alternate" content="he_IL" />
+    <meta property="og:locale:alternate" content="ar_SA" />
+
+
     <meta property="og:site_name" content="Pulse Flow" />
-    <meta property="og:url" content="https://pulseflow.site/" />
-    <meta property="og:title" content="Pulse Flow" />
+    <meta property="og:url" content="https://www.pulseflow.site/" />
+    <meta
+      property="og:title"
+      content="Get your property operation out of the group chat"
+      data-i18n-attr="content:home.og_title"
+    />
     <meta
       property="og:description"
-      content="Run all property operations in one app"
+      content="Owner, manager, staff and guest in one workspace. Everyone sees their own slice, in their own language."
       data-i18n-attr="content:home.og_description"
     />
     <meta
       property="og:image"
-      content="https://pulseflow.site/assets/og-image.jpg"
+      content="https://www.pulseflow.site/assets/og-image.jpg"
     />
     <meta property="og:image:width" content="1024" />
     <meta property="og:image:height" content="665" />
     <meta
       property="og:image:alt"
-      content="Pulse Flow - Run everything in one pulse. Property operations for owners and managers."
+      content="Pulse Flow: properties, jobs, money and guests on one screen"
+      data-i18n-attr="content:home.og_image_alt"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
-      content="https://pulseflow.site/assets/og-image.jpg"
+      content="https://www.pulseflow.site/assets/og-image.jpg"
     />
     <meta
       name="twitter:image:alt"
-      content="Pulse Flow - Run everything in one pulse. Property operations for owners and managers."
+      content="Pulse Flow: properties, jobs, money and guests on one screen"
+      data-i18n-attr="content:home.og_image_alt"
     />
     <script type="application/ld+json">
       {
@@ -53,19 +82,19 @@
         "@graph": [
           {
             "@type": "Organization",
-            "@id": "https://pulseflow.site/#organization",
+            "@id": "https://www.pulseflow.site/#organization",
             "name": "Pulse Flow",
-            "url": "https://pulseflow.site",
-            "logo": "https://pulseflow.site/icons/icon-512.png",
+            "url": "https://www.pulseflow.site",
+            "logo": "https://www.pulseflow.site/icons/icon-512.png",
             "email": "support@pulseflow.site"
           },
           {
             "@type": "WebSite",
-            "@id": "https://pulseflow.site/#website",
-            "url": "https://pulseflow.site",
+            "@id": "https://www.pulseflow.site/#website",
+            "url": "https://www.pulseflow.site",
             "name": "Pulse Flow",
             "description": "Property operations for owners and managers. Locations, jobs, contacts, and bills in one app.",
-            "publisher": { "@id": "https://pulseflow.site/#organization" }
+            "publisher": { "@id": "https://www.pulseflow.site/#organization" }
           },
           {
             "@type": "SoftwareApplication",
@@ -74,21 +103,38 @@
             "operatingSystem": "Web",
             "url": "https://app.pulseflow.site/login",
             "description": "Villa status, tasks, contacts, and bills for owners and on-site managers, in one place.",
-            "publisher": { "@id": "https://pulseflow.site/#organization" }
+            "publisher": { "@id": "https://www.pulseflow.site/#organization" },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "description": "Personal workspace and all invited team seats are free"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.pulseflow.site/#webpage",
+            "url": "https://www.pulseflow.site/",
+            "name": "Pulse Flow",
+            "inLanguage": "en",
+            "isPartOf": { "@id": "https://www.pulseflow.site/#website" }
           }
         ]
       }
     </script>
+    <link
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=24" />
+    <link rel="stylesheet" href="/styles.css?v=27" />
   </head>
   <body>
-    <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
+    <a class="skip" href="#main" data-i18n="nav.skip">Skip to contentSkip to content
 
     <div class="pf-wrap">
       <header class="pf-nav">
@@ -102,10 +148,16 @@
           />
           Pulse Flow
         </a>
+        <nav class="pf-role-nav" aria-label="Site">
+          <a href="/owners" data-i18n="nav.owners">OwnersOwners
+          <a href="/managers" data-i18n="nav.managers">ManagersManagers
+          <a href="/staff" data-i18n="nav.staff">Field staffField staff
+          <a href="/#plans" data-i18n="nav.plans">PlansPlans
+        </nav>
         <div class="pf-nav-actions">
           <label class="pf-lang">
             <span class="pf-visually-hidden" data-i18n="nav.language"
-              >Language</span
+              >LanguageLanguage</span
             >
             <select
               class="pf-lang-select"
@@ -124,29 +176,38 @@
       </header>
 
       <main id="main">
-        <section class="pf-hero">
-          <p class="pf-eyebrow" data-i18n="home.eyebrow">In the pulse</p>
-          <h1 class="pf-headline" data-i18n="home.headline">
-            Run all property operations in one app
-          </h1>
-          <p class="pf-sub" data-i18n="home.sub">
-            Locations, jobs, contacts, and bills, one pulse you and your team
-            keep together, wherever you are.
-          </p>
+        <section class="pf-hero" id="hero">
+          <p class="pf-eyebrow" data-i18n="home.eyebrow">For operations running 2 to 20 properties</p>
+          <h1 class="pf-headline" data-i18n="home.headline">Get your operation out of the group chat</h1>
+          <p class="pf-sub" data-i18n="home.sub">Properties, jobs, vendors, bills and guests in one workspace. Everyone sees their own slice, in their own language.</p>
           <div class="pf-hero-actions">
             <a
               class="pf-btn-primary"
-              href="https://app.pulseflow.site"
+              href="https://app.pulseflow.site/register"
               data-i18n="home.cta"
-              >Open Pulse Flow</a
+              >Start free</a
             >
             <a
               class="pf-hero-link"
-              href="#why-app"
+              href="#demo-now"
               data-i18n="home.cta_secondary"
-              >Learn more information</a
+              >See the demo</a
             >
           </div>
+        </section>
+
+        <section class="pf-proof" id="proof" aria-label="Proof">
+          <p data-i18n="home.proof_line">We are launching on Koh Phangan, onboarding the first teams by hand. Reviews will appear here when there are real ones.</p>
+        </section>
+
+        <section class="pf-alt" id="alternative" aria-labelledby="alt-title">
+          <h2 id="alt-title" data-i18n="home.alt_title">Right now this lives in WhatsApp with your manager, LINE with your cleaner, and a spreadsheet</h2>
+          <ul class="pf-alt-list">
+            <li data-i18n="home.alt_1">You send a job and have no idea whether anyone picked it up until you call.</li>
+            <li data-i18n="home.alt_2">Receipts sit as photos in a thread, and at month end you go looking for them again.</li>
+            <li data-i18n="home.alt_3">Someone leaves, and the vendor numbers and the arrangements leave with their phone.</li>
+          </ul>
+          <p class="pf-alt-answer" data-i18n="home.alt_answer">The chat is not going anywhere, and it should not. Pulse Flow picks up where the chat stops working: a job that is confirmed, a cost attached to a property, and a history that stays with the company.</p>
         </section>
 
         <p class="pf-swipe-label">
@@ -165,13 +226,14 @@
               stroke-linejoin="round"
             />
           </svg>
-          <span data-i18n="home.swipe">Swipe the cards</span>
+          <span data-i18n="home.swipe">Swipe the cards
         </p>
 
         <div
           class="pf-cards"
+          id="features"
           tabindex="0"
-          data-i18n-attr="aria-label:home.features_label"
+          data-i18n-attr="aria-label:home.cards_label"
           aria-label="Product features"
         >
           <article class="pf-card">
@@ -203,26 +265,20 @@
                   stroke-linejoin="round"
                 />
                 <circle cx="43" cy="52" r="2.6" fill="#fff" />
-                <path
-                  d="M36 62c1.5-6 4-9 7-9s5.5 3 7 9"
-                  stroke="#fff"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  opacity="0.7"
-                />
               </svg>
             </div>
             <h2
               class="pf-tag"
               style="color: var(--coral-dark)"
-              data-i18n="home.card_properties"
-            >
+              data-i18n="home.card_villas"
+            >Properties
               Properties
-            </h2>
-            <p class="pf-desc" data-i18n="home.card_properties_desc">
-              Status, a map pin, notes, and a property photo so staff recognize
-              the place on sight and will not confuse the objects
-            </p>
+            
+            <p class="pf-desc" data-i18n="home.card_villas_desc">Status, map pin, stay dates, notes and a photo. One list for the owner, the manager and the person on site, instead of three versions of a spreadsheet.
+              Status, map pin, stay dates, notes and a photo. One list for the
+              owner, the manager and the person on site, instead of three
+              versions of a spreadsheet.
+            
           </article>
 
           <article class="pf-card">
@@ -247,32 +303,16 @@
                   stroke-linejoin="round"
                 />
                 <circle cx="76" cy="50" r="3.4" fill="#E8623D" />
-                <rect
-                  x="14"
-                  y="66"
-                  width="64"
-                  height="3"
-                  rx="1.5"
-                  fill="#4A544F"
-                />
-                <rect
-                  x="14"
-                  y="66"
-                  width="30"
-                  height="3"
-                  rx="1.5"
-                  fill="#EDE6D6"
-                />
               </svg>
             </div>
-            <h2 class="pf-tag" style="color: var(--ink)" data-i18n="home.card_jobs">
-              Jobs
-            </h2>
-            <p class="pf-desc" data-i18n="home.card_jobs_desc">
-              Appointments with a clear description, a set work window, and
-              confirmation from the team - nothing will be missed in the chats
-              anymore.
-            </p>
+            <h2 class="pf-tag" style="color: var(--ink)" data-i18n="home.card_jobs">Jobs and vendors
+              Jobs and vendors
+            
+            <p class="pf-desc" data-i18n="home.card_jobs_desc">A job with a description and a work window. Anyone on the app confirms it with one tap. For everyone else, call or message straight from the contact card: phone, WhatsApp, LINE.
+              A job with a description and a work window. Anyone on the app
+              confirms it with one tap. For everyone else, call or message
+              straight from the contact card: phone, WhatsApp, LINE.
+            
           </article>
 
           <article class="pf-card">
@@ -290,38 +330,32 @@
                 aria-hidden="true"
               >
                 <path
-                  d="M27 24a6 6 0 016-6h5l3 9-4 4c1.8 4.4 5.6 8.2 10 10l4-4 9 3v5a6 6 0 01-6 6C39 51 27 39 27 24z"
+                  d="M20 12h40v62l-7-5-7 5-6-5-7 5-6-5-7 5V12z"
                   stroke="#fff"
                   stroke-width="2.2"
                   stroke-linejoin="round"
                 />
                 <path
-                  d="M58 30c3-3 3-8 0-11"
+                  d="M28 28h24M28 38h24M28 48h14"
                   stroke="#fff"
-                  stroke-width="1.8"
+                  stroke-width="2"
                   stroke-linecap="round"
-                  opacity="0.7"
-                />
-                <path
-                  d="M63 34c5-5 5-13 0-18"
-                  stroke="#fff"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  opacity="0.4"
+                  opacity="0.75"
                 />
               </svg>
             </div>
             <h2
               class="pf-tag"
               style="color: var(--lagoon-dark)"
-              data-i18n="home.card_contacts"
-            >
-              Contacts
-            </h2>
-            <p class="pf-desc" data-i18n="home.card_contacts_desc">
-              Cleaners, plumbers, and electricians. Reach them in one tap through
-              your usual messenger, or invite them into the app for convenience.
-            </p>
+              data-i18n="home.card_money"
+            >Money
+              Money
+            
+            <p class="pf-desc" data-i18n="home.card_money_desc">An expense with a photo of the receipt, attached to a property and a category. Total, paid and pending, three numbers in front of you. Twenty currencies with conversion.
+              An expense with a photo of the receipt, attached to a property and
+              a category. Total, paid and pending, three numbers in front of you.
+              Twenty currencies with conversion.
+            
           </article>
 
           <article class="pf-card">
@@ -356,84 +390,103 @@
             <h2
               class="pf-tag"
               style="color: var(--brass-dark)"
-              data-i18n="home.card_bills"
-            >
-              Bills
-            </h2>
-            <p class="pf-desc" data-i18n="home.card_bills_desc">
-              Submit an expense, check the bills, approve, calculate the property
-              maintenance cost without spreadsheets.
-            </p>
+              data-i18n="home.card_guests"
+            >Guests
+              Guests
+            
+            <p class="pf-desc" data-i18n="home.card_guests_desc">House rules your guest ticks as read, a deposit with every deduction and the balance, and a direct date request from a returning guest.
+              House rules your guest ticks as read, a deposit with every
+              deduction and the balance, and a direct date request from a
+              returning guest.
+            
           </article>
         </div>
         <div
           class="pf-dots"
-          data-i18n-attr="aria-label:home.slides_label"
-          aria-label="Feature slides"
+          data-i18n-attr="aria-label:home.cards_label"
+          aria-label="Product features"
         ></div>
 
-        <section class="pf-audience" aria-labelledby="why-app">
-          <p class="pf-audience-eyebrow" data-i18n="home.why_eyebrow">
+        <section
+          class="pf-lang-block"
+          id="translation"
+          aria-labelledby="lang-title"
+        >
+          <div>
+            <h2 id="lang-title" data-i18n="home.lang_title">One language for the whole team
+              One language for the whole team
+            
+            <p data-i18n="home.lang_desc">The manager writes the job in English, the cleaner reads it in Thai, the owner sees it in Russian. This is not a separate translator, it is a switch in the profile: jobs, team chat, messages and guest briefings arrive in whatever language each person chose. A spreadsheet cannot do that, and neither can a chat thread.
+              The manager writes the job in English, the cleaner reads it in
+              Thai, the owner sees it in Russian. This is not a separate
+              translator, it is a switch in the profile: jobs, team chat,
+              messages and guest briefings arrive in whatever language each
+              person chose. A spreadsheet cannot do that, and neither can a chat
+              thread.
+            
+          </div>
+          <div class="pf-phone-solo">
+            <figure class="pf-phone">
+                                <div class="pf-phone-screen">
+                    <img
+                      src="/assets/screenshots/owner-translate.png"
+                      width="472"
+                      height="1024"
+                      alt="Team content translation setting in the profile"
+                      data-i18n-attr="alt:common.lang_alt"
+                      loading="lazy"
+                    />
+                  </div>
+            </figure>
+          </div>
+        </section>
+
+        <section class="pf-audience" id="audience" aria-labelledby="why-app">
+          <p class="pf-audience-eyebrow" data-i18n="home.why_eyebrow">Your role
             Your role
-          </p>
-          <h2 id="why-app" class="pf-audience-title" data-i18n="home.why_title">
-            Why do you need this app?
-          </h2>
-          <p class="pf-audience-lead" data-i18n="home.why_lead">
-            Pick the seat that matches how you run rental properties. Open the
-            guide that fits your role.
-          </p>
+          
+          <h2 id="why-app" class="pf-audience-title" data-i18n="home.why_title">Look at it from your side
+            Look at it from your side
+          
+          <p class="pf-audience-lead" data-i18n="home.why_lead">Every role gets its own screen. Open the one that is about you.
+            Every role gets its own screen. Open the one that is about you.
+          
           <div class="pf-audience-grid">
             <a class="pf-audience-card" href="/owners">
-              <h3 data-i18n="home.audience_owner_title">
-                Are you a property owner?
-              </h3>
-              <p data-i18n="home.audience_owner_desc">
-                See occupancy, urgent work, and spend without calling for a
-                status update.
-              </p>
+              <h3 data-i18n="home.audience_owner_title">OwnerOwner
+              <p data-i18n="home.audience_owner_desc">See occupancy, urgent work and spend without asking anyone.
+                See occupancy, urgent work and spend without asking anyone.
+              
               <span class="pf-audience-cta" data-i18n="home.audience_owner_cta"
-                >Open the owners guide</span
+                >Open the owners pageOpen the owners page</span
               >
             </a>
-            <a class="pf-audience-card" href="/employees">
-              <h3 data-i18n="home.audience_manager_title">
-                Are you a property manager?
-              </h3>
-              <p data-i18n="home.audience_manager_desc">
-                Day-to-day ops, reports for owners, and handoffs in one place.
-              </p>
+            <a class="pf-audience-card" href="/managers">
+              <h3 data-i18n="home.audience_manager_title">Manager</h3>
+              <p data-i18n="home.audience_manager_desc">Build the day once, hand the shift over with its history.</p>
               <span
                 class="pf-audience-cta"
                 data-i18n="home.audience_manager_cta"
-                >Open the managers guide</span
+                >Open the managers page</span
               >
             </a>
             <a class="pf-audience-card" href="/staff">
-              <h3 data-i18n="home.audience_staff_title">
-                Are you staff working on a few properties?
-              </h3>
-              <p data-i18n="home.audience_staff_desc">
-                Jobs, confirmations and assigned properties - easily accessed on
-                the app.
-              </p>
+              <h3 data-i18n="home.audience_staff_title">Field staff</h3>
+              <p data-i18n="home.audience_staff_desc">See your jobs, take them, send receipts from your phone.</p>
               <span class="pf-audience-cta" data-i18n="home.audience_staff_cta"
-                >Open the staff guide</span
-              >
-            </a>
-            <a class="pf-audience-card pf-audience-card-guest" href="/guests">
-              <h3 data-i18n="home.audience_guest_title">
-                Are you a guest invited by your host?
-              </h3>
-              <p data-i18n="home.audience_guest_desc">
-                Everything about your stay in one place: villa details, house
-                guide, support, and your deposit and bills.
-              </p>
-              <span class="pf-audience-cta" data-i18n="home.audience_guest_cta"
-                >Open the guest guide</span
+                >Open the staff page</span
               >
             </a>
           </div>
+          <p class="pf-guest-note">
+            <span data-i18n="home.guest_note"
+              >Invited guests get their own screen too: house rules, deposit and
+              date requests.</span
+            >
+            <a href="/guests" data-i18n="home.guest_link"
+              >See what your guest sees</a
+            >
+          </p>
         </section>
 
         <section class="pf-plan" id="plans" aria-labelledby="company-plans">
@@ -443,43 +496,31 @@
               id="company-plans"
               class="pf-plan-title"
               data-i18n="home.plan_title"
-            >
-              Personal and Company
-            </h2>
+            >The owner pays. The team does not.</h2>
+            <p class="pf-plan-free" data-i18n="home.plan_free_team">Managers, field staff and guests you invite use the app for free, however many of them there are. There is no per-seat charge.</p>
             <ul class="pf-plan-options">
               <li>
                 <strong data-i18n="home.plan_personal_label">Personal</strong>
                 <span data-i18n="home.plan_personal_desc"
-                  >Use the app on your own</span
+                  >One or two properties, you do it all yourself. Free
+                  forever.</span
                 >
               </li>
               <li>
                 <strong data-i18n="home.plan_company_label">Company</strong>
                 <span data-i18n="home.plan_company_desc"
-                  >Create a company account and invite employees</span
+                  >You have a manager, a cleaner or vendors. Only the owner pays,
+                  one subscription covers the team.</span
                 >
               </li>
             </ul>
-            <p class="pf-plan-note" data-i18n="home.plan_note">
-              Subscription billing is coming soon. At this moment, all registered
-              users are guaranteed 3 months full trial.
-            </p>
+            <p class="pf-plan-note" data-i18n="home.plan_note">Billing is not switched on yet. Every registered account gets 3 months of full access from the day it signs up.</p>
             <a
               class="pf-btn-primary pf-plan-start"
               href="https://app.pulseflow.site/register"
               data-i18n="home.plan_cta"
               >Start free</a
             >
-            <p class="pf-plan-personal-note">
-              <span data-i18n="home.plan_personal_note"
-                >Just managing your own place?</span
-              >
-              <a
-                href="https://app.pulseflow.site/register"
-                data-i18n="home.plan_personal_link"
-                >Start free, no team required.</a
-              >
-            </p>
           </div>
         </section>
 
@@ -488,13 +529,28 @@
           id="referral"
           aria-labelledby="referral-heading"
         >
-          <h2 id="referral-heading" data-i18n="home.referral_title">
-            Invite 5 people → Get 1 year Full free
-          </h2>
-          <p class="pf-sub-referral-lead" data-i18n="home.referral_lead">
-            Copy your referral link in Profile. You can invite people to your
-            company, or simply to the app itself, both cases count.
-          </p>
+          <h2 id="referral-heading" data-i18n="home.referral_title">Invite 5 people, get a year of Full free</h2>
+          <p class="pf-sub-referral-lead" data-i18n="home.referral_lead">Your referral link is in your profile. Signing up for the app counts, and so does joining your company as staff. Five credited joins unlock a year of Full, counted from the day billing starts or the end of your three free months, whichever comes later.</p>
+        </section>
+
+        <section class="pf-faq" id="faq" aria-labelledby="faq-title">
+          <h2 id="faq-title" data-i18n="home.faq_title">Short answers</h2>
+          <details>
+            <summary data-i18n="home.faq_q1">Everything is on Airbnb and Booking. Does this replace them?</summary>
+            <p data-i18n="home.faq_a1">No. Bookings stay where they are. Pulse Flow is about what happens after the booking: who cleans, what broke, what it cost, and what the guest can see. Check-in and check-out dates are entered by hand today. Importing bookings from Google Calendar is planned. There is no direct sync with Airbnb or Booking.</p>
+          </details>
+          <details>
+            <summary data-i18n="home.faq_q2">What does it cost?</summary>
+            <p data-i18n="home.faq_a2">A personal workspace is free forever. For a company, only the owner pays, and team seats are free. Billing is not live yet, so every registered account has 3 months of full access.</p>
+          </details>
+          <details>
+            <summary data-i18n="home.faq_q3">My cleaners will never install an app.</summary>
+            <p data-i18n="home.faq_a3">There is nothing to install from a store. It opens from a link in the browser and goes onto the phone's home screen in one step. No Google account, no App Store, just an email address. The interface follows the language each person picks, and so do the jobs and the chat.</p>
+          </details>
+          <details>
+            <summary data-i18n="home.faq_q4">Do guests have to install anything?</summary>
+            <p data-i18n="home.faq_a4">No, a guest opens the link their host sends. No payment goes through the app: deposits and payments go straight to the host, and the app records the amount, the deductions and the balance so both sides see the same thing.</p>
+          </details>
         </section>
 
         <section
@@ -504,9 +560,7 @@
           data-demo-login
         >
           <h2 id="demo-heading" data-i18n="home.demo_title">Demo</h2>
-          <p class="pf-demo-lead" data-i18n="home.demo_lead">
-            Prefilled owner, employee, or guest login.
-          </p>
+          <p class="pf-demo-lead" data-i18n="home.demo_lead">Owner, manager, staff and guest logins, already filled in.</p>
 
           <div
             class="pf-demo-roles"
@@ -519,36 +573,36 @@
               class="pf-demo-role is-active"
               data-demo-role="owner"
               data-i18n="demo.role_owner"
-            >
-              Owner
-            </button>
+            >Owner</button>
             <button
               type="button"
               class="pf-demo-role"
-              data-demo-role="employee"
-              data-i18n="demo.role_employee"
-            >
-              Employee
-            </button>
+              data-demo-role="manager"
+              data-i18n="demo.role_manager"
+            >Manager</button>
+            <button
+              type="button"
+              class="pf-demo-role"
+              data-demo-role="staff"
+              data-i18n="demo.role_staff"
+            >Field staff</button>
             <button
               type="button"
               class="pf-demo-role"
               data-demo-role="guest"
               data-i18n="demo.role_guest"
-            >
-              Guest
-            </button>
+            >Guest</button>
           </div>
 
           <div class="pf-demo-grid pf-demo-grid-compact">
             <div class="pf-demo-credentials">
               <ul class="pf-demo-list">
                 <li>
-                  <span data-i18n="demo.email">Email</span>
+                  <span data-i18n="demo.email">Email
                   <code data-demo-email>owner@pulseflow.site</code>
                 </li>
                 <li>
-                  <span data-i18n="demo.password">Password</span>
+                  <span data-i18n="demo.password">PasswordPassword
                   <code>TestPass123!</code>
                 </li>
               </ul>
@@ -557,7 +611,7 @@
                 data-demo-link
                 href="https://app.pulseflow.site/login?demo=owner"
                 data-i18n="demo.open_demo"
-                >Open demo</a
+                >Open demoOpen demo</a
               >
             </div>
             <div class="pf-demo-qr">
@@ -570,32 +624,32 @@
                 <img
                   class="pf-qr-img"
                   data-demo-qr
-                  src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Fapp.pulseflow.site%2Flogin%3Fdemo%3Downer"
+                  src="/assets/qr/demo-owner.svg"
                   width="180"
                   height="180"
-                  alt=""
+                  alt="QR code linking to a prefilled demo login"
                   data-i18n-attr="alt:demo.qr_alt"
                   loading="lazy"
                 />
-              </a>
+              
             </div>
           </div>
         </section>
 
-        <section class="pf-close">
+        <section class="pf-close" id="close">
           <img src="/assets/pulse-mark.svg" width="64" height="64" alt="" />
-          <h2 data-i18n="home.close_title">
-            Put a pulse on every rental day.
-          </h2>
-          <p data-i18n="home.close_lead">
-            Open the app, invite your team, and run the next turnover from one
-            place.
-          </p>
+          <h2 data-i18n="home.close_title">Open the app and look at your day
+            Open the app and look at your day
+          
+          <p data-i18n="home.close_lead">The pulse of your rental operations: what is happening right now, and where it goes next.
+            The pulse of your rental operations: what is happening right now, and
+            where it goes next.
+          
           <a
             class="pf-btn-primary"
-            href="https://app.pulseflow.site"
-            data-i18n="home.cta"
-            >Open Pulse Flow</a
+            href="https://app.pulseflow.site/register"
+            data-i18n="home.close_cta"
+            >Start freeStart free</a
           >
         </section>
       </main>
@@ -608,15 +662,22 @@
           >
         </div>
         <div class="pf-footer-links">
-          <a href="/#plans" data-i18n="footer.plans">Plans</a>
-          <a href="/terms" data-i18n="footer.terms">Terms</a>
-          <a href="/privacy" data-i18n="footer.privacy">Privacy</a>
-          <a href="mailto:support@pulseflow.site" data-i18n="footer.support">Support</a>
-          <a href="https://app.pulseflow.site" data-i18n="footer.app">App</a>
+          <a href="/" data-i18n="footer.home">Home
+          <a href="/owners" data-i18n="footer.owners">OwnersOwners
+          <a href="/managers" data-i18n="footer.managers">ManagersManagers
+          <a href="/staff" data-i18n="footer.staff">Field staffField staff
+          <a href="/guests" data-i18n="footer.guests">Stay guestsStay guests
+          <a href="/#plans" data-i18n="footer.plans">PlansPlans
+          <a href="/terms" data-i18n="footer.terms">TermsTerms
+          <a href="/privacy" data-i18n="footer.privacy">PrivacyPrivacy
+          <a href="mailto:support@pulseflow.site" data-i18n="footer.support"
+            >SupportSupport</a
+          >
+          <a href="https://app.pulseflow.site" data-i18n="footer.app">App
         </div>
       </footer>
     </div>
 
-    <script src="/script.js?v=10" defer></script>
+    <script src="/script.js?v=13" defer></script>
   </body>
 </html>

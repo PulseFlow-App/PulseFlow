@@ -12,6 +12,7 @@
   --brass-dark: #7a5b14;
   --font-body: "Nunito", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-display: "Nunito", system-ui, sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -91,10 +92,41 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.75rem 1rem;
   padding: max(22px, env(safe-area-inset-top)) var(--pad) 0;
   position: relative;
   z-index: 2;
+  flex-wrap: wrap;
+}
+
+.pf-role-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem 1.1rem;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 2px 0;
+}
+
+.pf-role-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.pf-role-nav a {
+  flex: 0 0 auto;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink-soft);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.pf-role-nav a:hover,
+.pf-role-nav a:focus-visible {
+  color: var(--coral-dark);
 }
 
 .pf-nav-actions {
@@ -102,6 +134,7 @@ a {
   align-items: center;
   gap: 8px;
   flex-shrink: 0;
+  margin-inline-start: auto;
 }
 
 .pf-lang {
@@ -932,6 +965,7 @@ a.pf-audience-card:hover {
   max-width: 520px;
 }
 
+.pf-guide-flagship-copy h2,
 .pf-guide-flagship-copy h3 {
   margin: 0 0 8px;
   font-size: clamp(1.2rem, 3vw, 1.45rem);
@@ -1808,4 +1842,390 @@ a.pf-audience-card:hover {
 
 .pf-owners-close-compact p {
   display: none;
+}
+
+/* Collapsible per-role feature list */
+.pf-features {
+  max-width: 960px;
+  margin: 8px auto 0;
+  padding: 8px var(--pad) 8px;
+  position: relative;
+  z-index: 2;
+}
+
+.pf-features-panel {
+  border: 1px solid rgba(22, 35, 31, 0.1);
+  border-radius: 20px;
+  background: rgba(251, 248, 241, 0.72);
+  padding: 4px 18px 4px;
+}
+
+.pf-features-panel > summary {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 800;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.pf-features-panel > summary::-webkit-details-marker {
+  display: none;
+}
+
+.pf-features-panel > summary::after {
+  content: "+";
+  flex: 0 0 auto;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 999px;
+  display: inline-grid;
+  place-items: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--coral-dark);
+  background: rgba(232, 98, 61, 0.12);
+}
+
+.pf-features-panel[open] > summary::after {
+  content: "−";
+}
+
+.pf-features-body {
+  padding: 0 0 18px;
+  border-top: 1px solid var(--sand-deep);
+}
+
+.pf-features-access {
+  padding: 16px 0 8px;
+}
+
+.pf-features-access h3,
+.pf-features-more-title {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.pf-features-access ul {
+  margin: 0;
+  padding-inline-start: 1.15rem;
+  display: grid;
+  gap: 6px;
+  color: var(--ink-soft);
+  line-height: 1.45;
+  font-size: 0.95rem;
+}
+
+.pf-features-more-title {
+  margin-top: 18px;
+}
+
+.pf-features-body .pf-more-groups {
+  margin-top: 4px;
+}
+
+/* Audit rebuild: proof, alternative, translation, roles, FAQ, soon */
+.pf-proof {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 var(--pad) 8px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.pf-proof p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+.pf-alt {
+  max-width: 40rem;
+  margin: 28px auto 8px;
+  padding: 0 var(--pad);
+  position: relative;
+  z-index: 2;
+}
+
+.pf-alt h2 {
+  margin: 0 0 14px;
+  font-size: clamp(1.35rem, 3.6vw, 1.75rem);
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  font-weight: 800;
+  text-wrap: balance;
+}
+
+.pf-alt-list {
+  margin: 0 0 16px;
+  padding-inline-start: 1.15rem;
+  display: grid;
+  gap: 8px;
+  color: var(--ink);
+  line-height: 1.45;
+}
+
+.pf-alt-answer {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.pf-lang-block {
+  max-width: 960px;
+  margin: 12px auto 0;
+  padding: 24px var(--pad) 8px;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 28px;
+  align-items: center;
+}
+
+@media (min-width: 760px) {
+  .pf-lang-block {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+
+.pf-lang-block h2 {
+  margin: 0 0 12px;
+  font-size: clamp(1.35rem, 3.6vw, 1.75rem);
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  font-weight: 800;
+  text-wrap: balance;
+}
+
+.pf-lang-block p {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.pf-guest-note {
+  max-width: 40rem;
+  margin: 18px auto 0;
+  text-align: center;
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+
+.pf-guest-note a {
+  font-weight: 800;
+  color: var(--coral-dark);
+}
+
+.pf-plan-free {
+  margin: 0 0 18px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(232, 98, 61, 0.08);
+  border: 1px solid rgba(232, 98, 61, 0.22);
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.pf-faq {
+  max-width: 40rem;
+  margin: 36px auto 8px;
+  padding: 0 var(--pad);
+  position: relative;
+  z-index: 2;
+}
+
+.pf-faq h2 {
+  margin: 0 0 14px;
+  font-size: clamp(1.35rem, 3.6vw, 1.75rem);
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  font-weight: 800;
+  text-wrap: balance;
+}
+
+.pf-faq details {
+  border-top: 1px solid var(--sand-deep);
+  padding: 12px 0;
+}
+
+.pf-faq details:last-child {
+  border-bottom: 1px solid var(--sand-deep);
+}
+
+.pf-faq summary {
+  cursor: pointer;
+  font-weight: 800;
+  line-height: 1.35;
+  list-style: none;
+}
+
+.pf-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.pf-faq details p {
+  margin: 10px 0 4px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.pf-roles {
+  max-width: 960px;
+  margin: 8px auto 0;
+  padding: 24px var(--pad) 8px;
+  position: relative;
+  z-index: 2;
+}
+
+.pf-roles h2 {
+  margin: 0 0 10px;
+  font-size: clamp(1.35rem, 3.6vw, 1.75rem);
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  font-weight: 800;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.pf-roles-lead {
+  margin: 0 auto 22px;
+  max-width: 42rem;
+  text-align: center;
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+
+.pf-roles-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 720px) {
+  .pf-roles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.pf-roles-card {
+  padding: 16px 18px;
+  border: 1px solid var(--sand-deep);
+  border-radius: 14px;
+  background: var(--paper);
+}
+
+.pf-roles-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+}
+
+.pf-roles-card ul {
+  margin: 0;
+  padding-inline-start: 1.1rem;
+  display: grid;
+  gap: 6px;
+  color: var(--ink-soft);
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.pf-more-groups {
+  display: grid;
+  gap: 18px;
+}
+
+@media (min-width: 720px) {
+  .pf-more-groups {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .pf-more-groups.is-two {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.pf-more-group h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+.pf-more-group ul {
+  margin: 0;
+  padding-inline-start: 1.1rem;
+  display: grid;
+  gap: 6px;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+
+.pf-soon,
+.pf-price-line {
+  max-width: 40rem;
+  margin: 28px auto 0;
+  padding: 0 var(--pad);
+  position: relative;
+  z-index: 2;
+}
+
+.pf-soon h2 {
+  margin: 0 0 12px;
+  font-size: clamp(1.35rem, 3.6vw, 1.75rem);
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  font-weight: 800;
+  text-wrap: balance;
+}
+
+.pf-soon ul {
+  margin: 0;
+  padding-inline-start: 1.15rem;
+  display: grid;
+  gap: 8px;
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+
+.pf-price-line p {
+  margin: 0;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: rgba(22, 35, 31, 0.04);
+  border: 1px solid var(--sand-deep);
+  line-height: 1.45;
+}
+
+.pf-free-note {
+  margin: 12px 0 0;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+.pf-feature-rail {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 var(--pad) 8px;
+}
+
+@media (min-width: 720px) {
+  .pf-feature-rail {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.pf-feature-rail .pf-card {
+  width: auto;
+  max-width: none;
+  flex-basis: auto;
+  scroll-snap-align: unset;
 }

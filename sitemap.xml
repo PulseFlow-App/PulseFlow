@@ -1,32 +1,1123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://pulseflow.site/</loc>
+    <loc>https://www.pulseflow.site/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://pulseflow.site/owners</loc>
+    <loc>https://www.pulseflow.site/ru</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/th</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/my</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/fr</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/de</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/es</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/it</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/he</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/ar</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/owners</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/owners" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/owners" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/owners" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/owners" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/owners" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/owners" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/owners" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/owners" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/owners" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/owners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/owners" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pulseflow.site/employees</loc>
+    <loc>https://www.pulseflow.site/ru/owners</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/owners" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/owners" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/owners" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/owners" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/owners" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/owners" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/owners" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/owners" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/owners" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/owners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/owners" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pulseflow.site/staff</loc>
+    <loc>https://www.pulseflow.site/th/owners</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/owners" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/owners" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/owners" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/owners" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/owners" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/owners" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/owners" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/owners" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/owners" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/owners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/owners" />
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pulseflow.site/terms</loc>
+    <loc>https://www.pulseflow.site/my/owners</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/owners" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/owners" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/owners" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/owners" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/owners" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/owners" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/owners" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/owners" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/owners" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/owners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/owners" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/fr/owners</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/owners" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/owners" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/owners" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/owners" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/owners" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/owners" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/owners" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/owners" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/owners" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/owners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/owners" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/de/owners</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/owners" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/owners" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/owners" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/owners" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/owners" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/owners" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/owners" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/owners" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/owners" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/owners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/owners" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/es/owners</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/owners" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/owners" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/owners" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/owners" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/owners" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/owners" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/owners" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/owners" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/owners" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/owners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/owners" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/it/owners</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/owners" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/owners" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/owners" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/owners" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/owners" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/owners" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/owners" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/owners" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/owners" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/owners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/owners" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/he/owners</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/owners" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/owners" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/owners" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/owners" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/owners" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/owners" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/owners" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/owners" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/owners" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/owners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/owners" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/ar/owners</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/owners" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/owners" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/owners" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/owners" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/owners" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/owners" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/owners" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/owners" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/owners" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/owners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/owners" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/managers</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/managers" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/managers" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/managers" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/managers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/managers" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/managers" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/managers" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/managers" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/managers" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/managers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/managers" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/ru/managers</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/managers" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/managers" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/managers" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/managers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/managers" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/managers" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/managers" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/managers" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/managers" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/managers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/managers" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/th/managers</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/managers" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/managers" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/managers" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/managers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/managers" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/managers" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/managers" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/managers" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/managers" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/managers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/managers" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/my/managers</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/managers" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/managers" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/managers" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/managers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/managers" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/managers" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/managers" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/managers" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/managers" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/managers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/managers" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/fr/managers</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/managers" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/managers" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/managers" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/managers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/managers" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/managers" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/managers" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/managers" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/managers" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/managers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/managers" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/de/managers</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/managers" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/managers" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/managers" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/managers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/managers" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/managers" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/managers" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/managers" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/managers" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/managers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/managers" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/es/managers</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/managers" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/managers" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/managers" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/managers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/managers" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/managers" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/managers" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/managers" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/managers" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/managers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/managers" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/it/managers</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/managers" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/managers" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/managers" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/managers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/managers" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/managers" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/managers" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/managers" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/managers" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/managers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/managers" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/he/managers</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/managers" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/managers" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/managers" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/managers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/managers" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/managers" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/managers" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/managers" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/managers" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/managers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/managers" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/ar/managers</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/managers" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/managers" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/managers" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/managers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/managers" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/managers" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/managers" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/managers" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/managers" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/managers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/managers" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/staff</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/staff" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/staff" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/staff" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/staff" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/staff" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/staff" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/staff" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/staff" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/staff" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/staff" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/staff" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/ru/staff</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/staff" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/staff" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/staff" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/staff" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/staff" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/staff" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/staff" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/staff" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/staff" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/staff" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/staff" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/th/staff</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/staff" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/staff" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/staff" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/staff" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/staff" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/staff" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/staff" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/staff" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/staff" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/staff" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/staff" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/my/staff</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/staff" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/staff" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/staff" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/staff" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/staff" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/staff" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/staff" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/staff" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/staff" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/staff" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/staff" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/fr/staff</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/staff" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/staff" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/staff" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/staff" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/staff" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/staff" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/staff" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/staff" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/staff" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/staff" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/staff" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/de/staff</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/staff" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/staff" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/staff" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/staff" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/staff" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/staff" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/staff" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/staff" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/staff" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/staff" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/staff" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/es/staff</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/staff" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/staff" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/staff" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/staff" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/staff" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/staff" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/staff" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/staff" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/staff" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/staff" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/staff" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/it/staff</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/staff" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/staff" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/staff" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/staff" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/staff" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/staff" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/staff" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/staff" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/staff" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/staff" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/staff" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/he/staff</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/staff" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/staff" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/staff" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/staff" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/staff" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/staff" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/staff" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/staff" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/staff" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/staff" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/staff" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/ar/staff</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/staff" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/staff" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/staff" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/staff" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/staff" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/staff" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/staff" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/staff" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/staff" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/staff" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/staff" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/guests</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/guests" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/guests" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/guests" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/guests" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/guests" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/guests" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/guests" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/guests" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/guests" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/guests" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/guests" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/ru/guests</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/guests" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/guests" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/guests" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/guests" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/guests" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/guests" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/guests" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/guests" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/guests" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/guests" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/guests" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/th/guests</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/guests" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/guests" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/guests" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/guests" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/guests" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/guests" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/guests" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/guests" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/guests" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/guests" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/guests" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/my/guests</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/guests" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/guests" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/guests" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/guests" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/guests" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/guests" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/guests" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/guests" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/guests" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/guests" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/guests" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/fr/guests</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/guests" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/guests" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/guests" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/guests" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/guests" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/guests" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/guests" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/guests" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/guests" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/guests" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/guests" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/de/guests</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/guests" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/guests" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/guests" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/guests" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/guests" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/guests" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/guests" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/guests" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/guests" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/guests" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/guests" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/es/guests</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/guests" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/guests" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/guests" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/guests" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/guests" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/guests" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/guests" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/guests" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/guests" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/guests" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/guests" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/it/guests</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/guests" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/guests" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/guests" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/guests" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/guests" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/guests" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/guests" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/guests" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/guests" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/guests" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/guests" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/he/guests</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/guests" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/guests" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/guests" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/guests" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/guests" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/guests" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/guests" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/guests" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/guests" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/guests" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/guests" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/ar/guests</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/guests" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/guests" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/guests" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/guests" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/guests" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/guests" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/guests" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/guests" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/guests" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/guests" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/guests" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/terms" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/terms" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/terms" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/terms" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/terms" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/terms" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/terms" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/terms" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/terms" />
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://pulseflow.site/privacy</loc>
+    <loc>https://www.pulseflow.site/ru/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/terms" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/terms" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/terms" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/terms" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/terms" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/terms" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/terms" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/terms" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/terms" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/th/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/terms" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/terms" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/terms" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/terms" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/terms" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/terms" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/terms" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/terms" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/terms" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/my/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/terms" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/terms" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/terms" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/terms" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/terms" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/terms" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/terms" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/terms" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/terms" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/fr/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/terms" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/terms" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/terms" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/terms" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/terms" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/terms" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/terms" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/terms" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/terms" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/de/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/terms" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/terms" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/terms" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/terms" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/terms" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/terms" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/terms" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/terms" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/terms" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/es/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/terms" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/terms" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/terms" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/terms" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/terms" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/terms" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/terms" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/terms" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/terms" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/it/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/terms" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/terms" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/terms" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/terms" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/terms" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/terms" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/terms" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/terms" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/terms" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/he/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/terms" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/terms" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/terms" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/terms" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/terms" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/terms" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/terms" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/terms" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/terms" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/ar/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/terms" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/terms" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/terms" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/terms" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/terms" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/terms" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/terms" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/terms" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/terms" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/privacy" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/privacy" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/privacy" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/privacy" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/ru/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/privacy" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/privacy" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/privacy" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/privacy" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/th/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/privacy" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/privacy" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/privacy" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/privacy" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/my/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/privacy" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/privacy" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/privacy" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/privacy" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/fr/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/privacy" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/privacy" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/privacy" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/privacy" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/de/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/privacy" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/privacy" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/privacy" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/privacy" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/es/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/privacy" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/privacy" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/privacy" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/privacy" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/it/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/privacy" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/privacy" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/privacy" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/privacy" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/he/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/privacy" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/privacy" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/privacy" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/privacy" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseflow.site/ar/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pulseflow.site/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.pulseflow.site/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.pulseflow.site/th/privacy" />
+    <xhtml:link rel="alternate" hreflang="my" href="https://www.pulseflow.site/my/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.pulseflow.site/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pulseflow.site/de/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pulseflow.site/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.pulseflow.site/it/privacy" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.pulseflow.site/he/privacy" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.pulseflow.site/ar/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pulseflow.site/privacy" />
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

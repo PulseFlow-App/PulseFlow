@@ -160,21 +160,49 @@ function localeFromUrl() {
   return null;
 }
 
+function localeFromPath() {
+  try {
+    const parts = window.location.pathname.split("/").filter(Boolean);
+    if (parts.length && LOCALES.includes(parts[0])) return parts[0];
+  } catch (_) {
+    /* ignore */
+  }
+  return null;
+}
+
+function stripLocalePrefix(pathname) {
+  const parts = (pathname || "/").split("/").filter(Boolean);
+  if (parts.length && LOCALES.includes(parts[0])) {
+    const rest = parts.slice(1).join("/");
+    return rest ? `/${rest}` : "/";
+  }
+  return pathname || "/";
+}
+
+/** Path-based locale URLs: /ru/owners. EN stays unprefixed ( /en/... mirrors exist). */
+function urlForLocale(locale) {
+  const next = LOCALES.includes(locale) ? locale : "en";
+  let base = stripLocalePrefix(window.location.pathname);
+  if (base.length > 1 && base.endsWith("/")) base = base.slice(0, -1);
+  const hash = window.location.hash || "";
+  if (next === "en") {
+    return `${base || "/"}${hash}`;
+  }
+  if (!base || base === "/") return `/${next}/${hash}`;
+  return `/${next}${base}${hash}`;
+}
+
 function syncLocaleInUrl(locale) {
   try {
-    const url = new URL(window.location.href);
-    const current = url.searchParams.get("lang") || url.searchParams.get("locale");
-    if (current === locale) {
-      if (url.searchParams.has("locale")) {
-        url.searchParams.delete("locale");
-        url.searchParams.set("lang", locale);
-        history.replaceState({}, "", url);
-      }
-      return;
+    const target = urlForLocale(locale);
+    const next = new URL(target, window.location.origin);
+    if (
+      next.pathname !== window.location.pathname ||
+      next.hash !== window.location.hash ||
+      window.location.search
+    ) {
+      window.location.assign(next.pathname + next.search + next.hash);
     }
-    url.searchParams.delete("locale");
-    url.searchParams.set("lang", locale);
-    history.replaceState({}, "", url);
   } catch (_) {
     /* ignore */
   }
@@ -214,6 +242,8 @@ async function setLocale(locale, { persist = true, syncUrl = false } = {}) {
 }
 
 function resolveInitialLocale() {
+  const fromPath = localeFromPath();
+  if (fromPath) return fromPath;
   const fromUrl = localeFromUrl();
   if (fromUrl) return fromUrl;
   try {
@@ -308,9 +338,13 @@ const DEMO_ACCOUNTS = {
     email: "owner@pulseflow.site",
     labelKey: "demo.owner_login",
   },
-  employee: {
+  manager: {
+    email: "manager@pulseflow.site",
+    labelKey: "demo.manager_login",
+  },
+  staff: {
     email: "employee@pulseflow.site",
-    labelKey: "demo.employee_login",
+    labelKey: "demo.staff_login",
   },
   guest: {
     email: "guest@pulseflow.site",
@@ -350,8 +384,7 @@ document.querySelectorAll("[data-demo-login]").forEach((section) => {
       }
     });
     if (qrImg) {
-      const size = qrImg.getAttribute("width") || "220";
-      qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=${size}x${size}&data=${encodeURIComponent(loginUrl)}`;
+      qrImg.src = `/assets/qr/demo-${encodeURIComponent(role)}.svg`;
       qrImg.alt = t("demo.qr_alt");
     }
   };
@@ -367,11 +400,17 @@ document.querySelectorAll("[data-demo-login]").forEach((section) => {
 
 mountLanguageSwitchers();
 {
-  const fromUrl = localeFromUrl();
-  setLocale(resolveInitialLocale(), {
-    persist: true,
-    syncUrl: Boolean(fromUrl),
-  }).catch(() => {
-    setDocumentLocale("en");
-  });
+  const fromQuery = localeFromUrl();
+  const fromPath = localeFromPath();
+  // Legacy ?lang=ru → /ru/... (client fallback; Vercel also 301s)
+  if (fromQuery && fromQuery !== fromPath) {
+    window.location.replace(urlForLocale(fromQuery));
+  } else {
+    setLocale(resolveInitialLocale(), {
+      persist: true,
+      syncUrl: false,
+    }).catch(() => {
+      setDocumentLocale(fromPath || "en");
+    });
+  }
 }
