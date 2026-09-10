@@ -42,6 +42,9 @@
 
 
 
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/my/guests" />
     <meta
@@ -56,10 +59,10 @@
     />
     <meta
       property="og:image"
-      content="https://www.pulseflow.site/assets/og-image.jpg"
+      content="https://www.pulseflow.site/assets/og-image-en.jpg"
     />
-    <meta property="og:image:width" content="1024" />
-    <meta property="og:image:height" content="665" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
       content="Guest screen: villa, stay dates and deposit status"
@@ -68,7 +71,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
-      content="https://www.pulseflow.site/assets/og-image.jpg"
+      content="https://www.pulseflow.site/assets/og-image-en.jpg"
     />
     <meta
       name="twitter:image:alt"
@@ -88,13 +91,19 @@
         "isPartOf": { "@type": "WebSite", "url": "https://www.pulseflow.site" }
       }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/assets/fonts/fonts.css" />
     <link rel="stylesheet" href="/styles.css?v=27" />
+      <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
+    <script>
+      window.plausible =
+        window.plausible ||
+        function () {
+          (window.plausible.q = window.plausible.q || []).push(arguments);
+        };
+    </script>
   </head>
   <body>
     <a class="skip" href="#main" data-i18n="nav.skip">Skip to contentSkip to content
@@ -160,7 +169,7 @@
                 <figure class="pf-phone">
                                     <div class="pf-phone-screen">
                     <img
-                      src="/assets/screenshots/guest-home.png"
+                      src="/assets/screenshots/en/guest-home.png"
                       width="472"
                       height="1024"
                       alt="Guest screen: villa, stay dates and deposit status"
@@ -180,7 +189,7 @@
                 <figure class="pf-phone">
                                     <div class="pf-phone-screen">
                     <img
-                      src="/assets/screenshots/guest-guide.png"
+                      src="/assets/screenshots/en/guest-guide.png"
                       width="472"
                       height="1024"
                       alt="House guide and host briefings with read receipts"
@@ -200,11 +209,31 @@
                 <figure class="pf-phone">
                                     <div class="pf-phone-screen">
                     <img
-                      src="/assets/screenshots/guest-bills.png"
+                      src="/assets/screenshots/en/guest-bills.png"
                       width="472"
                       height="1024"
                       alt="Guest deposit: paid, deductions and balance"
                       data-i18n-attr="alt:guests.f3_alt"
+                      loading="lazy"
+                    />
+                  </div>
+                </figure>
+              </div>
+            </article>
+            <article class="pf-guide-flagship" id="f4">
+              <div class="pf-guide-flagship-copy">
+                <h2 data-i18n="guests.f4_title">Request dates</h2>
+                <p data-i18n="guests.f4_desc">Browse the host’s other villas, pick check-in and check-out, add a note, and send a date request without a booking platform fee.</p>
+              </div>
+              <div class="pf-phone-solo">
+                <figure class="pf-phone">
+                                    <div class="pf-phone-screen">
+                    <img
+                      src="/assets/screenshots/en/guest-dates.png"
+                      width="472"
+                      height="1024"
+                      alt="Guest date request form on a free villa"
+                      data-i18n-attr="alt:guests.f4_alt"
                       loading="lazy"
                     />
                   </div>
@@ -386,6 +415,6 @@
         </div>
       </footer>
     </div>
-    <script src="/script.js?v=13" defer></script>
+    <script src="/script.js?v=14" defer></script>
   </body>
 </html>

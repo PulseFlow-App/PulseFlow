@@ -341,7 +341,10 @@
     "host_link": "See what this looks like from the host's side",
     "demo_title": "Try it yourself",
     "demo_lead": "The guest demo login is already filled in.",
-    "close_title": "Got a link from your host? Open it. Or try the demo."
+    "close_title": "Got a link from your host? Open it. Or try the demo.",
+    "f4_title": "Request dates",
+    "f4_desc": "Browse the host’s other villas, pick check-in and check-out, add a note, and send a date request without a booking platform fee.",
+    "f4_alt": "Guest date request form on a free villa"
   },
   "terms": {
     "meta_title": "Terms of Service · Pulse Flow",

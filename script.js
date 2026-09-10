@@ -20,6 +20,23 @@ let currentLocale = "en";
 let currentDict = null;
 let demoApplyFns = [];
 
+/** Plausible custom events (S5). No-ops until the domain is added in Plausible. */
+function track(name, props) {
+  try {
+    if (typeof window.plausible === "function") {
+      window.plausible(name, props ? { props } : undefined);
+    }
+  } catch (_) {
+    /* ignore */
+  }
+}
+
+function pageMeta() {
+  const path = window.location.pathname || "/";
+  const locale = localeFromPath() || currentLocale || "en";
+  return { path, locale, page: path };
+}
+
 function lookup(dict, key) {
   if (!dict || !key) return undefined;
   return key.split(".").reduce((obj, part) => {
@@ -209,6 +226,7 @@ function syncLocaleInUrl(locale) {
 }
 
 async function setLocale(locale, { persist = true, syncUrl = false } = {}) {
+  const prevLocale = currentLocale;
   const next = LOCALES.includes(locale) ? locale : "en";
   if (!dictCache.en) {
     try {
@@ -239,6 +257,9 @@ async function setLocale(locale, { persist = true, syncUrl = false } = {}) {
     sel.value = next;
   });
   demoApplyFns.forEach((fn) => fn());
+  if (prevLocale && prevLocale !== next) {
+    track("lang_switch", { from: prevLocale, to: next });
+  }
 }
 
 function resolveInitialLocale() {
@@ -413,4 +434,83 @@ mountLanguageSwitchers();
       setDocumentLocale(fromPath || "en");
     });
   }
+}
+
+/* Analytics: page + role views, CTAs, demo, scroll, outbound (S5) */
+{
+  const meta = pageMeta();
+  track("page_view", {
+    path: meta.path,
+    locale: meta.locale,
+    referrer: document.referrer || "",
+  });
+  const roleMatch = meta.path.match(
+    /\/(owners|managers|staff|guests)(?:\/|$)/,
+  );
+  if (roleMatch) {
+    track("role_page_view", { role: roleMatch[1], locale: meta.locale });
+  }
+
+  const markCta = (el, id) => {
+    if (!el || el.dataset.trackBound) return;
+    el.dataset.trackBound = "1";
+    el.addEventListener("click", () => {
+      track("cta_click", { id, ...pageMeta() });
+    });
+  };
+
+  markCta(document.querySelector('[data-i18n="home.cta"]'), "hero");
+  markCta(document.querySelector('[data-i18n="home.close_cta"]'), "footer");
+  markCta(document.querySelector('[data-i18n="home.plan_cta"]'), "plan");
+  document.querySelectorAll(".pf-audience-card[href]").forEach((a) => {
+    const href = a.getAttribute("href") || "";
+    const id = href.includes("owner")
+      ? "role_owners"
+      : href.includes("manager")
+        ? "role_managers"
+        : href.includes("staff")
+          ? "role_staff"
+          : "role";
+    markCta(a, id);
+  });
+
+  document.querySelectorAll("[data-demo-link]").forEach((a) => {
+    a.addEventListener("click", () => {
+      const role =
+        document
+          .querySelector("[data-demo-role].is-active")
+          ?.getAttribute("data-demo-role") || "owner";
+      track("demo_open", { role, ...pageMeta() });
+      track("outbound_app", { target: "login", ...pageMeta() });
+    });
+  });
+
+  document.querySelectorAll('a[href*="app.pulseflow.site"]').forEach((a) => {
+    if (a.dataset.trackBound) return;
+    a.dataset.trackBound = "1";
+    a.addEventListener("click", () => {
+      const href = a.getAttribute("href") || "";
+      const target = href.includes("/register")
+        ? "register"
+        : href.includes("/login")
+          ? "login"
+          : "app";
+      track("outbound_app", { target, ...pageMeta() });
+    });
+  });
+
+  const depths = new Set();
+  const onScroll = () => {
+    const doc = document.documentElement;
+    const max = doc.scrollHeight - window.innerHeight;
+    if (max <= 0) return;
+    const pct = (window.scrollY / max) * 100;
+    for (const mark of [50, 90]) {
+      if (pct >= mark && !depths.has(mark)) {
+        depths.add(mark);
+        track("scroll_depth", { depth: mark, ...pageMeta() });
+      }
+    }
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
 }

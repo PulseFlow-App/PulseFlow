@@ -223,7 +223,55 @@ def set_canonical_og(html: str, locale: str, slug: str) -> str:
         '<meta property="og:type" content="website" />\n' + insert,
         1,
     )
+    # Prefer locale OG art when present (en/ru); others fall back to en.
+    og_file = (
+        f"og-image-{locale}.jpg"
+        if (ROOT / "assets" / f"og-image-{locale}.jpg").exists()
+        else "og-image-en.jpg"
+        if (ROOT / "assets" / "og-image-en.jpg").exists()
+        else "og-image.jpg"
+    )
+    html = re.sub(
+        r'(property="og:image"\s+content=")https://www\.pulseflow\.site/assets/og-image[^"]*(")',
+        rf"\1https://www.pulseflow.site/assets/{og_file}\2",
+        html,
+    )
+    html = re.sub(
+        r'(name="twitter:image"\s+content=")https://www\.pulseflow\.site/assets/og-image[^"]*(")',
+        rf"\1https://www.pulseflow.site/assets/{og_file}\2",
+        html,
+    )
+    html = re.sub(
+        r'<meta property="og:image:width" content="[^"]+"\s*/?>',
+        '<meta property="og:image:width" content="1200" />',
+        html,
+    )
+    html = re.sub(
+        r'<meta property="og:image:height" content="[^"]+"\s*/?>',
+        '<meta property="og:image:height" content="630" />',
+        html,
+    )
     return html
+
+
+def localize_screenshots(html: str, locale: str) -> str:
+    """Point phone mockups at /assets/screenshots/{en|ru}/ when those trees exist."""
+    shot_locale = locale if locale in ("en", "ru") else "en"
+    folder = ROOT / "assets" / "screenshots" / shot_locale
+    if not folder.is_dir():
+        return html
+
+    def repl(m: re.Match) -> str:
+        name = m.group(1)
+        if (folder / name).exists():
+            return f'src="/assets/screenshots/{shot_locale}/{name}"'
+        return f'src="/assets/screenshots/{name}"'
+
+    return re.sub(
+        r'src="/assets/screenshots/(?:en/|ru/)?([A-Za-z0-9._-]+\.png)"',
+        repl,
+        html,
+    )
 
 
 def inject_hreflang(html: str, slug: str) -> str:
@@ -279,11 +327,20 @@ def prefix_links(html: str, locale: str) -> str:
     )
 
 
-def process(html: str, locale: str, slug: str, dicts: dict) -> str:
+def process(
+    html: str,
+    locale: str,
+    slug: str,
+    dicts: dict,
+    *,
+    localize_shots: bool = True,
+) -> str:
     html = set_html_lang(html, locale)
     html = set_canonical_og(html, locale, slug)
     html = inject_hreflang(html, slug)
     html = replace_leaf_i18n(html, dicts[locale], dicts["en"])
+    if localize_shots:
+        html = localize_screenshots(html, locale)
     html = prefix_links(html, locale)
     html = re.sub(
         r'"inLanguage":\s*"(?:en|ru)"', f'"inLanguage": "{locale}"', html
@@ -333,10 +390,16 @@ def write_sitemap() -> None:
 
 def main() -> None:
     dicts = load_dicts()
-    # Normalize unprefixed EN sources, then emit /en and /ru mirrors
+    # Refresh unprefixed EN sources (flat screenshot paths), then emit locale trees.
     for slug, filename in PAGES:
         path = ROOT / filename if not slug else ROOT / slug / filename
-        html = process(path.read_text(encoding="utf-8"), "en", slug, dicts)
+        html = process(
+            path.read_text(encoding="utf-8"),
+            "en",
+            slug,
+            dicts,
+            localize_shots=False,
+        )
         path.write_text(html, encoding="utf-8")
         print("root", path.relative_to(ROOT))
 
