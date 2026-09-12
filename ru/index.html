@@ -8,7 +8,7 @@
     />
     <title data-i18n="home.meta_title">Pulse Flow: вся работа по объектам аренды в одном месте</title><meta
       name="description"
-      content="Объекты, задачи, подрядчики, счета и гости в одном пространстве. Владелец, управляющий и персонал видят одну картину, каждый на своём языке."
+      content="Объекты, работы, задачи, подрядчики, счета и гости в одном пространстве. Каждый видит свою часть, на своём языке."
       data-i18n-attr="content:home.meta_description"
     />
     <meta name="theme-color" content="#E8623D" />
@@ -49,16 +49,37 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/ru" />
     <meta
       property="og:title"
-      content="Вся работа по объектам аренды в одном месте"
+      content="Достаньте работу из групповых чатов"
       data-i18n-attr="content:home.og_title"
     />
     <meta
       property="og:description"
-      content="Владелец, управляющий, персонал и гость в одном рабочем пространстве. Каждый видит только своё и на своём языке."
+      content="Объекты, работы, задачи, подрядчики, счета и гости в одном пространстве. Каждый видит свою часть, на своём языке."
       data-i18n-attr="content:home.og_description"
     />
     <meta
@@ -135,7 +156,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=28" />
+    <link rel="stylesheet" href="/styles.css?v=43" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -183,11 +204,13 @@
         <section class="pf-hero pf-fade" id="hero">
           <div class="pf-hero-copy">
             <p class="pf-eyebrow" data-i18n="home.eyebrow">Для операций с объектами</p>
-            <h1 class="pf-headline" data-i18n="home.headline">Вся работа по объектам в одном месте, а не в шести чатах</h1>
-            <p class="pf-sub" data-i18n="home.sub">Объекты, задачи, подрядчики, счета и гости. Каждый в команде видит только своё, и на своём языке.</p>
+            <h1 class="pf-headline" data-i18n="home.headline">Достаньте работу из групповых чатов.</h1>
+            <p class="pf-sub" data-i18n="home.sub">Объекты, работы, задачи, подрядчики, счета и гости в одном пространстве. Каждый видит свою часть, на своём языке.</p>
             <p class="pf-launch-chip">
               <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/></svg>
-              <span data-i18n="home.launch_chip">Запуск на Ко Пангане - первые команды уже подключаются.</span>
+              <span>
+                <span data-i18n="home.launch_chip_prefix">Демо-запуск: Ко Панган, Таиланд - пишите на </span><a href="mailto:support@pulseflow.site">support@pulseflow.site</a><span data-i18n="home.launch_chip_suffix"> for queries</span>
+              </span>
             </p>
             <div class="pf-hero-actions">
               <a class="pf-btn-primary" href="https://app.pulseflow.site/register" data-i18n="home.cta">Начать бесплатно</a>
@@ -198,7 +221,7 @@
             <div class="pf-phone-frame">
               <div class="pf-phone-frame-screen">
                 <img
-                  src="/assets/screenshots/ru/owner-home.png"
+                  src="/assets/screenshots/ru/owner-home-hero.png"
                   width="472"
                   height="1024"
                   alt=""
@@ -210,139 +233,335 @@
         </section>
 
         <section class="pf-alt pf-fade" id="alternative" aria-labelledby="alt-title">
-          <div>
-            <h2 id="alt-title" data-i18n="home.alt_title">Сейчас это живёт в WhatsApp.</h2>
-            <ul class="pf-alt-list">
-              <li data-i18n="home.alt_1">Вы отправляете задачу. Пока не позвоните, неясно, взял ли её кто-то.</li>
-              <li data-i18n="home.alt_2">Чеки копятся фотографиями в переписке. В конце месяца вы их снова ищете.</li>
-              <li data-i18n="home.alt_3">Человек уходит. Контакты подрядчиков и договорённости уходят с его телефоном.</li>
-            </ul>
-            <p class="pf-alt-answer" data-i18n="home.alt_answer">Чат никуда не денется, и не должен. Pulse Flow нужен там, где чат перестал справляться: подтверждение работы, расход, привязанный к объекту, и общая история, которая остаётся в компании.</p>
+          <h2 id="alt-title" data-i18n="home.alt_title">Проблемы управления объектами</h2>
+          <div class="pf-flip-grid" data-flip-grid>
+            <div class="pf-flip" data-flip-card role="button" tabindex="0" aria-pressed="false">
+              <div class="pf-flip-inner">
+                <div class="pf-flip-face pf-flip-front">
+                  <svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"/><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M21 21v-2a4 4 0 0 0 -3 -3.85"/></svg>
+                  <span class="pf-flip-label" data-i18n="home.pain_team">Ваша команда</span>
+                </div>
+                <div class="pf-flip-face pf-flip-back">
+                  <ul>
+                    <li data-i18n="home.pain_team_1">Новому сотруднику каждый раз нужно полное введение с нуля</li>
+                    <li data-i18n="home.pain_team_2">Новичку нужны недели, чтобы понять, кто из подрядчиков за что отвечает</li>
+                    <li data-i18n="home.pain_team_3">Управляющий заболел. Всё, что он знал, осталось у него в голове</li>
+                    <li data-i18n="home.pain_team_4">Нет одного места, где команда видит, что происходит сегодня</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="pf-flip" data-flip-card role="button" tabindex="0" aria-pressed="false">
+              <div class="pf-flip-inner">
+                <div class="pf-flip-face pf-flip-front">
+                  <svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5"/></svg>
+                  <span class="pf-flip-label" data-i18n="home.pain_jobs">Ваши работы</span>
+                </div>
+                <div class="pf-flip-face pf-flip-back">
+                  <ul>
+                    <li data-i18n="home.pain_jobs_1">Вы отправили задачу. Пока не позвоните, неясно, взял ли её кто-то</li>
+                    <li data-i18n="home.pain_jobs_2">Уборщица приехала не на ту виллу: сообщение утонуло в переписке</li>
+                    <li data-i18n="home.pain_jobs_3">Подрядчик сделал работу. Нет записи, кто, за сколько и по какому объекту</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="pf-flip" data-flip-card role="button" tabindex="0" aria-pressed="false">
+              <div class="pf-flip-inner">
+                <div class="pf-flip-face pf-flip-front">
+                  <svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2"/><path d="M14 8h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"/><path d="M12 7v1m0 9v1"/></svg>
+                  <span class="pf-flip-label" data-i18n="home.pain_money">Ваши деньги</span>
+                </div>
+                <div class="pf-flip-face pf-flip-back">
+                  <ul>
+                    <li data-i18n="home.pain_money_1">Непонятно, во сколько реально обходится каждый объект</li>
+                    <li data-i18n="home.pain_money_2">Фото чеков копятся в WhatsApp. В конце месяца это охота</li>
+                    <li data-i18n="home.pain_money_3">Управляющий заплатил из своего. Не помните, вернули ли вы ему</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="pf-flip" data-flip-card role="button" tabindex="0" aria-pressed="false">
+              <div class="pf-flip-inner">
+                <div class="pf-flip-face pf-flip-front">
+                  <svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"/><path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1"/><path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"/><path d="M17 10h2a2 2 0 0 1 2 2v1"/><path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"/><path d="M3 13v-1a2 2 0 0 1 2 -2h2"/></svg>
+                  <span class="pf-flip-label" data-i18n="home.pain_guests">Ваши гости</span>
+                </div>
+                <div class="pf-flip-face pf-flip-back">
+                  <ul>
+                    <li data-i18n="home.pain_guests_1">Гость говорит, что оставил чисто. Нет записи, что покрывал депозит</li>
+                    <li data-i18n="home.pain_guests_2">Правила дома ушли в LINE. Гость говорит, что ничего не получал</li>
+                    <li data-i18n="home.pain_guests_3">Вернувшийся гость пишет на ваш личный номер, потому что другого пути нет</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="pf-contrast" aria-hidden="true">
-            <div class="pf-contrast-col is-before">
+          <p class="pf-flip-hint" data-i18n="home.flip_hint">Нажмите, чтобы перевернуть</p>
+
+          <div class="pf-contrast" aria-label="Before and after">
+            <div class="pf-contrast-col">
               <h3 data-i18n="home.before_label">До</h3>
-              <div class="pf-chat-stack">
-                <div class="pf-chat-bubble">Can someone check the pool filter?</div>
-                <div class="pf-chat-bubble">Did the cleaner get the key?</div>
-                <div class="pf-chat-bubble">Where is the receipt from last week?</div>
-                <div class="pf-chat-bubble">Ping me when it is done</div>
+              <div class="pf-wa" aria-hidden="true">
+                <div class="pf-wa-bar">
+                  <strong>Villa ops · Koh Phangan</strong>
+                  <span>12 participants</span>
+                </div>
+                <div class="pf-wa-thread">
+                  <div class="pf-wa-day">Today</div>
+                  <div class="pf-wa-msg is-in">
+                    <span class="pf-wa-name">Alex Owner</span>
+                    Can someone check the pool filter at Coral? Guest says it smells.
+                    <time>09:14</time>
+                  </div>
+                  <div class="pf-wa-msg is-in">
+                    <span class="pf-wa-name">Sam Manager</span>
+                    Who is free? Somchai?
+                    <time>09:16</time>
+                  </div>
+                  <div class="pf-wa-msg is-in">
+                    <span class="pf-wa-name">Mai Cleaner</span>
+                    I am at Lotus for turnover. Which villa again?
+                    <time>09:41</time>
+                  </div>
+                  <div class="pf-wa-msg is-out">
+                    Coral. Please today before 2.
+                    <time>09:42</time>
+                  </div>
+                  <div class="pf-wa-msg is-in">
+                    <span class="pf-wa-name">Sam Manager</span>
+                    Also where is the receipt from last week for the AC guy? Owner is asking.
+                    <time>10:05</time>
+                  </div>
+                  <div class="pf-wa-msg is-in">
+                    <span class="pf-wa-name">Pom Vendor</span>
+                    I finished Coral filter. 800 baht cash.
+                    <time>14:58</time>
+                  </div>
+                  <div class="pf-wa-msg is-out">
+                    Did anyone confirm Coral was done? Guest already checked in…
+                    <time>16:22</time>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="pf-contrast-col is-after">
+
+            <div class="pf-contrast-col">
               <h3 data-i18n="home.after_label">После</h3>
-              <div class="pf-job-card-mini">
-                <strong>Pool filter check</strong>
-                <span class="pf-status-pill">Confirmed</span>
-                <span>Somchai · Villa Coral · Today 14:00-16:00</span>
+              <div class="pf-pfchat" aria-hidden="true">
+                <div class="pf-pfchat-bar">
+                  <strong>Messages</strong>
+                  <span>Live team chat</span>
+                </div>
+                <div class="pf-pfchat-thread">
+                  <div class="pf-pfchat-msg is-own">
+                    <p>Service order for Pom · Pool filter check
+What: Pool filter
+Where: Villa Coral
+When: Today 14:00-16:00
+From: Alex
+Staff: open this and tap Read and agreed.</p>
+                    <span class="pf-pfchat-ack">Read &amp; agreed</span>
+                  </div>
+                  <div class="pf-pfchat-msg is-other">
+                    <span class="pf-pfchat-name">Pom</span>
+                    <p>Confirmed. On site at Coral now.</p>
+                  </div>
+                  <div class="pf-pfchat-msg is-other">
+                    <span class="pf-pfchat-name">Sam Manager</span>
+                    <p>Done. Receipt photo attached to Coral · Pool. 800 THB pending your approval.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
+          <p class="pf-motto" data-i18n="home.alt_closing">Ваша операция всегда на пульсе</p>
         </section>
 
-        <div class="pf-features-head pf-fade">
-          <h2 data-i18n="home.features_title">Всё в одном месте.</h2>
-          <p data-i18n="home.features_sub">Четыре вещи, которые обычно живут в четырёх разных инструментах.</p>
-        </div>
+        <section class="pf-features pf-fade" id="features" aria-labelledby="features-title">
+          <div class="pf-features-head">
+            <h2 id="features-title" data-i18n="home.features_title">Всё в одном месте.</h2>
+            <p data-i18n="home.features_sub">Три вещи, которые обычно живут в разных инструментах - плюс экран для гостя.</p>
+          </div>
 
-        <div
-          class="pf-cards pf-fade"
-          id="features"
-          data-i18n-attr="aria-label:home.cards_label"
-          aria-label="Возможности продукта"
-        >
-          <article class="pf-card">
-            <div class="pf-card-icon" aria-hidden="true">
-              <svg class="ti" viewBox="0 0 24 24"><path d="M3 21l18 0"/><path d="M9 8l1 0"/><path d="M9 12l1 0"/><path d="M9 16l1 0"/><path d="M14 8l1 0"/><path d="M14 12l1 0"/><path d="M14 16l1 0"/><path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"/></svg>
-            </div>
-            <h2 class="pf-tag" data-i18n="home.card_villas">Объекты</h2>
-            <p class="pf-desc" data-i18n="home.card_villas_desc">Один список для владельца, управляющего и человека на объекте. Статус, точка на карте, даты заезда и фото.</p>
-            <div class="pf-card-shot">
-              <img src="/assets/screenshots/owner-villas.png" width="640" height="400" alt="" loading="lazy" />
-            </div>
-          </article>
+          <div class="pf-feature-carousel" data-feature-carousel>
+            <div class="pf-feature-track" data-feature-track tabindex="0" data-i18n-attr="aria-label:home.cards_label" aria-label="Возможности продукта">
+              <article class="pf-feature-slide is-active" data-feature-slide>
+                <div class="pf-feature-copy">
+                  <div class="pf-card-icon" aria-hidden="true">
+                    <svg class="ti" viewBox="0 0 24 24"><path d="M3 21l18 0"/><path d="M9 8l1 0"/><path d="M9 12l1 0"/><path d="M9 16l1 0"/><path d="M14 8l1 0"/><path d="M14 12l1 0"/><path d="M14 16l1 0"/><path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"/></svg>
+                  </div>
+                  <h3 class="pf-tag" data-i18n="home.card_villas">Объекты</h3>
+                  <p class="pf-desc" data-i18n="home.card_villas_desc">Один список для владельца, управляющего и человека на объекте. Статус, точка на карте, даты заезда и фото.</p>
+                </div>
+                <div class="pf-feature-visual">
+                  <div class="pf-phone-frame">
+                    <div class="pf-phone-frame-screen">
+                      <img src="/assets/screenshots/ru/owner-villas-hero.png" width="780" height="1690" alt="" loading="eager" />
+                    </div>
+                  </div>
+                </div>
+              </article>
 
-          <article class="pf-card">
-            <div class="pf-card-icon" aria-hidden="true">
-              <svg class="ti" viewBox="0 0 24 24"><path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5"/></svg>
-            </div>
-            <h2 class="pf-tag" data-i18n="home.card_jobs">Работы и подрядчики</h2>
-            <p class="pf-desc" data-i18n="home.card_jobs_desc">Заказ с окном работы. Кто в приложении, подтверждает одним нажатием. Звонок или сообщение подрядчику прямо из карточки контакта.</p>
-            <div class="pf-card-shot">
-              <img src="/assets/screenshots/ru/owner-order.png" width="640" height="400" alt="" loading="lazy" />
-            </div>
-          </article>
+              <article class="pf-feature-slide" data-feature-slide>
+                <div class="pf-feature-copy">
+                  <div class="pf-card-icon" aria-hidden="true">
+                    <svg class="ti" viewBox="0 0 24 24"><path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5"/></svg>
+                  </div>
+                  <h3 class="pf-tag" data-i18n="home.card_jobs">Работы и подрядчики</h3>
+                  <p class="pf-desc" data-i18n="home.card_jobs_desc">Заказ с окном работы. Кто в приложении, подтверждает одним нажатием. Звонок или сообщение подрядчику прямо из карточки контакта.</p>
+                </div>
+                <div class="pf-feature-visual">
+                  <div class="pf-phone-frame">
+                    <div class="pf-phone-frame-screen">
+                      <img src="/assets/screenshots/ru/owner-contacts-hero.png" width="780" height="1690" alt="" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+              </article>
 
-          <article class="pf-card">
-            <div class="pf-card-icon" aria-hidden="true">
-              <svg class="ti" viewBox="0 0 24 24"><path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2"/><path d="M14 8h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"/><path d="M12 7v1m0 9v1"/></svg>
+              <article class="pf-feature-slide" data-feature-slide>
+                <div class="pf-feature-copy">
+                  <div class="pf-card-icon" aria-hidden="true">
+                    <svg class="ti" viewBox="0 0 24 24"><path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2"/><path d="M14 8h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"/><path d="M12 7v1m0 9v1"/></svg>
+                  </div>
+                  <h3 class="pf-tag" data-i18n="home.card_money">Деньги</h3>
+                  <p class="pf-desc" data-i18n="home.card_money_desc">Расход с фотографией чека, привязанный к объекту и категории. Всего, оплачено и в ожидании - три цифры перед глазами.</p>
+                </div>
+                <div class="pf-feature-visual">
+                  <div class="pf-phone-frame">
+                    <div class="pf-phone-frame-screen">
+                      <img src="/assets/screenshots/ru/owner-finances-hero.png" width="780" height="1690" alt="" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+              </article>
             </div>
-            <h2 class="pf-tag" data-i18n="home.card_money">Деньги</h2>
-            <p class="pf-desc" data-i18n="home.card_money_desc">Расход с фотографией чека, привязанный к объекту и категории. Всего, оплачено и в ожидании - три цифры перед глазами.</p>
-            <div class="pf-card-shot">
-              <img src="/assets/screenshots/ru/owner-finances.png" width="640" height="400" alt="" loading="lazy" />
-            </div>
-          </article>
 
-          <article class="pf-card">
-            <div class="pf-card-icon" aria-hidden="true">
-              <svg class="ti" viewBox="0 0 24 24"><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/><path d="M6 21v-2a4 4 0 0 1 4 -4h4"/><path d="M15 19l2 2l4 -4"/></svg>
+            <div class="pf-feature-controls">
+              <button type="button" class="pf-feature-nav" data-feature-prev aria-label="Previous feature">
+                <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6l6 6"/></svg>
+              </button>
+              <div class="pf-dots" data-feature-dots></div>
+              <button type="button" class="pf-feature-nav" data-feature-next aria-label="Next feature">
+                <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6l-6 6"/></svg>
+              </button>
             </div>
-            <h2 class="pf-tag" data-i18n="home.card_guests">Гости</h2>
-            <p class="pf-desc" data-i18n="home.card_guests_desc">Правила дома, которые гость отмечает как прочитанные. Депозит с каждой удержанной суммой. Прямой запрос дат от вернувшегося гостя.</p>
-            <div class="pf-card-shot">
-              <img src="/assets/screenshots/ru/guest-home.png" width="640" height="400" alt="" loading="lazy" />
+          </div>
+
+          <a class="pf-feature-guest" href="/ru/guests">
+            <div class="pf-feature-guest-copy">
+              <div class="pf-card-icon" aria-hidden="true">
+                <svg class="ti" viewBox="0 0 24 24"><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/><path d="M6 21v-2a4 4 0 0 1 4 -4h4"/><path d="M15 19l2 2l4 -4"/></svg>
+              </div>
+              <p class="pf-feature-guest-kicker" data-i18n="home.card_guests">Гости</p>
+              <h3 data-i18n="home.guest_note">Приглашённым гостям тоже открывается свой экран.</h3>
+              <p class="pf-feature-guest-desc" data-i18n="home.card_guests_desc">Правила дома, которые гость отмечает как прочитанные. Депозит с каждой удержанной суммой. Прямой запрос дат от вернувшегося гостя.</p>
+              <span class="pf-feature-guest-cta" data-i18n="home.guest_link">Как это видит гость.</span>
             </div>
-          </article>
-        </div>
+            <div class="pf-feature-guest-visual" aria-hidden="true">
+              <div class="pf-phone-frame">
+                <div class="pf-phone-frame-screen">
+                  <img src="/assets/screenshots/ru/guest-guide-hero.png" width="780" height="1690" alt="" loading="lazy" />
+                </div>
+              </div>
+            </div>
+          </a>
+        </section>
 
         <section class="pf-lang-block pf-fade" id="translation" aria-labelledby="lang-title">
           <div>
             <h2 id="lang-title" data-i18n="home.lang_title">Один язык для всей команды.</h2>
-            <p data-i18n="home.lang_desc">Управляющий пишет заказ по-английски, уборщица читает по-тайски, владелец видит по-русски. Каждый один раз выбирает язык в профиле - заказы, чат и сообщения приходят на его языке автоматически.</p>
+            <p data-i18n="home.lang_desc">Управляющий пишет заказ по-английски, уборщица читает по-тайски, владелец видит на иврите. Каждый один раз выбирает язык в профиле - заказы, чат и сообщения приходят на его языке автоматически.</p>
           </div>
           <div class="pf-lang-phones" aria-hidden="true">
             <figure class="pf-lang-phone">
               <div class="pf-lang-phone-frame">
-                <div class="pf-lang-job">
-                  <small>EN</small>
-                  <strong>Deep clean before check-in</strong>
-                  <span>Villa Coral · Today 10:00-13:00</span>
-                  <span class="pf-status-pill">Open</span>
+                <div class="pf-lang-chat">
+                  <div class="pf-lang-chat-bar">
+                    <strong>Messages</strong>
+                    <span>Live team chat</span>
+                  </div>
+                  <div class="pf-lang-chat-thread">
+                    <div class="pf-pfchat-msg is-own">
+                      <p>Service order for Mai
+What: Deep clean before check-in
+Where: Villa Coral
+When: Today 10:00-13:00
+From: Sam Manager</p>
+                      <span class="pf-pfchat-ack">Read &amp; agreed</span>
+                    </div>
+                    <div class="pf-pfchat-msg is-other">
+                      <span class="pf-pfchat-name">Mai</span>
+                      <p>Got it. On my way to Coral.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <figcaption data-i18n="home.lang_label_en">Управляющий - English</figcaption>
             </figure>
             <figure class="pf-lang-phone">
               <div class="pf-lang-phone-frame">
-                <div class="pf-lang-job">
-                  <small>TH</small>
-                  <strong>ทำความสะอาดลึกก่อนเช็คอิน</strong>
-                  <span>Villa Coral · วันนี้ 10:00-13:00</span>
-                  <span class="pf-status-pill">Open</span>
+                <div class="pf-lang-chat">
+                  <div class="pf-lang-chat-bar">
+                    <strong>Messages</strong>
+                    <span>Live team chat</span>
+                  </div>
+                  <div class="pf-lang-chat-thread">
+                    <div class="pf-pfchat-msg is-own">
+                      <p>คำสั่งงานสำหรับ Mai
+งาน: ทำความสะอาดลึกก่อนเช็คอิน
+ที่: Villa Coral
+เวลา: วันนี้ 10:00-13:00
+จาก: Sam Manager</p>
+                      <span class="pf-pfchat-ack">อ่านแล้ว และตกลง</span>
+                    </div>
+                    <div class="pf-pfchat-msg is-other">
+                      <span class="pf-pfchat-name">Mai</span>
+                      <p>รับทราบ กำลังไป Coral</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <figcaption data-i18n="home.lang_label_th">Уборщица - Thai</figcaption>
             </figure>
             <figure class="pf-lang-phone">
               <div class="pf-lang-phone-frame">
-                <div class="pf-lang-job">
-                  <small>RU</small>
-                  <strong>Глубокая уборка перед заездом</strong>
-                  <span>Villa Coral · Сегодня 10:00-13:00</span>
-                  <span class="pf-status-pill">Open</span>
+                <div class="pf-lang-chat" dir="rtl">
+                  <div class="pf-lang-chat-bar">
+                    <strong>Messages</strong>
+                    <span>Live team chat</span>
+                  </div>
+                  <div class="pf-lang-chat-thread">
+                    <div class="pf-pfchat-msg is-own">
+                      <p>הזמנת שירות עבור Mai
+מה: ניקיון עמוק לפני צ׳ק-אין
+איפה: Villa Coral
+מתי: היום 10:00-13:00
+מאת: Sam Manager</p>
+                      <span class="pf-pfchat-ack">נקרא ואושר</span>
+                    </div>
+                    <div class="pf-pfchat-msg is-other">
+                      <span class="pf-pfchat-name">Mai</span>
+                      <p>קיבלתי. בדרך ל-Coral.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <figcaption data-i18n="home.lang_label_ru">Владелец - русский</figcaption>
+              <figcaption data-i18n="home.lang_label_he">Владелец - иврит</figcaption>
             </figure>
           </div>
           <div class="pf-phone-solo">
             <figure class="pf-phone">
               <div class="pf-phone-screen">
                 <img
-                  src="/assets/screenshots/ru/owner-translate.png"
-                  width="472"
-                  height="1024"
+                  src="/assets/screenshots/ru/owner-translate-hero.png"
+                  width="780"
+                  height="1522"
                   alt="Настройка перевода командного контента в профиле"
                   data-i18n-attr="alt:common.lang_alt"
                   loading="lazy"
@@ -380,10 +599,6 @@
               <span class="pf-audience-cta" data-i18n="home.audience_staff_cta">Страница для персонала →</span>
             </a>
           </div>
-          <p class="pf-guest-note">
-            <span data-i18n="home.guest_note">Приглашённым гостям тоже открывается свой экран.</span>
-            <a href="/ru/guests" data-i18n="home.guest_link">Как это видит гость.</a>
-          </p>
         </section>
 
         <section class="pf-plan pf-fade" id="plans" aria-labelledby="company-plans">
@@ -419,68 +634,107 @@
         <section class="pf-faq pf-fade" id="faq" aria-labelledby="faq-title">
           <h2 id="faq-title" data-i18n="home.faq_title">Короткие ответы.</h2>
           <details>
-            <summary data-i18n="home.faq_q1">У меня всё в Airbnb и Booking. Это замена?</summary>
-            <p data-i18n="home.faq_a1">Нет. Брони остаются там, где они есть. Pulse Flow про то, что происходит после брони: кто убирает, что сломалось, сколько потрачено и что видит гость. Даты заезда и выезда сейчас вносятся вручную. Импорт из Google Календаря в планах. Прямой синхронизации с Airbnb и Booking нет.</p>
+            <summary data-i18n="home.faq_q1">Уборщицы не будут пользоваться ещё одним приложением.</summary>
+            <p data-i18n="home.faq_a1">Им не нужно ничему учиться. Вы отправляете ссылку, они открывают её в браузере, и приложение лежит на телефоне как любое другое. Без загрузки, без аккаунта, без App Store. Они видят только свои работы, на своём языке, и подтверждают одним нажатием. Если они читают WhatsApp, они справятся и с этим.</p>
           </details>
           <details>
-            <summary data-i18n="home.faq_q2">Сколько это стоит?</summary>
-            <p data-i18n="home.faq_a2">Личное пространство бесплатно навсегда. За компанию платит только владелец, места команды бесплатны. Оплата ещё не подключена, все зарегистрированные аккаунты получают 3 месяца полного доступа.</p>
+            <summary data-i18n="home.faq_q2">У управляющего уже есть своя система. Зачем им переходить?</summary>
+            <p data-i18n="home.faq_a2">Они не переходят - они добавляют одно место, где работы, которыми они уже управляют, становятся видны всем остальным. Чат остаётся. Меняется то, что у работы теперь есть подтверждённый статус, привязанная стоимость и запись, которая не исчезает, когда кто-то уходит.</p>
           </details>
           <details>
-            <summary data-i18n="home.faq_q3">Персонал не будет ставить приложение.</summary>
-            <p data-i18n="home.faq_a3">Ставить из магазина ничего не надо. Приложение открывается по ссылке в браузере и добавляется на экран телефона одним действием. Ни Google-аккаунта, ни App Store, только почта. Интерфейс переключается на язык человека, а задачи и чат он читает на своём языке.</p>
+            <summary data-i18n="home.faq_q3">У меня всё в Airbnb и Booking. Это замена?</summary>
+            <p data-i18n="home.faq_a3">Нет. Брони остаются там, где они есть. Pulse Flow про то, что происходит после брони: кто убирает, что сломалось, сколько потрачено и что видит гость. Импорт из Google Календаря в планах. Прямой синхронизации с Airbnb и Booking сегодня нет.</p>
           </details>
           <details>
-            <summary data-i18n="home.faq_q4">Гостю тоже надо что-то устанавливать?</summary>
-            <p data-i18n="home.faq_a4">Нет, гость открывает ссылку от хозяина. Оплата внутри приложения не проходит: депозит и расчёты идут напрямую хозяину, приложение фиксирует суммы, удержания и остаток, и то же самое видит гость.</p>
+            <summary data-i18n="home.faq_q4">Сколько это стоит?</summary>
+            <p data-i18n="home.faq_a4">Личное пространство бесплатно навсегда. За компанию платит только владелец - места команды бесплатны, сколько бы людей вы ни добавили. Оплата ещё не подключена, поэтому каждый аккаунт получает 3 месяца полного доступа со дня регистрации.</p>
+          </details>
+          <details>
+            <summary data-i18n="home.faq_q5">Гостям придётся делать что-то сложное?</summary>
+            <p data-i18n="home.faq_a5">Нет. Вы отправляете ссылку. Они открывают её, читают правила дома и видят баланс депозита. Без загрузки, без аккаунта, без оплаты через приложение. Платежи идут напрямую вам - приложение только фиксирует сумму, удержания и остаток, чтобы обе стороны видели одно и то же.</p>
+          </details>
+          <details>
+            <summary data-i18n="home.faq_q6">Может ли гость оспорить удержание с депозита?</summary>
+            <p data-i18n="home.faq_a6">Каждое удержание фиксируется в приложении с причиной и датой. И вы, и гость видите один и тот же баланс. Нет «мне не присылали правила» и «я не помню, что соглашался» - всё в одном месте, с отметкой времени и видно обеим сторонам.</p>
+          </details>
+          <details>
+            <summary data-i18n="home.faq_q7">Что, если гость хочет забронировать снова?</summary>
+            <p data-i18n="home.faq_a7">Вернувшиеся гости могут отправить запрос на даты прямо через приложение. Он уходит владельцу или управляющему, минуя ваш личный номер и стороннюю площадку.</p>
+          </details>
+          <details>
+            <summary data-i18n="home.faq_q8">Что происходит, когда сотрудник уходит?</summary>
+            <p data-i18n="home.faq_a8">История работ, контакты подрядчиков и заметки по объектам остаются в системе. Ничего не уходит вместе с телефоном. Следующий человек видит ту же информацию с первого дня.</p>
+          </details>
+          <details>
+            <summary data-i18n="home.faq_q9">Можно ли пользоваться этим для одного объекта?</summary>
+            <p data-i18n="home.faq_a9">Да. Личный план бесплатен навсегда и покрывает один-два объекта, которыми вы управляете сами. Те же функции - работы, расходы, гости - без команды.</p>
+          </details>
+          <details>
+            <summary data-i18n="home.faq_q10">Мои данные в безопасности?</summary>
+            <p data-i18n="home.faq_a10">Каждое рабочее пространство отдельно. Ваши объекты, команда, гости и финансы видны только тем, кого вы пригласили. Гости видят только то, чем вы с ними делитесь.</p>
           </details>
         </section>
 
         <section class="pf-demo pf-demo-compact pf-fade" id="demo-now" aria-labelledby="demo-heading" data-demo-login>
-          <h2 id="demo-heading" data-i18n="home.demo_title">Попробуйте сейчас.</h2>
-          <p class="pf-demo-lead" data-i18n="home.demo_lead">Выберите роль. Логин уже заполнен.</p>
+          <h2 id="demo-heading" data-i18n="home.demo_title">Демо</h2>
+          <p class="pf-demo-lead" data-i18n="home.demo_lead">Логины владельца, управляющего, персонала и гостя уже заполнены.</p>
 
-          <div class="pf-demo-layout">
-            <div class="pf-demo-cards">
-              <article class="pf-demo-card" data-demo-role="owner">
-                <h3 data-i18n="demo.role_owner">Владелец</h3>
-                <p data-i18n="home.demo_owner_desc">Загрузка, работы и расходы.</p>
-                <a class="pf-btn-primary" data-demo-link href="https://app.pulseflow.site/login?demo=owner" data-i18n="demo.open_owner">Открыть как владелец</a>
-                <div class="pf-demo-creds">
-                  <span data-demo-email>owner@pulseflow.site</span>
-                  <span>TestPass123!</span>
-                </div>
-              </article>
-              <article class="pf-demo-card" data-demo-role="manager">
-                <h3 data-i18n="demo.role_manager">Управляющий</h3>
-                <p data-i18n="home.demo_manager_desc">Соберите день и передайте смену.</p>
-                <a class="pf-btn-primary" href="https://app.pulseflow.site/login?demo=manager" data-i18n="demo.open_manager">Открыть как управляющий</a>
-                <div class="pf-demo-creds">
-                  <span>manager@pulseflow.site</span>
-                  <span>TestPass123!</span>
-                </div>
-              </article>
-              <article class="pf-demo-card" data-demo-role="staff">
-                <h3 data-i18n="demo.role_staff">Персонал</h3>
-                <p data-i18n="home.demo_staff_desc">Подтверждайте работы, отправляйте чеки.</p>
-                <a class="pf-btn-primary" href="https://app.pulseflow.site/login?demo=staff" data-i18n="demo.open_staff">Открыть как персонал</a>
-                <div class="pf-demo-creds">
-                  <span>employee@pulseflow.site</span>
-                  <span>TestPass123!</span>
-                </div>
-              </article>
-              <article class="pf-demo-card" data-demo-role="guest">
-                <h3 data-i18n="demo.role_guest">Гость</h3>
-                <p data-i18n="home.demo_guest_desc">Правила дома, депозит, запрос дат.</p>
-                <a class="pf-btn-primary" href="https://app.pulseflow.site/login?demo=guest" data-i18n="demo.open_guest">Открыть как гость</a>
-                <div class="pf-demo-creds">
-                  <span>guest@pulseflow.site</span>
-                  <span>TestPass123!</span>
-                </div>
-              </article>
+          <div
+            class="pf-demo-roles"
+            role="group"
+            aria-label="Демо-аккаунт"
+            data-i18n-attr="aria-label:demo.account_label"
+          >
+            <button
+              type="button"
+              class="pf-demo-role is-active"
+              data-demo-role="owner"
+              data-i18n="demo.role_owner"
+            >Владелец</button>
+            <button
+              type="button"
+              class="pf-demo-role"
+              data-demo-role="manager"
+              data-i18n="demo.role_manager"
+            >Управляющий</button>
+            <button
+              type="button"
+              class="pf-demo-role"
+              data-demo-role="staff"
+              data-i18n="demo.role_staff"
+            >Персонал</button>
+            <button
+              type="button"
+              class="pf-demo-role"
+              data-demo-role="guest"
+              data-i18n="demo.role_guest"
+            >Гость</button>
+          </div>
+
+          <div class="pf-demo-grid pf-demo-grid-compact">
+            <div class="pf-demo-credentials">
+              <ul class="pf-demo-list">
+                <li>
+                  <span data-i18n="demo.email">Почта</span><code data-demo-email>owner@pulseflow.site</code>
+                </li>
+                <li>
+                  <span data-i18n="demo.password">Пароль</span><code>TestPass123!</code>
+                </li>
+              </ul>
+              <a
+                class="pf-btn-primary pf-demo-btn"
+                data-demo-link
+                href="https://app.pulseflow.site/login?demo=owner"
+                data-i18n="demo.open_demo"
+                >Открыть демо</a>
             </div>
             <div class="pf-demo-qr">
-              <a data-demo-link href="https://app.pulseflow.site/login?demo=owner" data-i18n-attr="aria-label:demo.open_login" aria-label="Открыть демо-вход">
+              <a
+                data-demo-link
+                href="https://app.pulseflow.site/login?demo=owner"
+                data-i18n-attr="aria-label:demo.open_login"
+                aria-label="Открыть демо-вход"
+              >
                 <img
                   class="pf-qr-img"
                   data-demo-qr
@@ -492,27 +746,19 @@
                   loading="lazy"
                 />
               </a>
-              <p class="pf-demo-qr-caption" data-i18n="demo.scan">Сканируйте, чтобы открыть на телефоне.</p>
+              <p class="pf-demo-qr-caption" data-i18n="demo.scan">Сканируйте, чтобы войти</p>
             </div>
           </div>
         </section>
 
         <section class="pf-close pf-fade" id="close">
           <img src="/assets/pulse-mark.svg" width="64" height="64" alt="" />
-          <h2 data-i18n="home.close_title">Откройте приложение и посмотрите свой день</h2>
-          <p data-i18n="home.close_lead">Пульс вашей работы с объектами: то, что происходит прямо сейчас, и то, как оно движется дальше.</p>
+          <h2 data-i18n="home.close_title">Пульс вашей работы с объектами</h2>
           <a class="pf-btn-primary" href="https://app.pulseflow.site/register" data-i18n="home.close_cta">Начать бесплатно</a>
         </section>
       </main>
 
       <footer class="pf-footer">
-        <div class="pf-footer-brand">
-          <img src="/assets/pulse-mark.svg" width="36" height="36" alt="" />
-          <div>
-            <strong>Pulse Flow</strong>
-            <span data-i18n="footer.tagline">Пульс вашей работы с объектами недвижимости</span>
-          </div>
-        </div>
         <div class="pf-footer-links">
           <a href="/ru/" data-i18n="footer.home">Главная</a><a href="/ru/owners" data-i18n="footer.owners">Владельцам</a><a href="/ru/managers" data-i18n="footer.managers">Управляющим</a><a href="/ru/staff" data-i18n="footer.staff">Персоналу</a><a href="/ru/guests" data-i18n="footer.guests">Вашим гостям</a><a href="/ru/#plans" data-i18n="footer.plans">Тарифы</a><a href="/ru/terms" data-i18n="footer.terms">Условия</a><a href="/ru/privacy" data-i18n="footer.privacy">Конфиденциальность</a><a href="mailto:support@pulseflow.site" data-i18n="footer.support"
             >Поддержка</a>
@@ -520,6 +766,6 @@
       </footer>
     </div>
 
-    <script src="/script.js?v=15" defer></script>
+    <script src="/script.js?v=21" defer></script>
   </body>
 </html>

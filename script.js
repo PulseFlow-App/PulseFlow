@@ -298,60 +298,74 @@ function mountLanguageSwitchers() {
   });
 }
 
-/* Feature card rail */
-const rail = document.querySelector(".pf-cards");
-const dotsHost = document.querySelector(".pf-dots");
+/* Feature carousel */
+{
+  const carousel = document.querySelector("[data-feature-carousel]");
+  const track = carousel?.querySelector("[data-feature-track]");
+  const slides = track ? [...track.querySelectorAll("[data-feature-slide]")] : [];
+  const dotsHost = carousel?.querySelector("[data-feature-dots]");
+  const prevBtn = carousel?.querySelector("[data-feature-prev]");
+  const nextBtn = carousel?.querySelector("[data-feature-next]");
 
-if (rail && dotsHost) {
-  const cards = [...rail.querySelectorAll(".pf-card")];
-  const dots = cards.map((_, i) => {
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.setAttribute("data-feature-dot", String(i + 1));
-    btn.setAttribute("aria-label", `Show feature ${i + 1}`);
-    btn.addEventListener("click", () => {
-      cards[i].scrollIntoView({
+  if (carousel && track && slides.length) {
+    const dots = slides.map((_, i) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.setAttribute("data-feature-dot", String(i + 1));
+      btn.setAttribute("aria-label", `Show feature ${i + 1}`);
+      btn.addEventListener("click", () => goTo(i));
+      dotsHost?.appendChild(btn);
+      return btn;
+    });
+
+    let index = 0;
+
+    const goTo = (i) => {
+      index = Math.max(0, Math.min(slides.length - 1, i));
+      const slide = slides[index];
+      track.scrollTo({
+        left: slide.offsetLeft - (track.clientWidth - slide.clientWidth) / 2,
         behavior: "smooth",
-        inline: "center",
-        block: "nearest",
       });
-    });
-    dotsHost.appendChild(btn);
-    return btn;
-  });
+      sync();
+    };
 
-  const syncDotsLabel = () => {
-    dots.forEach((dot, i) => {
-      dot.setAttribute(
-        "aria-label",
-        t("demo.feature_dot", { n: i + 1 }),
+    const sync = () => {
+      const mid = track.scrollLeft + track.clientWidth / 2;
+      let best = 0;
+      let bestDist = Infinity;
+      slides.forEach((slide, i) => {
+        const center = slide.offsetLeft + slide.offsetWidth / 2;
+        const dist = Math.abs(center - mid);
+        if (dist < bestDist) {
+          bestDist = dist;
+          best = i;
+        }
+      });
+      index = best;
+      slides.forEach((slide, i) =>
+        slide.classList.toggle("is-active", i === best),
       );
-    });
-  };
-  demoApplyFns.push(syncDotsLabel);
+      dots.forEach((dot, i) => dot.classList.toggle("is-active", i === best));
+    };
 
-  const sync = () => {
-    const mid = rail.scrollLeft + rail.clientWidth / 2;
-    let best = 0;
-    let bestDist = Infinity;
-    cards.forEach((card, i) => {
-      const center = card.offsetLeft + card.offsetWidth / 2;
-      const dist = Math.abs(center - mid);
-      if (dist < bestDist) {
-        bestDist = dist;
-        best = i;
-      }
-    });
-    dots.forEach((dot, i) => dot.classList.toggle("is-active", i === best));
-  };
+    const syncDotsLabel = () => {
+      dots.forEach((dot, i) => {
+        dot.setAttribute("aria-label", t("demo.feature_dot", { n: i + 1 }));
+      });
+    };
+    demoApplyFns.push(syncDotsLabel);
 
-  rail.addEventListener(
-    "scroll",
-    () => window.requestAnimationFrame(sync),
-    { passive: true },
-  );
-  window.addEventListener("resize", sync, { passive: true });
-  sync();
+    prevBtn?.addEventListener("click", () => goTo(index - 1));
+    nextBtn?.addEventListener("click", () => goTo(index + 1));
+    track.addEventListener(
+      "scroll",
+      () => window.requestAnimationFrame(sync),
+      { passive: true },
+    );
+    window.addEventListener("resize", sync, { passive: true });
+    sync();
+  }
 }
 
 const DEMO_ACCOUNTS = {
@@ -467,6 +481,25 @@ document.querySelectorAll("[data-demo-login]").forEach((section) => {
     nodes.forEach((el) => el.classList.add("is-in"));
   }
 }
+
+/* Pain-section flip cards */
+document.querySelectorAll("[data-flip-grid]").forEach((grid) => {
+  const toggle = (card) => {
+    const next = !card.classList.contains("is-flipped");
+    card.classList.toggle("is-flipped", next);
+    card.setAttribute("aria-pressed", next ? "true" : "false");
+    grid.classList.add("has-flipped");
+  };
+
+  grid.querySelectorAll("[data-flip-card]").forEach((card) => {
+    card.addEventListener("click", () => toggle(card));
+    card.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      toggle(card);
+    });
+  });
+});
 
 mountLanguageSwitchers();
 {

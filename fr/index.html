@@ -8,7 +8,7 @@
     />
     <title data-i18n="home.meta_title">Pulse Flow: run the whole property operation in one place</title><meta
       name="description"
-      content="Properties, jobs, vendors, bills and guests in one workspace. Owner, manager and staff see the same picture, each in their own language."
+      content="Properties, jobs, tasks, vendors, bills and guests in one workspace. Everyone sees their own part, in their own language."
       data-i18n-attr="content:home.meta_description"
     />
     <meta name="theme-color" content="#E8623D" />
@@ -49,16 +49,37 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/fr" />
     <meta
       property="og:title"
-      content="Get your property operation out of the group chat"
+      content="Get your work out of the group chats"
       data-i18n-attr="content:home.og_title"
     />
     <meta
       property="og:description"
-      content="Owner, manager, staff and guest in one workspace. Everyone sees their own slice, in their own language."
+      content="Properties, jobs, tasks, vendors, bills and guests in one workspace. Everyone sees their own part, in their own language."
       data-i18n-attr="content:home.og_description"
     />
     <meta
@@ -135,7 +156,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=28" />
+    <link rel="stylesheet" href="/styles.css?v=43" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -183,11 +204,13 @@
         <section class="pf-hero pf-fade" id="hero">
           <div class="pf-hero-copy">
             <p class="pf-eyebrow" data-i18n="home.eyebrow">For operations running properties</p>
-            <h1 class="pf-headline" data-i18n="home.headline">Get your operation out of the group chat.</h1>
-            <p class="pf-sub" data-i18n="home.sub">Properties, jobs, vendors, bills and guests in one workspace. Everyone sees their own slice, in their own language.</p>
+            <h1 class="pf-headline" data-i18n="home.headline">Get your work out of the group chats.</h1>
+            <p class="pf-sub" data-i18n="home.sub">Properties, jobs, tasks, vendors, bills and guests in one workspace. Everyone sees their own part, in their own language.</p>
             <p class="pf-launch-chip">
               <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/></svg>
-              <span data-i18n="home.launch_chip">Launching on Koh Phangan - first teams onboarding now.</span>
+              <span>
+                <span data-i18n="home.launch_chip_prefix">Demo launching: Koh Phangan, Thailand - contact </span><a href="mailto:support@pulseflow.site">support@pulseflow.site</a><span data-i18n="home.launch_chip_suffix"> for queries</span>
+              </span>
             </p>
             <div class="pf-hero-actions">
               <a class="pf-btn-primary" href="https://app.pulseflow.site/register" data-i18n="home.cta">Start free</a>
@@ -198,7 +221,7 @@
             <div class="pf-phone-frame">
               <div class="pf-phone-frame-screen">
                 <img
-                  src="/assets/screenshots/en/owner-home.png"
+                  src="/assets/screenshots/en/owner-home-hero.png"
                   width="472"
                   height="1024"
                   alt=""
@@ -210,139 +233,335 @@
         </section>
 
         <section class="pf-alt pf-fade" id="alternative" aria-labelledby="alt-title">
-          <div>
-            <h2 id="alt-title" data-i18n="home.alt_title">Right now this lives in WhatsApp.</h2>
-            <ul class="pf-alt-list">
-              <li data-i18n="home.alt_1">You send a job. You have no idea if anyone picked it up until you call.</li>
-              <li data-i18n="home.alt_2">Receipts pile up as photos in a thread. Month-end means hunting through them.</li>
-              <li data-i18n="home.alt_3">Someone leaves. Their vendor contacts and arrangements leave with their phone.</li>
-            </ul>
-            <p class="pf-alt-answer" data-i18n="home.alt_answer">The chat is not going anywhere, and it should not. Pulse Flow picks up where the chat stops working: a job that is confirmed, a cost attached to a property, and a history that stays with the company.</p>
+          <h2 id="alt-title" data-i18n="home.alt_title">Problems of property management</h2>
+          <div class="pf-flip-grid" data-flip-grid>
+            <div class="pf-flip" data-flip-card role="button" tabindex="0" aria-pressed="false">
+              <div class="pf-flip-inner">
+                <div class="pf-flip-face pf-flip-front">
+                  <svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"/><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M21 21v-2a4 4 0 0 0 -3 -3.85"/></svg>
+                  <span class="pf-flip-label" data-i18n="home.pain_team">Your team</span>
+                </div>
+                <div class="pf-flip-face pf-flip-back">
+                  <ul>
+                    <li data-i18n="home.pain_team_1">New staff need a full briefing from scratch every time</li>
+                    <li data-i18n="home.pain_team_2">A new hire needs weeks to learn which vendor handles which problem</li>
+                    <li data-i18n="home.pain_team_3">Your manager is sick. Everything they knew lives in their head</li>
+                    <li data-i18n="home.pain_team_4">No single place where the team sees what is happening today</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="pf-flip" data-flip-card role="button" tabindex="0" aria-pressed="false">
+              <div class="pf-flip-inner">
+                <div class="pf-flip-face pf-flip-front">
+                  <svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5"/></svg>
+                  <span class="pf-flip-label" data-i18n="home.pain_jobs">Your jobs</span>
+                </div>
+                <div class="pf-flip-face pf-flip-back">
+                  <ul>
+                    <li data-i18n="home.pain_jobs_1">You sent the job. You won't know if anyone took it until you call</li>
+                    <li data-i18n="home.pain_jobs_2">The cleaner shows up to the wrong villa because the message got buried</li>
+                    <li data-i18n="home.pain_jobs_3">A vendor did the work. No record of who, how much, or which property</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="pf-flip" data-flip-card role="button" tabindex="0" aria-pressed="false">
+              <div class="pf-flip-inner">
+                <div class="pf-flip-face pf-flip-front">
+                  <svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2"/><path d="M14 8h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"/><path d="M12 7v1m0 9v1"/></svg>
+                  <span class="pf-flip-label" data-i18n="home.pain_money">Your money</span>
+                </div>
+                <div class="pf-flip-face pf-flip-back">
+                  <ul>
+                    <li data-i18n="home.pain_money_1">No idea what any single property actually costs to run</li>
+                    <li data-i18n="home.pain_money_2">Receipt photos pile up in WhatsApp. Month-end is a hunt</li>
+                    <li data-i18n="home.pain_money_3">Your manager paid out of pocket. You can't remember if you paid them back</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="pf-flip" data-flip-card role="button" tabindex="0" aria-pressed="false">
+              <div class="pf-flip-inner">
+                <div class="pf-flip-face pf-flip-front">
+                  <svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"/><path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1"/><path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"/><path d="M17 10h2a2 2 0 0 1 2 2v1"/><path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"/><path d="M3 13v-1a2 2 0 0 1 2 -2h2"/></svg>
+                  <span class="pf-flip-label" data-i18n="home.pain_guests">Your guests</span>
+                </div>
+                <div class="pf-flip-face pf-flip-back">
+                  <ul>
+                    <li data-i18n="home.pain_guests_1">Guest claims they left it clean. No written record of what the deposit covered</li>
+                    <li data-i18n="home.pain_guests_2">House rules sent over LINE. Guest says they never got them</li>
+                    <li data-i18n="home.pain_guests_3">A returning guest messages your personal number because there is no other way</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="pf-contrast" aria-hidden="true">
-            <div class="pf-contrast-col is-before">
+          <p class="pf-flip-hint" data-i18n="home.flip_hint">Tap to flip</p>
+
+          <div class="pf-contrast" aria-label="Before and after">
+            <div class="pf-contrast-col">
               <h3 data-i18n="home.before_label">Before</h3>
-              <div class="pf-chat-stack">
-                <div class="pf-chat-bubble">Can someone check the pool filter?</div>
-                <div class="pf-chat-bubble">Did the cleaner get the key?</div>
-                <div class="pf-chat-bubble">Where is the receipt from last week?</div>
-                <div class="pf-chat-bubble">Ping me when it is done</div>
+              <div class="pf-wa" aria-hidden="true">
+                <div class="pf-wa-bar">
+                  <strong>Villa ops · Koh Phangan</strong>
+                  <span>12 participants</span>
+                </div>
+                <div class="pf-wa-thread">
+                  <div class="pf-wa-day">Today</div>
+                  <div class="pf-wa-msg is-in">
+                    <span class="pf-wa-name">Alex Owner</span>
+                    Can someone check the pool filter at Coral? Guest says it smells.
+                    <time>09:14</time>
+                  </div>
+                  <div class="pf-wa-msg is-in">
+                    <span class="pf-wa-name">Sam Manager</span>
+                    Who is free? Somchai?
+                    <time>09:16</time>
+                  </div>
+                  <div class="pf-wa-msg is-in">
+                    <span class="pf-wa-name">Mai Cleaner</span>
+                    I am at Lotus for turnover. Which villa again?
+                    <time>09:41</time>
+                  </div>
+                  <div class="pf-wa-msg is-out">
+                    Coral. Please today before 2.
+                    <time>09:42</time>
+                  </div>
+                  <div class="pf-wa-msg is-in">
+                    <span class="pf-wa-name">Sam Manager</span>
+                    Also where is the receipt from last week for the AC guy? Owner is asking.
+                    <time>10:05</time>
+                  </div>
+                  <div class="pf-wa-msg is-in">
+                    <span class="pf-wa-name">Pom Vendor</span>
+                    I finished Coral filter. 800 baht cash.
+                    <time>14:58</time>
+                  </div>
+                  <div class="pf-wa-msg is-out">
+                    Did anyone confirm Coral was done? Guest already checked in…
+                    <time>16:22</time>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="pf-contrast-col is-after">
+
+            <div class="pf-contrast-col">
               <h3 data-i18n="home.after_label">After</h3>
-              <div class="pf-job-card-mini">
-                <strong>Pool filter check</strong>
-                <span class="pf-status-pill">Confirmed</span>
-                <span>Somchai · Villa Coral · Today 14:00-16:00</span>
+              <div class="pf-pfchat" aria-hidden="true">
+                <div class="pf-pfchat-bar">
+                  <strong>Messages</strong>
+                  <span>Live team chat</span>
+                </div>
+                <div class="pf-pfchat-thread">
+                  <div class="pf-pfchat-msg is-own">
+                    <p>Service order for Pom · Pool filter check
+What: Pool filter
+Where: Villa Coral
+When: Today 14:00-16:00
+From: Alex
+Staff: open this and tap Read and agreed.</p>
+                    <span class="pf-pfchat-ack">Read &amp; agreed</span>
+                  </div>
+                  <div class="pf-pfchat-msg is-other">
+                    <span class="pf-pfchat-name">Pom</span>
+                    <p>Confirmed. On site at Coral now.</p>
+                  </div>
+                  <div class="pf-pfchat-msg is-other">
+                    <span class="pf-pfchat-name">Sam Manager</span>
+                    <p>Done. Receipt photo attached to Coral · Pool. 800 THB pending your approval.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
+          <p class="pf-motto" data-i18n="home.alt_closing">Your operation, always on pulse</p>
         </section>
 
-        <div class="pf-features-head pf-fade">
-          <h2 data-i18n="home.features_title">Everything in one place.</h2>
-          <p data-i18n="home.features_sub">Four things that usually live in four different tools.</p>
-        </div>
+        <section class="pf-features pf-fade" id="features" aria-labelledby="features-title">
+          <div class="pf-features-head">
+            <h2 id="features-title" data-i18n="home.features_title">Everything in one place.</h2>
+            <p data-i18n="home.features_sub">Three things that usually live in different tools - plus a guest screen.</p>
+          </div>
 
-        <div
-          class="pf-cards pf-fade"
-          id="features"
-          data-i18n-attr="aria-label:home.cards_label"
-          aria-label="Product features"
-        >
-          <article class="pf-card">
-            <div class="pf-card-icon" aria-hidden="true">
-              <svg class="ti" viewBox="0 0 24 24"><path d="M3 21l18 0"/><path d="M9 8l1 0"/><path d="M9 12l1 0"/><path d="M9 16l1 0"/><path d="M14 8l1 0"/><path d="M14 12l1 0"/><path d="M14 16l1 0"/><path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"/></svg>
-            </div>
-            <h2 class="pf-tag" data-i18n="home.card_villas">Properties</h2>
-            <p class="pf-desc" data-i18n="home.card_villas_desc">One list for the owner, the manager, and the person on site. Status, map pin, stay dates, and a photo.</p>
-            <div class="pf-card-shot">
-              <img src="/assets/screenshots/owner-villas.png" width="640" height="400" alt="" loading="lazy" />
-            </div>
-          </article>
+          <div class="pf-feature-carousel" data-feature-carousel>
+            <div class="pf-feature-track" data-feature-track tabindex="0" data-i18n-attr="aria-label:home.cards_label" aria-label="Product features">
+              <article class="pf-feature-slide is-active" data-feature-slide>
+                <div class="pf-feature-copy">
+                  <div class="pf-card-icon" aria-hidden="true">
+                    <svg class="ti" viewBox="0 0 24 24"><path d="M3 21l18 0"/><path d="M9 8l1 0"/><path d="M9 12l1 0"/><path d="M9 16l1 0"/><path d="M14 8l1 0"/><path d="M14 12l1 0"/><path d="M14 16l1 0"/><path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"/></svg>
+                  </div>
+                  <h3 class="pf-tag" data-i18n="home.card_villas">Properties</h3>
+                  <p class="pf-desc" data-i18n="home.card_villas_desc">One list for the owner, the manager, and the person on site. Status, map pin, stay dates, and a photo.</p>
+                </div>
+                <div class="pf-feature-visual">
+                  <div class="pf-phone-frame">
+                    <div class="pf-phone-frame-screen">
+                      <img src="/assets/screenshots/en/owner-villas-hero.png" width="780" height="1690" alt="" loading="eager" />
+                    </div>
+                  </div>
+                </div>
+              </article>
 
-          <article class="pf-card">
-            <div class="pf-card-icon" aria-hidden="true">
-              <svg class="ti" viewBox="0 0 24 24"><path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5"/></svg>
-            </div>
-            <h2 class="pf-tag" data-i18n="home.card_jobs">Jobs and vendors</h2>
-            <p class="pf-desc" data-i18n="home.card_jobs_desc">A job with a work window. Anyone on the app confirms with one tap. Call or message vendors straight from their contact card.</p>
-            <div class="pf-card-shot">
-              <img src="/assets/screenshots/en/owner-order.png" width="640" height="400" alt="" loading="lazy" />
-            </div>
-          </article>
+              <article class="pf-feature-slide" data-feature-slide>
+                <div class="pf-feature-copy">
+                  <div class="pf-card-icon" aria-hidden="true">
+                    <svg class="ti" viewBox="0 0 24 24"><path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5"/></svg>
+                  </div>
+                  <h3 class="pf-tag" data-i18n="home.card_jobs">Jobs and vendors</h3>
+                  <p class="pf-desc" data-i18n="home.card_jobs_desc">A job with a work window. Anyone on the app confirms with one tap. Call or message vendors straight from their contact card.</p>
+                </div>
+                <div class="pf-feature-visual">
+                  <div class="pf-phone-frame">
+                    <div class="pf-phone-frame-screen">
+                      <img src="/assets/screenshots/en/owner-contacts-hero.png" width="780" height="1690" alt="" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+              </article>
 
-          <article class="pf-card">
-            <div class="pf-card-icon" aria-hidden="true">
-              <svg class="ti" viewBox="0 0 24 24"><path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2"/><path d="M14 8h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"/><path d="M12 7v1m0 9v1"/></svg>
+              <article class="pf-feature-slide" data-feature-slide>
+                <div class="pf-feature-copy">
+                  <div class="pf-card-icon" aria-hidden="true">
+                    <svg class="ti" viewBox="0 0 24 24"><path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2"/><path d="M14 8h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"/><path d="M12 7v1m0 9v1"/></svg>
+                  </div>
+                  <h3 class="pf-tag" data-i18n="home.card_money">Money</h3>
+                  <p class="pf-desc" data-i18n="home.card_money_desc">An expense with a receipt photo, attached to a property and a category. Total, paid, and pending - three numbers in front of you.</p>
+                </div>
+                <div class="pf-feature-visual">
+                  <div class="pf-phone-frame">
+                    <div class="pf-phone-frame-screen">
+                      <img src="/assets/screenshots/en/owner-finances-hero.png" width="780" height="1690" alt="" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+              </article>
             </div>
-            <h2 class="pf-tag" data-i18n="home.card_money">Money</h2>
-            <p class="pf-desc" data-i18n="home.card_money_desc">An expense with a receipt photo, attached to a property and a category. Total, paid, and pending - three numbers in front of you.</p>
-            <div class="pf-card-shot">
-              <img src="/assets/screenshots/en/owner-finances.png" width="640" height="400" alt="" loading="lazy" />
-            </div>
-          </article>
 
-          <article class="pf-card">
-            <div class="pf-card-icon" aria-hidden="true">
-              <svg class="ti" viewBox="0 0 24 24"><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/><path d="M6 21v-2a4 4 0 0 1 4 -4h4"/><path d="M15 19l2 2l4 -4"/></svg>
+            <div class="pf-feature-controls">
+              <button type="button" class="pf-feature-nav" data-feature-prev aria-label="Previous feature">
+                <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6l6 6"/></svg>
+              </button>
+              <div class="pf-dots" data-feature-dots></div>
+              <button type="button" class="pf-feature-nav" data-feature-next aria-label="Next feature">
+                <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6l-6 6"/></svg>
+              </button>
             </div>
-            <h2 class="pf-tag" data-i18n="home.card_guests">Guests</h2>
-            <p class="pf-desc" data-i18n="home.card_guests_desc">House rules your guest ticks as read. A deposit with every deduction. A direct date request from a returning guest.</p>
-            <div class="pf-card-shot">
-              <img src="/assets/screenshots/en/guest-home.png" width="640" height="400" alt="" loading="lazy" />
+          </div>
+
+          <a class="pf-feature-guest" href="/fr/guests">
+            <div class="pf-feature-guest-copy">
+              <div class="pf-card-icon" aria-hidden="true">
+                <svg class="ti" viewBox="0 0 24 24"><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/><path d="M6 21v-2a4 4 0 0 1 4 -4h4"/><path d="M15 19l2 2l4 -4"/></svg>
+              </div>
+              <p class="pf-feature-guest-kicker" data-i18n="home.card_guests">Guests</p>
+              <h3 data-i18n="home.guest_note">Invited guests get their own screen too.</h3>
+              <p class="pf-feature-guest-desc" data-i18n="home.card_guests_desc">House rules your guest ticks as read. A deposit with every deduction. A direct date request from a returning guest.</p>
+              <span class="pf-feature-guest-cta" data-i18n="home.guest_link">See what your guest sees.</span>
             </div>
-          </article>
-        </div>
+            <div class="pf-feature-guest-visual" aria-hidden="true">
+              <div class="pf-phone-frame">
+                <div class="pf-phone-frame-screen">
+                  <img src="/assets/screenshots/en/guest-guide-hero.png" width="780" height="1690" alt="" loading="lazy" />
+                </div>
+              </div>
+            </div>
+          </a>
+        </section>
 
         <section class="pf-lang-block pf-fade" id="translation" aria-labelledby="lang-title">
           <div>
             <h2 id="lang-title" data-i18n="home.lang_title">One language for the whole team.</h2>
-            <p data-i18n="home.lang_desc">The manager writes the job in English, the cleaner reads it in Thai, the owner sees it in Russian. Each person sets their language once in their profile - jobs, chat, and messages arrive in their language automatically.</p>
+            <p data-i18n="home.lang_desc">The manager writes the job in English, the cleaner reads it in Thai, the owner sees it in Hebrew. Each person sets their language once in their profile - jobs, chat, and messages arrive in their language automatically.</p>
           </div>
           <div class="pf-lang-phones" aria-hidden="true">
             <figure class="pf-lang-phone">
               <div class="pf-lang-phone-frame">
-                <div class="pf-lang-job">
-                  <small>EN</small>
-                  <strong>Deep clean before check-in</strong>
-                  <span>Villa Coral · Today 10:00-13:00</span>
-                  <span class="pf-status-pill">Open</span>
+                <div class="pf-lang-chat">
+                  <div class="pf-lang-chat-bar">
+                    <strong>Messages</strong>
+                    <span>Live team chat</span>
+                  </div>
+                  <div class="pf-lang-chat-thread">
+                    <div class="pf-pfchat-msg is-own">
+                      <p>Service order for Mai
+What: Deep clean before check-in
+Where: Villa Coral
+When: Today 10:00-13:00
+From: Sam Manager</p>
+                      <span class="pf-pfchat-ack">Read &amp; agreed</span>
+                    </div>
+                    <div class="pf-pfchat-msg is-other">
+                      <span class="pf-pfchat-name">Mai</span>
+                      <p>Got it. On my way to Coral.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <figcaption data-i18n="home.lang_label_en">Manager - English</figcaption>
             </figure>
             <figure class="pf-lang-phone">
               <div class="pf-lang-phone-frame">
-                <div class="pf-lang-job">
-                  <small>TH</small>
-                  <strong>ทำความสะอาดลึกก่อนเช็คอิน</strong>
-                  <span>Villa Coral · วันนี้ 10:00-13:00</span>
-                  <span class="pf-status-pill">Open</span>
+                <div class="pf-lang-chat">
+                  <div class="pf-lang-chat-bar">
+                    <strong>Messages</strong>
+                    <span>Live team chat</span>
+                  </div>
+                  <div class="pf-lang-chat-thread">
+                    <div class="pf-pfchat-msg is-own">
+                      <p>คำสั่งงานสำหรับ Mai
+งาน: ทำความสะอาดลึกก่อนเช็คอิน
+ที่: Villa Coral
+เวลา: วันนี้ 10:00-13:00
+จาก: Sam Manager</p>
+                      <span class="pf-pfchat-ack">อ่านแล้ว และตกลง</span>
+                    </div>
+                    <div class="pf-pfchat-msg is-other">
+                      <span class="pf-pfchat-name">Mai</span>
+                      <p>รับทราบ กำลังไป Coral</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <figcaption data-i18n="home.lang_label_th">Cleaner - Thai</figcaption>
             </figure>
             <figure class="pf-lang-phone">
               <div class="pf-lang-phone-frame">
-                <div class="pf-lang-job">
-                  <small>RU</small>
-                  <strong>Глубокая уборка перед заездом</strong>
-                  <span>Villa Coral · Сегодня 10:00-13:00</span>
-                  <span class="pf-status-pill">Open</span>
+                <div class="pf-lang-chat" dir="rtl">
+                  <div class="pf-lang-chat-bar">
+                    <strong>Messages</strong>
+                    <span>Live team chat</span>
+                  </div>
+                  <div class="pf-lang-chat-thread">
+                    <div class="pf-pfchat-msg is-own">
+                      <p>הזמנת שירות עבור Mai
+מה: ניקיון עמוק לפני צ׳ק-אין
+איפה: Villa Coral
+מתי: היום 10:00-13:00
+מאת: Sam Manager</p>
+                      <span class="pf-pfchat-ack">נקרא ואושר</span>
+                    </div>
+                    <div class="pf-pfchat-msg is-other">
+                      <span class="pf-pfchat-name">Mai</span>
+                      <p>קיבלתי. בדרך ל-Coral.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <figcaption data-i18n="home.lang_label_ru">Owner - Russian</figcaption>
+              <figcaption data-i18n="home.lang_label_he">Owner - Hebrew</figcaption>
             </figure>
           </div>
           <div class="pf-phone-solo">
             <figure class="pf-phone">
               <div class="pf-phone-screen">
                 <img
-                  src="/assets/screenshots/en/owner-translate.png"
-                  width="472"
-                  height="1024"
+                  src="/assets/screenshots/en/owner-translate-hero.png"
+                  width="780"
+                  height="1522"
                   alt="Team content translation setting in the profile"
                   data-i18n-attr="alt:common.lang_alt"
                   loading="lazy"
@@ -380,10 +599,6 @@
               <span class="pf-audience-cta" data-i18n="home.audience_staff_cta">Open the staff page →</span>
             </a>
           </div>
-          <p class="pf-guest-note">
-            <span data-i18n="home.guest_note">Invited guests get their own screen too.</span>
-            <a href="/fr/guests" data-i18n="home.guest_link">See what your guest sees.</a>
-          </p>
         </section>
 
         <section class="pf-plan pf-fade" id="plans" aria-labelledby="company-plans">
@@ -419,68 +634,107 @@
         <section class="pf-faq pf-fade" id="faq" aria-labelledby="faq-title">
           <h2 id="faq-title" data-i18n="home.faq_title">Short answers.</h2>
           <details>
-            <summary data-i18n="home.faq_q1">Everything is on Airbnb and Booking. Does this replace them?</summary>
-            <p data-i18n="home.faq_a1">No. Bookings stay where they are. Pulse Flow is about what happens after the booking: who cleans, what broke, what it cost, and what the guest can see. Check-in and check-out dates are entered by hand today. Importing bookings from Google Calendar is planned. There is no direct sync with Airbnb or Booking.</p>
+            <summary data-i18n="home.faq_q1">My cleaners are not going to use another app.</summary>
+            <p data-i18n="home.faq_a1">They do not need to learn anything new. You send them a link, they open it in their browser, and it sits on their phone like any other app. No download, no account, no App Store. They see only their jobs, in their own language, and confirm with one tap. If they can read a WhatsApp message, they can use this.</p>
           </details>
           <details>
-            <summary data-i18n="home.faq_q2">What does it cost?</summary>
-            <p data-i18n="home.faq_a2">A personal workspace is free forever. For a company, only the owner pays, and team seats are free. Billing is not live yet, so every registered account has 3 months of full access.</p>
+            <summary data-i18n="home.faq_q2">My manager already has a system. Why would they switch?</summary>
+            <p data-i18n="home.faq_a2">They would not be switching - they would be adding one place where the jobs they already manage become visible to everyone else. The chat stays. What changes is that a job now has a confirmed status, a cost attached to it, and a record that does not disappear when someone leaves.</p>
           </details>
           <details>
-            <summary data-i18n="home.faq_q3">My cleaners will never install an app.</summary>
-            <p data-i18n="home.faq_a3">There is nothing to install from a store. It opens from a link in the browser and goes onto the phone's home screen in one step. No Google account, no App Store, just an email address. The interface follows the language each person picks, and so do the jobs and the chat.</p>
+            <summary data-i18n="home.faq_q3">Everything is on Airbnb and Booking. Does this replace them?</summary>
+            <p data-i18n="home.faq_a3">No. Bookings stay where they are. Pulse Flow is about what happens after the booking: who cleans, what broke, what it cost, and what the guest can see. Importing from Google Calendar is planned. There is no direct sync with Airbnb or Booking today.</p>
           </details>
           <details>
-            <summary data-i18n="home.faq_q4">Do guests have to install anything?</summary>
-            <p data-i18n="home.faq_a4">No, a guest opens the link their host sends. No payment goes through the app: deposits and payments go straight to the host, and the app records the amount, the deductions and the balance so both sides see the same thing.</p>
+            <summary data-i18n="home.faq_q4">What does it cost?</summary>
+            <p data-i18n="home.faq_a4">A personal workspace is free forever. For a company, only the owner pays - team seats are free however many people you add. Billing is not live yet, so every account gets 3 months of full access from the day it signs up.</p>
+          </details>
+          <details>
+            <summary data-i18n="home.faq_q5">Will my guests have to do anything complicated?</summary>
+            <p data-i18n="home.faq_a5">No. You send them a link. They open it, read the house rules, and see their deposit balance. No download, no account, no payment through the app. Payments go directly to you - the app just keeps a record of the amount, any deductions, and the balance so both sides see the same thing.</p>
+          </details>
+          <details>
+            <summary data-i18n="home.faq_q6">Can a guest dispute a deposit deduction?</summary>
+            <p data-i18n="home.faq_a6">Every deduction is recorded in the app with a reason and a date. Both you and the guest see the same balance. There is no "I never received the rules" or "I don't remember agreeing to that" - it is all in one place, timestamped, and visible to both sides.</p>
+          </details>
+          <details>
+            <summary data-i18n="home.faq_q7">What if a guest wants to book again?</summary>
+            <p data-i18n="home.faq_a7">Returning guests can send a date request directly through the app. It goes to the owner or manager without going through your personal number or a third-party platform.</p>
+          </details>
+          <details>
+            <summary data-i18n="home.faq_q8">What happens when a staff member leaves?</summary>
+            <p data-i18n="home.faq_a8">Their job history, vendor contacts, and property notes stay in the system. Nothing walks out the door with their phone. The next person you bring in sees the same information from day one.</p>
+          </details>
+          <details>
+            <summary data-i18n="home.faq_q9">Can I use this for one property?</summary>
+            <p data-i18n="home.faq_a9">Yes. The personal plan is free forever and covers one or two properties you manage yourself. You get the same features - jobs, expenses, guests - without needing a team.</p>
+          </details>
+          <details>
+            <summary data-i18n="home.faq_q10">Is my data private?</summary>
+            <p data-i18n="home.faq_a10">Each workspace is separate. Your properties, team, guests, and financials are visible only to the people you invite. Guests see only what you share with them.</p>
           </details>
         </section>
 
         <section class="pf-demo pf-demo-compact pf-fade" id="demo-now" aria-labelledby="demo-heading" data-demo-login>
-          <h2 id="demo-heading" data-i18n="home.demo_title">Try it now.</h2>
-          <p class="pf-demo-lead" data-i18n="home.demo_lead">Pick a role. Login is already filled in.</p>
+          <h2 id="demo-heading" data-i18n="home.demo_title">Demo</h2>
+          <p class="pf-demo-lead" data-i18n="home.demo_lead">Owner, manager, staff and guest logins, already filled in.</p>
 
-          <div class="pf-demo-layout">
-            <div class="pf-demo-cards">
-              <article class="pf-demo-card" data-demo-role="owner">
-                <h3 data-i18n="demo.role_owner">Owner</h3>
-                <p data-i18n="home.demo_owner_desc">See occupancy, jobs, and spend.</p>
-                <a class="pf-btn-primary" data-demo-link href="https://app.pulseflow.site/login?demo=owner" data-i18n="demo.open_owner">Open as Owner</a>
-                <div class="pf-demo-creds">
-                  <span data-demo-email>owner@pulseflow.site</span>
-                  <span>TestPass123!</span>
-                </div>
-              </article>
-              <article class="pf-demo-card" data-demo-role="manager">
-                <h3 data-i18n="demo.role_manager">Manager</h3>
-                <p data-i18n="home.demo_manager_desc">Build and hand over the day.</p>
-                <a class="pf-btn-primary" href="https://app.pulseflow.site/login?demo=manager" data-i18n="demo.open_manager">Open as Manager</a>
-                <div class="pf-demo-creds">
-                  <span>manager@pulseflow.site</span>
-                  <span>TestPass123!</span>
-                </div>
-              </article>
-              <article class="pf-demo-card" data-demo-role="staff">
-                <h3 data-i18n="demo.role_staff">Field staff</h3>
-                <p data-i18n="home.demo_staff_desc">Confirm jobs, send receipts.</p>
-                <a class="pf-btn-primary" href="https://app.pulseflow.site/login?demo=staff" data-i18n="demo.open_staff">Open as Staff</a>
-                <div class="pf-demo-creds">
-                  <span>employee@pulseflow.site</span>
-                  <span>TestPass123!</span>
-                </div>
-              </article>
-              <article class="pf-demo-card" data-demo-role="guest">
-                <h3 data-i18n="demo.role_guest">Guest</h3>
-                <p data-i18n="home.demo_guest_desc">House rules, deposit, date request.</p>
-                <a class="pf-btn-primary" href="https://app.pulseflow.site/login?demo=guest" data-i18n="demo.open_guest">Open as Guest</a>
-                <div class="pf-demo-creds">
-                  <span>guest@pulseflow.site</span>
-                  <span>TestPass123!</span>
-                </div>
-              </article>
+          <div
+            class="pf-demo-roles"
+            role="group"
+            aria-label="Demo account"
+            data-i18n-attr="aria-label:demo.account_label"
+          >
+            <button
+              type="button"
+              class="pf-demo-role is-active"
+              data-demo-role="owner"
+              data-i18n="demo.role_owner"
+            >Owner</button>
+            <button
+              type="button"
+              class="pf-demo-role"
+              data-demo-role="manager"
+              data-i18n="demo.role_manager"
+            >Manager</button>
+            <button
+              type="button"
+              class="pf-demo-role"
+              data-demo-role="staff"
+              data-i18n="demo.role_staff"
+            >Field staff</button>
+            <button
+              type="button"
+              class="pf-demo-role"
+              data-demo-role="guest"
+              data-i18n="demo.role_guest"
+            >Guest</button>
+          </div>
+
+          <div class="pf-demo-grid pf-demo-grid-compact">
+            <div class="pf-demo-credentials">
+              <ul class="pf-demo-list">
+                <li>
+                  <span data-i18n="demo.email">Email</span><code data-demo-email>owner@pulseflow.site</code>
+                </li>
+                <li>
+                  <span data-i18n="demo.password">Password</span><code>TestPass123!</code>
+                </li>
+              </ul>
+              <a
+                class="pf-btn-primary pf-demo-btn"
+                data-demo-link
+                href="https://app.pulseflow.site/login?demo=owner"
+                data-i18n="demo.open_demo"
+                >Open demo</a>
             </div>
             <div class="pf-demo-qr">
-              <a data-demo-link href="https://app.pulseflow.site/login?demo=owner" data-i18n-attr="aria-label:demo.open_login" aria-label="Open demo login">
+              <a
+                data-demo-link
+                href="https://app.pulseflow.site/login?demo=owner"
+                data-i18n-attr="aria-label:demo.open_login"
+                aria-label="Open demo login"
+              >
                 <img
                   class="pf-qr-img"
                   data-demo-qr
@@ -492,27 +746,19 @@
                   loading="lazy"
                 />
               </a>
-              <p class="pf-demo-qr-caption" data-i18n="demo.scan">Scan to open on your phone.</p>
+              <p class="pf-demo-qr-caption" data-i18n="demo.scan">Scan to sign in</p>
             </div>
           </div>
         </section>
 
         <section class="pf-close pf-fade" id="close">
           <img src="/assets/pulse-mark.svg" width="64" height="64" alt="" />
-          <h2 data-i18n="home.close_title">Open the app and look at your day</h2>
-          <p data-i18n="home.close_lead">The pulse of your rental operations: what is happening right now, and where it goes next.</p>
+          <h2 data-i18n="home.close_title">The pulse of your rental operations</h2>
           <a class="pf-btn-primary" href="https://app.pulseflow.site/register" data-i18n="home.close_cta">Start free</a>
         </section>
       </main>
 
       <footer class="pf-footer">
-        <div class="pf-footer-brand">
-          <img src="/assets/pulse-mark.svg" width="36" height="36" alt="" />
-          <div>
-            <strong>Pulse Flow</strong>
-            <span data-i18n="footer.tagline">The pulse of your rental operations</span>
-          </div>
-        </div>
         <div class="pf-footer-links">
           <a href="/fr/" data-i18n="footer.home">Home</a><a href="/fr/owners" data-i18n="footer.owners">Owners</a><a href="/fr/managers" data-i18n="footer.managers">Managers</a><a href="/fr/staff" data-i18n="footer.staff">Field staff</a><a href="/fr/guests" data-i18n="footer.guests">Stay guests</a><a href="/fr/#plans" data-i18n="footer.plans">Plans</a><a href="/fr/terms" data-i18n="footer.terms">Terms</a><a href="/fr/privacy" data-i18n="footer.privacy">Privacy</a><a href="mailto:support@pulseflow.site" data-i18n="footer.support"
             >Support</a>
@@ -520,6 +766,6 @@
       </footer>
     </div>
 
-    <script src="/script.js?v=15" defer></script>
+    <script src="/script.js?v=21" defer></script>
   </body>
 </html>
