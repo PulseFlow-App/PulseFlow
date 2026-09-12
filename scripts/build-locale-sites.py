@@ -132,7 +132,12 @@ def replace_leaf_i18n(html: str, dictionary: dict, fallback: dict) -> str:
             continue
         depth = 1
         pos = open_end
-        scanner = re.compile(rf"<{tag}(\s[^>]*)?>|</{tag}>", re.I)
+        # Allow whitespace inside closing tags (</a\n>) — contiguous </tag>
+        # misses those and walks into later siblings, swallowing large HTML chunks.
+        scanner = re.compile(
+            rf"<{tag}(\s[^>]*)?>|</{tag}\s*>",
+            re.I | re.S,
+        )
         close_at = close_end = None
         while depth and pos < len(html):
             cm = scanner.search(html, pos)
@@ -148,9 +153,26 @@ def replace_leaf_i18n(html: str, dictionary: dict, fallback: dict) -> str:
             elif not token.endswith("/>"):
                 depth += 1
             pos = cm.end()
-        if close_at is None or text is None:
+        if close_at is None:
+            # Missing close: treat as leaf through the next tag, then re-close.
+            next_lt = html.find("<", open_end)
+            if next_lt == -1 or text is None:
+                out.append(html[m.start() : open_end])
+                i = open_end
+                continue
+            inner = html[open_end:next_lt]
+            if "data-i18n=" in inner:
+                out.append(html[m.start() : open_end])
+                i = open_end
+                continue
             out.append(html[m.start() : open_end])
-            i = open_end
+            out.append(text)
+            out.append(f"</{tag}>")
+            i = next_lt
+            continue
+        if text is None:
+            out.append(html[m.start() : close_end])
+            i = close_end
             continue
         inner = html[open_end:close_at]
         if "data-i18n=" in inner:
@@ -159,7 +181,7 @@ def replace_leaf_i18n(html: str, dictionary: dict, fallback: dict) -> str:
             continue
         out.append(html[m.start() : open_end])
         out.append(text)
-        out.append(html[close_at:close_end])
+        out.append(f"</{tag}>")
         i = close_end
     return "".join(out)
 
