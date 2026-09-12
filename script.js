@@ -374,17 +374,23 @@ const DEMO_ACCOUNTS = {
 };
 
 document.querySelectorAll("[data-demo-login]").forEach((section) => {
-  const roleButtons = [...section.querySelectorAll("[data-demo-role]")];
+  const roleButtons = [
+    ...section.querySelectorAll("button[data-demo-role], .pf-demo-role[data-demo-role]"),
+  ];
+  const roleCards = [...section.querySelectorAll(".pf-demo-card[data-demo-role]")];
   const links = [...section.querySelectorAll("[data-demo-link]")];
   const emailEl = section.querySelector("[data-demo-email]");
   const kickerEl = section.querySelector("[data-demo-kicker]");
   const qrImg = section.querySelector("[data-demo-qr]");
+  const qrLink = qrImg?.closest("a[data-demo-link]") || null;
   let activeRole =
     roleButtons.find((btn) => btn.classList.contains("is-active"))?.getAttribute(
       "data-demo-role",
-    ) || "owner";
+    ) ||
+    roleCards[0]?.getAttribute("data-demo-role") ||
+    "owner";
 
-  const applyRole = (role) => {
+  const applyRole = (role, { syncCardLinks = false } = {}) => {
     const account = DEMO_ACCOUNTS[role];
     if (!account) return;
     activeRole = role;
@@ -396,14 +402,28 @@ document.querySelectorAll("[data-demo-login]").forEach((section) => {
         btn.getAttribute("data-demo-role") === role,
       );
     });
+    roleCards.forEach((card) => {
+      card.classList.toggle(
+        "is-active",
+        card.getAttribute("data-demo-role") === role,
+      );
+    });
     if (emailEl) emailEl.textContent = account.email;
     if (kickerEl) kickerEl.textContent = label;
-    links.forEach((link) => {
-      link.setAttribute("href", loginUrl);
-      if (link.hasAttribute("aria-label") || link.getAttribute("data-i18n-attr")?.includes("aria-label")) {
-        link.setAttribute("aria-label", t("demo.open_login"));
-      }
-    });
+    if (syncCardLinks || roleButtons.length) {
+      links.forEach((link) => {
+        link.setAttribute("href", loginUrl);
+        if (
+          link.hasAttribute("aria-label") ||
+          link.getAttribute("data-i18n-attr")?.includes("aria-label")
+        ) {
+          link.setAttribute("aria-label", t("demo.open_login"));
+        }
+      });
+    } else if (qrLink) {
+      qrLink.setAttribute("href", loginUrl);
+      qrLink.setAttribute("aria-label", t("demo.open_login"));
+    }
     if (qrImg) {
       qrImg.src = `/assets/qr/demo-${encodeURIComponent(role)}.svg`;
       qrImg.alt = t("demo.qr_alt");
@@ -412,12 +432,41 @@ document.querySelectorAll("[data-demo-login]").forEach((section) => {
 
   roleButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
-      applyRole(btn.getAttribute("data-demo-role") || "owner");
+      applyRole(btn.getAttribute("data-demo-role") || "owner", {
+        syncCardLinks: true,
+      });
     });
+  });
+
+  roleCards.forEach((card) => {
+    const role = card.getAttribute("data-demo-role") || "owner";
+    const activate = () => applyRole(role);
+    card.addEventListener("mouseenter", activate);
+    card.addEventListener("focusin", activate);
   });
 
   demoApplyFns.push(() => applyRole(activeRole));
 });
+
+/* Subtle fade-in on scroll for landing sections */
+{
+  const nodes = [...document.querySelectorAll(".pf-fade")];
+  if (nodes.length && "IntersectionObserver" in window) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-in");
+          io.unobserve(entry.target);
+        });
+      },
+      { rootMargin: "0px 0px -8% 0px", threshold: 0.12 },
+    );
+    nodes.forEach((el) => io.observe(el));
+  } else {
+    nodes.forEach((el) => el.classList.add("is-in"));
+  }
+}
 
 mountLanguageSwitchers();
 {
