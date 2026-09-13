@@ -2458,10 +2458,52 @@ a.pf-audience-card:hover {
   padding: 12px var(--pad) 8px;
 }
 
-.home-page .pf-alt h2 {
+/* One bold section-heading style across the homepage */
+.home-page .pf-alt h2,
+.home-page .pf-features-head h2,
+.home-page .pf-lang-block h2,
+.home-page .pf-audience-title,
+.home-page .pf-plan-title,
+.home-page .pf-faq h2,
+.home-page .pf-demo h2,
+.home-page .pf-close h2,
+.home-page .pf-sub-referral h2 {
+  margin: 0 0 18px;
+  font-family: var(--font-display);
   font-size: clamp(1.5rem, 3.2vw, 2rem);
-  margin: 0 0 20px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--text);
+  text-wrap: balance;
+}
+
+.home-page .pf-alt h2 {
   text-align: center;
+}
+
+.home-page .pf-features-head h2 {
+  margin-bottom: 8px;
+}
+
+.home-page .pf-plan-title {
+  margin-bottom: 10px;
+}
+
+.home-page .pf-demo h2 {
+  margin-bottom: 8px;
+}
+
+.home-page .pf-close h2 {
+  margin: 0;
+  max-width: 18ch;
+}
+
+.home-page .pf-sub-referral h2 {
+  margin-bottom: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .pf-flip-grid {
@@ -3032,11 +3074,8 @@ a.pf-audience-card:hover {
 }
 
 .home-page .pf-features-head h2 {
+  /* size/weight from shared .home-page section heading rule */
   margin: 0 0 8px;
-  font-size: clamp(1.5rem, 3.2vw, 2rem);
-  letter-spacing: -0.03em;
-  font-weight: 800;
-  color: var(--text);
 }
 
 .home-page .pf-features-head p {
@@ -3289,7 +3328,7 @@ a.pf-audience-card:hover {
 }
 
 .home-page .pf-lang-block h2 {
-  font-size: clamp(1.55rem, 3.4vw, 2.1rem);
+  /* size/weight from shared .home-page section heading rule */
 }
 
 .home-page .pf-lang-block > div:first-child p {
@@ -3421,8 +3460,8 @@ a.pf-audience-card:hover {
 }
 
 .home-page .pf-audience-title {
+  /* size/weight from shared .home-page section heading rule */
   margin-bottom: 18px;
-  font-size: clamp(1.5rem, 3.2vw, 2rem);
 }
 
 .home-page .pf-audience-grid {
@@ -3519,8 +3558,8 @@ a.pf-audience-card:hover {
 }
 
 .home-page .pf-plan-title {
+  /* size/weight from shared .home-page section heading rule */
   margin-bottom: 10px;
-  font-size: clamp(1.5rem, 3.2vw, 2rem);
 }
 
 .home-page .pf-plan-free {
@@ -3596,14 +3635,16 @@ a.pf-audience-card:hover {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-card);
+  text-align: center;
 }
 
 .home-page .pf-sub-referral h2 {
+  /* size/weight from shared .home-page section heading rule */
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   margin: 0 0 8px;
-  font-size: 1.25rem;
   color: var(--text);
 }
 
@@ -3613,7 +3654,8 @@ a.pf-audience-card:hover {
 }
 
 .home-page .pf-sub-referral-lead {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 40rem;
   color: var(--text-muted);
   font-size: 15px;
 }
@@ -3624,7 +3666,7 @@ a.pf-audience-card:hover {
 }
 
 .home-page .pf-faq h2 {
-  font-size: clamp(1.5rem, 3.2vw, 2rem);
+  /* size/weight from shared .home-page section heading rule */
 }
 
 .home-page .pf-faq details {
@@ -3643,8 +3685,8 @@ a.pf-audience-card:hover {
 }
 
 .home-page .pf-demo h2 {
+  /* size/weight from shared .home-page section heading rule */
   margin: 0 0 8px;
-  font-size: clamp(1.5rem, 3.2vw, 2rem);
 }
 
 .home-page .pf-demo-lead {

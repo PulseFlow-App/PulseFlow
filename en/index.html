@@ -79,6 +79,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/" />
     <meta
@@ -165,7 +177,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=50" />
+    <link rel="stylesheet" href="/styles.css?v=54" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -253,7 +265,7 @@
                 <div class="pf-flip-face pf-flip-back">
                   <ul>
                     <li data-i18n="home.pain_team_1">Every new hire gets briefed from zero</li>
-                    <li data-i18n="home.pain_team_2">Vendor know-how lives in one person's head</li>
+                    <li data-i18n="home.pain_team_2">Only one person knows which vendor to call</li>
                     <li data-i18n="home.pain_team_3">Manager is out - the plan goes with them</li>
                     <li data-i18n="home.pain_team_4">No shared view of what is happening today</li>
                   </ul>
@@ -285,8 +297,8 @@
                 </div>
                 <div class="pf-flip-face pf-flip-back">
                   <ul>
-                    <li data-i18n="home.pain_money_1">No clear cost per property</li>
-                    <li data-i18n="home.pain_money_2">Receipts lost in WhatsApp until month-end</li>
+                    <li data-i18n="home.pain_money_1">No clear maintenance cost per property</li>
+                    <li data-i18n="home.pain_money_2">Receipts lost in chats until month-end</li>
                     <li data-i18n="home.pain_money_3">Out-of-pocket spend with no payback trail</li>
                   </ul>
                 </div>
@@ -303,7 +315,7 @@
                   <ul>
                     <li data-i18n="home.pain_guests_1">Deposit disputes with no written record</li>
                     <li data-i18n="home.pain_guests_2">House rules sent. Guest says they never got them</li>
-                    <li data-i18n="home.pain_guests_3">Returning guests message your personal number</li>
+                    <li data-i18n="home.pain_guests_3">Returning guests message your personal number to book</li>
                   </ul>
                 </div>
               </div>
@@ -316,42 +328,42 @@
               <h3 data-i18n="home.before_label">Before</h3>
               <div class="pf-wa" aria-hidden="true">
                 <div class="pf-wa-bar">
-                  <strong>Villa ops · Koh Phangan</strong>
-                  <span>12 participants</span>
+                  <strong data-i18n="home.mock_wa_title">Villa ops · Koh Phangan</strong>
+                  <span data-i18n="home.mock_wa_sub">12 participants</span>
                 </div>
                 <div class="pf-wa-thread">
-                  <div class="pf-wa-day">Today</div>
+                  <div class="pf-wa-day" data-i18n="home.mock_wa_day">Today</div>
                   <div class="pf-wa-msg is-in">
-                    <span class="pf-wa-name">Alex Owner</span>
-                    Can someone check the pool filter at Coral? Guest says it smells.
+                    <span class="pf-wa-name" data-i18n="home.mock_wa_alex">Alex Owner</span>
+                    <span data-i18n="home.mock_wa_1">Can someone check the pool filter at Coral? Guest says it smells.</span>
                     <time>09:14</time>
                   </div>
                   <div class="pf-wa-msg is-in">
-                    <span class="pf-wa-name">Sam Manager</span>
-                    Who is free? Somchai?
+                    <span class="pf-wa-name" data-i18n="home.mock_wa_sam">Sam Manager</span>
+                    <span data-i18n="home.mock_wa_2">Who is free? Somchai?</span>
                     <time>09:16</time>
                   </div>
                   <div class="pf-wa-msg is-in">
-                    <span class="pf-wa-name">Mai Cleaner</span>
-                    I am at Lotus for turnover. Which villa again?
+                    <span class="pf-wa-name" data-i18n="home.mock_wa_mai">Mai Cleaner</span>
+                    <span data-i18n="home.mock_wa_3">I am at Lotus for turnover. Which villa again?</span>
                     <time>09:41</time>
                   </div>
                   <div class="pf-wa-msg is-out">
-                    Coral. Please today before 2.
+                    <span data-i18n="home.mock_wa_4">Coral. Please today before 2.</span>
                     <time>09:42</time>
                   </div>
                   <div class="pf-wa-msg is-in">
-                    <span class="pf-wa-name">Sam Manager</span>
-                    Also where is the receipt from last week for the AC guy? Owner is asking.
+                    <span class="pf-wa-name" data-i18n="home.mock_wa_sam">Sam Manager</span>
+                    <span data-i18n="home.mock_wa_5">Also where is the receipt from last week for the AC guy? Owner is asking.</span>
                     <time>10:05</time>
                   </div>
                   <div class="pf-wa-msg is-in">
-                    <span class="pf-wa-name">Pom Vendor</span>
-                    I finished Coral filter. 800 baht cash.
+                    <span class="pf-wa-name" data-i18n="home.mock_wa_pom">Pom Vendor</span>
+                    <span data-i18n="home.mock_wa_6">I finished Coral filter. 800 baht cash.</span>
                     <time>14:58</time>
                   </div>
                   <div class="pf-wa-msg is-out">
-                    Did anyone confirm Coral was done? Guest already checked in…
+                    <span data-i18n="home.mock_wa_7">Did anyone confirm Coral was done? Guest already checked in…</span>
                     <time>16:22</time>
                   </div>
                 </div>
@@ -362,39 +374,38 @@
               <h3 data-i18n="home.after_label">After</h3>
               <div class="pf-pfchat" aria-hidden="true">
                 <div class="pf-pfchat-bar">
-                  <strong>Messages</strong>
-                  <span>Live team chat</span>
+                  <strong data-i18n="home.mock_pf_title">Messages</strong>
+                  <span data-i18n="home.mock_pf_sub">Live team chat</span>
                 </div>
                 <div class="pf-pfchat-thread">
                   <div class="pf-pfchat-msg is-own">
-                    <p>Service order for Pom · Pool filter check
+                    <p data-i18n="home.mock_pf_order">Service order for Pom · Pool filter check
 What: Pool filter
 Where: Villa Coral
 When: Today 14:00-16:00
 From: Alex
 Staff: open this and tap Read and agreed.</p>
-                    <span class="pf-pfchat-ack">Read &amp; agreed</span>
+                    <span class="pf-pfchat-ack" data-i18n="home.mock_pf_ack">Read & agreed</span>
                   </div>
                   <div class="pf-pfchat-msg is-other">
                     <span class="pf-pfchat-name">Pom</span>
-                    <p>Confirmed. On site at Coral now.</p>
+                    <p data-i18n="home.mock_pf_pom">Confirmed. On site at Coral now.</p>
                   </div>
                   <div class="pf-pfchat-msg is-other">
-                    <span class="pf-pfchat-name">Sam Manager</span>
-                    <p>Done. Receipt photo attached to Coral · Pool. 800 THB pending your approval.</p>
+                    <span class="pf-pfchat-name" data-i18n="home.mock_wa_sam">Sam Manager</span>
+                    <p data-i18n="home.mock_pf_sam">Done. Receipt photo attached to Coral · Pool. 800 THB pending your approval.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <p class="pf-motto" data-i18n="home.alt_closing">Your operation, always on pulse</p>
         </section>
 
         <section class="pf-features pf-fade" id="features" aria-labelledby="features-title">
           <div class="pf-features-head">
-            <h2 id="features-title" data-i18n="home.features_title">Everything in one place.</h2>
-            <p data-i18n="home.features_sub">Four things that usually live in four different tools.</p>
+            <h2 id="features-title" data-i18n="home.features_title">Everything you need for work.</h2>
+            <p data-i18n="home.features_sub">Four aspects that are usually managed via four different tools.</p>
           </div>
 
           <div class="pf-feature-carousel" data-feature-carousel>
@@ -405,7 +416,7 @@ Staff: open this and tap Read and agreed.</p>
                     <svg class="ti" viewBox="0 0 24 24"><path d="M3 21l18 0"/><path d="M9 8l1 0"/><path d="M9 12l1 0"/><path d="M9 16l1 0"/><path d="M14 8l1 0"/><path d="M14 12l1 0"/><path d="M14 16l1 0"/><path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"/></svg>
                   </div>
                   <h3 class="pf-tag" data-i18n="home.card_villas">Properties</h3>
-                  <p class="pf-desc" data-i18n="home.card_villas_desc">One list for the owner, the manager, and the person on site. Status, map pin, stay dates, and a photo.</p>
+                  <p class="pf-desc" data-i18n="home.card_villas_desc">One list for the owner, the assigned manager, and the person on site. Property details, status, map pin, stay dates, and a photo, so the whole team understands the objects assigned to them.</p>
                 </div>
               </article>
 
@@ -415,7 +426,7 @@ Staff: open this and tap Read and agreed.</p>
                     <svg class="ti" viewBox="0 0 24 24"><path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5"/></svg>
                   </div>
                   <h3 class="pf-tag" data-i18n="home.card_jobs">Jobs and vendors</h3>
-                  <p class="pf-desc" data-i18n="home.card_jobs_desc">A job with a work window. Anyone on the app confirms with one tap. Call or message vendors straight from their contact card.</p>
+                  <p class="pf-desc" data-i18n="home.card_jobs_desc">Simply add your property maintenance staff contacts and book them with a call or message. Or invite them to the app for both sides' convenience - staff will be able to accept jobs in-app.</p>
                 </div>
               </article>
 
@@ -425,7 +436,7 @@ Staff: open this and tap Read and agreed.</p>
                     <svg class="ti" viewBox="0 0 24 24"><path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2"/><path d="M14 8h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"/><path d="M12 7v1m0 9v1"/></svg>
                   </div>
                   <h3 class="pf-tag" data-i18n="home.card_money">Money</h3>
-                  <p class="pf-desc" data-i18n="home.card_money_desc">An expense with a receipt photo, attached to a property and a category. Total, paid, and pending - three numbers in front of you.</p>
+                  <p class="pf-desc" data-i18n="home.card_money_desc">Watch how much maintenance costs you for a different period, filter by categories, approve bills when paid. All data is exportable for seamless integration with your budget sheets.</p>
                 </div>
               </article>
 
@@ -435,7 +446,7 @@ Staff: open this and tap Read and agreed.</p>
                     <svg class="ti" viewBox="0 0 24 24"><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/><path d="M6 21v-2a4 4 0 0 1 4 -4h4"/><path d="M15 19l2 2l4 -4"/></svg>
                   </div>
                   <h3 class="pf-tag" data-i18n="home.card_guests">Guests</h3>
-                  <p class="pf-desc" data-i18n="home.card_guests_desc">House rules your guest ticks as read. A deposit with every deduction. A direct date request from a returning guest.</p>
+                  <p class="pf-desc" data-i18n="home.card_guests_desc">Trace all aspects of guest relations: invite regulars to book via the app at local rates, share house rules. A deposit with every deduction so no more misunderstanding.</p>
                 </div>
               </article>
             </div>
@@ -537,7 +548,7 @@ From: Sam Manager</p>
         </section>
 
         <section class="pf-audience pf-fade" id="audience" aria-labelledby="why-app">
-          <h2 id="why-app" class="pf-audience-title" data-i18n="home.why_title">Look at it from your side.</h2>
+          <h2 id="why-app" class="pf-audience-title" data-i18n="home.why_title">Who is Pulse Flow user?</h2>
           <div class="pf-audience-grid">
             <a class="pf-audience-card" href="/owners">
               <div class="pf-audience-icon" aria-hidden="true">
@@ -576,7 +587,7 @@ From: Sam Manager</p>
 
         <section class="pf-plan pf-fade" id="plans" aria-labelledby="company-plans">
           <div class="pf-plan-card pf-plan-card-static">
-            <h2 id="company-plans" class="pf-plan-title" data-i18n="home.plan_title">The owner pays. The team does not.</h2>
+            <h2 id="company-plans" class="pf-plan-title" data-i18n="home.plan_title">Plans</h2>
             <p class="pf-plan-free" data-i18n="home.plan_free_team">Managers, field staff and guests you invite use the app for free, however many of them there are. There is no per-seat charge.</p>
             <ul class="pf-plan-options">
               <li>
@@ -599,9 +610,9 @@ From: Sam Manager</p>
         <section class="pf-sub-referral pf-sub-referral-compact pf-fade" id="referral" aria-labelledby="referral-heading">
           <h2 id="referral-heading">
             <svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z"/><path d="M12 8l0 13"/><path d="M19 12v7a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0 -5a4.8 8 0 0 1 4.5 5a4.8 8 0 0 1 4.5 -5a2.5 2.5 0 0 1 0 5"/></svg>
-            <span data-i18n="home.referral_title">Invite 5 people, get a year of Full free.</span>
+            <span data-i18n="home.referral_title">Invite 5 people, get a year of company features for free.</span>
           </h2>
-          <p class="pf-sub-referral-lead" data-i18n="home.referral_lead">Your referral link is in your profile. Signing up for the app counts, and so does joining your company as staff. Five credited joins unlock a year of Full, counted from the day billing starts or the end of your three free months, whichever comes later.</p>
+          <p class="pf-sub-referral-lead" data-i18n="home.referral_lead">Find your referral link in the profile. The free year is counted from the day billing system is supported.</p>
         </section>
 
         <section class="pf-faq pf-fade" id="faq" aria-labelledby="faq-title">
