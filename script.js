@@ -462,10 +462,37 @@ document.querySelectorAll("[data-demo-login]").forEach((section) => {
   demoApplyFns.push(() => applyRole(activeRole));
 });
 
-/* Subtle fade-in on scroll for landing sections */
+/* Mark current role in the marketing nav (side-rail style) */
+{
+  const locales = LOCALES.join("|");
+  const strip = (pathname) => {
+    const clean = pathname.replace(/\/+$/, "") || "/";
+    return clean.replace(new RegExp(`^/(${locales})(?=/|$)`), "") || "/";
+  };
+  const here = strip(location.pathname);
+  document.querySelectorAll(".pf-role-nav a").forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href || href.startsWith("http")) return;
+    let path = href;
+    try {
+      path = new URL(href, location.origin).pathname;
+    } catch (_) {
+      /* keep raw href */
+    }
+    const target = strip(path);
+    if (target !== "/" && (here === target || here.startsWith(`${target}/`))) {
+      link.setAttribute("aria-current", "page");
+    }
+  });
+}
+
+/* Subtle rise/fade on scroll — skip motion when requested */
 {
   const nodes = [...document.querySelectorAll(".pf-fade")];
-  if (nodes.length && "IntersectionObserver" in window) {
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduceMotion || !nodes.length || !("IntersectionObserver" in window)) {
+    nodes.forEach((el) => el.classList.add("is-in"));
+  } else {
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -477,8 +504,6 @@ document.querySelectorAll("[data-demo-login]").forEach((section) => {
       { rootMargin: "0px 0px -8% 0px", threshold: 0.12 },
     );
     nodes.forEach((el) => io.observe(el));
-  } else {
-    nodes.forEach((el) => el.classList.add("is-in"));
   }
 }
 

@@ -412,7 +412,9 @@ def write_sitemap() -> None:
 
 def main() -> None:
     dicts = load_dicts()
-    # Refresh unprefixed EN sources (flat screenshot paths), then emit locale trees.
+    # Refresh unprefixed EN sources, then emit locale trees.
+    # Point root pages at /assets/screenshots/en/ so English never
+    # silently serves Russian flat fallbacks.
     for slug, filename in PAGES:
         path = ROOT / filename if not slug else ROOT / slug / filename
         html = process(
@@ -420,7 +422,7 @@ def main() -> None:
             "en",
             slug,
             dicts,
-            localize_shots=False,
+            localize_shots=True,
         )
         path.write_text(html, encoding="utf-8")
         print("root", path.relative_to(ROOT))

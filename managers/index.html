@@ -11,7 +11,7 @@
       content="What is urgent today, who is doing it and how it ended. Jobs get confirmed, and the owner report builds itself out of what already happened."
       data-i18n-attr="content:managers.meta_description"
     />
-    <meta name="theme-color" content="#E8623D" />
+    <meta name="theme-color" content="#F07A3A" />
     <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="/icons/icon-192.png" />
     <link rel="canonical" href="https://www.pulseflow.site/managers" />
@@ -38,6 +38,15 @@
     <meta property="og:locale:alternate" content="it_IT" />
     <meta property="og:locale:alternate" content="he_IL" />
     <meta property="og:locale:alternate" content="ar_SA" />
+
+
+
+
+
+
+
+
+
 
 
 
@@ -140,7 +149,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=39" />
+    <link rel="stylesheet" href="/styles.css?v=64" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -153,15 +162,15 @@
   <body>
     <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a><div class="pf-wrap pf-owners-page">
       <header class="pf-nav pf-owners-nav">
-        <a class="pf-logo" href="/">
+        <a class="pf-logo" href="/" aria-label="Pulse Flow">
           <img
             class="pf-pulse-mark"
             src="/assets/pulse-mark.svg"
-            width="28"
-            height="28"
+            width="40"
+            height="40"
             alt=""
           />
-          Pulse Flow
+          <span class="pf-brand-name">Pulse Flow</span>
         </a>
         <nav class="pf-role-nav" aria-label="Site">
           <a href="/owners" data-i18n="nav.owners">Owners</a><a href="/managers" data-i18n="nav.managers">Managers</a><a href="/staff" data-i18n="nav.staff">Field staff</a><a href="/guests" data-i18n="nav.guests">Guests</a><a href="/#plans" data-i18n="nav.plans">Plans</a></nav>
@@ -186,6 +195,16 @@
 
       <main id="main" class="pf-owners-main">
         <section class="pf-owners-hero is-text-only" id="hero">
+            <p class="pf-hero-brand" aria-hidden="true">
+              <img
+                class="pf-pulse-mark"
+                src="/assets/pulse-mark.svg"
+                width="40"
+                height="40"
+                alt=""
+              />
+              <span class="pf-brand-name">Pulse Flow</span>
+            </p>
           <p class="pf-owners-badge" data-i18n="managers.badge">For property managers</p>
           <h1 class="pf-headline" data-i18n="managers.headline">Build the day once, not again in every chat</h1>
           <p class="pf-sub" data-i18n="managers.sub">What is urgent, who is on site, which check-ins are coming and which bills are open. Your owner sees the same thing and stops asking.</p>
@@ -216,7 +235,7 @@
                 <figure class="pf-phone">
                   <div class="pf-phone-screen">
                     <img
-                      src="/assets/screenshots/manager-home.png"
+                      src="/assets/screenshots/en/manager-home.png"
                       width="472"
                       height="1024"
                       alt="Manager home screen: readiness, check-ins and urgent work"
@@ -236,7 +255,7 @@
                 <figure class="pf-phone">
                   <div class="pf-phone-screen">
                     <img
-                      src="/assets/screenshots/manager-order.png"
+                      src="/assets/screenshots/en/manager-order.png"
                       width="472"
                       height="1024"
                       alt="Job card: property, work window and confirmation status"
@@ -256,7 +275,7 @@
                 <figure class="pf-phone">
                   <div class="pf-phone-screen">
                     <img
-                      src="/assets/screenshots/manager-reports.png"
+                      src="/assets/screenshots/en/manager-reports.png"
                       width="472"
                       height="1024"
                       alt="Reports screen: category and period selection, data export"
@@ -279,7 +298,7 @@
             <figure class="pf-phone">
                                 <div class="pf-phone-screen">
                     <img
-                      src="/assets/screenshots/owner-translate-hero.png"
+                      src="/assets/screenshots/en/owner-translate-hero.png"
                       width="780"
                       height="1522"
                       alt="Team content translation setting in the profile"
@@ -338,7 +357,7 @@
         </section>
 
 <section class="pf-faq" id="faq" aria-labelledby="faq-title">
-          <h2 id="faq-title" data-i18n="common.faq_title">FAQ</h2>
+          <h2 id="faq-title" data-i18n="common.faq_title">Short answers</h2>
           <details>
             <summary data-i18n="managers.faq_q1">One more system to keep updated by hand.</summary>
             <p data-i18n="managers.faq_a1">It is entered where the work happens: the job is created from the contact card, the receipt is photographed by the person who paid, the property status changes on site. There is no separate act of maintaining it. Check-in and check-out dates genuinely are typed in for now, with Google Calendar import planned.</p>
@@ -464,6 +483,6 @@
           <a href="https://app.pulseflow.site" data-i18n="footer.app">App</a></div>
       </footer>
     </div>
-    <script src="/script.js?v=14" defer></script>
+    <script src="/script.js?v=23" defer></script>
   </body>
 </html>
