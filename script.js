@@ -19,6 +19,7 @@ const dictCache = Object.create(null);
 let currentLocale = "en";
 let currentDict = null;
 let demoApplyFns = [];
+const I18N_VERSION = "27";
 
 /** Plausible custom events (S5). No-ops until the domain is added in Plausible. */
 function track(name, props) {
@@ -157,7 +158,7 @@ function setDocumentLocale(locale) {
 
 async function loadDict(locale) {
   if (dictCache[locale]) return dictCache[locale];
-  const res = await fetch(`/i18n/${locale}.json`);
+  const res = await fetch(`/i18n/${locale}.json?v=${I18N_VERSION}`);
   if (!res.ok) throw new Error(`Failed to load locale ${locale}`);
   const dict = await res.json();
   dictCache[locale] = dict;
@@ -225,7 +226,10 @@ function syncLocaleInUrl(locale) {
   }
 }
 
-async function setLocale(locale, { persist = true, syncUrl = false } = {}) {
+async function setLocale(
+  locale,
+  { persist = true, syncUrl = false, apply = true } = {},
+) {
   const prevLocale = currentLocale;
   const next = LOCALES.includes(locale) ? locale : "en";
   if (!dictCache.en) {
@@ -252,7 +256,9 @@ async function setLocale(locale, { persist = true, syncUrl = false } = {}) {
   }
   if (syncUrl) syncLocaleInUrl(next);
   setDocumentLocale(next);
-  applyTranslations(dict);
+  // Locale trees already have copy inlined. Rewriting from a cached
+  // dictionary is how English used to flash back over /ar/ and /th/.
+  if (apply) applyTranslations(dict);
   document.querySelectorAll("[data-locale-select]").forEach((sel) => {
     sel.value = next;
   });
@@ -262,28 +268,12 @@ async function setLocale(locale, { persist = true, syncUrl = false } = {}) {
   }
 }
 
-function resolveInitialLocale() {
-  const fromPath = localeFromPath();
-  if (fromPath) return fromPath;
-  const fromUrl = localeFromUrl();
-  if (fromUrl) return fromUrl;
-  try {
-    const stored = localStorage.getItem(LOCALE_STORAGE_KEY);
-    if (stored && LOCALES.includes(stored)) return stored;
-  } catch (_) {
-    /* ignore */
-  }
-  const nav = (navigator.language || "en").toLowerCase();
-  const short = nav.slice(0, 2);
-  if (LOCALES.includes(short)) return short;
-  if (nav.startsWith("my") || nav.startsWith("bur")) return "my";
-  return "en";
-}
-
 function mountLanguageSwitchers() {
+  const pathLocale = localeFromPath() || "en";
   document.querySelectorAll("[data-locale-select]").forEach((sel) => {
     if (sel.dataset.i18nReady === "1") return;
     sel.dataset.i18nReady = "1";
+    sel.setAttribute("dir", "ltr");
     if (!sel.options.length) {
       LOCALES.forEach((code) => {
         const opt = document.createElement("option");
@@ -292,8 +282,9 @@ function mountLanguageSwitchers() {
         sel.appendChild(opt);
       });
     }
+    sel.value = pathLocale;
     sel.addEventListener("change", () => {
-      setLocale(sel.value, { syncUrl: true });
+      setLocale(sel.value, { syncUrl: true, apply: false });
     });
   });
 }
@@ -533,13 +524,30 @@ mountLanguageSwitchers();
   // Legacy ?lang=ru → /ru/... (client fallback; Vercel also 301s)
   if (fromQuery && fromQuery !== fromPath) {
     window.location.replace(urlForLocale(fromQuery));
+  } else if (!fromPath) {
+    const stored = (() => {
+      try {
+        const value = localStorage.getItem(LOCALE_STORAGE_KEY);
+        return value && LOCALES.includes(value) ? value : null;
+      } catch (_) {
+        return null;
+      }
+    })();
+    if (stored && stored !== "en") {
+      window.location.replace(urlForLocale(stored));
+    } else {
+      setLocale("en", { persist: true, syncUrl: false, apply: false }).catch(
+        () => {
+          setDocumentLocale("en");
+        },
+      );
+    }
   } else {
-    setLocale(resolveInitialLocale(), {
-      persist: true,
-      syncUrl: false,
-    }).catch(() => {
-      setDocumentLocale(fromPath || "en");
-    });
+    setLocale(fromPath, { persist: true, syncUrl: false, apply: false }).catch(
+      () => {
+        setDocumentLocale(fromPath);
+      },
+    );
   }
 }
 

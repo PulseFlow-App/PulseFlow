@@ -62,11 +62,61 @@ def lookup(dict_obj, key: str):
     return cur if isinstance(cur, str) else None
 
 
+def flatten(obj, prefix: str = "") -> dict[str, str]:
+    out: dict[str, str] = {}
+    if isinstance(obj, dict):
+        for key, value in obj.items():
+            path = f"{prefix}.{key}" if prefix else key
+            out.update(flatten(value, path))
+    elif isinstance(obj, str):
+        out[prefix] = obj
+    return out
+
+
 def load_dicts():
-    return {
+    dicts = {
         loc: json.loads((ROOT / "i18n" / f"{loc}.json").read_text(encoding="utf-8"))
         for loc in BUILD_LOCALES
     }
+    assert_translation_coverage(dicts)
+    return dicts
+
+
+def assert_translation_coverage(dicts: dict) -> None:
+    """Fail the build if a locale is still an English clone (audit §03)."""
+    english = flatten(dicts["en"])
+    allow_identical = {
+        "home.plan_personal_label",
+        "home.plan_company_label",
+        "home.mock_wa_sub",
+        "demo.password",
+        "demo.email",
+    }
+    problems: list[str] = []
+    for loc in BUILD_LOCALES:
+        if loc == "en":
+            continue
+        flat = flatten(dicts[loc])
+        missing = [k for k in english if k not in flat]
+        identical = [
+            k
+            for k in english
+            if k in flat
+            and flat[k] == english[k]
+            and k not in allow_identical
+            and len(english[k]) > 12
+        ]
+        if missing:
+            problems.append(f"{loc}: missing {len(missing)} keys (e.g. {missing[:5]})")
+        if len(identical) > 20:
+            problems.append(
+                f"{loc}: {len(identical)} values still English "
+                f"(e.g. {identical[:8]})"
+            )
+    if problems:
+        raise SystemExit(
+            "Locale dictionaries look unfinished:\n  " + "\n  ".join(problems)
+        )
 
 
 def page_url(locale: str, slug: str) -> str:
