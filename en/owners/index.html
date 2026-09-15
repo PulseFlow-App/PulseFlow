@@ -107,6 +107,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/owners" />
     <meta
@@ -157,7 +173,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=66" />
+    <link rel="stylesheet" href="/styles.css?v=68" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -180,8 +196,6 @@
           />
           <span class="pf-brand-name">Pulse Flow</span>
         </a>
-        <nav class="pf-role-nav" aria-label="Site">
-          <a href="/owners" data-i18n="nav.owners">Owners</a><a href="/managers" data-i18n="nav.managers">Managers</a><a href="/staff" data-i18n="nav.staff">Field staff</a><a href="/guests" data-i18n="nav.guests">Guests</a><a href="/#plans" data-i18n="nav.plans">Plans</a></nav>
         <div class="pf-nav-actions">
           <label class="pf-lang">
             <span class="pf-visually-hidden" data-i18n="nav.language"
@@ -214,22 +228,13 @@
               <span class="pf-brand-name">Pulse Flow</span>
             </p>
           <p class="pf-owners-badge" data-i18n="owners.badge">For property owners</p>
-          <h1 class="pf-headline" data-i18n="owners.headline">Know what is happening without asking</h1>
-          <p class="pf-sub" data-i18n="owners.sub">Occupancy, urgent work, check-ins and every cost by property. You, your manager and the people on site are looking at the same thing.</p>
+          <h1 class="pf-headline" data-i18n="owners.headline">Know what is happening without asking questions</h1>
+          <p class="pf-sub" data-i18n="owners.sub">Occupancy, urgent work, check-ins and cost by property. You, your manager and the people on site are looking at the same thing.</p>
           <div class="pf-owners-hero-actions">
             <a class="pf-btn-primary" href="https://app.pulseflow.site/register" data-i18n="owners.cta_start">Start free</a>
             <a class="pf-owners-link" href="https://app.pulseflow.site/login?demo=owner" data-i18n="owners.cta_demo">Open the owner demo</a>
           </div>
-          <p class="pf-free-note" data-i18n="owners.free_note">You are the only one who pays. Managers, field staff and guests are free.</p>
-        </section>
-
-        <section class="pf-alt" id="alternative" aria-labelledby="alt-title">
-          <h2 id="alt-title" data-i18n="common.alt_title">What breaks today</h2>
-          <ul class="pf-alt-list">
-            <li data-i18n="owners.alt_1">Status has to be requested, and the answer depends on who last looked at their phone.</li>
-            <li data-i18n="owners.alt_2">Costs get reconciled from photos of receipts in a thread, at month end, from memory.</li>
-            <li data-i18n="owners.alt_3">A manager moves on, and the vendor numbers and the arrangements go with them.</li>
-          </ul>
+          <p class="pf-free-note" data-i18n="owners.free_note">Billing will be live in Q4 2026</p>
         </section>
 
         <section class="pf-guide-section">
@@ -237,7 +242,7 @@
             <article class="pf-guide-flagship" id="f1">
               <div class="pf-guide-flagship-copy">
                 <h2 data-i18n="owners.f1_title">The whole day on one screen</h2>
-                <p data-i18n="owners.f1_desc">Occupancy, readiness, the next check-ins and whatever is on fire right now. The team enters it as they work, so you only have to look.</p>
+                <p data-i18n="owners.f1_desc">Occupancy, readiness, the next check-ins and whatever is on fire right now. The team enters it as they work, so you only have to check.</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -276,8 +281,8 @@
             </article>
             <article class="pf-guide-flagship" id="f3">
               <div class="pf-guide-flagship-copy">
-                <h2 data-i18n="owners.f3_title">A job somebody actually accepted</h2>
-                <p data-i18n="owners.f3_desc">The job goes out with a description, a property and a work window. Whoever is on the app confirms it with a tap and you see the status change. For the ones who would rather be called, call or message from the same contact card: phone, WhatsApp, LINE.</p>
+                <h2 data-i18n="owners.f3_title">Maintenance jobs accepted in-app</h2>
+                <p data-i18n="owners.f3_desc">The job goes out with a description, a property assigned and a work window. Whoever is on the app confirms it with a tap and you see the status change. For the ones who would rather be called, call or message from the same contact card.</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -297,101 +302,73 @@
           </div>
         </section>
 
-        <section class="pf-lang-block" id="translation" aria-labelledby="lang-title">
-          <div>
-            <h2 id="lang-title" data-i18n="owners.lang_title">One language for the whole team</h2>
-            <p data-i18n="owners.lang_desc">You write the job in your language, the cleaner reads it in hers, the manager in his. A switch in the profile translates jobs, team chat and guest briefings into whatever language each person chose. Not just the buttons, the content.</p>
-          </div>
-          <div class="pf-phone-solo">
-            <figure class="pf-phone">
-                                <div class="pf-phone-screen">
-                    <img
-                      src="/assets/screenshots/en/owner-translate-hero.png"
-                      width="780"
-                      height="1522"
-                      alt="Team content translation setting in the profile"
-                      data-i18n-attr="alt:common.lang_alt"
-                      loading="lazy"
-                    />
-                  </div>
-            </figure>
-          </div>
-        </section>
         <section class="pf-features" id="features" aria-labelledby="features-title">
           <details class="pf-features-panel">
-            <summary id="features-title" data-i18n="common.features_summary">Feature list — expand all</summary>
+            <summary id="features-title" data-i18n="common.features_summary">Feature list - expand all</summary>
             <div class="pf-features-body">
               <div class="pf-features-access">
                 <h3 data-i18n="common.features_access_title">What this role can do</h3>
-                <ul>
-                  <li data-i18n="common.roles_owner_li1">Every company property, and edits the list</li>
-                  <li data-i18n="common.roles_owner_li2">All tasks, jobs and finances, approves bills</li>
-                  <li data-i18n="common.roles_owner_li3">Organisation details and who gets access to which property</li>
-                </ul>
+                <p class="pf-features-access-lead" data-i18n="owners.features_access_lead">The company account is the control center for the entire operation.</p>
+                <h4 data-i18n="owners.access_g1_title">Properties</h4>
+                <p data-i18n="owners.access_g1_desc">Manage every company property, update property details, assign people to properties, and keep the portfolio organised. Add house guides, notes, and important information for each property.</p>
+                <h4 data-i18n="owners.access_g2_title">People and access</h4>
+                <p data-i18n="owners.access_g2_desc">Manage the organisation, invite managers, field staff and guests, assign specific properties to specific people, and control who can access what. Search and choose staff by skills, location, map and reviews. Keep the team connected with chat, mentions, weekly endorsements and a company leaderboard.</p>
+                <h4 data-i18n="owners.access_g3_title">Operations</h4>
+                <p data-i18n="owners.access_g3_desc">Create, assign, track and close company-wide tasks. Oversee jobs, service orders and vendors, with direct access to vendors by call, WhatsApp or LINE. Confirm service orders and keep track of everything happening across the portfolio.</p>
+                <h4 data-i18n="owners.access_g4_title">Money</h4>
+                <p data-i18n="owners.access_g4_desc">Review and approve bills, track company-wide spending, and manage guest deposits including deductions with photo evidence. Work across 20 currencies with automatic conversion.</p>
+                <h4 data-i18n="owners.access_g5_title">Stay informed and in control</h4>
+                <p data-i18n="owners.access_g5_desc">Get in-app notifications and phone push notifications, generate reports and exports for individual categories or the whole company, and track referrals and team invitations.</p>
               </div>
-              <h3 class="pf-features-more-title" data-i18n="common.more_title">Everything else that already works</h3>
-              <div class="pf-more-groups">
-              <div class="pf-more-group">
-                <h3 data-i18n="owners.more_g1_title">Team</h3>
-                <ul>
-                  <li data-i18n="owners.more_g1_li1">Invite managers, field staff and guests</li>
-                  <li data-i18n="owners.more_g1_li2">Team chat with mentions</li>
-                  <li data-i18n="owners.more_g1_li3">Assign specific properties to specific people</li>
-                  <li data-i18n="owners.more_g1_li4">Weekly endorsements and a company leaderboard</li>
-                  <li data-i18n="owners.more_g1_li5">Staff search: skills, area, map, reviews</li>
-                </ul>
-              </div>
-              <div class="pf-more-group">
-                <h3 data-i18n="owners.more_g2_title">Work</h3>
-                <ul>
-                  <li data-i18n="owners.more_g2_li1">Company-wide tasks: assign, track, close</li>
-                  <li data-i18n="owners.more_g2_li2">Vendor book with call, WhatsApp and LINE</li>
-                  <li data-i18n="owners.more_g2_li3">Service orders with confirmation</li>
-                  <li data-i18n="owners.more_g2_li4">House guide and notes on every property</li>
-                  <li data-i18n="owners.more_g2_li5">Guest deposits: amount, deductions with photos, balance</li>
-                </ul>
-              </div>
-              <div class="pf-more-group">
-                <h3 data-i18n="owners.more_g3_title">Data</h3>
-                <ul>
-                  <li data-i18n="owners.more_g3_li1">Reports and exports, by category or all of it</li>
-                  <li data-i18n="owners.more_g3_li2">In-app notifications and phone push</li>
-                  <li data-i18n="owners.more_g3_li3">Twenty currencies with conversion</li>
-                  <li data-i18n="owners.more_g3_li4">Referral link and invite progress</li>
-                </ul>
-              </div>
-              </div>
+              <h3 class="pf-features-more-title" data-i18n="owners.planned_title">Planned features</h3>
+              <ul class="pf-features-list is-planned">
+                <li>
+                  <strong data-i18n="owners.planned_1_title">Google Calendar sync</strong>
+                  <span data-i18n="owners.planned_1_desc">connect company and property calendars so bookings, tasks and important dates stay in sync.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_2_title">Recurring tasks</strong>
+                  <span data-i18n="owners.planned_2_desc">automatically create routine jobs such as cleaning, inspections and maintenance.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_3_title">Approval flows</strong>
+                  <span data-i18n="owners.planned_3_desc">set who needs to approve purchases, expenses and service orders.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_4_title">Property performance</strong>
+                  <span data-i18n="owners.planned_4_desc">see revenue, costs, occupancy, maintenance and operational activity per property.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_5_title">Automated reminders</strong>
+                  <span data-i18n="owners.planned_5_desc">deadlines, upcoming jobs, expiring documents, unpaid bills and scheduled maintenance.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_6_title">Documents and contracts</strong>
+                  <span data-i18n="owners.planned_6_desc">store leases, invoices, warranties, contracts and property documents in one place.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_7_title">Maintenance history</strong>
+                  <span data-i18n="owners.planned_7_desc">keep a complete record of repairs, costs, vendors and recurring issues for each property.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_8_title">Smart scheduling</strong>
+                  <span data-i18n="owners.planned_8_desc">coordinate staff, vendors and tasks around bookings and availability.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_9_title">Advanced company analytics</strong>
+                  <span data-i18n="owners.planned_9_desc">compare properties, teams, costs and operational performance over time.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_10_title">Accounting integrations</strong>
+                  <span data-i18n="owners.planned_10_desc">connect external accounting or bookkeeping tools to reduce manual financial work.</span>
+                </li>
+              </ul>
             </div>
           </details>
         </section>
 
-<section class="pf-faq" id="faq" aria-labelledby="faq-title">
-          <h2 id="faq-title" data-i18n="common.faq_title">FAQ</h2>
-          <details>
-            <summary data-i18n="owners.faq_q1">I already have Airbnb and Booking. Why another thing?</summary>
-            <p data-i18n="owners.faq_a1">This is not about bookings or pricing. Those stay where they are. Check-in and check-out dates are entered by hand, and importing them from Google Calendar is planned. There is no direct sync with Airbnb or Booking.</p>
-          </details>
-          <details>
-            <summary data-i18n="owners.faq_q2">My team will never use it.</summary>
-            <p data-i18n="owners.faq_a2">They open it from a link, with no app store and no new account. What they get is their own screen: their properties, their jobs, in their language. Team seats are free, so trying it costs neither of you anything.</p>
-          </details>
-          <details>
-            <summary data-i18n="owners.faq_q3">What about guest money?</summary>
-            <p data-i18n="owners.faq_a3">Payments and deposits go directly to you, outside the app. The app records the deposit, each deduction with a photo, and the balance, and your guest sees exactly the same. No payment runs through the app.</p>
-          </details>
-        </section>
-
-        <section class="pf-soon" id="soon" aria-labelledby="soon-title">
-          <h2 id="soon-title" data-i18n="owners.soon_title">What the app does not do</h2>
-          <ul>
-            <li data-i18n="owners.soon_1">Import bookings from Google Calendar. Planned. Dates are entered by hand today.</li>
-            <li data-i18n="owners.soon_2">Take payment inside a booking request. The guest asks for dates, you agree price and payment yourselves.</li>
-            <li data-i18n="owners.soon_3">Connect directly to Airbnb or Booking. Not today and not on the near roadmap.</li>
-          </ul>
-        </section>
-
         <section class="pf-price-line" id="price">
-          <p data-i18n="owners.price_line">A personal workspace is free forever. For a company the owner pays and team seats are free. Billing is not live yet, so registered accounts have 3 months of full access.</p>
+          <p data-i18n="owners.price_line">For a company the owner pays and team seats are free. Billing is not live yet, so registered accounts have 3 months of full access, and if you invite 5 people, you can get a year of full access for free.</p>
         </section>
 
         <section class="pf-demo" id="demo-now" aria-labelledby="demo-now-title" data-demo-login>
@@ -477,7 +454,7 @@
             height="64"
             alt=""
           />
-          <h2 data-i18n="owners.close_title">Open the app and look at your day</h2><a
+          <h2 data-i18n="owners.close_title">Know what's happening, without being there</h2><a
             class="pf-btn-primary"
             href="https://app.pulseflow.site/register"
             data-i18n="owners.close_cta"

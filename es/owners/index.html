@@ -107,6 +107,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/es/owners" />
     <meta
@@ -157,7 +173,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=66" />
+    <link rel="stylesheet" href="/styles.css?v=68" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -180,8 +196,6 @@
           />
           <span class="pf-brand-name">Pulse Flow</span>
         </a>
-        <nav class="pf-role-nav" aria-label="Site">
-          <a href="/es/owners" data-i18n="nav.owners">Propietarios</a><a href="/es/managers" data-i18n="nav.managers">Gestores</a><a href="/es/staff" data-i18n="nav.staff">Personal de campo</a><a href="/es/guests" data-i18n="nav.guests">Huéspedes</a><a href="/es/#plans" data-i18n="nav.plans">Planes</a></nav>
         <div class="pf-nav-actions">
           <label class="pf-lang">
             <span class="pf-visually-hidden" data-i18n="nav.language"
@@ -214,22 +228,13 @@
               <span class="pf-brand-name">Pulse Flow</span>
             </p>
           <p class="pf-owners-badge" data-i18n="owners.badge">Para propietarios</p>
-          <h1 class="pf-headline" data-i18n="owners.headline">Sepa qué ocurre sin preguntar</h1>
-          <p class="pf-sub" data-i18n="owners.sub">Ocupación, trabajo urgente, entradas y cada coste por propiedad. Usted, su gestor y las personas in situ miran lo mismo.</p>
+          <h1 class="pf-headline" data-i18n="owners.headline">Sepa qué ocurre sin hacer preguntas</h1>
+          <p class="pf-sub" data-i18n="owners.sub">Ocupación, trabajo urgente, entradas y el coste por propiedad. Usted, su gestor y las personas in situ miran lo mismo.</p>
           <div class="pf-owners-hero-actions">
             <a class="pf-btn-primary" href="https://app.pulseflow.site/register" data-i18n="owners.cta_start">Empezar gratis</a>
             <a class="pf-owners-link" href="https://app.pulseflow.site/login?demo=owner" data-i18n="owners.cta_demo">Abrir la demo de propietario</a>
           </div>
-          <p class="pf-free-note" data-i18n="owners.free_note">Solo paga usted. Gestores, personal de campo y huéspedes son gratis.</p>
-        </section>
-
-        <section class="pf-alt" id="alternative" aria-labelledby="alt-title">
-          <h2 id="alt-title" data-i18n="common.alt_title">Qué se rompe hoy</h2>
-          <ul class="pf-alt-list">
-            <li data-i18n="owners.alt_1">Hay que pedir el estado, y la respuesta depende de quién miró el teléfono por última vez.</li>
-            <li data-i18n="owners.alt_2">Los costes se concilian a partir de fotos de justificantes en un hilo, a fin de mes, de memoria.</li>
-            <li data-i18n="owners.alt_3">Un gestor se va, y los números de los proveedores y los acuerdos se van con él.</li>
-          </ul>
+          <p class="pf-free-note" data-i18n="owners.free_note">La facturación estará en marcha en el cuarto trimestre de 2026</p>
         </section>
 
         <section class="pf-guide-section">
@@ -237,7 +242,7 @@
             <article class="pf-guide-flagship" id="f1">
               <div class="pf-guide-flagship-copy">
                 <h2 data-i18n="owners.f1_title">Todo el día en una sola pantalla</h2>
-                <p data-i18n="owners.f1_desc">Ocupación, preparación, las próximas entradas y lo que está en llamas ahora. El equipo lo introduce al trabajar, usted solo tiene que mirar.</p>
+                <p data-i18n="owners.f1_desc">Ocupación, preparación, las próximas entradas y lo que está en llamas ahora. El equipo lo introduce al trabajar, usted solo tiene que comprobar.</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -276,8 +281,8 @@
             </article>
             <article class="pf-guide-flagship" id="f3">
               <div class="pf-guide-flagship-copy">
-                <h2 data-i18n="owners.f3_title">Un encargo que alguien ha aceptado de verdad</h2>
-                <p data-i18n="owners.f3_desc">El encargo sale con descripción, propiedad y franja horaria. Quien esté en la aplicación lo confirma con un toque y usted ve el cambio de estado. A quien prefiera que le llamen, llame o escriba desde la misma ficha de contacto: teléfono, WhatsApp, LINE.</p>
+                <h2 data-i18n="owners.f3_title">Encargos de mantenimiento aceptados en la app</h2>
+                <p data-i18n="owners.f3_desc">El encargo sale con descripción, una propiedad asignada y una franja horaria. Quien esté en la aplicación lo confirma con un toque y usted ve el cambio de estado. A quien prefiera que le llamen, llame o escriba desde la misma ficha de contacto.</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -297,101 +302,73 @@
           </div>
         </section>
 
-        <section class="pf-lang-block" id="translation" aria-labelledby="lang-title">
-          <div>
-            <h2 id="lang-title" data-i18n="owners.lang_title">Un idioma para todo el equipo</h2>
-            <p data-i18n="owners.lang_desc">Usted escribe el encargo en su idioma, la limpiadora lo lee en el suyo, el gestor en el suyo. Un interruptor en el perfil traduce encargos, chat de equipo y consignas a huéspedes al idioma que cada persona eligió. No solo los botones, el contenido.</p>
-          </div>
-          <div class="pf-phone-solo">
-            <figure class="pf-phone">
-                                <div class="pf-phone-screen">
-                    <img
-                      src="/assets/screenshots/en/owner-translate-hero.png"
-                      width="780"
-                      height="1522"
-                      alt="Ajuste de traducción del contenido del equipo en el perfil"
-                      data-i18n-attr="alt:common.lang_alt"
-                      loading="lazy"
-                    />
-                  </div>
-            </figure>
-          </div>
-        </section>
         <section class="pf-features" id="features" aria-labelledby="features-title">
           <details class="pf-features-panel">
-            <summary id="features-title" data-i18n="common.features_summary">Lista de funciones — expandir todo</summary>
+            <summary id="features-title" data-i18n="common.features_summary">Lista de funciones - expandir todo</summary>
             <div class="pf-features-body">
               <div class="pf-features-access">
                 <h3 data-i18n="common.features_access_title">Qué puede hacer este rol</h3>
-                <ul>
-                  <li data-i18n="common.roles_owner_li1">Todas las propiedades de la empresa, y edita la lista</li>
-                  <li data-i18n="common.roles_owner_li2">Todas las tareas, encargos y finanzas, aprueba facturas</li>
-                  <li data-i18n="common.roles_owner_li3">Datos de la organización y quién accede a cada propiedad</li>
-                </ul>
+                <p class="pf-features-access-lead" data-i18n="owners.features_access_lead">La cuenta de empresa es el centro de control de toda la operación.</p>
+                <h4 data-i18n="owners.access_g1_title">Propiedades</h4>
+                <p data-i18n="owners.access_g1_desc">Gestione cada propiedad de la empresa, actualice los datos, asigne personas a las propiedades y mantenga el portafolio ordenado. Añada guías de la casa, notas e información importante para cada propiedad.</p>
+                <h4 data-i18n="owners.access_g2_title">Personas y acceso</h4>
+                <p data-i18n="owners.access_g2_desc">Gestione la organización, invite gestores, personal de campo y huéspedes, asigne propiedades concretas a personas concretas y controle quién accede a qué. Busque y elija personal por habilidades, zona, mapa y reseñas. Mantenga al equipo conectado con chat, menciones, valoraciones semanales y un ranking de la empresa.</p>
+                <h4 data-i18n="owners.access_g3_title">Operaciones</h4>
+                <p data-i18n="owners.access_g3_desc">Cree, asigne, siga y cierre tareas de toda la empresa. Supervise trabajos, órdenes de servicio y proveedores, con acceso directo por llamada, WhatsApp o LINE. Confirme órdenes de servicio y siga todo lo que ocurre en el portafolio.</p>
+                <h4 data-i18n="owners.access_g4_title">Dinero</h4>
+                <p data-i18n="owners.access_g4_desc">Revise y apruebe facturas, siga el gasto de la empresa y gestione fianzas de huéspedes, incluidas retenciones con prueba fotográfica. Trabaje con 20 divisas y conversión automática.</p>
+                <h4 data-i18n="owners.access_g5_title">Manténgase informado y en control</h4>
+                <p data-i18n="owners.access_g5_desc">Reciba notificaciones en la aplicación y push al teléfono, genere informes y exportaciones por categoría o de toda la empresa, y siga referidos e invitaciones de equipo.</p>
               </div>
-              <h3 class="pf-features-more-title" data-i18n="common.more_title">Todo lo demás que ya funciona</h3>
-              <div class="pf-more-groups">
-              <div class="pf-more-group">
-                <h3 data-i18n="owners.more_g1_title">Equipo</h3>
-                <ul>
-                  <li data-i18n="owners.more_g1_li1">Invitar gestores, personal de campo y huéspedes</li>
-                  <li data-i18n="owners.more_g1_li2">Chat de equipo con menciones</li>
-                  <li data-i18n="owners.more_g1_li3">Asignar propiedades concretas a personas concretas</li>
-                  <li data-i18n="owners.more_g1_li4">Valoraciones semanales y un ranking de la empresa</li>
-                  <li data-i18n="owners.more_g1_li5">Búsqueda de personal: habilidades, zona, mapa, reseñas</li>
-                </ul>
-              </div>
-              <div class="pf-more-group">
-                <h3 data-i18n="owners.more_g2_title">Trabajo</h3>
-                <ul>
-                  <li data-i18n="owners.more_g2_li1">Tareas de toda la empresa: asignar, seguir, cerrar</li>
-                  <li data-i18n="owners.more_g2_li2">Agenda de proveedores con llamada, WhatsApp y LINE</li>
-                  <li data-i18n="owners.more_g2_li3">Órdenes de servicio con confirmación</li>
-                  <li data-i18n="owners.more_g2_li4">Guía de la casa y notas en cada propiedad</li>
-                  <li data-i18n="owners.more_g2_li5">Fianzas de huéspedes: importe, retenciones con fotos, saldo</li>
-                </ul>
-              </div>
-              <div class="pf-more-group">
-                <h3 data-i18n="owners.more_g3_title">Datos</h3>
-                <ul>
-                  <li data-i18n="owners.more_g3_li1">Informes y exportaciones, por categoría o todo</li>
-                  <li data-i18n="owners.more_g3_li2">Notificaciones en la aplicación y avisos en el teléfono</li>
-                  <li data-i18n="owners.more_g3_li3">Veinte divisas con conversión</li>
-                  <li data-i18n="owners.more_g3_li4">Enlace de referido y avance de las invitaciones</li>
-                </ul>
-              </div>
-              </div>
+              <h3 class="pf-features-more-title" data-i18n="owners.planned_title">Funciones previstas</h3>
+              <ul class="pf-features-list is-planned">
+                <li>
+                  <strong data-i18n="owners.planned_1_title">Sincronización con Google Calendar</strong>
+                  <span data-i18n="owners.planned_1_desc">conectar calendarios de la empresa y de las propiedades para que reservas, tareas y fechas importantes queden alineadas.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_2_title">Tareas recurrentes</strong>
+                  <span data-i18n="owners.planned_2_desc">crear automáticamente encargos rutinarios como limpieza, inspecciones y mantenimiento.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_3_title">Flujos de aprobación</strong>
+                  <span data-i18n="owners.planned_3_desc">definir quién debe aprobar compras, gastos y órdenes de servicio.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_4_title">Rendimiento de la propiedad</strong>
+                  <span data-i18n="owners.planned_4_desc">ver ingresos, costes, ocupación, mantenimiento y actividad operativa por propiedad.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_5_title">Recordatorios automáticos</strong>
+                  <span data-i18n="owners.planned_5_desc">plazos, encargos próximos, documentos que caducan, facturas impagadas y mantenimiento programado.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_6_title">Documentos y contratos</strong>
+                  <span data-i18n="owners.planned_6_desc">guardar arrendamientos, facturas, garantías, contratos y documentos de la propiedad en un solo sitio.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_7_title">Historial de mantenimiento</strong>
+                  <span data-i18n="owners.planned_7_desc">llevar un registro completo de reparaciones, costes, proveedores y problemas recurrentes de cada propiedad.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_8_title">Planificación inteligente</strong>
+                  <span data-i18n="owners.planned_8_desc">coordinar personal, proveedores y tareas en torno a reservas y disponibilidad.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_9_title">Analítica avanzada de la empresa</strong>
+                  <span data-i18n="owners.planned_9_desc">comparar propiedades, equipos, costes y rendimiento operativo a lo largo del tiempo.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_10_title">Integraciones contables</strong>
+                  <span data-i18n="owners.planned_10_desc">conectar herramientas de contabilidad externas para reducir el trabajo financiero a mano.</span>
+                </li>
+              </ul>
             </div>
           </details>
         </section>
 
-<section class="pf-faq" id="faq" aria-labelledby="faq-title">
-          <h2 id="faq-title" data-i18n="common.faq_title">FAQ</h2>
-          <details>
-            <summary data-i18n="owners.faq_q1">Ya tengo Airbnb y Booking. ¿Para qué otra cosa?</summary>
-            <p data-i18n="owners.faq_a1">No va de reservas ni de precios. Eso se queda donde está. Las fechas de entrada y salida se introducen a mano, y está previsto importarlas desde Google Calendar. No hay sincronización directa con Airbnb ni Booking.</p>
-          </details>
-          <details>
-            <summary data-i18n="owners.faq_q2">Mi equipo no lo usará nunca.</summary>
-            <p data-i18n="owners.faq_a2">Lo abren desde un enlace, sin tienda de aplicaciones y sin cuenta nueva. Lo que obtienen es su propia pantalla: sus propiedades, sus encargos, en su idioma. Las plazas del equipo son gratis, así que probarlo no les cuesta nada ni a usted ni a ellos.</p>
-          </details>
-          <details>
-            <summary data-i18n="owners.faq_q3">¿Y el dinero de los huéspedes?</summary>
-            <p data-i18n="owners.faq_a3">Pagos y fianzas van directos a usted, fuera de la aplicación. La aplicación registra la fianza, cada retención con foto y el saldo, y su huésped ve exactamente lo mismo. Ningún pago transita por la aplicación.</p>
-          </details>
-        </section>
-
-        <section class="pf-soon" id="soon" aria-labelledby="soon-title">
-          <h2 id="soon-title" data-i18n="owners.soon_title">Lo que la aplicación no hace</h2>
-          <ul>
-            <li data-i18n="owners.soon_1">Importar reservas desde Google Calendar. Previsto. Hoy las fechas se introducen a mano.</li>
-            <li data-i18n="owners.soon_2">Cobrar un pago dentro de una petición de reserva. El huésped pide fechas, precio y pago los acordáis vosotros.</li>
-            <li data-i18n="owners.soon_3">Conectar directamente con Airbnb o Booking. Ni hoy ni en la hoja de ruta cercana.</li>
-          </ul>
-        </section>
-
         <section class="pf-price-line" id="price">
-          <p data-i18n="owners.price_line">Un espacio particular es gratis para siempre. En una empresa paga el propietario y las plazas del equipo son gratis. La facturación aún no está en marcha, así que las cuentas registradas tienen 3 meses de acceso completo.</p>
+          <p data-i18n="owners.price_line">En una empresa paga el propietario y las plazas del equipo son gratis. La facturación aún no está en marcha, así que las cuentas registradas tienen 3 meses de acceso completo, y si invita a 5 personas, puede obtener un año de acceso completo gratis.</p>
         </section>
 
         <section class="pf-demo" id="demo-now" aria-labelledby="demo-now-title" data-demo-login>
@@ -477,7 +454,7 @@
             height="64"
             alt=""
           />
-          <h2 data-i18n="owners.close_title">Abra la aplicación y mire su día</h2><a
+          <h2 data-i18n="owners.close_title">Sepa qué ocurre, sin estar ahí</h2><a
             class="pf-btn-primary"
             href="https://app.pulseflow.site/register"
             data-i18n="owners.close_cta"

@@ -107,6 +107,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/ru/owners" />
     <meta
@@ -157,7 +173,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=66" />
+    <link rel="stylesheet" href="/styles.css?v=68" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -180,8 +196,6 @@
           />
           <span class="pf-brand-name">Pulse Flow</span>
         </a>
-        <nav class="pf-role-nav" aria-label="Site">
-          <a href="/ru/owners" data-i18n="nav.owners">Владельцам</a><a href="/ru/managers" data-i18n="nav.managers">Управляющим</a><a href="/ru/staff" data-i18n="nav.staff">Персоналу</a><a href="/ru/guests" data-i18n="nav.guests">Гостям</a><a href="/ru/#plans" data-i18n="nav.plans">Тарифы</a></nav>
         <div class="pf-nav-actions">
           <label class="pf-lang">
             <span class="pf-visually-hidden" data-i18n="nav.language"
@@ -213,23 +227,14 @@
               />
               <span class="pf-brand-name">Pulse Flow</span>
             </p>
-          <p class="pf-owners-badge" data-i18n="owners.badge">Для владельцев</p>
-          <h1 class="pf-headline" data-i18n="owners.headline">Знайте, что происходит на объектах, не спрашивая</h1>
-          <p class="pf-sub" data-i18n="owners.sub">Загрузка, срочные работы, заезды и каждая трата по объектам. Одна картина у вас, управляющего и персонала.</p>
+          <p class="pf-owners-badge" data-i18n="owners.badge">Для владельцев собственности</p>
+          <h1 class="pf-headline" data-i18n="owners.headline">Знайте, что происходит на объектах, не задавая лишних вопросов</h1>
+          <p class="pf-sub" data-i18n="owners.sub">Загрузка, срочные работы, заезды и все траты по объектам. Одна картина у вас, управляющего и персонала.</p>
           <div class="pf-owners-hero-actions">
             <a class="pf-btn-primary" href="https://app.pulseflow.site/register" data-i18n="owners.cta_start">Начать бесплатно</a>
             <a class="pf-owners-link" href="https://app.pulseflow.site/login?demo=owner" data-i18n="owners.cta_demo">Открыть демо владельца</a>
           </div>
-          <p class="pf-free-note" data-i18n="owners.free_note">Платите только вы. Управляющие, персонал и гости пользуются бесплатно.</p>
-        </section>
-
-        <section class="pf-alt" id="alternative" aria-labelledby="alt-title">
-          <h2 id="alt-title" data-i18n="common.alt_title">Что ломается сейчас</h2>
-          <ul class="pf-alt-list">
-            <li data-i18n="owners.alt_1">Статус приходится спрашивать, и ответ зависит от того, кто когда посмотрел в телефон.</li>
-            <li data-i18n="owners.alt_2">Расходы сводятся по фотографиям чеков в переписке, в конце месяца и по памяти.</li>
-            <li data-i18n="owners.alt_3">Ушёл управляющий, и вместе с ним ушли контакты подрядчиков и договорённости.</li>
-          </ul>
+          <p class="pf-free-note" data-i18n="owners.free_note">Оплата заработает в IV квартале 2026</p>
         </section>
 
         <section class="pf-guide-section">
@@ -237,7 +242,7 @@
             <article class="pf-guide-flagship" id="f1">
               <div class="pf-guide-flagship-copy">
                 <h2 data-i18n="owners.f1_title">Весь день на одном экране</h2>
-                <p data-i18n="owners.f1_desc">Загрузка, готовность объектов, ближайшие заезды и то, что горит прямо сейчас. Данные вносит команда по ходу работы, вам остаётся смотреть.</p>
+                <p data-i18n="owners.f1_desc">Загрузка, готовность объектов, ближайшие заезды и то, что горит прямо сейчас. Данные вносит команда по ходу работы, вам остаётся проверить.</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -257,7 +262,7 @@
             <article class="pf-guide-flagship" id="f2">
               <div class="pf-guide-flagship-copy">
                 <h2 data-i18n="owners.f2_title">Каждая трата привязана к объекту</h2>
-                <p data-i18n="owners.f2_desc">Персонал отправляет расход с фотографией чека, вы утверждаете одним нажатием. Фильтр по периоду, объекту и категории, и три цифры сразу: всего, оплачено, в ожидании. Двадцать валют с пересчётом.</p>
+                <p data-i18n="owners.f2_desc">Персонал отправляет расход с фотографией чека, вы подтверждаете одним нажатием. Фильтр по периоду, объекту и категории, и три цифры сразу: всего, оплачено, в ожидании. Двадцать валют с пересчётом.</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -276,8 +281,8 @@
             </article>
             <article class="pf-guide-flagship" id="f3">
               <div class="pf-guide-flagship-copy">
-                <h2 data-i18n="owners.f3_title">Заказ, который приняли</h2>
-                <p data-i18n="owners.f3_desc">Заказ уходит с описанием, объектом и окном времени. Кто есть в приложении, подтверждает работу нажатием, и вы видите статус. Кому удобнее по-старому, звоните или пишите в WhatsApp и LINE прямо из карточки контакта.</p>
+                <h2 data-i18n="owners.f3_title">Заявки на работы по объектам принимаются через приложение</h2>
+                <p data-i18n="owners.f3_desc">Заказ уходит с описанием, объектом и окном времени. У кого есть приложение, подтверждает работу кликом, и вы видите статус. Кому удобнее по-старому, звоните или пишите прямо из карточки контакта.</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -297,101 +302,73 @@
           </div>
         </section>
 
-        <section class="pf-lang-block" id="translation" aria-labelledby="lang-title">
-          <div>
-            <h2 id="lang-title" data-i18n="owners.lang_title">Один язык на всю команду</h2>
-            <p data-i18n="owners.lang_desc">Вы пишете задачу по-русски, горничная читает по-тайски, менеджер по-английски. Тумблер в профиле переводит задачи, командный чат и брифинги гостям на язык, который человек выбрал себе сам. Не кнопки интерфейса, а содержание.</p>
-          </div>
-          <div class="pf-phone-solo">
-            <figure class="pf-phone">
-                                <div class="pf-phone-screen">
-                    <img
-                      src="/assets/screenshots/ru/owner-translate-hero.png"
-                      width="780"
-                      height="1522"
-                      alt="Настройка перевода командного контента в профиле"
-                      data-i18n-attr="alt:common.lang_alt"
-                      loading="lazy"
-                    />
-                  </div>
-            </figure>
-          </div>
-        </section>
         <section class="pf-features" id="features" aria-labelledby="features-title">
           <details class="pf-features-panel">
-            <summary id="features-title" data-i18n="common.features_summary">Список возможностей — раскрыть всё</summary>
+            <summary id="features-title" data-i18n="common.features_summary">Список возможностей - раскрыть всё</summary>
             <div class="pf-features-body">
               <div class="pf-features-access">
                 <h3 data-i18n="common.features_access_title">Что доступно этой роли</h3>
-                <ul>
-                  <li data-i18n="common.roles_owner_li1">Все объекты компании, и редактирует их список</li>
-                  <li data-i18n="common.roles_owner_li2">Все задачи, работы и финансы, утверждает счета</li>
-                  <li data-i18n="common.roles_owner_li3">Данные организации и раздача доступа к объектам</li>
-                </ul>
+                <p class="pf-features-access-lead" data-i18n="owners.features_access_lead">Аккаунт компании - центр управления всей работой.</p>
+                <h4 data-i18n="owners.access_g1_title">Объекты</h4>
+                <p data-i18n="owners.access_g1_desc">Управляйте всеми объектами компании, обновляйте данные, назначайте людей на объекты и держите портфель в порядке. Добавляйте гиды по домам, заметки и важную информацию по каждому объекту.</p>
+                <h4 data-i18n="owners.access_g2_title">Люди и доступ</h4>
+                <p data-i18n="owners.access_g2_desc">Управляйте организацией, приглашайте управляющих, персонал и гостей, назначайте конкретные объекты конкретным людям и решайте, у кого какой доступ. Ищите и выбирайте персонал по навыкам, району, карте и отзывам. Держите команду на связи через чат, упоминания, еженедельные оценки и рейтинг компании.</p>
+                <h4 data-i18n="owners.access_g3_title">Операции</h4>
+                <p data-i18n="owners.access_g3_desc">Создавайте, назначайте, отслеживайте и закрывайте задачи по компании. Контролируйте заявки, сервисные заказы и подрядчиков, с прямым звонком, WhatsApp или LINE. Подтверждайте сервисные заказы и следите за всем, что происходит по портфелю.</p>
+                <h4 data-i18n="owners.access_g4_title">Деньги</h4>
+                <p data-i18n="owners.access_g4_desc">Просматривайте и подтверждайте счета, следите за расходами компании и депозитами гостей, включая удержания с фото. Работайте с двадцатью валютами с автоматическим пересчётом.</p>
+                <h4 data-i18n="owners.access_g5_title">Будьте в курсе и под контролем</h4>
+                <p data-i18n="owners.access_g5_desc">Получайте уведомления в приложении и push на телефон, формируйте отчёты и выгрузки по категориям или по всей компании, следите за рефералами и приглашениями в команду.</p>
               </div>
-              <h3 class="pf-features-more-title" data-i18n="common.more_title">Всё остальное, что уже работает</h3>
-              <div class="pf-more-groups">
-              <div class="pf-more-group">
-                <h3 data-i18n="owners.more_g1_title">Команда</h3>
-                <ul>
-                  <li data-i18n="owners.more_g1_li1">Приглашение управляющих, персонала и гостей</li>
-                  <li data-i18n="owners.more_g1_li2">Командный чат с упоминаниями</li>
-                  <li data-i18n="owners.more_g1_li3">Назначение конкретных объектов конкретным людям</li>
-                  <li data-i18n="owners.more_g1_li4">Еженедельные оценки и рейтинг компании</li>
-                  <li data-i18n="owners.more_g1_li5">Поиск персонала: навыки, район, карта, отзывы</li>
-                </ul>
-              </div>
-              <div class="pf-more-group">
-                <h3 data-i18n="owners.more_g2_title">Работа</h3>
-                <ul>
-                  <li data-i18n="owners.more_g2_li1">Задачи по компании: поставить, отследить, закрыть</li>
-                  <li data-i18n="owners.more_g2_li2">Справочник подрядчиков со звонком, WhatsApp и LINE</li>
-                  <li data-i18n="owners.more_g2_li3">Сервисные заказы с подтверждением</li>
-                  <li data-i18n="owners.more_g2_li4">Гид по дому и заметки на каждом объекте</li>
-                  <li data-i18n="owners.more_g2_li5">Депозиты гостей: сумма, удержания с фото, остаток</li>
-                </ul>
-              </div>
-              <div class="pf-more-group">
-                <h3 data-i18n="owners.more_g3_title">Данные</h3>
-                <ul>
-                  <li data-i18n="owners.more_g3_li1">Отчёты и выгрузка по категориям или целиком</li>
-                  <li data-i18n="owners.more_g3_li2">Уведомления в приложении и push на телефон</li>
-                  <li data-i18n="owners.more_g3_li3">Двадцать валют с пересчётом</li>
-                  <li data-i18n="owners.more_g3_li4">Реферальная ссылка и прогресс приглашений</li>
-                </ul>
-              </div>
-              </div>
+              <h3 class="pf-features-more-title" data-i18n="owners.planned_title">В планах</h3>
+              <ul class="pf-features-list is-planned">
+                <li>
+                  <strong data-i18n="owners.planned_1_title">Синхронизация с Google Календарём</strong>
+                  <span data-i18n="owners.planned_1_desc">подключите календари компании и объектов, чтобы брони, задачи и важные даты оставались согласованными.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_2_title">Повторяющиеся задачи</strong>
+                  <span data-i18n="owners.planned_2_desc">автоматически создавать регулярные работы: уборку, осмотры и обслуживание.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_3_title">Согласования</strong>
+                  <span data-i18n="owners.planned_3_desc">задайте, кто утверждает закупки, расходы и сервисные заказы.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_4_title">Показатели объекта</strong>
+                  <span data-i18n="owners.planned_4_desc">выручка, затраты, загрузка, обслуживание и операционная активность по каждому объекту.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_5_title">Автоматические напоминания</strong>
+                  <span data-i18n="owners.planned_5_desc">сроки, ближайшие работы, истекающие документы, неоплаченные счета и плановое обслуживание.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_6_title">Документы и договоры</strong>
+                  <span data-i18n="owners.planned_6_desc">храните договоры аренды, счета, гарантии, контракты и документы объектов в одном месте.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_7_title">История обслуживания</strong>
+                  <span data-i18n="owners.planned_7_desc">полный учёт ремонтов, затрат, подрядчиков и повторяющихся проблем по каждому объекту.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_8_title">Умное планирование</strong>
+                  <span data-i18n="owners.planned_8_desc">согласовывать персонал, подрядчиков и задачи с бронями и доступностью.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_9_title">Расширенная аналитика компании</strong>
+                  <span data-i18n="owners.planned_9_desc">сравнивать объекты, команды, затраты и операционные показатели во времени.</span>
+                </li>
+                <li>
+                  <strong data-i18n="owners.planned_10_title">Интеграции с бухгалтерией</strong>
+                  <span data-i18n="owners.planned_10_desc">подключить внешние бухгалтерские инструменты, чтобы меньше сводить финансы вручную.</span>
+                </li>
+              </ul>
             </div>
           </details>
         </section>
 
-<section class="pf-faq" id="faq" aria-labelledby="faq-title">
-          <h2 id="faq-title" data-i18n="common.faq_title">FAQ</h2>
-          <details>
-            <summary data-i18n="owners.faq_q1">У меня уже есть Airbnb и Booking. Зачем ещё одно?</summary>
-            <p data-i18n="owners.faq_a1">Мы не про брони и не про цены. Брони остаются там, где были. Даты заезда и выезда вносятся вручную, импорт из Google Календаря в планах. Прямой синхронизации с Airbnb и Booking нет.</p>
-          </details>
-          <details>
-            <summary data-i18n="owners.faq_q2">Команда не начнёт этим пользоваться.</summary>
-            <p data-i18n="owners.faq_a2">Персонал открывает приложение по ссылке, без магазина приложений и без нового аккаунта. У него свой экран: только его объекты и его работы, на его языке. Места для команды бесплатны, поэтому попробовать ничего не стоит ни вам, ни им.</p>
-          </details>
-          <details>
-            <summary data-i18n="owners.faq_q3">Что с деньгами гостей?</summary>
-            <p data-i18n="owners.faq_a3">Оплата и депозит идут напрямую вам, вне приложения. Приложение фиксирует сумму депозита, удержания с фотографией и остаток, и ровно то же видит гость. Оплаты внутри приложения нет.</p>
-          </details>
-        </section>
-
-        <section class="pf-soon" id="soon" aria-labelledby="soon-title">
-          <h2 id="soon-title" data-i18n="owners.soon_title">Чего в приложении нет</h2>
-          <ul>
-            <li data-i18n="owners.soon_1">Импорта броней из Google Календаря. В планах. Сейчас даты вносятся вручную.</li>
-            <li data-i18n="owners.soon_2">Оплаты внутри запроса на бронирование. Гость запрашивает даты, цену и оплату вы обсуждаете сами.</li>
-            <li data-i18n="owners.soon_3">Прямых интеграций с Airbnb и Booking. Их нет и в ближайших планах тоже.</li>
-          </ul>
-        </section>
-
         <section class="pf-price-line" id="price">
-          <p data-i18n="owners.price_line">Личное пространство бесплатно навсегда. За компанию платит владелец, места команды бесплатны. Оплата ещё не подключена, у зарегистрированных аккаунтов 3 месяца полного доступа.</p>
+          <p data-i18n="owners.price_line">За компанию платит владелец, места команды бесплатны. Оплата ещё не подключена, у зарегистрированных аккаунтов 3 месяца полного доступа, а если пригласить 5 человек, можно получить год полного доступа бесплатно.</p>
         </section>
 
         <section class="pf-demo" id="demo-now" aria-labelledby="demo-now-title" data-demo-login>
@@ -477,7 +454,7 @@
             height="64"
             alt=""
           />
-          <h2 data-i18n="owners.close_title">Откройте приложение и посмотрите свой день</h2><a
+          <h2 data-i18n="owners.close_title">Знайте, что происходит, даже когда вас нет на месте</h2><a
             class="pf-btn-primary"
             href="https://app.pulseflow.site/register"
             data-i18n="owners.close_cta"

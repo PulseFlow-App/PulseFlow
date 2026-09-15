@@ -1990,6 +1990,26 @@ a.pf-audience-card:hover {
   font-weight: 800;
 }
 
+.pf-features-access-lead {
+  margin: 0 0 12px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  font-size: 0.98rem;
+}
+
+.pf-features-access h4 {
+  margin: 14px 0 4px;
+  font-size: 0.98rem;
+  font-weight: 800;
+}
+
+.pf-features-access h4 + p {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
 .pf-features-access ul {
   margin: 0;
   padding-inline-start: 1.15rem;
@@ -2002,6 +2022,26 @@ a.pf-audience-card:hover {
 
 .pf-features-more-title {
   margin-top: 18px;
+}
+
+.pf-features-list {
+  margin: 0;
+  padding-inline-start: 1.15rem;
+  display: grid;
+  gap: 8px;
+  color: var(--ink-soft);
+  line-height: 1.45;
+  font-size: 0.95rem;
+}
+
+.pf-features-list.is-planned li strong {
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.pf-features-list.is-planned li strong::after {
+  content: " - ";
+  font-weight: 700;
 }
 
 .pf-features-body .pf-more-groups {
@@ -4235,8 +4275,7 @@ h3 {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
     grid-template-areas:
-      "logo actions"
-      "roles roles";
+      "logo actions";
     align-items: center;
     column-gap: 8px;
     row-gap: 2px;
@@ -4425,11 +4464,9 @@ h3 {
 
 @media (max-width: 439px) {
   .pf-nav {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr) auto;
     grid-template-areas:
-      "logo"
-      "roles"
-      "actions";
+      "logo actions";
     column-gap: 6px;
   }
 
@@ -4440,12 +4477,6 @@ h3 {
   .pf-nav-actions {
     justify-self: end;
   }
-
-  .pf-role-nav {
-    margin-inline: 0;
-    padding-inline: 0;
-    width: 100%;
-  }
 }
 
 @media (max-width: 359px) {
@@ -4454,11 +4485,9 @@ h3 {
   }
 
   .pf-nav {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr) auto;
     grid-template-areas:
-      "logo"
-      "roles"
-      "actions";
+      "logo actions";
   }
 
   .pf-logo {
@@ -4469,10 +4498,6 @@ h3 {
 
   .pf-nav-actions {
     justify-self: end;
-  }
-
-  .pf-role-nav {
-    width: 100%;
   }
 
   .pf-pulse-mark {
