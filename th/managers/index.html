@@ -123,6 +123,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/th/managers" />
     <meta
@@ -173,7 +189,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=68" />
+    <link rel="stylesheet" href="/styles.css?v=69" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -228,22 +244,13 @@
               <span class="pf-brand-name">Pulse Flow</span>
             </p>
           <p class="pf-owners-badge" data-i18n="managers.badge">สำหรับผู้จัดการบ้าน</p>
-          <h1 class="pf-headline" data-i18n="managers.headline">จัดวันหนึ่งครั้ง ไม่ต้องจัดใหม่ในทุกแชท</h1>
-          <p class="pf-sub" data-i18n="managers.sub">อะไรด่วน ใครอยู่หน้างาน เช็คอินไหนกำลังมา และบิลไหนยังเปิด เจ้าของเห็นสิ่งเดียวกันแล้วเลิกถาม</p>
+          <h1 class="pf-headline" data-i18n="managers.headline">อัปเดตครั้งเดียว แล้วทุกคนในทีมเห็น</h1>
+          <p class="pf-sub" data-i18n="managers.sub">อะไรด่วน ใครอยู่หน้างาน เช็คอินไหนกำลังมา และบิลไหนยังเปิด เจ้าของเห็นสิ่งเดียวกันแล้วเลิกถามคำถาม</p>
           <div class="pf-owners-hero-actions">
             <a class="pf-btn-primary" href="https://app.pulseflow.site/register" data-i18n="managers.cta_start">เริ่มฟรี</a>
             <a class="pf-owners-link" href="https://app.pulseflow.site/login?demo=manager" data-i18n="managers.cta_demo">เปิดเดโมผู้จัดการ</a>
           </div>
           <p class="pf-free-note" data-i18n="managers.free_note">ที่นั่งคุณฟรี เจ้าของบริษัทเป็นคนจ่าย</p>
-        </section>
-
-        <section class="pf-alt" id="alternative" aria-labelledby="alt-title">
-          <h2 id="alt-title" data-i18n="common.alt_title">สิ่งที่พังอยู่ตอนนี้</h2>
-          <ul class="pf-alt-list">
-            <li data-i18n="managers.alt_1">แผนวันนี้ถูกประกอบใหม่ในสามแชททุกเช้า</li>
-            <li data-i18n="managers.alt_2">เจ้าของถามสถานะ แล้วคุณประกอบคำตอบใหม่ด้วยมือ</li>
-            <li data-i18n="managers.alt_3">แม่บ้านไม่เห็นข้อความ คุณรู้จากแขก</li>
-          </ul>
         </section>
 
         <section class="pf-guide-section">
@@ -270,8 +277,8 @@
             </article>
             <article class="pf-guide-flagship" id="f2">
               <div class="pf-guide-flagship-copy">
-                <h2 data-i18n="managers.f2_title">งานออกไปแล้วมีคนรับ</h2>
-                <p data-i18n="managers.f2_desc">อะไร ที่ไหน เมื่อไหร่ ส่งครั้งเดียว คนที่อยู่ในแอปยืนยันด้วยการแตะ คุณกับเจ้าของเห็นพร้อมกัน คนที่โทรง่ายกว่า ติดต่อจากบัตรใบเดียวกัน: โทร WhatsApp LINE</p>
+                <h2 data-i18n="managers.f2_title">งานซ่อมบำรุงรับงานในแอป</h2>
+                <p data-i18n="managers.f2_desc">งานถูกส่งออกพร้อมคำอธิบาย ที่พักที่กำหนด และช่วงเวลาทำงาน ใครที่อยู่ในแอปกดยืนยันครั้งเดียว แล้วคุณเห็นสถานะเปลี่ยน ส่วนคนที่สะดวกให้โทรหา ก็โทรหรือส่งข้อความจากการ์ดผู้ติดต่อเดียวกัน</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -290,7 +297,7 @@
             </article>
             <article class="pf-guide-flagship" id="f3">
               <div class="pf-guide-flagship-copy">
-                <h2 data-i18n="managers.f3_title">รายงานประกอบเองจากสิ่งที่เกิดแล้ว</h2>
+                <h2 data-i18n="managers.f3_title">รายงานส่งออกได้ จบในคลิกเดียว</h2>
                 <p data-i18n="managers.f3_desc">งาน บิล เช็คอิน และงานในช่วงเวลา ส่งออกตามหมวดหรือทั้งหมดในครั้งเดียว การส่งกะรายสัปดาห์ไม่ใช่สิ่งที่คุณนั่งพิมพ์วันศุกร์อีกต่อไป</p>
               </div>
               <div class="pf-phone-solo">
@@ -317,70 +324,63 @@
             <div class="pf-features-body">
               <div class="pf-features-access">
                 <h3 data-i18n="common.features_access_title">บทบาทนี้ทำอะไรได้</h3>
-                <ul>
-                  <li data-i18n="common.roles_manager_li1">บ้านทุกหลังของบริษัท แต่แก้รายชื่อไม่ได้</li>
-                  <li data-i18n="common.roles_manager_li2">งาน ใบสั่งงาน และการเงินทั้งหมด อนุมัติบิลได้</li>
-                  <li data-i18n="common.roles_manager_li3">ไม่มีตั้งค่าองค์กร ไม่ได้แจกสิทธิ์เข้าบ้าน ไม่มีบิลค่าบริการ</li>
-                </ul>
+                <p class="pf-features-access-lead" data-i18n="managers.features_access_lead">คุณมีสิทธิ์ทำงานเท่ากับเจ้าของ ส่วนข้อมูลองค์กร รายการที่พักของบริษัท และการให้สิทธิ์เข้าถึงที่พักยังเป็นของเจ้าของ</p>
+                <h4 data-i18n="managers.access_g1_title">ที่พัก</h4>
+                <p data-i18n="managers.access_g1_desc">ดูที่พักทุกหลังของบริษัทพร้อมสถานะ วันที่ และรายละเอียด และอัปเดตคู่มือบ้าน โน้ต และข้อมูลสำคัญของแต่ละหลังให้เป็นปัจจุบัน</p>
+                <h4 data-i18n="managers.access_g2_title">คนและสิทธิ์เข้าถึง</h4>
+                <p data-i18n="managers.access_g2_desc">เชิญพนักงาน แขก และเพื่อนร่วมงาน และหาคนใหม่จากการค้นหาพนักงานตามทักษะ พื้นที่ แผนที่ และรีวิว ให้ทีมเชื่อมต่อกันด้วยแชท การแท็ก การรับรองรายสัปดาห์ และกระดานคะแนนบริษัท</p>
+                <h4 data-i18n="managers.access_g3_title">การปฏิบัติงาน</h4>
+                <p data-i18n="managers.access_g3_desc">สร้าง มอบหมาย ติดตาม และปิดงานทั้งบริษัท พร้อมตัวกรองงานของฉันและงานด่วน ส่งงานและออเดอร์บริการที่ยืนยันได้ด้วยการแตะครั้งเดียว ติดต่อผู้รับเหมาทางโทร WhatsApp หรือ LINE และดูแลแขก ทั้งเงินประกัน การหัก คำแนะนำ และคำขอวันเข้าพัก</p>
+                <h4 data-i18n="managers.access_g4_title">เงิน</h4>
+                <p data-i18n="managers.access_g4_desc">ตรวจและอนุมัติบิล กรองและรวมยอดการเงินของบริษัท และทำเครื่องหมายว่าจ่ายแล้ว ทำงานได้ 20 สกุลเงิน พร้อมแปลงอัตโนมัติ การชำระค่าบัญชียังเป็นของเจ้าของ</p>
+                <h4 data-i18n="managers.access_g5_title">รับรู้ข้อมูลและควบคุมได้</h4>
+                <p data-i18n="managers.access_g5_desc">รับการแจ้งเตือนในแอปและพุชบนโทรศัพท์ และดึงรายงานกับไฟล์ส่งออกตามหมวดเดียวหรือทั้งบริษัท สรุปส่งงานรายสัปดาห์จึงเขียนเสร็จอยู่แล้ว</p>
               </div>
-              <h3 class="pf-features-more-title" data-i18n="common.more_title">อย่างอื่นที่ใช้งานได้อยู่แล้ว</h3>
-              <div class="pf-more-groups">
-              <div class="pf-more-group">
-                <h3 data-i18n="managers.more_g1_title">ทีม</h3>
-                <ul>
-                  <li data-i18n="managers.more_g1_li1">เชิญพนักงาน แขก และเพื่อนร่วมงาน</li>
-                  <li data-i18n="managers.more_g1_li2">แชททีมพร้อมการแท็ก</li>
-                  <li data-i18n="managers.more_g1_li3">การรับรองรายสัปดาห์ และกระดานคะแนนบริษัท</li>
-                  <li data-i18n="managers.more_g1_li4">ค้นหาพนักงาน: ทักษะ พื้นที่ แผนที่ รีวิว</li>
-                </ul>
-              </div>
-              <div class="pf-more-group">
-                <h3 data-i18n="managers.more_g2_title">งาน</h3>
-                <ul>
-                  <li data-i18n="managers.more_g2_li1">งานทั้งบริษัท พร้อมตัวกรองของฉันและด่วน</li>
-                  <li data-i18n="managers.more_g2_li2">สมุดช่างพร้อมโทร WhatsApp และ LINE</li>
-                  <li data-i18n="managers.more_g2_li3">ใบสั่งงานพร้อมการยืนยัน</li>
-                  <li data-i18n="managers.more_g2_li4">คู่มือบ้านและโน้ตทุกหลัง</li>
-                  <li data-i18n="managers.more_g2_li5">แขก: เงินประกัน การหัก บรีฟ คำขอวันที่</li>
-                </ul>
-              </div>
-              <div class="pf-more-group">
-                <h3 data-i18n="managers.more_g3_title">ข้อมูล</h3>
-                <ul>
-                  <li data-i18n="managers.more_g3_li1">รายงานและส่งออก ตามหมวดหรือทั้งหมด</li>
-                  <li data-i18n="managers.more_g3_li2">การเงิน: ตัวกรอง ยอดรวม ทำเครื่องหมายว่าจ่ายแล้ว</li>
-                  <li data-i18n="managers.more_g3_li3">การแจ้งเตือนในแอป และพุชบนมือถือ</li>
-                  <li data-i18n="managers.more_g3_li4">ยี่สิบสกุลเงินพร้อมแปลงอัตรา</li>
-                </ul>
-              </div>
-              </div>
+              <h3 class="pf-features-more-title" data-i18n="managers.planned_title">ฟีเจอร์ที่วางแผนไว้</h3>
+              <ul class="pf-features-list is-planned">
+                <li>
+                  <strong data-i18n="managers.planned_1_title">ซิงก์ Google Calendar</strong>
+                  <span data-i18n="managers.planned_1_desc">เชื่อมปฏิทินบริษัทและที่พัก ให้การจอง งาน และวันที่สำคัญอยู่ตรงกัน</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_2_title">งานที่เกิดซ้ำ</strong>
+                  <span data-i18n="managers.planned_2_desc">สร้างงานประจำอัตโนมัติ เช่น ทำความสะอาด ตรวจบ้าน และซ่อมบำรุง</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_3_title">ขั้นตอนการอนุมัติ</strong>
+                  <span data-i18n="managers.planned_3_desc">กำหนดว่าใครต้องอนุมัติการซื้อ ค่าใช้จ่าย และออเดอร์บริการ</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_4_title">ผลประกอบการที่พัก</strong>
+                  <span data-i18n="managers.planned_4_desc">ดูรายได้ ต้นทุน การเข้าพัก งานซ่อม และกิจกรรมปฏิบัติการต่อหลัง</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_5_title">การเตือนอัตโนมัติ</strong>
+                  <span data-i18n="managers.planned_5_desc">กำหนดส่ง งานที่ใกล้ถึง เอกสารหมดอายุ บิลค้าง และงานบำรุงตามตาราง</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_6_title">เอกสารและสัญญา</strong>
+                  <span data-i18n="managers.planned_6_desc">เก็บสัญญาเช่า ใบแจ้งหนี้ การรับประกัน สัญญา และเอกสารที่พักไว้ที่เดียว</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_7_title">ประวัติการซ่อมบำรุง</strong>
+                  <span data-i18n="managers.planned_7_desc">บันทึกการซ่อม ค่าใช้จ่าย ผู้รับเหมา และปัญหาที่เกิดซ้ำของแต่ละที่พักให้ครบ</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_8_title">จัดตารางอัจฉริยะ</strong>
+                  <span data-i18n="managers.planned_8_desc">ประสานพนักงาน ผู้รับเหมา และงานให้เข้ากับการจองและความว่าง</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_9_title">วิเคราะห์บริษัทขั้นสูง</strong>
+                  <span data-i18n="managers.planned_9_desc">เปรียบเทียบที่พัก ทีม ต้นทุน และผลการปฏิบัติงานตามเวลา</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_10_title">เชื่อมบัญชี</strong>
+                  <span data-i18n="managers.planned_10_desc">เชื่อมเครื่องมือบัญชีภายนอก เพื่อลดงานการเงินที่ทำมือ</span>
+                </li>
+              </ul>
             </div>
           </details>
-        </section>
-
-<section class="pf-faq" id="faq" aria-labelledby="faq-title">
-          <h2 id="faq-title" data-i18n="common.faq_title">FAQ</h2>
-          <details>
-            <summary data-i18n="managers.faq_q1">อีกหนึ่งระบบที่ต้องอัปเดตด้วยมือ</summary>
-            <p data-i18n="managers.faq_a1">ใส่ข้อมูลตรงที่ทำงาน: สร้างงานจากบัตรรายชื่อ คนที่จ่ายถ่ายใบเสร็จ สถานะบ้านเปลี่ยนที่หน้างาน ไม่มีขั้นตอนแยกของการดูแลระบบ วันที่เช็คอินและเช็คเอาต์ตอนนี้พิมพ์เองจริง ๆ มีแผนนำเข้าจาก Google Calendar</p>
-          </details>
-          <details>
-            <summary data-i18n="managers.faq_q2">ตอนนี้เจ้าของมองข้ามไหล่ฉัน</summary>
-            <p data-i18n="managers.faq_a2">เขาเห็นสิ่งที่คุณเห็น นั่นคือเหตุผลที่เขาเลิกถาม ต่างกันระหว่าง «บอกหน่อยว่าเกิดอะไร» กับ «ฉันเห็นว่าเกิดอะไร» มักเป็นคุณที่ได้เปรียบ</p>
-          </details>
-          <details>
-            <summary data-i18n="managers.faq_q3">ฉันทำอะไรไม่ได้บ้าง</summary>
-            <p data-i18n="managers.faq_a3">เปลี่ยนข้อมูลองค์กร แก้รายชื่อบ้านของบริษัท หรือมอบหมายบ้านให้ผู้จัดการคนอื่น นอกนั้นเหมือนเจ้าของ บิลค่าบริการก็ไม่ใช่ของคุณ</p>
-          </details>
-        </section>
-
-        <section class="pf-soon" id="soon" aria-labelledby="soon-title">
-          <h2 id="soon-title" data-i18n="managers.soon_title">สิ่งที่แอปยังไม่ทำ</h2>
-          <ul>
-            <li data-i18n="managers.soon_1">นำเข้าการจองจาก Google Calendar อยู่ในแผน วันที่ตอนนี้ใส่เอง</li>
-            <li data-i18n="managers.soon_2">รับเงินในคำขอจอง แขกขอวันที่ โฮสต์ตกลงราคาและการจ่ายกันเอง</li>
-            <li data-i18n="managers.soon_3">เชื่อมตรงกับ Airbnb หรือ Booking วันนี้ยังไม่มี และยังไม่อยู่ในโรดแมปใกล้ ๆ</li>
-          </ul>
         </section>
 
         <section class="pf-price-line" id="price">
@@ -485,6 +485,6 @@
           <a href="https://app.pulseflow.site" data-i18n="footer.app">แอป</a></div>
       </footer>
     </div>
-    <script src="/script.js?v=27" defer></script>
+    <script src="/script.js?v=28" defer></script>
   </body>
 </html>

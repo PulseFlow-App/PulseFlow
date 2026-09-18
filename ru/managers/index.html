@@ -123,6 +123,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/ru/managers" />
     <meta
@@ -173,7 +189,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=68" />
+    <link rel="stylesheet" href="/styles.css?v=69" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -228,22 +244,13 @@
               <span class="pf-brand-name">Pulse Flow</span>
             </p>
           <p class="pf-owners-badge" data-i18n="managers.badge">Для управляющих</p>
-          <h1 class="pf-headline" data-i18n="managers.headline">Соберите день один раз, а не заново в каждом чате</h1>
-          <p class="pf-sub" data-i18n="managers.sub">Что горит сегодня, кто на объекте, какие заезды и какие счета висят. Владелец видит ту же картину и перестаёт спрашивать.</p>
+          <h1 class="pf-headline" data-i18n="managers.headline">Вносите обновление один раз, и его видит вся команда</h1>
+          <p class="pf-sub" data-i18n="managers.sub">Что горит сегодня, кто на объекте, какие заезды и какие счета висят. Владелец видит ту же картину и перестаёт задавать вопросы.</p>
           <div class="pf-owners-hero-actions">
             <a class="pf-btn-primary" href="https://app.pulseflow.site/register" data-i18n="managers.cta_start">Начать бесплатно</a>
             <a class="pf-owners-link" href="https://app.pulseflow.site/login?demo=manager" data-i18n="managers.cta_demo">Открыть демо управляющего</a>
           </div>
           <p class="pf-free-note" data-i18n="managers.free_note">Ваше место бесплатное. За компанию платит владелец.</p>
-        </section>
-
-        <section class="pf-alt" id="alternative" aria-labelledby="alt-title">
-          <h2 id="alt-title" data-i18n="common.alt_title">Что ломается сейчас</h2>
-          <ul class="pf-alt-list">
-            <li data-i18n="managers.alt_1">План на день собирается заново в трёх чатах каждое утро.</li>
-            <li data-i18n="managers.alt_2">Владелец спрашивает статус, и вы пересобираете ответ вручную.</li>
-            <li data-i18n="managers.alt_3">Уборщица не увидела сообщение, и вы узнаёте об этом от гостя.</li>
-          </ul>
         </section>
 
         <section class="pf-guide-section">
@@ -270,8 +277,8 @@
             </article>
             <article class="pf-guide-flagship" id="f2">
               <div class="pf-guide-flagship-copy">
-                <h2 data-i18n="managers.f2_title">Задание ушло и его приняли</h2>
-                <p data-i18n="managers.f2_desc">Что, где и когда, одним отправлением. Кто в приложении, подтверждает работу нажатием, и это видно и вам, и владельцу. До кого проще дозвониться, звоните из той же карточки: телефон, WhatsApp, LINE.</p>
+                <h2 data-i18n="managers.f2_title">Заявки на обслуживание принимают в приложении</h2>
+                <p data-i18n="managers.f2_desc">Заявка уходит с описанием, привязанным объектом и окном работ. Кто есть в приложении, подтверждает нажатием, и вы видите, как меняется статус. Тем, кому проще позвонить, звоните или пишите с той же карточки контакта.</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -290,7 +297,7 @@
             </article>
             <article class="pf-guide-flagship" id="f3">
               <div class="pf-guide-flagship-copy">
-                <h2 data-i18n="managers.f3_title">Отчёт собирается из того, что уже произошло</h2>
+                <h2 data-i18n="managers.f3_title">Отчёты выгружаются в один клик</h2>
                 <p data-i18n="managers.f3_desc">Задачи, счета, заезды и работы за период выгружаются по категориям или целиком. Передача смены перестаёт быть текстом, который вы пишете руками в конце недели.</p>
               </div>
               <div class="pf-phone-solo">
@@ -317,70 +324,63 @@
             <div class="pf-features-body">
               <div class="pf-features-access">
                 <h3 data-i18n="common.features_access_title">Что доступно этой роли</h3>
-                <ul>
-                  <li data-i18n="common.roles_manager_li1">Все объекты компании, но список не редактирует</li>
-                  <li data-i18n="common.roles_manager_li2">Все задачи, работы и финансы, утверждает счета</li>
-                  <li data-i18n="common.roles_manager_li3">Без настроек организации, без раздачи доступов и без биллинга</li>
-                </ul>
+                <p class="pf-features-access-lead" data-i18n="managers.features_access_lead">У вас тот же рабочий доступ, что и у владельца. За владельцем остаются данные организации, список объектов компании и выдача доступа к объектам.</p>
+                <h4 data-i18n="managers.access_g1_title">Объекты</h4>
+                <p data-i18n="managers.access_g1_desc">Смотрите все объекты компании со статусом, датами и деталями и держите гид по дому, заметки и важную информацию по каждому объекту в актуальном виде.</p>
+                <h4 data-i18n="managers.access_g2_title">Люди и доступ</h4>
+                <p data-i18n="managers.access_g2_desc">Приглашайте персонал, гостей и коллег и находите новых людей в поиске персонала по навыкам, району, карте и отзывам. Держите команду на связи через чат, упоминания, еженедельные оценки и рейтинг компании.</p>
+                <h4 data-i18n="managers.access_g3_title">Операции</h4>
+                <p data-i18n="managers.access_g3_desc">Создавайте, назначайте, отслеживайте и закрывайте задачи по компании с фильтрами «мои» и «срочные». Отправляйте заявки и сервисные заказы, которые подтверждают одним нажатием, связывайтесь с подрядчиками звонком, в WhatsApp или LINE, ведите гостей: депозиты, удержания, инструкции и запросы дат.</p>
+                <h4 data-i18n="managers.access_g4_title">Деньги</h4>
+                <p data-i18n="managers.access_g4_desc">Просматривайте и подтверждайте счета, фильтруйте и считайте итоги по финансам компании и отмечайте оплаченное. Работайте с двадцатью валютами с автоматическим пересчётом. Оплата самого аккаунта остаётся за владельцем.</p>
+                <h4 data-i18n="managers.access_g5_title">Будьте в курсе и под контролем</h4>
+                <p data-i18n="managers.access_g5_desc">Получайте уведомления в приложении и push на телефон и формируйте отчёты и выгрузки по одной категории или по всей компании - недельный отчёт уже готов.</p>
               </div>
-              <h3 class="pf-features-more-title" data-i18n="common.more_title">Всё остальное, что уже работает</h3>
-              <div class="pf-more-groups">
-              <div class="pf-more-group">
-                <h3 data-i18n="managers.more_g1_title">Команда</h3>
-                <ul>
-                  <li data-i18n="managers.more_g1_li1">Приглашение персонала, гостей и коллег</li>
-                  <li data-i18n="managers.more_g1_li2">Командный чат с упоминаниями</li>
-                  <li data-i18n="managers.more_g1_li3">Еженедельные оценки и рейтинг компании</li>
-                  <li data-i18n="managers.more_g1_li4">Поиск персонала: навыки, район, карта, отзывы</li>
-                </ul>
-              </div>
-              <div class="pf-more-group">
-                <h3 data-i18n="managers.more_g2_title">Работа</h3>
-                <ul>
-                  <li data-i18n="managers.more_g2_li1">Задачи по компании и фильтры «мои» и «срочные»</li>
-                  <li data-i18n="managers.more_g2_li2">Справочник подрядчиков со звонком, WhatsApp и LINE</li>
-                  <li data-i18n="managers.more_g2_li3">Сервисные заказы с подтверждением</li>
-                  <li data-i18n="managers.more_g2_li4">Гид по дому и заметки на каждом объекте</li>
-                  <li data-i18n="managers.more_g2_li5">Гости: депозит, удержания, брифинги, запросы дат</li>
-                </ul>
-              </div>
-              <div class="pf-more-group">
-                <h3 data-i18n="managers.more_g3_title">Данные</h3>
-                <ul>
-                  <li data-i18n="managers.more_g3_li1">Отчёты и выгрузка по категориям или целиком</li>
-                  <li data-i18n="managers.more_g3_li2">Финансы: фильтры, итоги, отметка об оплате</li>
-                  <li data-i18n="managers.more_g3_li3">Уведомления в приложении и push на телефон</li>
-                  <li data-i18n="managers.more_g3_li4">Двадцать валют с пересчётом</li>
-                </ul>
-              </div>
-              </div>
+              <h3 class="pf-features-more-title" data-i18n="managers.planned_title">В планах</h3>
+              <ul class="pf-features-list is-planned">
+                <li>
+                  <strong data-i18n="managers.planned_1_title">Синхронизация с Google Календарём</strong>
+                  <span data-i18n="managers.planned_1_desc">подключите календари компании и объектов, чтобы брони, задачи и важные даты оставались согласованными.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_2_title">Повторяющиеся задачи</strong>
+                  <span data-i18n="managers.planned_2_desc">автоматически создавать регулярные работы: уборку, осмотры и обслуживание.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_3_title">Согласования</strong>
+                  <span data-i18n="managers.planned_3_desc">задайте, кто утверждает закупки, расходы и сервисные заказы.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_4_title">Показатели объекта</strong>
+                  <span data-i18n="managers.planned_4_desc">выручка, затраты, загрузка, обслуживание и операционная активность по каждому объекту.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_5_title">Автоматические напоминания</strong>
+                  <span data-i18n="managers.planned_5_desc">сроки, ближайшие работы, истекающие документы, неоплаченные счета и плановое обслуживание.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_6_title">Документы и договоры</strong>
+                  <span data-i18n="managers.planned_6_desc">храните договоры аренды, счета, гарантии, контракты и документы объектов в одном месте.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_7_title">История обслуживания</strong>
+                  <span data-i18n="managers.planned_7_desc">полный учёт ремонтов, затрат, подрядчиков и повторяющихся проблем по каждому объекту.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_8_title">Умное планирование</strong>
+                  <span data-i18n="managers.planned_8_desc">согласовывать персонал, подрядчиков и задачи с бронями и доступностью.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_9_title">Расширенная аналитика компании</strong>
+                  <span data-i18n="managers.planned_9_desc">сравнивать объекты, команды, затраты и операционные показатели во времени.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_10_title">Интеграции с бухгалтерией</strong>
+                  <span data-i18n="managers.planned_10_desc">подключить внешние бухгалтерские инструменты, чтобы меньше сводить финансы вручную.</span>
+                </li>
+              </ul>
             </div>
           </details>
-        </section>
-
-<section class="pf-faq" id="faq" aria-labelledby="faq-title">
-          <h2 id="faq-title" data-i18n="common.faq_title">FAQ</h2>
-          <details>
-            <summary data-i18n="managers.faq_q1">Ещё одна система, куда всё надо вносить руками.</summary>
-            <p data-i18n="managers.faq_a1">Вносится там же, где работается: заказ создаётся из карточки контакта, чек фотографирует тот, кто платил, статус объекта меняется на объекте. Отдельного «ведения системы» нет. Даты заезда и выезда пока действительно вводятся вручную, импорт из Google Календаря в планах.</p>
-          </details>
-          <details>
-            <summary data-i18n="managers.faq_q2">Владелец теперь будет смотреть мне через плечо.</summary>
-            <p data-i18n="managers.faq_a2">Он видит ту же картину, что и вы, и именно поэтому перестаёт спрашивать. Разница между «расскажи, что происходит» и «я вижу, что происходит» обычно в вашу пользу.</p>
-          </details>
-          <details>
-            <summary data-i18n="managers.faq_q3">Что я не смогу сделать?</summary>
-            <p data-i18n="managers.faq_a3">Изменить данные организации, отредактировать список объектов компании и назначить объекты другому управляющему. Всё остальное у вас как у владельца. Биллинг тоже не ваш.</p>
-          </details>
-        </section>
-
-        <section class="pf-soon" id="soon" aria-labelledby="soon-title">
-          <h2 id="soon-title" data-i18n="managers.soon_title">Чего в приложении нет</h2>
-          <ul>
-            <li data-i18n="managers.soon_1">Импорта броней из Google Календаря. В планах. Сейчас даты вносятся вручную.</li>
-            <li data-i18n="managers.soon_2">Оплаты внутри запроса на бронирование. Гость запрашивает даты, цену и оплату хозяин обсуждает напрямую.</li>
-            <li data-i18n="managers.soon_3">Прямых интеграций с Airbnb и Booking. Их нет и в ближайших планах тоже.</li>
-          </ul>
         </section>
 
         <section class="pf-price-line" id="price">
@@ -485,6 +485,6 @@
           <a href="https://app.pulseflow.site" data-i18n="footer.app">Приложение</a></div>
       </footer>
     </div>
-    <script src="/script.js?v=27" defer></script>
+    <script src="/script.js?v=28" defer></script>
   </body>
 </html>

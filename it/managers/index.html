@@ -123,6 +123,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/it/managers" />
     <meta
@@ -173,7 +189,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=68" />
+    <link rel="stylesheet" href="/styles.css?v=69" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -228,22 +244,13 @@
               <span class="pf-brand-name">Pulse Flow</span>
             </p>
           <p class="pf-owners-badge" data-i18n="managers.badge">Per i gestori</p>
-          <h1 class="pf-headline" data-i18n="managers.headline">Costruire la giornata una volta, non di nuovo in ogni chat</h1>
-          <p class="pf-sub" data-i18n="managers.sub">Cosa è urgente, chi è sul posto, quali check-in arrivano e quali fatture sono aperte. Il vostro proprietario vede la stessa cosa e smette di chiedere.</p>
+          <h1 class="pf-headline" data-i18n="managers.headline">Aggiornate una volta e tutto il team lo vede</h1>
+          <p class="pf-sub" data-i18n="managers.sub">Cosa è urgente, chi è sul posto, quali check-in arrivano e quali fatture sono aperte. Il vostro proprietario vede la stessa cosa e smette di fare domande.</p>
           <div class="pf-owners-hero-actions">
             <a class="pf-btn-primary" href="https://app.pulseflow.site/register" data-i18n="managers.cta_start">Inizia gratis</a>
             <a class="pf-owners-link" href="https://app.pulseflow.site/login?demo=manager" data-i18n="managers.cta_demo">Apri la demo gestore</a>
           </div>
           <p class="pf-free-note" data-i18n="managers.free_note">Il vostro posto è gratis. Paga il proprietario dell'azienda.</p>
-        </section>
-
-        <section class="pf-alt" id="alternative" aria-labelledby="alt-title">
-          <h2 id="alt-title" data-i18n="common.alt_title">Cosa si rompe oggi</h2>
-          <ul class="pf-alt-list">
-            <li data-i18n="managers.alt_1">Il piano della giornata si ricostruisce in tre chat ogni mattina.</li>
-            <li data-i18n="managers.alt_2">Il proprietario chiede lo stato e voi ricomponete la risposta a mano.</li>
-            <li data-i18n="managers.alt_3">La donna delle pulizie non ha visto il messaggio, e lo scoprite dall'ospite.</li>
-          </ul>
         </section>
 
         <section class="pf-guide-section">
@@ -270,8 +277,8 @@
             </article>
             <article class="pf-guide-flagship" id="f2">
               <div class="pf-guide-flagship-copy">
-                <h2 data-i18n="managers.f2_title">L'incarico è partito e qualcuno l'ha preso</h2>
-                <p data-i18n="managers.f2_desc">Cosa, dove e quando, in un solo invio. Chi è nell'app conferma con un tap e lo vedete voi e il proprietario. Chi è più facile da raggiungere per telefono, raggiungetelo dalla stessa scheda: chiamata, WhatsApp, LINE.</p>
+                <h2 data-i18n="managers.f2_title">I lavori di manutenzione accettati nell'app</h2>
+                <p data-i18n="managers.f2_desc">Il lavoro parte con una descrizione, un immobile assegnato e una finestra di lavoro. Chi è sull'app lo conferma con un tap e vedete cambiare lo stato. Chi preferisce una telefonata, chiamatelo o scrivetegli dalla stessa scheda contatto.</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -290,7 +297,7 @@
             </article>
             <article class="pf-guide-flagship" id="f3">
               <div class="pf-guide-flagship-copy">
-                <h2 data-i18n="managers.f3_title">Il report si costruisce da solo da ciò che è già successo</h2>
+                <h2 data-i18n="managers.f3_title">Report esportabili e pronti con un clic</h2>
                 <p data-i18n="managers.f3_desc">Attività, fatture, check-in e lavoro di un periodo si esportano per categoria o tutti insieme. Il passaggio settimanale smette di essere un testo che digitate il venerdì.</p>
               </div>
               <div class="pf-phone-solo">
@@ -317,70 +324,63 @@
             <div class="pf-features-body">
               <div class="pf-features-access">
                 <h3 data-i18n="common.features_access_title">Cosa può fare questo ruolo</h3>
-                <ul>
-                  <li data-i18n="common.roles_manager_li1">Tutti gli immobili dell'azienda, senza modificare l'elenco</li>
-                  <li data-i18n="common.roles_manager_li2">Tutte le attività, gli incarichi e le finanze, approva le fatture</li>
-                  <li data-i18n="common.roles_manager_li3">Niente impostazioni dell'organizzazione, niente assegnazione di accessi, niente fatturazione</li>
-                </ul>
+                <p class="pf-features-access-lead" data-i18n="managers.features_access_lead">Avete lo stesso accesso operativo del proprietario. I dati dell'organizzazione, l'elenco degli immobili dell'azienda e l'assegnazione degli accessi agli immobili restano al proprietario.</p>
+                <h4 data-i18n="managers.access_g1_title">Immobili</h4>
+                <p data-i18n="managers.access_g1_desc">Vedete ogni immobile dell'azienda con stato, date e dettagli, e tenete aggiornati guida della casa, note e informazioni importanti di ciascuno.</p>
+                <h4 data-i18n="managers.access_g2_title">Persone e accesso</h4>
+                <p data-i18n="managers.access_g2_desc">Invitate personale, ospiti e colleghi, e trovate nuove persone nella ricerca del personale per competenze, zona, mappa e recensioni. Tenete il team connesso con chat, menzioni, valutazioni settimanali e una classifica aziendale.</p>
+                <h4 data-i18n="managers.access_g3_title">Operazioni</h4>
+                <p data-i18n="managers.access_g3_desc">Create, assegnate, seguite e chiudete attività aziendali, con filtri per le vostre e per quelle urgenti. Mandate lavori e ordini di servizio che si confermano con un tap, raggiungete i fornitori per chiamata, WhatsApp o LINE, e gestite gli ospiti: depositi, trattenute, istruzioni e richieste di date.</p>
+                <h4 data-i18n="managers.access_g4_title">Soldi</h4>
+                <p data-i18n="managers.access_g4_desc">Esaminate e approvate le fatture, filtrate e sommate le finanze aziendali e segnate ciò che è stato pagato. Lavorate con 20 valute e conversione automatica. Il pagamento dell'account resta al proprietario.</p>
+                <h4 data-i18n="managers.access_g5_title">Restate informati e al comando</h4>
+                <p data-i18n="managers.access_g5_desc">Ricevete notifiche in-app e push sul telefono, ed estraete report ed esportazioni per una categoria o per tutta l'azienda: il passaggio settimanale è già scritto.</p>
               </div>
-              <h3 class="pf-features-more-title" data-i18n="common.more_title">Tutto il resto che già funziona</h3>
-              <div class="pf-more-groups">
-              <div class="pf-more-group">
-                <h3 data-i18n="managers.more_g1_title">Squadra</h3>
-                <ul>
-                  <li data-i18n="managers.more_g1_li1">Invitare personale, ospiti e colleghi</li>
-                  <li data-i18n="managers.more_g1_li2">Chat di team con menzioni</li>
-                  <li data-i18n="managers.more_g1_li3">Valutazioni settimanali e una classifica aziendale</li>
-                  <li data-i18n="managers.more_g1_li4">Ricerca personale: competenze, zona, mappa, recensioni</li>
-                </ul>
-              </div>
-              <div class="pf-more-group">
-                <h3 data-i18n="managers.more_g2_title">Lavoro</h3>
-                <ul>
-                  <li data-i18n="managers.more_g2_li1">Attività aziendali con filtri miei e urgenti</li>
-                  <li data-i18n="managers.more_g2_li2">Rubrica fornitori con chiamata, WhatsApp e LINE</li>
-                  <li data-i18n="managers.more_g2_li3">Ordini di servizio con conferma</li>
-                  <li data-i18n="managers.more_g2_li4">Guida della casa e note su ogni immobile</li>
-                  <li data-i18n="managers.more_g2_li5">Ospiti: depositi, trattenute, istruzioni, richieste date</li>
-                </ul>
-              </div>
-              <div class="pf-more-group">
-                <h3 data-i18n="managers.more_g3_title">Dati</h3>
-                <ul>
-                  <li data-i18n="managers.more_g3_li1">Report ed esportazioni, per categoria o tutto</li>
-                  <li data-i18n="managers.more_g3_li2">Finanze: filtri, totali, segna come pagato</li>
-                  <li data-i18n="managers.more_g3_li3">Notifiche nell'app e avvisi sul telefono</li>
-                  <li data-i18n="managers.more_g3_li4">Venti valute con conversione</li>
-                </ul>
-              </div>
-              </div>
+              <h3 class="pf-features-more-title" data-i18n="managers.planned_title">Funzioni in programma</h3>
+              <ul class="pf-features-list is-planned">
+                <li>
+                  <strong data-i18n="managers.planned_1_title">Sincronizzazione Google Calendar</strong>
+                  <span data-i18n="managers.planned_1_desc">collegare i calendari aziendali e degli immobili così prenotazioni, attività e date importanti restano allineate.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_2_title">Attività ricorrenti</strong>
+                  <span data-i18n="managers.planned_2_desc">creare automaticamente incarichi di routine come pulizie, ispezioni e manutenzione.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_3_title">Flussi di approvazione</strong>
+                  <span data-i18n="managers.planned_3_desc">definire chi deve approvare acquisti, spese e ordini di servizio.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_4_title">Prestazioni dell'immobile</strong>
+                  <span data-i18n="managers.planned_4_desc">vedere ricavi, costi, occupazione, manutenzione e attività operativa per immobile.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_5_title">Promemoria automatici</strong>
+                  <span data-i18n="managers.planned_5_desc">scadenze, incarichi in arrivo, documenti in scadenza, fatture non pagate e manutenzione programmata.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_6_title">Documenti e contratti</strong>
+                  <span data-i18n="managers.planned_6_desc">archiviare locazioni, fatture, garanzie, contratti e documenti dell'immobile in un solo posto.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_7_title">Storico manutenzione</strong>
+                  <span data-i18n="managers.planned_7_desc">tenere un registro completo di riparazioni, costi, fornitori e problemi ricorrenti per ogni immobile.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_8_title">Pianificazione intelligente</strong>
+                  <span data-i18n="managers.planned_8_desc">coordinare personale, fornitori e attività intorno a prenotazioni e disponibilità.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_9_title">Analitica aziendale avanzata</strong>
+                  <span data-i18n="managers.planned_9_desc">confrontare immobili, team, costi e prestazioni operative nel tempo.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_10_title">Integrazioni contabili</strong>
+                  <span data-i18n="managers.planned_10_desc">collegare strumenti di contabilità esterni per ridurre il lavoro finanziario manuale.</span>
+                </li>
+              </ul>
             </div>
           </details>
-        </section>
-
-<section class="pf-faq" id="faq" aria-labelledby="faq-title">
-          <h2 id="faq-title" data-i18n="common.faq_title">FAQ</h2>
-          <details>
-            <summary data-i18n="managers.faq_q1">Un altro sistema da aggiornare a mano.</summary>
-            <p data-i18n="managers.faq_a1">Si inserisce dove avviene il lavoro: l'incarico nasce dalla scheda contatto, la ricevuta la fotografa chi ha pagato, lo stato dell'immobile cambia sul posto. Non c'è un atto a parte di manutenzione. Le date di check-in e check-out per ora si digitano davvero, con l'importazione da Google Calendar in programma.</p>
-          </details>
-          <details>
-            <summary data-i18n="managers.faq_q2">Ora il proprietario mi guarda alle spalle.</summary>
-            <p data-i18n="managers.faq_a2">Vede quello che vedete voi, ed è esattamente per questo che smette di chiedere. La differenza tra «dimmi cosa succede» e «vedo cosa succede» di solito gioca a vostro favore.</p>
-          </details>
-          <details>
-            <summary data-i18n="managers.faq_q3">Cosa non posso fare?</summary>
-            <p data-i18n="managers.faq_a3">Cambiare i dati dell'organizzazione, modificare l'elenco immobili aziendali o assegnare immobili a un altro gestore. Tutto il resto è uguale a quello del proprietario. Nemmeno la fatturazione è vostra.</p>
-          </details>
-        </section>
-
-        <section class="pf-soon" id="soon" aria-labelledby="soon-title">
-          <h2 id="soon-title" data-i18n="managers.soon_title">Cosa l'app non fa</h2>
-          <ul>
-            <li data-i18n="managers.soon_1">Importare prenotazioni da Google Calendar. In programma. Oggi le date si inseriscono a mano.</li>
-            <li data-i18n="managers.soon_2">Incassare un pagamento dentro una richiesta di prenotazione. L'ospite chiede le date, l'host concorda prezzo e pagamento direttamente.</li>
-            <li data-i18n="managers.soon_3">Collegarsi direttamente ad Airbnb o Booking. Non oggi e non nella tabella di marcia vicina.</li>
-          </ul>
         </section>
 
         <section class="pf-price-line" id="price">
@@ -485,6 +485,6 @@
           <a href="https://app.pulseflow.site" data-i18n="footer.app">Applicazione</a></div>
       </footer>
     </div>
-    <script src="/script.js?v=27" defer></script>
+    <script src="/script.js?v=28" defer></script>
   </body>
 </html>

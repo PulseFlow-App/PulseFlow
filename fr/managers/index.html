@@ -123,6 +123,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/fr/managers" />
     <meta
@@ -173,7 +189,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=68" />
+    <link rel="stylesheet" href="/styles.css?v=69" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -228,22 +244,13 @@
               <span class="pf-brand-name">Pulse Flow</span>
             </p>
           <p class="pf-owners-badge" data-i18n="managers.badge">Pour les gestionnaires</p>
-          <h1 class="pf-headline" data-i18n="managers.headline">Construire la journée une fois, pas à nouveau dans chaque chat</h1>
-          <p class="pf-sub" data-i18n="managers.sub">Ce qui est urgent, qui est sur place, quelles arrivées arrivent et quelles factures sont ouvertes. Votre propriétaire voit la même chose et arrête de demander.</p>
+          <h1 class="pf-headline" data-i18n="managers.headline">Faites la mise à jour une fois, toute votre équipe la voit</h1>
+          <p class="pf-sub" data-i18n="managers.sub">Ce qui est urgent, qui est sur place, quelles arrivées arrivent et quelles factures sont ouvertes. Votre propriétaire voit la même chose et arrête de poser des questions.</p>
           <div class="pf-owners-hero-actions">
             <a class="pf-btn-primary" href="https://app.pulseflow.site/register" data-i18n="managers.cta_start">Commencer gratuitement</a>
             <a class="pf-owners-link" href="https://app.pulseflow.site/login?demo=manager" data-i18n="managers.cta_demo">Ouvrir la démo gestionnaire</a>
           </div>
           <p class="pf-free-note" data-i18n="managers.free_note">Votre siège est gratuit. C'est le propriétaire de l'entreprise qui paie.</p>
-        </section>
-
-        <section class="pf-alt" id="alternative" aria-labelledby="alt-title">
-          <h2 id="alt-title" data-i18n="common.alt_title">Ce qui casse aujourd'hui</h2>
-          <ul class="pf-alt-list">
-            <li data-i18n="managers.alt_1">Le plan de la journée se reconstruit dans trois chats chaque matin.</li>
-            <li data-i18n="managers.alt_2">Le propriétaire demande le statut et vous réassemblez la réponse à la main.</li>
-            <li data-i18n="managers.alt_3">La femme de ménage n'a pas vu le message, et vous l'apprenez par l'invité.</li>
-          </ul>
         </section>
 
         <section class="pf-guide-section">
@@ -270,8 +277,8 @@
             </article>
             <article class="pf-guide-flagship" id="f2">
               <div class="pf-guide-flagship-copy">
-                <h2 data-i18n="managers.f2_title">L'intervention est partie et quelqu'un l'a prise</h2>
-                <p data-i18n="managers.f2_desc">Quoi, où et quand, en un envoi. Quiconque est dans l'application confirme d'un tap et vous et le propriétaire le voyez. Quiconque est plus simple à joindre par téléphone, joignez-le depuis la même fiche : appel, WhatsApp, LINE.</p>
+                <h2 data-i18n="managers.f2_title">Les interventions acceptées dans l'application</h2>
+                <p data-i18n="managers.f2_desc">L'intervention part avec une description, un bien assigné et une fenêtre de travail. La personne qui est sur l'application confirme d'un tap et vous voyez le statut changer. Pour celles et ceux qui préfèrent un appel, appelez ou écrivez depuis la même fiche contact.</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -290,7 +297,7 @@
             </article>
             <article class="pf-guide-flagship" id="f3">
               <div class="pf-guide-flagship-copy">
-                <h2 data-i18n="managers.f3_title">Le rapport se construit tout seul à partir de ce qui s'est déjà passé</h2>
+                <h2 data-i18n="managers.f3_title">Des rapports exportables en un clic</h2>
                 <p data-i18n="managers.f3_desc">Tâches, factures, arrivées et travail d'une période s'exportent par catégorie ou d'un coup. Le relais hebdomadaire cesse d'être un texte que vous tapez le vendredi.</p>
               </div>
               <div class="pf-phone-solo">
@@ -317,70 +324,63 @@
             <div class="pf-features-body">
               <div class="pf-features-access">
                 <h3 data-i18n="common.features_access_title">Ce que ce rôle peut faire</h3>
-                <ul>
-                  <li data-i18n="common.roles_manager_li1">Tous les biens de l'entreprise, sans modifier la liste</li>
-                  <li data-i18n="common.roles_manager_li2">Toutes les tâches, interventions et finances, il valide les factures</li>
-                  <li data-i18n="common.roles_manager_li3">Ni réglages d'organisation, ni attribution d'accès aux biens, ni facturation</li>
-                </ul>
+                <p class="pf-features-access-lead" data-i18n="managers.features_access_lead">Vous avez le même accès opérationnel que le propriétaire. Les détails de l'organisation, la liste des biens de l'entreprise et l'attribution des accès aux biens restent chez le propriétaire.</p>
+                <h4 data-i18n="managers.access_g1_title">Biens</h4>
+                <p data-i18n="managers.access_g1_desc">Voyez chaque bien de l'entreprise avec son statut, ses dates et ses détails, et tenez à jour le guide de maison, les notes et les informations importantes de chacun.</p>
+                <h4 data-i18n="managers.access_g2_title">Personnes et accès</h4>
+                <p data-i18n="managers.access_g2_desc">Invitez le personnel, les invités et vos collègues, et trouvez de nouvelles personnes dans la recherche de personnel par compétences, zone, carte et avis. Gardez l'équipe connectée avec le chat, les mentions, les évaluations hebdomadaires et le classement de l'entreprise.</p>
+                <h4 data-i18n="managers.access_g3_title">Opérations</h4>
+                <p data-i18n="managers.access_g3_desc">Créez, assignez, suivez et clôturez les tâches de l'entreprise, avec des filtres pour les vôtres et les urgentes. Envoyez des interventions et des bons de service que l'on confirme d'un tap, joignez les prestataires par appel, WhatsApp ou LINE, et gérez les invités : cautions, retenues, consignes et demandes de dates.</p>
+                <h4 data-i18n="managers.access_g4_title">Argent</h4>
+                <p data-i18n="managers.access_g4_desc">Examinez et validez les factures, filtrez et totalisez les finances de l'entreprise et marquez ce qui est payé. Travaillez avec 20 devises et conversion automatique. La facturation du compte reste chez le propriétaire.</p>
+                <h4 data-i18n="managers.access_g5_title">Restez informé et aux commandes</h4>
+                <p data-i18n="managers.access_g5_desc">Recevez des notifications dans l'application et des push sur le téléphone, et sortez des rapports et exports par catégorie ou pour toute l'entreprise : la passation hebdomadaire est déjà écrite.</p>
               </div>
-              <h3 class="pf-features-more-title" data-i18n="common.more_title">Tout le reste qui fonctionne déjà</h3>
-              <div class="pf-more-groups">
-              <div class="pf-more-group">
-                <h3 data-i18n="managers.more_g1_title">Équipe</h3>
-                <ul>
-                  <li data-i18n="managers.more_g1_li1">Inviter le personnel, les invités et les collègues</li>
-                  <li data-i18n="managers.more_g1_li2">Chat d'équipe avec mentions</li>
-                  <li data-i18n="managers.more_g1_li3">Évaluations hebdomadaires et classement de l'entreprise</li>
-                  <li data-i18n="managers.more_g1_li4">Recherche de personnel : compétences, secteur, carte, avis</li>
-                </ul>
-              </div>
-              <div class="pf-more-group">
-                <h3 data-i18n="managers.more_g2_title">Travail</h3>
-                <ul>
-                  <li data-i18n="managers.more_g2_li1">Tâches à l'échelle de l'entreprise avec filtres miennes et urgentes</li>
-                  <li data-i18n="managers.more_g2_li2">Carnet de prestataires avec appel, WhatsApp et LINE</li>
-                  <li data-i18n="managers.more_g2_li3">Ordres de service avec confirmation</li>
-                  <li data-i18n="managers.more_g2_li4">Guide de la maison et notes sur chaque bien</li>
-                  <li data-i18n="managers.more_g2_li5">Invités : cautions, retenues, consignes, demandes de dates</li>
-                </ul>
-              </div>
-              <div class="pf-more-group">
-                <h3 data-i18n="managers.more_g3_title">Données</h3>
-                <ul>
-                  <li data-i18n="managers.more_g3_li1">Rapports et exports, par catégorie ou en entier</li>
-                  <li data-i18n="managers.more_g3_li2">Finances : filtres, totaux, marquer comme payé</li>
-                  <li data-i18n="managers.more_g3_li3">Notifications dans l'application et alertes sur le téléphone</li>
-                  <li data-i18n="managers.more_g3_li4">Vingt devises avec conversion</li>
-                </ul>
-              </div>
-              </div>
+              <h3 class="pf-features-more-title" data-i18n="managers.planned_title">Fonctions prévues</h3>
+              <ul class="pf-features-list is-planned">
+                <li>
+                  <strong data-i18n="managers.planned_1_title">Synchronisation Google Calendar</strong>
+                  <span data-i18n="managers.planned_1_desc">connectez les calendriers de l'entreprise et des biens pour que réservations, tâches et dates importantes restent alignées.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_2_title">Tâches récurrentes</strong>
+                  <span data-i18n="managers.planned_2_desc">créer automatiquement les interventions de routine : ménage, inspections et maintenance.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_3_title">Circuits d'approbation</strong>
+                  <span data-i18n="managers.planned_3_desc">définir qui doit valider achats, dépenses et bons de service.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_4_title">Performance du bien</strong>
+                  <span data-i18n="managers.planned_4_desc">voir revenus, coûts, occupation, maintenance et activité opérationnelle par bien.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_5_title">Rappels automatiques</strong>
+                  <span data-i18n="managers.planned_5_desc">échéances, interventions à venir, documents qui expirent, factures impayées et maintenance planifiée.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_6_title">Documents et contrats</strong>
+                  <span data-i18n="managers.planned_6_desc">stocker baux, factures, garanties, contrats et documents des biens au même endroit.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_7_title">Historique de maintenance</strong>
+                  <span data-i18n="managers.planned_7_desc">conserver un dossier complet des réparations, coûts, prestataires et problèmes récurrents pour chaque bien.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_8_title">Planification intelligente</strong>
+                  <span data-i18n="managers.planned_8_desc">coordonner personnel, prestataires et tâches autour des réservations et de la disponibilité.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_9_title">Analytique entreprise avancée</strong>
+                  <span data-i18n="managers.planned_9_desc">comparer biens, équipes, coûts et performance opérationnelle dans le temps.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_10_title">Intégrations comptables</strong>
+                  <span data-i18n="managers.planned_10_desc">connecter des outils de comptabilité externes pour réduire le travail financier manuel.</span>
+                </li>
+              </ul>
             </div>
           </details>
-        </section>
-
-<section class="pf-faq" id="faq" aria-labelledby="faq-title">
-          <h2 id="faq-title" data-i18n="common.faq_title">FAQ</h2>
-          <details>
-            <summary data-i18n="managers.faq_q1">Encore un système à tenir à jour à la main.</summary>
-            <p data-i18n="managers.faq_a1">Ça se saisit là où le travail se fait : l'intervention se crée depuis la fiche contact, le justificatif est photographié par celui qui a payé, le statut du bien change sur place. Il n'y a pas d'acte séparé de maintenance. Les dates d'arrivée et de départ se tapent vraiment pour l'instant, avec l'import Google Calendar prévu.</p>
-          </details>
-          <details>
-            <summary data-i18n="managers.faq_q2">Maintenant le propriétaire regarde par-dessus mon épaule.</summary>
-            <p data-i18n="managers.faq_a2">Il voit ce que vous voyez, et c'est exactement pour ça qu'il arrête de demander. La différence entre « dis-moi ce qui se passe » et « je vois ce qui se passe » joue généralement en votre faveur.</p>
-          </details>
-          <details>
-            <summary data-i18n="managers.faq_q3">Que puis-je ne pas faire ?</summary>
-            <p data-i18n="managers.faq_a3">Changer les informations de l'organisation, modifier la liste des biens de l'entreprise, ou assigner des biens à un autre gestionnaire. Tout le reste est identique à celui du propriétaire. La facturation n'est pas à vous non plus.</p>
-          </details>
-        </section>
-
-        <section class="pf-soon" id="soon" aria-labelledby="soon-title">
-          <h2 id="soon-title" data-i18n="managers.soon_title">Ce que l'application ne fait pas</h2>
-          <ul>
-            <li data-i18n="managers.soon_1">Importer les réservations depuis Google Calendar. Prévu. Les dates se saisissent à la main aujourd'hui.</li>
-            <li data-i18n="managers.soon_2">Encaisser un paiement dans une demande de réservation. L'invité demande des dates, l'hôte convient du prix et du paiement directement.</li>
-            <li data-i18n="managers.soon_3">Se connecter directement à Airbnb ou Booking. Pas aujourd'hui et pas sur la feuille de route proche.</li>
-          </ul>
         </section>
 
         <section class="pf-price-line" id="price">
@@ -485,6 +485,6 @@
           <a href="https://app.pulseflow.site" data-i18n="footer.app">Application</a></div>
       </footer>
     </div>
-    <script src="/script.js?v=27" defer></script>
+    <script src="/script.js?v=28" defer></script>
   </body>
 </html>

@@ -123,6 +123,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/fr/guests" />
     <meta
@@ -173,7 +189,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=68" />
+    <link rel="stylesheet" href="/styles.css?v=69" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -228,7 +244,7 @@
               <span class="pf-brand-name">Pulse Flow</span>
             </p>
           <p class="pf-owners-badge" data-i18n="guests.badge">Pour les invités en séjour</p>
-          <h1 class="pf-headline" data-i18n="guests.headline">Le code du portail, le règlement de la maison et votre caution</h1>
+          <h1 class="pf-headline" data-i18n="guests.headline">Tout sur votre séjour au même endroit</h1>
           <p class="pf-sub" data-i18n="guests.sub">Votre hôte vous a envoyé un lien. Tout sur votre séjour est sur un seul écran, et c'est aussi là que vous écrivez si quelque chose ne va pas.</p>
           <div class="pf-owners-hero-actions">
             <a class="pf-btn-primary" href="https://app.pulseflow.site/login" data-i18n="guests.cta_open">Ouvrir l'application</a>
@@ -241,7 +257,7 @@
             <article class="pf-guide-flagship" id="f1">
               <div class="pf-guide-flagship-copy">
                 <h2 data-i18n="guests.f1_title">Votre séjour</h2>
-                <p data-i18n="guests.f1_desc">La villa, vos dates, ce que votre hôte a publié et où en est votre caution, dès le premier écran.</p>
+                <p data-i18n="guests.f1_desc">Les détails du bien, vos dates, ce que votre hôte a publié et où en est votre caution, dès le premier écran.</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -280,7 +296,7 @@
             </article>
             <article class="pf-guide-flagship" id="f3">
               <div class="pf-guide-flagship-copy">
-                <h2 data-i18n="guests.f3_title">La caution, en entier</h2>
+                <h2 data-i18n="guests.f3_title">La caution et les retenues</h2>
                 <p data-i18n="guests.f3_desc">Ce que vous avez versé, ce qui a été retenu, pour quoi, avec une photo, et ce qui reste. Vous n'avez pas à demander, et vous n'avez pas à croire quelqu'un sur parole.</p>
               </div>
               <div class="pf-phone-solo">
@@ -327,40 +343,15 @@
             <div class="pf-features-body">
               <div class="pf-features-access">
                 <h3 data-i18n="common.features_access_title">Ce que ce rôle peut faire</h3>
-                <ul>
-                  <li data-i18n="common.roles_guest_li1">Sa villa, ses dates et le guide de la maison</li>
-                  <li data-i18n="common.roles_guest_li2">Sa caution, les retenues et le solde</li>
-                  <li data-i18n="common.roles_guest_li3">Un chat avec l'hôte seulement, jamais avec l'équipe terrain</li>
-                </ul>
-              </div>
-              <h3 class="pf-features-more-title" data-i18n="guests.more_title">Quoi d'autre</h3>
-              <div class="pf-more-groups is-two">
-              <div class="pf-more-group">
-                <ul>
-                  <li data-i18n="guests.o1">Un chat avec votre hôte qui s'ouvre une fois le séjour confirmé. Femmes de ménage et prestataires n'y sont pas.</li>
-                  <li data-i18n="guests.o2">Photos d'arrivée et de départ, si quelque chose mérite d'être consigné.</li>
-                  <li data-i18n="guests.o3">Les autres villas du même hôte, et une demande de dates directe pour la prochaine fois.</li>
-                  <li data-i18n="guests.o4">Notifications téléphone, si vous les activez.</li>
-                </ul>
-              </div>
+                <p class="pf-features-access-lead" data-i18n="guests.features_access_lead">Rien à installer. Le lien de votre hôte s'ouvre dans un navigateur et va sur votre écran d'accueil en une étape.</p>
+                <h4 data-i18n="guests.access_g1_title">Séjour et guide de maison</h4>
+                <p data-i18n="guests.access_g1_desc">Les détails du bien, vos dates et le guide de maison : Wi-Fi, code du portail, heures de silence et étapes du départ. Photos d'arrivée et de départ si quelque chose mérite d'être consigné, et notifications téléphone si vous les activez.</p>
+                <h4 data-i18n="guests.access_g2_title">Caution</h4>
+                <p data-i18n="guests.access_g2_desc">Ce que vous avez payé, ce qui a été retenu et pourquoi, avec une photo, et ce qui reste. L'argent va directement à votre hôte, comme vous en avez convenu ; l'application garde une seule version des chiffres pour vous deux.</p>
+                <h4 data-i18n="guests.access_g3_title">Hôte et prochains séjours</h4>
+                <p data-i18n="guests.access_g3_desc">Un chat avec votre hôte qui s'ouvre une fois le séjour confirmé, et les femmes de ménage et prestataires n'y sont jamais. Parcourez les autres biens du même hôte et envoyez une demande de dates pour la prochaine fois : il répond avec un prix, sans commission de plateforme de réservation.</p>
               </div>
             </div>
-          </details>
-        </section>
-
-<section class="pf-faq" id="faq" aria-labelledby="faq-title">
-          <h2 id="faq-title" data-i18n="common.faq_title">FAQ</h2>
-          <details>
-            <summary data-i18n="guests.faq_q1">Dois-je installer quelque chose ?</summary>
-            <p data-i18n="guests.faq_a1">Non. Vous ouvrez le lien de votre hôte dans un navigateur. Si vous voulez, ça va sur votre écran d'accueil en une étape.</p>
-          </details>
-          <details>
-            <summary data-i18n="guests.faq_q2">Est-ce que je paie via l'application ?</summary>
-            <p data-i18n="guests.faq_a2">Non. Votre caution et votre paiement vont directement à votre hôte, comme convenu entre vous. L'application affiche les montants, les retenues et le solde pour que vous ayez tous les deux la même version.</p>
-          </details>
-          <details>
-            <summary data-i18n="guests.faq_q3">Puis-je réserver mon prochain séjour ici ?</summary>
-            <p data-i18n="guests.faq_a3">Vous pouvez envoyer à votre hôte une demande de dates depuis l'application et il répond avec un prix. Ce n'est pas une réservation en un clic et ce n'est pas un paiement, c'est une demande directe sans plateforme ni sa commission.</p>
           </details>
         </section>
 
@@ -443,7 +434,7 @@
             height="64"
             alt=""
           />
-          <h2 data-i18n="guests.close_title">Vous avez un lien de votre hôte ? Ouvrez-le, ou essayez la démo</h2></section>
+          <h2 data-i18n="guests.close_title">Ouvrez votre invitation et entrez dans votre séjour</h2></section>
       </main>
 
       <footer class="pf-footer">
@@ -453,6 +444,6 @@
           <a href="https://app.pulseflow.site" data-i18n="footer.app">Application</a></div>
       </footer>
     </div>
-    <script src="/script.js?v=27" defer></script>
+    <script src="/script.js?v=28" defer></script>
   </body>
 </html>

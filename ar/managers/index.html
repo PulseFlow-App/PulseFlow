@@ -123,6 +123,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/ar/managers" />
     <meta
@@ -173,7 +189,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=68" />
+    <link rel="stylesheet" href="/styles.css?v=69" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -228,22 +244,13 @@
               <span class="pf-brand-name">Pulse Flow</span>
             </p>
           <p class="pf-owners-badge" data-i18n="managers.badge">لمديري العقارات</p>
-          <h1 class="pf-headline" data-i18n="managers.headline">ابنوا اليوم مرة واحدة، لا من جديد في كل محادثة</h1>
-          <p class="pf-sub" data-i18n="managers.sub">ما هو عاجل، ومن في الموقع، وأي عمليات دخول قادمة، وأي فواتير مفتوحة. مالككم يرى الشيء نفسه ويتوقف عن السؤال.</p>
+          <h1 class="pf-headline" data-i18n="managers.headline">حدّثوا مرة واحدة، ويرى فريقكم كله التحديث</h1>
+          <p class="pf-sub" data-i18n="managers.sub">ما هو عاجل، ومن في الموقع، وأي عمليات دخول قادمة، وأي فواتير مفتوحة. مالككم يرى الشيء نفسه ويتوقف عن طرح الأسئلة.</p>
           <div class="pf-owners-hero-actions">
             <a class="pf-btn-primary" href="https://app.pulseflow.site/register" data-i18n="managers.cta_start">ابدأوا مجانًا</a>
             <a class="pf-owners-link" href="https://app.pulseflow.site/login?demo=manager" data-i18n="managers.cta_demo">افتحوا تجربة المدير</a>
           </div>
           <p class="pf-free-note" data-i18n="managers.free_note">مقعدكم مجاني. مالك الشركة يدفع.</p>
-        </section>
-
-        <section class="pf-alt" id="alternative" aria-labelledby="alt-title">
-          <h2 id="alt-title" data-i18n="common.alt_title">ما الذي يتعطل اليوم</h2>
-          <ul class="pf-alt-list">
-            <li data-i18n="managers.alt_1">خطة اليوم تُعاد بناؤها عبر ثلاث محادثات كل صباح.</li>
-            <li data-i18n="managers.alt_2">المالك يطلب الحالة وتعيدون تجميع الجواب يدويًا.</li>
-            <li data-i18n="managers.alt_3">عاملة التنظيف لم ترَ الرسالة، وتعرفون ذلك من الضيف.</li>
-          </ul>
         </section>
 
         <section class="pf-guide-section">
@@ -270,8 +277,8 @@
             </article>
             <article class="pf-guide-flagship" id="f2">
               <div class="pf-guide-flagship-copy">
-                <h2 data-i18n="managers.f2_title">خرجت المهمة وأخذها أحد</h2>
-                <p data-i18n="managers.f2_desc">ماذا وأين ومتى، في إرسال واحد. من في التطبيق يؤكد بنقرة، وترون ذلك أنتم والمالك. ومن الأسهل الوصول إليه بالهاتف، تصلون إليه من البطاقة نفسها: اتصال، WhatsApp، LINE.</p>
+                <h2 data-i18n="managers.f2_title">أعمال الصيانة تُقبل داخل التطبيق</h2>
+                <p data-i18n="managers.f2_desc">يخرج العمل مع وصف وعقار محدد ونافذة زمنية للتنفيذ. من كان على التطبيق يؤكده بنقرة وترون الحالة تتغير. ومن يفضّل الاتصال، اتصلوا به أو راسلوه من بطاقة التواصل نفسها.</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -290,7 +297,7 @@
             </article>
             <article class="pf-guide-flagship" id="f3">
               <div class="pf-guide-flagship-copy">
-                <h2 data-i18n="managers.f3_title">التقرير يُبنى وحده مما حدث أصلًا</h2>
+                <h2 data-i18n="managers.f3_title">التقارير قابلة للتصدير وتنجز بنقرة واحدة</h2>
                 <p data-i18n="managers.f3_desc">المهام والفواتير وعمليات الدخول والعمل لفترة تُصدَّر حسب الفئة أو دفعة واحدة. تسليم الأسبوع يتوقف عن كونه نصًا تكتبونه يوم الجمعة.</p>
               </div>
               <div class="pf-phone-solo">
@@ -317,70 +324,63 @@
             <div class="pf-features-body">
               <div class="pf-features-access">
                 <h3 data-i18n="common.features_access_title">ما يستطيع هذا الدور فعله</h3>
-                <ul>
-                  <li data-i18n="common.roles_manager_li1">كل عقارات الشركة، دون تعديل القائمة</li>
-                  <li data-i18n="common.roles_manager_li2">كل المهام والأعمال والمالية، ويوافق على الفواتير</li>
-                  <li data-i18n="common.roles_manager_li3">بلا إعدادات المؤسسة، بلا توزيع وصول العقارات، بلا الفوترة</li>
-                </ul>
+                <p class="pf-features-access-lead" data-i18n="managers.features_access_lead">لديكم نفس الوصول التشغيلي الذي لدى المالك. تفاصيل المؤسسة وقائمة عقارات الشركة وتوزيع صلاحيات العقارات تبقى عند المالك.</p>
+                <h4 data-i18n="managers.access_g1_title">العقارات</h4>
+                <p data-i18n="managers.access_g1_desc">شاهدوا كل عقار للشركة مع حالته وتواريخه وتفاصيله، وأبقوا دليل المنزل والملاحظات والمعلومات المهمة محدَّثة لكل عقار.</p>
+                <h4 data-i18n="managers.access_g2_title">الأشخاص والوصول</h4>
+                <p data-i18n="managers.access_g2_desc">ادعوا الطاقم والضيوف والزملاء، واعثروا على أشخاص جدد في بحث الطاقم حسب المهارات والمنطقة والخريطة والتقييمات. أبقوا الفريق متصلاً عبر المحادثة والإشارات والتزكيات الأسبوعية ولوحة تصنيف الشركة.</p>
+                <h4 data-i18n="managers.access_g3_title">التشغيل</h4>
+                <p data-i18n="managers.access_g3_desc">أنشئوا المهام على مستوى الشركة وعيّنوها وتتبعوها وأغلقوها، مع تصفية لمهامكم وللعاجل. أرسلوا الأعمال وأوامر الخدمة التي تُؤكَّد بنقرة، وتواصلوا مع الموردين بالاتصال أو WhatsApp أو LINE، وأديروا الضيوف: الودائع والاقتطاعات والتعليمات وطلبات التواريخ.</p>
+                <h4 data-i18n="managers.access_g4_title">المال</h4>
+                <p data-i18n="managers.access_g4_desc">راجعوا الفواتير ووافقوا عليها، صفّوا حسابات الشركة واحسبوا مجاميعها، وأشّروا ما تم دفعه. اعملوا عبر 20 عملة مع تحويل تلقائي. أما فاتورة الحساب نفسها فتبقى عند المالك.</p>
+                <h4 data-i18n="managers.access_g5_title">ابقوا على اطلاع وتحت السيطرة</h4>
+                <p data-i18n="managers.access_g5_desc">احصلوا على إشعارات داخل التطبيق ودفع على الهاتف، واستخرجوا التقارير والتصديرات لفئة واحدة أو للشركة كلها، فيكون التسليم الأسبوعي مكتوباً سلفاً.</p>
               </div>
-              <h3 class="pf-features-more-title" data-i18n="common.more_title">كل ما يعمل أصلًا</h3>
-              <div class="pf-more-groups">
-              <div class="pf-more-group">
-                <h3 data-i18n="managers.more_g1_title">الفريق</h3>
-                <ul>
-                  <li data-i18n="managers.more_g1_li1">دعوة الطاقم والضيوف والزملاء</li>
-                  <li data-i18n="managers.more_g1_li2">محادثة فريق مع الإشارات</li>
-                  <li data-i18n="managers.more_g1_li3">تزكيات أسبوعية ولوحة ترتيب للشركة</li>
-                  <li data-i18n="managers.more_g1_li4">بحث الطاقم: المهارات والمنطقة والخريطة والتقييمات</li>
-                </ul>
-              </div>
-              <div class="pf-more-group">
-                <h3 data-i18n="managers.more_g2_title">العمل</h3>
-                <ul>
-                  <li data-i18n="managers.more_g2_li1">مهام على مستوى الشركة مع فلاتر لي والعاجل</li>
-                  <li data-i18n="managers.more_g2_li2">دفتر مقاولين مع اتصال وWhatsApp وLINE</li>
-                  <li data-i18n="managers.more_g2_li3">أوامر خدمة مع تأكيد</li>
-                  <li data-i18n="managers.more_g2_li4">دليل المنزل وملاحظات على كل عقار</li>
-                  <li data-i18n="managers.more_g2_li5">الضيوف: الودائع والخصومات والإيجازات وطلبات التواريخ</li>
-                </ul>
-              </div>
-              <div class="pf-more-group">
-                <h3 data-i18n="managers.more_g3_title">البيانات</h3>
-                <ul>
-                  <li data-i18n="managers.more_g3_li1">تقارير وتصدير، حسب الفئة أو الكل</li>
-                  <li data-i18n="managers.more_g3_li2">المالية: فلاتر وإجماليات ووضع علامة مدفوع</li>
-                  <li data-i18n="managers.more_g3_li3">إشعارات داخل التطبيق ودفع على الهاتف</li>
-                  <li data-i18n="managers.more_g3_li4">عشرون عملة مع التحويل</li>
-                </ul>
-              </div>
-              </div>
+              <h3 class="pf-features-more-title" data-i18n="managers.planned_title">ميزات مخطط لها</h3>
+              <ul class="pf-features-list is-planned">
+                <li>
+                  <strong data-i18n="managers.planned_1_title">مزامنة Google Calendar</strong>
+                  <span data-i18n="managers.planned_1_desc">اربطوا تقاويم الشركة والعقارات لتبقى الحجوزات والمهام والتواريخ المهمة متزامنة.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_2_title">مهام متكررة</strong>
+                  <span data-i18n="managers.planned_2_desc">إنشاء أعمال روتينية تلقائيًا مثل التنظيف والفحص والصيانة.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_3_title">مسارات الموافقة</strong>
+                  <span data-i18n="managers.planned_3_desc">تحديد من يجب أن يوافق على المشتريات والمصروفات وأوامر الخدمة.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_4_title">أداء العقار</strong>
+                  <span data-i18n="managers.planned_4_desc">رؤية الإيرادات والتكاليف والإشغال والصيانة والنشاط التشغيلي لكل عقار.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_5_title">تذكيرات آلية</strong>
+                  <span data-i18n="managers.planned_5_desc">المواعيد النهائية والأعمال القادمة والمستندات المنتهية والفواتير غير المدفوعة والصيانة المجدولة.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_6_title">المستندات والعقود</strong>
+                  <span data-i18n="managers.planned_6_desc">حفظ عقود الإيجار والفواتير والضمانات والعقود ومستندات العقار في مكان واحد.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_7_title">سجل الصيانة</strong>
+                  <span data-i18n="managers.planned_7_desc">الاحتفاظ بسجل كامل للإصلاحات والتكاليف والمقاولين والمشكلات المتكررة لكل عقار.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_8_title">جدولة ذكية</strong>
+                  <span data-i18n="managers.planned_8_desc">تنسيق الطاقم والمقاولين والمهام حول الحجوزات والتوافر.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_9_title">تحليلات شركة متقدمة</strong>
+                  <span data-i18n="managers.planned_9_desc">مقارنة العقارات والفرق والتكاليف والأداء التشغيلي عبر الزمن.</span>
+                </li>
+                <li>
+                  <strong data-i18n="managers.planned_10_title">تكاملات محاسبية</strong>
+                  <span data-i18n="managers.planned_10_desc">ربط أدوات محاسبة خارجية لتقليل العمل المالي اليدوي.</span>
+                </li>
+              </ul>
             </div>
           </details>
-        </section>
-
-<section class="pf-faq" id="faq" aria-labelledby="faq-title">
-          <h2 id="faq-title" data-i18n="common.faq_title">FAQ</h2>
-          <details>
-            <summary data-i18n="managers.faq_q1">نظام إضافي يجب تحديثه يدويًا.</summary>
-            <p data-i18n="managers.faq_a1">يُدخل حيث يحدث العمل: المهمة تُنشأ من بطاقة جهة الاتصال، والإيصال يصوّره من دفع، وحالة العقار تتغيّر في الموقع. لا يوجد فعل منفصل لصيانته. تواريخ الدخول والمغادرة تُكتب فعلًا الآن، مع استيراد Google Calendar مخطط.</p>
-          </details>
-          <details>
-            <summary data-i18n="managers.faq_q2">الآن المالك ينظر من فوق كتفي.</summary>
-            <p data-i18n="managers.faq_a2">يرون ما ترونه، ولهذا تحديدًا يتوقفون عن السؤال. الفرق بين «أخبرني ماذا يحدث» و«أرى ماذا يحدث» يعمل عادة لصالحكم.</p>
-          </details>
-          <details>
-            <summary data-i18n="managers.faq_q3">ماذا لا أستطيع فعله؟</summary>
-            <p data-i18n="managers.faq_a3">تغيير بيانات المؤسسة، أو تعديل قائمة عقارات الشركة، أو تعيين العقارات لمدير آخر. كل شيء آخر كما هو للمالك. الفوترة ليست لكم أيضًا.</p>
-          </details>
-        </section>
-
-        <section class="pf-soon" id="soon" aria-labelledby="soon-title">
-          <h2 id="soon-title" data-i18n="managers.soon_title">ما لا يفعله التطبيق</h2>
-          <ul>
-            <li data-i18n="managers.soon_1">استيراد الحجوزات من Google Calendar. مخطط. التواريخ تُدخل يدويًا اليوم.</li>
-            <li data-i18n="managers.soon_2">أخذ دفعة داخل طلب حجز. الضيف يطلب تواريخ، والمضيف يتفق على السعر والدفع مباشرة.</li>
-            <li data-i18n="managers.soon_3">ربط مباشر بـ Airbnb أو Booking. ليس اليوم وليس على خارطة الطريق القريبة.</li>
-          </ul>
         </section>
 
         <section class="pf-price-line" id="price">
@@ -485,6 +485,6 @@
           <a href="https://app.pulseflow.site" data-i18n="footer.app">التطبيق</a></div>
       </footer>
     </div>
-    <script src="/script.js?v=27" defer></script>
+    <script src="/script.js?v=28" defer></script>
   </body>
 </html>

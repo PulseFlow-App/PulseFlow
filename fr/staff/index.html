@@ -123,6 +123,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/fr/staff" />
     <meta
@@ -173,7 +189,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=68" />
+    <link rel="stylesheet" href="/styles.css?v=69" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -228,7 +244,7 @@
               <span class="pf-brand-name">Pulse Flow</span>
             </p>
           <p class="pf-owners-badge" data-i18n="staff.badge">Pour le personnel terrain</p>
-          <h1 class="pf-headline" data-i18n="staff.headline">Vos interventions du jour, dans votre langue</h1>
+          <h1 class="pf-headline" data-i18n="staff.headline">Arrêtez d'appeler pour savoir quelle villa a besoin de vous aujourd'hui</h1>
           <p class="pf-sub" data-i18n="staff.sub">Sans remonter un chat. Prenez l'intervention d'un tap, envoyez le justificatif en photo, et tout reste au même endroit.</p>
           <div class="pf-owners-hero-actions">
             <a class="pf-btn-primary" href="https://app.pulseflow.site/register" data-i18n="staff.cta_start">Ouvrir Pulse Flow</a>
@@ -237,21 +253,12 @@
           <p class="pf-free-note" data-i18n="staff.free_note">C'est gratuit pour vous. C'est l'entreprise qui vous a invité qui paie.</p>
         </section>
 
-        <section class="pf-alt" id="alternative" aria-labelledby="alt-title">
-          <h2 id="alt-title" data-i18n="common.alt_title">Ce qui casse aujourd'hui</h2>
-          <ul class="pf-alt-list">
-            <li data-i18n="staff.alt_1">L'intervention est arrivée dans un chat et a défilé sous tout le reste.</li>
-            <li data-i18n="staff.alt_2">Les justificatifs restent sur votre téléphone et on vous rembourse quand quelqu'un s'en souvient.</li>
-            <li data-i18n="staff.alt_3">L'intervention est rédigée dans une langue dans laquelle vous ne travaillez pas.</li>
-          </ul>
-        </section>
-
         <section class="pf-guide-section">
           <div class="pf-guide-daily">
             <article class="pf-guide-flagship" id="f1">
               <div class="pf-guide-flagship-copy">
                 <h2 data-i18n="staff.f1_title">Uniquement vos interventions</h2>
-                <p data-i18n="staff.f1_desc">Votre écran d'accueil montre ce qui vous est assigné : interventions en attente de votre confirmation, les biens auxquels vous avez accès, et ce qui est prévu aujourd'hui. Rien qui n'est pas à vous.</p>
+                <p data-i18n="staff.f1_desc">Votre écran d'accueil n'affiche que ce qui vous est assigné : les interventions du jour, celles qui attendent votre confirmation et vos biens.</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -271,7 +278,7 @@
             <article class="pf-guide-flagship" id="f2">
               <div class="pf-guide-flagship-copy">
                 <h2 data-i18n="staff.f2_title">Un tap et c'est à vous</h2>
-                <p data-i18n="staff.f2_desc">Une intervention ne compte comme vôtre qu'une fois que vous l'avez confirmée. Le propriétaire et le gestionnaire le voient tout de suite, donc personne n'a à demander si vous l'avez eue.</p>
+                <p data-i18n="staff.f2_desc">Une intervention est à vous dès que vous l'avez confirmée, et le propriétaire et le gestionnaire le voient aussitôt.</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -291,7 +298,7 @@
             <article class="pf-guide-flagship" id="f3">
               <div class="pf-guide-flagship-copy">
                 <h2 data-i18n="staff.f3_title">Justificatifs en photo</h2>
-                <p data-i18n="staff.f3_desc">Photographiez le justificatif, saisissez le montant, envoyez. Vous voyez vos propres envois et où ils en sont ; le propriétaire les valide. Aucun papier à porter et aucun rappel à faire.</p>
+                <p data-i18n="staff.f3_desc">Photographiez le justificatif, tapez le montant, envoyez, puis suivez-le de l'envoi à la validation.</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -314,7 +321,7 @@
         <section class="pf-lang-block" id="own" aria-labelledby="own-title">
           <div>
             <h2 id="own-title" data-i18n="staff.own_title">Ce qui reste à vous</h2>
-            <p data-i18n="staff.own_desc">Les notes hebdomadaires des propriétaires pour lesquels vous travaillez construisent un profil. Si vous le voulez, activez-vous dans la recherche de personnel et vos compétences, votre secteur, votre épingle sur la carte et vos avis deviennent visibles pour d'autres entreprises à proximité. L'interrupteur se coupe à tout moment. À côté de tout ça, vous pouvez tenir vos propres biens, qui n'ont rien à voir avec l'entreprise.</p>
+            <p data-i18n="staff.own_desc">Les évaluations hebdomadaires des propriétaires pour qui vous travaillez construisent votre profil. Activez la recherche de personnel et vos compétences, votre zone et vos avis deviennent visibles pour les entreprises voisines ; désactivez quand vous voulez.</p>
           </div>
           <div class="pf-phone-solo">
             <figure class="pf-phone">
@@ -337,50 +344,13 @@
             <div class="pf-features-body">
               <div class="pf-features-access">
                 <h3 data-i18n="common.features_access_title">Ce que ce rôle peut faire</h3>
-                <ul>
-                  <li data-i18n="common.roles_staff_li1">Uniquement les biens qui lui sont assignés</li>
-                  <li data-i18n="common.roles_staff_li2">Ses propres interventions et ses propres justificatifs envoyés</li>
-                  <li data-i18n="common.roles_staff_li3">Ses propres biens séparés, invisibles pour l'entreprise</li>
-                </ul>
-              </div>
-              <h3 class="pf-features-more-title" data-i18n="common.more_title">Tout le reste qui fonctionne déjà</h3>
-              <div class="pf-more-groups is-two">
-              <div class="pf-more-group">
-                <h3 data-i18n="staff.more_g1_title">Travail</h3>
-                <ul>
-                  <li data-i18n="staff.more_g1_li1">Biens assignés avec statut et dates</li>
-                  <li data-i18n="staff.more_g1_li2">Interventions avec plages horaires, par bien</li>
-                  <li data-i18n="staff.more_g1_li3">Chat d'équipe avec l'entreprise</li>
-                  <li data-i18n="staff.more_g1_li4">Notifications dans l'application et alertes sur le téléphone</li>
-                </ul>
-              </div>
-              <div class="pf-more-group">
-                <h3 data-i18n="staff.more_g2_title">À vous</h3>
-                <ul>
-                  <li data-i18n="staff.more_g2_li1">Vos propres biens pour vos propres clients</li>
-                  <li data-i18n="staff.more_g2_li2">Un profil avec compétences, secteur et une épingle sur la carte</li>
-                  <li data-i18n="staff.more_g2_li3">Classement de l'entreprise et évaluations hebdomadaires</li>
-                  <li data-i18n="staff.more_g2_li4">Inviter des connaissances avec votre propre lien</li>
-                </ul>
-              </div>
+                <p class="pf-features-access-lead" data-i18n="staff.features_access_lead">Vous voyez ce qui vous est assigné, et rien d'autre.</p>
+                <h4 data-i18n="staff.access_g1_title">Travail</h4>
+                <p data-i18n="staff.access_g1_desc">Les biens auxquels vous avez accès, avec leur statut et leurs dates, et les interventions dessus avec leur fenêtre de travail. Le chat d'équipe et les notifications vous arrivent dans l'application et sur le téléphone.</p>
+                <h4 data-i18n="staff.access_g2_title">À vous</h4>
+                <p data-i18n="staff.access_g2_desc">Vos propres biens pour vos propres clients restent invisibles pour l'entreprise. Votre profil garde vos compétences, votre zone et votre point sur la carte, les évaluations hebdomadaires que vous gagnez et votre place au classement de l'entreprise, et vous pouvez inviter des gens que vous connaissez avec votre propre lien.</p>
               </div>
             </div>
-          </details>
-        </section>
-
-<section class="pf-faq" id="faq" aria-labelledby="faq-title">
-          <h2 id="faq-title" data-i18n="common.faq_title">FAQ</h2>
-          <details>
-            <summary data-i18n="staff.faq_q1">Dois-je installer quelque chose ?</summary>
-            <p data-i18n="staff.faq_a1">Non. Ça s'ouvre depuis un lien dans le navigateur et ça va sur votre écran d'accueil en une étape. Ni Google Play, ni App Store, ni nouveau compte. Une adresse e-mail suffit.</p>
-          </details>
-          <details>
-            <summary data-i18n="staff.faq_q2">Mon responsable verra-t-il tout sur moi ?</summary>
-            <p data-i18n="staff.faq_a2">Il voit vos interventions sur ses biens et les justificatifs que vous envoyez. Les biens que vous tenez pour vous-même ne lui sont pas visibles. Vous n'apparaissez dans la recherche de personnel que si vous l'activez.</p>
-          </details>
-          <details>
-            <summary data-i18n="staff.faq_q3">Combien ça me coûte ?</summary>
-            <p data-i18n="staff.faq_a3">Rien. Un siège personnel est toujours gratuit. C'est l'entreprise qui vous a invité qui paie.</p>
           </details>
         </section>
 
@@ -467,7 +437,7 @@
             height="64"
             alt=""
           />
-          <h2 data-i18n="staff.close_title">Voir ce qui est à vous aujourd'hui</h2><a
+          <h2 data-i18n="staff.close_title">Ouvrez l'application et mettez-vous au travail</h2><a
             class="pf-btn-primary"
             href="https://app.pulseflow.site/register"
             data-i18n="staff.close_cta"
@@ -482,6 +452,6 @@
           <a href="https://app.pulseflow.site" data-i18n="footer.app">Application</a></div>
       </footer>
     </div>
-    <script src="/script.js?v=27" defer></script>
+    <script src="/script.js?v=28" defer></script>
   </body>
 </html>

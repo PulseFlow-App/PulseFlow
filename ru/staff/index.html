@@ -123,6 +123,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/ru/staff" />
     <meta
@@ -173,7 +189,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=68" />
+    <link rel="stylesheet" href="/styles.css?v=69" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -228,7 +244,7 @@
               <span class="pf-brand-name">Pulse Flow</span>
             </p>
           <p class="pf-owners-badge" data-i18n="staff.badge">Для персонала на объектах</p>
-          <h1 class="pf-headline" data-i18n="staff.headline">Ваши работы на сегодня, на вашем языке</h1>
+          <h1 class="pf-headline" data-i18n="staff.headline">Хватит звонить, чтобы узнать, на какой объект ехать сегодня</h1>
           <p class="pf-sub" data-i18n="staff.sub">Не искать в переписке. Приняли работу нажатием, отправили чек фотографией, и всё это осталось в приложении.</p>
           <div class="pf-owners-hero-actions">
             <a class="pf-btn-primary" href="https://app.pulseflow.site/register" data-i18n="staff.cta_start">Открыть Pulse Flow</a>
@@ -237,21 +253,12 @@
           <p class="pf-free-note" data-i18n="staff.free_note">Для вас приложение бесплатное. Платит компания, которая вас пригласила.</p>
         </section>
 
-        <section class="pf-alt" id="alternative" aria-labelledby="alt-title">
-          <h2 id="alt-title" data-i18n="common.alt_title">Что ломается сейчас</h2>
-          <ul class="pf-alt-list">
-            <li data-i18n="staff.alt_1">Задание пришло в чат и уехало вверх под другими сообщениями.</li>
-            <li data-i18n="staff.alt_2">Чеки лежат в телефоне, а деньги возвращают, когда вспомнят.</li>
-            <li data-i18n="staff.alt_3">Задание написано на языке, на котором вы не работаете.</li>
-          </ul>
-        </section>
-
         <section class="pf-guide-section">
           <div class="pf-guide-daily">
             <article class="pf-guide-flagship" id="f1">
               <div class="pf-guide-flagship-copy">
                 <h2 data-i18n="staff.f1_title">Только ваши работы</h2>
-                <p data-i18n="staff.f1_desc">На главном экране то, что назначено вам: работы, ждущие подтверждения, объекты, к которым у вас есть доступ, и что на сегодня. Чужого здесь нет.</p>
+                <p data-i18n="staff.f1_desc">На главном экране только то, что назначено вам: работы на сегодня, работы, которые ждут подтверждения, и ваши объекты.</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -271,7 +278,7 @@
             <article class="pf-guide-flagship" id="f2">
               <div class="pf-guide-flagship-copy">
                 <h2 data-i18n="staff.f2_title">Приняли одним нажатием</h2>
-                <p data-i18n="staff.f2_desc">Работа считается вашей только после того, как вы её подтвердили. Владелец и управляющий видят это сразу, и вопрос «ты получил?» отпадает.</p>
+                <p data-i18n="staff.f2_desc">Работа становится вашей, когда вы её подтвердили, и владелец с управляющим сразу это видят.</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -291,7 +298,7 @@
             <article class="pf-guide-flagship" id="f3">
               <div class="pf-guide-flagship-copy">
                 <h2 data-i18n="staff.f3_title">Чек фотографией</h2>
-                <p data-i18n="staff.f3_desc">Сфотографировали чек, указали сумму, отправили. Вы видите свои заявки и их статус, утверждает владелец. Носить бумажки и напоминать о себе не нужно.</p>
+                <p data-i18n="staff.f3_desc">Сфотографировали чек, вписали сумму, отправили - и видите, как он проходит от отправленного до подтверждённого.</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -314,7 +321,7 @@
         <section class="pf-lang-block" id="own" aria-labelledby="own-title">
           <div>
             <h2 id="own-title" data-i18n="staff.own_title">Что остаётся вашим</h2>
-            <p data-i18n="staff.own_desc">Оценки от владельцев за неделю собираются в профиль. Если захотите, включите себя в поиск персонала: навыки, район, отметка на карте и отзывы станут видны другим компаниям поблизости. Тумблер выключается в любой момент. Рядом можно вести свои объекты, к компании они отношения не имеют.</p>
+            <p data-i18n="staff.own_desc">Еженедельные оценки от владельцев, на которых вы работаете, формируют ваш профиль. Включите поиск персонала - и ваши навыки, район и отзывы увидят другие компании рядом; выключить можно в любой момент.</p>
           </div>
           <div class="pf-phone-solo">
             <figure class="pf-phone">
@@ -337,50 +344,13 @@
             <div class="pf-features-body">
               <div class="pf-features-access">
                 <h3 data-i18n="common.features_access_title">Что доступно этой роли</h3>
-                <ul>
-                  <li data-i18n="common.roles_staff_li1">Только назначенные ему объекты</li>
-                  <li data-i18n="common.roles_staff_li2">Свои работы и свои отправленные чеки</li>
-                  <li data-i18n="common.roles_staff_li3">Свои личные объекты, компании они не видны</li>
-                </ul>
-              </div>
-              <h3 class="pf-features-more-title" data-i18n="common.more_title">Всё остальное, что уже работает</h3>
-              <div class="pf-more-groups is-two">
-              <div class="pf-more-group">
-                <h3 data-i18n="staff.more_g1_title">Работа</h3>
-                <ul>
-                  <li data-i18n="staff.more_g1_li1">Назначенные объекты со статусом и датами</li>
-                  <li data-i18n="staff.more_g1_li2">Работы с окнами времени по объектам</li>
-                  <li data-i18n="staff.more_g1_li3">Командный чат с компанией</li>
-                  <li data-i18n="staff.more_g1_li4">Уведомления в приложении и push на телефон</li>
-                </ul>
-              </div>
-              <div class="pf-more-group">
-                <h3 data-i18n="staff.more_g2_title">Ваше</h3>
-                <ul>
-                  <li data-i18n="staff.more_g2_li1">Свои объекты для собственных клиентов</li>
-                  <li data-i18n="staff.more_g2_li2">Профиль с навыками, районом и отметкой на карте</li>
-                  <li data-i18n="staff.more_g2_li3">Рейтинг компании и оценки за неделю</li>
-                  <li data-i18n="staff.more_g2_li4">Приглашение знакомых в приложение по своей ссылке</li>
-                </ul>
-              </div>
+                <p class="pf-features-access-lead" data-i18n="staff.features_access_lead">Вы видите только то, что назначено вам.</p>
+                <h4 data-i18n="staff.access_g1_title">Работа</h4>
+                <p data-i18n="staff.access_g1_desc">Объекты, к которым у вас есть доступ, со статусом и датами, и работы по ним с окнами выполнения. Чат с командой и уведомления приходят в приложении и на телефон.</p>
+                <h4 data-i18n="staff.access_g2_title">Ваше</h4>
+                <p data-i18n="staff.access_g2_desc">Ваши собственные объекты для ваших клиентов компания не видит. В профиле остаются ваши навыки, район и точка на карте, еженедельные оценки и место в рейтинге компании, а по своей ссылке вы можете приглашать знакомых.</p>
               </div>
             </div>
-          </details>
-        </section>
-
-<section class="pf-faq" id="faq" aria-labelledby="faq-title">
-          <h2 id="faq-title" data-i18n="common.faq_title">FAQ</h2>
-          <details>
-            <summary data-i18n="staff.faq_q1">Мне надо что-то устанавливать?</summary>
-            <p data-i18n="staff.faq_a1">Нет. Приложение открывается по ссылке в браузере и добавляется на экран телефона одним действием. Ни Google Play, ни App Store, ни новый аккаунт. Нужна только почта.</p>
-          </details>
-          <details>
-            <summary data-i18n="staff.faq_q2">Начальник увидит про меня всё?</summary>
-            <p data-i18n="staff.faq_a2">Он видит ваши работы по своим объектам и ваши чеки. Ваши собственные объекты, которые вы ведёте отдельно, ему не видны. В поиск персонала вы попадаете только если сами включите тумблер.</p>
-          </details>
-          <details>
-            <summary data-i18n="staff.faq_q3">Сколько это стоит мне?</summary>
-            <p data-i18n="staff.faq_a3">Нисколько. Место сотрудника бесплатное всегда. Платит компания, которая вас пригласила.</p>
           </details>
         </section>
 
@@ -467,7 +437,7 @@
             height="64"
             alt=""
           />
-          <h2 data-i18n="staff.close_title">Посмотрите, что у вас на сегодня</h2><a
+          <h2 data-i18n="staff.close_title">Откройте приложение и приступайте к работе</h2><a
             class="pf-btn-primary"
             href="https://app.pulseflow.site/register"
             data-i18n="staff.close_cta"
@@ -482,6 +452,6 @@
           <a href="https://app.pulseflow.site" data-i18n="footer.app">Приложение</a></div>
       </footer>
     </div>
-    <script src="/script.js?v=27" defer></script>
+    <script src="/script.js?v=28" defer></script>
   </body>
 </html>

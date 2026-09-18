@@ -123,6 +123,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/th/staff" />
     <meta
@@ -173,7 +189,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=68" />
+    <link rel="stylesheet" href="/styles.css?v=69" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -228,7 +244,7 @@
               <span class="pf-brand-name">Pulse Flow</span>
             </p>
           <p class="pf-owners-badge" data-i18n="staff.badge">สำหรับพนักงานหน้างาน</p>
-          <h1 class="pf-headline" data-i18n="staff.headline">งานวันนี้ของคุณ ในภาษาของคุณ</h1>
+          <h1 class="pf-headline" data-i18n="staff.headline">เลิกโทรถามว่าวันนี้ต้องไปวิลลาไหน</h1>
           <p class="pf-sub" data-i18n="staff.sub">ไม่ต้องเลื่อนแชทย้อน รับงานแตะครั้งเดียว ส่งใบเสร็จเป็นรูป ทุกอย่างอยู่ที่เดียว</p>
           <div class="pf-owners-hero-actions">
             <a class="pf-btn-primary" href="https://app.pulseflow.site/register" data-i18n="staff.cta_start">เปิด Pulse Flow</a>
@@ -237,21 +253,12 @@
           <p class="pf-free-note" data-i18n="staff.free_note">ฟรีสำหรับคุณ บริษัทที่เชิญคุณเป็นคนจ่าย</p>
         </section>
 
-        <section class="pf-alt" id="alternative" aria-labelledby="alt-title">
-          <h2 id="alt-title" data-i18n="common.alt_title">สิ่งที่พังอยู่ตอนนี้</h2>
-          <ul class="pf-alt-list">
-            <li data-i18n="staff.alt_1">งานมาในแชทแล้วถูกเลื่อนกลบด้วยอย่างอื่น</li>
-            <li data-i18n="staff.alt_2">ใบเสร็จอยู่ในมือถือ ได้เงินคืนเมื่อมีคนนึกขึ้นได้</li>
-            <li data-i18n="staff.alt_3">งานเขียนเป็นภาษาที่คุณไม่ได้ใช้ทำงาน</li>
-          </ul>
-        </section>
-
         <section class="pf-guide-section">
           <div class="pf-guide-daily">
             <article class="pf-guide-flagship" id="f1">
               <div class="pf-guide-flagship-copy">
                 <h2 data-i18n="staff.f1_title">เฉพาะงานของคุณ</h2>
-                <p data-i18n="staff.f1_desc">หน้าแรกแสดงสิ่งที่มอบหมายให้คุณ: งานรอคุณยืนยัน บ้านที่คุณเข้าได้ และมีอะไรวันนี้ ไม่มีของคนอื่น</p>
+                <p data-i18n="staff.f1_desc">หน้าแรกแสดงเฉพาะงานที่มอบหมายให้คุณ งานวันนี้ งานที่รอคุณยืนยัน และที่พักของคุณ</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -271,7 +278,7 @@
             <article class="pf-guide-flagship" id="f2">
               <div class="pf-guide-flagship-copy">
                 <h2 data-i18n="staff.f2_title">แตะครั้งเดียว งานเป็นของคุณ</h2>
-                <p data-i18n="staff.f2_desc">งานนับเป็นของคุณเมื่อคุณยืนยันแล้วเท่านั้น เจ้าของกับผู้จัดการเห็นทันที จึงไม่มีใครต้องถามว่าคุณได้รับหรือยัง</p>
+                <p data-i18n="staff.f2_desc">งานเป็นของคุณเมื่อคุณกดยืนยัน แล้วเจ้าของกับผู้จัดการเห็นทันที</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -291,7 +298,7 @@
             <article class="pf-guide-flagship" id="f3">
               <div class="pf-guide-flagship-copy">
                 <h2 data-i18n="staff.f3_title">ใบเสร็จเป็นรูป</h2>
-                <p data-i18n="staff.f3_desc">ถ่ายใบเสร็จ พิมพ์ยอด ส่ง คุณเห็นรายการที่ส่งเองและสถานะ เจ้าของเป็นคนอนุมัติ ไม่ต้องถือกระดาษ และไม่ต้องเตือนใคร</p>
+                <p data-i18n="staff.f3_desc">ถ่ายรูปใบเสร็จ ใส่จำนวนเงิน กดส่ง แล้วดูสถานะจากส่งแล้วไปจนอนุมัติ</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -314,7 +321,7 @@
         <section class="pf-lang-block" id="own" aria-labelledby="own-title">
           <div>
             <h2 id="own-title" data-i18n="staff.own_title">อะไรที่เป็นของคุณ</h2>
-            <p data-i18n="staff.own_desc">คะแนนรายสัปดาห์จากเจ้าของที่คุณทำงานให้ สะสมเป็นโปรไฟล์ ถ้าต้องการ เปิดตัวเองในค้นหาพนักงาน ทักษะ พื้นที่ จุดบนแผนที่ และรีวิว จะเห็นได้โดยบริษัทใกล้เคียง สวิตช์ปิดได้ทุกเมื่อ นอกจากนั้นคุณเก็บบ้านของตัวเองได้ ซึ่งไม่เกี่ยวกับบริษัท</p>
+            <p data-i18n="staff.own_desc">คะแนนรายสัปดาห์จากเจ้าของที่คุณทำงานให้ สร้างโปรไฟล์ของคุณ เปิดการค้นหาพนักงาน แล้วทักษะ พื้นที่ และรีวิวของคุณจะปรากฏให้บริษัทอื่นใกล้ ๆ เห็น ปิดเมื่อไหร่ก็ได้</p>
           </div>
           <div class="pf-phone-solo">
             <figure class="pf-phone">
@@ -337,50 +344,13 @@
             <div class="pf-features-body">
               <div class="pf-features-access">
                 <h3 data-i18n="common.features_access_title">บทบาทนี้ทำอะไรได้</h3>
-                <ul>
-                  <li data-i18n="common.roles_staff_li1">เฉพาะบ้านที่ถูกมอบหมาย</li>
-                  <li data-i18n="common.roles_staff_li2">งานของตัวเอง และใบเสร็จที่ส่งเอง</li>
-                  <li data-i18n="common.roles_staff_li3">บ้านส่วนตัวของตัวเอง บริษัทมองไม่เห็น</li>
-                </ul>
-              </div>
-              <h3 class="pf-features-more-title" data-i18n="common.more_title">อย่างอื่นที่ใช้งานได้อยู่แล้ว</h3>
-              <div class="pf-more-groups is-two">
-              <div class="pf-more-group">
-                <h3 data-i18n="staff.more_g1_title">งาน</h3>
-                <ul>
-                  <li data-i18n="staff.more_g1_li1">บ้านที่มอบหมาย พร้อมสถานะและวันที่</li>
-                  <li data-i18n="staff.more_g1_li2">งานพร้อมช่วงเวลา แยกตามบ้าน</li>
-                  <li data-i18n="staff.more_g1_li3">แชททีมกับบริษัท</li>
-                  <li data-i18n="staff.more_g1_li4">การแจ้งเตือนในแอป และพุชบนมือถือ</li>
-                </ul>
-              </div>
-              <div class="pf-more-group">
-                <h3 data-i18n="staff.more_g2_title">ของคุณ</h3>
-                <ul>
-                  <li data-i18n="staff.more_g2_li1">บ้านของตัวเองสำหรับลูกค้าของตัวเอง</li>
-                  <li data-i18n="staff.more_g2_li2">โปรไฟล์พร้อมทักษะ พื้นที่ และจุดบนแผนที่</li>
-                  <li data-i18n="staff.more_g2_li3">กระดานคะแนนบริษัท และการรับรองรายสัปดาห์</li>
-                  <li data-i18n="staff.more_g2_li4">ชวนคนที่รู้จักด้วยลิงก์ของตัวเอง</li>
-                </ul>
-              </div>
+                <p class="pf-features-access-lead" data-i18n="staff.features_access_lead">คุณเห็นเฉพาะงานที่มอบหมายให้คุณ ไม่มีอย่างอื่น</p>
+                <h4 data-i18n="staff.access_g1_title">งาน</h4>
+                <p data-i18n="staff.access_g1_desc">ที่พักที่คุณมีสิทธิ์เข้าถึง พร้อมสถานะและวันที่ และงานในที่พักนั้นพร้อมช่วงเวลาทำงาน แชททีมกับการแจ้งเตือนมาถึงคุณทั้งในแอปและบนโทรศัพท์</p>
+                <h4 data-i18n="staff.access_g2_title">ของคุณ</h4>
+                <p data-i18n="staff.access_g2_desc">ที่พักของคุณเองสำหรับลูกค้าของคุณ บริษัทมองไม่เห็น โปรไฟล์เก็บทักษะ พื้นที่ และหมุดแผนที่ของคุณ พร้อมการรับรองรายสัปดาห์และอันดับในกระดานคะแนนบริษัท และคุณเชิญคนที่รู้จักด้วยลิงก์ของตัวเองได้</p>
               </div>
             </div>
-          </details>
-        </section>
-
-<section class="pf-faq" id="faq" aria-labelledby="faq-title">
-          <h2 id="faq-title" data-i18n="common.faq_title">FAQ</h2>
-          <details>
-            <summary data-i18n="staff.faq_q1">ต้องติดตั้งอะไรไหม</summary>
-            <p data-i18n="staff.faq_a1">ไม่ เปิดจากลิงก์ในเบราว์เซอร์ แล้วปักที่หน้าจอมือถือได้ขั้นตอนเดียว ไม่ต้องมี Google Play ไม่ต้องมี App Store ไม่ต้องสมัครบัญชีใหม่ มีอีเมลก็พอ</p>
-          </details>
-          <details>
-            <summary data-i18n="staff.faq_q2">เจ้านายจะเห็นทุกอย่างเกี่ยวกับฉันไหม</summary>
-            <p data-i18n="staff.faq_a2">เขาเห็นงานของคุณบนบ้านของเขา และใบเสร็จที่คุณส่ง บ้านที่คุณเก็บไว้เอง เขาไม่เห็น คุณขึ้นในค้นหาพนักงานเมื่อเปิดสวิตช์เท่านั้น</p>
-          </details>
-          <details>
-            <summary data-i18n="staff.faq_q3">ฉันเสียเท่าไร</summary>
-            <p data-i18n="staff.faq_a3">ไม่เสีย ที่นั่งพนักงานฟรีเสมอ บริษัทที่เชิญคุณเป็นคนจ่าย</p>
           </details>
         </section>
 
@@ -467,7 +437,7 @@
             height="64"
             alt=""
           />
-          <h2 data-i18n="staff.close_title">ดูว่าวันนี้คุณมีอะไร</h2><a
+          <h2 data-i18n="staff.close_title">เปิดแอปแล้วเริ่มงาน</h2><a
             class="pf-btn-primary"
             href="https://app.pulseflow.site/register"
             data-i18n="staff.close_cta"
@@ -482,6 +452,6 @@
           <a href="https://app.pulseflow.site" data-i18n="footer.app">แอป</a></div>
       </footer>
     </div>
-    <script src="/script.js?v=27" defer></script>
+    <script src="/script.js?v=28" defer></script>
   </body>
 </html>

@@ -123,6 +123,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/th/guests" />
     <meta
@@ -173,7 +189,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=68" />
+    <link rel="stylesheet" href="/styles.css?v=69" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -228,7 +244,7 @@
               <span class="pf-brand-name">Pulse Flow</span>
             </p>
           <p class="pf-owners-badge" data-i18n="guests.badge">สำหรับแขกที่เข้าพัก</p>
-          <h1 class="pf-headline" data-i18n="guests.headline">รหัสประตู กฎบ้าน และเงินประกันของคุณ</h1>
+          <h1 class="pf-headline" data-i18n="guests.headline">ทุกอย่างเกี่ยวกับการเข้าพักของคุณ อยู่ที่เดียว</h1>
           <p class="pf-sub" data-i18n="guests.sub">โฮสต์ส่งลิงก์มาให้ ทุกอย่างเกี่ยวกับการเข้าพักอยู่บนหน้าจอเดียว และที่นั่นแหละที่คุณเขียนได้ถ้ามีอะไรไม่ถูก</p>
           <div class="pf-owners-hero-actions">
             <a class="pf-btn-primary" href="https://app.pulseflow.site/login" data-i18n="guests.cta_open">เปิดแอป</a>
@@ -241,7 +257,7 @@
             <article class="pf-guide-flagship" id="f1">
               <div class="pf-guide-flagship-copy">
                 <h2 data-i18n="guests.f1_title">การเข้าพักของคุณ</h2>
-                <p data-i18n="guests.f1_desc">วิลล่า วันที่ของคุณ สิ่งที่โฮสต์โพสต์ไว้ และเงินประกันอยู่ตรงไหน บนหน้าจอแรก</p>
+                <p data-i18n="guests.f1_desc">รายละเอียดที่พัก วันที่ของคุณ สิ่งที่โฮสต์โพสต์ไว้ และเงินประกันอยู่ตรงไหน บนหน้าจอแรก</p>
               </div>
               <div class="pf-phone-solo">
                 <figure class="pf-phone">
@@ -280,7 +296,7 @@
             </article>
             <article class="pf-guide-flagship" id="f3">
               <div class="pf-guide-flagship-copy">
-                <h2 data-i18n="guests.f3_title">เงินประกัน ครบทั้งหมด</h2>
+                <h2 data-i18n="guests.f3_title">เงินประกันและการหัก</h2>
                 <p data-i18n="guests.f3_desc">คุณจ่ายเท่าไร ถูกหักเท่าไร เพราะอะไร พร้อมรูป และเหลือเท่าไร ไม่ต้องถาม และไม่ต้องเชื่อคำพูดใคร</p>
               </div>
               <div class="pf-phone-solo">
@@ -327,40 +343,15 @@
             <div class="pf-features-body">
               <div class="pf-features-access">
                 <h3 data-i18n="common.features_access_title">บทบาทนี้ทำอะไรได้</h3>
-                <ul>
-                  <li data-i18n="common.roles_guest_li1">วิลล่าของตัวเอง วันที่เข้าพัก และคู่มือบ้าน</li>
-                  <li data-i18n="common.roles_guest_li2">เงินประกัน การหัก และยอดคงเหลือ</li>
-                  <li data-i18n="common.roles_guest_li3">แชทกับโฮสต์เท่านั้น ไม่มีทีมหน้างาน</li>
-                </ul>
-              </div>
-              <h3 class="pf-features-more-title" data-i18n="guests.more_title">อย่างอื่นที่มี</h3>
-              <div class="pf-more-groups is-two">
-              <div class="pf-more-group">
-                <ul>
-                  <li data-i18n="guests.o1">แชทกับโฮสต์ ที่เปิดเมื่อการเข้าพักได้รับการยืนยัน แม่บ้านและช่างไม่อยู่ในนั้น</li>
-                  <li data-i18n="guests.o2">รูปตอนมาถึงและตอนออก ถ้ามีอะไรที่ควรบันทึก</li>
-                  <li data-i18n="guests.o3">วิลล่าอื่นของโฮสต์คนเดียวกัน และคำขอวันที่ตรงสำหรับครั้งหน้า</li>
-                  <li data-i18n="guests.o4">การแจ้งเตือนบนมือถือ ถ้าคุณเปิด</li>
-                </ul>
-              </div>
+                <p class="pf-features-access-lead" data-i18n="guests.features_access_lead">ไม่ต้องติดตั้งอะไร ลิงก์ของโฮสต์เปิดในเบราว์เซอร์ และปักที่หน้าจอมือถือได้ขั้นตอนเดียว</p>
+                <h4 data-i18n="guests.access_g1_title">การเข้าพักและคู่มือบ้าน</h4>
+                <p data-i18n="guests.access_g1_desc">รายละเอียดที่พัก วันที่ของคุณ และคู่มือบ้าน ทั้ง Wi-Fi รหัสประตู ชั่วโมงเงียบ และขั้นตอนเช็คเอาต์ รูปตอนมาถึงและตอนออกถ้ามีอะไรที่ควรบันทึก และการแจ้งเตือนบนมือถือถ้าคุณเปิด</p>
+                <h4 data-i18n="guests.access_g2_title">เงินประกัน</h4>
+                <p data-i18n="guests.access_g2_desc">คุณจ่ายเท่าไร ถูกหักเท่าไร เพราะอะไร พร้อมรูป และเหลือเท่าไร เงินไปถึงโฮสต์โดยตรงตามที่ตกลงกัน ในแอปทั้งสองฝ่ายเห็นตัวเลขชุดเดียวกัน</p>
+                <h4 data-i18n="guests.access_g3_title">โฮสต์และการเข้าพักครั้งหน้า</h4>
+                <p data-i18n="guests.access_g3_desc">แชทกับโฮสต์เปิดเมื่อการเข้าพักได้รับการยืนยัน แม่บ้านและช่างไม่อยู่ในนั้น ดูที่พักอื่นของโฮสต์คนเดียวกันและส่งคำขอวันที่สำหรับครั้งหน้า โฮสต์ตอบกลับด้วยราคา โดยไม่เสียค่าธรรมเนียมแพลตฟอร์มจอง</p>
               </div>
             </div>
-          </details>
-        </section>
-
-<section class="pf-faq" id="faq" aria-labelledby="faq-title">
-          <h2 id="faq-title" data-i18n="common.faq_title">FAQ</h2>
-          <details>
-            <summary data-i18n="guests.faq_q1">ต้องติดตั้งอะไรไหม</summary>
-            <p data-i18n="guests.faq_a1">ไม่ คุณเปิดลิงก์ของโฮสต์ในเบราว์เซอร์ ถ้าต้องการ ปักที่หน้าจอมือถือได้ขั้นตอนเดียว</p>
-          </details>
-          <details>
-            <summary data-i18n="guests.faq_q2">ฉันจ่ายผ่านแอปไหม</summary>
-            <p data-i18n="guests.faq_a2">ไม่ เงินประกันและการจ่ายไปตรงโฮสต์ ตามที่คุณตกลงกัน แอปโชวยอด การหัก และยอดคงเหลือ ให้ทั้งสองฝ่ายมีเวอร์ชันเดียวกัน</p>
-          </details>
-          <details>
-            <summary data-i18n="guests.faq_q3">จองเข้าพักครั้งหน้าที่นี่ได้ไหม</summary>
-            <p data-i18n="guests.faq_a3">ส่งคำขอวันที่ให้โฮสต์จากแอปได้ เขาตอบด้วยราคา ไม่ใช่การจองคลิกเดียว และไม่ใช่การจ่าย เป็นคำขอตรงโดยไม่มีแพลตฟอร์มและค่าธรรมเนียม</p>
           </details>
         </section>
 
@@ -443,7 +434,7 @@
             height="64"
             alt=""
           />
-          <h2 data-i18n="guests.close_title">ได้ลิงก์จากโฮสต์ไหม เปิดเลย หรือลองเดโม</h2></section>
+          <h2 data-i18n="guests.close_title">เปิดคำเชิญของคุณ แล้วเริ่มการเข้าพัก</h2></section>
       </main>
 
       <footer class="pf-footer">
@@ -453,6 +444,6 @@
           <a href="https://app.pulseflow.site" data-i18n="footer.app">แอป</a></div>
       </footer>
     </div>
-    <script src="/script.js?v=27" defer></script>
+    <script src="/script.js?v=28" defer></script>
   </body>
 </html>
