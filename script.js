@@ -19,7 +19,7 @@ const dictCache = Object.create(null);
 let currentLocale = "en";
 let currentDict = null;
 let demoApplyFns = [];
-const I18N_VERSION = "28";
+const I18N_VERSION = "30";
 
 /** Plausible custom events (S5). No-ops until the domain is added in Plausible. */
 function track(name, props) {

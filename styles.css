@@ -2578,6 +2578,7 @@ a.pf-audience-card:hover {
 .home-page .pf-features-head h2,
 .home-page .pf-lang-block h2,
 .home-page .pf-audience-title,
+.home-page .pf-agent-title,
 .home-page .pf-plan-title,
 .home-page .pf-faq h2,
 .home-page .pf-demo h2,
@@ -3660,6 +3661,24 @@ a.pf-audience-card:hover {
   padding: 0 var(--pad);
 }
 
+.home-page .pf-agent {
+  max-width: 1100px;
+  margin: 28px auto 8px;
+  padding: 0 var(--pad);
+}
+
+.home-page .pf-agent-title {
+  margin-bottom: 10px;
+}
+
+.home-page .pf-agent-lead {
+  max-width: 40rem;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
 .home-page .pf-plan-card-static {
   background: transparent;
   border: 0;
@@ -4094,6 +4113,7 @@ h3 {
 .home-page .pf-features-head h2,
 .home-page .pf-lang-block h2,
 .home-page .pf-audience-title,
+.home-page .pf-agent-title,
 .home-page .pf-plan-title,
 .home-page .pf-faq h2,
 .home-page .pf-demo h2,
