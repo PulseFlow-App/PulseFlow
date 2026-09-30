@@ -3673,10 +3673,205 @@ a.pf-audience-card:hover {
 
 .home-page .pf-agent-lead {
   max-width: 40rem;
-  margin: 0;
+  margin: 0 0 14px;
   color: var(--text-muted);
   font-size: 16px;
   line-height: 1.55;
+}
+
+.pf-agent-layout {
+  display: grid;
+  gap: 22px;
+}
+
+@media (min-width: 860px) {
+  .pf-agent-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    gap: 28px;
+    align-items: start;
+  }
+}
+
+.pf-agent-list {
+  margin: 0 0 14px;
+  padding-inline-start: 1.15rem;
+  display: grid;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.pf-agent-cta {
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.pf-agent-safety {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.pf-agent-preview {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+.pf-agent-preview-bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.pf-agent-preview-bar strong {
+  display: block;
+  font-size: 15px;
+  color: var(--text);
+}
+
+.pf-agent-preview-bar span {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.pf-agent-replay {
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  background: var(--sand);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pf-agent-replay:hover,
+.pf-agent-replay:focus-visible {
+  border-color: var(--primary);
+  color: var(--primary-dark);
+}
+
+.pf-agent-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 16px 0;
+}
+
+.pf-agent-tools code {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: var(--secondary-soft);
+  color: var(--secondary-dark);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.pf-agent-thread {
+  display: grid;
+  gap: 8px;
+  padding: 12px 16px 16px;
+  min-height: 280px;
+  max-height: 420px;
+  overflow: auto;
+}
+
+.pf-agent-msg {
+  max-width: 100%;
+}
+
+.pf-agent-msg p,
+.pf-agent-msg code {
+  margin: 0;
+  display: block;
+  padding: 10px 12px;
+  border-radius: 14px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.pf-agent-msg.is-user p {
+  background: var(--primary-soft);
+  color: var(--ink);
+  border-end-start-radius: 6px;
+}
+
+.pf-agent-msg.is-agent p {
+  background: var(--sand-deep);
+  color: var(--ink);
+  border-end-end-radius: 6px;
+}
+
+.pf-agent-msg.is-tool code {
+  background: transparent;
+  color: var(--secondary-dark);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  padding: 4px 2px;
+}
+
+.pf-agent-how {
+  margin-top: 18px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 4px 16px 8px;
+}
+
+.pf-agent-how summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.pf-agent-how p {
+  margin: 0 0 10px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.pf-agent-code {
+  margin: 0 0 12px;
+  padding: 12px;
+  overflow: auto;
+  background: var(--sand);
+  border-radius: 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--ink);
+  white-space: pre;
+}
+
+.pf-agent-cross {
+  max-width: 40rem;
+  margin: 16px auto 0;
+  padding: 0 var(--pad);
+  text-align: center;
+}
+
+.pf-agent-cross a {
+  font-weight: 800;
+  color: var(--primary-dark);
 }
 
 .home-page .pf-plan-card-static {

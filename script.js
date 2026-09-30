@@ -19,7 +19,7 @@ const dictCache = Object.create(null);
 let currentLocale = "en";
 let currentDict = null;
 let demoApplyFns = [];
-const I18N_VERSION = "30";
+const I18N_VERSION = "33";
 
 /** Plausible custom events (S5). No-ops until the domain is added in Plausible. */
 function track(name, props) {
@@ -628,4 +628,88 @@ mountLanguageSwitchers();
     }
   };
   window.addEventListener("scroll", onScroll, { passive: true });
+}
+
+/* Scripted Connect-your-agent preview. No live API calls. */
+{
+  const root = document.querySelector("[data-agent-demo]");
+  if (root) {
+    const thread = root.querySelector("[data-agent-thread]");
+    const replay = root.querySelector("[data-agent-replay]");
+    const STEP_KEYS = [
+      { role: "user", key: "home.agent_demo_user1" },
+      { role: "tool", key: "home.agent_demo_tool_villas" },
+      { role: "tool", key: "home.agent_demo_tool_team" },
+      { role: "tool", key: "home.agent_demo_tool_tasks" },
+      { role: "tool", key: "home.agent_demo_tool_create" },
+      { role: "agent", key: "home.agent_demo_agent1" },
+      { role: "user", key: "home.agent_demo_user2" },
+      { role: "tool", key: "home.agent_demo_tool_status" },
+      { role: "agent", key: "home.agent_demo_agent2" },
+    ];
+    const timers = [];
+    const reduceMotion = () =>
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const clearTimers = () => {
+      while (timers.length) clearTimeout(timers.pop());
+    };
+
+    const appendStep = (step) => {
+      const wrap = document.createElement("div");
+      wrap.className = `pf-agent-msg is-${step.role}`;
+      const text = t(step.key);
+      if (step.role === "tool") {
+        const code = document.createElement("code");
+        code.textContent = text;
+        wrap.appendChild(code);
+      } else {
+        const p = document.createElement("p");
+        p.textContent = text;
+        wrap.appendChild(p);
+      }
+      thread.appendChild(wrap);
+      thread.scrollTop = thread.scrollHeight;
+    };
+
+    const play = () => {
+      if (!thread) return;
+      clearTimers();
+      thread.replaceChildren();
+      if (reduceMotion()) {
+        STEP_KEYS.forEach(appendStep);
+        return;
+      }
+      let i = 0;
+      const next = () => {
+        if (i >= STEP_KEYS.length) return;
+        const step = STEP_KEYS[i];
+        appendStep(step);
+        i += 1;
+        const delay = step.role === "tool" ? 380 : 850;
+        timers.push(setTimeout(next, delay));
+      };
+      next();
+    };
+
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          if (!entries.some((entry) => entry.isIntersecting)) return;
+          play();
+          io.disconnect();
+        },
+        { threshold: 0.28 },
+      );
+      io.observe(root);
+    } else {
+      play();
+    }
+
+    replay?.addEventListener("click", () => {
+      play();
+      track("agent_demo_replay", pageMeta());
+    });
+    demoApplyFns.push(play);
+  }
 }

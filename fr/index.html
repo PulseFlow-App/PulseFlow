@@ -141,6 +141,9 @@
 
 
 
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/fr" />
     <meta
@@ -227,7 +230,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=71" />
+    <link rel="stylesheet" href="/styles.css?v=72" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -604,6 +607,79 @@ From: Sam Manager</p>
           </div>
         </section>
 
+        <section class="pf-agent pf-fade" id="connect-agent" aria-labelledby="agent-title">
+          <div class="pf-agent-layout">
+            <div class="pf-agent-copy">
+              <h2 id="agent-title" class="pf-agent-title" data-i18n="home.agent_title">Connectez votre agent</h2>
+              <p class="pf-agent-lead" data-i18n="home.agent_lead">Laissez des agents travailler dans votre espace Pulse en direct : tâches, interventions, biens et factures, sans céder la clé de la base.</p>
+              <ul class="pf-agent-list">
+                <li data-i18n="home.agent_li1">Créez une clé de connexion dans les réglages, collez-la dans le shell de l'agent, et coupez-la à tout moment.</li>
+                <li data-i18n="home.agent_li2">Lit qui vous êtes, l'équipe, les biens avec arrivées et départs, les tâches ouvertes, les interventions et les factures.</li>
+                <li data-i18n="home.agent_li3">Crée une tâche ou une intervention pour un collègue.</li>
+                <li data-i18n="home.agent_li4">Marque une tâche comme faite quand le travail est terminé.</li>
+                <li data-i18n="home.agent_li5">Propriétaires et gestionnaires seulement. Le personnel et les invités n'y ont pas accès.</li>
+              </ul>
+              <p class="pf-agent-cta" data-i18n="home.agent_cta">Dans l'application : Réglages → Connectez votre agent.</p>
+              <p class="pf-agent-safety" data-i18n="home.agent_safety">L'agent n'obtient jamais la clé de la base. Il n'utilise que cette connexion personnelle, limitée à l'espace entreprise actuel.</p>
+            </div>
+            <div class="pf-agent-preview" data-agent-demo>
+              <div class="pf-agent-preview-bar">
+                <div>
+                  <strong data-i18n="home.agent_preview_label">Session agent</strong>
+                  <span data-i18n="home.agent_preview_note">Aperçu scénarisé. N'appelle pas l'application réelle.</span>
+                </div>
+                <button type="button" class="pf-agent-replay" data-agent-replay data-i18n="home.agent_replay">Rejouer</button>
+              </div>
+              <ul class="pf-agent-tools" aria-label="Outils de l'agent" data-i18n-attr="aria-label:home.agent_tools_label">
+                <li><code>pulse_whoami</code></li>
+                <li><code>pulse_list_team</code></li>
+                <li><code>pulse_list_villas</code></li>
+                <li><code>pulse_list_tasks</code></li>
+                <li><code>pulse_create_task</code></li>
+                <li><code>pulse_update_task_status</code></li>
+                <li><code>pulse_list_jobs</code></li>
+                <li><code>pulse_create_job</code></li>
+                <li><code>pulse_list_bills</code></li>
+              </ul>
+              <div class="pf-agent-thread" data-agent-thread>
+                <div class="pf-agent-msg is-user">
+                  <p data-i18n="home.agent_demo_user1">Qu'est-ce qui est ouvert aujourd'hui, et crée une tâche urgente pour Mai : réapprovisionner Coral avant l'arrivée.</p>
+                </div>
+                <div class="pf-agent-msg is-tool"><code data-i18n="home.agent_demo_tool_villas">pulse_list_villas → Coral · occupé · départ demain</code></div>
+                <div class="pf-agent-msg is-tool"><code data-i18n="home.agent_demo_tool_team">pulse_list_team → Mai (ménage)</code></div>
+                <div class="pf-agent-msg is-tool"><code data-i18n="home.agent_demo_tool_tasks">pulse_list_tasks → 2 ouvertes</code></div>
+                <div class="pf-agent-msg is-tool"><code data-i18n="home.agent_demo_tool_create">pulse_create_task → Réapprovisionner Coral avant l'arrivée · urgent · Mai</code></div>
+                <div class="pf-agent-msg is-agent">
+                  <p data-i18n="home.agent_demo_agent1">Coral est occupé, départ demain. J'ai créé une tâche urgente pour Mai : réapprovisionner Coral avant l'arrivée.</p>
+                </div>
+                <div class="pf-agent-msg is-user">
+                  <p data-i18n="home.agent_demo_user2">Marque cette tâche comme faite quand elle a fini.</p>
+                </div>
+                <div class="pf-agent-msg is-tool"><code data-i18n="home.agent_demo_tool_status">pulse_update_task_status → fait</code></div>
+                <div class="pf-agent-msg is-agent">
+                  <p data-i18n="home.agent_demo_agent2">Marquée comme faite. La tâche de réapprovisionnement de Mai sur Coral est close.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <details class="pf-agent-how">
+            <summary data-i18n="home.agent_how_summary">Comment connecter</summary>
+            <p data-i18n="home.agent_how_note">Collez la clé de connexion dans le shell de l'agent. Les étapes d'installation restent dans l'application, sous Réglages → Comment connecter un agent.</p>
+            <pre class="pf-agent-code" tabindex="0"><code>{
+  "mcpServers": {
+    "pulse": {
+      "command": "npx",
+      "args": ["tsx", "/path/to/mcp/src/index.ts"],
+      "env": {
+        "PULSE_BASE_URL": "https://app.pulseflow.site",
+        "PULSE_MCP_TOKEN": "pfmcp_…"
+      }
+    }
+  }
+}</code></pre>
+          </details>
+        </section>
+
         <section class="pf-audience pf-fade" id="audience" aria-labelledby="why-app">
           <h2 id="why-app" class="pf-audience-title" data-i18n="home.why_title">Qui utilise Pulse Flow ?</h2>
           <div class="pf-audience-grid">
@@ -640,11 +716,6 @@ From: Sam Manager</p>
               <span class="pf-audience-cta" data-i18n="home.audience_guest_cta">Voir ce que voit votre invité →</span>
             </a>
           </div>
-        </section>
-
-        <section class="pf-agent pf-fade" id="connect-agent" aria-labelledby="agent-title">
-          <h2 id="agent-title" class="pf-agent-title" data-i18n="home.agent_title">Connectez votre agent</h2>
-          <p class="pf-agent-lead" data-i18n="home.agent_lead">Laissez Cursor, ou un autre agent IA, travailler avec les données Pulse en direct. Les propriétaires et gestionnaires créent une clé de connexion dans les réglages, la collent dans l'agent, et celui-ci voit qui il est, liste et crée des tâches, et liste les interventions.</p>
         </section>
 
         <section class="pf-plan pf-fade" id="plans" aria-labelledby="company-plans">
@@ -812,6 +883,6 @@ From: Sam Manager</p>
       </footer>
     </div>
 
-    <script src="/script.js?v=30" defer></script>
+    <script src="/script.js?v=33" defer></script>
   </body>
 </html>
