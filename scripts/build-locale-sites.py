@@ -13,7 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = "https://www.pulseflow.site"
-BUILD_LOCALES = ["en", "ru", "th", "my", "fr", "de", "es", "it", "he", "ar"]
+BUILD_LOCALES = ["en", "ru", "th", "my", "fr", "de", "es", "it", "tr", "he", "ar"]
 
 PAGES = [
     ("", "index.html"),
@@ -35,6 +35,7 @@ LOCALE_META = {
     "de": {"dir": "ltr", "og": "de_DE"},
     "es": {"dir": "ltr", "og": "es_ES"},
     "it": {"dir": "ltr", "og": "it_IT"},
+    "tr": {"dir": "ltr", "og": "tr_TR"},
     "he": {"dir": "rtl", "og": "he_IL"},
     "ar": {"dir": "rtl", "og": "ar_SA"},
 }

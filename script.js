@@ -1,6 +1,6 @@
 const LOCALE_STORAGE_KEY = "pulseflow_locale";
 
-const LOCALES = ["en", "th", "my", "fr", "de", "es", "it", "he", "ar", "ru"];
+const LOCALES = ["en", "th", "my", "fr", "de", "es", "it", "tr", "he", "ar", "ru"];
 
 const LOCALE_META = {
   en: { label: "English", native: "English", dir: "ltr" },
@@ -10,6 +10,7 @@ const LOCALE_META = {
   de: { label: "German", native: "Deutsch", dir: "ltr" },
   es: { label: "Spanish", native: "Español", dir: "ltr" },
   it: { label: "Italian", native: "Italiano", dir: "ltr" },
+  tr: { label: "Turkish", native: "Türkçe", dir: "ltr" },
   he: { label: "Hebrew", native: "עברית", dir: "rtl" },
   ar: { label: "Arabic", native: "العربية", dir: "rtl" },
   ru: { label: "Russian", native: "Русский", dir: "ltr" },
@@ -19,7 +20,7 @@ const dictCache = Object.create(null);
 let currentLocale = "en";
 let currentDict = null;
 let demoApplyFns = [];
-const I18N_VERSION = "33";
+const I18N_VERSION = "34";
 
 /** Plausible custom events (S5). No-ops until the domain is added in Plausible. */
 function track(name, props) {

@@ -73,6 +73,11 @@
       "permanent": true
     },
     {
+      "source": "/tr/employees",
+      "destination": "/tr/managers",
+      "permanent": true
+    },
+    {
       "source": "/en/employees",
       "destination": "/en/managers",
       "permanent": true
@@ -1587,6 +1592,174 @@
         }
       ],
       "destination": "/ar/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "tr"
+        }
+      ],
+      "destination": "/tr/",
+      "permanent": true
+    },
+    {
+      "source": "/owners",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "tr"
+        }
+      ],
+      "destination": "/tr/owners",
+      "permanent": true
+    },
+    {
+      "source": "/managers",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "tr"
+        }
+      ],
+      "destination": "/tr/managers",
+      "permanent": true
+    },
+    {
+      "source": "/staff",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "tr"
+        }
+      ],
+      "destination": "/tr/staff",
+      "permanent": true
+    },
+    {
+      "source": "/guests",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "tr"
+        }
+      ],
+      "destination": "/tr/guests",
+      "permanent": true
+    },
+    {
+      "source": "/terms",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "tr"
+        }
+      ],
+      "destination": "/tr/terms",
+      "permanent": true
+    },
+    {
+      "source": "/privacy",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "tr"
+        }
+      ],
+      "destination": "/tr/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "locale",
+          "value": "tr"
+        }
+      ],
+      "destination": "/tr/",
+      "permanent": true
+    },
+    {
+      "source": "/owners",
+      "has": [
+        {
+          "type": "query",
+          "key": "locale",
+          "value": "tr"
+        }
+      ],
+      "destination": "/tr/owners",
+      "permanent": true
+    },
+    {
+      "source": "/managers",
+      "has": [
+        {
+          "type": "query",
+          "key": "locale",
+          "value": "tr"
+        }
+      ],
+      "destination": "/tr/managers",
+      "permanent": true
+    },
+    {
+      "source": "/staff",
+      "has": [
+        {
+          "type": "query",
+          "key": "locale",
+          "value": "tr"
+        }
+      ],
+      "destination": "/tr/staff",
+      "permanent": true
+    },
+    {
+      "source": "/guests",
+      "has": [
+        {
+          "type": "query",
+          "key": "locale",
+          "value": "tr"
+        }
+      ],
+      "destination": "/tr/guests",
+      "permanent": true
+    },
+    {
+      "source": "/terms",
+      "has": [
+        {
+          "type": "query",
+          "key": "locale",
+          "value": "tr"
+        }
+      ],
+      "destination": "/tr/terms",
+      "permanent": true
+    },
+    {
+      "source": "/privacy",
+      "has": [
+        {
+          "type": "query",
+          "key": "locale",
+          "value": "tr"
+        }
+      ],
+      "destination": "/tr/privacy",
       "permanent": true
     },
     {
