@@ -10,6 +10,7 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
+from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = "https://www.pulseflow.site"
@@ -400,6 +401,26 @@ def prefix_links(html: str, locale: str) -> str:
     )
 
 
+def stamp_app_locale_links(html: str, locale: str) -> str:
+    """Pass the marketing locale into app.pulseflow.site CTAs as ?lang=."""
+
+    def repl(match: re.Match[str]) -> str:
+        quote = match.group(1)
+        href = match.group(2)
+        parsed = urlparse(href)
+        if parsed.netloc != "app.pulseflow.site":
+            return match.group(0)
+        query = dict(parse_qsl(parsed.query, keep_blank_values=True))
+        query["lang"] = locale
+        return f"href={quote}{urlunparse(parsed._replace(query=urlencode(query)))}{quote}"
+
+    return re.sub(
+        r'href=(["\'])(https://app\.pulseflow\.site[^"\']*)\1',
+        repl,
+        html,
+    )
+
+
 def process(
     html: str,
     locale: str,
@@ -415,6 +436,7 @@ def process(
     if localize_shots:
         html = localize_screenshots(html, locale)
     html = prefix_links(html, locale)
+    html = stamp_app_locale_links(html, locale)
     html = re.sub(
         r'"inLanguage":\s*"(?:en|ru)"', f'"inLanguage": "{locale}"', html
     )

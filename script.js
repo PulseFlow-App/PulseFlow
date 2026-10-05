@@ -179,6 +179,27 @@ function localeFromUrl() {
   return null;
 }
 
+function withAppLocale(href, locale) {
+  const next = LOCALES.includes(locale) ? locale : currentLocale || "en";
+  try {
+    const url = new URL(href, window.location.origin);
+    if (url.hostname !== "app.pulseflow.site") return href;
+    url.searchParams.set("lang", next);
+    return url.toString();
+  } catch (_) {
+    return href;
+  }
+}
+
+function syncAppLocaleLinks(locale) {
+  const next = LOCALES.includes(locale) ? locale : currentLocale || "en";
+  document.querySelectorAll('a[href*="app.pulseflow.site"]').forEach((a) => {
+    const href = a.getAttribute("href");
+    if (!href) return;
+    a.setAttribute("href", withAppLocale(href, next));
+  });
+}
+
 function localeFromPath() {
   try {
     const parts = window.location.pathname.split("/").filter(Boolean);
@@ -264,6 +285,7 @@ async function setLocale(
     sel.value = next;
   });
   demoApplyFns.forEach((fn) => fn());
+  syncAppLocaleLinks(next);
   if (prevLocale && prevLocale !== next) {
     track("lang_switch", { from: prevLocale, to: next });
   }
@@ -400,7 +422,9 @@ document.querySelectorAll("[data-demo-login]").forEach((section) => {
     const account = DEMO_ACCOUNTS[role];
     if (!account) return;
     activeRole = role;
-    const loginUrl = `https://app.pulseflow.site/login?demo=${encodeURIComponent(role)}`;
+    const loginUrl = withAppLocale(
+      `https://app.pulseflow.site/login?demo=${encodeURIComponent(role)}`,
+    );
     const label = t(account.labelKey);
     roleButtons.forEach((btn) => {
       btn.classList.toggle(
