@@ -971,15 +971,7 @@ a.pf-audience-card:hover {
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: var(--leading-title);
-  margin: 0 0 12px;
-}
-
-.pf-owners-videos-lead {
-  margin: 0 auto 24px;
-  max-width: 40rem;
-  color: var(--muted);
-  font-size: var(--type-body);
-  line-height: var(--leading-body);
+  margin: 0 0 24px;
 }
 
 .pf-loom-list {

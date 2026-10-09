@@ -338,12 +338,13 @@ def localize_screenshots(html: str, locale: str) -> str:
 
     def repl(m: re.Match) -> str:
         name = m.group(1)
+        query = m.group(2) or ""
         if (folder / name).exists():
-            return f'src="/assets/screenshots/{shot_locale}/{name}"'
-        return f'src="/assets/screenshots/{name}"'
+            return f'src="/assets/screenshots/{shot_locale}/{name}{query}"'
+        return f'src="/assets/screenshots/{name}{query}"'
 
     return re.sub(
-        r'src="/assets/screenshots/(?:en/|ru/)?([A-Za-z0-9._-]+\.png)"',
+        r'src="/assets/screenshots/(?:en/|ru/)?([A-Za-z0-9._-]+\.png)(\?[^"]*)?"',
         repl,
         html,
     )
