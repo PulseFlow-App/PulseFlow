@@ -150,6 +150,10 @@
 
 
 
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/fr" />
     <meta
@@ -236,7 +240,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=72" />
+    <link rel="stylesheet" href="/styles.css?v=74" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -617,15 +621,16 @@ From: Sam Manager</p>
           <div class="pf-agent-layout">
             <div class="pf-agent-copy">
               <h2 id="agent-title" class="pf-agent-title" data-i18n="home.agent_title">Connectez votre agent</h2>
-              <p class="pf-agent-lead" data-i18n="home.agent_lead">Laissez des agents travailler dans votre espace Pulse en direct : tâches, interventions, biens et factures, sans céder la clé de la base.</p>
+              <p class="pf-agent-lead" data-i18n="home.agent_lead">Discutez avec l'agent dans l'application, ou connectez-en un depuis Réglages. Il travaille dans votre espace Pulse en direct : tâches, missions, biens et factures, sans céder la base.</p>
               <ul class="pf-agent-list">
+                <li data-i18n="home.agent_li_chat">Discutez avec l'agent dans Pulse — demandez ce qui est ouvert, créez une tâche ou une mission, marquez le travail comme fait.</li>
                 <li data-i18n="home.agent_li1">Créez une clé de connexion dans les réglages, collez-la dans le shell de l'agent, et coupez-la à tout moment.</li>
                 <li data-i18n="home.agent_li2">Lit qui vous êtes, l'équipe, les biens avec arrivées et départs, les tâches ouvertes, les interventions et les factures.</li>
                 <li data-i18n="home.agent_li3">Crée une tâche ou une intervention pour un collègue.</li>
                 <li data-i18n="home.agent_li4">Marque une tâche comme faite quand le travail est terminé.</li>
-                <li data-i18n="home.agent_li5">Propriétaires et gestionnaires seulement. Le personnel et les invités n'y ont pas accès.</li>
+                <li data-i18n="home.agent_li5">Propriétaires et gestionnaires uniquement. Le personnel et les invités n'y ont pas accès. Après l'essai, cela fait partie de Pro.</li>
               </ul>
-              <p class="pf-agent-cta" data-i18n="home.agent_cta">Dans l'application : Réglages → Connectez votre agent.</p>
+              <p class="pf-agent-cta" data-i18n="home.agent_cta">Discutez dans l'application, ou connectez sous Réglages → Connecter votre agent.</p>
               <p class="pf-agent-safety" data-i18n="home.agent_safety">L'agent n'obtient jamais la clé de la base. Il n'utilise que cette connexion personnelle, limitée à l'espace entreprise actuel.</p>
             </div>
             <div class="pf-agent-preview" data-agent-demo>
@@ -750,12 +755,16 @@ From: Sam Manager</p>
               </li>
               <li class="is-company">
                 <strong data-i18n="home.plan_company_label">Entreprise</strong>
-                <span data-i18n="home.plan_company_desc">Vous avez un gestionnaire, une femme de ménage ou des prestataires. Seul le propriétaire paie, un abonnement couvre l'équipe.</span>
+                <span data-i18n="home.plan_company_desc">Vous avez un gestionnaire, une femme de ménage ou des prestataires. Seul le propriétaire paie ; un abonnement couvre l'équipe.</span>
+              </li>
+              <li class="is-pro">
+                <strong data-i18n="home.plan_pro_label">Pro</strong>
+                <span data-i18n="home.plan_pro_desc">Entreprise plus Connecter votre agent. 19 USD / mois en plus d'Entreprise lorsque la facturation est active. Sur Personnel, Pro est à 9 USD / mois.</span>
               </li>
             </ul>
             <p class="pf-plan-chip">
               <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg>
-              <span data-i18n="home.plan_note">La facturation n'est pas encore activée. Chaque compte inscrit reçoit 3 mois d'accès complet à partir du jour de l'inscription.</span>
+              <span data-i18n="home.plan_note">La facturation n'est pas encore activée. Chaque compte enregistré reçoit 3 mois d'accès complet — Pro et Connecter votre agent inclus — dès le jour de l'inscription.</span>
             </p>
             <a class="pf-btn-primary pf-plan-start" href="https://app.pulseflow.site/register?lang=fr" data-i18n="home.plan_cta">Commencer gratuitement</a>
           </div>
@@ -785,7 +794,7 @@ From: Sam Manager</p>
           </details>
           <details>
             <summary data-i18n="home.faq_q4">Combien ça coûte ?</summary>
-            <p data-i18n="home.faq_a4">Un espace personnel est gratuit pour toujours. Pour une entreprise, seul le propriétaire paie - les places d'équipe sont gratuites, quel que soit le nombre. La facturation n'est pas encore active, donc chaque compte a 3 mois d'accès complet à partir du jour d'inscription.</p>
+            <p data-i18n="home.faq_a4">Personnel est gratuit pour toujours. Entreprise est payé par le propriétaire ; les places de l'équipe restent gratuites. Pro est la couche extra pour Connecter votre agent : 19 USD / mois en plus d'Entreprise, ou 9 USD / mois sur Personnel. Pour l'instant la facturation n'est pas active, chaque compte a 3 mois d'accès complet — Pro inclus — dès le jour de l'inscription.</p>
           </details>
           <details>
             <summary data-i18n="home.faq_q5">Mes invités devront-ils faire quelque chose de compliqué ?</summary>
@@ -904,6 +913,6 @@ From: Sam Manager</p>
       </footer>
     </div>
 
-    <script src="/script.js?v=38" defer></script>
+    <script src="/script.js?v=41" defer></script>
   </body>
 </html>

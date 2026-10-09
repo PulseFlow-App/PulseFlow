@@ -150,6 +150,10 @@
 
 
 
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/ar" />
     <meta
@@ -236,7 +240,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=72" />
+    <link rel="stylesheet" href="/styles.css?v=74" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -617,15 +621,16 @@ From: Sam Manager</p>
           <div class="pf-agent-layout">
             <div class="pf-agent-copy">
               <h2 id="agent-title" class="pf-agent-title" data-i18n="home.agent_title">وصّلوا وكيلكم</h2>
-              <p class="pf-agent-lead" data-i18n="home.agent_lead">دعوا الوكلاء يعملون داخل مساحة Pulse الحية: مهام وأعمال وعقارات وفواتير، دون تسليم مفتاح قاعدة البيانات.</p>
+              <p class="pf-agent-lead" data-i18n="home.agent_lead">تحدثوا مع الوكيل في التطبيق، أو اربطوه من الإعدادات. يعمل داخل مساحة Pulse الحية: المهام والأعمال والعقارات والفواتير، دون تسليم قاعدة البيانات.</p>
               <ul class="pf-agent-list">
+                <li data-i18n="home.agent_li_chat">تحدثوا مع الوكيل داخل Pulse — اسألوا ما المفتوح، أنشئوا مهمة أو عملاً، علّموا العمل منتهيًا.</li>
                 <li data-i18n="home.agent_li1">أنشئوا مفتاح اتصال في الإعدادات والصقوه في واجهة الوكيل وافصلوه في أي وقت.</li>
                 <li data-i18n="home.agent_li2">يقرأ من أنتم، والفريق، والعقارات مع الدخول والخروج، والمهام المفتوحة، والأعمال والفواتير.</li>
                 <li data-i18n="home.agent_li3">ينشئ مهمة أو عملاً لزميل.</li>
                 <li data-i18n="home.agent_li4">يؤشّر المهمة منتهية عند انتهاء العمل.</li>
-                <li data-i18n="home.agent_li5">المالكون والمديرون فقط. الطاقم والضيوف لا يحصلون على هذا.</li>
+                <li data-i18n="home.agent_li5">المالكون والمديرون فقط. طاقم الميدان والضيوف لا يحصلون عليه. بعد التجربة يصبح جزءًا من Pro.</li>
               </ul>
-              <p class="pf-agent-cta" data-i18n="home.agent_cta">في التطبيق تحت الإعدادات → وصّلوا وكيلكم.</p>
+              <p class="pf-agent-cta" data-i18n="home.agent_cta">تحدثوا في التطبيق، أو اربطوا تحت الإعدادات → ربط الوكيل.</p>
               <p class="pf-agent-safety" data-i18n="home.agent_safety">الوكيل لا يحصل على مفتاح قاعدة البيانات. يستخدم ذلك الاتصال الشخصي فقط، ضمن مساحة الشركة الحالية.</p>
             </div>
             <div class="pf-agent-preview" data-agent-demo>
@@ -750,12 +755,16 @@ From: Sam Manager</p>
               </li>
               <li class="is-company">
                 <strong data-i18n="home.plan_company_label">Company</strong>
-                <span data-i18n="home.plan_company_desc">لديكم مدير أو عامل تنظيف أو مقاولون. المالك وحده يدفع، واشتراك واحد يغطي الفريق.</span>
+                <span data-i18n="home.plan_company_desc">لديكم مدير أو عامل تنظيف أو مقاولون. المالك وحده يدفع؛ اشتراك واحد يغطي الفريق.</span>
+              </li>
+              <li class="is-pro">
+                <strong data-i18n="home.plan_pro_label">Pro</strong>
+                <span data-i18n="home.plan_pro_desc">الشركة إضافة إلى ربط الوكيل. 19 دولارًا إضافيًا شهريًا على الشركة عندما تُفعَّل الفوترة. على الشخصي، Pro بـ 9 دولارات شهريًا.</span>
               </li>
             </ul>
             <p class="pf-plan-chip">
               <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg>
-              <span data-i18n="home.plan_note">الفوترة غير مفعّلة بعد. كل حساب مسجَّل يحصل على 3 أشهر من الوصول الكامل من يوم التسجيل.</span>
+              <span data-i18n="home.plan_note">الفوترة غير مفعّلة بعد. كل حساب مسجَّل يحصل على 3 أشهر من الوصول الكامل — بما فيه Pro وربط الوكيل — من يوم التسجيل.</span>
             </p>
             <a class="pf-btn-primary pf-plan-start" href="https://app.pulseflow.site/register?lang=ar" data-i18n="home.plan_cta">ابدأوا مجانًا</a>
           </div>
@@ -785,7 +794,7 @@ From: Sam Manager</p>
           </details>
           <details>
             <summary data-i18n="home.faq_q4">كم التكلفة؟</summary>
-            <p data-i18n="home.faq_a4">مساحة شخصية مجانية للأبد. للشركة يدفع المالك فقط - مقاعد الفريق مجانية مهما بلغ عددهم. الفوترة غير مفعّلة بعد، فكل حساب يحصل على 3 أشهر وصول كامل من يوم التسجيل.</p>
+            <p data-i18n="home.faq_a4">الشخصي مجاني للأبد. الشركة يدفعها المالك؛ مقاعد الفريق تبقى مجانية. Pro طبقة إضافية لربط الوكيل: 19 دولارًا شهريًا فوق الشركة، أو 9 دولارات شهريًا على الشخصي. الفوترة غير مفعّلة الآن، فكل حساب يحصل على 3 أشهر وصول كامل — بما فيه Pro — من يوم التسجيل.</p>
           </details>
           <details>
             <summary data-i18n="home.faq_q5">هل سيضطر ضيوفي لفعل شيء معقّد؟</summary>
@@ -904,6 +913,6 @@ From: Sam Manager</p>
       </footer>
     </div>
 
-    <script src="/script.js?v=38" defer></script>
+    <script src="/script.js?v=41" defer></script>
   </body>
 </html>

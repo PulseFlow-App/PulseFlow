@@ -149,6 +149,10 @@
 
 
 
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/privacy" />
     <meta
@@ -193,7 +197,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=72" />
+    <link rel="stylesheet" href="/styles.css?v=74" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -238,7 +242,7 @@
       <main id="main" class="pf-legal">
         <p class="pf-legal-kicker" data-i18n="privacy.kicker">Legal</p>
         <h1 data-i18n="privacy.title">Privacy Policy</h1>
-        <p class="pf-legal-meta" data-i18n="privacy.updated">Pulse Flow · Last updated: 3 September 2026</p>
+        <p class="pf-legal-meta" data-i18n="privacy.updated">Pulse Flow · Last updated: 6 October 2026</p>
 
         <p data-i18n="privacy.intro">This Privacy Policy explains how Pulse Flow collects, uses, and shares information when you use pulseflow.site, app.pulseflow.site, and related services (the "Service").</p>
 
@@ -246,7 +250,7 @@
         <ul>
           <li data-i18n="privacy.summary_li1">We collect account, operations, and technical data needed to run the Service.</li>
           <li data-i18n="privacy.summary_li2">We use data to authenticate you, deliver features, and send notifications.</li>
-          <li data-i18n="privacy.summary_li3">We share data with infrastructure providers, the payment processor when billing is enabled, and teammates according to role.</li>
+          <li data-i18n="privacy.summary_li3">We share data with infrastructure providers, the payment processor when billing is enabled, teammates according to role, and — if you connect an agent — that agent using your connection key.</li>
           <li data-i18n="privacy.summary_li4">We do not sell your personal information.</li>
         </ul>
 
@@ -261,7 +265,7 @@
 
         <h3 data-i18n="privacy.owner_title">Owners and managers</h3>
         <ul>
-          <li data-i18n="privacy.owner_li1">We process property inventory, tasks, contacts, team chat, bills, reports, guest stays, and billing metadata for your organization.</li>
+          <li data-i18n="privacy.owner_li1">We process property inventory, tasks, contacts, team chat, bills, reports, guest stays, billing metadata, connection keys, in-app agent chat and agent tool activity for your organization.</li>
           <li data-i18n="privacy.owner_li2">Guest Support messages and deposit records are visible to authorized owners and managers.</li>
           <li data-i18n="privacy.owner_li3">Payment customer and subscription IDs are stored on the organization; card numbers are handled by the payment processor.</li>
         </ul>
@@ -274,14 +278,24 @@
           <li data-i18n="privacy.staff_li4">Guest stay data stays limited to hosts and that guest.</li>
         </ul>
 
+        <h2 data-i18n="privacy.agent_title">Connect your agent</h2>
+        <ul>
+          <li data-i18n="privacy.agent_li1">If you create a connection key, we store a hash of the key, a label, scopes and usage metadata. The full key is shown once when you create it.</li>
+          <li data-i18n="privacy.agent_li2">When the agent calls Pulse, we process the operational data those tools read or write — team, properties, tasks, jobs and bills — scoped to your current workspace.</li>
+          <li data-i18n="privacy.agent_li3">We do not give the agent your database credentials. You can revoke the key at any time in Settings.</li>
+          <li data-i18n="privacy.agent_li4">Third-party agent clients (such as your editor) process your prompts on their systems. Their privacy terms apply to that side of the conversation.</li>
+          <li data-i18n="privacy.agent_li5">If you use in-app agent chat, we process your prompts, the agent's replies and the operational data those tools read or write, scoped to your current workspace.</li>
+        </ul>
+
         <h2 data-i18n="privacy.s4_title">Retention and security</h2>
         <p data-i18n="privacy.s4_body">We retain data while your organization is active and for a reasonable period afterward for backups, disputes and legal compliance. We use encrypted transport and access controls. You can request account deletion; some records may be retained where the law requires it.</p>
 
         <h2 data-i18n="privacy.s5_title">Your choices</h2>
         <ul>
           <li data-i18n="privacy.s5_li1">Update profile and organization settings in the app</li>
-          <li data-i18n="privacy.s5_li2">Manage or cancel company billing via the billing portal when available</li>
+          <li data-i18n="privacy.s5_li2">Manage or cancel Company billing and the Pro layer via the billing portal when available</li>
           <li data-i18n="privacy.s5_li3">Contact us to access, correct, or delete personal data where applicable</li>
+          <li data-i18n="privacy.s5_li4">Disconnect agent connection keys in Settings</li>
         </ul>
 
         <h2 data-i18n="privacy.s6_title">International use and children</h2>
@@ -306,6 +320,6 @@
           <a href="https://app.pulseflow.site?lang=en" data-i18n="footer.app">App</a></div>
       </footer>
     </div>
-    <script src="/script.js?v=35" defer></script>
+    <script src="/script.js?v=41" defer></script>
   </body>
 </html>

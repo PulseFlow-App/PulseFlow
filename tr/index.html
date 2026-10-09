@@ -150,6 +150,10 @@
 
 
 
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/tr" />
     <meta
@@ -236,7 +240,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=72" />
+    <link rel="stylesheet" href="/styles.css?v=74" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -617,15 +621,16 @@ From: Sam Manager</p>
           <div class="pf-agent-layout">
             <div class="pf-agent-copy">
               <h2 id="agent-title" class="pf-agent-title" data-i18n="home.agent_title">Ajanınızı bağlayın</h2>
-              <p class="pf-agent-lead" data-i18n="home.agent_lead">Ajanların canlı Pulse çalışma alanınızda çalışmasına izin verin: görevler, işler, mülkler ve faturalar, veritabanını teslim etmeden.</p>
+              <p class="pf-agent-lead" data-i18n="home.agent_lead">Ajanla uygulamada sohbet edin veya Ayarlar'dan bağlayın. Canlı Pulse çalışma alanınızda çalışır: görevler, işler, mülkler ve faturalar; veritabanını vermezsiniz.</p>
               <ul class="pf-agent-list">
+                <li data-i18n="home.agent_li_chat">Pulse içinde ajanla sohbet edin — nelerin açık olduğunu sorun, bir görev veya iş oluşturun, işi tamamlandı işaretleyin.</li>
                 <li data-i18n="home.agent_li1">Ayarlar'da bir bağlantı anahtarı oluşturun, ajan kabuğuna yapıştırın ve istediğiniz an kesin.</li>
                 <li data-i18n="home.agent_li2">Kim olduğunuzu, ekibi, giriş-çıkışlı mülkleri, açık görevleri, işleri ve faturaları okur.</li>
                 <li data-i18n="home.agent_li3">Bir ekip arkadaşı için görev veya iş oluşturur.</li>
                 <li data-i18n="home.agent_li4">İş bitince görevi tamamlandı olarak işaretler.</li>
-                <li data-i18n="home.agent_li5">Yalnızca sahipler ve yöneticiler. Personel ve konuklar bunu almaz.</li>
+                <li data-i18n="home.agent_li5">Yalnızca sahip ve yöneticiler. Saha ekibi ve konuklar almaz. Denemeden sonra Pro'nun parçasıdır.</li>
               </ul>
-              <p class="pf-agent-cta" data-i18n="home.agent_cta">Uygulamada Ayarlar → Ajanınızı bağlayın altında.</p>
+              <p class="pf-agent-cta" data-i18n="home.agent_cta">Uygulamada sohbet edin veya Ayarlar → Ajanınızı bağlayın altında bağlayın.</p>
               <p class="pf-agent-safety" data-i18n="home.agent_safety">Ajan asla veritabanı anahtarını almaz. Yalnızca o kişisel bağlantıyı, mevcut şirket çalışma alanınızla sınırlı kullanır.</p>
             </div>
             <div class="pf-agent-preview" data-agent-demo>
@@ -750,12 +755,16 @@ From: Sam Manager</p>
               </li>
               <li class="is-company">
                 <strong data-i18n="home.plan_company_label">Şirket</strong>
-                <span data-i18n="home.plan_company_desc">Bir yöneticiniz, temizlikçiniz veya tedarikçileriniz var. Yalnızca sahip öder, tek abonelik ekibi kapsar.</span>
+                <span data-i18n="home.plan_company_desc">Bir yöneticiniz, temizlikçiniz veya tedarikçileriniz var. Yalnızca sahip öder; tek abonelik ekibi kapsar.</span>
+              </li>
+              <li class="is-pro">
+                <strong data-i18n="home.plan_pro_label">Pro</strong>
+                <span data-i18n="home.plan_pro_desc">Şirket artı Ajanınızı bağlayın. Faturalama açıkken Şirket üzerine ayda ekstra 19 USD. Kişisel planda Pro ayda 9 USD.</span>
               </li>
             </ul>
             <p class="pf-plan-chip">
               <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg>
-              <span data-i18n="home.plan_note">Faturalama henüz açık değil. Kayıtlı her hesap, kayıt gününden itibaren 3 ay tam erişim alır.</span>
+              <span data-i18n="home.plan_note">Faturalama henüz açık değil. Kayıtlı her hesap, kayıt gününden itibaren 3 ay tam erişim alır — Pro ve Ajanınızı bağlayın dahil.</span>
             </p>
             <a class="pf-btn-primary pf-plan-start" href="https://app.pulseflow.site/register?lang=tr" data-i18n="home.plan_cta">Ücretsiz başla</a>
           </div>
@@ -785,7 +794,7 @@ From: Sam Manager</p>
           </details>
           <details>
             <summary data-i18n="home.faq_q4">Ne kadara mal olur?</summary>
-            <p data-i18n="home.faq_a4">Kişisel çalışma alanı sonsuza kadar ücretsizdir. Şirkette yalnızca sahip öder: ekip koltukları kaç kişi eklerseniz ekleyin ücretsizdir. Faturalama henüz canlı değil, bu yüzden her hesap kayıt gününden itibaren 3 ay tam erişim alır.</p>
+            <p data-i18n="home.faq_a4">Kişisel sonsuza kadar ücretsizdir. Şirketi sahip öder; ekip koltukları ücretsiz kalır. Pro, Ajanınızı bağlayın için ekstra katmandır: Şirket üzerine ayda 19 USD, veya Kişisel planda ayda 9 USD. Şu an faturalama canlı değil, her hesap kayıt gününden itibaren 3 ay tam erişim alır — Pro dahil.</p>
           </details>
           <details>
             <summary data-i18n="home.faq_q5">Konuklarımın karmaşık bir şey yapması gerekir mi?</summary>
@@ -904,6 +913,6 @@ From: Sam Manager</p>
       </footer>
     </div>
 
-    <script src="/script.js?v=38" defer></script>
+    <script src="/script.js?v=41" defer></script>
   </body>
 </html>

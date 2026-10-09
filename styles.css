@@ -958,6 +958,67 @@ a.pf-audience-card:hover {
   color: var(--coral-dark);
 }
 
+.pf-owners-videos {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 36px var(--pad) 8px;
+  text-align: center;
+}
+
+.pf-owners-videos h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: var(--type-title);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: var(--leading-title);
+  margin: 0 0 12px;
+}
+
+.pf-owners-videos-lead {
+  margin: 0 auto 24px;
+  max-width: 40rem;
+  color: var(--muted);
+  font-size: var(--type-body);
+  line-height: var(--leading-body);
+}
+
+.pf-loom-list {
+  display: grid;
+  gap: 28px;
+  margin: 0;
+}
+
+.pf-loom-list figure {
+  margin: 0;
+}
+
+.pf-loom-frame {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+}
+
+.pf-loom-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.pf-loom-list figcaption {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+
 .pf-owners-hero {
   padding: 44px var(--pad) 28px;
   position: relative;
@@ -3862,6 +3923,23 @@ a.pf-audience-card:hover {
   white-space: pre;
 }
 
+.pf-agent-note {
+  max-width: 40rem;
+  margin: 8px auto 28px;
+  padding: 0 var(--pad);
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.pf-agent-note a {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+
 .pf-agent-cross {
   max-width: 40rem;
   margin: 16px auto 0;
@@ -3913,6 +3991,20 @@ a.pf-audience-card:hover {
   .home-page .pf-plan-options {
     grid-template-columns: 1fr 1fr;
   }
+
+  .home-page .pf-plan-options li.is-pro {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 960px) {
+  .home-page .pf-plan-options {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .home-page .pf-plan-options li.is-pro {
+    grid-column: auto;
+  }
 }
 
 .home-page .pf-plan-options li {
@@ -3925,6 +4017,10 @@ a.pf-audience-card:hover {
 }
 
 .home-page .pf-plan-options li.is-company {
+  border-top: 3px solid var(--border);
+}
+
+.home-page .pf-plan-options li.is-pro {
   border-top: 3px solid var(--accent);
 }
 

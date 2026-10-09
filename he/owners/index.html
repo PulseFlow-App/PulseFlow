@@ -150,6 +150,10 @@
 
 
 
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/he/owners" />
     <meta
@@ -200,7 +204,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=72" />
+    <link rel="stylesheet" href="/styles.css?v=75" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -243,6 +247,39 @@
       </header>
 
       <main id="main" class="pf-owners-main">
+        <section class="pf-owners-videos" id="watch" aria-labelledby="owners-videos-title">
+          <h2 id="owners-videos-title" data-i18n="owners.video_title">צפו בסביבת העבודה של הבעלים</h2>
+          <p class="pf-owners-videos-lead" data-i18n="owners.video_lead">שני סרטונים קצרים שאפשר לנגן בעמוד הזה. קודם: למה התפעול נשאר בטוח ומסודר. אחר כך: כסף, המלצות והסוכן.</p>
+          <div class="pf-loom-list">
+            <figure>
+              <div class="pf-loom-frame">
+                <iframe
+                  src="https://www.loom.com/embed/3c9dfac14da74827bc006e70c5f15874?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                  title="סרטון: למה Pulse Flow שומר על תפעול בטוח ומסודר"
+                  data-i18n-attr="title:owners.video_1_iframe"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                  loading="eager"
+                ></iframe>
+              </div>
+              <figcaption data-i18n="owners.video_1_title">למה Pulse Flow שומר על תפעול בטוח ומסודר</figcaption>
+            </figure>
+            <figure>
+              <div class="pf-loom-frame">
+                <iframe
+                  src="https://www.loom.com/embed/5ecd7ee3a8a4431bb4358598d966f353?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                  title="סרטון: כספים, המלצות והסוכן"
+                  data-i18n-attr="title:owners.video_2_iframe"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <figcaption data-i18n="owners.video_2_title">כספים, המלצות והסוכן</figcaption>
+            </figure>
+          </div>
+        </section>
+
         <section class="pf-owners-hero is-text-only" id="hero">
             <p class="pf-hero-brand" aria-hidden="true">
               <img
@@ -329,6 +366,11 @@
           </div>
         </section>
 
+        <p class="pf-agent-note">
+          <span data-i18n="owners.agent_note">שוחחו עם הסוכן באפליקציה, או חברו סוכן חיצוני מההגדרות. הוא יכול לקרוא את הצוות, הנכסים, המשימות, העבודות והחשבוניות, ליצור עבודה ולסמן משימה כהושלמה — בלי מפתח מסד הנתונים.</span>
+          <a href="/he/#connect-agent" data-i18n="owners.agent_cross">ראו איך נראה סשן →</a>
+        </p>
+
         <section class="pf-features" id="features" aria-labelledby="features-title">
           <details class="pf-features-panel">
             <summary id="features-title" data-i18n="common.features_summary">רשימת יכולות - פתיחת הכול</summary>
@@ -347,7 +389,7 @@
                 <h4 data-i18n="owners.access_g5_title">הישארו מעודכנים ובשליטה</h4>
                 <p data-i18n="owners.access_g5_desc">קבלו התראות באפליקציה ו-push לטלפון, צרו דוחות וייצוא לפי קטגוריה או לכל החברה, ועקבו אחרי הפניות והזמנות צוות.</p>
                 <h4 data-i18n="owners.access_g6_title">חברו את הסוכן שלכם</h4>
-                <p data-i18n="owners.access_g6_desc">צרו מפתח חיבור בהגדרות והדביקו אותו ב-agent's shell. הסוכן קורא את הצוות, הנכסים, המשימות, העבודות והחשבוניות, יוצר משימות ועבודות, ומסמן משימה כהושלמה. הוא לא מקבל את מפתח מסד הנתונים. אפשר לנתק בכל רגע.</p>
+                <p data-i18n="owners.access_g6_desc">שוחחו עם הסוכן באפליקציה, או צרו מפתח חיבור בהגדרות והדביקו אותו במעטפת של לקוח חיצוני. הסוכן יכול לקרוא את הצוות, הנכסים, המשימות, העבודות והחשבוניות, ליצור משימות ועבודות, ולסמן משימה כהושלמה. הוא לא מקבל את מפתח מסד הנתונים. אפשר לנתק בכל רגע.</p>
               </div>
               <h3 class="pf-features-more-title" data-i18n="owners.planned_title">יכולות מתוכננות</h3>
               <ul class="pf-features-list is-planned">
@@ -395,10 +437,6 @@
             </div>
           </details>
         </section>
-
-        <p class="pf-agent-cross">
-          <a href="/he/#connect-agent" data-i18n="owners.agent_cross">ראו איך נראה סשן →</a>
-        </p>
 
         <section class="pf-price-line" id="price">
           <p data-i18n="owners.price_line">לחברה הבעלים משלם ומושבי הצוות חינמיים. החיוב עדיין לא חי, אז לחשבונות רשומים יש 3 חודשים של גישה מלאה, ואם תזמינו 5 אנשים, אפשר לקבל שנה של גישה מלאה בחינם.</p>
@@ -502,6 +540,6 @@
           <a href="https://app.pulseflow.site?lang=he" data-i18n="footer.app">אפליקציה</a></div>
       </footer>
     </div>
-    <script src="/script.js?v=35" defer></script>
+    <script src="/script.js?v=42" defer></script>
   </body>
 </html>

@@ -150,6 +150,10 @@
 
 
 
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/ar/owners" />
     <meta
@@ -200,7 +204,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=72" />
+    <link rel="stylesheet" href="/styles.css?v=75" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -243,6 +247,39 @@
       </header>
 
       <main id="main" class="pf-owners-main">
+        <section class="pf-owners-videos" id="watch" aria-labelledby="owners-videos-title">
+          <h2 id="owners-videos-title" data-i18n="owners.video_title">شاهدوا مساحة عمل المالك</h2>
+          <p class="pf-owners-videos-lead" data-i18n="owners.video_lead">مقطعان قصيران يمكن تشغيلهما في هذه الصفحة. أولاً: لماذا تبقى العمليات آمنة ومنظّمة. ثم: المال والتزكيات والوكيل.</p>
+          <div class="pf-loom-list">
+            <figure>
+              <div class="pf-loom-frame">
+                <iframe
+                  src="https://www.loom.com/embed/3c9dfac14da74827bc006e70c5f15874?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                  title="فيديو: لماذا يُبقي Pulse Flow العمليات آمنة ومنظّمة"
+                  data-i18n-attr="title:owners.video_1_iframe"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                  loading="eager"
+                ></iframe>
+              </div>
+              <figcaption data-i18n="owners.video_1_title">لماذا يُبقي Pulse Flow العمليات آمنة ومنظّمة</figcaption>
+            </figure>
+            <figure>
+              <div class="pf-loom-frame">
+                <iframe
+                  src="https://www.loom.com/embed/5ecd7ee3a8a4431bb4358598d966f353?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                  title="فيديو: المالية والتزكيات والوكيل"
+                  data-i18n-attr="title:owners.video_2_iframe"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <figcaption data-i18n="owners.video_2_title">المالية والتزكيات والوكيل</figcaption>
+            </figure>
+          </div>
+        </section>
+
         <section class="pf-owners-hero is-text-only" id="hero">
             <p class="pf-hero-brand" aria-hidden="true">
               <img
@@ -329,6 +366,11 @@
           </div>
         </section>
 
+        <p class="pf-agent-note">
+          <span data-i18n="owners.agent_note">تحدثوا مع الوكيل في التطبيق، أو اربطوا وكيلًا خارجيًا من الإعدادات. يمكنه قراءة الفريق والعقارات والمهام والأعمال والفواتير، وإنشاء عمل، وتعليم مهمة منتهية — دون مفتاح قاعدة البيانات.</span>
+          <a href="/ar/#connect-agent" data-i18n="owners.agent_cross">شاهدوا كيف تبدو الجلسة →</a>
+        </p>
+
         <section class="pf-features" id="features" aria-labelledby="features-title">
           <details class="pf-features-panel">
             <summary id="features-title" data-i18n="common.features_summary">قائمة الميزات - توسيع الكل</summary>
@@ -347,7 +389,7 @@
                 <h4 data-i18n="owners.access_g5_title">ابقوا على اطلاع وتحت السيطرة</h4>
                 <p data-i18n="owners.access_g5_desc">احصلوا على إشعارات داخل التطبيق ودفع على الهاتف، وأنشئوا تقارير وتصديرات حسب الفئة أو للشركة كلها، وتابعوا الإحالات ودعوات الفريق.</p>
                 <h4 data-i18n="owners.access_g6_title">وصّلوا وكيلكم</h4>
-                <p data-i18n="owners.access_g6_desc">أنشئوا مفتاح اتصال في الإعدادات والصقوه في واجهة الوكيل. الوكيل يقرأ الفريق والعقارات والمهام والأعمال والفواتير، وينشئ مهاماً وأعمالاً، ويؤشّر المهمة منتهية. لا يحصل على مفتاح قاعدة البيانات. افصلوه في أي وقت.</p>
+                <p data-i18n="owners.access_g6_desc">تحدثوا مع الوكيل في التطبيق، أو أنشئوا مفتاح اتصال في الإعدادات والصقوه في صدفة عميل خارجي. يمكن للوكيل قراءة الفريق والعقارات والمهام والأعمال والفواتير، وإنشاء مهام وأعمال، وتعليم مهمة منتهية. لا يحصل أبدًا على مفتاح قاعدة البيانات. اقطعوا الاتصال في أي وقت.</p>
               </div>
               <h3 class="pf-features-more-title" data-i18n="owners.planned_title">ميزات مخطط لها</h3>
               <ul class="pf-features-list is-planned">
@@ -395,10 +437,6 @@
             </div>
           </details>
         </section>
-
-        <p class="pf-agent-cross">
-          <a href="/ar/#connect-agent" data-i18n="owners.agent_cross">شاهدوا كيف تبدو الجلسة →</a>
-        </p>
 
         <section class="pf-price-line" id="price">
           <p data-i18n="owners.price_line">للشركة يدفع المالك ومقاعد الفريق مجانية. الفوترة غير حية بعد، فالحسابات المسجَّلة لديها 3 أشهر من الوصول الكامل، وإذا دعوتم 5 أشخاص يمكنكم الحصول على سنة من الوصول الكامل مجاناً.</p>
@@ -502,6 +540,6 @@
           <a href="https://app.pulseflow.site?lang=ar" data-i18n="footer.app">التطبيق</a></div>
       </footer>
     </div>
-    <script src="/script.js?v=35" defer></script>
+    <script src="/script.js?v=42" defer></script>
   </body>
 </html>

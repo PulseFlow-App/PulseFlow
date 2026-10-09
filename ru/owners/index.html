@@ -150,6 +150,10 @@
 
 
 
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/ru/owners" />
     <meta
@@ -200,7 +204,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=72" />
+    <link rel="stylesheet" href="/styles.css?v=75" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -243,6 +247,39 @@
       </header>
 
       <main id="main" class="pf-owners-main">
+        <section class="pf-owners-videos" id="watch" aria-labelledby="owners-videos-title">
+          <h2 id="owners-videos-title" data-i18n="owners.video_title">Посмотрите рабочее пространство владельца</h2>
+          <p class="pf-owners-videos-lead" data-i18n="owners.video_lead">Два коротких видео, которые можно смотреть на этой странице. Сначала: почему операции остаются безопасными и упорядоченными. Затем: деньги, рекомендации и агент.</p>
+          <div class="pf-loom-list">
+            <figure>
+              <div class="pf-loom-frame">
+                <iframe
+                  src="https://www.loom.com/embed/3c9dfac14da74827bc006e70c5f15874?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                  title="Видео: почему Pulse Flow держит операции в безопасности и порядке"
+                  data-i18n-attr="title:owners.video_1_iframe"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                  loading="eager"
+                ></iframe>
+              </div>
+              <figcaption data-i18n="owners.video_1_title">Почему Pulse Flow держит операции в безопасности и порядке</figcaption>
+            </figure>
+            <figure>
+              <div class="pf-loom-frame">
+                <iframe
+                  src="https://www.loom.com/embed/5ecd7ee3a8a4431bb4358598d966f353?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                  title="Видео: финансы, рекомендации и агент"
+                  data-i18n-attr="title:owners.video_2_iframe"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <figcaption data-i18n="owners.video_2_title">Финансы, рекомендации и агент</figcaption>
+            </figure>
+          </div>
+        </section>
+
         <section class="pf-owners-hero is-text-only" id="hero">
             <p class="pf-hero-brand" aria-hidden="true">
               <img
@@ -329,6 +366,11 @@
           </div>
         </section>
 
+        <p class="pf-agent-note">
+          <span data-i18n="owners.agent_note">Общайтесь с агентом в приложении или подключите внешнего в Настройках. Он может читать команду, объекты, задачи, работы и счета, создавать работу и отмечать задачу выполненной — без ключа базы.</span>
+          <a href="/ru/#connect-agent" data-i18n="owners.agent_cross">Как выглядит сессия →</a>
+        </p>
+
         <section class="pf-features" id="features" aria-labelledby="features-title">
           <details class="pf-features-panel">
             <summary id="features-title" data-i18n="common.features_summary">Список возможностей - раскрыть всё</summary>
@@ -347,7 +389,7 @@
                 <h4 data-i18n="owners.access_g5_title">Будьте в курсе и под контролем</h4>
                 <p data-i18n="owners.access_g5_desc">Получайте уведомления в приложении и push на телефон, формируйте отчёты и выгрузки по категориям или по всей компании, следите за рефералами и приглашениями в команду.</p>
                 <h4 data-i18n="owners.access_g6_title">Подключите своего агента</h4>
-                <p data-i18n="owners.access_g6_desc">Создайте ключ подключения в настройках и вставьте его в оболочку агента. Агент читает команду, объекты, задачи, заявки и счета, создаёт задачи и заявки и отмечает задачу выполненной. Ключ базы данных он не получает. Отключить можно в любой момент.</p>
+                <p data-i18n="owners.access_g6_desc">Общайтесь с агентом в приложении или создайте ключ подключения в Настройках и вставьте его в оболочку внешнего клиента. Агент может читать команду, объекты, задачи, работы и счета, создавать задачи и работы и отмечать задачу выполненной. Ключ базы он никогда не получает. Отключите в любой момент.</p>
               </div>
               <h3 class="pf-features-more-title" data-i18n="owners.planned_title">В планах</h3>
               <ul class="pf-features-list is-planned">
@@ -395,10 +437,6 @@
             </div>
           </details>
         </section>
-
-        <p class="pf-agent-cross">
-          <a href="/ru/#connect-agent" data-i18n="owners.agent_cross">Как выглядит сессия →</a>
-        </p>
 
         <section class="pf-price-line" id="price">
           <p data-i18n="owners.price_line">За компанию платит владелец, места команды бесплатны. Оплата ещё не подключена, у зарегистрированных аккаунтов 3 месяца полного доступа, а если пригласить 5 человек, можно получить год полного доступа бесплатно.</p>
@@ -502,6 +540,6 @@
           <a href="https://app.pulseflow.site?lang=ru" data-i18n="footer.app">Приложение</a></div>
       </footer>
     </div>
-    <script src="/script.js?v=35" defer></script>
+    <script src="/script.js?v=42" defer></script>
   </body>
 </html>

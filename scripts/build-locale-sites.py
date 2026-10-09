@@ -90,6 +90,7 @@ def assert_translation_coverage(dicts: dict) -> None:
     allow_identical = {
         "home.plan_personal_label",
         "home.plan_company_label",
+        "home.plan_pro_label",
         "home.mock_wa_sub",
         "demo.password",
         "demo.email",

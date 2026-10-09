@@ -150,6 +150,10 @@
 
 
 
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/ru" />
     <meta
@@ -236,7 +240,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=72" />
+    <link rel="stylesheet" href="/styles.css?v=74" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -617,15 +621,16 @@ From: Sam Manager</p>
           <div class="pf-agent-layout">
             <div class="pf-agent-copy">
               <h2 id="agent-title" class="pf-agent-title" data-i18n="home.agent_title">Подключите своего агента</h2>
-              <p class="pf-agent-lead" data-i18n="home.agent_lead">Пусть агенты работают внутри вашего живого пространства Pulse: задачи, заявки, объекты и счета, без доступа к базе данных.</p>
+              <p class="pf-agent-lead" data-i18n="home.agent_lead">Общайтесь с агентом в приложении или подключите его в Настройках. Он работает в вашем живом пространстве Pulse: задачи, работы, объекты и счета — без передачи базы.</p>
               <ul class="pf-agent-list">
+                <li data-i18n="home.agent_li_chat">Общайтесь с агентом внутри Pulse — спросите, что открыто, создайте задачу или работу, отметьте дело выполненным.</li>
                 <li data-i18n="home.agent_li1">Создайте ключ подключения в настройках, вставьте его в оболочку агента и отключите в любой момент.</li>
                 <li data-i18n="home.agent_li2">Читает, кто вы, команду, объекты с заездами и выездами, открытые задачи, заявки и счета.</li>
                 <li data-i18n="home.agent_li3">Создаёт задачу или заявку на коллегу.</li>
                 <li data-i18n="home.agent_li4">Отмечает задачу выполненной, когда работа закончена.</li>
-                <li data-i18n="home.agent_li5">Только владелец и управляющий. Персонал и гости этого не получают.</li>
+                <li data-i18n="home.agent_li5">Только владельцы и управляющие. Персонал и гости этого не получают. После пробного периода это часть Pro.</li>
               </ul>
-              <p class="pf-agent-cta" data-i18n="home.agent_cta">В приложении: Настройки → Подключите своего агента.</p>
+              <p class="pf-agent-cta" data-i18n="home.agent_cta">Общайтесь в приложении или подключите в Настройки → Подключить агента.</p>
               <p class="pf-agent-safety" data-i18n="home.agent_safety">Агент не получает ключ базы данных. Только этот личный ключ, в рамках текущего пространства компании.</p>
             </div>
             <div class="pf-agent-preview" data-agent-demo>
@@ -750,12 +755,16 @@ From: Sam Manager</p>
               </li>
               <li class="is-company">
                 <strong data-i18n="home.plan_company_label">Компания</strong>
-                <span data-i18n="home.plan_company_desc">Есть управляющий, горничная или подрядчики. Платит только владелец, одна подписка на всю команду.</span>
+                <span data-i18n="home.plan_company_desc">Есть управляющий, горничная или подрядчики. Платит только владелец; одна подписка на всю команду.</span>
+              </li>
+              <li class="is-pro">
+                <strong data-i18n="home.plan_pro_label">Pro</strong>
+                <span data-i18n="home.plan_pro_desc">Компания плюс «Подключить агента». Доплата 19 USD в месяц к Компании, когда оплата заработает. На Личном Pro стоит 9 USD в месяц.</span>
               </li>
             </ul>
             <p class="pf-plan-chip">
               <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg>
-              <span data-i18n="home.plan_note">Оплата пока не подключена. Каждый зарегистрированный аккаунт получает 3 месяца полного доступа с даты регистрации.</span>
+              <span data-i18n="home.plan_note">Оплата пока не подключена. Каждый зарегистрированный аккаунт получает 3 месяца полного доступа — включая Pro и «Подключить агента» — с даты регистрации.</span>
             </p>
             <a class="pf-btn-primary pf-plan-start" href="https://app.pulseflow.site/register?lang=ru" data-i18n="home.plan_cta">Начать бесплатно</a>
           </div>
@@ -785,7 +794,7 @@ From: Sam Manager</p>
           </details>
           <details>
             <summary data-i18n="home.faq_q4">Сколько это стоит?</summary>
-            <p data-i18n="home.faq_a4">Личное пространство бесплатно навсегда. За компанию платит только владелец - места команды бесплатны, сколько бы людей вы ни добавили. Оплата ещё не подключена, поэтому каждый аккаунт получает 3 месяца полного доступа со дня регистрации.</p>
+            <p data-i18n="home.faq_a4">Личное бесплатно навсегда. Компанию оплачивает владелец; места команды бесплатны. Pro — дополнительный уровень для «Подключить агента»: 19 USD в месяц сверх Компании или 9 USD в месяц на Личном. Оплата ещё не подключена, поэтому каждый аккаунт получает 3 месяца полного доступа — Pro включён — со дня регистрации.</p>
           </details>
           <details>
             <summary data-i18n="home.faq_q5">Гостям придётся делать что-то сложное?</summary>
@@ -904,6 +913,6 @@ From: Sam Manager</p>
       </footer>
     </div>
 
-    <script src="/script.js?v=38" defer></script>
+    <script src="/script.js?v=41" defer></script>
   </body>
 </html>

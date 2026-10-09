@@ -150,6 +150,10 @@
 
 
 
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/he" />
     <meta
@@ -236,7 +240,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=72" />
+    <link rel="stylesheet" href="/styles.css?v=74" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -617,15 +621,16 @@ From: Sam Manager</p>
           <div class="pf-agent-layout">
             <div class="pf-agent-copy">
               <h2 id="agent-title" class="pf-agent-title" data-i18n="home.agent_title">חברו את הסוכן שלכם</h2>
-              <p class="pf-agent-lead" data-i18n="home.agent_lead">תנו לסוכנים לעבוד בתוך מרחב Pulse החי שלכם: משימות, עבודות, נכסים וחשבוניות, בלי למסור את מפתח מסד הנתונים.</p>
+              <p class="pf-agent-lead" data-i18n="home.agent_lead">שוחחו עם הסוכן באפליקציה, או חברו אחד מההגדרות. הוא עובד בתוך סביבת Pulse החיה שלכם: משימות, עבודות, נכסים וחשבוניות, בלי למסור את מסד הנתונים.</p>
               <ul class="pf-agent-list">
+                <li data-i18n="home.agent_li_chat">שוחחו עם הסוכן בתוך Pulse — שאלו מה פתוח, צרו משימה או עבודה, סמנו עבודה כהושלמה.</li>
                 <li data-i18n="home.agent_li1">צרו מפתח חיבור בהגדרות, הדביקו אותו ב-agent's shell, ונתקו בכל רגע.</li>
                 <li data-i18n="home.agent_li2">קורא מי אתם, את הצוות, נכסים עם כניסה ויציאה, משימות פתוחות, עבודות וחשבוניות.</li>
                 <li data-i18n="home.agent_li3">יוצר משימה או עבודה לעמית.</li>
                 <li data-i18n="home.agent_li4">מסמן משימה כהושלמה כשהעבודה נגמרה.</li>
-                <li data-i18n="home.agent_li5">בעלים ומנהלים בלבד. צוות ואורחים לא מקבלים את זה.</li>
+                <li data-i18n="home.agent_li5">בעלים ומנהלים בלבד. צוות שטח ואורחים לא מקבלים את זה. אחרי הניסיון זה חלק מ־Pro.</li>
               </ul>
-              <p class="pf-agent-cta" data-i18n="home.agent_cta">באפליקציה, תחת הגדרות → חברו את הסוכן שלכם.</p>
+              <p class="pf-agent-cta" data-i18n="home.agent_cta">שוחחו באפליקציה, או חברו תחת הגדרות → חיבור הסוכן.</p>
               <p class="pf-agent-safety" data-i18n="home.agent_safety">הסוכן לא מקבל את מפתח מסד הנתונים. הוא משתמש רק בחיבור האישי הזה, בתוך מרחב החברה הנוכחי.</p>
             </div>
             <div class="pf-agent-preview" data-agent-demo>
@@ -750,12 +755,16 @@ From: Sam Manager</p>
               </li>
               <li class="is-company">
                 <strong data-i18n="home.plan_company_label">Company</strong>
-                <span data-i18n="home.plan_company_desc">יש לכם מנהל, מנקה או ספקים. רק הבעלים משלם, מנוי אחד מכסה את הצוות.</span>
+                <span data-i18n="home.plan_company_desc">יש לכם מנהל, מנקה או ספקים. רק הבעלים משלם; מנוי אחד מכסה את הצוות.</span>
+              </li>
+              <li class="is-pro">
+                <strong data-i18n="home.plan_pro_label">Pro</strong>
+                <span data-i18n="home.plan_pro_desc">חברה ועוד חיבור הסוכן. תוספת 19 דולר לחודש על חברה כשהחיוב פעיל. באישי, Pro עולה 9 דולר לחודש.</span>
               </li>
             </ul>
             <p class="pf-plan-chip">
               <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg>
-              <span data-i18n="home.plan_note">החיוב עדיין לא פעיל. כל חשבון רשום מקבל 3 חודשים של גישה מלאה מיום ההרשמה.</span>
+              <span data-i18n="home.plan_note">החיוב עדיין לא פעיל. כל חשבון רשום מקבל 3 חודשים של גישה מלאה — כולל Pro וחיבור הסוכן — מיום ההרשמה.</span>
             </p>
             <a class="pf-btn-primary pf-plan-start" href="https://app.pulseflow.site/register?lang=he" data-i18n="home.plan_cta">התחילו בחינם</a>
           </div>
@@ -785,7 +794,7 @@ From: Sam Manager</p>
           </details>
           <details>
             <summary data-i18n="home.faq_q4">כמה זה עולה?</summary>
-            <p data-i18n="home.faq_a4">סביבת עבודה אישית חינם לתמיד. לחברה משלם רק הבעלים - מושבי צוות חינם, כמה שתוסיפו. החיוב עוד לא פעיל, אז לכל חשבון יש 3 חודשי גישה מלאה מיום ההרשמה.</p>
+            <p data-i18n="home.faq_a4">אישי חינם לתמיד. חברה משולם על ידי הבעלים; מושבי הצוות נשארים חינם. Pro הוא השכבה הנוספת לחיבור הסוכן: 19 דולר לחודש מעל חברה, או 9 דולר לחודש באישי. כרגע החיוב לא פעיל, לכל חשבון יש 3 חודשי גישה מלאה — כולל Pro — מיום ההרשמה.</p>
           </details>
           <details>
             <summary data-i18n="home.faq_q5">האורחים שלי יצטרכו לעשות משהו מסובך?</summary>
@@ -904,6 +913,6 @@ From: Sam Manager</p>
       </footer>
     </div>
 
-    <script src="/script.js?v=38" defer></script>
+    <script src="/script.js?v=41" defer></script>
   </body>
 </html>

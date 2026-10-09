@@ -150,6 +150,10 @@
 
 
 
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/tr/owners" />
     <meta
@@ -200,7 +204,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=72" />
+    <link rel="stylesheet" href="/styles.css?v=75" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -243,6 +247,39 @@
       </header>
 
       <main id="main" class="pf-owners-main">
+        <section class="pf-owners-videos" id="watch" aria-labelledby="owners-videos-title">
+          <h2 id="owners-videos-title" data-i18n="owners.video_title">Sahip çalışma alanını izleyin</h2>
+          <p class="pf-owners-videos-lead" data-i18n="owners.video_lead">Bu sayfada oynatabileceğiniz iki kısa video. İlki: operasyonlar neden güvenli ve düzenli kalır. Sonra: para, onaylar ve ajan.</p>
+          <div class="pf-loom-list">
+            <figure>
+              <div class="pf-loom-frame">
+                <iframe
+                  src="https://www.loom.com/embed/3c9dfac14da74827bc006e70c5f15874?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                  title="Video: Pulse Flow operasyonları neden güvenli ve düzenli tutar"
+                  data-i18n-attr="title:owners.video_1_iframe"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                  loading="eager"
+                ></iframe>
+              </div>
+              <figcaption data-i18n="owners.video_1_title">Pulse Flow operasyonları neden güvenli ve düzenli tutar</figcaption>
+            </figure>
+            <figure>
+              <div class="pf-loom-frame">
+                <iframe
+                  src="https://www.loom.com/embed/5ecd7ee3a8a4431bb4358598d966f353?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                  title="Video: finans, onaylar ve ajan"
+                  data-i18n-attr="title:owners.video_2_iframe"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <figcaption data-i18n="owners.video_2_title">Finans, onaylar ve ajan</figcaption>
+            </figure>
+          </div>
+        </section>
+
         <section class="pf-owners-hero is-text-only" id="hero">
             <p class="pf-hero-brand" aria-hidden="true">
               <img
@@ -329,6 +366,11 @@
           </div>
         </section>
 
+        <p class="pf-agent-note">
+          <span data-i18n="owners.agent_note">Ajanla uygulamada sohbet edin veya Ayarlar'dan harici bir tane bağlayın. Ekibi, mülkleri, görevleri, işleri ve faturaları okuyabilir, iş oluşturabilir ve bir görevi tamamlandı işaretleyebilir — veritabanı anahtarı olmadan.</span>
+          <a href="/tr/#connect-agent" data-i18n="owners.agent_cross">Bir oturumun nasıl göründüğüne bakın →</a>
+        </p>
+
         <section class="pf-features" id="features" aria-labelledby="features-title">
           <details class="pf-features-panel">
             <summary id="features-title" data-i18n="common.features_summary">Özellik listesi - tümünü aç</summary>
@@ -347,7 +389,7 @@
                 <h4 data-i18n="owners.access_g5_title">Bilgili ve kontrolde kalın</h4>
                 <p data-i18n="owners.access_g5_desc">Uygulama içi ve telefon bildirimleri alın, tek kategori veya tüm şirket için rapor ve dışa aktarma üretin, davetleri ve ekip davetlerini izleyin.</p>
                 <h4 data-i18n="owners.access_g6_title">Ajanınızı bağlayın</h4>
-                <p data-i18n="owners.access_g6_desc">Ayarlar'da bir bağlantı anahtarı oluşturun ve ajan kabuğuna yapıştırın. Ajan ekibi, mülkleri, görevleri, işleri ve faturaları okuyabilir, görev ve iş oluşturabilir, görevi tamamlandı işaretleyebilir. Veritabanı anahtarını asla almaz. İstediğiniz an kesin.</p>
+                <p data-i18n="owners.access_g6_desc">Ajanla uygulamada sohbet edin veya Ayarlar'da bir bağlantı anahtarı oluşturup harici bir istemcinin kabuğuna yapıştırın. Ajan ekibi, mülkleri, görevleri, işleri ve faturaları okuyabilir, görev ve iş oluşturabilir ve bir görevi tamamlandı işaretleyebilir. Veritabanı anahtarını asla almaz. İstediğiniz zaman bağlantıyı kesin.</p>
               </div>
               <h3 class="pf-features-more-title" data-i18n="owners.planned_title">Planlanan özellikler</h3>
               <ul class="pf-features-list is-planned">
@@ -395,10 +437,6 @@
             </div>
           </details>
         </section>
-
-        <p class="pf-agent-cross">
-          <a href="/tr/#connect-agent" data-i18n="owners.agent_cross">Bir oturumun nasıl göründüğüne bakın →</a>
-        </p>
 
         <section class="pf-price-line" id="price">
           <p data-i18n="owners.price_line">Şirkette sahibi öder, ekip koltukları ücretsizdir. Faturalama henüz canlı değil; kayıtlı hesapların 3 ay tam erişimi vardır ve 5 kişi davet ederseniz bir yıl tam erişimi ücretsiz alabilirsiniz.</p>
@@ -502,6 +540,6 @@
           <a href="https://app.pulseflow.site?lang=tr" data-i18n="footer.app">Uygulama</a></div>
       </footer>
     </div>
-    <script src="/script.js?v=35" defer></script>
+    <script src="/script.js?v=42" defer></script>
   </body>
 </html>

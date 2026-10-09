@@ -150,6 +150,10 @@
 
 
 
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/es/owners" />
     <meta
@@ -200,7 +204,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=72" />
+    <link rel="stylesheet" href="/styles.css?v=75" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -243,6 +247,39 @@
       </header>
 
       <main id="main" class="pf-owners-main">
+        <section class="pf-owners-videos" id="watch" aria-labelledby="owners-videos-title">
+          <h2 id="owners-videos-title" data-i18n="owners.video_title">Vea el espacio del propietario</h2>
+          <p class="pf-owners-videos-lead" data-i18n="owners.video_lead">Dos vídeos cortos que puede reproducir en esta página. Primero: por qué las operaciones siguen seguras y organizadas. Luego: dinero, avales y el agente.</p>
+          <div class="pf-loom-list">
+            <figure>
+              <div class="pf-loom-frame">
+                <iframe
+                  src="https://www.loom.com/embed/3c9dfac14da74827bc006e70c5f15874?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                  title="Vídeo: por qué Pulse Flow mantiene las operaciones seguras y organizadas"
+                  data-i18n-attr="title:owners.video_1_iframe"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                  loading="eager"
+                ></iframe>
+              </div>
+              <figcaption data-i18n="owners.video_1_title">Por qué Pulse Flow mantiene las operaciones seguras y organizadas</figcaption>
+            </figure>
+            <figure>
+              <div class="pf-loom-frame">
+                <iframe
+                  src="https://www.loom.com/embed/5ecd7ee3a8a4431bb4358598d966f353?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                  title="Vídeo: finanzas, avales y el agente"
+                  data-i18n-attr="title:owners.video_2_iframe"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <figcaption data-i18n="owners.video_2_title">Finanzas, avales y el agente</figcaption>
+            </figure>
+          </div>
+        </section>
+
         <section class="pf-owners-hero is-text-only" id="hero">
             <p class="pf-hero-brand" aria-hidden="true">
               <img
@@ -329,6 +366,11 @@
           </div>
         </section>
 
+        <p class="pf-agent-note">
+          <span data-i18n="owners.agent_note">Chatee con el agente en la app, o conecte uno externo desde Ajustes. Puede leer el equipo, las propiedades, las tareas, los encargos y las facturas, crear trabajo y marcar una tarea como hecha — sin la clave de la base.</span>
+          <a href="/es/#connect-agent" data-i18n="owners.agent_cross">Vea cómo se ve una sesión →</a>
+        </p>
+
         <section class="pf-features" id="features" aria-labelledby="features-title">
           <details class="pf-features-panel">
             <summary id="features-title" data-i18n="common.features_summary">Lista de funciones - expandir todo</summary>
@@ -347,7 +389,7 @@
                 <h4 data-i18n="owners.access_g5_title">Manténgase informado y en control</h4>
                 <p data-i18n="owners.access_g5_desc">Reciba notificaciones en la aplicación y push al teléfono, genere informes y exportaciones por categoría o de toda la empresa, y siga referidos e invitaciones de equipo.</p>
                 <h4 data-i18n="owners.access_g6_title">Conecte su agente</h4>
-                <p data-i18n="owners.access_g6_desc">Cree una clave de conexión en Ajustes y péguela en el agent shell. El agente lee el equipo, las propiedades, las tareas, los trabajos y las facturas, crea tareas y trabajos, y marca una tarea como hecha. Nunca obtiene la clave de la base de datos. Desconecte cuando quiera.</p>
+                <p data-i18n="owners.access_g6_desc">Chatee con el agente en la app, o cree una clave de conexión en Ajustes y péguela en el shell de un cliente externo. El agente puede leer el equipo, las propiedades, las tareas, los encargos y las facturas, crear tareas y encargos, y marcar una tarea como hecha. Nunca recibe la clave de la base. Desconecte cuando quiera.</p>
               </div>
               <h3 class="pf-features-more-title" data-i18n="owners.planned_title">Funciones previstas</h3>
               <ul class="pf-features-list is-planned">
@@ -395,10 +437,6 @@
             </div>
           </details>
         </section>
-
-        <p class="pf-agent-cross">
-          <a href="/es/#connect-agent" data-i18n="owners.agent_cross">Vea cómo se ve una sesión →</a>
-        </p>
 
         <section class="pf-price-line" id="price">
           <p data-i18n="owners.price_line">En una empresa paga el propietario y las plazas del equipo son gratis. La facturación aún no está en marcha, así que las cuentas registradas tienen 3 meses de acceso completo, y si invita a 5 personas, puede obtener un año de acceso completo gratis.</p>
@@ -502,6 +540,6 @@
           <a href="https://app.pulseflow.site?lang=es" data-i18n="footer.app">Aplicación</a></div>
       </footer>
     </div>
-    <script src="/script.js?v=35" defer></script>
+    <script src="/script.js?v=42" defer></script>
   </body>
 </html>

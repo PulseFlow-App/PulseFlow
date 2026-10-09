@@ -150,6 +150,10 @@
 
 
 
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/owners" />
     <meta
@@ -200,7 +204,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=72" />
+    <link rel="stylesheet" href="/styles.css?v=75" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -243,6 +247,39 @@
       </header>
 
       <main id="main" class="pf-owners-main">
+        <section class="pf-owners-videos" id="watch" aria-labelledby="owners-videos-title">
+          <h2 id="owners-videos-title" data-i18n="owners.video_title">Watch the owner workspace</h2>
+          <p class="pf-owners-videos-lead" data-i18n="owners.video_lead">Two short videos you can play on this page. First: why operations stay safe and organized. Then: money, endorsements and the agent.</p>
+          <div class="pf-loom-list">
+            <figure>
+              <div class="pf-loom-frame">
+                <iframe
+                  src="https://www.loom.com/embed/3c9dfac14da74827bc006e70c5f15874?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                  title="Video: why Pulse Flow keeps operations safe and organized"
+                  data-i18n-attr="title:owners.video_1_iframe"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                  loading="eager"
+                ></iframe>
+              </div>
+              <figcaption data-i18n="owners.video_1_title">Why Pulse Flow keeps operations safe and organized</figcaption>
+            </figure>
+            <figure>
+              <div class="pf-loom-frame">
+                <iframe
+                  src="https://www.loom.com/embed/5ecd7ee3a8a4431bb4358598d966f353?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+                  title="Video: finance, endorsements and the agent"
+                  data-i18n-attr="title:owners.video_2_iframe"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <figcaption data-i18n="owners.video_2_title">Finance, endorsements and the agent</figcaption>
+            </figure>
+          </div>
+        </section>
+
         <section class="pf-owners-hero is-text-only" id="hero">
             <p class="pf-hero-brand" aria-hidden="true">
               <img
@@ -329,6 +366,11 @@
           </div>
         </section>
 
+        <p class="pf-agent-note">
+          <span data-i18n="owners.agent_note">Chat with the agent in the app, or connect an external one from Settings. It can read the team, properties, tasks, jobs and bills, create work, and mark a task done — without the database key.</span>
+          <a href="/#connect-agent" data-i18n="owners.agent_cross">See how a session looks →</a>
+        </p>
+
         <section class="pf-features" id="features" aria-labelledby="features-title">
           <details class="pf-features-panel">
             <summary id="features-title" data-i18n="common.features_summary">Feature list - expand all</summary>
@@ -347,7 +389,7 @@
                 <h4 data-i18n="owners.access_g5_title">Stay informed and in control</h4>
                 <p data-i18n="owners.access_g5_desc">Get in-app notifications and phone push notifications, generate reports and exports for individual categories or the whole company, and track referrals and team invitations.</p>
                 <h4 data-i18n="owners.access_g6_title">Connect your agent</h4>
-                <p data-i18n="owners.access_g6_desc">Create a connection key in Settings and paste it into the agent's shell. The agent can read the team, properties, tasks, jobs and bills, create tasks and jobs, and mark a task done. It never gets the database key. Disconnect anytime.</p>
+                <p data-i18n="owners.access_g6_desc">Chat with the agent in the app, or create a connection key in Settings and paste it into an external client's shell. The agent can read the team, properties, tasks, jobs and bills, create tasks and jobs, and mark a task done. It never gets the database key. Disconnect anytime.</p>
               </div>
               <h3 class="pf-features-more-title" data-i18n="owners.planned_title">Planned features</h3>
               <ul class="pf-features-list is-planned">
@@ -395,10 +437,6 @@
             </div>
           </details>
         </section>
-
-        <p class="pf-agent-cross">
-          <a href="/#connect-agent" data-i18n="owners.agent_cross">See how a session looks →</a>
-        </p>
 
         <section class="pf-price-line" id="price">
           <p data-i18n="owners.price_line">For a company the owner pays and team seats are free. Billing is not live yet, so registered accounts have 3 months of full access, and if you invite 5 people, you can get a year of full access for free.</p>
@@ -502,6 +540,6 @@
           <a href="https://app.pulseflow.site?lang=en" data-i18n="footer.app">App</a></div>
       </footer>
     </div>
-    <script src="/script.js?v=35" defer></script>
+    <script src="/script.js?v=42" defer></script>
   </body>
 </html>

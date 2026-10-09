@@ -150,6 +150,10 @@
 
 
 
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/my" />
     <meta
@@ -236,7 +240,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=72" />
+    <link rel="stylesheet" href="/styles.css?v=74" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -617,15 +621,16 @@ From: Sam Manager</p>
           <div class="pf-agent-layout">
             <div class="pf-agent-copy">
               <h2 id="agent-title" class="pf-agent-title" data-i18n="home.agent_title">သင့်အေးဂျင့်ကို ချိတ်ဆက်ပါ</h2>
-              <p class="pf-agent-lead" data-i18n="home.agent_lead">အေးဂျင့်တွေကို သင့် Pulse workspace အသက်ဝင်ဒေတာထဲမှာ အလုပ်လုပ်ခွင့်ပေးပါ။ တာဝန်၊ အလုပ်၊ အိမ်နဲ့ ဘီလ်၊ ဒေတာဘေ့စ်ကီး မပေးဘဲ။</p>
+              <p class="pf-agent-lead" data-i18n="home.agent_lead">အက်ပ်ထဲတွင် အေးဂျင့်နှင့် စကားပြောပါ၊ သို့မဟုတ် ဆက်တင်မှ ချိတ်ပါ။ တိုက်ရိုက် Pulse လုပ်ငန်းခွင်တွင် အလုပ်၊ ဂျော့ဘ်၊ အိမ်နှင့် ဘီလ်များ လုပ်သည် — ဒေတာဘေ့စ်ကို မပေးရပါ။</p>
               <ul class="pf-agent-list">
+                <li data-i18n="home.agent_li_chat">Pulse ထဲတွင် အေးဂျင့်နှင့် စကားပြောပါ — ဘာဖွင့်ထားသည်မေးပါ၊ အလုပ် သို့မဟုတ် ဂျော့ဘ် ဖန်တီးပါ၊ ပြီးပြီဟု မှတ်ပါ။</li>
                 <li data-i18n="home.agent_li1">ဆက်တင်မှာ ချိတ်ဆက်ကီး ဖန်တီး၊ agent's shell ထဲ ကူးထည့်၊ ဘယ်အချိန်မဆို ဖြတ်နိုင်တယ်။</li>
                 <li data-i18n="home.agent_li2">သင်ဘယ်သူ၊ အဖွဲ့၊ ဝင်/ထွက်ရက်ပါ အိမ်များ၊ ပွင့်နေတဲ့ တာဝန်၊ အလုပ်နဲ့ ဘီလ်တွေကို ဖတ်တယ်။</li>
                 <li data-i18n="home.agent_li3">လုပ်ဖော်ကိုင်ဖက်အတွက် တာဝန် သို့မဟုတ် အလုပ် ဖန်တီးတယ်။</li>
                 <li data-i18n="home.agent_li4">အလုပ်ပြီးရင် တာဝန်ကို ပြီးပြီဟု မှတ်တယ်။</li>
-                <li data-i18n="home.agent_li5">ပိုင်ရှင်နဲ့ မန်နေဂျာသာ။ ဝန်ထမ်းနဲ့ ဧည့်သည် မရဘူး။</li>
+                <li data-i18n="home.agent_li5">ပိုင်ရှင်နှင့် မန်နေဂျာသာ။ ဝန်ထမ်းနှင့် ဧည့်သည်များ မရပါ။ စမ်းသပ်ကာလပြီးလျှင် Pro တွင် ပါသည်။</li>
               </ul>
-              <p class="pf-agent-cta" data-i18n="home.agent_cta">အက်ပ်ထဲ ဆက်တင် → သင့်အေးဂျင့်ကို ချိတ်ဆက်ပါ မှာ ရနိုင်တယ်။</p>
+              <p class="pf-agent-cta" data-i18n="home.agent_cta">အက်ပ်ထဲတွင် စကားပြောပါ၊ သို့မဟုတ် ဆက်တင်များ → အေးဂျင့်ချိတ်ဆက် တွင် ချိတ်ပါ။</p>
               <p class="pf-agent-safety" data-i18n="home.agent_safety">အေးဂျင့်က ဒေတာဘေ့စ်ကီး မရဘူး။ လက်ရှိကုမ္ပဏီ workspace အတွက် ကိုယ်ပိုင်ချိတ်ဆက်ကီးပဲ သုံးတယ်။</p>
             </div>
             <div class="pf-agent-preview" data-agent-demo>
@@ -752,10 +757,14 @@ From: Sam Manager</p>
                 <strong data-i18n="home.plan_company_label">Company</strong>
                 <span data-i18n="home.plan_company_desc">မန်နေဂျာ၊ သန့်ရှင်းရေးသမား သို့မဟုတ် ကန်ထရိုက်တာတွေ ရှိတယ်။ ပိုင်ရှင်သာ ပေးပြီး စာရင်းသွင်းမှုတစ်ခုက အဖွဲ့ကို ဖုံးအုပ်တယ်။</span>
               </li>
+              <li class="is-pro">
+                <strong data-i18n="home.plan_pro_label">Pro</strong>
+                <span data-i18n="home.plan_pro_desc">ကုမ္ပဏီအပြင် အေးဂျင့်ချိတ်ဆက်။ ငွေကောက်စသောအခါ ကုမ္ပဏီပေါ် တစ်လ USD 19 ထပ်ဆောင်း။ Personal တွင် Pro သည် တစ်လ USD 9။</span>
+              </li>
             </ul>
             <p class="pf-plan-chip">
               <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg>
-              <span data-i18n="home.plan_note">ငွေကောက်ခံခြင်း မဖွင့်သေးဘူး။ မှတ်ပုံတင်ထားသော အကောင့်တိုင်းက စာရင်းသွင်းသည့်နေ့မှ စ၍ လအပြည့် ၃ လ ရတယ်။</span>
+              <span data-i18n="home.plan_note">ငွေကောက်ခြင်း မဖွင့်သေး။ မှတ်ပုံတင်ထားသော အကောင့်တိုင်းသည် Pro နှင့် အေးဂျင့်ချိတ်ဆက် အပါအဝင် ပြည့်စုံအသုံးပြုခွင့် ၃ လ ရသည် — မှတ်ပုံတင်သည့်နေ့မှ။</span>
             </p>
             <a class="pf-btn-primary pf-plan-start" href="https://app.pulseflow.site/register?lang=my" data-i18n="home.plan_cta">အခမဲ့ စတင်ရန်</a>
           </div>
@@ -785,7 +794,7 @@ From: Sam Manager</p>
           </details>
           <details>
             <summary data-i18n="home.faq_q4">ဘယ်လောက်ကျလဲ။</summary>
-            <p data-i18n="home.faq_a4">ကိုယ်ပိုင်နေရာက အမြဲ အခမဲ့။ ကုမ္ပဏီအတွက် ပိုင်ရှင်ပဲ ပေးရသည် - အဖွဲ့ထိုင်ခုံတွေ အခမဲ့၊ ဘယ်လောက်များများ။ ငွေကောက်စနစ် မစသေးလို့ စာရင်းသွင်းသည့်နေ့ကစပြီး လစဉ် ၃ လ အပြည့်သုံးခွင့် ရသည်။</p>
+            <p data-i18n="home.faq_a4">Personal သည် အမြဲတမ်း အခမဲ့။ Company ကို ပိုင်ရှင်ပေးသည်။ အဖွဲ့ထိုင်ခုံများ အခမဲ့နေသည်။ Pro သည် အေးဂျင့်ချိတ်ဆက်အတွက် အပိုအလွှာ - Company ပေါ် တစ်လ USD 19၊ သို့မဟုတ် Personal တွင် တစ်လ USD 9။ ယခု ငွေကောက်မဖွင့်သေးသောကြောင့် အကောင့်တိုင်း Pro အပါအဝင် ပြည့်စုံအသုံးပြုခွင့် ၃ လ ရသည် — မှတ်ပုံတင်သည့်နေ့မှ။</p>
           </details>
           <details>
             <summary data-i18n="home.faq_q5">ဧည့်သည်တွေ ရှုပ်ထွေးတာ တစ်ခုခု လုပ်ရမလား။</summary>
@@ -904,6 +913,6 @@ From: Sam Manager</p>
       </footer>
     </div>
 
-    <script src="/script.js?v=38" defer></script>
+    <script src="/script.js?v=41" defer></script>
   </body>
 </html>

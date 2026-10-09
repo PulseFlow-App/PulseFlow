@@ -150,6 +150,10 @@
 
 
 
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/th" />
     <meta
@@ -236,7 +240,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=72" />
+    <link rel="stylesheet" href="/styles.css?v=74" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -617,15 +621,16 @@ From: Sam Manager</p>
           <div class="pf-agent-layout">
             <div class="pf-agent-copy">
               <h2 id="agent-title" class="pf-agent-title" data-i18n="home.agent_title">เชื่อมต่อเอเจนต์ของคุณ</h2>
-              <p class="pf-agent-lead" data-i18n="home.agent_lead">ให้เอเจนต์ทำงานในพื้นที่ Pulse สดของคุณ ทั้งงาน จ็อบ ที่พัก และบิล โดยไม่ต้องมอบคีย์ฐานข้อมูล</p>
+              <p class="pf-agent-lead" data-i18n="home.agent_lead">แชทกับเอเจนต์ในแอป หรือเชื่อมต่อจากการตั้งค่า ทำงานในพื้นที่ Pulse สดของคุณ ทั้งงาน จ็อบ ที่พัก และบิล โดยไม่ต้องมอบฐานข้อมูล</p>
               <ul class="pf-agent-list">
+                <li data-i18n="home.agent_li_chat">แชทกับเอเจนต์ใน Pulse — ถามว่ามีอะไรเปิดอยู่ สร้างงานหรือจ็อบ ติ๊กว่างานเสร็จ</li>
                 <li data-i18n="home.agent_li1">สร้างคีย์เชื่อมต่อในการตั้งค่า นำไปวางใน agent's shell และตัดการเชื่อมต่อได้ทุกเมื่อ</li>
                 <li data-i18n="home.agent_li2">อ่านว่าคุณเป็นใคร ทีม ที่พักพร้อมเช็คอิน-เช็คเอาต์ งานที่เปิด จ็อบ และบิล</li>
                 <li data-i18n="home.agent_li3">สร้างงานหรือจ็อบให้เพื่อนร่วมงาน</li>
                 <li data-i18n="home.agent_li4">ติ๊กว่างานเสร็จเมื่อทำงานจบ</li>
-                <li data-i18n="home.agent_li5">เฉพาะเจ้าของและผู้จัดการ พนักงานและแขกใช้ไม่ได้</li>
+                <li data-i18n="home.agent_li5">เจ้าของกับผู้จัดการเท่านั้น พนักงานกับแขกไม่ได้ หลังทดลองแล้วอยู่ใน Pro</li>
               </ul>
-              <p class="pf-agent-cta" data-i18n="home.agent_cta">ใช้ได้ในแอปที่ การตั้งค่า → เชื่อมต่อเอเจนต์ของคุณ</p>
+              <p class="pf-agent-cta" data-i18n="home.agent_cta">แชทในแอป หรือเชื่อมต่อที่ การตั้งค่า → เชื่อมต่อเอเจนต์ของคุณ</p>
               <p class="pf-agent-safety" data-i18n="home.agent_safety">เอเจนต์ไม่ได้คีย์ฐานข้อมูล ใช้แค่คีย์เชื่อมต่อส่วนตัวนี้ ในขอบเขตพื้นที่บริษัทปัจจุบัน</p>
             </div>
             <div class="pf-agent-preview" data-agent-demo>
@@ -752,10 +757,14 @@ From: Sam Manager</p>
                 <strong data-i18n="home.plan_company_label">Company</strong>
                 <span data-i18n="home.plan_company_desc">มีผู้จัดการ แม่บ้าน หรือช่าง จ่ายเฉพาะเจ้าของ สมัครสมาชิกใบเดียวครอบทั้งทีม</span>
               </li>
+              <li class="is-pro">
+                <strong data-i18n="home.plan_pro_label">Pro</strong>
+                <span data-i18n="home.plan_pro_desc">แผนบริษัทบวกเชื่อมต่อเอเจนต์ เพิ่ม 19 ดอลลาร์สหรัฐต่อเดือนบนแผนบริษัทเมื่อเปิดเก็บเงิน บนแผนส่วนตัว Pro เดือนละ 9 ดอลลาร์สหรัฐ</span>
+              </li>
             </ul>
             <p class="pf-plan-chip">
               <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg>
-              <span data-i18n="home.plan_note">ยังไม่เปิดเก็บเงิน บัญชีที่สมัครได้สิทธิ์เต็ม 3 เดือนนับจากวันสมัคร</span>
+              <span data-i18n="home.plan_note">ยังไม่เปิดเก็บเงิน บัญชีที่สมัครได้สิทธิ์เต็ม 3 เดือน รวม Pro และเชื่อมต่อเอเจนต์ นับจากวันสมัคร</span>
             </p>
             <a class="pf-btn-primary pf-plan-start" href="https://app.pulseflow.site/register?lang=th" data-i18n="home.plan_cta">เริ่มฟรี</a>
           </div>
@@ -785,7 +794,7 @@ From: Sam Manager</p>
           </details>
           <details>
             <summary data-i18n="home.faq_q4">ราคาเท่าไร</summary>
-            <p data-i18n="home.faq_a4">พื้นที่ส่วนตัวฟรีตลอดไป สำหรับบริษัทมีแค่เจ้าของที่จ่าย ที่นั่งทีมฟรีไม่ว่ากี่คน ยังไม่เปิดบิล ดังนั้นทุกบัญชีได้สิทธิ์เต็ม 3 เดือนนับจากวันสมัคร</p>
+            <p data-i18n="home.faq_a4">แผนส่วนตัวฟรีตลอดไป แผนบริษัทเจ้าของเป็นคนจ่าย ที่นั่งทีมฟรี Pro คือชั้นเพิ่มสำหรับเชื่อมต่อเอเจนต์ เดือนละ 19 ดอลลาร์สหรัฐทับแผนบริษัท หรือเดือนละ 9 ดอลลาร์สหรัฐบนแผนส่วนตัว ตอนนี้ยังไม่เปิดบิล ทุกบัญชีได้สิทธิ์เต็ม 3 เดือน รวม Pro นับจากวันสมัคร</p>
           </details>
           <details>
             <summary data-i18n="home.faq_q5">แขกต้องทำอะไรยุ่งยากไหม</summary>
@@ -904,6 +913,6 @@ From: Sam Manager</p>
       </footer>
     </div>
 
-    <script src="/script.js?v=38" defer></script>
+    <script src="/script.js?v=41" defer></script>
   </body>
 </html>

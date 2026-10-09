@@ -150,6 +150,10 @@
 
 
 
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/" />
     <meta
@@ -236,7 +240,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=72" />
+    <link rel="stylesheet" href="/styles.css?v=74" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -617,15 +621,16 @@ From: Sam Manager</p>
           <div class="pf-agent-layout">
             <div class="pf-agent-copy">
               <h2 id="agent-title" class="pf-agent-title" data-i18n="home.agent_title">Connect your agent</h2>
-              <p class="pf-agent-lead" data-i18n="home.agent_lead">Let agents work inside your live Pulse workspace: tasks, jobs, properties and bills, without handing over your database.</p>
+              <p class="pf-agent-lead" data-i18n="home.agent_lead">Chat with the agent in the app, or connect one from Settings. It works inside your live Pulse workspace: tasks, jobs, properties and bills, without handing over your database.</p>
               <ul class="pf-agent-list">
+                <li data-i18n="home.agent_li_chat">Chat with the agent inside Pulse — ask what's open, create a task or a job, mark work done.</li>
                 <li data-i18n="home.agent_li1">Create a connection key in Settings, paste it into agent's shell, and disconnect it anytime.</li>
                 <li data-i18n="home.agent_li2">Read who you are, the team, properties with check-in and check-out, open tasks, jobs and bills.</li>
                 <li data-i18n="home.agent_li3">Create a task or a job for a teammate.</li>
                 <li data-i18n="home.agent_li4">Mark a task done when the work is finished.</li>
-                <li data-i18n="home.agent_li5">Owners and managers only. Staff and guests do not get this.</li>
+                <li data-i18n="home.agent_li5">Owners and managers only. Staff and guests do not get this. After the trial it is part of Pro.</li>
               </ul>
-              <p class="pf-agent-cta" data-i18n="home.agent_cta">Available in the app under Settings → Connect your agent.</p>
+              <p class="pf-agent-cta" data-i18n="home.agent_cta">Chat in the app, or connect under Settings → Connect your agent.</p>
               <p class="pf-agent-safety" data-i18n="home.agent_safety">The agent never gets the database key. It only uses that personal connection, scoped to your current company workspace.</p>
             </div>
             <div class="pf-agent-preview" data-agent-demo>
@@ -750,12 +755,16 @@ From: Sam Manager</p>
               </li>
               <li class="is-company">
                 <strong data-i18n="home.plan_company_label">Company</strong>
-                <span data-i18n="home.plan_company_desc">You have a manager, a cleaner or vendors. Only the owner pays, one subscription covers the team.</span>
+                <span data-i18n="home.plan_company_desc">You have a manager, a cleaner or vendors. Only the owner pays; one subscription covers the team.</span>
+              </li>
+              <li class="is-pro">
+                <strong data-i18n="home.plan_pro_label">Pro</strong>
+                <span data-i18n="home.plan_pro_desc">Company plus Connect your agent. Extra USD 19 / month on Company when billing is live. On Personal, Pro is USD 9 / month.</span>
               </li>
             </ul>
             <p class="pf-plan-chip">
               <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg>
-              <span data-i18n="home.plan_note">Billing is not switched on yet. Every registered account gets 3 months of full access from the day it signs up.</span>
+              <span data-i18n="home.plan_note">Billing is not switched on yet. Every registered account gets 3 months of full access — including Pro and Connect your agent — from the day it signs up.</span>
             </p>
             <a class="pf-btn-primary pf-plan-start" href="https://app.pulseflow.site/register?lang=en" data-i18n="home.plan_cta">Start free</a>
           </div>
@@ -785,7 +794,7 @@ From: Sam Manager</p>
           </details>
           <details>
             <summary data-i18n="home.faq_q4">What does it cost?</summary>
-            <p data-i18n="home.faq_a4">A personal workspace is free forever. For a company, only the owner pays - team seats are free however many people you add. Billing is not live yet, so every account gets 3 months of full access from the day it signs up.</p>
+            <p data-i18n="home.faq_a4">Personal is free forever. Company is paid by the owner; team seats stay free. Pro is the extra layer for Connect your agent: USD 19 / month on top of Company, or USD 9 / month on Personal. Right now billing is not live, so every account gets 3 months of full access — including Pro — from the day it signs up.</p>
           </details>
           <details>
             <summary data-i18n="home.faq_q5">Will my guests have to do anything complicated?</summary>
@@ -904,6 +913,6 @@ From: Sam Manager</p>
       </footer>
     </div>
 
-    <script src="/script.js?v=38" defer></script>
+    <script src="/script.js?v=41" defer></script>
   </body>
 </html>
