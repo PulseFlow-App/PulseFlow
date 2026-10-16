@@ -5023,22 +5023,13 @@ h2 {
   }
 }
 
-/* --- Hero: type, gradient ink, entrance ----------------------------- */
+/* --- Hero: type, solid ink, entrance ----------------------------- */
 .home-page .pf-headline,
 .pf-owners-hero .pf-headline {
   font-size: clamp(2.5rem, 1.6rem + 3.4vw, 4rem);
   line-height: 1.04;
   letter-spacing: -0.035em;
-  background: linear-gradient(
-    100deg,
-    var(--ink) 0%,
-    var(--ink) 58%,
-    var(--sky) 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+  color: var(--ink);
 }
 
 .home-page .pf-sub,
