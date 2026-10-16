@@ -60,7 +60,7 @@ Inspired by: [Web design trends 2026](https://designmodo.com/web-design-trends/)
 
 Horizon is a **clear coastal morning over a villa portfolio**: sky blues, deep sea ink, sun-orange action. The page feels like opening shutters — light floods in, the day is organised, you want to operate.
 
-Orange (`#fb8500`) is the **action sun** — CTAs, focus, “do this now.”  
+Orange (`#f26a36`, logo mark) is the **action sun** — CTAs, focus, “do this now.”  
 Navy (`#023047`) is **authority** — text, structure, seriousness.  
 Sky (`#8ecae6` / `#219ebc`) is **air and calm** — atmosphere, secondary UI, trust.  
 Amber (`#ffb703`) is **warm signal** — highlights, Pro, attention without alarm.
@@ -77,7 +77,7 @@ Amber (`#ffb703`) is **warm signal** — highlights, Pro, attention without alar
 | `--sky` | `#219ebc` | Links, info, secondary actions, focus rings (cool) |
 | `--ink` | `#023047` | Primary text, headers, nav weight |
 | `--sun` | `#ffb703` | Amber accent, Pro, highlights |
-| `--action` | `#fb8500` | **Main** CTA, primary buttons, brand energy |
+| `--action` | `#f26a36` | **Main** CTA, primary buttons, brand energy |
 
 ### Surfaces & neutrals
 
@@ -95,7 +95,7 @@ Amber (`#ffb703`) is **warm signal** — highlights, Pro, attention without alar
 
 | Old | New |
 | --- | --- |
-| `--primary` / coral `#f07a3a` | `--action` `#fb8500` |
+| `--primary` / coral `#f07a3a` | `--action` `#f26a36` |
 | `--sand` warm cream | `--canvas` `#f5fafc` |
 | `--ink` warm brown | `--ink` `#023047` |
 | `--secondary` teal | Prefer `--sky` / `--success` by meaning |

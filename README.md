@@ -45,7 +45,7 @@ All UI work (site and app) follows the **Horizon** design language:
 - Master brief (presentation): [`docs/design-brief.html`](docs/design-brief.html)
 - Cursor rule: `.cursor/rules/pulse-horizon-design.mdc` (always apply)
 
-Palette: `#8ecae6` · `#219ebc` · `#023047` · `#ffb703` · `#fb8500` (main)
+Palette: `#8ecae6` · `#219ebc` · `#023047` · `#ffb703` · `#f26a36` (main, logo)
 
 ## This repository
 

@@ -13,8 +13,8 @@ Before any visual, UX, copy-tone, colour, typography, motion, or component chang
 
 ## Hard constraints
 
-- Palette only: `#8ecae6` `#219ebc` `#023047` `#ffb703` `#fb8500` (+ neutrals defined in DESIGN.md).
-- Primary CTA = `#fb8500` (action). Ink text = `#023047`. Canvas = cool white `#f5fafc` (not warm cream).
+- Palette only: `#8ecae6` `#219ebc` `#023047` `#ffb703` `#f26a36` (+ neutrals defined in DESIGN.md).
+- Primary CTA = `#f26a36` (action, logo orange). Ink text = `#023047`. Canvas = cool white `#f5fafc` (not warm cream).
 - Fonts: **Sora** (display) + **Heebo** (body / Hebrew). No Inter / Roboto / Arial as brand faces.
 - Feeling: energetic + serious, light, airy, property-connected. Israeli owners first (control, money trail, staff confirmation).
 - Less is more. One job per section. Hero budget: brand + H1 + one line + CTA + dominant property visual.
