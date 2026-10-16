@@ -5222,7 +5222,7 @@ h2 {
   box-shadow: var(--shadow-lift);
 }
 
-/* Minimal icon well: orange fill, sky border, sky stroke lines */
+/* Minimal icon well: orange fill, ink border + ink stroke lines */
 .pf-card-icon,
 .pf-feature-copy .pf-card-icon,
 .pf-feature-guest-copy .pf-card-icon,
@@ -5232,9 +5232,9 @@ h2 {
   border-radius: 12px;
   display: inline-grid;
   place-items: center;
-  color: var(--sky);
+  color: var(--ink);
   background: var(--action);
-  border: 2px solid var(--sky);
+  border: 2px solid var(--ink);
   box-shadow: none;
 }
 
@@ -5244,7 +5244,7 @@ h2 {
 .pf-audience-icon .ti {
   width: 22px;
   height: 22px;
-  color: var(--sky-soft);
+  color: var(--ink);
   stroke: currentColor;
   fill: none;
   stroke-width: 2.15;
