@@ -3060,8 +3060,9 @@ a.pf-audience-card:hover {
   flex-shrink: 0;
 }
 
+/* "Before" mock: generic group-messenger look (Telegram-like) in Horizon palette */
 .pf-wa-bar {
-  background: #075e54;
+  background: var(--ink);
   color: #fff;
   border-bottom: 0;
 }
@@ -3094,65 +3095,83 @@ a.pf-audience-card:hover {
   padding: 10px 9px 12px;
   display: grid;
   gap: 7px;
-  /* Authentic WhatsApp wallpaper in the “before” mock only */
+  /* Sky wash wallpaper, soft dot grid */
   background:
-    linear-gradient(rgba(230, 221, 212, 0.65), rgba(230, 221, 212, 0.65)),
-    repeating-linear-gradient(
-      -18deg,
-      #ece5dd 0 12px,
-      #e8e0d6 12px 24px
-    );
+    radial-gradient(
+      rgba(2, 48, 71, 0.07) 1px,
+      transparent 1.5px
+    ) 0 0 / 14px 14px,
+    linear-gradient(180deg, var(--canvas-deep), rgba(142, 202, 230, 0.35));
   align-content: start;
 }
 
 .pf-wa-day {
   justify-self: center;
-  background: rgba(255, 255, 255, 0.92);
-  color: #667781;
+  background: rgba(2, 48, 71, 0.12);
+  color: var(--ink);
   font-size: 11px;
-  font-weight: 700;
-  padding: 3px 9px;
-  border-radius: 6px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
 }
 
 .pf-wa-msg {
   max-width: 88%;
-  padding: 6px 9px 16px;
-  border-radius: 8px;
+  padding: 6px 10px 16px;
+  border-radius: 14px;
   font-size: 12px;
   line-height: 1.35;
   position: relative;
-  box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 2px rgba(2, 48, 71, 0.08);
 }
 
 .pf-wa-msg.is-in {
   justify-self: start;
-  background: #fff;
-  color: #111b21;
-  border-top-left-radius: 0;
+  background: var(--surface);
+  color: var(--ink);
+  border-bottom-left-radius: 4px;
 }
 
 .pf-wa-msg.is-out {
   justify-self: end;
-  background: #d9fdd3;
-  color: #111b21;
-  border-top-right-radius: 0;
+  background: var(--sky);
+  color: var(--ink);
+  border-bottom-right-radius: 4px;
 }
 
 .pf-wa-name {
   display: block;
   font-size: 11px;
   font-weight: 700;
-  color: #02a698;
+  color: var(--primary);
   margin-bottom: 2px;
 }
 
 .pf-wa-msg time {
   position: absolute;
-  right: 8px;
+  right: 9px;
   bottom: 4px;
   font-size: 10px;
-  color: #667781;
+  color: var(--text-muted);
+}
+
+.pf-wa-msg.is-out time {
+  color: rgba(2, 48, 71, 0.65);
+}
+
+[dir="rtl"] .pf-wa-msg time {
+  right: auto;
+  left: 9px;
+}
+
+[dir="rtl"] .pf-wa-msg.is-in {
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 4px;
+}
+
+[dir="rtl"] .pf-wa-msg.is-out {
+  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 4px;
 }
 
 .pf-pfchat-thread {
