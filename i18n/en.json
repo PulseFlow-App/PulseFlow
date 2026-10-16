@@ -74,14 +74,14 @@
     "open_guest": "Open as Guest"
   },
   "home": {
-    "meta_title": "Pulse Flow: run the whole property operation in one place",
-    "meta_description": "Properties, jobs, tasks, vendors, bills and guests in one workspace. Everyone sees their own part, in their own language.",
+    "meta_title": "Property operations software for vacation rentals · Pulse Flow",
+    "meta_description": "Property management and property operations in one app: villas, jobs, maintenance, vendors, bills and guests. Built for short-term rental owners and managers.",
     "og_title": "The pulse of your rental operations",
-    "og_description": "Property operations in one shared app for owners, managers, staff and guests.",
-    "og_image_alt": "Pulse Flow: property operations for owners, managers, staff and guests",
-    "eyebrow": "For operations running properties",
+    "og_description": "Property operations and property management in one shared app for vacation rental owners, managers, staff and guests.",
+    "og_image_alt": "Pulse Flow: property operations software for short-term rental owners, managers, staff and guests",
+    "eyebrow": "Property operations for vacation rentals",
     "headline": "Get your work out of the group chats",
-    "sub": "Properties, jobs, tasks, vendors, bills and guests in one workspace. Everyone sees their own part, in their own language.",
+    "sub": "Property management without the chat chaos: properties, jobs, tasks, vendors, bills and guests in one workspace. Everyone sees their own part, in their own language.",
     "cta": "Start free",
     "cta_secondary": "See the demo",
     "proof_line": "We are launching on Koh Phangan, onboarding the first teams by hand. Reviews will appear here when there are real ones.",
@@ -240,10 +240,10 @@
     "mock_pf_sam": "Done. Receipt photo attached to Coral · Pool. 800 THB pending your approval."
   },
   "owners": {
-    "meta_title": "For owners: properties, work and money · Pulse Flow",
-    "meta_description": "Occupancy, urgent work and every cost by property, without calling your manager. Jobs that get confirmed, receipts by photo, free seats for the team.",
+    "meta_title": "Property management for villa owners · Pulse Flow",
+    "meta_description": "Remote property management for short-term rentals: occupancy, urgent work and every cost by property, without calling your manager. Confirmed jobs, photo receipts, free team seats.",
     "og_title": "Pulse Flow for property owners",
-    "og_description": "Know what is happening on your properties and where the money goes, without asking.",
+    "og_description": "Property operations for owners: know what is happening on your villas and where the money goes, without asking.",
     "og_image_alt": "Owner screen: occupancy, urgent work and spend by property",
     "badge": "For property owners",
     "headline": "Know what is happening without asking questions",
@@ -308,10 +308,10 @@
     "close_cta": "Start free"
   },
   "managers": {
-    "meta_title": "For managers: the day, jobs and handover · Pulse Flow",
-    "meta_description": "What is urgent today, who is doing it and how it ended. Jobs get confirmed, and the owner report builds itself out of what already happened.",
+    "meta_title": "Property operations for managers · Pulse Flow",
+    "meta_description": "Day-to-day property operations for vacation rental managers: what is urgent today, who is doing it, and how it ended. Confirmed jobs; the owner report builds itself.",
     "og_title": "Pulse Flow for property managers",
-    "og_description": "Build the day once, not again in every chat.",
+    "og_description": "Property operations software for managers: build the day once, not again in every chat.",
     "og_image_alt": "Manager screen: readiness, check-ins and urgent work",
     "badge": "For property managers",
     "headline": "Make updates once and they are visible to everyone in your team",
