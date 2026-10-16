@@ -955,18 +955,6 @@ a.pf-audience-card:hover {
   margin-top: 28px !important;
 }
 
-.pf-guide-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin: 20px 0 8px;
-}
-
-.pf-guide .pf-guide-actions .pf-btn-primary,
-.pf-guide .pf-guide-actions .pf-btn-outline {
-  min-height: 44px;
-}
-
 @media (min-width: 720px) {
   .pf-wrap {
     --pad: 24px;

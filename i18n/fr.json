@@ -20,8 +20,7 @@
     "terms": "Conditions",
     "privacy": "Confidentialité",
     "support": "Assistance",
-    "app": "Application",
-    "guide": "Guide"
+    "app": "Application"
   },
   "common": {
     "screenshot_soon": "Capture d'écran à venir",
@@ -542,38 +541,5 @@
     "agent_li4": "Les clients d'agent tiers (comme votre éditeur) traitent vos consignes sur leurs systèmes. Leurs conditions de confidentialité s'appliquent à ce côté de la conversation.",
     "agent_li5": "Si vous utilisez le chat agent dans l'application, nous traitons vos messages, les réponses de l'agent et les données opérationnelles que ces outils lisent ou écrivent, limitées à votre espace actuel.",
     "s5_li4": "Déconnecter les clés d'agent dans Réglages"
-  },
-  "guide_ops": {
-    "meta_title": "Opérations immobilières vs gestion locative pour locations saisonnières · Pulse Flow",
-    "meta_description": "La gestion locative remplit le calendrier. Les opérations mènent le jour : travaux, maintenance, argent et voyageurs après Airbnb et Booking.",
-    "og_title": "Opérations vs gestion pour locations saisonnières",
-    "og_description": "Une réservation n’est pas la même chose que faire tourner la villa. Un langage clair pour les propriétaires.",
-    "og_image_alt": "Pulse Flow : opérations pour locations saisonnières",
-    "kicker": "Guide",
-    "title": "Opérations immobilières vs gestion locative pour locations saisonnières",
-    "updated": "Pulse Flow · Mis à jour le 16 octobre 2026",
-    "lead": "On dit « gestion locative » pour presque tout autour d’une villa. Cela mélange deux métiers. L’un remplit le calendrier. L’autre mène le jour après la réservation.",
-    "h_mgmt": "Ce que signifie en général la gestion locative",
-    "p_mgmt1": "En location courte durée, un PMS tourne autour de la réservation : annonces, calendriers, sync Airbnb et Booking, tarifs et messages avant l’arrivée.",
-    "p_mgmt2": "Les propriétaires en ont besoin. Ce n’est pas optionnel. Ce n’est pas assez dès qu’il faut nettoyer, réparer, acheter ou justifier une retenue sur caution.",
-    "h_ops": "Ce que signifient les opérations immobilières",
-    "p_ops1": "Les opérations, c’est après la réservation : qui fait le travail, sur quel bien, pour quand, confirmation, coût, et si le propriétaire le voit sans appeler le manager.",
-    "p_ops2": "Travaux typiques : turnovers, maintenance, urgences pendant le séjour, reçus liés à la villa, équipe multilingue, passation claire.",
-    "p_ops3": "Si votre « système » est un groupe WhatsApp, l’écart se sent déjà. Les jobs se perdent. Les coûts flottent. L’historique part avec un téléphone.",
-    "h_table": "Côte à côte",
-    "li1": "<strong>Gestion locative :</strong> calendriers, canaux, tarifs, chat avant arrivée.",
-    "li2": "<strong>Opérations :</strong> jobs, confirmation, piste d’argent, staff, voyageurs après check-in.",
-    "li3": "<strong>Il faut les deux.</strong> Un PMS ne remplace pas le terrain confirmé. Une app d’ops ne remplace pas Airbnb.",
-    "h_owners": "Ce dont les propriétaires à distance ont vraiment besoin",
-    "p_owners1": "Les propriétaires israéliens et autres à distance ne veulent pas une autre boîte de réservations. Ils veulent le contrôle : occupation, urgences, chaque baht ou shekel sur un bien, staff qui valide.",
-    "p_owners2": "Ce sont les opérations. Pulse Flow est fait pour cette couche — biens, jobs, fournisseurs, factures et voyageurs, chacun dans sa langue.",
-    "h_next": "Et ensuite",
-    "p_next": "Commencez sur l’accueil produit, ou la page propriétaires pour le contrôle à distance et l’argent.",
-    "cta_home": "Accueil Pulse Flow",
-    "cta_owners": "Pour les propriétaires",
-    "cta_start": "Commencer gratuitement",
-    "nav_home": "Accueil",
-    "nav_owners": "Propriétaires",
-    "nav_managers": "Managers"
   }
 }

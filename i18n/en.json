@@ -20,8 +20,7 @@
     "terms": "Terms",
     "privacy": "Privacy",
     "support": "Support",
-    "app": "App",
-    "guide": "Guide"
+    "app": "App"
   },
   "common": {
     "screenshot_soon": "Screenshot coming soon",
@@ -542,38 +541,5 @@
     "agent_li4": "Third-party agent clients (such as your editor) process your prompts on their systems. Their privacy terms apply to that side of the conversation.",
     "agent_li5": "If you use in-app agent chat, we process your prompts, the agent's replies and the operational data those tools read or write, scoped to your current workspace.",
     "s5_li4": "Disconnect agent connection keys in Settings"
-  },
-  "guide_ops": {
-    "meta_title": "Property operations vs property management for vacation rentals · Pulse Flow",
-    "meta_description": "Property management books the stay. Property operations runs the day: jobs, maintenance, money and guests after Airbnb and Booking. How they differ — and what owners need.",
-    "og_title": "Property operations vs property management for vacation rentals",
-    "og_description": "Bookings are not the same as running the villa. Clear language for owners who need control after the reservation.",
-    "og_image_alt": "Pulse Flow: property operations for vacation rentals",
-    "kicker": "Guide",
-    "title": "Property operations vs property management for vacation rentals",
-    "updated": "Pulse Flow · Updated 16 October 2026",
-    "lead": "People say “property management” for almost everything around a villa. That muddies two jobs that are not the same. One fills the calendar. The other runs the day after the guest books.",
-    "h_mgmt": "What property management usually means",
-    "p_mgmt1": "In short-term rentals, property management software (a PMS) is built around the booking: listings, calendars, channel sync with Airbnb and Booking, pricing, and guest messaging before arrival. That layer answers: is the villa available, at what rate, and is the reservation confirmed?",
-    "p_mgmt2": "Owners need that. It is not optional. It is also not enough once someone has to clean, fix a pump, buy supplies, or prove what a deposit deduction was for.",
-    "h_ops": "What property operations means",
-    "p_ops1": "Property operations is what happens after the booking lands: who does the job, on which property, by when, whether they confirmed, what it cost, and whether the owner can see it without calling the manager.",
-    "p_ops2": "Typical operations work includes turnovers and deep cleans, maintenance and vendors, urgent tasks during a stay, receipts tied to a villa, staff who speak another language, and a clear handoff when the manager is offline.",
-    "p_ops3": "If your “system” for that is a WhatsApp group, you already feel the gap. Jobs get lost. Costs float free of the property. History leaves with someone’s phone.",
-    "h_table": "Side by side",
-    "li1": "<strong>Property management:</strong> calendars, channels, rates, pre-arrival guest chat.",
-    "li2": "<strong>Property operations:</strong> jobs, confirmation, money trail, staff, on-site guests after check-in.",
-    "li3": "<strong>You need both.</strong> A PMS does not replace confirmed field work. An operations app does not replace Airbnb.",
-    "h_owners": "What remote owners actually need",
-    "p_owners1": "Israeli and other remote owners usually do not want another booking inbox. They want control: occupancy and readiness, urgent work without chasing, every baht or shekel attached to a property, and staff who tap “accepted” instead of maybe-replying in chat.",
-    "p_owners2": "That is operations. Pulse Flow is built for that layer — properties, jobs, vendors, bills and guests in one workspace, each person in their own language.",
-    "h_next": "Where to go next",
-    "p_next": "Start on the home page for the full product, or open the owners page if you care about remote control and the money trail.",
-    "cta_home": "Pulse Flow home",
-    "cta_owners": "For owners",
-    "cta_start": "Start free",
-    "nav_home": "Home",
-    "nav_owners": "Owners",
-    "nav_managers": "Managers"
   }
 }
