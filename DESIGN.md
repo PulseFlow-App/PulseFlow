@@ -112,11 +112,19 @@ Amber (`#ffb703`) is **warm signal** — highlights, Pro, attention without alar
 
 ## 5. Typography
 
-| Role | Font | Notes |
-| --- | --- | --- |
-| Display / H1–H2 | **Sora** | Energetic, geometric, competitive |
-| Body / UI | **Heebo** | Excellent Hebrew + Latin; Israeli-friendly |
-| Mono / snippets | **IBM Plex Mono** | Agent config, codes only |
+Four tiers, every page. Nothing outside these.
+
+| Tier | Role | Font · weight | Size token | Used for |
+| --- | --- | --- | --- | --- |
+| 1 | Headline | **Sora** 700, −0.02em | `--type-hero` (h1) · `--type-title` (h2) | H1, H2, brand wordmark, CTAs (600) |
+| 2 | Subheading | **Heebo** 700, −0.01em | `--type-subtitle` (h3) · `1.0625rem` (h4, FAQ) | H3, H4, card / plan / flip titles, `<summary>` |
+| 3 | Body | **Heebo** 500 | `--type-body` | Paragraphs, lists, hero lead (`.pf-sub` slightly larger) |
+| 4 | Sign & note | **Heebo** 600 uppercase 0.1em · **Heebo** 500 | `--type-sign` · `--type-meta` | Eyebrows / kickers (sky) · captions, chips, footnotes (muted) |
+
+**IBM Plex Mono** is reserved for code and tool names (`pulse_*`, config snippets). Never for labels or notes.
+
+Weights above 700 are not loaded — never write `font-weight: 800/900` (the browser would fake-bold).  
+RTL (`he`, `ar`): Sora has no Hebrew / Arabic glyphs, so tier 1 switches to Heebo 700 automatically; the scale is unchanged.
 
 ### Scale (mobile → desktop clamp)
 
@@ -124,10 +132,12 @@ Amber (`#ffb703`) is **warm signal** — highlights, Pro, attention without alar
 | --- | --- |
 | `--type-hero` | `clamp(2.25rem, 1.6rem + 2.5vw, 3.5rem)` |
 | `--type-title` | `clamp(1.5rem, 1.2rem + 1vw, 2rem)` |
+| `--type-subtitle` | `clamp(1.125rem, 1.05rem + 0.35vw, 1.3rem)` |
 | `--type-body` | `1rem` (16px base) |
 | `--type-meta` | `0.8125rem` |
+| `--type-sign` | `0.75rem` (uppercase, tracked) |
 
-**Weights:** Display 600–700 · Body 400–500 · Labels 600.  
+**Weights:** Headline 700 · Subheading 700 · Body 500 · Signs 600 · Notes 500. Max loaded weight is 700.  
 **Line height:** Hero ~1.1 · Title ~1.2 · Body ~1.55.  
 **Avoid:** Inter, Roboto, Arial, system-ui as brand faces.
 
