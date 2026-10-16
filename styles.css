@@ -4883,3 +4883,756 @@ h3 {
     min-width: 0;
   }
 }
+
+/* =====================================================================
+   Horizon Glow — living backdrop, palette spread, depth, entrance motion
+   (see DESIGN.md §6 visuals, §7 motion). Appended to override base rules.
+   ===================================================================== */
+
+.pf-wrap {
+  isolation: isolate;
+}
+
+/* --- Breathing property horizon behind the hero ---------------------- */
+.pf-horizon {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: min(118vh, 1040px);
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.pf-horizon::before {
+  content: "";
+  position: absolute;
+  inset: -6% -6% 0 -6%;
+  background-image: url("/assets/hero-villa-sky.webp"),
+    url("/assets/hero-villa-sky-tiny.webp");
+  background-size: cover;
+  background-position: 60% 40%;
+  opacity: 0.5;
+  transform-origin: 55% 45%;
+  animation: pf-horizon-ken 22s var(--ease) infinite alternate;
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.7) 55%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.7) 55%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+/* Sky wash + readable text plane over the photo */
+.pf-horizon::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(245, 250, 252, 0.96) 0%,
+      rgba(245, 250, 252, 0.88) 38%,
+      rgba(245, 250, 252, 0.45) 70%,
+      rgba(245, 250, 252, 0.2) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(142, 202, 230, 0.35) 0%,
+      rgba(245, 250, 252, 0) 45%,
+      var(--canvas) 100%
+    );
+}
+
+@media (max-width: 899px) {
+  .pf-horizon::after {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(245, 250, 252, 0.92) 0%,
+        rgba(245, 250, 252, 0.82) 48%,
+        var(--canvas) 100%
+      ),
+      linear-gradient(180deg, rgba(142, 202, 230, 0.3), transparent 50%);
+  }
+}
+
+@keyframes pf-horizon-ken {
+  from {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.07) translate3d(-1.2%, -1%, 0);
+  }
+}
+
+/* Drifting colour orbs — sky + sun, very soft */
+.pf-horizon .pf-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(42px);
+  opacity: 0.55;
+  mix-blend-mode: multiply;
+  animation: pf-orb-drift 16s ease-in-out infinite alternate;
+}
+
+.pf-horizon .pf-orb-sky {
+  width: 46vw;
+  height: 46vw;
+  max-width: 560px;
+  max-height: 560px;
+  right: -8vw;
+  top: 4vh;
+  background: radial-gradient(
+    circle,
+    rgba(142, 202, 230, 0.75),
+    rgba(33, 158, 188, 0.15) 60%,
+    transparent 72%
+  );
+}
+
+.pf-horizon .pf-orb-sun {
+  width: 34vw;
+  height: 34vw;
+  max-width: 420px;
+  max-height: 420px;
+  left: 42%;
+  top: 46vh;
+  background: radial-gradient(
+    circle,
+    rgba(255, 183, 3, 0.55),
+    rgba(242, 106, 54, 0.18) 55%,
+    transparent 72%
+  );
+  animation-duration: 20s;
+  animation-delay: -6s;
+}
+
+@keyframes pf-orb-drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(-3vw, 2vh, 0) scale(1.08);
+  }
+}
+
+/* --- Hero: type, gradient ink, entrance ----------------------------- */
+.home-page .pf-headline,
+.pf-owners-hero .pf-headline {
+  font-size: clamp(2.5rem, 1.6rem + 3.4vw, 4rem);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+  background: linear-gradient(
+    100deg,
+    var(--ink) 0%,
+    var(--ink) 58%,
+    var(--sky) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-page .pf-sub,
+.pf-owners-hero .pf-sub {
+  font-size: 1.0625rem;
+  color: var(--muted);
+}
+
+.home-page .pf-hero-copy > *,
+.pf-owners-hero > * {
+  opacity: 0;
+  animation: pf-rise-in 0.7s var(--ease) forwards;
+}
+
+.home-page .pf-hero-copy > :nth-child(1),
+.pf-owners-hero > :nth-child(1) {
+  animation-delay: 60ms;
+}
+.home-page .pf-hero-copy > :nth-child(2),
+.pf-owners-hero > :nth-child(2) {
+  animation-delay: 160ms;
+}
+.home-page .pf-hero-copy > :nth-child(3),
+.pf-owners-hero > :nth-child(3) {
+  animation-delay: 260ms;
+}
+.home-page .pf-hero-copy > :nth-child(4),
+.pf-owners-hero > :nth-child(4) {
+  animation-delay: 360ms;
+}
+.home-page .pf-hero-copy > :nth-child(5),
+.pf-owners-hero > :nth-child(5) {
+  animation-delay: 460ms;
+}
+
+.pf-hero-visual {
+  opacity: 0;
+  animation: pf-rise-in 0.9s var(--ease) 320ms forwards;
+}
+
+.pf-hero-visual .pf-phone-frame {
+  animation: pf-float 7s ease-in-out 1.2s infinite;
+  box-shadow:
+    0 2px 6px rgba(2, 48, 71, 0.08),
+    0 30px 60px -24px rgba(2, 48, 71, 0.35),
+    0 0 0 1px rgba(2, 48, 71, 0.06);
+  border-radius: 24px;
+}
+
+@keyframes pf-rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pf-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* --- Scroll reveal: section + staggered children -------------------- */
+.pf-fade {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.7s var(--ease),
+    transform 0.7s var(--ease);
+}
+
+.pf-fade.is-in {
+  opacity: 1;
+  transform: none;
+  animation: none;
+}
+
+.pf-fade > * {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 0.6s var(--ease),
+    transform 0.6s var(--ease);
+}
+
+.pf-fade.is-in > * {
+  opacity: 1;
+  transform: none;
+}
+
+.pf-fade.is-in > :nth-child(2) {
+  transition-delay: 90ms;
+}
+.pf-fade.is-in > :nth-child(3) {
+  transition-delay: 180ms;
+}
+.pf-fade.is-in > :nth-child(4) {
+  transition-delay: 270ms;
+}
+.pf-fade.is-in > :nth-child(5) {
+  transition-delay: 360ms;
+}
+.pf-fade.is-in > :nth-child(n + 6) {
+  transition-delay: 420ms;
+}
+
+/* --- Section rhythm & palette bands --------------------------------- */
+.home-page .pf-alt h2::after,
+.home-page .pf-features-head h2::after,
+.home-page .pf-lang-block h2::after,
+.home-page .pf-audience-title::after,
+.home-page .pf-agent-title::after,
+.home-page .pf-faq h2::after {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 4px;
+  margin-top: 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--action), var(--sun));
+}
+
+.home-page .pf-alt h2::after {
+  margin-inline: auto;
+}
+
+.home-page .pf-eyebrow,
+.pf-legal-kicker,
+.pf-tier-eyebrow {
+  color: var(--sky);
+}
+
+/* Features carousel: sky-deep band with depth */
+.home-page .pf-features {
+  max-width: 1100px;
+  padding: 28px var(--pad) 32px;
+  border-radius: calc(var(--radius-card) * 1.5);
+  background:
+    radial-gradient(
+      700px 300px at 100% 0%,
+      rgba(142, 202, 230, 0.35),
+      transparent 60%
+    ),
+    var(--canvas-deep);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.pf-feature-slide,
+.pf-feature-copy {
+  background: var(--surface);
+  border-radius: var(--radius-card);
+}
+
+.pf-feature-slide {
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--border);
+  transition:
+    transform 0.3s var(--ease),
+    box-shadow 0.3s var(--ease);
+}
+
+.pf-feature-slide.is-active {
+  box-shadow: var(--shadow-lift);
+}
+
+.pf-card-icon,
+.pf-feature-copy .pf-card-icon,
+.pf-feature-guest-copy .pf-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: inline-grid;
+  place-items: center;
+  color: #fff;
+  background: linear-gradient(135deg, var(--sky), var(--ink));
+  box-shadow: 0 8px 18px -8px rgba(33, 158, 188, 0.6);
+}
+
+.pf-feature-copy .pf-card-icon .ti,
+.pf-feature-guest-copy .pf-card-icon .ti {
+  width: 22px;
+  height: 22px;
+  color: #fff;
+  stroke: currentColor;
+}
+
+.pf-feature-slide:nth-child(2) .pf-card-icon {
+  background: linear-gradient(135deg, var(--action), var(--primary-dark));
+  box-shadow: 0 8px 18px -8px rgba(242, 106, 54, 0.6);
+}
+.pf-feature-slide:nth-child(3) .pf-card-icon {
+  background: linear-gradient(135deg, var(--sun), var(--action));
+  box-shadow: 0 8px 18px -8px rgba(255, 183, 3, 0.6);
+}
+.pf-feature-slide:nth-child(4) .pf-card-icon {
+  background: linear-gradient(135deg, var(--success), var(--sky));
+  box-shadow: 0 8px 18px -8px rgba(42, 157, 143, 0.6);
+}
+
+/* Problems flip cards: each pain gets its own palette face */
+.pf-flip-front {
+  background: linear-gradient(150deg, var(--action), var(--primary-dark));
+}
+.pf-flip-card:nth-child(2) .pf-flip-front {
+  background: linear-gradient(150deg, var(--sky), var(--ink));
+  box-shadow: 0 16px 36px -18px rgba(2, 48, 71, 0.5);
+}
+.pf-flip-card:nth-child(3) .pf-flip-front {
+  background: linear-gradient(150deg, var(--sun), var(--action));
+  box-shadow: 0 16px 36px -18px rgba(255, 183, 3, 0.55);
+}
+.pf-flip-card:nth-child(4) .pf-flip-front {
+  background: linear-gradient(150deg, var(--success), #1f7a70);
+  box-shadow: 0 16px 36px -18px rgba(42, 157, 143, 0.55);
+}
+
+.pf-flip-back {
+  background: var(--surface);
+  box-shadow: var(--shadow-lift);
+}
+
+/* Audience cards: role colours, lift on hover */
+.pf-audience-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform 0.3s var(--ease),
+    box-shadow 0.3s var(--ease),
+    border-color 0.3s var(--ease);
+}
+
+a.pf-audience-card:hover,
+a.pf-audience-card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lift);
+  border-color: rgba(33, 158, 188, 0.4);
+}
+
+.pf-audience-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--action), var(--primary-dark));
+}
+
+.pf-audience-card:nth-child(2) .pf-audience-icon {
+  background: linear-gradient(135deg, var(--sky), var(--ink));
+}
+.pf-audience-card:nth-child(3) .pf-audience-icon {
+  background: linear-gradient(135deg, var(--success), var(--sky));
+}
+.pf-audience-card:nth-child(4) .pf-audience-icon {
+  background: linear-gradient(135deg, var(--sun), var(--action));
+}
+
+.home-page .pf-audience-cta {
+  color: var(--sky);
+}
+
+/* Language block: sky tint */
+.home-page .pf-lang-block {
+  max-width: 1100px;
+  margin-inline: auto;
+  grid-template-columns: 1fr;
+  padding: 28px var(--pad) 32px;
+  border-radius: calc(var(--radius-card) * 1.5);
+  background:
+    radial-gradient(
+      600px 260px at 0% 100%,
+      rgba(255, 183, 3, 0.16),
+      transparent 60%
+    ),
+    linear-gradient(180deg, rgba(142, 202, 230, 0.22), rgba(142, 202, 230, 0.06));
+}
+
+.pf-lang-phone-frame {
+  box-shadow: var(--shadow-lift);
+  border-radius: 22px;
+}
+
+/* Agent block: ink panel = serious tech moment */
+.home-page .pf-agent {
+  padding: 32px var(--pad) 36px;
+  border-radius: calc(var(--radius-card) * 1.5);
+  background:
+    radial-gradient(
+      700px 320px at 100% 0%,
+      rgba(33, 158, 188, 0.4),
+      transparent 60%
+    ),
+    radial-gradient(
+      500px 260px at 0% 100%,
+      rgba(242, 106, 54, 0.25),
+      transparent 60%
+    ),
+    var(--ink);
+  color: #fff;
+  box-shadow: 0 30px 70px -40px rgba(2, 48, 71, 0.8);
+}
+
+.home-page .pf-agent-title {
+  color: #fff;
+}
+
+.home-page .pf-agent-title::after {
+  background: linear-gradient(90deg, var(--sun), var(--sky-soft));
+}
+
+.home-page .pf-agent-lead,
+.pf-agent-list,
+.pf-agent-cta,
+.pf-agent-safety,
+.pf-agent-how summary,
+.pf-agent-how p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.pf-agent-list li::marker {
+  color: var(--sun);
+}
+
+.pf-agent-preview {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 24px 50px -28px rgba(0, 0, 0, 0.6);
+}
+
+.pf-agent-preview-bar {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.pf-agent-preview-bar strong,
+.pf-agent-preview-bar span {
+  color: #fff;
+}
+
+.pf-agent-preview-bar span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.pf-agent-replay {
+  color: var(--sun);
+  border-color: rgba(255, 183, 3, 0.5);
+  background: transparent;
+}
+
+.pf-agent-replay:hover,
+.pf-agent-replay:focus-visible {
+  background: rgba(255, 183, 3, 0.14);
+  color: #fff;
+}
+
+.pf-agent-tools code {
+  background: rgba(142, 202, 230, 0.14);
+  color: var(--sky-soft);
+  border: 1px solid rgba(142, 202, 230, 0.25);
+}
+
+.pf-agent-msg.is-user p {
+  background: var(--action);
+  color: #fff;
+}
+
+.pf-agent-msg.is-agent p {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.pf-agent-msg.is-tool code {
+  background: rgba(2, 48, 71, 0.5);
+  color: var(--sky-soft);
+  border: 1px solid rgba(142, 202, 230, 0.2);
+}
+
+.pf-agent-how {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+.pf-agent-code {
+  background: rgba(0, 0, 0, 0.35);
+  color: #e6f4f9;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Plans: surface card with amber "Pro" signal */
+.home-page .pf-plan-card-static {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius-card) * 1.5);
+  box-shadow: var(--shadow-lift);
+  padding: 24px var(--pad) 28px;
+}
+
+.home-page .pf-sub-referral {
+  margin-top: 28px;
+}
+
+.pf-plan-options li {
+  border-radius: var(--radius-control);
+  padding: 12px 14px;
+  background: var(--canvas);
+  border: 1px solid var(--border);
+  border-inline-start: 4px solid var(--sky);
+}
+
+.pf-plan-options li.is-company {
+  border-inline-start-color: var(--action);
+}
+
+.pf-plan-options li.is-pro {
+  border-inline-start-color: var(--sun);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 183, 3, 0.14),
+    var(--canvas) 60%
+  );
+}
+
+.pf-plan-options strong {
+  color: var(--ink);
+}
+
+/* Referral: sun accent */
+.home-page .pf-sub-referral {
+  max-width: 1100px;
+  margin-inline: auto;
+  padding: 22px var(--pad);
+  border-radius: var(--radius-card);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 183, 3, 0.18),
+    rgba(255, 183, 3, 0.04)
+  );
+  border: 1px solid rgba(255, 183, 3, 0.35);
+}
+
+.home-page .pf-sub-referral h2 svg {
+  color: var(--primary-dark);
+}
+
+/* FAQ: cleaner rows */
+.pf-faq details {
+  border-radius: var(--radius-control);
+  padding-inline: 12px;
+  transition: background 0.25s var(--ease);
+}
+
+.pf-faq details[open] {
+  background: rgba(142, 202, 230, 0.14);
+}
+
+.pf-faq summary::after {
+  color: var(--sky);
+}
+
+/* Demo: sky banner per DESIGN.md */
+.home-page .pf-demo {
+  max-width: 1100px;
+  margin-inline: auto;
+  padding: 28px var(--pad) 32px;
+  border-radius: calc(var(--radius-card) * 1.5);
+  background: linear-gradient(
+    180deg,
+    rgba(142, 202, 230, 0.3),
+    rgba(142, 202, 230, 0.08)
+  );
+  border: 1px solid rgba(33, 158, 188, 0.2);
+}
+
+.home-page .pf-demo-role.is-active {
+  background: var(--ink);
+  color: #fff;
+}
+
+/* Closing: deep ink card */
+.home-page .pf-close {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  padding: 48px var(--pad) 52px;
+  border-radius: calc(var(--radius-card) * 1.5);
+  background:
+    radial-gradient(
+      640px 300px at 85% 0%,
+      rgba(242, 106, 54, 0.35),
+      transparent 60%
+    ),
+    radial-gradient(
+      520px 280px at 10% 100%,
+      rgba(33, 158, 188, 0.45),
+      transparent 60%
+    ),
+    var(--ink);
+  color: #fff;
+  box-shadow: 0 30px 70px -40px rgba(2, 48, 71, 0.9);
+}
+
+.home-page .pf-close img {
+  border-radius: 16px;
+  box-shadow: var(--shadow-cta);
+}
+
+.home-page .pf-close h2 {
+  color: #fff;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.home-page .pf-close p {
+  color: var(--sky-soft);
+}
+
+/* Footer */
+.pf-footer {
+  border-top: 0;
+  margin-top: 24px;
+}
+
+.pf-footer a {
+  color: var(--muted);
+  font-weight: 600;
+  transition: color 0.2s var(--ease);
+}
+
+.pf-footer a:hover,
+.pf-footer a:focus-visible {
+  color: var(--sky);
+}
+
+/* Shared depth on phones & cards site-wide */
+.pf-phone-frame,
+.pf-owners-phone,
+.pf-flagship-shot,
+.pf-tier {
+  transition:
+    transform 0.3s var(--ease),
+    box-shadow 0.3s var(--ease);
+}
+
+.pf-tier {
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+}
+
+.pf-tier:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lift);
+}
+
+.pf-tier-mid {
+  border-color: rgba(33, 158, 188, 0.4);
+}
+
+.pf-tier-full {
+  border-color: rgba(255, 183, 3, 0.55);
+  background: linear-gradient(
+    165deg,
+    #fff 0%,
+    rgba(255, 183, 3, 0.1) 100%
+  );
+}
+
+/* Focus ring in sky */
+:focus-visible {
+  outline: 2px solid var(--sky);
+  outline-offset: 3px;
+}
+
+/* Reduced motion: no drift, no stagger */
+@media (prefers-reduced-motion: reduce) {
+  .pf-horizon::before,
+  .pf-horizon .pf-orb,
+  .pf-hero-visual .pf-phone-frame {
+    animation: none !important;
+  }
+  .home-page .pf-hero-copy > *,
+  .pf-owners-hero > *,
+  .pf-hero-visual,
+  .pf-fade,
+  .pf-fade > * {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
