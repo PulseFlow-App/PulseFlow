@@ -5339,84 +5339,42 @@ a.pf-audience-card:focus-visible {
   border-radius: 22px;
 }
 
-/* Agent block: ink panel = serious tech moment */
+/* Agent block: light surface card, sky hairline on top */
 .home-page .pf-agent {
   padding: 32px var(--pad) 36px;
   border-radius: calc(var(--radius-card) * 1.5);
-  background:
-    radial-gradient(
-      700px 320px at 100% 0%,
-      rgba(33, 158, 188, 0.4),
-      transparent 60%
-    ),
-    radial-gradient(
-      500px 260px at 0% 100%,
-      rgba(242, 106, 54, 0.25),
-      transparent 60%
-    ),
-    var(--ink);
-  color: #fff;
-  box-shadow: 0 30px 70px -40px rgba(2, 48, 71, 0.8);
-}
-
-.home-page .pf-agent-title {
-  color: #fff;
-}
-
-.home-page .pf-agent-title::after {
-  background: linear-gradient(90deg, var(--sun), var(--sky-soft));
-}
-
-.home-page .pf-agent-lead,
-.pf-agent-list,
-.pf-agent-cta,
-.pf-agent-safety,
-.pf-agent-how summary,
-.pf-agent-how p {
-  color: rgba(255, 255, 255, 0.82);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--sky);
+  box-shadow: var(--shadow-lift);
 }
 
 .pf-agent-list li::marker {
-  color: var(--sun);
+  color: var(--action);
 }
 
 .pf-agent-preview {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.14);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 24px 50px -28px rgba(0, 0, 0, 0.6);
-}
-
-.pf-agent-preview-bar {
-  border-color: rgba(255, 255, 255, 0.12);
-}
-
-.pf-agent-preview-bar strong,
-.pf-agent-preview-bar span {
-  color: #fff;
-}
-
-.pf-agent-preview-bar span {
-  color: rgba(255, 255, 255, 0.6);
+  background: var(--canvas);
+  border-color: var(--border);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
 .pf-agent-replay {
-  color: var(--sun);
-  border-color: rgba(255, 183, 3, 0.5);
+  color: var(--sky);
+  border-color: rgba(33, 158, 188, 0.45);
   background: transparent;
 }
 
 .pf-agent-replay:hover,
 .pf-agent-replay:focus-visible {
-  background: rgba(255, 183, 3, 0.14);
-  color: #fff;
+  background: rgba(33, 158, 188, 0.1);
+  color: var(--ink);
 }
 
 .pf-agent-tools code {
-  background: rgba(142, 202, 230, 0.14);
-  color: var(--sky-soft);
-  border: 1px solid rgba(142, 202, 230, 0.25);
+  background: rgba(142, 202, 230, 0.22);
+  color: var(--ink);
+  border: 1px solid rgba(33, 158, 188, 0.25);
 }
 
 .pf-agent-msg.is-user p {
@@ -5425,25 +5383,15 @@ a.pf-audience-card:focus-visible {
 }
 
 .pf-agent-msg.is-agent p {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--border);
 }
 
 .pf-agent-msg.is-tool code {
-  background: rgba(2, 48, 71, 0.5);
-  color: var(--sky-soft);
-  border: 1px solid rgba(142, 202, 230, 0.2);
-}
-
-.pf-agent-how {
-  border-color: rgba(255, 255, 255, 0.14);
-}
-
-.pf-agent-code {
-  background: rgba(0, 0, 0, 0.35);
-  color: #e6f4f9;
-  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(2, 48, 71, 0.06);
+  color: var(--sky);
+  border: 1px solid rgba(33, 158, 188, 0.2);
 }
 
 /* Plans: surface card with amber "Pro" signal */
@@ -5536,7 +5484,7 @@ a.pf-audience-card:focus-visible {
   color: #fff;
 }
 
-/* Closing: deep ink card */
+/* Closing: light card with a soft sky / orange wash */
 .home-page .pf-close {
   max-width: 1100px;
   margin: 40px auto 0;
@@ -5545,17 +5493,18 @@ a.pf-audience-card:focus-visible {
   background:
     radial-gradient(
       640px 300px at 85% 0%,
-      rgba(242, 106, 54, 0.35),
+      rgba(242, 106, 54, 0.1),
       transparent 60%
     ),
     radial-gradient(
       520px 280px at 10% 100%,
-      rgba(33, 158, 188, 0.45),
+      rgba(142, 202, 230, 0.28),
       transparent 60%
     ),
-    var(--ink);
-  color: #fff;
-  box-shadow: 0 30px 70px -40px rgba(2, 48, 71, 0.9);
+    var(--surface);
+  border: 1px solid var(--border);
+  color: var(--ink);
+  box-shadow: var(--shadow-lift);
 }
 
 .home-page .pf-close img {
@@ -5564,12 +5513,12 @@ a.pf-audience-card:focus-visible {
 }
 
 .home-page .pf-close h2 {
-  color: #fff;
+  color: var(--ink);
   font-size: clamp(1.75rem, 4vw, 2.5rem);
 }
 
 .home-page .pf-close p {
-  color: var(--sky-soft);
+  color: var(--text-muted);
 }
 
 /* Footer */
