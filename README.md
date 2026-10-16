@@ -37,6 +37,16 @@ Nobody configures permissions by hand. The role is the screen.
 
 Billing is not live yet. Every new account gets 3 months of full access, including Pro, from signup.
 
+## Design system (Horizon)
+
+All UI work (site and app) follows the **Horizon** design language:
+
+- Bible for agents: [`DESIGN.md`](DESIGN.md)
+- Master brief (presentation): [`docs/design-brief.html`](docs/design-brief.html)
+- Cursor rule: `.cursor/rules/pulse-horizon-design.mdc` (always apply)
+
+Palette: `#8ecae6` · `#219ebc` · `#023047` · `#ffb703` · `#fb8500` (main)
+
 ## This repository
 
 Marketing site for [pulseflow.site](https://www.pulseflow.site): static HTML, CSS, and JS, with locale trees under `en/`, `th/`, `my/`, `fr/`, `de/`, `es/`, `it/`, `tr/`, `he/`, `ar/`, and `ru/`. Edit English sources and `i18n/*.json`, then rebuild locales with:

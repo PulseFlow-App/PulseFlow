@@ -1,57 +1,69 @@
 :root {
-  /* Pulse Flow app tokens */
-  --sand: #f7f1eb;
-  --sand-deep: #efe6dc;
-  --card: #ffffff;
-  --ink: #1f1815;
-  --muted: #7a716c;
-  --primary: #f07a3a;
-  --primary-dark: #d45a1f;
-  --primary-soft: #ffe4d4;
-  --secondary: #3cb89a;
-  --secondary-dark: #2a8f78;
-  --secondary-soft: #d8f3ec;
-  --border: rgba(31, 24, 21, 0.1);
-  --nav: #1c1c1e;
+  /* Horizon design tokens — see DESIGN.md */
+  --sky-soft: #8ecae6;
+  --sky: #219ebc;
+  --ink: #023047;
+  --sun: #ffb703;
+  --action: #fb8500;
+  --surface: #ffffff;
+  --canvas: #f5fafc;
+  --canvas-deep: #e8f4f8;
+  --muted: #5a6d78;
+  --border: rgba(2, 48, 71, 0.12);
+  --success: #2a9d8f;
+  --danger: #e63946;
+
+  /* Mapped product tokens (site + app migration) */
+  --sand: var(--canvas);
+  --sand-deep: var(--canvas-deep);
+  --card: var(--surface);
+  --primary: var(--action);
+  --primary-dark: #e07800;
+  --primary-soft: #ffe8cc;
+  --secondary: var(--sky);
+  --secondary-dark: #1a7a94;
+  --secondary-soft: #d7eef6;
+  --nav: #023047;
   --radius-card: 1rem;
   --radius-control: 0.75rem;
   --radius-pill: 999px;
-  --shadow-soft: 0 1px 2px rgba(31, 24, 21, 0.04),
-    0 8px 24px rgba(31, 24, 21, 0.06);
-  --shadow-lift: 0 2px 4px rgba(31, 24, 21, 0.05),
-    0 16px 40px rgba(31, 24, 21, 0.08);
-  --shadow-cta: 0 8px 20px rgba(240, 122, 58, 0.28);
-  --type-title: clamp(1.5rem, 1.2rem + 1vw, 1.875rem);
-  --type-body: 0.9375rem;
-  --type-meta: 0.75rem;
+  --shadow-soft: 0 1px 2px rgba(2, 48, 71, 0.04),
+    0 8px 24px rgba(2, 48, 71, 0.06);
+  --shadow-lift: 0 2px 4px rgba(2, 48, 71, 0.05),
+    0 16px 40px rgba(2, 48, 71, 0.08);
+  --shadow-cta: 0 8px 20px rgba(251, 133, 0, 0.28);
+  --type-hero: clamp(2.25rem, 1.6rem + 2.5vw, 3.5rem);
+  --type-title: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+  --type-body: 1rem;
+  --type-meta: 0.8125rem;
   --leading-title: 1.2;
-  --leading-body: 1.5;
+  --leading-body: 1.55;
   --leading-meta: 1.35;
   --atmosphere:
-    radial-gradient(1200px 600px at 10% -10%, rgba(240, 122, 58, 0.08), transparent 55%),
-    radial-gradient(900px 500px at 100% 0%, rgba(60, 184, 154, 0.06), transparent 50%),
-    var(--sand);
+    radial-gradient(1200px 600px at 8% -12%, rgba(142, 202, 230, 0.35), transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, rgba(251, 133, 0, 0.1), transparent 50%),
+    radial-gradient(700px 420px at 70% 100%, rgba(33, 158, 188, 0.08), transparent 55%),
+    var(--canvas);
 
   /* Legacy aliases used across existing rules */
-  --warm-bg: var(--sand);
-  --surface: var(--card);
-  --surface-2: var(--sand-deep);
+  --warm-bg: var(--canvas);
+  --surface-2: var(--canvas-deep);
   --text: var(--ink);
   --text-muted: var(--muted);
-  --accent: var(--primary);
+  --accent: var(--action);
   --accent-dim: var(--primary-soft);
   --accent-dark: var(--primary-dark);
   --ink-soft: var(--muted);
-  --paper: var(--card);
-  --coral: var(--primary);
+  --paper: var(--surface);
+  --coral: var(--action);
   --coral-dark: var(--primary-dark);
-  --lagoon: var(--secondary);
+  --lagoon: var(--sky);
   --lagoon-dark: var(--secondary-dark);
-  --brass: #b8891e;
-  --brass-dark: #7a5b14;
-  --font-body: "Nunito", sans-serif;
-  --font-display: "Nunito", sans-serif;
-  --font-mono: "Nunito", sans-serif;
+  --brass: var(--sun);
+  --brass-dark: #c48a00;
+  --font-body: "Heebo", sans-serif;
+  --font-display: "Sora", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --radius-btn: var(--radius-pill);
   --radius-chip: var(--radius-pill);
@@ -73,17 +85,49 @@ html {
 body {
   margin: 0;
   min-height: 100dvh;
-  background:
-    radial-gradient(1200px 600px at 10% -10%, rgba(240, 122, 58, 0.08), transparent 55%),
-    radial-gradient(900px 500px at 100% 0%, rgba(60, 184, 154, 0.06), transparent 50%),
-    var(--sand);
+  background: var(--atmosphere);
   color: var(--ink);
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-body);
   font-size: var(--type-body);
   font-weight: 500;
   line-height: var(--leading-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  isolation: isolate;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: auto -10% -15% -10%;
+  height: min(52vh, 520px);
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    rgba(142, 202, 230, 0.42),
+    transparent 70%
+  );
+  animation: pf-horizon-breath 12s ease-in-out infinite;
+}
+
+@keyframes pf-horizon-breath {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.65;
+  }
+  50% {
+    transform: translateY(-22px) scale(1.05);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before {
+    animation: none;
+  }
 }
 
 img {
@@ -264,8 +308,8 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-family: "Nunito", sans-serif;
-  font-weight: 800;
+  font-family: var(--font-display);
+  font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: -0.03em;
   line-height: 1;
@@ -288,20 +332,26 @@ a {
   align-items: center;
   justify-content: center;
   min-height: 36px;
+  font-family: var(--font-display);
   font-size: var(--type-meta);
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
-  background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+  background: var(--action);
   border: 0;
   border-radius: var(--radius-pill);
   padding: 8px 16px;
   box-shadow: var(--shadow-cta);
+  transition: transform 120ms var(--ease), background 160ms var(--ease);
 }
 
 .pf-cta:hover,
 .pf-cta:focus-visible {
-  background: linear-gradient(90deg, var(--primary-dark), var(--primary-dark));
+  background: var(--primary-dark);
   color: #fff;
+}
+
+.pf-cta:active {
+  transform: scale(0.98);
 }
 
 .pf-hero {
@@ -332,10 +382,12 @@ a {
 
 .pf-headline {
   margin: 0 0 18px;
-  font-weight: 800;
-  font-size: clamp(34px, 8vw, 52px);
-  line-height: 1.06;
-  letter-spacing: -1.1px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--type-hero);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--ink);
 }
 
 .pf-headline em {
@@ -371,16 +423,22 @@ a {
   min-height: 44px;
   padding: 0 22px;
   border-radius: var(--radius-pill);
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-weight: 600;
   font-size: var(--type-body);
   color: #fff;
-  background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+  background: var(--action);
   box-shadow: var(--shadow-cta);
+  transition: transform 120ms var(--ease), background 160ms var(--ease);
 }
 
 .pf-btn-primary:hover,
 .pf-btn-primary:focus-visible {
-  background: linear-gradient(90deg, var(--primary-dark), var(--primary-dark));
+  background: var(--primary-dark);
+}
+
+.pf-btn-primary:active {
+  transform: scale(0.98);
 }
 
 .pf-btn-outline {
@@ -390,16 +448,19 @@ a {
   min-height: 44px;
   padding: 0 22px;
   border-radius: var(--radius-pill);
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-weight: 600;
   font-size: var(--type-body);
   color: var(--ink);
-  background: var(--card);
+  background: var(--surface);
   border: 1px solid var(--border);
+  transition: background 160ms var(--ease), border-color 160ms var(--ease);
 }
 
 .pf-btn-outline:hover,
 .pf-btn-outline:focus-visible {
-  background: var(--sand-deep);
+  background: rgba(142, 202, 230, 0.22);
+  border-color: var(--sky);
 }
 
 .pf-swipe-label {
@@ -966,7 +1027,7 @@ a.pf-audience-card:hover {
 }
 
 .pf-owners-videos h2 {
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-body);
   font-size: var(--type-title);
   font-weight: 800;
   letter-spacing: -0.03em;
@@ -2528,7 +2589,7 @@ a.pf-audience-card:hover {
   aspect-ratio: 9 / 19.5;
   border-radius: 12px;
   overflow: hidden;
-  background: #fdf7f2;
+  background: var(--canvas-deep);
 }
 
 .pf-phone-frame-screen img {
@@ -2796,13 +2857,13 @@ a.pf-audience-card:hover {
 }
 
 .pf-flip-front {
-  background: linear-gradient(145deg, #f07a3a 0%, #d45a1f 100%);
+  background: var(--action);
   color: #fff;
   gap: 14px;
   text-align: center;
   z-index: 2;
   overflow: hidden;
-  box-shadow: 0 16px 36px rgba(240, 122, 58, 0.28);
+  box-shadow: var(--shadow-cta);
 }
 
 .pf-flip-front::before {
@@ -3031,6 +3092,7 @@ a.pf-audience-card:hover {
   padding: 10px 9px 12px;
   display: grid;
   gap: 7px;
+  /* Authentic WhatsApp wallpaper in the “before” mock only */
   background:
     linear-gradient(rgba(230, 221, 212, 0.65), rgba(230, 221, 212, 0.65)),
     repeating-linear-gradient(
@@ -3125,21 +3187,21 @@ a.pf-audience-card:hover {
 }
 
 .pf-pfchat-msg.is-own p {
-  background: #f07a3a;
+  background: var(--action);
   color: #fff;
   border-bottom-right-radius: 6px;
 }
 
 .pf-pfchat-msg.is-other p {
-  background: #fdf7f2;
-  color: #2b211c;
+  background: var(--canvas-deep);
+  color: var(--ink);
   border-bottom-left-radius: 6px;
 }
 
 .pf-pfchat-name {
   font-size: 11px;
   font-weight: 700;
-  color: rgba(43, 33, 28, 0.7);
+  color: var(--muted);
   padding-left: 4px;
 }
 
@@ -3151,7 +3213,7 @@ a.pf-audience-card:hover {
   min-height: 30px;
   padding: 0 11px;
   border-radius: 6px;
-  background: #f07a3a;
+  background: var(--action);
   color: #fff;
   font-size: 11px;
   font-weight: 800;
@@ -4284,7 +4346,7 @@ a.pf-audience-card:hover {
   font-weight: 800;
 }
 
-/* ===== Product chrome: match Pulse Flow app ===== */
+/* ===== Product chrome: Horizon display type ===== */
 .font-display,
 .pf-logo,
 .pf-hero-brand,
@@ -4293,7 +4355,7 @@ a.pf-audience-card:hover {
 h1,
 h2,
 h3 {
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-display);
 }
 
 .pf-hero-brand {
@@ -4333,10 +4395,10 @@ h3 {
 
 .home-page .pf-headline,
 .pf-owners-hero .pf-headline {
-  font-size: var(--type-title);
-  font-weight: 800;
+  font-size: var(--type-hero);
+  font-weight: 700;
   letter-spacing: -0.03em;
-  line-height: var(--leading-title);
+  line-height: 1.08;
   margin-bottom: 12px;
 }
 
@@ -4411,7 +4473,7 @@ h3 {
 .pf-guide-flagship-copy h2,
 .pf-owners-close h2,
 .pf-owners-pulse h2 {
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-body);
   font-size: var(--type-title);
   font-weight: 800;
   letter-spacing: -0.03em;
@@ -4432,9 +4494,9 @@ h3 {
 }
 
 .pf-flip-front {
-  background: linear-gradient(145deg, var(--primary) 0%, var(--primary-dark) 100%);
+  background: var(--action);
   color: #fff;
-  box-shadow: 0 16px 36px rgba(240, 122, 58, 0.28);
+  box-shadow: var(--shadow-cta);
   border: 0;
 }
 

@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pulse Flow · Horizon — Master Design Brief</title>
+    <meta
+      name="description"
+      content="Master design brief for Pulse Flow: Horizon design language for site and app."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --sky-soft: #8ecae6;
+        --sky: #219ebc;
+        --ink: #023047;
+        --sun: #ffb703;
+        --action: #fb8500;
+        --surface: #ffffff;
+        --canvas: #f5fafc;
+        --canvas-deep: #e8f4f8;
+        --muted: #5a6d78;
+        --border: rgba(2, 48, 71, 0.12);
+        --success: #2a9d8f;
+        --danger: #e63946;
+        --radius-card: 1rem;
+        --shadow-soft: 0 1px 2px rgba(2, 48, 71, 0.04),
+          0 8px 24px rgba(2, 48, 71, 0.06);
+        --shadow-cta: 0 8px 20px rgba(251, 133, 0, 0.28);
+        --font-display: "Sora", sans-serif;
+        --font-body: "Heebo", sans-serif;
+        --font-mono: "IBM Plex Mono", monospace;
+        --ease: cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: var(--font-body);
+        color: var(--ink);
+        background: var(--canvas);
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: var(--sky);
+      }
+
+      .brief {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 1.25rem 5rem;
+      }
+
+      /* —— Hero —— */
+      .hero {
+        position: relative;
+        min-height: min(92vh, 820px);
+        margin: 0 -1.25rem 3rem;
+        padding: 2.5rem 1.25rem 3.5rem;
+        overflow: hidden;
+        color: var(--surface);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        isolation: isolate;
+      }
+
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        background:
+          linear-gradient(
+            180deg,
+            rgba(2, 48, 71, 0.15) 0%,
+            rgba(2, 48, 71, 0.72) 55%,
+            rgba(2, 48, 71, 0.92) 100%
+          ),
+          linear-gradient(135deg, #219ebc 0%, #8ecae6 42%, #ffb703 78%, #fb8500 100%);
+        background-size: 100% 100%, 200% 200%;
+        animation: horizon-shift 18s var(--ease) infinite alternate;
+      }
+
+      .hero-breath {
+        position: absolute;
+        inset: auto 0 -20% 0;
+        height: 55%;
+        z-index: -1;
+        background: radial-gradient(
+          ellipse at 50% 0%,
+          rgba(142, 202, 230, 0.45),
+          transparent 70%
+        );
+        animation: breath 10s ease-in-out infinite;
+        pointer-events: none;
+      }
+
+      @keyframes horizon-shift {
+        from {
+          background-position: 0 0, 0% 40%;
+        }
+        to {
+          background-position: 0 0, 100% 60%;
+        }
+      }
+
+      @keyframes breath {
+        0%,
+        100% {
+          transform: translateY(0) scale(1);
+          opacity: 0.7;
+        }
+        50% {
+          transform: translateY(-18px) scale(1.04);
+          opacity: 1;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .hero-bg,
+        .hero-breath {
+          animation: none;
+        }
+      }
+
+      .eyebrow {
+        font-family: var(--font-display);
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--sun);
+        margin: 0 0 0.75rem;
+      }
+
+      .hero h1 {
+        font-family: var(--font-display);
+        font-size: clamp(2.4rem, 1.4rem + 4vw, 4rem);
+        font-weight: 700;
+        line-height: 1.08;
+        letter-spacing: -0.03em;
+        margin: 0 0 1rem;
+        max-width: 14ch;
+      }
+
+      .hero-lead {
+        font-size: clamp(1.05rem, 0.95rem + 0.4vw, 1.25rem);
+        max-width: 36rem;
+        margin: 0 0 1.75rem;
+        color: rgba(255, 255, 255, 0.88);
+      }
+
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 2.75rem;
+        padding: 0.65rem 1.35rem;
+        border-radius: 999px;
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 0.95rem;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        transition: transform 120ms var(--ease), box-shadow 160ms var(--ease);
+      }
+
+      .btn:active {
+        transform: scale(0.98);
+      }
+
+      .btn-primary {
+        background: var(--action);
+        color: #fff;
+        box-shadow: var(--shadow-cta);
+      }
+
+      .btn-secondary {
+        background: rgba(255, 255, 255, 0.12);
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        backdrop-filter: blur(8px);
+      }
+
+      .meta-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem 1.25rem;
+        margin-top: 2rem;
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .meta-bar strong {
+        color: #fff;
+        font-weight: 600;
+      }
+
+      /* —— Sections —— */
+      section {
+        margin: 0 0 3.5rem;
+        padding: 2rem 0;
+        border-top: 1px solid var(--border);
+      }
+
+      section h2 {
+        font-family: var(--font-display);
+        font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        margin: 0 0 0.5rem;
+      }
+
+      .section-lead {
+        color: var(--muted);
+        max-width: 40rem;
+        margin: 0 0 1.75rem;
+      }
+
+      .grid-2 {
+        display: grid;
+        gap: 1.25rem;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+
+      .grid-3 {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      }
+
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-card);
+        padding: 1.25rem 1.35rem;
+        box-shadow: var(--shadow-soft);
+      }
+
+      .card h3 {
+        font-family: var(--font-display);
+        font-size: 1.05rem;
+        margin: 0 0 0.4rem;
+      }
+
+      .card p,
+      .card li {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .card ul {
+        margin: 0.5rem 0 0;
+        padding-inline-start: 1.1rem;
+      }
+
+      /* —— Swatches —— */
+      .swatches {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 0.85rem;
+      }
+
+      .swatch {
+        border-radius: var(--radius-card);
+        overflow: hidden;
+        border: 1px solid var(--border);
+        background: var(--surface);
+        box-shadow: var(--shadow-soft);
+      }
+
+      .swatch-chip {
+        height: 88px;
+      }
+
+      .swatch-meta {
+        padding: 0.75rem 0.85rem 0.9rem;
+      }
+
+      .swatch-meta strong {
+        display: block;
+        font-family: var(--font-display);
+        font-size: 0.85rem;
+      }
+
+      .swatch-meta code {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        color: var(--muted);
+      }
+
+      /* —— Type specimen —— */
+      .type-row {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .type-specimen {
+        padding: 1.25rem 1.35rem;
+        background: var(--surface);
+        border-radius: var(--radius-card);
+        border: 1px solid var(--border);
+      }
+
+      .type-specimen .label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--muted);
+        margin-bottom: 0.5rem;
+      }
+
+      .type-hero {
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 1.4rem + 2vw, 3rem);
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+        margin: 0;
+      }
+
+      .type-body {
+        font-size: 1.05rem;
+        margin: 0.75rem 0 0;
+        color: var(--muted);
+      }
+
+      .type-he {
+        direction: rtl;
+        text-align: right;
+        font-family: var(--font-body);
+      }
+
+      /* —— Copy kit —— */
+      .copy-block {
+        background: var(--ink);
+        color: #fff;
+        border-radius: calc(var(--radius-card) + 4px);
+        padding: 1.75rem 1.5rem;
+      }
+
+      .copy-block .eyebrow {
+        color: var(--sun);
+      }
+
+      .copy-block h3 {
+        font-family: var(--font-display);
+        font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.4rem);
+        line-height: 1.15;
+        margin: 0 0 0.75rem;
+        letter-spacing: -0.02em;
+      }
+
+      .copy-block p {
+        margin: 0 0 1.25rem;
+        color: rgba(255, 255, 255, 0.8);
+        max-width: 34rem;
+      }
+
+      .copy-block .btn-primary {
+        display: inline-flex;
+      }
+
+      /* —— Audience —— */
+      .il-grid .card {
+        border-top: 3px solid var(--action);
+      }
+
+      .il-grid .card:nth-child(2) {
+        border-top-color: var(--sky);
+      }
+
+      .il-grid .card:nth-child(3) {
+        border-top-color: var(--sun);
+      }
+
+      .il-grid .card:nth-child(4) {
+        border-top-color: var(--sky-soft);
+      }
+
+      /* —— Do / Don't —— */
+      .pair {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+
+      .do {
+        border-inline-start: 4px solid var(--success);
+      }
+
+      .dont {
+        border-inline-start: 4px solid var(--danger);
+      }
+
+      /* —— Property visual mock —— */
+      .visual-stage {
+        position: relative;
+        border-radius: calc(var(--radius-card) + 6px);
+        overflow: hidden;
+        min-height: 280px;
+        background:
+          linear-gradient(180deg, transparent 30%, rgba(2, 48, 71, 0.75)),
+          linear-gradient(120deg, #219ebc, #8ecae6 40%, #fb8500);
+        color: #fff;
+        display: flex;
+        align-items: flex-end;
+        padding: 1.5rem;
+        box-shadow: var(--shadow-soft);
+      }
+
+      .visual-stage::before {
+        content: "";
+        position: absolute;
+        inset: 18% 12% auto;
+        height: 42%;
+        border-radius: 12px 12px 4px 4px;
+        background: linear-gradient(160deg, #fff 0%, #e8f4f8 40%, #8ecae6 100%);
+        box-shadow: 0 20px 40px rgba(2, 48, 71, 0.25);
+        opacity: 0.95;
+      }
+
+      .visual-stage::after {
+        content: "";
+        position: absolute;
+        left: 22%;
+        right: 22%;
+        top: 48%;
+        height: 18%;
+        border-radius: 50%;
+        background: rgba(33, 158, 188, 0.55);
+        filter: blur(2px);
+      }
+
+      .visual-caption {
+        position: relative;
+        z-index: 1;
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 1.1rem;
+        max-width: 20rem;
+      }
+
+      .visual-caption span {
+        display: block;
+        font-family: var(--font-body);
+        font-weight: 400;
+        font-size: 0.9rem;
+        opacity: 0.85;
+        margin-top: 0.35rem;
+      }
+
+      /* —— Buttons demo —— */
+      .btn-demo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        align-items: center;
+      }
+
+      .btn-ink {
+        background: var(--surface);
+        color: var(--ink);
+        border: 1px solid var(--border);
+      }
+
+      .btn-sky {
+        background: var(--sky);
+        color: #fff;
+      }
+
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.25rem 0.65rem;
+        border-radius: 999px;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .chip-ok {
+        background: rgba(42, 157, 143, 0.15);
+        color: var(--success);
+      }
+
+      .chip-wait {
+        background: rgba(255, 183, 3, 0.2);
+        color: #9a6b00;
+      }
+
+      .chip-hot {
+        background: rgba(230, 57, 70, 0.12);
+        color: var(--danger);
+      }
+
+      footer.brief-foot {
+        border-top: 1px solid var(--border);
+        padding-top: 1.5rem;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      footer.brief-foot code {
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+        background: var(--canvas-deep);
+        padding: 0.1rem 0.35rem;
+        border-radius: 0.35rem;
+      }
+
+      .toc {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin: 0 0 2rem;
+      }
+
+      .toc a {
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 0.4rem 0.75rem;
+        border-radius: 999px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        color: var(--ink);
+      }
+
+      .toc a:hover {
+        border-color: var(--sky);
+        color: var(--sky);
+      }
+    </style>
+  </head>
+  <body>
+    <article class="brief">
+      <header class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-breath" aria-hidden="true"></div>
+        <p class="eyebrow">Master Design Brief · Horizon</p>
+        <h1>Clear day. Clear operations.</h1>
+        <p class="hero-lead">
+          Pulse Flow’s design language for the marketing site and the app —
+          energetic and serious, light and airy, property-first. Built so
+          Israeli operators feel in control before they scroll.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#copy">See verbal kit</a>
+          <a class="btn btn-secondary" href="../DESIGN.md">Open DESIGN.md bible</a>
+        </div>
+        <div class="meta-bar">
+          <span><strong>Palette</strong> sky · ink · sun · action</span>
+          <span><strong>Type</strong> Sora + Heebo</span>
+          <span><strong>Audience</strong> Israeli owners first</span>
+        </div>
+      </header>
+
+      <nav class="toc" aria-label="Brief sections">
+        <a href="#feel">Feel</a>
+        <a href="#principles">Principles</a>
+        <a href="#colours">Colours</a>
+        <a href="#type">Type</a>
+        <a href="#visuals">Visuals</a>
+        <a href="#audience">Audience</a>
+        <a href="#language">Language</a>
+        <a href="#copy">Copy</a>
+        <a href="#guards">Guards</a>
+      </nav>
+
+      <section id="feel">
+        <h2>1 · Whiteboard</h2>
+        <p class="section-lead">
+          Music on. Users should feel energetic and serious at once — like a
+          clear morning over the villa list: ready to act, not to decorate.
+        </p>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Energetic</h3>
+            <p>Orange action. Amber signals. Motion with purpose.</p>
+          </div>
+          <div class="card">
+            <h3>Serious</h3>
+            <p>Deep ink. Direct Hebrew/English. No toy UI.</p>
+          </div>
+          <div class="card">
+            <h3>Airy</h3>
+            <p>Cool white canvas. Sky washes. Room to breathe.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="principles">
+        <h2>2 · Principles</h2>
+        <p class="section-lead">
+          Design is ruthless elimination. If you try to do everything, you do
+          nothing.
+        </p>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Do</h3>
+            <ul>
+              <li>One job per section</li>
+              <li>Hero: brand + H1 + line + CTA + property visual</li>
+              <li>Mobile first, RTL-ready</li>
+              <li>Tokens only — no random hex</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Cut</h3>
+            <ul>
+              <li>Stat strips and badge piles in the first viewport</li>
+              <li>Warm cream + terracotta clichés</li>
+              <li>Purple SaaS gradients</li>
+              <li>Decorative cards that aren’t interactive</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="colours">
+        <h2>3 · Colours &amp; tones</h2>
+        <p class="section-lead">
+          Locked Horizon palette. Action orange stays the main brand energy;
+          sky carries calm; ink carries authority.
+        </p>
+        <div class="swatches">
+          <div class="swatch">
+            <div class="swatch-chip" style="background: #8ecae6"></div>
+            <div class="swatch-meta">
+              <strong>Sky soft</strong>
+              <code>#8ecae6</code>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-chip" style="background: #219ebc"></div>
+            <div class="swatch-meta">
+              <strong>Sky</strong>
+              <code>#219ebc</code>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-chip" style="background: #023047"></div>
+            <div class="swatch-meta">
+              <strong>Ink</strong>
+              <code>#023047</code>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-chip" style="background: #ffb703"></div>
+            <div class="swatch-meta">
+              <strong>Sun</strong>
+              <code>#ffb703</code>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-chip" style="background: #fb8500"></div>
+            <div class="swatch-meta">
+              <strong>Action (main)</strong>
+              <code>#fb8500</code>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-chip" style="background: #f5fafc; border-bottom: 1px solid var(--border)"></div>
+            <div class="swatch-meta">
+              <strong>Canvas</strong>
+              <code>#f5fafc</code>
+            </div>
+          </div>
+        </div>
+        <div class="btn-demo" style="margin-top: 1.5rem">
+          <button class="btn btn-primary" type="button">Start free</button>
+          <button class="btn btn-ink" type="button">See the demo</button>
+          <button class="btn btn-sky" type="button">Secondary</button>
+          <span class="chip chip-ok">Confirmed</span>
+          <span class="chip chip-wait">Awaiting</span>
+          <span class="chip chip-hot">Urgent</span>
+        </div>
+      </section>
+
+      <section id="type">
+        <h2>4 · Typography</h2>
+        <p class="section-lead">
+          Sora for display energy. Heebo for body and Hebrew — native to how
+          Israeli users already trust product UI.
+        </p>
+        <div class="type-row">
+          <div class="type-specimen">
+            <div class="label">Sora · Display</div>
+            <p class="type-hero">Get your work out of the group chats</p>
+            <p class="type-body">
+              Properties, jobs, tasks, vendors, bills and guests in one
+              workspace. Everyone sees their own part, in their own language.
+            </p>
+          </div>
+          <div class="type-specimen type-he">
+            <div class="label">Heebo · עברית</div>
+            <p class="type-hero" style="font-family: var(--font-body)">
+              לדעת מה קורה בלי לשאול שאלות
+            </p>
+            <p class="type-body">
+              תפוסה, עבודה דחופה, צ׳ק־אין ועלויות לפי נכס. אתם, המנהל והצוות
+              בשטח רואים את אותו דבר.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="visuals">
+        <h2>5 · Primary visuals</h2>
+        <p class="section-lead">
+          Property-connected. Breathing horizon. Hero that stands out — not a
+          dashboard collage.
+        </p>
+        <div class="visual-stage" role="img" aria-label="Stylised villa on a bright horizon">
+          <p class="visual-caption">
+            Property on the horizon
+            <span>Real villa photography + slow sky breath. No abstract blobs.</span>
+          </p>
+        </div>
+        <div class="grid-2" style="margin-top: 1.25rem">
+          <div class="card">
+            <h3>Must show</h3>
+            <ul>
+              <li>Villa / pool / deck / work-on-site</li>
+              <li>Job cards with property photo</li>
+              <li>Status you can trust at a glance</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Modern, not everywhere yet</h3>
+            <ul>
+              <li>Living horizon atmosphere (CSS breath)</li>
+              <li>Cool canvas instead of warm cream SaaS</li>
+              <li>Selective micro-motion, not scroll circus</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="audience">
+        <h2>6 · Israeli audience — why they walk the platform</h2>
+        <p class="section-lead">
+          Design language speaks to motives, not decoration. Make every screen
+          answer one of these.
+        </p>
+        <div class="grid-2 il-grid">
+          <div class="card">
+            <h3>Remote control</h3>
+            <p>See the day without calling the manager. Occupancy and fire from afar.</p>
+          </div>
+          <div class="card">
+            <h3>Money trail</h3>
+            <p>Every cost lands on a property. Approve. Export. No lost receipts.</p>
+          </div>
+          <div class="card">
+            <h3>Staff reliability</h3>
+            <p>Job accepted in-app — not buried in WhatsApp. Status you can show a partner.</p>
+          </div>
+          <div class="card">
+            <h3>Language &amp; trust</h3>
+            <p>Write once; team reads Hebrew / Thai / English. Serious tool, not a toy.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="language">
+        <h2>7 · Design language — Horizon</h2>
+        <p class="section-lead">
+          Soul of the brand (language) + body of the system (tokens &amp;
+          components). Consistency across site and app.
+        </p>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Voice</h3>
+            <ul>
+              <li>Direct, short, outcome-first</li>
+              <li>Serious energy — never cute</li>
+              <li>Chat stays; ops leave the chat</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Patterns</h3>
+            <ul>
+              <li>Pill CTAs in action orange</li>
+              <li>Soft sky panels for agent / trust</li>
+              <li>Phone frames with real screenshots</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pair" style="margin-top: 1.25rem">
+          <div class="card do">
+            <h3>Do</h3>
+            <p>Reuse Horizon tokens. Match this brief. Prefer elimination.</p>
+          </div>
+          <div class="card dont">
+            <h3>Don’t</h3>
+            <p>Invent “Primary Soft Alt 2.” Ship purple glow. Warm-cream reopen.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="copy">
+        <h2>8 · Early verbal kit</h2>
+        <p class="section-lead">
+          Play with levers until it feels right. These anchors feed both
+          marketing and app empty states.
+        </p>
+        <div class="copy-block">
+          <p class="eyebrow">Home · H1</p>
+          <h3>Get your work out of the group chats</h3>
+          <p>
+            Properties, jobs, tasks, vendors, bills and guests in one workspace.
+            Everyone sees their own part, in their own language.
+          </p>
+          <a class="btn btn-primary" href="https://app.pulseflow.site/register">Start free</a>
+        </div>
+        <div class="grid-2" style="margin-top: 1.25rem">
+          <div class="card">
+            <h3>Owners H1</h3>
+            <p>Know what is happening without asking questions</p>
+          </div>
+          <div class="card">
+            <h3>Brand line</h3>
+            <p>Clear day. Clear operations. · The pulse of your rental operations</p>
+          </div>
+          <div class="card">
+            <h3>CTAs</h3>
+            <p>Start free · See the demo · Open app · Connect your agent</p>
+          </div>
+          <div class="card">
+            <h3>Roles order</h3>
+            <p>Who it’s for → Agent → Plans (agent never before role cards)</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="guards">
+        <h2>9 · AI &amp; implementation guards</h2>
+        <p class="section-lead">
+          From vibe-coded UI discipline: tokens → components → no drift. Agents
+          open <code>DESIGN.md</code> first.
+        </p>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Trends we adopt</h3>
+            <ul>
+              <li>Mobile-first, cut-to-the-chase heroes</li>
+              <li>Meaningful micro-interactions</li>
+              <li>Airy, ethical contrast &amp; performance</li>
+              <li>Selective motion — not maximalism</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Trends we skip</h3>
+            <ul>
+              <li>VR / AR for marketing</li>
+              <li>Brutalist / maximalist overload</li>
+              <li>Dynamic cursor gimmicks as default</li>
+              <li>Purple-on-white AI defaults</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer class="brief-foot">
+        <p>
+          Living brief for Pulse Flow · Horizon.
+          Canonical rules:
+          <code>DESIGN.md</code>
+          · Cursor rule always applies.
+          Open locally:
+          <code>docs/design-brief.html</code>
+        </p>
+        <p>
+          Refs:
+          <a href="https://designmodo.com/web-design-trends/">Designmodo 2026 trends</a>
+          ·
+          <a href="https://www.uxdesigninstitute.com/blog/create-a-design-language/">UXDI design language</a>
+          ·
+          <a href="https://medium.com/design-bootcamp/making-vibe-coded-uis-beautiful-and-consistent-a2a1ba08a140">Vibe-coded UI consistency</a>
+        </p>
+      </footer>
+    </article>
+  </body>
+</html>

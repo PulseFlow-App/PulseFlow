@@ -306,14 +306,16 @@ def set_canonical_og(html: str, locale: str, slug: str) -> str:
         if (ROOT / "assets" / "og-image-en.jpg").exists()
         else "og-image.jpg"
     )
+    # Cache-bust so crawlers pick up regenerated OG art.
+    og_url = f"https://www.pulseflow.site/assets/{og_file}?v=2"
     html = re.sub(
         r'(property="og:image"\s+content=")https://www\.pulseflow\.site/assets/og-image[^"]*(")',
-        rf"\1https://www.pulseflow.site/assets/{og_file}\2",
+        rf"\1{og_url}\2",
         html,
     )
     html = re.sub(
         r'(name="twitter:image"\s+content=")https://www\.pulseflow\.site/assets/og-image[^"]*(")',
-        rf"\1https://www.pulseflow.site/assets/{og_file}\2",
+        rf"\1{og_url}\2",
         html,
     )
     html = re.sub(

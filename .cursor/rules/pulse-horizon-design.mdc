@@ -1,0 +1,24 @@
+---
+description: Pulse Flow Horizon design system — read DESIGN.md before any UI work
+alwaysApply: true
+---
+
+# Horizon design system (mandatory)
+
+Before any visual, UX, copy-tone, colour, typography, motion, or component change on the **marketing site or app**:
+
+1. Read and follow [`DESIGN.md`](DESIGN.md) (Pulse Flow Design Bible — Horizon).
+2. Use [`docs/design-brief.html`](docs/design-brief.html) as the visual / verbal reference.
+3. Reuse existing Horizon tokens and patterns — do not invent new hex colours, radii, shadows, fonts, or one-off button variants.
+
+## Hard constraints
+
+- Palette only: `#8ecae6` `#219ebc` `#023047` `#ffb703` `#fb8500` (+ neutrals defined in DESIGN.md).
+- Primary CTA = `#fb8500` (action). Ink text = `#023047`. Canvas = cool white `#f5fafc` (not warm cream).
+- Fonts: **Sora** (display) + **Heebo** (body / Hebrew). No Inter / Roboto / Arial as brand faces.
+- Feeling: energetic + serious, light, airy, property-connected. Israeli owners first (control, money trail, staff confirmation).
+- Less is more. One job per section. Hero budget: brand + H1 + one line + CTA + dominant property visual.
+- Mobile-first and RTL-ready (`he` / `ar`). Prefer villa photos over house-icon placeholders.
+- Reject purple SaaS gradients, terracotta-on-cream, badge piles in the first viewport, and decorative cards.
+
+If a request conflicts with DESIGN.md, follow DESIGN.md and note the conflict briefly.
