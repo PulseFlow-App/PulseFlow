@@ -5231,8 +5231,8 @@ h2 {
   display: inline-grid;
   place-items: center;
   color: #fff;
-  background: linear-gradient(135deg, var(--sky), var(--ink));
-  box-shadow: 0 8px 18px -8px rgba(33, 158, 188, 0.6);
+  background: linear-gradient(135deg, var(--action) 0 46%, var(--sky) 54% 100%);
+  box-shadow: 0 8px 18px -8px rgba(2, 48, 71, 0.45);
 }
 
 .pf-feature-copy .pf-card-icon .ti,
@@ -5244,16 +5244,13 @@ h2 {
 }
 
 .pf-feature-slide:nth-child(2) .pf-card-icon {
-  background: linear-gradient(135deg, var(--action), var(--primary-dark));
-  box-shadow: 0 8px 18px -8px rgba(242, 106, 54, 0.6);
+  background: linear-gradient(135deg, var(--ink) 0 46%, var(--action) 54% 100%);
 }
 .pf-feature-slide:nth-child(3) .pf-card-icon {
-  background: linear-gradient(135deg, var(--sun), var(--action));
-  box-shadow: 0 8px 18px -8px rgba(255, 183, 3, 0.6);
+  background: linear-gradient(135deg, var(--sky) 0 46%, var(--sun) 54% 100%);
 }
 .pf-feature-slide:nth-child(4) .pf-card-icon {
-  background: linear-gradient(135deg, var(--success), var(--sky));
-  box-shadow: 0 8px 18px -8px rgba(42, 157, 143, 0.6);
+  background: linear-gradient(135deg, var(--sun) 0 46%, var(--ink) 54% 100%);
 }
 
 /* Problems flip cards: each pain gets its own palette face */
@@ -5302,17 +5299,19 @@ a.pf-audience-card:focus-visible {
   height: 44px;
   border-radius: 12px;
   color: #fff;
-  background: linear-gradient(135deg, var(--action), var(--primary-dark));
+  /* every icon mixes one warm + one cool Horizon colour */
+  background: linear-gradient(135deg, var(--action) 0 46%, var(--sky) 54% 100%);
+  box-shadow: 0 8px 18px -8px rgba(2, 48, 71, 0.45);
 }
 
 .pf-audience-card:nth-child(2) .pf-audience-icon {
-  background: linear-gradient(135deg, var(--sky), var(--ink));
+  background: linear-gradient(135deg, var(--ink) 0 46%, var(--action) 54% 100%);
 }
 .pf-audience-card:nth-child(3) .pf-audience-icon {
-  background: linear-gradient(135deg, var(--success), var(--sky));
+  background: linear-gradient(135deg, var(--sky) 0 46%, var(--sun) 54% 100%);
 }
 .pf-audience-card:nth-child(4) .pf-audience-icon {
-  background: linear-gradient(135deg, var(--sun), var(--action));
+  background: linear-gradient(135deg, var(--sun) 0 46%, var(--ink) 54% 100%);
 }
 
 .home-page .pf-audience-cta {
