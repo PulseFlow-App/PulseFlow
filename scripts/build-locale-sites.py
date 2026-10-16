@@ -22,10 +22,20 @@ PAGES = [
     ("managers", "index.html"),
     ("staff", "index.html"),
     ("guests", "index.html"),
+    ("guides/property-operations-vs-management", "index.html"),
     ("terms", "index.html"),
     ("privacy", "index.html"),
 ]
-SITE_PATHS = ["", "owners", "managers", "staff", "guests", "terms", "privacy"]
+SITE_PATHS = [
+    "",
+    "owners",
+    "managers",
+    "staff",
+    "guests",
+    "guides/property-operations-vs-management",
+    "terms",
+    "privacy",
+]
 
 LOCALE_META = {
     "en": {"dir": "ltr", "og": "en_US"},
@@ -477,6 +487,7 @@ def write_sitemap() -> None:
                 "managers": "0.9",
                 "staff": "0.9",
                 "guests": "0.8",
+                "guides/property-operations-vs-management": "0.7",
                 "terms": "0.3",
                 "privacy": "0.3",
             }[slug]

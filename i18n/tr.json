@@ -20,7 +20,8 @@
     "terms": "Şartlar",
     "privacy": "Gizlilik",
     "support": "Destek",
-    "app": "Uygulama"
+    "app": "Uygulama",
+    "guide": "Rehber"
   },
   "common": {
     "screenshot_soon": "Ekran görüntüsü yakında",
@@ -541,5 +542,38 @@
     "agent_li4": "Üçüncü taraf ajan istemcileri (düzenleyiciniz gibi) istemlerinizi kendi sistemlerinde işler. Gizlilik koşulları sohbetin o tarafı için geçerlidir.",
     "agent_li5": "Uygulama içi ajan sohbetini kullanırsanız istemlerinizi, ajanın yanıtlarını ve bu araçların okuduğu veya yazdığı operasyonel verileri, geçerli çalışma alanınızla sınırlı olarak işleriz.",
     "s5_li4": "Ayarlar’da ajan bağlantı anahtarlarını kesin"
+  },
+  "guide_ops": {
+    "meta_title": "Tatil kiralamada mülk operasyonları vs mülk yönetimi · Pulse Flow",
+    "meta_description": "Mülk yönetimi takvimi doldurur. Operasyonlar günü yürütür: işler, bakım, para ve misafirler — Airbnb ve Booking’den sonra.",
+    "og_title": "Tatil kiralamada mülk operasyonları vs mülk yönetimi",
+    "og_description": "Rezervasyon villayı işletmek değildir. Rezervasyondan sonra kontrol isteyen sahipler için net dil.",
+    "og_image_alt": "Pulse Flow: tatil kiralama mülk operasyonları",
+    "kicker": "Rehber",
+    "title": "Tatil kiralamada mülk operasyonları vs mülk yönetimi",
+    "updated": "Pulse Flow · 16 Ekim 2026 güncellendi",
+    "lead": "Villa etrafındaki her şeye «mülk yönetimi» deniyor. Bu iki işi karıştırır. Biri takvimi doldurur. Diğeri misafir rezervasyonundan sonraki günü yürütür.",
+    "h_mgmt": "Mülk yönetimi genellikle ne demektir",
+    "p_mgmt1": "Kısa dönem kiralamada PMS rezervasyon etrafındadır: ilanlar, takvimler, Airbnb ve Booking senkronu, fiyatlar ve varış öncesi mesajlaşma.",
+    "p_mgmt2": "Sahipler buna ihtiyaç duyar. İsteğe bağlı değildir. Temizlik, tamir, malzeme veya depozito kesintisi gerektiğinde yetmez.",
+    "h_ops": "Mülk operasyonları ne demektir",
+    "p_ops1": "Operasyonlar rezervasyondan sonradır: işi kim yapar, hangi mülkte, ne zamana, onaylandı mı, maliyeti ne, sahip yöneticiyi aramadan görüyor mu.",
+    "p_ops2": "Tipik iş: turnover, bakım, konaklama sırası aciller, villaya bağlı fişler, çok dilli ekip, net devir.",
+    "p_ops3": "«Sisteminiz» bir WhatsApp grubuysa boşluğu zaten hissedersiniz. İşler kaybolur. Maliyetler mülksüz kalır. Geçmiş bir telefonla gider.",
+    "h_table": "Yan yana",
+    "li1": "<strong>Mülk yönetimi:</strong> takvimler, kanallar, fiyatlar, varış öncesi sohbet.",
+    "li2": "<strong>Operasyonlar:</strong> işler, onay, para izi, ekip, check-in sonrası misafirler.",
+    "li3": "<strong>İkisi de gerekir.</strong> PMS saha onayını değiştirmez. Ops uygulaması Airbnb’nin yerini almaz.",
+    "h_owners": "Uzaktan sahiplerin gerçekten neye ihtiyacı var",
+    "p_owners1": "İsrailli ve diğer uzaktan sahipler başka bir rezervasyon kutusu istemez. Kontrol ister: doluluk, acil iş, her baht veya şekel mülke bağlı, «kabul»e basan ekip.",
+    "p_owners2": "Bu operasyondur. Pulse Flow bu katman için — mülkler, işler, tedarikçiler, faturalar ve misafirler, herkes kendi dilinde.",
+    "h_next": "Sırada ne var",
+    "p_next": "Ürün ana sayfasından başlayın; uzaktan kontrol ve para izi için sahipler sayfasını açın.",
+    "cta_home": "Pulse Flow ana sayfa",
+    "cta_owners": "Sahipler için",
+    "cta_start": "Ücretsiz başla",
+    "nav_home": "Ana sayfa",
+    "nav_owners": "Sahipler",
+    "nav_managers": "Yöneticiler"
   }
 }

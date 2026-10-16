@@ -20,7 +20,8 @@
     "terms": "Condiciones",
     "privacy": "Privacidad",
     "support": "Asistencia",
-    "app": "Aplicación"
+    "app": "Aplicación",
+    "guide": "Guía"
   },
   "common": {
     "screenshot_soon": "Captura de pantalla en breve",
@@ -541,5 +542,38 @@
     "agent_li4": "Los clientes de agente de terceros (como su editor) tratan sus indicaciones en sus sistemas. Sus condiciones de privacidad rigen ese lado de la conversación.",
     "agent_li5": "Si usa el chat del agente en la app, procesamos sus mensajes, las respuestas del agente y los datos operativos que esas herramientas leen o escriben, limitados a su espacio actual.",
     "s5_li4": "Desconectar las claves de agente en Ajustes"
+  },
+  "guide_ops": {
+    "meta_title": "Operaciones vs gestión de propiedades para alquiler vacacional · Pulse Flow",
+    "meta_description": "La gestión llena el calendario. Las operaciones llevan el día: trabajos, mantenimiento, dinero e huéspedes después de Airbnb y Booking.",
+    "og_title": "Operaciones vs gestión de propiedades para vacation rentals",
+    "og_description": "Una reserva no es lo mismo que operar la villa. Lenguaje claro para propietarios.",
+    "og_image_alt": "Pulse Flow: operaciones para alquiler vacacional",
+    "kicker": "Guía",
+    "title": "Operaciones vs gestión de propiedades para alquiler vacacional",
+    "updated": "Pulse Flow · Actualizado el 16 de octubre de 2026",
+    "lead": "Se dice «gestión de propiedades» para casi todo en torno a una villa. Mezcla dos trabajos. Uno llena el calendario. El otro lleva el día tras la reserva.",
+    "h_mgmt": "Qué suele significar la gestión de propiedades",
+    "p_mgmt1": "En alquiler corto, un PMS gira en torno a la reserva: anuncios, calendarios, sync con Airbnb y Booking, precios y chat antes de la llegada.",
+    "p_mgmt2": "Los propietarios lo necesitan. No es opcional. No basta cuando hay que limpiar, reparar, comprar o justificar un depósito.",
+    "h_ops": "Qué significan las operaciones de propiedad",
+    "p_ops1": "Operaciones es lo que pasa tras la reserva: quién hace el trabajo, en qué propiedad, para cuándo, si confirmaron, el coste, y si el dueño lo ve sin llamar al manager.",
+    "p_ops2": "Típico: turnovers, mantenimiento, urgencias, recibos por villa, equipo multilingüe, traspaso claro.",
+    "p_ops3": "Si tu «sistema» es un grupo de WhatsApp, ya sientes el hueco. Se pierden trabajos. Los costes flotan. La historia se va con un teléfono.",
+    "h_table": "Uno al lado del otro",
+    "li1": "<strong>Gestión:</strong> calendarios, canales, tarifas, chat pre-llegada.",
+    "li2": "<strong>Operaciones:</strong> trabajos, confirmación, rastro de dinero, staff, huéspedes tras check-in.",
+    "li3": "<strong>Hacen falta ambos.</strong> Un PMS no sustituye el trabajo de campo confirmado. Una app de ops no sustituye Airbnb.",
+    "h_owners": "Qué necesitan de verdad los dueños remotos",
+    "p_owners1": "Dueños israelíes y otros remotos no quieren otra bandeja de reservas. Quieren control: ocupación, urgencias, cada baht o shekel en una propiedad, staff que pulsa «aceptado».",
+    "p_owners2": "Eso es operaciones. Pulse Flow está hecho para esa capa — propiedades, trabajos, proveedores, facturas e huéspedes, cada uno en su idioma.",
+    "h_next": "Siguiente paso",
+    "p_next": "Empieza en la home del producto, o la página de owners si te importa el control remoto y el dinero.",
+    "cta_home": "Inicio Pulse Flow",
+    "cta_owners": "Para propietarios",
+    "cta_start": "Empezar gratis",
+    "nav_home": "Inicio",
+    "nav_owners": "Propietarios",
+    "nav_managers": "Managers"
   }
 }

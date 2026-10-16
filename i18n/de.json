@@ -20,7 +20,8 @@
     "terms": "Bedingungen",
     "privacy": "Datenschutz",
     "support": "Hilfe",
-    "app": "Anwendung"
+    "app": "Anwendung",
+    "guide": "Leitfaden"
   },
   "common": {
     "screenshot_soon": "Screenshot folgt in Kürze",
@@ -541,5 +542,38 @@
     "agent_li4": "Drittanbieter-Agentenclients (etwa Ihr Editor) verarbeiten Ihre Eingaben auf ihren Systemen. Deren Datenschutzbestimmungen gelten für diese Seite des Gesprächs.",
     "agent_li5": "Wenn Sie den Agenten-Chat in der App nutzen, verarbeiten wir Ihre Eingaben, die Antworten des Agenten und die Betriebsdaten, die diese Tools lesen oder schreiben, begrenzt auf Ihren aktuellen Arbeitsbereich.",
     "s5_li4": "Agenten-Verbindungsschlüssel in den Einstellungen trennen"
+  },
+  "guide_ops": {
+    "meta_title": "Objektbetrieb vs. Property Management für Ferienvermietung · Pulse Flow",
+    "meta_description": "Property Management füllt den Kalender. Objektbetrieb führt den Tag: Jobs, Wartung, Geld und Gäste nach Airbnb und Booking.",
+    "og_title": "Objektbetrieb vs. Property Management für Ferienhäuser",
+    "og_description": "Eine Buchung ist nicht dasselbe wie den Betrieb der Villa. Klare Sprache für Eigentümer.",
+    "og_image_alt": "Pulse Flow: Objektbetrieb für Ferienvermietung",
+    "kicker": "Leitfaden",
+    "title": "Objektbetrieb vs. Property Management für Ferienvermietung",
+    "updated": "Pulse Flow · Aktualisiert am 16. Oktober 2026",
+    "lead": "„Property Management“ sagt man für fast alles rund um eine Villa. Das vermischt zwei Jobs. Einer füllt den Kalender. Der andere führt den Tag nach der Buchung.",
+    "h_mgmt": "Was Property Management meist meint",
+    "p_mgmt1": "Bei Kurzzeitvermietung baut PMS um die Buchung: Inserate, Kalender, Kanal-Sync mit Airbnb und Booking, Preise und Gastchat vor Anreise.",
+    "p_mgmt2": "Eigentümer brauchen das. Es ist nicht optional. Es reicht nicht, sobald jemand putzen, reparieren, einkaufen oder eine Kaution begründen muss.",
+    "h_ops": "Was Objektbetrieb bedeutet",
+    "p_ops1": "Objektbetrieb ist alles nach der Buchung: wer den Job macht, welches Objekt, bis wann, bestätigt, Kosten, und ob der Eigentümer es ohne Anruf sieht.",
+    "p_ops2": "Typisch: Turnovers, Wartung, Notfälle im Stay, Belege je Villa, mehrsprachiges Team, klare Übergabe.",
+    "p_ops3": "Wenn Ihr „System“ eine WhatsApp-Gruppe ist, spüren Sie die Lücke. Jobs gehen verloren. Kosten schweben. Historie wandert mit dem Handy.",
+    "h_table": "Nebeneinander",
+    "li1": "<strong>Property Management:</strong> Kalender, Kanäle, Preise, Chat vor Anreise.",
+    "li2": "<strong>Objektbetrieb:</strong> Jobs, Bestätigung, Geldspur, Personal, Gäste nach Check-in.",
+    "li3": "<strong>Beides braucht es.</strong> PMS ersetzt keine bestätigte Feldarbeit. Ops-App ersetzt Airbnb nicht.",
+    "h_owners": "Was entfernte Eigentümer wirklich brauchen",
+    "p_owners1": "Israelische und andere Remote-Eigentümer wollen keinen weiteren Buchungskorb. Sie wollen Kontrolle: Belegung, Dringendes, jeder Baht oder Schekel am Objekt, Personal das „angenommen“ tippt.",
+    "p_owners2": "Das ist Betrieb. Pulse Flow ist für diese Schicht — Objekte, Jobs, Vendoren, Rechnungen und Gäste, jeder in seiner Sprache.",
+    "h_next": "Weiter",
+    "p_next": "Zur Startseite für das Produkt, oder zur Eigentümer-Seite für Fernkontrolle und Geldspur.",
+    "cta_home": "Pulse Flow Startseite",
+    "cta_owners": "Für Eigentümer",
+    "cta_start": "Kostenlos starten",
+    "nav_home": "Start",
+    "nav_owners": "Eigentümer",
+    "nav_managers": "Verwalter"
   }
 }
