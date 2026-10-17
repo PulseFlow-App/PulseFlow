@@ -178,6 +178,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/de" />
     <meta
@@ -295,7 +314,7 @@
                 "name": "What does it cost?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Personal is free forever. Company is paid by the owner; team seats stay free. Pro is the extra layer for Connect your agent. Billing is not live yet, so every account gets 3 months of full access including Pro."
+                  "text": "Personal is free forever. Company is paid by the owner; team seats stay free. Both Personal and Company can add Pro for Connect your agent AI integration. Billing is not live yet, so every account gets 3 months of full access including Pro."
                 }
               }
             ]
@@ -310,7 +329,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=95" />
+    <link rel="stylesheet" href="/styles.css?v=108" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -370,17 +389,23 @@
             </p>
           </div>
           <div class="pf-hero-visual" aria-hidden="true">
-            <div class="pf-phone-frame">
-              <div class="pf-phone-frame-screen">
-                <img
-                  src="/assets/screenshots/en/owner-home-hero.png?v=3"
-                  width="472"
-                  height="1024"
-                  alt=""
-                  loading="eager"
-                />
+            <figure class="pf-hero-shot">
+              <div class="pf-hero-status">
+                <span class="pf-hero-status-time">9:41</span>
+                <span class="pf-hero-status-icons">
+                  <svg viewBox="0 0 17 12" width="17" height="12" aria-hidden="true"><rect x="0" y="3.5" width="3" height="8.5" rx="0.6" fill="currentColor"/><rect x="4.5" y="2" width="3" height="10" rx="0.6" fill="currentColor"/><rect x="9" y="0.5" width="3" height="11.5" rx="0.6" fill="currentColor"/><rect x="13.5" y="0" width="3" height="12" rx="0.6" fill="currentColor" opacity="0.3"/></svg>
+                  <svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true"><path fill="currentColor" d="M8 2.6c2.1 0 4 0.8 5.5 2.1l-1.4 1.4C11 4.9 9.6 4.3 8 4.3S5 4.9 3.9 6.1L2.5 4.7C4 3.4 5.9 2.6 8 2.6zm0 3.4c1.2 0 2.3 0.5 3.1 1.2L8 10.3 4.9 7.2C5.7 6.5 6.8 6 8 6zm0-6C4.7 0 1.7 1.4 0 3.6l1.5 1.5C2.9 3.4 5.3 2.2 8 2.2s5.1 1.2 6.5 2.9L16 3.6C14.3 1.4 11.3 0 8 0z"/></svg>
+                  <svg viewBox="0 0 25 12" width="25" height="12" aria-hidden="true"><rect x="0" y="1" width="21" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1"/><rect x="2" y="3" width="15" height="6" rx="1" fill="currentColor"/><path fill="currentColor" d="M22 4h1.5a1.5 1.5 0 0 1 0 4H22V4z"/></svg>
+                </span>
               </div>
-            </div>
+              <img
+                src="/assets/screenshots/en/owner-home-hero.png?v=10"
+                width="780"
+                height="1688"
+                alt=""
+                loading="eager"
+              />
+            </figure>
           </div>
         </section>
 
@@ -748,16 +773,6 @@ From: Sam Manager</p>
             <div class="pf-agent-copy">
               <h2 id="agent-title" class="pf-agent-title" data-i18n="home.agent_title">Verbinden Sie Ihren Agenten</h2>
               <p class="pf-agent-lead" data-i18n="home.agent_lead">Chatten Sie mit dem Agenten in der App oder verbinden Sie einen unter Einstellungen. Er arbeitet in Ihrem live Pulse-Arbeitsbereich: Aufgaben, Aufträge, Objekte und Rechnungen, ohne die Datenbank herauszugeben.</p>
-              <ul class="pf-agent-list">
-                <li data-i18n="home.agent_li_chat">Chatten Sie mit dem Agenten in Pulse — fragen Sie, was offen ist, legen Sie eine Aufgabe oder einen Auftrag an, markieren Sie Arbeit als erledigt.</li>
-                <li data-i18n="home.agent_li1">Erstellen Sie in den Einstellungen einen Verbindungsschlüssel, fügen Sie ihn in die Agent-Shell ein und trennen Sie ihn jederzeit.</li>
-                <li data-i18n="home.agent_li2">Liest, wer Sie sind, das Team, Objekte mit Check-in und Check-out, offene Aufgaben, Aufträge und Rechnungen.</li>
-                <li data-i18n="home.agent_li3">Erstellt eine Aufgabe oder einen Auftrag für eine Kollegin.</li>
-                <li data-i18n="home.agent_li4">Markiert eine Aufgabe als erledigt, wenn die Arbeit fertig ist.</li>
-                <li data-i18n="home.agent_li5">Nur Eigentümer und Verwalter. Personal und Gäste bekommen das nicht. Nach der Testphase gehört es zu Pro.</li>
-              </ul>
-              <p class="pf-agent-cta" data-i18n="home.agent_cta">Chatten Sie in der App oder verbinden Sie unter Einstellungen → Agent verbinden.</p>
-              <p class="pf-agent-safety" data-i18n="home.agent_safety">Der Agent bekommt nie den Datenbankschlüssel. Er nutzt nur diese persönliche Verbindung, begrenzt auf den aktuellen Firmen-Workspace.</p>
             </div>
             <div class="pf-agent-preview" data-agent-demo>
               <div class="pf-agent-preview-bar">
@@ -847,13 +862,9 @@ From: Sam Manager</p>
               </li>
               <li class="is-pro">
                 <strong data-i18n="home.plan_pro_label">Pro</strong>
-                <span data-i18n="home.plan_pro_desc">Unternehmen plus Agent verbinden. Extra 19 USD / Monat auf Unternehmen, sobald die Abrechnung läuft. Auf Privat kostet Pro 9 USD / Monat.</span>
+                <span data-i18n="home.plan_pro_desc">Privat und Unternehmen können Pro hinzufügen — KI-Integration Agent verbinden.</span>
               </li>
             </ul>
-            <p class="pf-plan-chip">
-              <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 9h.01"/><path d="M11 12h1v4h1"/></svg>
-              <span data-i18n="home.plan_note">Die Abrechnung ist noch nicht eingeschaltet. Jedes registrierte Konto bekommt 3 Monate vollen Zugang — einschließlich Pro und Agent verbinden — ab dem Tag der Anmeldung.</span>
-            </p>
             <a class="pf-btn-primary pf-plan-start" href="https://app.pulseflow.site/register?lang=de" data-i18n="home.plan_cta">Kostenlos starten</a>
           </div>
         </section>
