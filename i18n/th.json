@@ -20,7 +20,8 @@
     "terms": "ข้อกำหนด",
     "privacy": "ความเป็นส่วนตัว",
     "support": "ฝ่ายช่วยเหลือ",
-    "app": "แอป"
+    "app": "แอป",
+    "version": "v{version} · {date}"
   },
   "common": {
     "screenshot_soon": "สกรีนช็อตกำลังมา",

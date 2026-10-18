@@ -20,7 +20,8 @@
     "terms": "Termini",
     "privacy": "Riservatezza",
     "support": "Assistenza",
-    "app": "Applicazione"
+    "app": "Applicazione",
+    "version": "v{version} · {date}"
   },
   "common": {
     "screenshot_soon": "Schermata in arrivo",

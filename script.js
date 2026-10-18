@@ -20,7 +20,9 @@ const dictCache = Object.create(null);
 let currentLocale = "en";
 let currentDict = null;
 let demoApplyFns = [];
-const I18N_VERSION = "42";
+const I18N_VERSION = "43";
+/** Manual release stamp — bump version.json when asked, not every push. */
+const SITE_VERSION_CACHE_BUST = "2";
 
 /** Plausible custom events (S5). No-ops until the domain is added in Plausible. */
 function track(name, props) {
@@ -542,7 +544,30 @@ document.querySelectorAll("[data-flip-grid]").forEach((grid) => {
   });
 });
 
+async function mountFooterVersion() {
+  const nodes = document.querySelectorAll("[data-site-version]");
+  if (!nodes.length) return;
+  const label = (version, date) => `v${version} · ${date}`;
+  try {
+    const res = await fetch(`/version.json?v=${SITE_VERSION_CACHE_BUST}`, {
+      cache: "no-store",
+    });
+    if (!res.ok) return;
+    const data = await res.json();
+    const version = (data.version || "").trim();
+    const date = (data.updatedAt || "").trim();
+    if (!version || !date) return;
+    const text = label(version, date);
+    nodes.forEach((el) => {
+      el.textContent = text;
+    });
+  } catch (_) {
+    /* keep HTML fallback */
+  }
+}
+
 mountLanguageSwitchers();
+void mountFooterVersion();
 {
   const fromQuery = localeFromUrl();
   const fromPath = localeFromPath();

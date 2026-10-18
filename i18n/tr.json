@@ -20,7 +20,8 @@
     "terms": "Şartlar",
     "privacy": "Gizlilik",
     "support": "Destek",
-    "app": "Uygulama"
+    "app": "Uygulama",
+    "version": "v{version} · {date}"
   },
   "common": {
     "screenshot_soon": "Ekran görüntüsü yakında",

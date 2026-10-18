@@ -20,7 +20,8 @@
     "terms": "Условия",
     "privacy": "Конфиденциальность",
     "support": "Поддержка",
-    "app": "Приложение"
+    "app": "Приложение",
+    "version": "v{version} · {date}"
   },
   "common": {
     "screenshot_soon": "Скриншот скоро появится",

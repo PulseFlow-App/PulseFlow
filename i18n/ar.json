@@ -20,7 +20,8 @@
     "terms": "الشروط",
     "privacy": "الخصوصية",
     "support": "الدعم",
-    "app": "التطبيق"
+    "app": "التطبيق",
+    "version": "v{version} · {date}"
   },
   "common": {
     "screenshot_soon": "لقطة الشاشة قريبًا",

@@ -20,7 +20,8 @@
     "terms": "Bedingungen",
     "privacy": "Datenschutz",
     "support": "Hilfe",
-    "app": "Anwendung"
+    "app": "Anwendung",
+    "version": "v{version} · {date}"
   },
   "common": {
     "screenshot_soon": "Screenshot folgt in Kürze",

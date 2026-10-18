@@ -20,7 +20,8 @@
     "terms": "စည်းကမ်းများ",
     "privacy": "ကိုယ်ရေးလုံခြုံမှု",
     "support": "အကူအညီ",
-    "app": "အက်ပ်"
+    "app": "အက်ပ်",
+    "version": "v{version} · {date}"
   },
   "common": {
     "screenshot_soon": "မျက်နှာပြင်ပုံ မကြာမီလာမည်",

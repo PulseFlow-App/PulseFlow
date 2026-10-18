@@ -20,7 +20,8 @@
     "terms": "Condiciones",
     "privacy": "Privacidad",
     "support": "Asistencia",
-    "app": "Aplicación"
+    "app": "Aplicación",
+    "version": "v{version} · {date}"
   },
   "common": {
     "screenshot_soon": "Captura de pantalla en breve",
