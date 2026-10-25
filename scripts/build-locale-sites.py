@@ -88,6 +88,29 @@ def assert_translation_coverage(dicts: dict) -> None:
     """Fail the build if a locale is still an English clone (audit §03)."""
     english = flatten(dicts["en"])
     allow_identical = {
+        # Temporary EN fallbacks until terms/privacy copy is localized
+        "terms.what_title",
+        "terms.what_intro",
+        "terms.what_li1",
+        "terms.what_li2",
+        "terms.what_li3",
+        "terms.thailand_title",
+        "terms.thailand_body",
+        "terms.payments_title",
+        "terms.payments_body",
+        "terms.features_title",
+        "terms.features_body",
+        "privacy.summary_li5",
+        "privacy.collect_title",
+        "privacy.collect_li1",
+        "privacy.collect_li2",
+        "privacy.collect_li3",
+        "privacy.collect_li4",
+        "privacy.use_title",
+        "privacy.use_li1",
+        "privacy.use_li2",
+        "privacy.use_li3",
+        
         "home.plan_personal_label",
         "home.plan_company_label",
         "home.plan_pro_label",

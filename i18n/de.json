@@ -238,7 +238,20 @@
     "mock_pf_order": "Serviceauftrag für Pom · Poolfilterprüfung\nWas: Poolfilter\nWo: Villa Coral\nWann: Heute 14:00-16:00\nVon: Alex\nPersonal: öffnen und auf Gelesen und einverstanden tippen.",
     "mock_pf_ack": "Gelesen und einverstanden",
     "mock_pf_pom": "Bestätigt. Jetzt vor Ort bei Coral.",
-    "mock_pf_sam": "Fertig. Belegfoto an Coral · Pool angehängt. 800 THB warten auf Ihre Freigabe."
+    "mock_pf_sam": "Fertig. Belegfoto an Coral · Pool angehängt. 800 THB warten auf Ihre Freigabe.",
+    "mock_flow_title": "Auftrag · Villa Coral",
+    "mock_flow_sub": "Poolfilter prüfen",
+    "mock_flow_status": "Erledigt",
+    "mock_flow_meta": "Heute · vor 14:00 · zugewiesen an Pom",
+    "mock_flow_created": "Auftrag erstellt",
+    "mock_flow_created_meta": "Alex · 09:14",
+    "mock_flow_accepted": "Angenommen",
+    "mock_flow_accepted_meta": "Pom · Gelesen & zugestimmt",
+    "mock_flow_onsite": "Vor Ort",
+    "mock_flow_onsite_meta": "Pom · Coral",
+    "mock_flow_done": "Abgeschlossen",
+    "mock_flow_done_meta": "Pom · 14:58",
+    "mock_flow_bill": "Beleg 800 THB · wartet auf Ihre Freigabe"
   },
   "owners": {
     "meta_title": "Für Eigentümer: Objekte, Arbeit und Geld · Pulse Flow",
@@ -492,7 +505,18 @@
     "agent_li1": "Der Agent kann Team, Objekte, Aufgaben, Aufträge und Rechnungen lesen, Aufgaben und Aufträge anlegen, ein Objekt hinzufügen und eine Aufgabe als erledigt markieren, nur im aktuellen Workspace. Den Datenbankschlüssel erhält er nie.",
     "agent_li2": "Vor-Ort-Personal und Gäste können den Agenten-Chat in der App nicht nutzen und keinen Verbindungsschlüssel erstellen.",
     "agent_li3": "Sie verantworten, was der Agent tut, solange der Schlüssel aktiv ist. Halten Sie ihn geheim. Trennen Sie ihn jederzeit in den Einstellungen. Prüfen Sie seine Arbeit, bevor Sie sich darauf stützen.",
-    "agent_li4": "Ab dem Anmeldetag ist Agent verbinden 3 Monate auf jedem Konto enthalten. Sobald die Abrechnung läuft, gehört es zu Pro: 19 USD / Monat zusätzlich zu Unternehmen, oder 9 USD / Monat auf Privat."
+    "agent_li4": "Ab dem Anmeldetag ist Agent verbinden 3 Monate auf jedem Konto enthalten. Sobald die Abrechnung läuft, gehört es zu Pro: 19 USD / Monat zusätzlich zu Unternehmen, oder 9 USD / Monat auf Privat.",
+    "what_title": "What Pulse Flow is — and is not",
+    "what_intro": "Pulse Flow is software that helps all sides of property operations stay aligned: status, tasks, jobs, expense bills, contacts, team chat, guest stay coordination, house guides, master handoff notes, maintenance logs, reports, reputation tools, and optional AI agent helpers. We are a shared notebook and workflow tool — not a party to anyone’s rental or employment relationship.",
+    "what_li1": "We are: a software platform and helper for owners, managers, cleaning teams, field staff, vendors invited into workflows, and stay guests invited by a host.",
+    "what_li2": "We are not: a landlord, property manager, travel agency, booking marketplace, escrow, insurer, bank, payment processor for stays, employer of your staff, or provider of on-site rental or cleaning services.",
+    "what_li3": "Listing a property, inviting a guest, or recording a deposit in the app does not mean Pulse Flow is renting that property or receiving money for it.",
+    "thailand_title": "Thailand focus and public demo",
+    "thailand_body": "The Service is operated with Thailand as the primary launch market. Our public demo accounts and soft launch are aimed at users in Thailand (including Koh Phangan and nearby areas). You may create an account from elsewhere, but support and rollout priorities currently centre on Thailand. You remain solely responsible for complying with Thai law and any other law that applies to your properties, guests, and staff. Demo seats are for exploration and may be reset — do not rely on demo alone for production secrets.",
+    "payments_title": "No payments for properties or stays",
+    "payments_body": "Pulse Flow does not accept, route, hold, or refund money for rent, guest stays, security deposits, or similar property-related transfers. Hosts tell guests how to pay outside the Service. Guests may upload receipt photos and use Support commands such as /deposit so the host can confirm receipt — that is record-keeping only. Expense “bills” inside the app are operational records (for example a cleaner submitting a receipt to an owner), not card checkout for guests paying for a stay. If we charge fees, they are only for software subscriptions (Company Full or Pro / Connect your agent).",
+    "features_title": "Features and how we keep you safer",
+    "features_body": "Depending on your role and plan, the Service may include property inventory with photos and details; quick-fill from listing links or notes; stay dates and status; team assignment; tasks and service jobs; contacts; team chat; guest Support chat; house guides; master info handoff files; maintenance logs; reports and exports; endorsements and talent search; push notifications; passkeys; and optional Connect your agent. Access is role-based. Guests do not see team chat or master ops files. Agent connection keys never include your database password and can be revoked anytime. We use HTTPS and access controls; use strong passwords or passkeys and invite only people you trust."
   },
   "privacy": {
     "meta_title": "Datenschutzerklärung · Pulse Flow",
@@ -541,6 +565,16 @@
     "agent_li3": "Wir geben dem Agenten nicht Ihre Datenbankanmeldedaten. Sie können den Schlüssel jederzeit in den Einstellungen widerrufen.",
     "agent_li4": "Drittanbieter-Agentenclients (etwa Ihr Editor) verarbeiten Ihre Eingaben auf ihren Systemen. Deren Datenschutzbestimmungen gelten für diese Seite des Gesprächs.",
     "agent_li5": "Wenn Sie den Agenten-Chat in der App nutzen, verarbeiten wir Ihre Eingaben, die Antworten des Agenten und die Betriebsdaten, die diese Tools lesen oder schreiben, begrenzt auf Ihren aktuellen Arbeitsbereich.",
-    "s5_li4": "Agenten-Verbindungsschlüssel in den Einstellungen trennen"
+    "s5_li4": "Agenten-Verbindungsschlüssel in den Einstellungen trennen",
+    "summary_li5": "Primary operations and demo launch focus on Thailand; data may still be processed in regions where our providers operate.",
+    "collect_title": "What we collect",
+    "collect_li1": "Account data: name, email, role, organization, and optional profile fields.",
+    "collect_li2": "Operations data: properties, tasks, jobs, contacts, bills, messages, photos, guest stays, house guides, master info, maintenance logs, reports, and related records.",
+    "collect_li3": "Technical data: device and browser type, IP address, app version, logs, and session cookies.",
+    "collect_li4": "We do not collect bank-card numbers for guest rent or deposits.",
+    "use_title": "How we use data (safety first)",
+    "use_li1": "Authenticate you and enforce role-based access so guests, staff, and owners do not see each other’s private channels by default.",
+    "use_li2": "Deliver features, send notifications you enable, detect abuse, and keep workspaces reliable for teams in Thailand and elsewhere.",
+    "use_li3": "Improve the product with aggregated or de-identified insights."
   }
 }

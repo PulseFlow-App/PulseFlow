@@ -2945,8 +2945,8 @@ a.pf-audience-card:hover {
 
   .pf-flip-front .ti,
   .pf-flip-front .pf-duo {
-    width: 36px;
-    height: 36px;
+    width: 44px;
+    height: 44px;
   }
 
   .pf-flip-label {
@@ -3047,8 +3047,8 @@ a.pf-audience-card:hover {
   flex-shrink: 0;
 }
 .pf-flip-front .pf-duo {
-  width: 40px;
-  height: 40px;
+  width: 52px;
+  height: 52px;
   flex-shrink: 0;
 }
 
@@ -3177,7 +3177,8 @@ a.pf-audience-card:hover {
 }
 
 .pf-wa,
-.pf-pfchat {
+.pf-pfchat,
+.pf-flow {
   border: 1px solid var(--border);
   border-radius: var(--radius-card);
   overflow: hidden;
@@ -3189,7 +3190,8 @@ a.pf-audience-card:hover {
 
 /* Shrink the whole mockup, keep every message visible */
 .home-page .pf-wa,
-.home-page .pf-pfchat {
+.home-page .pf-pfchat,
+.home-page .pf-flow {
   zoom: 0.84;
 }
 
@@ -3199,7 +3201,8 @@ a.pf-audience-card:hover {
   }
 
   .home-page .pf-wa,
-  .home-page .pf-pfchat {
+  .home-page .pf-pfchat,
+  .home-page .pf-flow {
     transform: scale(0.84);
     transform-origin: top center;
     width: calc(100% / 0.84);
@@ -3209,7 +3212,8 @@ a.pf-audience-card:hover {
 }
 
 .pf-wa-bar,
-.pf-pfchat-bar {
+.pf-pfchat-bar,
+.pf-flow-bar {
   padding: 10px 12px;
   display: grid;
   gap: 2px;
@@ -3225,13 +3229,15 @@ a.pf-audience-card:hover {
 }
 
 .pf-wa-bar strong,
-.pf-pfchat-bar strong {
+.pf-pfchat-bar strong,
+.pf-flow-bar strong {
   font-size: 13px;
   font-weight: 700;
 }
 
 .pf-wa-bar span,
-.pf-pfchat-bar span {
+.pf-pfchat-bar span,
+.pf-flow-bar span {
   font-size: 11px;
   opacity: 0.8;
 }
@@ -3244,6 +3250,139 @@ a.pf-audience-card:hover {
 .pf-pfchat-bar span {
   color: var(--text-muted);
   opacity: 1;
+}
+
+.pf-flow-bar {
+  background: var(--ink);
+  color: #fff;
+  border-bottom: 0;
+}
+
+.pf-flow-bar span {
+  opacity: 0.8;
+}
+
+.pf-flow-body {
+  flex: 1;
+  min-height: 0;
+  padding: 12px 12px 14px;
+  display: grid;
+  gap: 12px;
+  align-content: start;
+  background: linear-gradient(180deg, #fff, var(--canvas));
+}
+
+.pf-flow-head {
+  display: grid;
+  gap: 6px;
+}
+
+.pf-flow-status {
+  display: inline-flex;
+  align-items: center;
+  justify-self: start;
+  min-height: 24px;
+  padding: 0 10px;
+  border-radius: var(--radius-chip);
+  background: rgba(42, 157, 143, 0.16);
+  color: var(--success);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.pf-flow-meta {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.pf-flow-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+}
+
+.pf-flow-steps li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  gap: 10px;
+  padding: 0 0 14px;
+  align-items: start;
+}
+
+.pf-flow-steps li:last-child {
+  padding-bottom: 0;
+}
+
+.pf-flow-steps li:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 7px;
+  top: 16px;
+  bottom: 0;
+  width: 2px;
+  background: rgba(42, 157, 143, 0.35);
+}
+
+.pf-flow-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--success);
+  box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.18);
+  position: relative;
+  z-index: 1;
+}
+
+.pf-flow-dot::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  width: 4px;
+  height: 7px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.pf-flow-step {
+  display: grid;
+  gap: 2px;
+  padding-top: 0;
+}
+
+.pf-flow-step strong {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
+.pf-flow-step span {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.pf-flow-bill {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 12px;
+  border-radius: var(--radius-control);
+  background: rgba(255, 183, 3, 0.18);
+  border: 1px solid rgba(255, 183, 3, 0.45);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.35;
 }
 
 .pf-wa-thread {
@@ -3542,14 +3681,15 @@ a.pf-audience-card:hover {
 }
 
 .pf-feature-copy .pf-card-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 6px;
-  background: var(--accent-dim);
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+  background: none;
+  border: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent);
+  color: var(--ink);
 }
 
 .pf-feature-copy .pf-tag {
@@ -3650,11 +3790,12 @@ a.pf-audience-card:hover {
 }
 
 .pf-feature-guest-copy .pf-card-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 6px;
-  background: var(--accent-dim);
-  color: var(--accent);
+  width: 36px;
+  height: 36px;
+  border-radius: 0;
+  background: none;
+  border: 0;
+  color: var(--ink);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -3914,12 +4055,18 @@ a.pf-audience-card:hover {
 .pf-audience-icon {
   width: 36px;
   height: 36px;
-  border-radius: 6px;
-  background: var(--accent-dim);
-  color: var(--accent);
+  border-radius: 0;
+  background: none;
+  border: 0;
+  color: var(--ink);
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.pf-audience-icon .pf-duo {
+  width: 32px;
+  height: 32px;
 }
 
 .home-page .pf-audience-card h3 {
@@ -4700,8 +4847,8 @@ h2 {
   stroke-width: 1.85;
 }
 .pf-flip-front .pf-duo {
-  width: 40px;
-  height: 40px;
+  width: 52px;
+  height: 52px;
 }
 
 .pf-flip-front .pf-flip-label,
@@ -4719,11 +4866,11 @@ h2 {
 
 .pf-feature-copy .pf-card-icon,
 .pf-feature-guest-copy .pf-card-icon {
-  width: 28px;
-  height: 28px;
+  width: 40px;
+  height: 40px;
   border-radius: 0;
   background: none;
-  color: var(--primary);
+  color: var(--ink);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -4964,7 +5111,8 @@ h2 {
   }
 
   .home-page .pf-wa,
-  .home-page .pf-pfchat {
+  .home-page .pf-pfchat,
+  .home-page .pf-flow {
     zoom: 1;
     transform: none;
     width: 100%;
@@ -4976,7 +5124,8 @@ h2 {
   .pf-contrast,
   .home-page .pf-contrast,
   .pf-wa,
-  .pf-pfchat {
+  .pf-pfchat,
+  .pf-flow {
     max-width: 100%;
   }
 
@@ -5398,19 +5547,19 @@ h2 {
   box-shadow: var(--shadow-lift);
 }
 
-/* Minimal icon well: orange fill, ink border + dual-tone Solar icons */
+/* Icon mark: dual-tone Solar only — no tile fill or border */
 .pf-card-icon,
 .pf-feature-copy .pf-card-icon,
 .pf-feature-guest-copy .pf-card-icon,
 .pf-audience-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
   display: inline-grid;
   place-items: center;
   color: var(--ink);
-  background: var(--action);
-  border: 2px solid var(--ink);
+  background: none;
+  border: 0;
   box-shadow: none;
 }
 
@@ -5418,8 +5567,8 @@ h2 {
 .pf-feature-copy .pf-card-icon .ti,
 .pf-feature-guest-copy .pf-card-icon .ti,
 .pf-audience-icon .ti {
-  width: 22px;
-  height: 22px;
+  width: 36px;
+  height: 36px;
   color: var(--ink);
   stroke: currentColor;
   fill: none;
@@ -5430,20 +5579,20 @@ h2 {
 .pf-feature-copy .pf-card-icon .pf-duo,
 .pf-feature-guest-copy .pf-card-icon .pf-duo,
 .pf-audience-icon .pf-duo {
-  width: 22px;
-  height: 22px;
+  width: 36px;
+  height: 36px;
 }
 
 .pf-flip-front .pf-duo {
-  width: 40px;
-  height: 40px;
+  width: 52px;
+  height: 52px;
 }
 
 .pf-sub-referral h2 .pf-duo {
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
   display: inline-block;
-  vertical-align: -6px;
+  vertical-align: -8px;
   margin-inline-end: 8px;
 }
 

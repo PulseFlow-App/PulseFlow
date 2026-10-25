@@ -238,7 +238,20 @@
     "mock_pf_order": "أمر خدمة لـ Pom · فحص فلتر المسبح\nماذا: فلتر المسبح\nأين: Villa Coral\nمتى: اليوم 14:00-16:00\nمن: Alex\nالطاقم: افتحوا هذا وانقروا مقروء وموافق.",
     "mock_pf_ack": "مقروء وموافق",
     "mock_pf_pom": "مؤكَّد. في الموقع في Coral الآن.",
-    "mock_pf_sam": "تم. صورة الإيصال مرفقة بـ Coral · المسبح. 800 THB بانتظار موافقتكم."
+    "mock_pf_sam": "تم. صورة الإيصال مرفقة بـ Coral · المسبح. 800 THB بانتظار موافقتكم.",
+    "mock_flow_title": "مهمة · Villa Coral",
+    "mock_flow_sub": "فحص فلتر المسبح",
+    "mock_flow_status": "تم",
+    "mock_flow_meta": "اليوم · قبل 14:00 · مُسند إلى Pom",
+    "mock_flow_created": "تم إنشاء المهمة",
+    "mock_flow_created_meta": "Alex · 09:14",
+    "mock_flow_accepted": "مقبولة",
+    "mock_flow_accepted_meta": "Pom · تمت القراءة والموافقة",
+    "mock_flow_onsite": "في الموقع",
+    "mock_flow_onsite_meta": "Pom · Coral",
+    "mock_flow_done": "مكتملة",
+    "mock_flow_done_meta": "Pom · 14:58",
+    "mock_flow_bill": "إيصال 800 THB · بانتظار موافقتك"
   },
   "owners": {
     "meta_title": "للمالكين: العقارات والعمل والمال · Pulse Flow",
@@ -492,7 +505,18 @@
     "agent_li1": "يستطيع الوكيل قراءة الفريق والعقارات والمهام والأعمال والفواتير، وإنشاء مهام وأعمال، وإضافة عقار، ووضع مهمة كمكتملة، في مساحة العمل الحالية فقط. لا يحصل أبدًا على مفتاح قاعدة البيانات.",
     "agent_li2": "طاقم الميدان وضيوف الإقامة لا يمكنهم استخدام دردشة الوكيل في التطبيق ولا إنشاء مفتاح اتصال.",
     "agent_li3": "أنتم مسؤولون عما يفعله الوكيل ما دام المفتاح نشطًا. احتفظوا به سرًّا. اقطعوه في أي وقت من الإعدادات. راجعوا عمله قبل الاعتماد عليه.",
-    "agent_li4": "من تاريخ التسجيل يُدرج ربط الوكيل لـ 3 أشهر في كل حساب. عندما تُفعَّل الفوترة يصبح جزءًا من Pro: 19 دولارًا شهريًا فوق الشركة، أو 9 دولارات شهريًا على الشخصي."
+    "agent_li4": "من تاريخ التسجيل يُدرج ربط الوكيل لـ 3 أشهر في كل حساب. عندما تُفعَّل الفوترة يصبح جزءًا من Pro: 19 دولارًا شهريًا فوق الشركة، أو 9 دولارات شهريًا على الشخصي.",
+    "what_title": "What Pulse Flow is — and is not",
+    "what_intro": "Pulse Flow is software that helps all sides of property operations stay aligned: status, tasks, jobs, expense bills, contacts, team chat, guest stay coordination, house guides, master handoff notes, maintenance logs, reports, reputation tools, and optional AI agent helpers. We are a shared notebook and workflow tool — not a party to anyone’s rental or employment relationship.",
+    "what_li1": "We are: a software platform and helper for owners, managers, cleaning teams, field staff, vendors invited into workflows, and stay guests invited by a host.",
+    "what_li2": "We are not: a landlord, property manager, travel agency, booking marketplace, escrow, insurer, bank, payment processor for stays, employer of your staff, or provider of on-site rental or cleaning services.",
+    "what_li3": "Listing a property, inviting a guest, or recording a deposit in the app does not mean Pulse Flow is renting that property or receiving money for it.",
+    "thailand_title": "Thailand focus and public demo",
+    "thailand_body": "The Service is operated with Thailand as the primary launch market. Our public demo accounts and soft launch are aimed at users in Thailand (including Koh Phangan and nearby areas). You may create an account from elsewhere, but support and rollout priorities currently centre on Thailand. You remain solely responsible for complying with Thai law and any other law that applies to your properties, guests, and staff. Demo seats are for exploration and may be reset — do not rely on demo alone for production secrets.",
+    "payments_title": "No payments for properties or stays",
+    "payments_body": "Pulse Flow does not accept, route, hold, or refund money for rent, guest stays, security deposits, or similar property-related transfers. Hosts tell guests how to pay outside the Service. Guests may upload receipt photos and use Support commands such as /deposit so the host can confirm receipt — that is record-keeping only. Expense “bills” inside the app are operational records (for example a cleaner submitting a receipt to an owner), not card checkout for guests paying for a stay. If we charge fees, they are only for software subscriptions (Company Full or Pro / Connect your agent).",
+    "features_title": "Features and how we keep you safer",
+    "features_body": "Depending on your role and plan, the Service may include property inventory with photos and details; quick-fill from listing links or notes; stay dates and status; team assignment; tasks and service jobs; contacts; team chat; guest Support chat; house guides; master info handoff files; maintenance logs; reports and exports; endorsements and talent search; push notifications; passkeys; and optional Connect your agent. Access is role-based. Guests do not see team chat or master ops files. Agent connection keys never include your database password and can be revoked anytime. We use HTTPS and access controls; use strong passwords or passkeys and invite only people you trust."
   },
   "privacy": {
     "meta_title": "سياسة الخصوصية · Pulse Flow",
@@ -541,6 +565,16 @@
     "agent_li3": "لا نعطي الوكيل بيانات اعتماد قاعدة البيانات. يمكنكم إلغاء المفتاح في أي وقت من الإعدادات.",
     "agent_li4": "عملاء الوكيل لدى أطراف ثالثة (مثل محرركم) يعالجون توجيهاتكم على أنظمتهم. تسري شروط خصوصيتهم على ذلك الجانب من المحادثة.",
     "agent_li5": "إن استخدمتم دردشة الوكيل في التطبيق، نعالج توجيهاتكم وردود الوكيل والبيانات التشغيلية التي تقرأها تلك الأدوات أو تكتبها، في حدود مساحة العمل الحالية.",
-    "s5_li4": "قطع مفاتيح اتصال الوكيل في الإعدادات"
+    "s5_li4": "قطع مفاتيح اتصال الوكيل في الإعدادات",
+    "summary_li5": "Primary operations and demo launch focus on Thailand; data may still be processed in regions where our providers operate.",
+    "collect_title": "What we collect",
+    "collect_li1": "Account data: name, email, role, organization, and optional profile fields.",
+    "collect_li2": "Operations data: properties, tasks, jobs, contacts, bills, messages, photos, guest stays, house guides, master info, maintenance logs, reports, and related records.",
+    "collect_li3": "Technical data: device and browser type, IP address, app version, logs, and session cookies.",
+    "collect_li4": "We do not collect bank-card numbers for guest rent or deposits.",
+    "use_title": "How we use data (safety first)",
+    "use_li1": "Authenticate you and enforce role-based access so guests, staff, and owners do not see each other’s private channels by default.",
+    "use_li2": "Deliver features, send notifications you enable, detect abuse, and keep workspaces reliable for teams in Thailand and elsewhere.",
+    "use_li3": "Improve the product with aggregated or de-identified insights."
   }
 }

@@ -197,6 +197,7 @@
 
 
 
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/ru" />
     <meta
@@ -329,7 +330,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=108" />
+    <link rel="stylesheet" href="/styles.css?v=111" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -538,28 +539,48 @@
 
             <div class="pf-contrast-col">
               <h3 data-i18n="home.after_label">После</h3>
-              <div class="pf-pfchat" aria-hidden="true">
-                <div class="pf-pfchat-bar">
-                  <strong data-i18n="home.mock_pf_title">Сообщения</strong>
-                  <span data-i18n="home.mock_pf_sub">Командный чат</span>
+              <div class="pf-flow" aria-hidden="true">
+                <div class="pf-flow-bar">
+                  <strong data-i18n="home.mock_flow_title">Задача · Villa Coral</strong>
+                  <span data-i18n="home.mock_flow_sub">Проверка фильтра бассейна</span>
                 </div>
-                <div class="pf-pfchat-thread">
-                  <div class="pf-pfchat-msg is-own">
-                    <p data-i18n="home.mock_pf_order">Сервисный заказ для Pom · Проверка фильтра бассейна
-Что: Фильтр бассейна
-Где: Villa Coral
-Когда: Сегодня 14:00-16:00
-От: Alex
-Персонал: откройте и нажмите Прочитано и согласен.</p>
-                    <span class="pf-pfchat-ack" data-i18n="home.mock_pf_ack">Прочитано и согласен</span>
+                <div class="pf-flow-body">
+                  <div class="pf-flow-head">
+                    <span class="pf-flow-status" data-i18n="home.mock_flow_status">Готово</span>
+                    <p class="pf-flow-meta" data-i18n="home.mock_flow_meta">Сегодня · до 14:00 · назначено Pom</p>
                   </div>
-                  <div class="pf-pfchat-msg is-other">
-                    <span class="pf-pfchat-name">Pom</span>
-                    <p data-i18n="home.mock_pf_pom">Подтвердил. Уже на Coral.</p>
-                  </div>
-                  <div class="pf-pfchat-msg is-other">
-                    <span class="pf-pfchat-name" data-i18n="home.mock_wa_sam">Sam · управляющий</span>
-                    <p data-i18n="home.mock_pf_sam">Готово. Фото чека прикреплено к Coral · Бассейн. 800 THB ждут вашего одобрения.</p>
+                  <ol class="pf-flow-steps">
+                    <li class="is-done">
+                      <span class="pf-flow-dot" aria-hidden="true"></span>
+                      <div class="pf-flow-step">
+                        <strong data-i18n="home.mock_flow_created">Задача создана</strong>
+                        <span data-i18n="home.mock_flow_created_meta">Alex · 09:14</span>
+                      </div>
+                    </li>
+                    <li class="is-done">
+                      <span class="pf-flow-dot" aria-hidden="true"></span>
+                      <div class="pf-flow-step">
+                        <strong data-i18n="home.mock_flow_accepted">Принято</strong>
+                        <span data-i18n="home.mock_flow_accepted_meta">Pom · Прочитано и согласен</span>
+                      </div>
+                    </li>
+                    <li class="is-done">
+                      <span class="pf-flow-dot" aria-hidden="true"></span>
+                      <div class="pf-flow-step">
+                        <strong data-i18n="home.mock_flow_onsite">На объекте</strong>
+                        <span data-i18n="home.mock_flow_onsite_meta">Pom · Coral</span>
+                      </div>
+                    </li>
+                    <li class="is-done">
+                      <span class="pf-flow-dot" aria-hidden="true"></span>
+                      <div class="pf-flow-step">
+                        <strong data-i18n="home.mock_flow_done">Завершено</strong>
+                        <span data-i18n="home.mock_flow_done_meta">Pom · 14:58</span>
+                      </div>
+                    </li>
+                  </ol>
+                  <div class="pf-flow-bill">
+                    <span data-i18n="home.mock_flow_bill">Чек 800 THB · ждёт вашего одобрения</span>
                   </div>
                 </div>
               </div>

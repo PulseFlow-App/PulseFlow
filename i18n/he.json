@@ -238,7 +238,20 @@
     "mock_pf_order": "הזמנת שירות ל-Pom · בדיקת פילטר בריכה\nמה: פילטר בריכה\nאיפה: Villa Coral\nמתי: היום 14:00-16:00\nמאת: Alex\nצוות: פתחו את זה והקישו נקרא והסכמתי.",
     "mock_pf_ack": "נקרא והסכמתי",
     "mock_pf_pom": "אושר. עכשיו בשטח ב-Coral.",
-    "mock_pf_sam": "בוצע. תמונת קבלה מצורפת ל-Coral · בריכה. 800 THB ממתינים לאישור שלכם."
+    "mock_pf_sam": "בוצע. תמונת קבלה מצורפת ל-Coral · בריכה. 800 THB ממתינים לאישור שלכם.",
+    "mock_flow_title": "משימה · Villa Coral",
+    "mock_flow_sub": "בדיקת מסנן בריכה",
+    "mock_flow_status": "בוצע",
+    "mock_flow_meta": "היום · לפני 14:00 · הוקצה ל‑Pom",
+    "mock_flow_created": "משימה נוצרה",
+    "mock_flow_created_meta": "Alex · 09:14",
+    "mock_flow_accepted": "התקבל",
+    "mock_flow_accepted_meta": "Pom · נקרא ואושר",
+    "mock_flow_onsite": "בשטח",
+    "mock_flow_onsite_meta": "Pom · Coral",
+    "mock_flow_done": "הושלם",
+    "mock_flow_done_meta": "Pom · 14:58",
+    "mock_flow_bill": "קבלה 800 THB · ממתין לאישורך"
   },
   "owners": {
     "meta_title": "לבעלים: נכסים, עבודה וכסף · Pulse Flow",
@@ -492,7 +505,18 @@
     "agent_li1": "הסוכן יכול לקרוא את הצוות, הנכסים, המשימות, העבודות והחשבוניות, ליצור משימות ועבודות, להוסיף נכס ולסמן משימה כבוצעה, רק בסביבת העבודה הנוכחית. הוא לעולם לא מקבל את מפתח מסד הנתונים.",
     "agent_li2": "צוות שטח ואורחים לא יכולים להשתמש בצ׳אט הסוכן באפליקציה או ליצור מפתח חיבור.",
     "agent_li3": "אתם אחראים למה שהסוכן עושה כל עוד המפתח פעיל. שמרו אותו בסוד. נתקו אותו בכל עת בהגדרות. בדקו את עבודתו לפני שסומכים עליה.",
-    "agent_li4": "מתאריך ההרשמה, חיבור הסוכן כלול ל־3 חודשים בכל חשבון. כשהחיוב פעיל, זה חלק מ־Pro: 19 דולר לחודש מעל חברה, או 9 דולר לחודש באישי."
+    "agent_li4": "מתאריך ההרשמה, חיבור הסוכן כלול ל־3 חודשים בכל חשבון. כשהחיוב פעיל, זה חלק מ־Pro: 19 דולר לחודש מעל חברה, או 9 דולר לחודש באישי.",
+    "what_title": "What Pulse Flow is — and is not",
+    "what_intro": "Pulse Flow is software that helps all sides of property operations stay aligned: status, tasks, jobs, expense bills, contacts, team chat, guest stay coordination, house guides, master handoff notes, maintenance logs, reports, reputation tools, and optional AI agent helpers. We are a shared notebook and workflow tool — not a party to anyone’s rental or employment relationship.",
+    "what_li1": "We are: a software platform and helper for owners, managers, cleaning teams, field staff, vendors invited into workflows, and stay guests invited by a host.",
+    "what_li2": "We are not: a landlord, property manager, travel agency, booking marketplace, escrow, insurer, bank, payment processor for stays, employer of your staff, or provider of on-site rental or cleaning services.",
+    "what_li3": "Listing a property, inviting a guest, or recording a deposit in the app does not mean Pulse Flow is renting that property or receiving money for it.",
+    "thailand_title": "Thailand focus and public demo",
+    "thailand_body": "The Service is operated with Thailand as the primary launch market. Our public demo accounts and soft launch are aimed at users in Thailand (including Koh Phangan and nearby areas). You may create an account from elsewhere, but support and rollout priorities currently centre on Thailand. You remain solely responsible for complying with Thai law and any other law that applies to your properties, guests, and staff. Demo seats are for exploration and may be reset — do not rely on demo alone for production secrets.",
+    "payments_title": "No payments for properties or stays",
+    "payments_body": "Pulse Flow does not accept, route, hold, or refund money for rent, guest stays, security deposits, or similar property-related transfers. Hosts tell guests how to pay outside the Service. Guests may upload receipt photos and use Support commands such as /deposit so the host can confirm receipt — that is record-keeping only. Expense “bills” inside the app are operational records (for example a cleaner submitting a receipt to an owner), not card checkout for guests paying for a stay. If we charge fees, they are only for software subscriptions (Company Full or Pro / Connect your agent).",
+    "features_title": "Features and how we keep you safer",
+    "features_body": "Depending on your role and plan, the Service may include property inventory with photos and details; quick-fill from listing links or notes; stay dates and status; team assignment; tasks and service jobs; contacts; team chat; guest Support chat; house guides; master info handoff files; maintenance logs; reports and exports; endorsements and talent search; push notifications; passkeys; and optional Connect your agent. Access is role-based. Guests do not see team chat or master ops files. Agent connection keys never include your database password and can be revoked anytime. We use HTTPS and access controls; use strong passwords or passkeys and invite only people you trust."
   },
   "privacy": {
     "meta_title": "מדיניות פרטיות · Pulse Flow",
@@ -541,6 +565,16 @@
     "agent_li3": "איננו מוסרים לסוכן את פרטי הגישה למסד הנתונים. אפשר לבטל את המפתח בכל עת בהגדרות.",
     "agent_li4": "לקוחות סוכן של צד שלישי (כמו העורך שלכם) מעבדים את ההנחיות שלכם במערכות שלהם. מדיניות הפרטיות שלהם חלה על הצד הזה של השיחה.",
     "agent_li5": "אם אתם משתמשים בצ׳אט הסוכן באפליקציה, אנו מעבדים את ההנחיות שלכם, את תשובות הסוכן ואת הנתונים התפעוליים שאותם כלים קוראים או כותבים, בהיקף סביבת העבודה הנוכחית.",
-    "s5_li4": "ניתוק מפתחות חיבור סוכן בהגדרות"
+    "s5_li4": "ניתוק מפתחות חיבור סוכן בהגדרות",
+    "summary_li5": "Primary operations and demo launch focus on Thailand; data may still be processed in regions where our providers operate.",
+    "collect_title": "What we collect",
+    "collect_li1": "Account data: name, email, role, organization, and optional profile fields.",
+    "collect_li2": "Operations data: properties, tasks, jobs, contacts, bills, messages, photos, guest stays, house guides, master info, maintenance logs, reports, and related records.",
+    "collect_li3": "Technical data: device and browser type, IP address, app version, logs, and session cookies.",
+    "collect_li4": "We do not collect bank-card numbers for guest rent or deposits.",
+    "use_title": "How we use data (safety first)",
+    "use_li1": "Authenticate you and enforce role-based access so guests, staff, and owners do not see each other’s private channels by default.",
+    "use_li2": "Deliver features, send notifications you enable, detect abuse, and keep workspaces reliable for teams in Thailand and elsewhere.",
+    "use_li3": "Improve the product with aggregated or de-identified insights."
   }
 }

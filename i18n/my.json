@@ -238,7 +238,20 @@
     "mock_pf_order": "Pom အတွက် ဝန်ဆောင်မှုအမှာ · ရေကူးကန်စစ်ထုတ်စက် စစ်ဆေးခြင်း\nဘာ: ရေကူးကန်စစ်ထုတ်စက်\nဘယ်မှာ: Villa Coral\nဘယ်အချိန်: ဒီနေ့ 14:00-16:00\nမှ: Alex\nဝန်ထမ်း: ဒါကိုဖွင့်ပြီး ဖတ်ပြီး သဘောတူသည် ကို နှိပ်ပါ။",
     "mock_pf_ack": "ဖတ်ပြီး သဘောတူသည်",
     "mock_pf_pom": "အတည်ပြုပြီး။ အခု Coral မှာ ရှိနေတယ်။",
-    "mock_pf_sam": "ပြီးပြီ။ ပြေစာဓာတ်ပုံကို Coral · ရေကူးကန် မှာ တပ်ထားတယ်။ 800 THB သင့်အတည်ပြုချက် စောင့်နေတယ်။"
+    "mock_pf_sam": "ပြီးပြီ။ ပြေစာဓာတ်ပုံကို Coral · ရေကူးကန် မှာ တပ်ထားတယ်။ 800 THB သင့်အတည်ပြုချက် စောင့်နေတယ်။",
+    "mock_flow_title": "အလုပ် · Villa Coral",
+    "mock_flow_sub": "ရေကူးကန် ဖီလ်တာ စစ်ဆေးခြင်း",
+    "mock_flow_status": "ပြီးပြီ",
+    "mock_flow_meta": "ယနေ့ · 14:00 မတိုင်မီ · Pom သို့ တာဝန်ပေးထား",
+    "mock_flow_created": "အလုပ် ဖန်တီးပြီး",
+    "mock_flow_created_meta": "Alex · 09:14",
+    "mock_flow_accepted": "လက်ခံပြီး",
+    "mock_flow_accepted_meta": "Pom · ဖတ်ပြီး သဘောတူ",
+    "mock_flow_onsite": "နေရာတွင်",
+    "mock_flow_onsite_meta": "Pom · Coral",
+    "mock_flow_done": "ပြီးစီး",
+    "mock_flow_done_meta": "Pom · 14:58",
+    "mock_flow_bill": "ပြေစာ 800 THB · အတည်ပြုရန် စောင့်ဆိုင်း"
   },
   "owners": {
     "meta_title": "ပိုင်ရှင်များအတွက်: အိမ်၊ အလုပ်နှင့် ငွေ · Pulse Flow",
@@ -492,7 +505,18 @@
     "agent_li1": "အေးဂျင့်က အဖွဲ့၊ ပိုင်ဆိုင်မှု၊ တာဝန်၊ အလုပ်နှင့် ဘီလ်များကို ဖတ်နိုင်၊ တာဝန်နှင့် အလုပ် ဖန်တီးနိုင်၊ ပိုင်ဆိုင်မှု ထည့်နိုင်၊ တာဝန်ပြီးကြောင်း မှတ်နိုင်သည်၊ လက်ရှိ workspace တွင်သာ။ ဒေတာဘေ့စ်ကီးကို မရပါ။",
     "agent_li2": "ကွင်းဆင်းဝန်ထမ်းနှင့် ဧည့်သည်များသည် အက်ပ်တွင်း အေးဂျင့်စကားပြောကို သုံး၍မရ၊ ချိတ်ဆက်ကီးလည်း ဖန်တီး၍မရပါ။",
     "agent_li3": "ကီး အသက်ဝင်နေစဉ် အေးဂျင့်လုပ်သမျှကို သင်တာဝန်ယူရသည်။ ကီးကို လျှို့ဝှက်ထားပါ။ Settings တွင် အချိန်မရွေး ဖြုတ်ပါ။ မမှီခိုမီ ၎င်း၏အလုပ်ကို စစ်ပါ။",
-    "agent_li4": "မှတ်ပုံတင်သည့်နေ့မှ အေးဂျင့်ချိတ်ဆက်ကို အကောင့်တိုင်းတွင် ၃ လ ထည့်ထားသည်။ ငွေကောက်စသောအခါ Pro ၏ အစိတ်အပိုင်းဖြစ်သည် - Company ပေါ် တစ်လ USD 19၊ သို့မဟုတ် Personal တွင် တစ်လ USD 9။"
+    "agent_li4": "မှတ်ပုံတင်သည့်နေ့မှ အေးဂျင့်ချိတ်ဆက်ကို အကောင့်တိုင်းတွင် ၃ လ ထည့်ထားသည်။ ငွေကောက်စသောအခါ Pro ၏ အစိတ်အပိုင်းဖြစ်သည် - Company ပေါ် တစ်လ USD 19၊ သို့မဟုတ် Personal တွင် တစ်လ USD 9။",
+    "what_title": "What Pulse Flow is — and is not",
+    "what_intro": "Pulse Flow is software that helps all sides of property operations stay aligned: status, tasks, jobs, expense bills, contacts, team chat, guest stay coordination, house guides, master handoff notes, maintenance logs, reports, reputation tools, and optional AI agent helpers. We are a shared notebook and workflow tool — not a party to anyone’s rental or employment relationship.",
+    "what_li1": "We are: a software platform and helper for owners, managers, cleaning teams, field staff, vendors invited into workflows, and stay guests invited by a host.",
+    "what_li2": "We are not: a landlord, property manager, travel agency, booking marketplace, escrow, insurer, bank, payment processor for stays, employer of your staff, or provider of on-site rental or cleaning services.",
+    "what_li3": "Listing a property, inviting a guest, or recording a deposit in the app does not mean Pulse Flow is renting that property or receiving money for it.",
+    "thailand_title": "Thailand focus and public demo",
+    "thailand_body": "The Service is operated with Thailand as the primary launch market. Our public demo accounts and soft launch are aimed at users in Thailand (including Koh Phangan and nearby areas). You may create an account from elsewhere, but support and rollout priorities currently centre on Thailand. You remain solely responsible for complying with Thai law and any other law that applies to your properties, guests, and staff. Demo seats are for exploration and may be reset — do not rely on demo alone for production secrets.",
+    "payments_title": "No payments for properties or stays",
+    "payments_body": "Pulse Flow does not accept, route, hold, or refund money for rent, guest stays, security deposits, or similar property-related transfers. Hosts tell guests how to pay outside the Service. Guests may upload receipt photos and use Support commands such as /deposit so the host can confirm receipt — that is record-keeping only. Expense “bills” inside the app are operational records (for example a cleaner submitting a receipt to an owner), not card checkout for guests paying for a stay. If we charge fees, they are only for software subscriptions (Company Full or Pro / Connect your agent).",
+    "features_title": "Features and how we keep you safer",
+    "features_body": "Depending on your role and plan, the Service may include property inventory with photos and details; quick-fill from listing links or notes; stay dates and status; team assignment; tasks and service jobs; contacts; team chat; guest Support chat; house guides; master info handoff files; maintenance logs; reports and exports; endorsements and talent search; push notifications; passkeys; and optional Connect your agent. Access is role-based. Guests do not see team chat or master ops files. Agent connection keys never include your database password and can be revoked anytime. We use HTTPS and access controls; use strong passwords or passkeys and invite only people you trust."
   },
   "privacy": {
     "meta_title": "ကိုယ်ရေးလုံခြုံမှုမူဝါဒ · Pulse Flow",
@@ -541,6 +565,16 @@
     "agent_li3": "ဒေတာဘေ့စ်အထောက်အထားများကို အေးဂျင့်အား မပေးပါ။ Settings တွင် ကီးကို အချိန်မရွေး ပယ်ဖျက်နိုင်သည်။",
     "agent_li4": "တတိယအဖွဲ့အစည်း အေးဂျင့်ကလိုင်းယင့်များ (သင့်တည်းဖြတ်ကိရိယာကဲ့သို့) က သင့်ညွှန်ကြားချက်များကို ၎င်းတို့စနစ်တွင် ဆောင်ရွက်သည်။ ထိုစကားဝိုင်းဘက်တွင် ၎င်းတို့၏ ကိုယ်ရေးမူဝါဒ သက်ရောက်သည်။",
     "agent_li5": "အက်ပ်တွင်း အေးဂျင့်စကားပြောကို သုံးလျှင် သင့်မေးခွန်းများ၊ အေးဂျင့်အဖြေများနှင့် ထိုကိရိယာများ ဖတ်ရေးသော လုပ်ငန်းဒေတာကို လက်ရှိလုပ်ငန်းခွင်အတွင်းသာ စီမံသည်။",
-    "s5_li4": "Settings တွင် အေးဂျင့်ချိတ်ဆက်ကီးများကို ဖြုတ်ပါ"
+    "s5_li4": "Settings တွင် အေးဂျင့်ချိတ်ဆက်ကီးများကို ဖြုတ်ပါ",
+    "summary_li5": "Primary operations and demo launch focus on Thailand; data may still be processed in regions where our providers operate.",
+    "collect_title": "What we collect",
+    "collect_li1": "Account data: name, email, role, organization, and optional profile fields.",
+    "collect_li2": "Operations data: properties, tasks, jobs, contacts, bills, messages, photos, guest stays, house guides, master info, maintenance logs, reports, and related records.",
+    "collect_li3": "Technical data: device and browser type, IP address, app version, logs, and session cookies.",
+    "collect_li4": "We do not collect bank-card numbers for guest rent or deposits.",
+    "use_title": "How we use data (safety first)",
+    "use_li1": "Authenticate you and enforce role-based access so guests, staff, and owners do not see each other’s private channels by default.",
+    "use_li2": "Deliver features, send notifications you enable, detect abuse, and keep workspaces reliable for teams in Thailand and elsewhere.",
+    "use_li3": "Improve the product with aggregated or de-identified insights."
   }
 }

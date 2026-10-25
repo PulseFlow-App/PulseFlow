@@ -238,7 +238,20 @@
     "mock_pf_order": "Service order for Pom · Pool filter check\nWhat: Pool filter\nWhere: Villa Coral\nWhen: Today 14:00-16:00\nFrom: Alex\nStaff: open this and tap Read and agreed.",
     "mock_pf_ack": "Read & agreed",
     "mock_pf_pom": "Confirmed. On site at Coral now.",
-    "mock_pf_sam": "Done. Receipt photo attached to Coral · Pool. 800 THB pending your approval."
+    "mock_pf_sam": "Done. Receipt photo attached to Coral · Pool. 800 THB pending your approval.",
+    "mock_flow_title": "Job · Villa Coral",
+    "mock_flow_sub": "Pool filter check",
+    "mock_flow_status": "Done",
+    "mock_flow_meta": "Today · before 14:00 · assigned to Pom",
+    "mock_flow_created": "Job created",
+    "mock_flow_created_meta": "Alex · 09:14",
+    "mock_flow_accepted": "Accepted",
+    "mock_flow_accepted_meta": "Pom · Read & agreed",
+    "mock_flow_onsite": "On site",
+    "mock_flow_onsite_meta": "Pom · Coral",
+    "mock_flow_done": "Completed",
+    "mock_flow_done_meta": "Pom · 14:58",
+    "mock_flow_bill": "Receipt 800 THB · pending your approval"
   },
   "owners": {
     "meta_title": "Property management for villa owners · Pulse Flow",

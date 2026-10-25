@@ -197,6 +197,7 @@
 
 
 
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/th" />
     <meta
@@ -329,7 +330,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=108" />
+    <link rel="stylesheet" href="/styles.css?v=111" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -538,28 +539,48 @@
 
             <div class="pf-contrast-col">
               <h3 data-i18n="home.after_label">หลัง</h3>
-              <div class="pf-pfchat" aria-hidden="true">
-                <div class="pf-pfchat-bar">
-                  <strong data-i18n="home.mock_pf_title">ข้อความ</strong>
-                  <span data-i18n="home.mock_pf_sub">แชททีมสด</span>
+              <div class="pf-flow" aria-hidden="true">
+                <div class="pf-flow-bar">
+                  <strong data-i18n="home.mock_flow_title">งาน · Villa Coral</strong>
+                  <span data-i18n="home.mock_flow_sub">ตรวจไส้กรองสระ</span>
                 </div>
-                <div class="pf-pfchat-thread">
-                  <div class="pf-pfchat-msg is-own">
-                    <p data-i18n="home.mock_pf_order">ใบสั่งงานให้ Pom · ตรวจฟิลเตอร์สระ
-อะไร: ฟิลเตอร์สระ
-ที่ไหน: Villa Coral
-เมื่อไหร่: วันนี้ 14:00-16:00
-จาก: Alex
-พนักงาน: เปิดอันนี้แล้วแตะ อ่านแล้ว และตกลง</p>
-                    <span class="pf-pfchat-ack" data-i18n="home.mock_pf_ack">อ่านแล้ว และตกลง</span>
+                <div class="pf-flow-body">
+                  <div class="pf-flow-head">
+                    <span class="pf-flow-status" data-i18n="home.mock_flow_status">เสร็จแล้ว</span>
+                    <p class="pf-flow-meta" data-i18n="home.mock_flow_meta">วันนี้ · ก่อน 14:00 · มอบหมายให้ Pom</p>
                   </div>
-                  <div class="pf-pfchat-msg is-other">
-                    <span class="pf-pfchat-name">Pom</span>
-                    <p data-i18n="home.mock_pf_pom">ยืนยันแล้ว อยู่ที่ Coral ตอนนี้</p>
-                  </div>
-                  <div class="pf-pfchat-msg is-other">
-                    <span class="pf-pfchat-name" data-i18n="home.mock_wa_sam">Sam ผู้จัดการ</span>
-                    <p data-i18n="home.mock_pf_sam">เสร็จแล้ว รูปใบเสร็จติดที่ Coral · สระ 800 THB รอคุณอนุมัติ</p>
+                  <ol class="pf-flow-steps">
+                    <li class="is-done">
+                      <span class="pf-flow-dot" aria-hidden="true"></span>
+                      <div class="pf-flow-step">
+                        <strong data-i18n="home.mock_flow_created">สร้างงานแล้ว</strong>
+                        <span data-i18n="home.mock_flow_created_meta">Alex · 09:14</span>
+                      </div>
+                    </li>
+                    <li class="is-done">
+                      <span class="pf-flow-dot" aria-hidden="true"></span>
+                      <div class="pf-flow-step">
+                        <strong data-i18n="home.mock_flow_accepted">รับงานแล้ว</strong>
+                        <span data-i18n="home.mock_flow_accepted_meta">Pom · อ่านแล้ว และตกลง</span>
+                      </div>
+                    </li>
+                    <li class="is-done">
+                      <span class="pf-flow-dot" aria-hidden="true"></span>
+                      <div class="pf-flow-step">
+                        <strong data-i18n="home.mock_flow_onsite">ถึงหน้างาน</strong>
+                        <span data-i18n="home.mock_flow_onsite_meta">Pom · Coral</span>
+                      </div>
+                    </li>
+                    <li class="is-done">
+                      <span class="pf-flow-dot" aria-hidden="true"></span>
+                      <div class="pf-flow-step">
+                        <strong data-i18n="home.mock_flow_done">เสร็จสิ้น</strong>
+                        <span data-i18n="home.mock_flow_done_meta">Pom · 14:58</span>
+                      </div>
+                    </li>
+                  </ol>
+                  <div class="pf-flow-bill">
+                    <span data-i18n="home.mock_flow_bill">ใบเสร็จ 800 THB · รอการอนุมัติ</span>
                   </div>
                 </div>
               </div>

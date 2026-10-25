@@ -197,6 +197,7 @@
 
 
 
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/de" />
     <meta
@@ -329,7 +330,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=108" />
+    <link rel="stylesheet" href="/styles.css?v=111" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -538,28 +539,48 @@
 
             <div class="pf-contrast-col">
               <h3 data-i18n="home.after_label">Nachher</h3>
-              <div class="pf-pfchat" aria-hidden="true">
-                <div class="pf-pfchat-bar">
-                  <strong data-i18n="home.mock_pf_title">Nachrichten</strong>
-                  <span data-i18n="home.mock_pf_sub">Teamchat live</span>
+              <div class="pf-flow" aria-hidden="true">
+                <div class="pf-flow-bar">
+                  <strong data-i18n="home.mock_flow_title">Auftrag · Villa Coral</strong>
+                  <span data-i18n="home.mock_flow_sub">Poolfilter prüfen</span>
                 </div>
-                <div class="pf-pfchat-thread">
-                  <div class="pf-pfchat-msg is-own">
-                    <p data-i18n="home.mock_pf_order">Serviceauftrag für Pom · Poolfilterprüfung
-Was: Poolfilter
-Wo: Villa Coral
-Wann: Heute 14:00-16:00
-Von: Alex
-Personal: öffnen und auf Gelesen und einverstanden tippen.</p>
-                    <span class="pf-pfchat-ack" data-i18n="home.mock_pf_ack">Gelesen und einverstanden</span>
+                <div class="pf-flow-body">
+                  <div class="pf-flow-head">
+                    <span class="pf-flow-status" data-i18n="home.mock_flow_status">Erledigt</span>
+                    <p class="pf-flow-meta" data-i18n="home.mock_flow_meta">Heute · vor 14:00 · zugewiesen an Pom</p>
                   </div>
-                  <div class="pf-pfchat-msg is-other">
-                    <span class="pf-pfchat-name">Pom</span>
-                    <p data-i18n="home.mock_pf_pom">Bestätigt. Jetzt vor Ort bei Coral.</p>
-                  </div>
-                  <div class="pf-pfchat-msg is-other">
-                    <span class="pf-pfchat-name" data-i18n="home.mock_wa_sam">Sam Verwalter</span>
-                    <p data-i18n="home.mock_pf_sam">Fertig. Belegfoto an Coral · Pool angehängt. 800 THB warten auf Ihre Freigabe.</p>
+                  <ol class="pf-flow-steps">
+                    <li class="is-done">
+                      <span class="pf-flow-dot" aria-hidden="true"></span>
+                      <div class="pf-flow-step">
+                        <strong data-i18n="home.mock_flow_created">Auftrag erstellt</strong>
+                        <span data-i18n="home.mock_flow_created_meta">Alex · 09:14</span>
+                      </div>
+                    </li>
+                    <li class="is-done">
+                      <span class="pf-flow-dot" aria-hidden="true"></span>
+                      <div class="pf-flow-step">
+                        <strong data-i18n="home.mock_flow_accepted">Angenommen</strong>
+                        <span data-i18n="home.mock_flow_accepted_meta">Pom · Gelesen & zugestimmt</span>
+                      </div>
+                    </li>
+                    <li class="is-done">
+                      <span class="pf-flow-dot" aria-hidden="true"></span>
+                      <div class="pf-flow-step">
+                        <strong data-i18n="home.mock_flow_onsite">Vor Ort</strong>
+                        <span data-i18n="home.mock_flow_onsite_meta">Pom · Coral</span>
+                      </div>
+                    </li>
+                    <li class="is-done">
+                      <span class="pf-flow-dot" aria-hidden="true"></span>
+                      <div class="pf-flow-step">
+                        <strong data-i18n="home.mock_flow_done">Abgeschlossen</strong>
+                        <span data-i18n="home.mock_flow_done_meta">Pom · 14:58</span>
+                      </div>
+                    </li>
+                  </ol>
+                  <div class="pf-flow-bill">
+                    <span data-i18n="home.mock_flow_bill">Beleg 800 THB · wartet auf Ihre Freigabe</span>
                   </div>
                 </div>
               </div>
