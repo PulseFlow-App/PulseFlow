@@ -3176,6 +3176,68 @@ a.pf-audience-card:hover {
   font-weight: 700;
 }
 
+/* Your team / your system — differentiator strip (no cards) */
+.home-page .pf-keep {
+  margin: 36px 0 8px;
+  padding: 28px 0 8px;
+  border-top: 1px solid var(--border);
+  max-width: 40rem;
+}
+
+.home-page .pf-keep h2 {
+  margin: 0 0 12px;
+  font-family: var(--font-display);
+  font-size: clamp(1.45rem, 3.2vw, 1.85rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--text);
+}
+
+.home-page .pf-keep-lead {
+  margin: 0 0 20px;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
+.home-page .pf-keep-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.home-page .pf-keep-list li {
+  display: grid;
+  gap: 4px;
+  padding-inline-start: 14px;
+  border-inline-start: 3px solid var(--action);
+}
+
+.home-page .pf-keep-list strong {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.home-page .pf-keep-list span {
+  font-size: 0.98rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
+.home-page .pf-close p {
+  margin: 0 0 18px;
+  max-width: 28rem;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
 .pf-wa,
 .pf-pfchat,
 .pf-flow {

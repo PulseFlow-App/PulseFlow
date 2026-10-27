@@ -197,6 +197,11 @@
 
 
 
+
+
+
+
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/" />
     <meta
@@ -211,7 +216,7 @@
     />
     <meta
       property="og:image"
-      content="https://www.pulseflow.site/assets/og-image-en.jpg?v=3"
+      content="https://www.pulseflow.site/assets/og-image-en.jpg?v=2"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -223,7 +228,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
-      content="https://www.pulseflow.site/assets/og-image-en.jpg?v=3"
+      content="https://www.pulseflow.site/assets/og-image-en.jpg?v=2"
     />
     <meta
       name="twitter:image:alt"
@@ -272,7 +277,7 @@
               "@type": "Offer",
               "price": "0",
               "priceCurrency": "USD",
-              "description": "Personal workspace and all invited team seats are free"
+              "description": "Company USD 15 / month includes 10 seats; Pro adds USD 9"
             }
           },
           {
@@ -314,7 +319,7 @@
                 "name": "What does it cost?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Personal is free forever. Company is paid by the owner; team seats stay free. Both Personal and Company can add Pro for Connect your agent AI integration. Billing is not live yet, so every account gets 3 months of full access including Pro."
+                  "text": "Personal is free forever. Company is USD 15 / month and includes 10 team seats; each extra seat is USD 2 / month. Pro adds USD 9 / month on Personal or Company. Billing is not live yet, so every account gets 3 months of full access including Pro."
                 }
               }
             ]
@@ -329,7 +334,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=111" />
+    <link rel="stylesheet" href="/styles.css?v=113" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -836,8 +841,8 @@ From: Sam Manager</p>
           </div>
           <details class="pf-agent-how">
             <summary data-i18n="home.agent_how_summary">How to connect</summary>
-            <p data-i18n="home.agent_how_note">Create a connection key in the app under Settings → Connect your agent. Copy the config for your OS — npx fetches the bridge. You do not download Pulse.</p>
-            <p class="pf-agent-os" data-i18n="home.agent_how_os_mac">Mac — paste as-is. /bin/zsh loads your shell so npx is on PATH (Homebrew included).</p>
+            <p data-i18n="home.agent_how_note">Create a connection key in the app under Settings → Connect your agent. Copy the config for your OS - npx fetches the bridge. You do not download Pulse.</p>
+            <p class="pf-agent-os" data-i18n="home.agent_how_os_mac">Mac - paste as-is. /bin/zsh loads your shell so npx is on PATH (Homebrew included).</p>
             <pre class="pf-agent-code" tabindex="0"><code>{
   "mcpServers": {
     "pulse": {
@@ -852,7 +857,7 @@ From: Sam Manager</p>
     }
   }
 }</code></pre>
-            <p class="pf-agent-os" data-i18n="home.agent_how_os_win">Windows — keep the short npx snippet. Cursor there already sees npx:</p>
+            <p class="pf-agent-os" data-i18n="home.agent_how_os_win">Windows - keep the short npx snippet. Cursor there already sees npx:</p>
             <pre class="pf-agent-code" tabindex="0"><code>{
   "mcpServers": {
     "pulse": {
@@ -870,7 +875,7 @@ From: Sam Manager</p>
         <section class="pf-plan pf-fade" id="plans" aria-labelledby="company-plans">
           <div class="pf-plan-card pf-plan-card-static">
             <h2 id="company-plans" class="pf-plan-title" data-i18n="home.plan_title">Plans</h2>
-            <p class="pf-plan-free" data-i18n="home.plan_free_team">Managers, field staff and guests you invite use the app for free, however many of them there are. There is no per-seat charge.</p>
+            <p class="pf-plan-free" data-i18n="home.plan_free_team">Company includes 10 team seats. Extra seats are USD 2 / month each. Stay guests you invite do not count toward that limit.</p>
             <ul class="pf-plan-options">
               <li>
                 <strong data-i18n="home.plan_personal_label">Personal</strong>
@@ -878,11 +883,11 @@ From: Sam Manager</p>
               </li>
               <li class="is-company">
                 <strong data-i18n="home.plan_company_label">Company</strong>
-                <span data-i18n="home.plan_company_desc">You have a manager, a cleaner or vendors. Only the owner pays; one subscription covers the team.</span>
+                <span data-i18n="home.plan_company_desc">You have a manager, a cleaner or vendors. USD 15 / month for the company - 10 seats included, then USD 2 per extra seat. Only the owner pays.</span>
               </li>
               <li class="is-pro">
                 <strong data-i18n="home.plan_pro_label">Pro</strong>
-                <span data-i18n="home.plan_pro_desc">Both Personal and Company can add Pro — Connect your agent AI integration.</span>
+                <span data-i18n="home.plan_pro_desc">Add Pro for USD 9 / month on Personal or Company - Connect your agent AI integration.</span>
               </li>
             </ul>
             <a class="pf-btn-primary pf-plan-start" href="https://app.pulseflow.site/register?lang=en" data-i18n="home.plan_cta">Start free</a>
@@ -910,11 +915,11 @@ From: Sam Manager</p>
           </details>
           <details>
             <summary data-i18n="home.faq_q3">Everything is on Airbnb and Booking. Does this replace them?</summary>
-            <p data-i18n="home.faq_a3">No. Bookings stay where they are. Pulse Flow is about what happens after the booking: who cleans, what broke, what it cost, and what the guest can see. You can paste each listing’s private calendar export (.ics) from Airbnb or Booking.com into a property to pull reserved nights into the Bookings calendar. That is not a full channel API and does not replace their listings or checkout.</p>
+            <p data-i18n="home.faq_a3">No. Bookings stay where they are. Pulse Flow is about what happens after the booking: who cleans, what broke, what it cost, and what the guest can see. You can paste each listing's private calendar export (.ics) from Airbnb or Booking.com into a property to pull reserved nights into the Bookings calendar. That is not a full channel API and does not replace their listings or checkout.</p>
           </details>
           <details>
             <summary data-i18n="home.faq_q4">What does it cost?</summary>
-            <p data-i18n="home.faq_a4">Personal is free forever. Company is paid by the owner; team seats stay free. Both Personal and Company can add Pro for Connect your agent AI integration: USD 9 / month on Personal, USD 19 / month on Company. Right now billing is not live, so every account gets 3 months of full access — including Pro — from the day it signs up.</p>
+            <p data-i18n="home.faq_a4">Personal is free forever. Company is USD 15 / month and includes 10 team seats; each extra seat is USD 2 / month. Pro adds USD 9 / month on Personal or Company for Connect your agent. Right now billing is not live, so every account gets 3 months of full access - including Pro - from the day it signs up.</p>
           </details>
           <details>
             <summary data-i18n="home.faq_q5">Will my guests have to do anything complicated?</summary>
