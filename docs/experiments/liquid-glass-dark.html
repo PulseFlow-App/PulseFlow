@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Experiment · Liquid Glass · Dark</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #e8f4f8;
+      --muted: #9bb4c0;
+      --canvas: #15202a;
+      --sky: #8ecae6;
+      --action: #f26a36;
+      --sun: #ffb703;
+      --glass: rgba(30, 42, 54, 0.72);
+      --stroke: rgba(232, 244, 248, 0.14);
+      --shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100dvh;
+      font-family: Heebo, system-ui, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(900px 520px at 8% -10%, rgba(242, 106, 54, 0.22), transparent 55%),
+        radial-gradient(760px 440px at 96% 0%, rgba(33, 158, 188, 0.28), transparent 55%),
+        linear-gradient(180deg, #101820 0%, var(--canvas) 45%, #0c141c 100%);
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: max(12px, env(safe-area-inset-top)) 14px max(40px, env(safe-area-inset-bottom));
+    }
+    header {
+      display: flex; align-items: center; gap: 8px; margin-bottom: 18px;
+    }
+    .brand { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; }
+    .brand strong { font-family: Sora, Heebo, sans-serif; font-size: 0.95rem; }
+    .mark {
+      width: 36px; height: 36px; border-radius: 10px; flex-shrink: 0;
+      display: block; overflow: hidden;
+    }
+    .mark svg { width: 100%; height: 100%; display: block; }
+    .icon-btn, .text-link {
+      min-width: 44px; min-height: 44px; border-radius: 999px;
+      display: inline-flex; align-items: center; justify-content: center;
+      border: 1px solid var(--stroke); background: var(--glass);
+      color: var(--ink); text-decoration: none; font: inherit; font-weight: 600;
+      backdrop-filter: blur(14px); cursor: pointer; padding: 0 12px;
+    }
+    .icon-btn { width: 44px; padding: 0; }
+    h1 {
+      font-family: Sora, Heebo, sans-serif;
+      font-size: clamp(1.45rem, 6.2vw, 2.35rem);
+      line-height: 1.15; letter-spacing: -0.03em;
+      margin: 0 0 10px; max-width: 18ch;
+    }
+    .lead { margin: 0 0 16px; color: var(--muted); font-size: 0.95rem; line-height: 1.45; max-width: 42ch; }
+    .cta { display: grid; gap: 8px; margin-bottom: 22px; }
+    @media (min-width: 480px) { .cta { grid-template-columns: 1fr 1fr; } }
+    .btn {
+      min-height: 48px; border-radius: 999px; border: 0; font: inherit; font-weight: 700;
+      cursor: pointer; text-decoration: none; display: grid; place-items: center;
+    }
+    .btn-primary { background: var(--action); color: #fff; box-shadow: 0 8px 22px rgba(242, 106, 54, 0.32); }
+    .btn-ghost { background: var(--glass); color: var(--ink); border: 1px solid var(--stroke); backdrop-filter: blur(14px); }
+    .cards {
+      display: grid; gap: 10px; grid-template-columns: 1fr; margin-bottom: 22px;
+    }
+    @media (min-width: 640px) { .cards { grid-template-columns: 1fr 1fr; } }
+    .card {
+      max-height: 110px; min-height: 96px;
+      background: var(--glass); border: 1px solid var(--stroke); border-radius: 18px;
+      padding: 14px; box-shadow: var(--shadow);
+      backdrop-filter: blur(16px); text-align: start; cursor: pointer;
+      font: inherit; color: inherit; display: flex; flex-direction: column; gap: 8px;
+    }
+    .card:focus-visible { outline: 2px solid var(--sky); outline-offset: 2px; }
+    .ico {
+      width: 36px; height: 36px; border-radius: 12px; display: grid; place-items: center;
+      background: rgba(255,255,255,0.08); border: 1px solid var(--stroke);
+    }
+    .ico svg { width: 20px; height: 20px; display: block; }
+    .card strong { font-family: Sora, Heebo, sans-serif; font-size: 0.9rem; }
+    .card span { font-size: 0.75rem; color: var(--muted); line-height: 1.35; }
+    .chips {
+      display: flex; flex-wrap: wrap; width: fit-content; max-width: 100%;
+      margin: 0 auto 10px; align-items: center; justify-content: center; gap: 6px;
+    }
+    .chip-group { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px; }
+    .role-block { text-align: center; }
+    .chip {
+      min-height: 44px; border-radius: 999px; padding: 0 14px; border: 1px solid var(--stroke);
+      background: var(--glass); font: inherit; font-weight: 600; cursor: pointer; color: var(--ink);
+    }
+    .chip[aria-selected="true"] { background: var(--action); color: #fff; border-color: transparent; }
+    .chip .new {
+      margin-inline-start: 6px; font-size: 10px; font-weight: 700; text-transform: uppercase;
+      padding: 2px 6px; border-radius: 999px; background: rgba(255,183,3,0.35); color: #023047;
+    }
+    .chip[aria-selected="true"] .new { background: rgba(255,255,255,0.22); color: #fff; }
+    .role-line { min-height: 2.75rem; margin: 0 0 8px; color: var(--muted); font-size: 0.9rem; line-height: 1.45; }
+    .demo-link { color: var(--sky); font-weight: 600; font-size: 0.9rem; }
+    footer { border-top: 1px solid var(--stroke); padding-top: 14px; text-align: center; margin-top: 20px; }
+    footer a { color: var(--sky); font-weight: 600; text-decoration: none; font-size: 0.9rem; }
+    .meta { margin-top: 18px; font-size: 12px; color: var(--muted); text-align: center; }
+    .meta a { color: var(--sky); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="mark" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+            <defs>
+              <linearGradient id="pfMarkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#F26A36" />
+                <stop offset="100%" stop-color="#D94E1B" />
+              </linearGradient>
+            </defs>
+            <rect width="512" height="512" rx="112" fill="url(#pfMarkBg)" />
+            <path d="M 160 260 V 370 H 352 V 260" stroke="#FFFFFF" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M 100 260 H 160 L 256 140 L 300 290 L 320 220 L 352 260 H 412" stroke="#FFFFFF" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
+            <rect x="236" y="300" width="40" height="70" rx="8" fill="#FFFFFF" />
+          </svg>
+        </div>
+        <strong>Pulse Flow</strong>
+      </div>
+      <button type="button" class="text-link" aria-label="Language">EN</button>
+      <a class="text-link" href="https://app.pulseflow.site/login">Sign in</a>
+      <a class="icon-btn" href="./liquid-glass-horizon.html" aria-label="Switch to light" title="Theme">☀</a>
+    </header>
+
+    <h1>The pulse of your rental operations</h1>
+    <p class="lead">Multilayered platform for managing rental properties, where each member of a company is on the same page.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://app.pulseflow.site/register">Start free</a>
+      <a class="btn btn-ghost" href="https://app.pulseflow.site/login?demo=owner">See the demo</a>
+    </div>
+
+    <div class="cards">
+      <button type="button" class="card">
+        <div class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#219ebc"><path d="M20.9129 5.88881C21.25 6.39325 21.25 7.09549 21.25 8.49995V21.2499H21.75C22.1642 21.2499 22.5 21.5857 22.5 21.9999C22.5 22.4142 22.1642 22.7499 21.75 22.7499H1.75C1.33579 22.7499 1 22.4142 1 21.9999C1 21.5857 1.33579 21.2499 1.75 21.2499H2.25V8.49995C2.25 7.09549 2.25 6.39325 2.58706 5.88881C2.73298 5.67043 2.92048 5.48293 3.13886 5.33701C3.58008 5.04219 5.67561 5.00524 6.75702 5.00061C6.75291 5.292 6.75294 5.59649 6.75298 5.91045L6.75299 5.99995V7.24995H4.25C3.83579 7.24995 3.5 7.58573 3.5 7.99995C3.5 8.41416 3.83579 8.74995 4.25 8.74995H6.75299V10.2499H4.25C3.83579 10.2499 3.5 10.5857 3.5 10.9999C3.5 11.4142 3.83579 11.7499 4.25 11.7499H6.75299V13.2499H4.25C3.83579 13.2499 3.5 13.5857 3.5 13.9999C3.5 14.4142 3.83579 14.7499 4.25 14.7499H6.75299V21.2499H16.7529V14.7499H19.25C19.6642 14.7499 20 14.4142 20 13.9999C20 13.5857 19.6642 13.2499 19.25 13.2499H16.7529V11.7499H19.25C19.6642 11.7499 20 11.4142 20 10.9999C20 10.5857 19.6642 10.2499 19.25 10.2499H16.7529V8.74995H19.25C19.6642 8.74995 20 8.41416 20 7.99995C20 7.58573 19.6642 7.24995 19.25 7.24995H16.7529V5.99995L16.7529 5.91046V5.91043C16.753 5.59648 16.753 5.292 16.7489 5.00061C17.8303 5.00524 19.9199 5.04219 20.3611 5.33701C20.5795 5.48293 20.767 5.67043 20.9129 5.88881Z"/></g><g fill="#f5fafc"><path fill-rule="evenodd" d="M10.75 2H12.75C14.6356 2 15.5784 2 16.1642 2.58579C16.75 3.17157 16.75 4.11438 16.75 6V21.25H18.25H21.25H21.75C22.1642 21.25 22.5 21.5858 22.5 22C22.5 22.4142 22.1642 22.75 21.75 22.75H1.75C1.33579 22.75 1 22.4142 1 22C1 21.5858 1.33579 21.25 1.75 21.25H2.25H5.25H6.75V6C6.75 4.11438 6.75 3.17157 7.33579 2.58579C7.92157 2 8.86438 2 10.75 2ZM11.75 18.25C12.1642 18.25 12.5 18.5858 12.5 19V21.25H11V19C11 18.5858 11.3358 18.25 11.75 18.25ZM9.75 14C9.33579 14 9 14.3358 9 14.75C9 15.1642 9.33579 15.5 9.75 15.5H13.75C14.1642 15.5 14.5 15.1642 14.5 14.75C14.5 14.3358 14.1642 14 13.75 14H9.75ZM9 11.75C9 11.3358 9.33579 11 9.75 11H13.75C14.1642 11 14.5 11.3358 14.5 11.75C14.5 12.1642 14.1642 12.5 13.75 12.5H9.75C9.33579 12.5 9 12.1642 9 11.75ZM9.75 8.5C9.33579 8.5 9 8.83579 9 9.25C9 9.66421 9.33579 10 9.75 10H13.75C14.1642 10 14.5 9.66421 14.5 9.25C14.5 8.83579 14.1642 8.5 13.75 8.5H9.75ZM9 6.25C9 5.83579 9.33579 5.5 9.75 5.5H13.75C14.1642 5.5 14.5 5.83579 14.5 6.25C14.5 6.66421 14.1642 7 13.75 7H9.75C9.33579 7 9 6.66421 9 6.25Z" clip-rule="evenodd"/></g></svg></div>
+        <strong>Shared dashboard</strong>
+        <span>Properties, check-ins and today's focus.</span>
+      </button>
+      <button type="button" class="card">
+        <div class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#219ebc"><path d="M22 14V12C22 11.161 21.9873 9.66527 21.9744 9H2.00586C1.99296 9.66527 2.00564 11.161 2.00564 12V14C2.00564 17.7712 2.00564 19.6569 3.17688 20.8284C4.34813 22 6.23321 22 10.0034 22H14.0023C17.7724 22 19.6575 22 20.8288 20.8284C22 19.6569 22 17.7712 22 14Z"/></g><g fill="#f5fafc"><path d="M16.5 15C17.3284 15 18 15.6716 18 16.5C18 17.3284 17.3284 18 16.5 18C15.6716 18 15 17.3284 15 16.5C15 15.6716 15.6716 15 16.5 15Z"/><path d="M17.04 2C17.4575 2.00005 17.7959 2.31006 17.7959 2.69238V4.15039C19.2467 4.25678 20.1997 4.5174 20.8994 5.1582C21.599 5.79899 21.8838 6.67149 22 8V9H2V8C2.11617 6.67149 2.40096 5.79899 3.10059 5.1582C3.80033 4.5174 4.75327 4.25678 6.2041 4.15039V2.69238C6.2041 2.31006 6.54248 2.00005 6.95996 2C7.37748 2 7.71582 2.31003 7.71582 2.69238V4.08887C8.3864 4.07696 9.13864 4.07715 9.98438 4.07715H14.0156C14.8614 4.07715 15.6136 4.07696 16.2842 4.08887V2.69238C16.2842 2.31003 16.6225 2 17.04 2Z"/></g></svg></div>
+        <strong>Jobs and assignees</strong>
+        <span>Tasks with confirmation and the clear result.</span>
+      </button>
+      <button type="button" class="card">
+        <div class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffb703"><path d="M7.24502 2H16.755C17.9139 2 18.4933 2 18.9606 2.16261C19.8468 2.47096 20.5425 3.18719 20.842 4.09946C21 4.58055 21 5.17705 21 6.37006V20.3742C21 21.2324 20.015 21.6878 19.3919 21.1176C19.0258 20.7826 18.4742 20.7826 18.1081 21.1176L17.625 21.5597C16.9834 22.1468 16.0166 22.1468 15.375 21.5597C14.7334 20.9726 13.7666 20.9726 13.125 21.5597C12.4834 22.1468 11.5166 22.1468 10.875 21.5597C10.2334 20.9726 9.26659 20.9726 8.625 21.5597C7.98341 22.1468 7.01659 22.1468 6.375 21.5597L5.8919 21.1176C5.52583 20.7826 4.97417 20.7826 4.6081 21.1176C3.985 21.6878 3 21.2324 3 20.3742V6.37006C3 5.17705 3 4.58055 3.15795 4.09946C3.45748 3.18719 4.15322 2.47096 5.03939 2.16261C5.50671 2 6.08614 2 7.24502 2Z"/></g><g fill="#f5fafc"><path d="M7 6.75C6.58579 6.75 6.25 7.08579 6.25 7.5C6.25 7.91421 6.58579 8.25 7 8.25H7.5C7.91421 8.25 8.25 7.91421 8.25 7.5C8.25 7.08579 7.91421 6.75 7.5 6.75H7Z"/><path d="M10.5 6.75C10.0858 6.75 9.75 7.08579 9.75 7.5C9.75 7.91421 10.0858 8.25 10.5 8.25H17C17.4142 8.25 17.75 7.91421 17.75 7.5C17.75 7.08579 17.4142 6.75 17 6.75H10.5Z"/><path d="M7 10.25C6.58579 10.25 6.25 10.5858 6.25 11C6.25 11.4142 6.58579 11.75 7 11.75H7.5C7.91421 11.75 8.25 11.4142 8.25 11C8.25 10.5858 7.91421 10.25 7.5 10.25H7Z"/><path d="M10.5 10.25C10.0858 10.25 9.75 10.5858 9.75 11C9.75 11.4142 10.0858 11.75 10.5 11.75H17C17.4142 11.75 17.75 11.4142 17.75 11C17.75 10.5858 17.4142 10.25 17 10.25H10.5Z"/><path d="M7 13.75C6.58579 13.75 6.25 14.0858 6.25 14.5C6.25 14.9142 6.58579 15.25 7 15.25H7.5C7.91421 15.25 8.25 14.9142 8.25 14.5C8.25 14.0858 7.91421 13.75 7.5 13.75H7Z"/><path d="M10.5 13.75C10.0858 13.75 9.75 14.0858 9.75 14.5C9.75 14.9142 10.0858 15.25 10.5 15.25H17C17.4142 15.25 17.75 14.9142 17.75 14.5C17.75 14.0858 17.4142 13.75 17 13.75H10.5Z"/></g></svg></div>
+        <strong>Money and finances</strong>
+        <span>All bills and reports in one place.</span>
+      </button>
+      <button type="button" class="card">
+        <div class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#219ebc"><circle cx="12" cy="10" r="7"/></g><g fill="#f5fafc"><path d="M18.0036 1.49973C18.2799 1.19119 18.7536 1.16493 19.0622 1.44114C21.3242 3.46568 22.7496 6.40994 22.7497 9.68626C22.7497 15.4376 18.3609 20.164 12.7497 20.699V21.2497H13.9997C14.4139 21.2497 14.7497 21.5855 14.7497 21.9997C14.7497 22.4139 14.4139 22.7497 13.9997 22.7497H9.99973C9.58552 22.7497 9.24973 22.4139 9.24973 21.9997C9.24974 21.5855 9.58553 21.2497 9.99973 21.2497H11.2497V20.7409C8.14902 20.6204 5.37534 19.2232 3.44114 17.0622C3.16493 16.7536 3.19119 16.2799 3.49973 16.0036C3.80838 15.7274 4.28208 15.7536 4.55833 16.0622C6.31035 18.0197 8.8543 19.2496 11.6863 19.2497C16.9678 19.2497 21.2497 14.9678 21.2497 9.68626C21.2496 6.8543 20.0197 4.31035 18.0622 2.55833C17.7536 2.28208 17.7274 1.80838 18.0036 1.49973Z"/><path d="M18.947 10.8689C18.5587 14.0058 16.094 16.4996 12.9714 16.9333C12.7456 16.458 12.4787 15.3862 13.0056 14.3933C13.6959 13.0925 15.9935 13.0896 16.0027 13.0896C18.4051 13.0645 18.73 11.6061 18.947 10.8689Z"/><path d="M11.9997 2.99973C13.549 2.99979 14.9808 3.50312 16.1404 4.3552C16.3042 4.85255 15.9925 5.89199 15.6648 6.38938C15.5461 6.56953 15.2762 6.79262 14.9812 7.00462C14.3159 7.48259 13.4765 7.7194 13.0495 8.59934C12.9275 8.85096 12.9322 9.09746 12.9909 9.31126C13.0331 9.46496 13.0608 9.63223 13.0613 9.79563C13.0624 10.3238 12.528 10.7056 11.9997 10.6999C10.6247 10.6849 9.7248 9.57634 9.60227 8.21262C9.4711 6.75383 8.34571 5.39459 7.79954 4.89719L7.49778 4.63938C8.71479 3.61631 10.2854 2.99973 11.9997 2.99973Z"/></g></svg></div>
+        <strong>Multilingual support</strong>
+        <span>Every team member communicates in their own language.</span>
+      </button>
+    </div>
+
+    <div class="role-block">
+      <div class="chips" role="tablist" aria-label="Role">
+        <div class="chip-group">
+          <button type="button" class="chip" role="tab" aria-selected="true" data-line="See everything without asking.">Owner</button>
+          <button type="button" class="chip" role="tab" aria-selected="false" data-line="Set the day once, not in every chat.">Manager</button>
+        </div>
+        <div class="chip-group">
+          <button type="button" class="chip" role="tab" aria-selected="false" data-line="Only your jobs, in your language.">Staff</button>
+        </div>
+        <div class="chip-group">
+          <button type="button" class="chip" role="tab" aria-selected="false" data-line="A clean channel, not your host's phone number.">Guest</button>
+          <button type="button" class="chip" role="tab" aria-selected="false" data-line="Connect your AI to read and update your workspace, including in-app slash commands.">Agent <span class="new">New</span></button>
+        </div>
+      </div>
+      <p class="role-line" id="role-line" role="status">See everything without asking.</p>
+      <a class="demo-link" id="demo-link" href="https://app.pulseflow.site/login?demo=owner">Try the Owner demo</a>
+    </div>
+
+    <footer><a href="mailto:support@pulseflow.site">support@pulseflow.site</a></footer>
+    <p class="meta">Sandbox only. <a href="./liquid-glass-horizon.html">Horizon frost</a> · live app welcome at app root when logged out.</p>
+  </div>
+  <script>
+    const line = document.getElementById("role-line");
+    const demo = document.getElementById("demo-link");
+    const demos = {
+      Owner: ["owner", "Try the Owner demo"],
+      Manager: ["manager", "Try the Manager demo"],
+      Staff: ["staff", "Try the Staff demo"],
+      Guest: ["guest", "Try the Guest demo"],
+      Agent: null,
+    };
+    document.querySelectorAll(".chip").forEach((chip) => {
+      chip.addEventListener("click", () => {
+        document.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-selected", "false"));
+        chip.setAttribute("aria-selected", "true");
+        line.textContent = chip.dataset.line;
+        const label = chip.childNodes[0].textContent.trim();
+        const d = demos[label];
+        if (d) {
+          demo.hidden = false;
+          demo.href = "https://app.pulseflow.site/login?demo=" + d[0];
+          demo.textContent = d[1];
+        } else {
+          demo.hidden = true;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

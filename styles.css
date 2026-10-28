@@ -1,3 +1,4 @@
+/* Copyright (c) 2026 Anastasia Boltrushevich / Pulse Flow. All rights reserved. */
 :root {
   /* Horizon design tokens — see DESIGN.md */
   --sky-soft: #8ecae6;
@@ -43,9 +44,10 @@
   --leading-body: 1.55;
   --leading-meta: 1.35;
   --atmosphere:
-    radial-gradient(900px 480px at 50% -8%, rgba(142, 202, 230, 0.18), transparent 60%),
-    radial-gradient(700px 360px at 100% 0%, rgba(242, 106, 54, 0.06), transparent 55%),
-    var(--canvas);
+    radial-gradient(980px 560px at 6% -8%, rgba(242, 106, 54, 0.14), transparent 55%),
+    radial-gradient(820px 480px at 92% 0%, rgba(142, 202, 230, 0.32), transparent 55%),
+    linear-gradient(180deg, #fff8f5 0%, var(--canvas) 42%, #e4f1f6 100%);
+  --glass: rgba(255, 255, 255, 0.82);
 
   /* Legacy aliases used across existing rules */
   --warm-bg: var(--canvas);
@@ -6164,4 +6166,101 @@ a.pf-audience-card:focus-visible {
   font-family: var(--font-body);
   letter-spacing: 0;
   line-height: 1.15;
+}
+
+/* ─── Site appearances (shared key with app: pulse-appearance) ─── */
+.pf-theme-toggle {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--glass, var(--surface));
+  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font: inherit;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.pf-theme-toggle:focus-visible {
+  outline: 2px solid var(--sky);
+  outline-offset: 2px;
+}
+
+html[data-appearance="frost"] {
+  --canvas: #eef6fa;
+  --canvas-deep: #e0eef4;
+  --sand: #eef6fa;
+  --sand-deep: #e0eef4;
+  --surface: rgba(255, 255, 255, 0.82);
+  --card: rgba(255, 255, 255, 0.82);
+  --paper: rgba(255, 255, 255, 0.82);
+  --glass: rgba(255, 255, 255, 0.82);
+  --border: rgba(2, 48, 71, 0.12);
+  --shadow-soft: 0 4px 12px rgba(2, 48, 71, 0.05),
+    0 14px 36px rgba(2, 48, 71, 0.08);
+  --atmosphere:
+    radial-gradient(980px 560px at 6% -8%, rgba(242, 106, 54, 0.18), transparent 55%),
+    radial-gradient(820px 480px at 92% 0%, rgba(142, 202, 230, 0.38), transparent 55%),
+    linear-gradient(180deg, #fff8f5 0%, var(--canvas) 42%, #e4f1f6 100%);
+}
+
+html[data-appearance="dark"] {
+  --ink: #e8f4f8;
+  --text: #e8f4f8;
+  --muted: #9bb4c0;
+  --text-muted: #9bb4c0;
+  --canvas: #15202a;
+  --canvas-deep: #1c2936;
+  --sand: #15202a;
+  --sand-deep: #1c2936;
+  --warm-bg: #15202a;
+  --surface: rgba(30, 42, 54, 0.88);
+  --surface-2: #1c2936;
+  --card: rgba(30, 42, 54, 0.88);
+  --paper: rgba(30, 42, 54, 0.88);
+  --glass: rgba(30, 42, 54, 0.88);
+  --border: rgba(232, 244, 248, 0.14);
+  --nav: #121c26;
+  --shadow-soft: 0 8px 28px rgba(0, 0, 0, 0.35);
+  --shadow-lift: 0 12px 36px rgba(0, 0, 0, 0.42);
+  --atmosphere:
+    radial-gradient(900px 520px at 8% -10%, rgba(242, 106, 54, 0.22), transparent 55%),
+    radial-gradient(760px 440px at 96% 0%, rgba(33, 158, 188, 0.24), transparent 55%),
+    linear-gradient(180deg, #101820 0%, var(--canvas) 45%, #0c141c 100%);
+  color-scheme: dark;
+}
+
+html[data-appearance="frost"] .pf-card,
+html[data-appearance="frost"] .pf-panel,
+html[data-appearance="frost"] .pf-feature,
+html[data-appearance="frost"] .pf-audience,
+html[data-appearance="dark"] .pf-card,
+html[data-appearance="dark"] .pf-panel,
+html[data-appearance="dark"] .pf-feature,
+html[data-appearance="dark"] .pf-audience {
+  background: var(--glass);
+  backdrop-filter: blur(16px) saturate(1.08);
+  -webkit-backdrop-filter: blur(16px) saturate(1.08);
+}
+
+html[data-appearance="dark"] .pf-nav {
+  background: rgba(18, 28, 38, 0.88);
+  border-color: var(--border);
+  color: var(--ink);
+}
+html[data-appearance="dark"] .pf-brand-name,
+html[data-appearance="dark"] .pf-headline,
+html[data-appearance="dark"] .pf-sub,
+html[data-appearance="dark"] h1,
+html[data-appearance="dark"] h2,
+html[data-appearance="dark"] h3 {
+  color: var(--ink);
+}
+html[data-appearance="dark"] .pf-btn-outline {
+  background: var(--glass);
+  color: var(--ink);
+  border-color: var(--border);
 }

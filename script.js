@@ -1,4 +1,66 @@
+/* Copyright (c) 2026 Anastasia Boltrushevich / Pulse Flow. All rights reserved. */
 const LOCALE_STORAGE_KEY = "pulseflow_locale";
+const APPEARANCE_STORAGE_KEY = "pulse-appearance";
+
+/** Shared with the app — frost (white glass) ↔ dark. */
+function readAppearance() {
+  try {
+    const a = localStorage.getItem(APPEARANCE_STORAGE_KEY);
+    return a === "frost" || a === "dark" || a === "horizon" ? a : "horizon";
+  } catch (_) {
+    return "horizon";
+  }
+}
+
+function applyAppearance(appearance) {
+  const root = document.documentElement;
+  if (appearance === "frost" || appearance === "dark") {
+    root.setAttribute("data-appearance", appearance);
+  } else {
+    root.removeAttribute("data-appearance");
+  }
+  root.style.colorScheme = appearance === "dark" ? "dark" : "light";
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) {
+    meta.setAttribute(
+      "content",
+      appearance === "dark" ? "#15202a" : appearance === "frost" ? "#eef6fa" : "#f26a36",
+    );
+  }
+  document.querySelectorAll("[data-theme-icon]").forEach((el) => {
+    el.textContent = appearance === "dark" ? "☀" : "☾";
+  });
+  document.querySelectorAll("[data-theme-toggle]").forEach((btn) => {
+    btn.setAttribute(
+      "aria-label",
+      appearance === "dark" ? "Switch to light glass" : "Switch to dark",
+    );
+  });
+}
+
+function persistAppearance(appearance) {
+  try {
+    if (appearance === "horizon") localStorage.removeItem(APPEARANCE_STORAGE_KEY);
+    else localStorage.setItem(APPEARANCE_STORAGE_KEY, appearance);
+  } catch (_) {
+    /* private mode */
+  }
+  applyAppearance(appearance);
+}
+
+function mountThemeToggles() {
+  document.querySelectorAll("[data-theme-toggle]").forEach((btn) => {
+    if (btn.dataset.bound === "1") return;
+    btn.dataset.bound = "1";
+    btn.addEventListener("click", () => {
+      const next = readAppearance() === "dark" ? "frost" : "dark";
+      persistAppearance(next);
+    });
+  });
+}
+
+/* Boot before paint flash — also mirrored as inline if needed */
+applyAppearance(readAppearance());
 
 const LOCALES = ["en", "th", "my", "fr", "de", "es", "it", "tr", "he", "ar", "ru"];
 
@@ -567,6 +629,8 @@ async function mountFooterVersion() {
 }
 
 mountLanguageSwitchers();
+mountThemeToggles();
+applyAppearance(readAppearance());
 void mountFooterVersion();
 {
   const fromQuery = localeFromUrl();

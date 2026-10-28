@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pulse Flow · Promotional Flyer</title>
+    <style>
+      @font-face {
+        font-family: "Sora";
+        src: url("./flyer-fonts/Sora-Bold.ttf") format("truetype");
+        font-weight: 100 900;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "Heebo";
+        src: url("./flyer-fonts/Heebo-Variable.ttf") format("truetype");
+        font-weight: 100 900;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "Noto Sans Thai";
+        src: url("./flyer-fonts/NotoSansThai-Variable.ttf") format("truetype");
+        font-weight: 100 900;
+        font-style: normal;
+        font-display: block;
+      }
+      :root {
+        --sky-soft: #8ecae6;
+        --sky: #219ebc;
+        --ink: #023047;
+        --sun: #ffb703;
+        --action: #f26a36;
+        --canvas: #f5fafc;
+        --canvas-deep: #e8f4f8;
+        --surface: #ffffff;
+        --muted: #5a6d78;
+        --border: rgba(2, 48, 71, 0.12);
+        --font-display: "Sora", sans-serif;
+        --font-body: "Heebo", "Noto Sans Thai", sans-serif;
+        --font-thai: "Noto Sans Thai", "Heebo", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      @page {
+        size: A4 portrait;
+        margin: 0;
+      }
+
+      html,
+      body {
+        background: #dfe8ec;
+      }
+
+      body {
+        font-family: var(--font-body);
+        color: var(--ink);
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .page {
+        width: 210mm;
+        height: 297mm;
+        margin: 0 auto;
+        background:
+          radial-gradient(
+            120% 80% at 100% 0%,
+            rgba(142, 202, 230, 0.45),
+            transparent 55%
+          ),
+          radial-gradient(
+            90% 60% at 0% 100%,
+            rgba(242, 106, 54, 0.08),
+            transparent 50%
+          ),
+          var(--canvas);
+        display: flex;
+        flex-direction: column;
+        padding: 12mm 12mm 0;
+        overflow: hidden;
+        position: relative;
+      }
+
+      @media screen {
+        body {
+          padding: 24px 0;
+        }
+        .page {
+          box-shadow: 0 12px 40px rgba(2, 48, 71, 0.12);
+        }
+      }
+
+      .thai {
+        font-family: var(--font-thai);
+      }
+
+      /* —— Header —— */
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 9mm;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 0;
+      }
+
+      .brand img {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        display: block;
+        object-fit: cover;
+      }
+
+      .brand-text strong {
+        display: block;
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 22px;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        color: var(--ink);
+      }
+
+      .brand-text span {
+        display: block;
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--muted);
+        margin-top: 2px;
+      }
+
+      /* —— Hero —— */
+      .hero {
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        min-height: 52mm;
+        margin-bottom: 7mm;
+        background: linear-gradient(
+          135deg,
+          #023047 0%,
+          #03506b 55%,
+          #219ebc 100%
+        );
+        color: #fff;
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 0;
+      }
+
+      .hero-copy {
+        padding: 14mm 12mm 12mm;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        z-index: 1;
+      }
+
+      .eyebrow {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--sky-soft);
+      }
+
+      .hero h1 {
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 28px;
+        letter-spacing: -0.02em;
+        line-height: 1.15;
+        max-width: 18ch;
+      }
+
+      .hero .thai-line {
+        font-size: 13px;
+        font-weight: 500;
+        opacity: 0.88;
+        line-height: 1.45;
+        max-width: 28ch;
+      }
+
+      .pulse-line {
+        width: 72px;
+        height: 18px;
+        margin-top: 4px;
+        color: var(--action);
+      }
+
+      .hero-visual {
+        position: relative;
+        min-height: 100%;
+      }
+
+      .hero-visual img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 40%;
+      }
+
+      .hero-visual::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          90deg,
+          #023047 0%,
+          rgba(2, 48, 71, 0.35) 45%,
+          transparent 75%
+        );
+      }
+
+      /* —— Lead —— */
+      .lead {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 14px;
+        align-items: center;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 12px 16px;
+        margin-bottom: 6mm;
+        box-shadow: 0 1px 2px rgba(2, 48, 71, 0.04),
+          0 8px 24px rgba(2, 48, 71, 0.05);
+      }
+
+      .lead-mark {
+        width: 56px;
+        height: 56px;
+        border-radius: 14px;
+        background: var(--canvas-deep);
+        display: grid;
+        place-items: center;
+        flex-shrink: 0;
+      }
+
+      .lead-mark svg {
+        width: 30px;
+        height: 30px;
+      }
+
+      .lead h2 {
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: -0.02em;
+        margin-bottom: 6px;
+      }
+
+      .lead ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+      }
+
+      .lead li {
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--muted);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .lead li::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--action);
+        flex-shrink: 0;
+      }
+
+      /* —— Feature grid —— */
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 7mm;
+      }
+
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 12px 12px 14px;
+      }
+
+      .icon-well {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        background: var(--canvas-deep);
+        display: grid;
+        place-items: center;
+        margin-bottom: 8px;
+      }
+
+      .icon-well svg {
+        width: 22px;
+        height: 22px;
+      }
+
+      .card h3 {
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: -0.01em;
+        margin-bottom: 4px;
+      }
+
+      .card p {
+        font-size: 11.5px;
+        font-weight: 500;
+        line-height: 1.45;
+        color: var(--muted);
+      }
+
+      /* —— Bottom CTA —— */
+      .bottom {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 14px;
+        align-items: center;
+        background: var(--canvas-deep);
+        border-radius: 16px;
+        padding: 12px 14px;
+        margin-bottom: 8mm;
+      }
+
+      .bottom h2 {
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: -0.02em;
+        margin-bottom: 4px;
+      }
+
+      .bottom .sub {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--muted);
+        margin-bottom: 10px;
+        max-width: 42ch;
+        line-height: 1.4;
+      }
+
+      .contacts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        height: 32px;
+        padding: 0 12px;
+        border-radius: 999px;
+        font-size: 11.5px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .chip.mail {
+        background: var(--ink);
+      }
+
+      .chip.web {
+        background: var(--action);
+      }
+
+      .chip svg {
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+      }
+
+      .qr-row {
+        display: flex;
+        align-items: stretch;
+        gap: 8px;
+      }
+
+      .qr-block {
+        text-align: center;
+        background: var(--surface);
+        border-radius: 14px;
+        padding: 8px 9px 10px;
+        border: 1px solid var(--border);
+      }
+
+      .qr-block img,
+      .qr-block svg {
+        width: 70px;
+        height: 70px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .qr-block span {
+        display: block;
+        margin-top: 6px;
+        font-size: 8.5px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--sky);
+      }
+
+      /* —— Footer bar —— */
+      .foot {
+        margin-top: auto;
+        margin-left: -12mm;
+        margin-right: -12mm;
+        background: var(--action);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 9px 12mm;
+        font-size: 11px;
+        font-weight: 500;
+      }
+
+      .foot strong {
+        font-family: var(--font-display);
+        font-weight: 600;
+      }
+
+      .foot .thai {
+        opacity: 0.92;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="page">
+      <header class="top">
+        <div class="brand">
+          <img
+            src="../assets/brand/pulse-logo-512.png"
+            width="44"
+            height="44"
+            alt="Pulse Flow"
+          />
+          <div class="brand-text">
+            <strong>Pulse Flow</strong>
+            <span class="thai">พัลส์โฟลว์</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Out of the group chat</p>
+          <h1>The pulse of your rental operations</h1>
+          <p class="thai thai-line">จังหวะการทำงานของบ้านเช่าคุณ</p>
+          <svg
+            class="pulse-line"
+            viewBox="0 0 120 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M0 14 H28 L38 6 L48 20 L58 10 L68 14 H120"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="hero-visual">
+          <img src="./flyer-hero-villa.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="lead">
+        <div class="lead-mark" aria-hidden="true">
+          <!-- users-group dual-tone -->
+          <svg class="pf-duo" viewBox="0 0 24 24" width="30" height="30">
+            <g fill="#8ecae6">
+              <path
+                d="M16 14C18.7614 14 21 15.3431 21 17C21 18.6569 18.7614 20 16 20C13.2386 20 11 18.6569 11 17C11 15.3431 13.2386 14 16 14Z"
+              />
+              <path
+                d="M15 3C16.6569 3 18 4.34315 18 6C18 7.65685 16.6569 9 15 9C13.3431 9 12 7.65685 12 6C12 4.34315 13.3431 3 15 3Z"
+              />
+            </g>
+            <g fill="#023047">
+              <path
+                d="M9.00098 13.001C12.867 13.001 16.001 14.7918 16.001 17.001C16.001 19.2101 12.867 21.001 9.00098 21.001C5.13498 21.001 2.00098 19.2101 2.00098 17.001C2.00098 14.7918 5.13498 13.001 9.00098 13.001Z"
+              />
+              <path
+                d="M9.00098 2C11.2101 2 13.001 3.79086 13.001 6C13.001 8.20914 11.2101 10 9.00098 10C6.79184 10 5.00098 8.20914 5.00098 6C5.00098 3.79086 6.79184 2 9.00098 2Z"
+              />
+            </g>
+          </svg>
+        </div>
+        <div>
+          <h2>Organize your workflow</h2>
+          <ul>
+            <li>The whole team on the same page</li>
+            <li>Know who did what and when</li>
+            <li>Less chatting. More done</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <div class="icon-well" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22">
+              <g fill="#8ecae6">
+                <path
+                  d="M16 14C18.7614 14 21 15.3431 21 17C21 18.6569 18.7614 20 16 20C13.2386 20 11 18.6569 11 17C11 15.3431 13.2386 14 16 14Z"
+                />
+                <path
+                  d="M15 3C16.6569 3 18 4.34315 18 6C18 7.65685 16.6569 9 15 9C13.3431 9 12 7.65685 12 6C12 4.34315 13.3431 3 15 3Z"
+                />
+              </g>
+              <g fill="#023047">
+                <path
+                  d="M9.00098 13.001C12.867 13.001 16.001 14.7918 16.001 17.001C16.001 19.2101 12.867 21.001 9.00098 21.001C5.13498 21.001 2.00098 19.2101 2.00098 17.001C2.00098 14.7918 5.13498 13.001 9.00098 13.001Z"
+                />
+                <path
+                  d="M9.00098 2C11.2101 2 13.001 3.79086 13.001 6C13.001 8.20914 11.2101 10 9.00098 10C6.79184 10 5.00098 8.20914 5.00098 6C5.00098 3.79086 6.79184 2 9.00098 2Z"
+                />
+              </g>
+            </svg>
+          </div>
+          <h3>Team synchronization</h3>
+          <p>
+            Keep managers, maintenance staff and rental agents connected in real
+            time.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon-well" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22">
+              <g fill="#8ecae6">
+                <path
+                  d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z"
+                />
+              </g>
+              <g fill="#023047">
+                <path
+                  d="M10.5431 7.51724C10.8288 7.2173 10.8172 6.74256 10.5172 6.4569C10.2173 6.17123 9.74256 6.18281 9.4569 6.48276L7.14286 8.9125L6.5431 8.28276C6.25744 7.98281 5.78271 7.97123 5.48276 8.2569C5.18281 8.54256 5.17123 9.01729 5.4569 9.31724L6.59976 10.5172C6.74131 10.6659 6.9376 10.75 7.14286 10.75C7.34812 10.75 7.5444 10.6659 7.68596 10.5172L10.5431 7.51724Z"
+                />
+                <path
+                  d="M13 8.25C12.5858 8.25 12.25 8.58579 12.25 9C12.25 9.41422 12.5858 9.75 13 9.75H18C18.4142 9.75 18.75 9.41422 18.75 9C18.75 8.58579 18.4142 8.25 18 8.25H13Z"
+                />
+                <path
+                  d="M10.5431 14.5172C10.8288 14.2173 10.8172 13.7426 10.5172 13.4569C10.2173 13.1712 9.74256 13.1828 9.4569 13.4828L7.14286 15.9125L6.5431 15.2828C6.25744 14.9828 5.78271 14.9712 5.48276 15.2569C5.18281 15.5426 5.17123 16.0173 5.4569 16.3172L6.59976 17.5172C6.74131 17.6659 6.9376 17.75 7.14286 17.75C7.34812 17.75 7.5444 17.6659 7.68596 17.5172L10.5431 14.5172Z"
+                />
+                <path
+                  d="M13 15.25C12.5858 15.25 12.25 15.5858 12.25 16C12.25 16.4142 12.5858 16.75 13 16.75H18C18.4142 16.75 18.75 16.4142 18.75 16C18.75 15.5858 18.4142 15.25 18 15.25H13Z"
+                />
+              </g>
+            </svg>
+          </div>
+          <h3>Task tracking</h3>
+          <p>
+            A clear log of every operation with exact timestamps and ownership
+            across property maintenance.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon-well" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22">
+              <g fill="#219ebc">
+                <path
+                  d="M20.9129 5.88881C21.25 6.39325 21.25 7.09549 21.25 8.49995V21.2499H21.75C22.1642 21.2499 22.5 21.5857 22.5 21.9999C22.5 22.4142 22.1642 22.7499 21.75 22.7499H1.75C1.33579 22.7499 1 22.4142 1 21.9999C1 21.5857 1.33579 21.2499 1.75 21.2499H2.25V8.49995C2.25 7.09549 2.25 6.39325 2.58706 5.88881C2.73298 5.67043 2.92048 5.48293 3.13886 5.33701C3.58008 5.04219 5.67561 5.00524 6.75702 5.00061C6.75291 5.292 6.75294 5.59649 6.75298 5.91045L6.75299 5.99995V7.24995H4.25C3.83579 7.24995 3.5 7.58573 3.5 7.99995C3.5 8.41416 3.83579 8.74995 4.25 8.74995H6.75299V10.2499H4.25C3.83579 10.2499 3.5 10.5857 3.5 10.9999C3.5 11.4142 3.83579 11.7499 4.25 11.7499H6.75299V13.2499H4.25C3.83579 13.2499 3.5 13.5857 3.5 13.9999C3.5 14.4142 3.83579 14.7499 4.25 14.7499H6.75299V21.2499H16.7529V14.7499H19.25C19.6642 14.7499 20 14.4142 20 13.9999C20 13.5857 19.6642 13.2499 19.25 13.2499H16.7529V11.7499H19.25C19.6642 11.7499 20 11.4142 20 10.9999C20 10.5857 19.6642 10.2499 19.25 10.2499H16.7529V8.74995H19.25C19.6642 8.74995 20 8.41416 20 7.99995C20 7.58573 19.6642 7.24995 19.25 7.24995H16.7529V5.99995L16.7529 5.91046V5.91043C16.753 5.59648 16.753 5.292 16.7489 5.00061C17.8303 5.00524 19.9199 5.04219 20.3611 5.33701C20.5795 5.48293 20.767 5.67043 20.9129 5.88881Z"
+                />
+              </g>
+              <g fill="#023047">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.75 2H12.75C14.6356 2 15.5784 2 16.1642 2.58579C16.75 3.17157 16.75 4.11438 16.75 6V21.25H18.25H21.25H21.75C22.1642 21.25 22.5 21.5858 22.5 22C22.5 22.4142 22.1642 22.75 21.75 22.75H1.75C1.33579 22.75 1 22.4142 1 22C1 21.5858 1.33579 21.25 1.75 21.25H2.25H5.25H6.75V6C6.75 4.11438 6.75 3.17157 7.33579 2.58579C7.92157 2 8.86438 2 10.75 2ZM11.75 18.25C12.1642 18.25 12.5 18.5858 12.5 19V21.25H11V19C11 18.5858 11.3358 18.25 11.75 18.25ZM9.75 14C9.33579 14 9 14.3358 9 14.75C9 15.1642 9.33579 15.5 9.75 15.5H13.75C14.1642 15.5 14.5 15.1642 14.5 14.75C14.5 14.3358 14.1642 14 13.75 14H9.75ZM9 11.75C9 11.3358 9.33579 11 9.75 11H13.75C14.1642 11 14.5 11.3358 14.5 11.75C14.5 12.1642 14.1642 12.5 13.75 12.5H9.75C9.33579 12.5 9 12.1642 9 11.75ZM9.75 8.5C9.33579 8.5 9 8.83579 9 9.25C9 9.66421 9.33579 10 9.75 10H13.75C14.1642 10 14.5 9.66421 14.5 9.25C14.5 8.83579 14.1642 8.5 13.75 8.5H9.75ZM9 6.25C9 5.83579 9.33579 5.5 9.75 5.5H13.75C14.1642 5.5 14.5 5.83579 14.5 6.25C14.5 6.66421 14.1642 7 13.75 7H9.75C9.33579 7 9 6.66421 9 6.25Z"
+                />
+              </g>
+            </svg>
+          </div>
+          <h3>Rental operations</h3>
+          <p>
+            Reservations, check-ins, guest requests and routine inspections from
+            one clear portal.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon-well" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22">
+              <g fill="#219ebc">
+                <path
+                  d="M21 15.9983V9.99826C21 7.16983 21 5.75562 20.1213 4.87694C19.3529 4.10856 18.175 4.01211 16 4H8C5.82497 4.01211 4.64706 4.10856 3.87868 4.87694C3 5.75562 3 7.16983 3 9.99826V15.9983C3 18.8267 3 20.2409 3.87868 21.1196C4.75736 21.9983 6.17157 21.9983 9 21.9983H15C17.8284 21.9983 19.2426 21.9983 20.1213 21.1196C21 20.2409 21 18.8267 21 15.9983Z"
+                />
+              </g>
+              <g fill="#023047">
+                <path
+                  d="M7.5 16.75C7.91421 16.75 8.25 17.0858 8.25 17.5C8.25 17.9142 7.91421 18.25 7.5 18.25H7C6.58579 18.25 6.25 17.9142 6.25 17.5C6.25 17.0858 6.58579 16.75 7 16.75H7.5Z"
+                />
+                <path
+                  d="M17 16.75C17.4142 16.75 17.75 17.0858 17.75 17.5C17.75 17.9142 17.4142 18.25 17 18.25H10.5C10.0858 18.25 9.75 17.9142 9.75 17.5C9.75 17.0858 10.0858 16.75 10.5 16.75H17Z"
+                />
+                <path
+                  d="M7.5 13.25C7.91421 13.25 8.25 13.5858 8.25 14C8.25 14.4142 7.91421 14.75 7.5 14.75H7C6.58579 14.75 6.25 14.4142 6.25 14C6.25 13.5858 6.58579 13.25 7 13.25H7.5Z"
+                />
+                <path
+                  d="M17 13.25C17.4142 13.25 17.75 13.5858 17.75 14C17.75 14.4142 17.4142 14.75 17 14.75H10.5C10.0858 14.75 9.75 14.4142 9.75 14C9.75 13.5858 10.0858 13.25 10.5 13.25H17Z"
+                />
+                <path
+                  d="M14.5 2C15.3284 2 16 2.67157 16 3.5V4.5C16 5.32843 15.3284 6 14.5 6H9.5C8.67157 6 8 5.32843 8 4.5V3.5C8 2.67157 8.67157 2 9.5 2H14.5Z"
+                />
+              </g>
+            </svg>
+          </div>
+          <h3>Time back to the team</h3>
+          <p>
+            Cut chat groups and repetitive coordination and give your property
+            team productive conditions.
+          </p>
+        </article>
+      </section>
+
+      <section class="bottom">
+        <div>
+          <h2>Start streamlining today</h2>
+          <p class="sub">
+            Join property managers across Thailand in modernizing rental
+            operations.
+          </p>
+          <div class="contacts">
+            <a class="chip mail" href="mailto:support@pulseflow.site">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M4 6.5h16v11H4v-11Z"
+                  stroke="#fff"
+                  stroke-width="1.8"
+                />
+                <path
+                  d="M4.5 7.2 12 12.5 19.5 7.2"
+                  stroke="#fff"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              support@pulseflow.site
+            </a>
+            <a class="chip web" href="https://pulseflow.site">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="12" cy="12" r="8.2" stroke="#fff" stroke-width="1.8" />
+                <path
+                  d="M4 12h16M12 4c2.4 2.6 3.6 5.3 3.6 8s-1.2 5.4-3.6 8c-2.4-2.6-3.6-5.3-3.6-8s1.2-5.4 3.6-8Z"
+                  stroke="#fff"
+                  stroke-width="1.8"
+                />
+              </svg>
+              pulseflow.site
+            </a>
+          </div>
+        </div>
+        <div class="qr-row">
+          <div class="qr-block">
+            <img
+              src="./flyer-qr-site.svg"
+              width="70"
+              height="70"
+              alt="QR code to pulseflow.site"
+            />
+            <span>Website</span>
+          </div>
+          <div class="qr-block">
+            <img
+              src="./flyer-qr.svg"
+              width="70"
+              height="70"
+              alt="QR code to join Pulse Flow"
+            />
+            <span>Scan to join</span>
+          </div>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <div>
+          <strong>The pulse of your rental operations</strong>
+          <div class="thai">จังหวะการทำงานของบ้านเช่าคุณ</div>
+        </div>
+        <div>Pulse Flow © 2026</div>
+      </footer>
+    </article>
+  </body>
+</html>
