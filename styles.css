@@ -6326,7 +6326,31 @@ html[data-appearance="dark"] .pf-theme-toggle {
   background: var(--glass);
 }
 
-/* Duotone icons bake #023047 into SVG — remapped to light ink on dark canvas */
+/* Sky-leaning soft washes (match app PulseIcon: amber/success soft -> sky) */
+.pf-duo [fill="#ffb703"],
+.pf-duo [fill="#2a9d8f"] {
+  fill: #8ecae6;
+}
+html[data-appearance="frost"] .pf-duo [fill="#ffb703"],
+html[data-appearance="frost"] .pf-duo [fill="#2a9d8f"] {
+  fill: #8ecae6;
+}
+html[data-appearance="dark"] .pf-duo [fill="#ffb703"],
+html[data-appearance="dark"] .pf-duo [fill="#2a9d8f"],
+html[data-appearance="dark"] .pf-duo [fill="#8ecae6"],
+html[data-appearance="dark"] .pf-duo [fill="#219ebc"] {
+  fill: rgba(142, 202, 230, 0.45);
+}
+html[data-appearance="dark"] .pf-duo [fill="#f26a36"] {
+  fill: rgba(242, 106, 54, 0.55);
+}
+/* Audience / card icon glyphs follow ink on dark */
+html[data-appearance="frost"] .pf-card-icon .ti,
+html[data-appearance="frost"] .pf-audience-icon .ti {
+  color: var(--ink);
+}
+
+/* Duotone icons bake #023047 into SVG - remapped to light ink on dark canvas */
 html[data-appearance="dark"] .pf-duo [fill="#023047"] {
   fill: var(--ink);
 }

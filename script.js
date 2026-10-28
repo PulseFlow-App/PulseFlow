@@ -2,7 +2,7 @@
 const LOCALE_STORAGE_KEY = "pulseflow_locale";
 const APPEARANCE_STORAGE_KEY = "pulse-appearance";
 
-/** Shared with the app — frost (white glass) ↔ dark. */
+/** Shared with the app: frost (white glass) <-> dark. */
 function readAppearance() {
   try {
     const a = localStorage.getItem(APPEARANCE_STORAGE_KEY);
