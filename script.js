@@ -12,6 +12,46 @@ function readAppearance() {
   }
 }
 
+/** Light → dark screenshot filenames (same folder / locale path preserved). */
+const DARK_SHOT_BY_LIGHT = {
+  "welcome-frost.png": "welcome-dark-home.png",
+  "welcome-light.png": "welcome-dark-home.png",
+  "owner-home-hero.png": "owner-home-dark.png",
+  "owner-home.png": "owner-home-dark.png",
+  "owner-home-crop.png": "owner-home-dark.png",
+};
+
+const LIGHT_SHOT_BY_DARK = {
+  "welcome-dark-home.png": "welcome-frost.png",
+  "welcome-dark.png": "welcome-frost.png",
+  "owner-home-dark.png": "owner-home-hero.png",
+};
+
+function syncAppShotsForAppearance(appearance) {
+  const wantDark = appearance === "dark";
+  document
+    .querySelectorAll(
+      ".pf-hero-shot img, .pf-phone-screen img, img[src*='/assets/screenshots/']",
+    )
+    .forEach((img) => {
+      const src = img.getAttribute("src") || "";
+      const match = src.match(
+        /^(.*\/assets\/screenshots\/(?:[a-z]{2}\/)?)([^/?#]+\.png)(\?[^#]*)?(?:#.*)?$/i,
+      );
+      if (!match) return;
+      const [, folder, file, query = ""] = match;
+      if (!img.dataset.lightSrc) {
+        const lightFile = LIGHT_SHOT_BY_DARK[file] || file;
+        const darkFile = DARK_SHOT_BY_LIGHT[lightFile];
+        if (!darkFile) return;
+        img.dataset.lightSrc = `${folder}${lightFile}${query}`;
+        img.dataset.darkSrc = `${folder}${darkFile}${query}`;
+      }
+      const next = wantDark ? img.dataset.darkSrc : img.dataset.lightSrc;
+      if (next && img.getAttribute("src") !== next) img.setAttribute("src", next);
+    });
+}
+
 function applyAppearance(appearance) {
   const root = document.documentElement;
   if (appearance === "frost" || appearance === "dark") {
@@ -36,6 +76,7 @@ function applyAppearance(appearance) {
       appearance === "dark" ? "Switch to light glass" : "Switch to dark",
     );
   });
+  syncAppShotsForAppearance(appearance);
 }
 
 function persistAppearance(appearance) {
