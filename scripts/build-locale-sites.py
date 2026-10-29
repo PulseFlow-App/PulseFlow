@@ -153,6 +153,7 @@ def assert_translation_coverage(dicts: dict) -> None:
         "terms.use_body",
         "terms.billing_title",
         "terms.billing_body",
+        "terms.billing_founding",
         "terms.s7_title",
         "terms.s7_body",
         "terms.s8_title",
