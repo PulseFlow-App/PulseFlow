@@ -123,7 +123,7 @@ const dictCache = Object.create(null);
 let currentLocale = "en";
 let currentDict = null;
 let demoApplyFns = [];
-const I18N_VERSION = "43";
+const I18N_VERSION = "44";
 /** Manual release stamp — bump version.json when asked, not every push. */
 const SITE_VERSION_CACHE_BUST = "2";
 
