@@ -21,7 +21,8 @@
     "privacy": "Privacy",
     "support": "Support",
     "app": "App",
-    "version": "v{version} · {date}"
+    "version": "v{version} · {date}",
+    "operations_app": "Pulseflow Operations App"
   },
   "common": {
     "screenshot_soon": "Screenshot coming soon",
@@ -599,5 +600,23 @@
     "channels_li3": "Private calendar export (.ics) links from Airbnb, Booking.com or Guesty that you paste are treated as secrets. We use them only to fetch occupancy for your property workspace. They are not sold, not shared with advertisers, and not exposed to other companies. Only people in your company with the right role can manage those links in the app.",
     "channels_li4": "Occupancy and listing facts imported from those feeds stay in your workspace under the same role rules as other operations data.",
     "channels_li5": "You can disconnect Guesty or remove a calendar link at any time. We then stop using those credentials for new syncs."
+  },
+  "services": {
+    "meta_title": "Pulse Flow Services · local property maintenance",
+    "meta_description": "Local professionals based on your needs. Browse services or register as maintenance staff. Pulse Flow does not take the job payment.",
+    "title": "Pulse Flow Services",
+    "lead": "Local professionals based on your needs. Pick a category, choose by the score of the source, or ask the AI agent for help and set up the appointment.",
+    "orders": "Three orders are free. Each next one unlocks after the review on the finished job. After that, stay on the free plan if you need a service only once a month, or turn on Premium and Pro in Settings.",
+    "staff_title": "Maintenance staff",
+    "staff_body": "Register or sign in as maintenance staff on Pulse Flow Services. Register opens with the Maintenance Staff card already selected. Company QR join stays in the operations app, not here.",
+    "register": "Register as maintenance staff",
+    "sign_in": "Sign in",
+    "pick_title": "Pick a service",
+    "pick_body": "Start browsing listed professionals today",
+    "browse": "Browse services",
+    "headline": "The pulse of property maintenance",
+    "disclaimer": "We do not take the job payment, and we do not guarantee the work.",
+    "launch_chip_prefix": "Demo launching: Koh Phangan, Thailand - contact ",
+    "launch_chip_suffix": " for queries"
   }
 }

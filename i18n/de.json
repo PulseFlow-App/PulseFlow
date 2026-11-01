@@ -21,7 +21,8 @@
     "privacy": "Datenschutz",
     "support": "Hilfe",
     "app": "Anwendung",
-    "version": "v{version} · {date}"
+    "version": "v{version} · {date}",
+    "operations_app": "Pulseflow Operations App"
   },
   "common": {
     "screenshot_soon": "Screenshot folgt in Kürze",
@@ -599,5 +600,23 @@
     "channels_li3": "Private Kalenderexport-Links (.ics) von Airbnb, Booking.com oder Guesty, die Sie einfügen, werden als Geheimnisse behandelt. Wir nutzen sie nur, um die Belegung für Ihren Objekt-Workspace abzurufen. Sie werden nicht verkauft, nicht an Werbetreibende weitergegeben und nicht anderen Unternehmen offengelegt. Nur Personen in Ihrem Unternehmen mit der richtigen Rolle können diese Links in der App verwalten.",
     "channels_li4": "Aus diesen Feeds importierte Belegung und Inseratdaten bleiben in Ihrem Workspace unter denselben Rollenregeln wie andere Betriebsdaten.",
     "channels_li5": "Sie können Guesty jederzeit trennen oder einen Kalenderlink entfernen. Danach nutzen wir diese Zugangsdaten nicht mehr für neue Synchronisationen."
+  },
+  "services": {
+    "meta_title": "Pulse Flow Services · lokale Immobilienwartung",
+    "meta_description": "Lokale Fachleute nach Ihrem Bedarf. Leistungen ansehen oder als Wartungspersonal registrieren. Pulse Flow nimmt die Arbeitszahlung nicht entgegen.",
+    "title": "Pulse Flow Services",
+    "lead": "Lokale Fachleute nach Ihrem Bedarf. Kategorie wählen, nach der Bewertung der Quelle entscheiden oder den KI-Agenten um Hilfe bitten und den Termin festlegen.",
+    "orders": "Drei Aufträge sind kostenlos. Der nächste öffnet sich nach der Bewertung des abgeschlossenen Auftrags. Danach bleiben Sie im kostenlosen Plan, wenn Sie nur einmal im Monat einen Service brauchen, oder schalten Sie Premium und Pro in den Einstellungen ein.",
+    "staff_title": "Wartungspersonal",
+    "staff_body": "Registrieren Sie sich oder melden Sie sich als Wartungspersonal bei Pulse Flow Services an. Die Registrierung öffnet sich mit der Karte Wartungspersonal. Der Firmen-QR bleibt in der Betriebs-App, nicht hier.",
+    "register": "Als Wartungspersonal registrieren",
+    "sign_in": "Anmelden",
+    "pick_title": "Leistung wählen",
+    "pick_body": "Beginnen Sie noch heute mit dem Durchstöbern gelisteter Fachleute",
+    "browse": "Leistungen ansehen",
+    "headline": "Der Pulse der Immobilienwartung",
+    "disclaimer": "Wir nehmen keine Zahlung für den Auftrag entgegen und garantieren die Arbeit nicht.",
+    "launch_chip_prefix": "Demo-Start: Koh Phangan, Thailand – Kontakt ",
+    "launch_chip_suffix": " bei Fragen"
   }
 }

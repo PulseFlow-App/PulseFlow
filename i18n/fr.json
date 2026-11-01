@@ -21,7 +21,8 @@
     "privacy": "Confidentialité",
     "support": "Assistance",
     "app": "Application",
-    "version": "v{version} · {date}"
+    "version": "v{version} · {date}",
+    "operations_app": "Pulseflow Operations App"
   },
   "common": {
     "screenshot_soon": "Capture d'écran à venir",
@@ -599,5 +600,23 @@
     "channels_li3": "Les liens d'export calendrier privés (.ics) Airbnb, Booking.com ou Guesty que vous collez sont traités comme des secrets. Nous les utilisons uniquement pour récupérer l'occupation de votre espace. Ils ne sont ni vendus, ni partagés avec des annonceurs, ni exposés à d'autres entreprises. Seules les personnes de votre entreprise au bon rôle peuvent gérer ces liens dans l'app.",
     "channels_li4": "L'occupation et les faits d'annonce importés de ces flux restent dans votre espace sous les mêmes règles de rôle que les autres données d'ops.",
     "channels_li5": "Vous pouvez déconnecter Guesty ou retirer un lien calendrier à tout moment. Nous cessons alors d'utiliser ces identifiants pour de nouvelles synchronisations."
+  },
+  "services": {
+    "meta_title": "Pulse Flow Services · entretien local des biens",
+    "meta_description": "Des professionnels locaux selon vos besoins. Parcourez les services ou inscrivez-vous comme personnel d’entretien. Pulse Flow n’encaisse pas le paiement du travail.",
+    "title": "Pulse Flow Services",
+    "lead": "Des professionnels locaux selon vos besoins. Choisissez une catégorie, basez-vous sur le score de la source, ou demandez l’aide de l’agent IA et fixez le rendez-vous.",
+    "orders": "Trois demandes sont gratuites. La suivante s’ouvre après l’avis sur le travail terminé. Ensuite, restez sur le plan gratuit si vous n’avez besoin d’un service qu’une fois par mois, ou activez Premium et Pro dans les réglages.",
+    "staff_title": "Personnel d’entretien",
+    "staff_body": "Inscrivez-vous ou connectez-vous comme personnel d’entretien sur Pulse Flow Services. L’inscription s’ouvre avec la carte Personnel d’entretien déjà choisie. Le QR de l’entreprise reste dans l’application d’exploitation, pas ici.",
+    "register": "S’inscrire comme personnel d’entretien",
+    "sign_in": "Se connecter",
+    "pick_title": "Choisir un service",
+    "pick_body": "Commencez à parcourir les professionnels listés dès aujourd’hui",
+    "browse": "Voir les services",
+    "headline": "Le pulse de l’entretien des biens",
+    "disclaimer": "Nous ne prenons pas le paiement du travail, et nous ne garantissons pas le résultat.",
+    "launch_chip_prefix": "Lancement démo : Koh Phangan, Thaïlande — contactez ",
+    "launch_chip_suffix": " pour vos questions"
   }
 }

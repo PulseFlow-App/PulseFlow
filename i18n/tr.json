@@ -21,7 +21,8 @@
     "privacy": "Gizlilik",
     "support": "Destek",
     "app": "Uygulama",
-    "version": "v{version} · {date}"
+    "version": "v{version} · {date}",
+    "operations_app": "Pulseflow Operations App"
   },
   "common": {
     "screenshot_soon": "Ekran görüntüsü yakında",
@@ -599,5 +600,23 @@
     "channels_li3": "Yapıştırdığınız Airbnb, Booking.com veya Guesty özel takvim dışa aktarma (.ics) bağlantıları gizlidir. Bunları yalnızca mülk çalışma alanınızın doluluk bilgisini almak için kullanırız. Satılmaz, reklamverenlerle paylaşılmaz ve diğer şirketlere açılmaz. Uygulamada bu bağlantıları yalnızca şirketinizde doğru role sahip kişiler yönetebilir.",
     "channels_li4": "Bu feed'lerden içe aktarılan doluluk ve ilan bilgileri, diğer operasyon verileriyle aynı rol kuralları altında çalışma alanınızda kalır.",
     "channels_li5": "İstediğiniz zaman Guesty bağlantısını kesebilir veya bir takvim bağlantısını kaldırabilirsiniz. Bundan sonra bu kimlik bilgilerini yeni senkronlar için kullanmayı bırakırız."
+  },
+  "services": {
+    "meta_title": "Pulse Flow Services · yerel mülk bakımı",
+    "meta_description": "İhtiyaçlarınıza göre yerel uzmanlar. Hizmetlere bakın veya bakım personeli olarak kaydolun. Pulse Flow iş ödemesini almaz.",
+    "title": "Pulse Flow Services",
+    "lead": "İhtiyaçlarınıza göre yerel uzmanlar. Kategori seçin, kaynağın puanına göre karar verin veya AI ajanından yardım isteyip randevuyu ayarlayın.",
+    "orders": "Üç sipariş ücretsizdir. Sonraki sipariş, biten işin değerlendirmesinden sonra açılır. Bundan sonra ayda yalnızca bir hizmet gerekiyorsa ücretsiz planda kalın ya da Ayarlar’dan Premium ve Pro’yu açın.",
+    "staff_title": "Bakım personeli",
+    "staff_body": "Pulse Flow Services’te bakım personeli olarak kaydolun veya girin. Kayıt, Bakım personeli kartı seçili olarak açılır. Şirket QR katılımı operasyon uygulamasında kalır, burada değil.",
+    "register": "Bakım personeli olarak kaydol",
+    "sign_in": "Giriş yap",
+    "pick_title": "Hizmet seç",
+    "pick_body": "Listelenen uzmanlara bugün göz atmaya başlayın",
+    "browse": "Hizmetlere bak",
+    "headline": "Mülk bakımının pulse’u",
+    "disclaimer": "İş ödemesini almıyoruz ve işi garanti etmiyoruz.",
+    "launch_chip_prefix": "Demo açılışı: Koh Phangan, Tayland — iletişim ",
+    "launch_chip_suffix": " için"
   }
 }

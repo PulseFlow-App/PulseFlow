@@ -21,7 +21,8 @@
     "privacy": "Privacidad",
     "support": "Asistencia",
     "app": "Aplicación",
-    "version": "v{version} · {date}"
+    "version": "v{version} · {date}",
+    "operations_app": "Pulseflow Operations App"
   },
   "common": {
     "screenshot_soon": "Captura de pantalla en breve",
@@ -599,5 +600,23 @@
     "channels_li3": "Los enlaces privados de exportación de calendario (.ics) de Airbnb, Booking.com o Guesty que pegue se tratan como secretos. Solo los usamos para obtener la ocupación de su espacio de propiedad. No se venden, no se comparten con anunciantes y no se exponen a otras empresas. Solo personas de su empresa con el rol adecuado pueden gestionar esos enlaces en la app.",
     "channels_li4": "La ocupación y los datos de anuncio importados de esos feeds permanecen en su espacio bajo las mismas reglas de rol que otros datos de operaciones.",
     "channels_li5": "Puede desconectar Guesty o eliminar un enlace de calendario en cualquier momento. Entonces dejamos de usar esas credenciales para nuevas sincronizaciones."
+  },
+  "services": {
+    "meta_title": "Pulse Flow Services · mantenimiento local de propiedades",
+    "meta_description": "Profesionales locales según lo que necesita. Vea servicios o regístrese como personal de mantenimiento. Pulse Flow no cobra el pago del trabajo.",
+    "title": "Pulse Flow Services",
+    "lead": "Profesionales locales según lo que necesita. Elija una categoría, elija por la puntuación de la fuente, o pida ayuda al agente de IA y fije la cita.",
+    "orders": "Tres pedidos son gratis. El siguiente se abre después de la reseña del trabajo terminado. Después, quédate en el plan gratis si necesitas un servicio solo una vez al mes, o activa Premium y Pro en Ajustes.",
+    "staff_title": "Personal de mantenimiento",
+    "staff_body": "Regístrese o entre como personal de mantenimiento en Pulse Flow Services. El registro se abre con la tarjeta de personal de mantenimiento ya elegida. El QR de la empresa se queda en la app de operaciones, no aquí.",
+    "register": "Registrarse como personal de mantenimiento",
+    "sign_in": "Entrar",
+    "pick_title": "Elegir un servicio",
+    "pick_body": "Empiece hoy a explorar profesionales listados",
+    "browse": "Ver servicios",
+    "headline": "El pulse del mantenimiento de propiedades",
+    "disclaimer": "No cobramos el pago del trabajo y no garantizamos el resultado.",
+    "launch_chip_prefix": "Lanzamiento demo: Koh Phangan, Tailandia — contacte ",
+    "launch_chip_suffix": " para consultas"
   }
 }

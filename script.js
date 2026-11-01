@@ -123,9 +123,9 @@ const dictCache = Object.create(null);
 let currentLocale = "en";
 let currentDict = null;
 let demoApplyFns = [];
-const I18N_VERSION = "44";
-/** Manual release stamp — bump version.json when asked, not every push. */
-const SITE_VERSION_CACHE_BUST = "2";
+const I18N_VERSION = "52";
+/** Release stamp — bump version.json (+ this cache bust) when you push a site release. */
+const SITE_VERSION_CACHE_BUST = "3";
 
 /** Plausible custom events (S5). No-ops until the domain is added in Plausible. */
 function track(name, props) {
@@ -288,7 +288,7 @@ function withAppLocale(href, locale) {
   const next = LOCALES.includes(locale) ? locale : currentLocale || "en";
   try {
     const url = new URL(href, window.location.origin);
-    if (url.hostname !== "app.pulseflow.site") return href;
+    if (url.hostname !== "app.pulseflow.site" && url.hostname !== "services.pulseflow.site") return href;
     url.searchParams.set("lang", next);
     return url.toString();
   } catch (_) {
@@ -298,7 +298,7 @@ function withAppLocale(href, locale) {
 
 function syncAppLocaleLinks(locale) {
   const next = LOCALES.includes(locale) ? locale : currentLocale || "en";
-  document.querySelectorAll('a[href*="app.pulseflow.site"]').forEach((a) => {
+  document.querySelectorAll('a[href*="app.pulseflow.site"], a[href*="services.pulseflow.site"]').forEach((a) => {
     const href = a.getAttribute("href");
     if (!href) return;
     a.setAttribute("href", withAppLocale(href, next));
