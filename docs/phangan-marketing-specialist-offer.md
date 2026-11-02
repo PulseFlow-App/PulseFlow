@@ -95,7 +95,7 @@ Use this only for real operators who register and engage (not tire-kickers). Fra
 
 > Founding partners in Thailand — free Company forever, seats for managers / staff / guests stay free. You help us prove the product here first; we lock in your plan for good.
 
-After those 10, normal pricing applies when billing is live: **Company USD 15 / month** (10 seats included, then USD 2 / seat), plus optional **Pro +USD 9 / month** for Connect your agent. Only the owner pays. Personal (1–2 properties, DIY) stays free forever for everyone.
+After those 10, normal pricing applies when billing is live: **Company USD 15 / month** (10 seats included, then USD 2 / seat), plus optional **Pro USD 24 / month** for Connect your agent. Only the owner pays. Personal (1–2 properties, DIY) stays free forever for everyone.
 
 **Demo / trial today:** billing is not switched on yet — every registered account already gets a free period of full access. The “10 free forever” is the **extra** founding lock-in for the first ten serious Phangan companies.
 

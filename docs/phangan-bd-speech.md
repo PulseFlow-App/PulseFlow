@@ -46,7 +46,7 @@ Languages and currency travel with the team: you write in English or Hebrew, the
 
 **If they ask about the AI agent**
 
-Connect your agent is part of Pro (+USD 9 / month on Personal or Company; Company itself is USD 15 / month when billing is live). For the founding ten companies on Phangan, this layer is included free for now.
+Connect your agent is part of Pro (USD 24 / month on Personal or Company; Company itself is USD 15 / month when billing is live). For the founding ten companies on Phangan, this layer is included free for now.
 
 In-app agent chat is only the first step. Connect your agent is a personal key from Settings that plugs Pulse into an AI client you already use (for example Cursor, Claude Desktop, or another MCP-capable agent). The agent works in your live workspace through tools: properties, team, tasks, jobs, bills. It never gets the database key. You can disconnect anytime.
 
@@ -101,5 +101,5 @@ Adjust to who is across the table. Keep the five parts in order.
 **Product truth checks**
 
 - Team seats: Company includes **10** seats, then USD 2 / seat / month. The founding **ten** is founding **companies**, not team size.  
-- Pro agent: +USD 9 / month on Personal or Company when billing is live; founding ten include it free for now.  
+- Pro agent: USD 24 / month on Personal or Company when billing is live; founding ten include it free for now.  
 - Calendar: jobs out to Google/Apple; stay nights in via `.ics` export URLs from channels.

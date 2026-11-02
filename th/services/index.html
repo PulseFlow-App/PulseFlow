@@ -209,6 +209,7 @@
 
 
 
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/th/services" />
     <meta
@@ -223,7 +224,7 @@
     />
     <meta
       property="og:image"
-      content="https://www.pulseflow.site/assets/services-og.jpg?v=3"
+      content="https://www.pulseflow.site/assets/services-og.jpg?v=4"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -235,7 +236,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
-      content="https://www.pulseflow.site/assets/services-og.jpg?v=3"
+      content="https://www.pulseflow.site/assets/services-og.jpg?v=4"
     />
     <meta
       name="twitter:image:alt"
@@ -249,7 +250,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=162" />
+    <link rel="stylesheet" href="/styles.css?v=163" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -309,14 +310,18 @@
         <section class="pf-hero pf-services-hero" id="hero">
           <div class="pf-hero-copy">
             <h1 class="pf-headline" data-i18n="services.headline">จังหวะของบริการในพื้นที่</h1>
-            <p class="pf-sub" data-i18n="services.lead">ช่างประปา ช่างไฟ แม่บ้าน และอื่นๆ เป็นภาษาอังกฤษ ไทย รัสเซีย และฮีบรู เลือกหมวด หรืออธิบายปัญหา แล้วผู้ช่วยของเราจะช่วยจองให้</p>
+            <p class="pf-sub" data-i18n="services.lead">หาช่างประปา ช่างไฟ แม่บ้าน หรือช่างใกล้คุณ — ในภาษาของคุณ หรือลงทะเบียนฝีมือของคุณให้เพื่อนบ้านจองได้</p>
+            <div class="pf-hero-actions">
+              <a class="pf-btn-primary" href="https://services.pulseflow.site/?lang=en" data-i18n="services.seeker_cta">หาช่าง</a>
+              <a class="pf-btn-outline" href="#for-pros" data-i18n="services.provider_jump">ฉันให้บริการ</a>
+            </div>
             <p class="pf-launch-chip">
               <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/></svg>
               <span>
                 <span data-i18n="services.launch_chip_prefix">เปิดเดโม: เกาะพะงัน ประเทศไทย - ติดต่อ </span><a href="mailto:services@pulseflow.site">services@pulseflow.site</a><span data-i18n="services.launch_chip_suffix"> สำหรับสอบถาม</span>
               </span>
             </p>
-</div>
+          </div>
           <div class="pf-hero-visual" aria-hidden="true">
             <figure class="pf-hero-shot">
               <div class="pf-hero-status">
@@ -335,6 +340,26 @@
                 loading="eager"
               />
             </figure>
+          </div>
+        </section>
+
+        <section class="pf-services-paths" id="paths" aria-labelledby="services-paths">
+          <h2 id="services-paths" class="pf-services-paths-title" data-i18n="services.paths_title">สองทางเข้า</h2>
+          <div class="pf-services-paths-grid">
+            <a class="pf-services-path" href="https://services.pulseflow.site/?lang=en" id="for-seekers">
+              <h3 data-i18n="services.seeker_title">มีอะไรต้องซ่อม?</h3>
+              <p data-i18n="services.seeker_body">ดูช่างในพื้นที่ เปรียบเทียบ แล้วติดต่อโดยตรง</p>
+              <span class="pf-services-path-cta" data-i18n="services.seeker_cta">หาช่าง</span>
+            </a>
+            <a
+              class="pf-services-path pf-services-path-pro"
+              href="https://services.pulseflow.site/register?as=pro&amp;lang=en"
+              id="for-pros"
+            >
+              <h3 data-i18n="services.provider_title">เสนอบริการของคุณ</h3>
+              <p data-i18n="services.provider_body">ทีมซ่อมบำรุงและช่างฝีมือ: สร้างโปรไฟล์ฟรีให้คนใกล้เคียงหาคุณเจอ</p>
+              <span class="pf-services-path-cta" data-i18n="services.provider_cta">สร้างโปรไฟล์</span>
+            </a>
           </div>
         </section>
 
@@ -358,18 +383,21 @@
           <p class="pf-services-note" data-i18n="services.free_pros">สร้างโปรไฟล์ฟรีสำหรับช่าง</p>
         </section>
 
-        <section class="pf-services-block" aria-labelledby="services-pick">
-          <h2 id="services-pick" data-i18n="services.pick_title">ต้องการให้ซ่อมอะไรไหม?</h2>
-          <p data-i18n="services.pick_body">หาช่างในพื้นที่ใกล้คุณ</p>
-          <a class="pf-btn-primary" href="https://services.pulseflow.site/" data-i18n="services.browse">หาช่าง</a>
-        </section>
-
-        <section class="pf-services-block" aria-labelledby="services-staff">
-          <h2 id="services-staff" data-i18n="services.staff_title">คุณเป็นช่างประปา ช่างไฟ แม่บ้าน หรือช่างเทคนิคหรือไม่?</h2>
-          <p data-i18n="services.staff_body">สร้างโปรไฟล์ฟรี เพื่อให้คนแถวบ้านหาคุณเจอ ใช้เวลาไม่กี่นาที</p>
-          <div class="pf-hero-actions">
-            <a class="pf-btn-primary" href="https://services.pulseflow.site/register?track=maintenance&amp;lang=en" data-i18n="services.register">สร้างโปรไฟล์ของฉัน</a>
-            <a class="pf-btn-outline" href="https://services.pulseflow.site/login?lang=en" data-i18n="services.sign_in">เข้าสู่ระบบ</a>
+                <section class="pf-plan pf-fade" id="plans" aria-labelledby="services-plans">
+          <div class="pf-plan-card pf-plan-card-static">
+            <h2 id="services-plans" class="pf-plan-title" data-i18n="services.plans_title">แผน</h2>
+            <ul class="pf-plan-options">
+              <li>
+                <strong data-i18n="services.plan_trial_label">ทดลองใช้</strong>
+                <span data-i18n="services.plan_trial_desc">3 คำสั่งฟรี แต่ละครั้งตามด้วยรีวิว แล้วได้ 1 คำสั่งฟรีต่อเดือน</span>
+              </li>
+              <li class="is-company">
+                <strong data-i18n="services.plan_premium_label">แผน</strong>
+                <span data-i18n="services.plan_premium_desc">9 ดอลลาร์ต่อเดือน รวมการสั่งมากกว่าหนึ่งครั้งต่อเดือน และผู้ช่วย AI</span>
+              </li>
+            </ul>
+            <p class="pf-plan-note" data-i18n="services.plan_note">ยังไม่เก็บเงิน</p>
+            <a class="pf-btn-primary pf-plan-start" href="https://services.pulseflow.site/?lang=en" data-i18n="services.seeker_cta">หาช่าง</a>
           </div>
         </section>
 
@@ -389,6 +417,6 @@
       </footer>
     </div>
 
-    <script src="/script.js?v=162" defer></script>
+    <script src="/script.js?v=163" defer></script>
   </body>
 </html>

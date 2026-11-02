@@ -30,7 +30,7 @@ We are raising a **small launch cheque** to fund go-to-market and distribution, 
 | **First marketing & BD** | Local specialist project: BD strategy, warm outreach, 1:1 meetings, first founding companies (Phangan / Thailand) |
 | **Outreach + paid promotions (after)** | Broader outreach once the first cohort is live; paid campaigns (Meta / Google / local channels) to scale what already converts |
 | **SMM (Instagram)** | Ongoing social presence after the first BD window: content, community, and brand for owners and managers |
-| **Apple Developer Program** | Annual Apple Developer fee (~**USD 99 / year**), required to publish on the App Store when budget allows |
+| **Apple Developer Program** | Annual Apple Developer fee (~**USD 249 / year**), required to publish on the App Store when budget allows |
 | **Google Play developer** | One-time Google Play registration (~**USD 25**), required to publish on Play when budget allows |
 
 **Indicative raise:** **USD 5,000 to 8,000** (or equivalent in THB / stablecoins).
@@ -56,11 +56,11 @@ Exact allocation will follow a short budget we share with you before funds move.
 | --- | --- | --- |
 | **Personal** | n/a | Free forever (1 to 2 properties, DIY) |
 | **Company** | Owner only | **USD 15 / mo**; 10 team seats included, then **USD 2 / seat / mo** (guests do not count) |
-| **Pro** | Owner (add-on) | Connect your agent: **+USD 9 / mo** on Personal or Company |
+| **Pro** | Owner (add-on) | Connect your agent: **USD 24 / mo** on Personal or Company |
 
 Billing is being prepared. Until checkout is live, early accounts receive a free access period. Founding Phangan / Thailand companies can be offered **Company free forever** for the first ten: a land-grab, not the long-term unit economics. **Investor payback is modelled on paying Company (+ optional Pro) subscriptions after that founding tranche and after billing is on.**
 
-**Working assumption for payback math** (list prices: Company USD 15 / mo, Pro +USD 9): average paying Company owner **USD 15 to 24 / month** software subscription, with a share also taking Pro. For conservative planning below we use **USD 20 / month blended ARPU** (Company + some Pro) per paying Company (mix of Company-only and Company+Pro).
+**Working assumption for payback math** (list prices: Company USD 15 / mo, Pro USD 24): average paying Company owner **USD 15 to 24 / month** software subscription, with a share also taking Pro. For conservative planning below we use **USD 20 / month blended ARPU** (Company + some Pro) per paying Company (mix of Company-only and Company+Pro).
 
 ---
 
@@ -119,6 +119,6 @@ support@pulseflow.site · [www.pulseflow.site](https://www.pulseflow.site)
 | **Product** | The pulse of your rental operations: ops after booking |
 | **Ask** | ~USD 5,000 to 8,000 |
 | **For** | First BD · later paid outreach · SMM · Apple + Google developer fees |
-| **Revenue** | Company USD 15 (10 seats, then +USD 2/seat) + Pro +USD 9; Personal free |
+| **Revenue** | Company USD 15 (10 seats, then +USD 2/seat) + Pro USD 24; Personal free |
 | **Payback sketch** | ~30 paying Cos × ~USD 20 ARPU ≈ raise back in ~6 months of subs |
 | **Now** | Web live · Phangan launch · competitor in ~2 months |

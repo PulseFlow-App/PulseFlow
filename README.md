@@ -33,7 +33,7 @@ Nobody configures permissions by hand. The role is the screen.
 
 - **Personal** — free forever for one or two properties you run yourself
 - **Company** — USD 15 / month; 10 team seats included, then USD 2 / seat / month (stay guests do not count)
-- **Pro** — adds USD 9 / month on Personal or Company for Connect your agent (when billing is live)
+- **Pro** — adds USD 24 / month on Personal or Company for Connect your agent (when billing is live)
 
 Billing is not live yet. Every new account gets 3 months of full access, including Pro, from signup.
 

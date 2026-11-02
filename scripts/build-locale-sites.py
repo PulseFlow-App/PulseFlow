@@ -426,7 +426,7 @@ def set_canonical_og(html: str, locale: str, slug: str) -> str:
     )
     # Prefer locale OG art when present (en/ru); services uses its own card.
     if slug == "services" and (ROOT / "assets" / "services-og.jpg").exists():
-        og_url = "https://www.pulseflow.site/assets/services-og.jpg?v=3"
+        og_url = "https://www.pulseflow.site/assets/services-og.jpg?v=4"
         html = re.sub(
             r'(property="og:image"\s+content=")https://www\.pulseflow\.site/assets/[^"]*(")',
             rf"\1{og_url}\2",

@@ -116,7 +116,7 @@ Owner sees **Done** without chasing the chat.
 | --- | --- | --- |
 | **Personal** | Free forever | 1–2 properties, DIY |
 | **Company** | Owner only | **USD 15 / mo**; **10 seats** included, then **USD 2 / seat / mo**; stay guests do not count |
-| **Pro** (add-on) | Owner | Connect your agent: **+USD 9 / mo** on Personal or Company when billing is live |
+| **Pro** (add-on) | Owner | Connect your agent: **USD 24 / mo** on Personal or Company when billing is live |
 
 **Billing status:** not switched on yet. Every registered account gets **3 months of full access** (including Pro / Connect your agent) from signup.
 
@@ -135,7 +135,7 @@ Owner sees **Done** without chasing the chat.
 | Cleaners won’t use another app | Link in browser, no App Store, only their jobs, own language, one-tap confirm. If they can read WhatsApp, they can use this. |
 | Manager already has a system | Not replacing chat; adding confirmed status, cost on property, history that doesn’t leave with a phone. |
 | We use Airbnb / Booking | Bookings stay there. Pulse Flow is **after** the booking. No direct Airbnb/Booking sync today; Google Calendar import planned. |
-| What does it cost? | Personal free. Company $15 / mo (10 seats, then $2 / seat). Pro +$9 / mo. Billing not live → 3 months full access now. |
+| What does it cost? | Personal free. Company $15 / mo (10 seats, then $2 / seat). Pro $24 / mo. Billing not live → 3 months full access now. |
 | Guests too complicated? | Invite link; rules + deposit balance; no guest App Store account required for the stay tools. |
 | Will you take our payments? | No. Software only. |
 
@@ -221,9 +221,9 @@ Scoped to the company workspace; disconnect anytime. Staff and guests do not get
 
 If asked something unknown: say you will check with the Pulse Flow team. Do not guess.
 
-Unknown until confirmed: App Store ETA; number of live customers. Public list prices when billing is live: Company USD 15 / mo (+ seats as above); Pro +USD 9 / mo.
+Unknown until confirmed: App Store ETA; number of live customers. Public list prices when billing is live: Company USD 15 / mo (+ seats as above); Pro USD 24 / mo.
 
-Unknown until confirmed: App Store ETA; number of live customers; competitor name details. Public list prices when billing is live: Company USD 15 / mo (+ seats as above); Pro +USD 9 / mo.
+Unknown until confirmed: App Store ETA; number of live customers; competitor name details. Public list prices when billing is live: Company USD 15 / mo (+ seats as above); Pro USD 24 / mo.
 
 ---
 

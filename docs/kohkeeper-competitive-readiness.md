@@ -13,7 +13,7 @@
 
 | | Keepio | Pulse Flow |
 | --- | --- | --- |
-| Business | Commission on rental revenue (~**15%** care / ~**20%** full listing+guest) | Software: Company **USD 15 / mo** + optional Pro **+USD 9** |
+| Business | Commission on rental revenue (~**15%** care / ~**20%** full listing+guest) | Software: Company **USD 15 / mo** + optional Pro **USD 24** |
 | Pitch | “System · technology · precision · no chaos · no random staff” | Your team, confirmed jobs, money trail, languages |
 | Owner gets | Monthly financial statement + receipts; agency runs the day | Same-day status in-app; **owner keeps the team and the data** |
 | Scope | Private villas **and** communal / village after handover | Company workspace for owners, managers, staff, guests |

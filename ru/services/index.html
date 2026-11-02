@@ -209,6 +209,7 @@
 
 
 
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/ru/services" />
     <meta
@@ -223,7 +224,7 @@
     />
     <meta
       property="og:image"
-      content="https://www.pulseflow.site/assets/services-og.jpg?v=3"
+      content="https://www.pulseflow.site/assets/services-og.jpg?v=4"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -235,7 +236,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
-      content="https://www.pulseflow.site/assets/services-og.jpg?v=3"
+      content="https://www.pulseflow.site/assets/services-og.jpg?v=4"
     />
     <meta
       name="twitter:image:alt"
@@ -249,7 +250,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=162" />
+    <link rel="stylesheet" href="/styles.css?v=163" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -309,14 +310,18 @@
         <section class="pf-hero pf-services-hero" id="hero">
           <div class="pf-hero-copy">
             <h1 class="pf-headline" data-i18n="services.headline">Пульс местных услуг</h1>
-            <p class="pf-sub" data-i18n="services.lead">Сантехники, электрики, клининг и другие специалисты — на английском, тайском, русском и иврите. Выберите категорию или опишите проблему — ассистент поможет записаться.</p>
+            <p class="pf-sub" data-i18n="services.lead">Найдите местного сантехника, электрика, клининг или мастера — на своём языке. Или разместите свою услугу, чтобы соседи могли заказать вас.</p>
+            <div class="pf-hero-actions">
+              <a class="pf-btn-primary" href="https://services.pulseflow.site/?lang=en" data-i18n="services.seeker_cta">Найти мастера</a>
+              <a class="pf-btn-outline" href="#for-pros" data-i18n="services.provider_jump">Я оказываю услуги</a>
+            </div>
             <p class="pf-launch-chip">
               <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/></svg>
               <span>
                 <span data-i18n="services.launch_chip_prefix">Демо запуск: Ко Панган, Таиланд — пишите на </span><a href="mailto:services@pulseflow.site">services@pulseflow.site</a><span data-i18n="services.launch_chip_suffix"> по вопросам</span>
               </span>
             </p>
-</div>
+          </div>
           <div class="pf-hero-visual" aria-hidden="true">
             <figure class="pf-hero-shot">
               <div class="pf-hero-status">
@@ -335,6 +340,26 @@
                 loading="eager"
               />
             </figure>
+          </div>
+        </section>
+
+        <section class="pf-services-paths" id="paths" aria-labelledby="services-paths">
+          <h2 id="services-paths" class="pf-services-paths-title" data-i18n="services.paths_title">Два входа</h2>
+          <div class="pf-services-paths-grid">
+            <a class="pf-services-path" href="https://services.pulseflow.site/?lang=en" id="for-seekers">
+              <h3 data-i18n="services.seeker_title">Что-то сломалось?</h3>
+              <p data-i18n="services.seeker_body">Смотрите местных мастеров, сравнивайте и пишите им напрямую.</p>
+              <span class="pf-services-path-cta" data-i18n="services.seeker_cta">Найти мастера</span>
+            </a>
+            <a
+              class="pf-services-path pf-services-path-pro"
+              href="https://services.pulseflow.site/register?as=pro&amp;lang=en"
+              id="for-pros"
+            >
+              <h3 data-i18n="services.provider_title">Предложите свои услуги</h3>
+              <p data-i18n="services.provider_body">Техники и специалисты: создайте бесплатный профиль, чтобы вас находили рядом.</p>
+              <span class="pf-services-path-cta" data-i18n="services.provider_cta">Создать профиль</span>
+            </a>
           </div>
         </section>
 
@@ -358,18 +383,21 @@
           <p class="pf-services-note" data-i18n="services.free_pros">Создать профиль для специалистов бесплатно.</p>
         </section>
 
-        <section class="pf-services-block" aria-labelledby="services-pick">
-          <h2 id="services-pick" data-i18n="services.pick_title">Нужно что-то починить?</h2>
-          <p data-i18n="services.pick_body">Найдите местного специалиста рядом с вами</p>
-          <a class="pf-btn-primary" href="https://services.pulseflow.site/" data-i18n="services.browse">Найти специалиста</a>
-        </section>
-
-        <section class="pf-services-block" aria-labelledby="services-staff">
-          <h2 id="services-staff" data-i18n="services.staff_title">Вы сантехник, электрик, клинер или мастер?</h2>
-          <p data-i18n="services.staff_body">Создайте бесплатный профиль, чтобы вас находили рядом. Это займёт несколько минут.</p>
-          <div class="pf-hero-actions">
-            <a class="pf-btn-primary" href="https://services.pulseflow.site/register?track=maintenance&amp;lang=en" data-i18n="services.register">Создать профиль</a>
-            <a class="pf-btn-outline" href="https://services.pulseflow.site/login?lang=en" data-i18n="services.sign_in">Войти</a>
+                <section class="pf-plan pf-fade" id="plans" aria-labelledby="services-plans">
+          <div class="pf-plan-card pf-plan-card-static">
+            <h2 id="services-plans" class="pf-plan-title" data-i18n="services.plans_title">Планы</h2>
+            <ul class="pf-plan-options">
+              <li>
+                <strong data-i18n="services.plan_trial_label">Пробный период</strong>
+                <span data-i18n="services.plan_trial_desc">3 бесплатных заказа, каждый с отзывом, затем 1 бесплатный заказ в месяц.</span>
+              </li>
+              <li class="is-company">
+                <strong data-i18n="services.plan_premium_label">План</strong>
+                <span data-i18n="services.plan_premium_desc">9 USD в месяц. Больше одного заказа в месяц и ИИ-помощник.</span>
+              </li>
+            </ul>
+            <p class="pf-plan-note" data-i18n="services.plan_note">Оплату пока не берём.</p>
+            <a class="pf-btn-primary pf-plan-start" href="https://services.pulseflow.site/?lang=en" data-i18n="services.seeker_cta">Найти мастера</a>
           </div>
         </section>
 
@@ -389,6 +417,6 @@
       </footer>
     </div>
 
-    <script src="/script.js?v=162" defer></script>
+    <script src="/script.js?v=163" defer></script>
   </body>
 </html>

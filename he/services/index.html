@@ -209,6 +209,7 @@
 
 
 
+
     <meta property="og:site_name" content="Pulse Flow" />
     <meta property="og:url" content="https://www.pulseflow.site/he/services" />
     <meta
@@ -223,7 +224,7 @@
     />
     <meta
       property="og:image"
-      content="https://www.pulseflow.site/assets/services-og.jpg?v=3"
+      content="https://www.pulseflow.site/assets/services-og.jpg?v=4"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -235,7 +236,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
-      content="https://www.pulseflow.site/assets/services-og.jpg?v=3"
+      content="https://www.pulseflow.site/assets/services-og.jpg?v=4"
     />
     <meta
       name="twitter:image:alt"
@@ -249,7 +250,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=162" />
+    <link rel="stylesheet" href="/styles.css?v=163" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -309,14 +310,18 @@
         <section class="pf-hero pf-services-hero" id="hero">
           <div class="pf-hero-copy">
             <h1 class="pf-headline" data-i18n="services.headline">הדופק של שירותים מקומיים</h1>
-            <p class="pf-sub" data-i18n="services.lead">אינסטלטורים, חשמלאים, צוותי ניקיון ועוד — באנגלית, תאית, רוסית ועברית. בחרו קטגוריה, או תארו את הבעיה והעוזר שלנו יעזור לכם לקבוע תור.</p>
+            <p class="pf-sub" data-i18n="services.lead">מצאו אינסטלטור, חשמלאי, ניקיון או טכנאי מקומי — בשפה שלכם. או רשמו את המקצוע שלכם כדי שהשכנים יוכלו להזמין אתכם.</p>
+            <div class="pf-hero-actions">
+              <a class="pf-btn-primary" href="https://services.pulseflow.site/?lang=en" data-i18n="services.seeker_cta">מצאו בעל מקצוע</a>
+              <a class="pf-btn-outline" href="#for-pros" data-i18n="services.provider_jump">אני נותן שירות</a>
+            </div>
             <p class="pf-launch-chip">
               <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/></svg>
               <span>
                 <span data-i18n="services.launch_chip_prefix">השקת דמו: קו פנגן, תאילנד — צרו קשר </span><a href="mailto:services@pulseflow.site">services@pulseflow.site</a><span data-i18n="services.launch_chip_suffix"> לשאלות</span>
               </span>
             </p>
-</div>
+          </div>
           <div class="pf-hero-visual" aria-hidden="true">
             <figure class="pf-hero-shot">
               <div class="pf-hero-status">
@@ -335,6 +340,26 @@
                 loading="eager"
               />
             </figure>
+          </div>
+        </section>
+
+        <section class="pf-services-paths" id="paths" aria-labelledby="services-paths">
+          <h2 id="services-paths" class="pf-services-paths-title" data-i18n="services.paths_title">שתי כניסות</h2>
+          <div class="pf-services-paths-grid">
+            <a class="pf-services-path" href="https://services.pulseflow.site/?lang=en" id="for-seekers">
+              <h3 data-i18n="services.seeker_title">צריך לתקן משהו?</h3>
+              <p data-i18n="services.seeker_body">עיינו בבעלי מקצוע מקומיים, השוו ופנו אליהם ישירות.</p>
+              <span class="pf-services-path-cta" data-i18n="services.seeker_cta">מצאו בעל מקצוע</span>
+            </a>
+            <a
+              class="pf-services-path pf-services-path-pro"
+              href="https://services.pulseflow.site/register?as=pro&amp;lang=en"
+              id="for-pros"
+            >
+              <h3 data-i18n="services.provider_title">הציעו את השירותים שלכם</h3>
+              <p data-i18n="services.provider_body">צוותי תחזוקה ובעלי מקצוע: צרו כרטיס חינם כדי שאנשים באזור ימצאו אתכם.</p>
+              <span class="pf-services-path-cta" data-i18n="services.provider_cta">צרו פרופיל</span>
+            </a>
           </div>
         </section>
 
@@ -358,18 +383,21 @@
           <p class="pf-services-note" data-i18n="services.free_pros">יצירת פרופיל בחינם לאנשי מקצוע.</p>
         </section>
 
-        <section class="pf-services-block" aria-labelledby="services-pick">
-          <h2 id="services-pick" data-i18n="services.pick_title">צריך לתקן משהו?</h2>
-          <p data-i18n="services.pick_body">מצאו איש מקצוע מקומי לידכם</p>
-          <a class="pf-btn-primary" href="https://services.pulseflow.site/" data-i18n="services.browse">מצאו איש מקצוע</a>
-        </section>
-
-        <section class="pf-services-block" aria-labelledby="services-staff">
-          <h2 id="services-staff" data-i18n="services.staff_title">אתם אינסטלטורים, חשמלאים, צוות ניקיון או טכנאים?</h2>
-          <p data-i18n="services.staff_body">צרו פרופיל בחינם כדי שאנשים בסביבה ימצאו אתכם. זה לוקח כמה דקות.</p>
-          <div class="pf-hero-actions">
-            <a class="pf-btn-primary" href="https://services.pulseflow.site/register?track=maintenance&amp;lang=en" data-i18n="services.register">צרו לי פרופיל</a>
-            <a class="pf-btn-outline" href="https://services.pulseflow.site/login?lang=en" data-i18n="services.sign_in">התחברות</a>
+                <section class="pf-plan pf-fade" id="plans" aria-labelledby="services-plans">
+          <div class="pf-plan-card pf-plan-card-static">
+            <h2 id="services-plans" class="pf-plan-title" data-i18n="services.plans_title">מסלולים</h2>
+            <ul class="pf-plan-options">
+              <li>
+                <strong data-i18n="services.plan_trial_label">ניסיון</strong>
+                <span data-i18n="services.plan_trial_desc">3 הזמנות חינם, כל אחת עם ביקורת, ואז הזמנה חינם אחת בחודש.</span>
+              </li>
+              <li class="is-company">
+                <strong data-i18n="services.plan_premium_label">מסלול</strong>
+                <span data-i18n="services.plan_premium_desc">9 דולר לחודש. יותר מהזמנה אחת בחודש ועוזר הבינה המלאכותית.</span>
+              </li>
+            </ul>
+            <p class="pf-plan-note" data-i18n="services.plan_note">התשלום עדיין לא נגבה.</p>
+            <a class="pf-btn-primary pf-plan-start" href="https://services.pulseflow.site/?lang=en" data-i18n="services.seeker_cta">מצאו בעל מקצוע</a>
           </div>
         </section>
 
@@ -389,6 +417,6 @@
       </footer>
     </div>
 
-    <script src="/script.js?v=162" defer></script>
+    <script src="/script.js?v=163" defer></script>
   </body>
 </html>

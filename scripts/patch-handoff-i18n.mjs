@@ -33,7 +33,7 @@ const patches = {
     "home.plan_company_desc":
       "Sie haben einen Manager, eine Reinigungskraft oder Dienstleister. USD 15 / Monat für die Firma, 10 Sitze inklusive, danach USD 2 pro Extra-Sitz. Nur der Besitzer zahlt.",
     "home.faq_a4":
-      "Personal ist für immer kostenlos. Company kostet USD 15 / Monat und enthält 10 Team-Sitze; jeder Extra-Sitz kostet USD 2 / Monat. Pro addiert USD 9 / Monat auf Personal oder Company für Connect your agent. Die Abrechnung ist noch nicht live, daher erhält jedes Konto ab Anmeldung 3 Monate vollen Zugang inklusive Pro.",
+      "Personal ist für immer kostenlos. Company kostet USD 15 / Monat und enthält 10 Team-Sitze; jeder Extra-Sitz kostet USD 2 / Monat. Pro addiert USD 24 / Monat auf Personal oder Company für Connect your agent. Die Abrechnung ist noch nicht live, daher erhält jedes Konto ab Anmeldung 3 Monate vollen Zugang inklusive Pro.",
     "home.faq_a9":
       "Ja. Personal ist für immer kostenlos für Objekte auf Ihrer eigenen Liste. Jobs, Ausgaben und Gäste funktionieren ohne Team. Wenn ein echter Besitzer dazukommt, laden Sie ihn ein, die Objekte in seine Firma zu übernehmen; Sie können Manager bleiben.",
     "home.faq_a10":
@@ -101,7 +101,7 @@ const patches = {
     "home.plan_company_desc":
       "Vous avez un manager, un agent d'entretien ou des prestataires. USD 15 / mois pour l'entreprise, 10 sièges inclus, puis USD 2 par siège supplémentaire. Seul le propriétaire paie.",
     "home.faq_a4":
-      "Personal est gratuit pour toujours. Company coûte USD 15 / mois et inclut 10 sièges d'équipe; chaque siège supplémentaire coûte USD 2 / mois. Pro ajoute USD 9 / mois sur Personal ou Company pour Connect your agent. La facturation n'est pas encore active, donc chaque compte a 3 mois d'accès complet, Pro inclus, dès l'inscription.",
+      "Personal est gratuit pour toujours. Company coûte USD 15 / mois et inclut 10 sièges d'équipe; chaque siège supplémentaire coûte USD 2 / mois. Pro ajoute USD 24 / mois sur Personal ou Company pour Connect your agent. La facturation n'est pas encore active, donc chaque compte a 3 mois d'accès complet, Pro inclus, dès l'inscription.",
     "home.faq_a9":
       "Oui. Personal est gratuit pour toujours pour les propriétés de votre liste. Travaux, dépenses et hôtes fonctionnent sans équipe. Quand un vrai propriétaire arrive, invitez-le à reprendre ces propriétés dans son entreprise; vous pouvez rester manager.",
     "home.faq_a10":
@@ -169,7 +169,7 @@ const patches = {
     "home.plan_company_desc":
       "Tienes un manager, una limpieza o proveedores. USD 15 / mes por la empresa, 10 asientos incluidos, luego USD 2 por asiento extra. Solo paga el dueño.",
     "home.faq_a4":
-      "Personal es gratis para siempre. Company cuesta USD 15 / mes e incluye 10 asientos de equipo; cada asiento extra cuesta USD 2 / mes. Pro suma USD 9 / mes en Personal o Company para Connect your agent. La facturación aún no está activa, así que cada cuenta tiene 3 meses de acceso completo, incluido Pro, desde el alta.",
+      "Personal es gratis para siempre. Company cuesta USD 15 / mes e incluye 10 asientos de equipo; cada asiento extra cuesta USD 2 / mes. Pro suma USD 24 / mes en Personal o Company para Connect your agent. La facturación aún no está activa, así que cada cuenta tiene 3 meses de acceso completo, incluido Pro, desde el alta.",
     "home.faq_a9":
       "Sí. Personal es gratis para siempre para propiedades en tu propia lista. Trabajos, gastos e invitados funcionan sin equipo. Cuando entra un dueño real, invítalo a llevar esas propiedades a su empresa; tú puedes seguir como manager.",
     "home.faq_a10":
@@ -237,7 +237,7 @@ const patches = {
     "home.plan_company_desc":
       "Hai un manager, un addetto alle pulizie o fornitori. USD 15 / mese per l'azienda, 10 posti inclusi, poi USD 2 per posto extra. Paga solo il proprietario.",
     "home.faq_a4":
-      "Personal è gratis per sempre. Company costa USD 15 / mese e include 10 posti team; ogni posto extra costa USD 2 / mese. Pro aggiunge USD 9 / mese su Personal o Company per Connect your agent. La fatturazione non è ancora attiva, quindi ogni account ha 3 mesi di accesso completo, Pro incluso, dal giorno dell'iscrizione.",
+      "Personal è gratis per sempre. Company costa USD 15 / mese e include 10 posti team; ogni posto extra costa USD 2 / mese. Pro aggiunge USD 24 / mese su Personal o Company per Connect your agent. La fatturazione non è ancora attiva, quindi ogni account ha 3 mesi di accesso completo, Pro incluso, dal giorno dell'iscrizione.",
     "home.faq_a9":
       "Sì. Personal è gratis per sempre per le proprietà sulla tua lista. Lavori, spese e ospiti funzionano senza team. Quando arriva un vero proprietario, invitalo a portare quelle proprietà nella sua azienda; tu puoi restare manager.",
     "home.faq_a10":
@@ -309,7 +309,7 @@ Object.assign(patches, {
     "home.plan_company_desc":
       "Bir yönetici, temizlikçi veya tedarikçileriniz var. Şirket için ayda USD 15, 10 koltuk dahil, sonra ekstra koltuk başına USD 2. Yalnızca sahip öder.",
     "home.faq_a4":
-      "Personal sonsuza kadar ücretsizdir. Company ayda USD 15 olup 10 ekip koltuğu içerir; her ekstra koltuk ayda USD 2. Pro, Connect your agent için Personal veya Company üzerine ayda USD 9 ekler. Faturalama henüz canlı değil, bu yüzden her hesap kayıttan itibaren Pro dahil 3 ay tam erişim alır.",
+      "Personal sonsuza kadar ücretsizdir. Company ayda USD 15 olup 10 ekip koltuğu içerir; her ekstra koltuk ayda USD 2. Pro, Connect your agent için Personal veya Company üzerine ayda USD 24 ekler. Faturalama henüz canlı değil, bu yüzden her hesap kayıttan itibaren Pro dahil 3 ay tam erişim alır.",
     "home.faq_a9":
       "Evet. Personal, kendi listenizdeki mülkler için sonsuza kadar ücretsizdir. İşler, giderler ve misafirler ekip olmadan çalışır. Gerçek bir sahip katıldığında, bu mülkleri şirketine alması için davet edin; siz yönetici kalabilirsiniz.",
     "home.faq_a10":
@@ -377,7 +377,7 @@ Object.assign(patches, {
     "home.plan_company_desc":
       "У вас есть управляющий, клинер или подрядчики. USD 15 / месяц за компанию, 10 мест включено, далее USD 2 за доп. место. Платит только владелец.",
     "home.faq_a4":
-      "Personal бесплатен навсегда. Company стоит USD 15 / месяц и включает 10 мест команды; каждое доп. место стоит USD 2 / месяц. Pro добавляет USD 9 / месяц к Personal или Company для Connect your agent. Биллинг ещё не включён, поэтому каждый аккаунт получает 3 месяца полного доступа, включая Pro, со дня регистрации.",
+      "Personal бесплатен навсегда. Company стоит USD 15 / месяц и включает 10 мест команды; каждое доп. место стоит USD 2 / месяц. Pro добавляет USD 24 / месяц к Personal или Company для Connect your agent. Биллинг ещё не включён, поэтому каждый аккаунт получает 3 месяца полного доступа, включая Pro, со дня регистрации.",
     "home.faq_a9":
       "Да. Personal бесплатен навсегда для объектов в вашем списке. Работы, расходы и гости работают без команды. Когда появится настоящий владелец, пригласите его принять объекты в свою компанию; вы можете остаться управляющим.",
     "home.faq_a10":
@@ -448,7 +448,7 @@ Object.assign(patches, {
     "home.plan_company_desc":
       "יש לכם מנהל, מנקה או ספקים. USD 15 לחודש לחברה, 10 מושבים כלולים, ואז USD 2 לכל מושב נוסף. רק הבעלים משלם.",
     "home.faq_a4":
-      "Personal חינם לתמיד. Company עולה USD 15 לחודש וכולל 10 מושבי צוות; כל מושב נוסף עולה USD 2 לחודש. Pro מוסיף USD 9 לחודש על Personal או Company עבור Connect your agent. החיוב עדיין לא פעיל, ולכן כל חשבון מקבל 3 חודשי גישה מלאה כולל Pro מיום ההרשמה.",
+      "Personal חינם לתמיד. Company עולה USD 15 לחודש וכולל 10 מושבי צוות; כל מושב נוסף עולה USD 2 לחודש. Pro מוסיף USD 24 לחודש על Personal או Company עבור Connect your agent. החיוב עדיין לא פעיל, ולכן כל חשבון מקבל 3 חודשי גישה מלאה כולל Pro מיום ההרשמה.",
     "home.faq_a9":
       "כן. Personal חינם לתמיד לנכסים ברשימה שלכם. עבודות, הוצאות ואורחים עובדים בלי צוות. כשנכנס בעלים אמיתי, הזמינו אותו לקחת את הנכסים לחברה שלו; אתם יכולים להישאר מנהלים.",
     "home.faq_a10":
@@ -516,7 +516,7 @@ Object.assign(patches, {
     "home.plan_company_desc":
       "لديك مدير أو منظّف أو موردون. USD 15 شهرياً للشركة، 10 مقاعد مشمولة ثم USD 2 لكل مقعد إضافي. المالك وحده يدفع.",
     "home.faq_a4":
-      "Personal مجاني للأبد. Company بسعر USD 15 شهرياً ويشمل 10 مقاعد فريق؛ كل مقعد إضافي USD 2 شهرياً. Pro يضيف USD 9 شهرياً على Personal أو Company لـ Connect your agent. الفوترة غير مفعّلة بعد، لذلك كل حساب يحصل على 3 أشهر وصول كامل بما فيها Pro من يوم التسجيل.",
+      "Personal مجاني للأبد. Company بسعر USD 15 شهرياً ويشمل 10 مقاعد فريق؛ كل مقعد إضافي USD 2 شهرياً. Pro يضيف USD 24 شهرياً على Personal أو Company لـ Connect your agent. الفوترة غير مفعّلة بعد، لذلك كل حساب يحصل على 3 أشهر وصول كامل بما فيها Pro من يوم التسجيل.",
     "home.faq_a9":
       "نعم. Personal مجاني للأبد لعقارات قائمتك. الأعمال والمصروفات والضيوف تعمل بدون فريق. عندما ينضم مالك حقيقي، ادعه ليأخذ تلك العقارات إلى شركته؛ يمكنك البقاء مديراً.",
     "home.faq_a10":
@@ -584,7 +584,7 @@ Object.assign(patches, {
     "home.plan_company_desc":
       "คุณมีผู้จัดการ แม่บ้าน หรือผู้รับเหมา USD 15 / เดือนต่อบริษัท รวม 10 ที่นั่ง แล้ว USD 2 ต่อที่นั่งเพิ่ม มีเพียงเจ้าของที่จ่าย",
     "home.faq_a4":
-      "Personal ฟรีตลอดไป Company ราคา USD 15 / เดือน รวม 10 ที่นั่งทีม ที่นั่งเพิ่มละ USD 2 / เดือน Pro เพิ่ม USD 9 / เดือนบน Personal หรือ Company สำหรับ Connect your agent การเรียกเก็บเงินยังไม่เปิด ดังนั้นทุกบัญชีได้สิทธิ์เต็ม 3 เดือนรวม Pro นับจากวันสมัคร",
+      "Personal ฟรีตลอดไป Company ราคา USD 15 / เดือน รวม 10 ที่นั่งทีม ที่นั่งเพิ่มละ USD 2 / เดือน Pro เพิ่ม USD 24 / เดือนบน Personal หรือ Company สำหรับ Connect your agent การเรียกเก็บเงินยังไม่เปิด ดังนั้นทุกบัญชีได้สิทธิ์เต็ม 3 เดือนรวม Pro นับจากวันสมัคร",
     "home.faq_a9":
       "ได้ Personal ฟรีตลอดไปสำหรับทรัพย์สินในรายการของคุณ งาน ค่าใช้จ่าย และแขกใช้ได้โดยไม่ต้องมีทีม เมื่อมีเจ้าของจริง เชิญให้รับทรัพย์สินเข้าบริษัทของเขา คุณอยู่เป็นผู้จัดการได้",
     "home.faq_a10":
@@ -652,7 +652,7 @@ Object.assign(patches, {
     "home.plan_company_desc":
       "မန်နေဂျာ၊ သန့်ရှင်းရေး သို့မဟုတ် ပေးသွင်းသူများရှိသည်။ ကုမ္ပဏီအတွက် တစ်လ USD 15၊ ထိုင်ခုံ 10 ပါဝင်ပြီး ထပ်ဆောင်းတစ်ခုံ USD 2။ ပိုင်ရှင်သာ ပေးချေသည်။",
     "home.faq_a4":
-      "Personal သည် အမြဲအခမဲ့။ Company သည် တစ်လ USD 15 ဖြစ်ပြီး အဖွဲ့ထိုင်ခုံ 10 ပါဝင်သည်။ ထပ်ဆောင်းတစ်ခုံ တစ်လ USD 2။ Pro သည် Connect your agent အတွက် Personal သို့မဟုတ် Company ပေါ်တွင် တစ်လ USD 9 ထပ်ပေါင်းသည်။ ငွေတောင်းခံခြင်း မဖွင့်သေးသောကြောင့် အကောင့်တိုင်းသည် စာရင်းသွင်းသည့်နေ့မှ Pro အပါအဝင် ၃ လ အပြည့်အဝင်ရရှိသည်။",
+      "Personal သည် အမြဲအခမဲ့။ Company သည် တစ်လ USD 15 ဖြစ်ပြီး အဖွဲ့ထိုင်ခုံ 10 ပါဝင်သည်။ ထပ်ဆောင်းတစ်ခုံ တစ်လ USD 2။ Pro သည် Connect your agent အတွက် Personal သို့မဟုတ် Company ပေါ်တွင် တစ်လ USD 24 ထပ်ပေါင်းသည်။ ငွေတောင်းခံခြင်း မဖွင့်သေးသောကြောင့် အကောင့်တိုင်းသည် စာရင်းသွင်းသည့်နေ့မှ Pro အပါအဝင် ၃ လ အပြည့်အဝင်ရရှိသည်။",
     "home.faq_a9":
       "ဟုတ်ကဲ့။ Personal သည် ကိုယ်ပိုင်စာရင်းရှိ ပိုင်ဆိုင်မှုများအတွက် အမြဲအခမဲ့။ အလုပ်များ၊ အသုံးစရိတ်နှင့် ဧည့်သည်များသည် အဖွဲ့မလိုဘဲ အလုပ်လုပ်သည်။ တကယ့်ပိုင်ရှင်လာလျှင် ထိုပိုင်ဆိုင်မှုများကို သူ့ကုမ္ပဏီသို့ ယူရန် ဖိတ်ပါ။ သင်မန်နေဂျာအဖြစ် ဆက်နေနိုင်သည်။",
     "home.faq_a10":
