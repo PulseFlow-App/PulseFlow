@@ -22,7 +22,7 @@
     "support": "Destek",
     "app": "Uygulama",
     "version": "v{version} · {date}",
-    "operations_app": "Pulseflow Operations App"
+    "operations_app": "Pulse Flow"
   },
   "common": {
     "screenshot_soon": "Ekran görüntüsü yakında",
@@ -602,21 +602,32 @@
     "channels_li5": "İstediğiniz zaman Guesty bağlantısını kesebilir veya bir takvim bağlantısını kaldırabilirsiniz. Bundan sonra bu kimlik bilgilerini yeni senkronlar için kullanmayı bırakırız."
   },
   "services": {
-    "meta_title": "Pulse Flow Services · yerel mülk bakımı",
-    "meta_description": "İhtiyaçlarınıza göre yerel uzmanlar. Hizmetlere bakın veya bakım personeli olarak kaydolun. Pulse Flow iş ödemesini almaz.",
+    "meta_title": "Pulse Flow Services · yerel uzmanlar",
+    "meta_description": "Tesisatçılar, elektrikçiler, temizlik ve daha fazlası — İngilizce, Tayca, Rusça ve İbranice. Uzman bulun veya ücretsiz profil oluşturun. Doğrudan ödeyin.",
     "title": "Pulse Flow Services",
-    "lead": "İhtiyaçlarınıza göre yerel uzmanlar. Kategori seçin, kaynağın puanına göre karar verin veya AI ajanından yardım isteyip randevuyu ayarlayın.",
+    "og_description": "Tesisatçılar, elektrikçiler, temizlik ve daha fazlası İngilizce, Tayca, Rusça ve İbranice. Yerel yardım bulun veya ücretsiz profil oluşturun.",
+    "og_image_alt": "Pulse Flow Services — yerel uzmanlar, erişilebilir",
+    "lead": "Tesisatçılar, elektrikçiler, temizlikçiler ve daha fazlası — İngilizce, Tayca, Rusça ve İbranice. Kategori seçin veya sorunu anlatın; asistanımız rezervasyonda yardımcı olsun.",
     "orders": "Üç sipariş ücretsizdir. Sonraki sipariş, biten işin değerlendirmesinden sonra açılır. Bundan sonra ayda yalnızca bir hizmet gerekiyorsa ücretsiz planda kalın ya da Ayarlar’dan Premium ve Pro’yu açın.",
-    "staff_title": "Bakım personeli",
-    "staff_body": "Pulse Flow Services’te bakım personeli olarak kaydolun veya girin. Kayıt, Bakım personeli kartı seçili olarak açılır. Şirket QR katılımı operasyon uygulamasında kalır, burada değil.",
-    "register": "Bakım personeli olarak kaydol",
+    "staff_title": "Tesisatçı, elektrikçi, temizlikçi veya teknisyen misiniz?",
+    "staff_body": "Yakındakilerin sizi bulması için ücretsiz profil oluşturun. Birkaç dakika sürer.",
+    "register": "Profilimi oluştur",
     "sign_in": "Giriş yap",
-    "pick_title": "Hizmet seç",
-    "pick_body": "Listelenen uzmanlara bugün göz atmaya başlayın",
-    "browse": "Hizmetlere bak",
-    "headline": "Mülk bakımının pulse’u",
-    "disclaimer": "İş ödemesini almıyoruz ve işi garanti etmiyoruz.",
+    "pick_title": "Bir şeyin onarılması mı gerekiyor?",
+    "pick_body": "Yakınınızda yerel bir uzman bulun",
+    "browse": "Uzman bul",
+    "headline": "Yerel hizmetlerin nabzı",
+    "disclaimer": "Uzmana doğrudan ödersiniz. Pulse Flow ödemeyi almaz ve işi garanti etmez.",
     "launch_chip_prefix": "Demo açılışı: Koh Phangan, Tayland — iletişim ",
-    "launch_chip_suffix": " için"
+    "launch_chip_suffix": " için",
+    "how_title": "Nasıl çalışır",
+    "how_intro": "İngilizce, Tayca, Rusça veya İbranice rezervasyon — komşularınızın gerçekten konuştuğu diller.",
+    "how_1_title": "Seçin",
+    "how_1_body": "Bir kategori seçin veya ihtiyacınızı anlatın.",
+    "how_2_title": "Karşılaştırın",
+    "how_2_body": "Yakınınızdaki yerel uzmanlar.",
+    "how_3_title": "İletişime geçin",
+    "how_3_body": "Mesaj yazın ve ziyareti ayarlayın.",
+    "free_pros": "Uzmanlar için profil oluşturmak ücretsizdir."
   }
 }

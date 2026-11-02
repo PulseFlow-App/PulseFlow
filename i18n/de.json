@@ -22,7 +22,7 @@
     "support": "Hilfe",
     "app": "Anwendung",
     "version": "v{version} · {date}",
-    "operations_app": "Pulseflow Operations App"
+    "operations_app": "Pulse Flow"
   },
   "common": {
     "screenshot_soon": "Screenshot folgt in Kürze",
@@ -602,21 +602,32 @@
     "channels_li5": "Sie können Guesty jederzeit trennen oder einen Kalenderlink entfernen. Danach nutzen wir diese Zugangsdaten nicht mehr für neue Synchronisationen."
   },
   "services": {
-    "meta_title": "Pulse Flow Services · lokale Immobilienwartung",
-    "meta_description": "Lokale Fachleute nach Ihrem Bedarf. Leistungen ansehen oder als Wartungspersonal registrieren. Pulse Flow nimmt die Arbeitszahlung nicht entgegen.",
+    "meta_title": "Pulse Flow Services · lokale Fachleute",
+    "meta_description": "Klempner, Elektriker, Reinigung und mehr — auf Englisch, Thai, Russisch und Hebräisch. Fachkraft finden oder kostenloses Profil anlegen. Direkt bezahlen.",
     "title": "Pulse Flow Services",
-    "lead": "Lokale Fachleute nach Ihrem Bedarf. Kategorie wählen, nach der Bewertung der Quelle entscheiden oder den KI-Agenten um Hilfe bitten und den Termin festlegen.",
+    "og_description": "Klempner, Elektriker, Reinigung und mehr auf Englisch, Thai, Russisch und Hebräisch. Lokale Hilfe finden oder kostenloses Profil anlegen.",
+    "og_image_alt": "Pulse Flow Services — lokale Fachleute, zugänglich",
+    "lead": "Klempner, Elektriker, Reinigungskräfte und mehr — auf Englisch, Thai, Russisch und Hebräisch. Kategorie wählen oder das Problem beschreiben — unser Assistent hilft beim Buchen.",
     "orders": "Drei Aufträge sind kostenlos. Der nächste öffnet sich nach der Bewertung des abgeschlossenen Auftrags. Danach bleiben Sie im kostenlosen Plan, wenn Sie nur einmal im Monat einen Service brauchen, oder schalten Sie Premium und Pro in den Einstellungen ein.",
-    "staff_title": "Wartungspersonal",
-    "staff_body": "Registrieren Sie sich oder melden Sie sich als Wartungspersonal bei Pulse Flow Services an. Die Registrierung öffnet sich mit der Karte Wartungspersonal. Der Firmen-QR bleibt in der Betriebs-App, nicht hier.",
-    "register": "Als Wartungspersonal registrieren",
+    "staff_title": "Sind Sie Klempner, Elektriker, Reinigungskraft oder Techniker?",
+    "staff_body": "Erstellen Sie ein kostenloses Profil, damit Nachbarn Sie finden. Das dauert nur wenige Minuten.",
+    "register": "Mein Profil erstellen",
     "sign_in": "Anmelden",
-    "pick_title": "Leistung wählen",
-    "pick_body": "Beginnen Sie noch heute mit dem Durchstöbern gelisteter Fachleute",
-    "browse": "Leistungen ansehen",
-    "headline": "Der Pulse der Immobilienwartung",
-    "disclaimer": "Wir nehmen keine Zahlung für den Auftrag entgegen und garantieren die Arbeit nicht.",
+    "pick_title": "Muss etwas repariert werden?",
+    "pick_body": "Finden Sie eine lokale Fachkraft in Ihrer Nähe",
+    "browse": "Fachkraft finden",
+    "headline": "Der Puls lokaler Dienste",
+    "disclaimer": "Sie zahlen die Fachkraft direkt. Pulse Flow wickelt keine Zahlung ab und garantiert die Arbeit nicht.",
     "launch_chip_prefix": "Demo-Start: Koh Phangan, Thailand – Kontakt ",
-    "launch_chip_suffix": " bei Fragen"
+    "launch_chip_suffix": " bei Fragen",
+    "how_title": "So funktioniert’s",
+    "how_intro": "Buchen Sie auf Englisch, Thai, Russisch oder Hebräisch — den Sprachen Ihrer Nachbarn.",
+    "how_1_title": "Wählen",
+    "how_1_body": "Eine Kategorie, oder beschreiben Sie den Bedarf.",
+    "how_2_title": "Vergleichen",
+    "how_2_body": "Lokale Fachleute in Ihrer Nähe.",
+    "how_3_title": "Kontakt",
+    "how_3_body": "Schreiben Sie ihnen und vereinbaren Sie den Besuch.",
+    "free_pros": "Ein Profil ist für Fachleute kostenlos."
   }
 }

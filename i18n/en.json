@@ -22,7 +22,7 @@
     "support": "Support",
     "app": "App",
     "version": "v{version} · {date}",
-    "operations_app": "Pulseflow Operations App"
+    "operations_app": "Pulse Flow"
   },
   "common": {
     "screenshot_soon": "Screenshot coming soon",
@@ -602,21 +602,32 @@
     "channels_li5": "You can disconnect Guesty or remove a calendar link at any time. We then stop using those credentials for new syncs."
   },
   "services": {
-    "meta_title": "Pulse Flow Services · local property maintenance",
-    "meta_description": "Local professionals based on your needs. Browse services or register as maintenance staff. Pulse Flow does not take the job payment.",
+    "meta_title": "Pulse Flow Services · local professionals",
+    "meta_description": "Plumbers, electricians, cleaners and more — in English, Thai, Russian and Hebrew. Find a local professional, or create a free profile. You pay them directly.",
     "title": "Pulse Flow Services",
-    "lead": "Local professionals based on your needs. Pick a category, choose by the score of the source, or ask the AI agent for help and set up the appointment.",
+    "og_description": "Plumbers, electricians, cleaners and more in English, Thai, Russian and Hebrew. Find local help, or create a free professional profile.",
+    "og_image_alt": "Pulse Flow Services — local professionals, made accessible",
+    "lead": "Plumbers, electricians, cleaners and more, in English, Thai, Russian and Hebrew. Pick a category, or describe the problem and our assistant will help you book.",
     "orders": "Three orders are free. Each next one unlocks after the review on the finished job. After that, stay on the free plan if you need a service only once a month, or turn on Premium and Pro in Settings.",
-    "staff_title": "Maintenance staff",
-    "staff_body": "Register or sign in as maintenance staff on Pulse Flow Services. Register opens with the Maintenance Staff card already selected. Company QR join stays in the operations app, not here.",
-    "register": "Register as maintenance staff",
+    "staff_title": "Are you a plumber, electrician, cleaner or technician?",
+    "staff_body": "Create a free profile so people nearby can find you. It takes a few minutes.",
+    "register": "Create my profile",
     "sign_in": "Sign in",
-    "pick_title": "Pick a service",
-    "pick_body": "Start browsing listed professionals today",
-    "browse": "Browse services",
-    "headline": "The pulse of property maintenance",
-    "disclaimer": "We do not take the job payment, and we do not guarantee the work.",
+    "pick_title": "Need something fixed?",
+    "pick_body": "Find a local professional near you",
+    "browse": "Find a professional",
+    "headline": "The pulse of local services",
+    "disclaimer": "You pay the professional directly. Pulse Flow does not handle payment or guarantee the work.",
     "launch_chip_prefix": "Demo launching: Koh Phangan, Thailand - contact ",
-    "launch_chip_suffix": " for queries"
+    "launch_chip_suffix": " for queries",
+    "how_title": "How it works",
+    "how_intro": "Book in English, Thai, Russian or Hebrew — the languages your neighbours actually speak.",
+    "how_1_title": "Pick",
+    "how_1_body": "Choose a category, or describe what you need.",
+    "how_2_title": "Compare",
+    "how_2_body": "See local professionals near you.",
+    "how_3_title": "Contact",
+    "how_3_body": "Message them and set up the visit.",
+    "free_pros": "Creating a profile is free for professionals."
   }
 }

@@ -15,6 +15,7 @@ from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = "https://www.pulseflow.site"
 BUILD_LOCALES = ["en", "ru", "th", "my", "fr", "de", "es", "it", "tr", "he", "ar"]
+SERVICES_LOCALES = ["en", "th", "ru", "he"]
 
 PAGES = [
     ("", "index.html"),
@@ -22,10 +23,11 @@ PAGES = [
     ("managers", "index.html"),
     ("staff", "index.html"),
     ("guests", "index.html"),
+    ("services", "index.html"),
     ("terms", "index.html"),
     ("privacy", "index.html"),
 ]
-SITE_PATHS = ["", "owners", "managers", "staff", "guests", "terms", "privacy"]
+SITE_PATHS = ["", "owners", "managers", "staff", "guests", "services", "terms", "privacy"]
 
 LOCALE_META = {
     "en": {"dir": "ltr", "og": "en_US"},
@@ -367,10 +369,14 @@ def strip_hreflang(html: str) -> str:
     )
 
 
+def locales_for_slug(slug: str) -> list[str]:
+    return SERVICES_LOCALES if slug == "services" else BUILD_LOCALES
+
+
 def hreflang_block(slug: str) -> str:
     lines = [
         f'    <link rel="alternate" hreflang="{loc}" href="{page_url(loc, slug)}" />'
-        for loc in BUILD_LOCALES
+        for loc in locales_for_slug(slug)
     ]
     lines.append(
         f'    <link rel="alternate" hreflang="x-default" href="{page_url("en", slug)}" />'
@@ -406,7 +412,7 @@ def set_canonical_og(html: str, locale: str, slug: str) -> str:
     html = re.sub(r'\n?\s*<meta property="og:locale"[^>]*>', "", html)
     html = re.sub(r'\n?\s*<meta property="og:locale:alternate"[^>]*>', "", html)
     insert = f'    <meta property="og:locale" content="{og}" />\n'
-    for loc in BUILD_LOCALES:
+    for loc in locales_for_slug(slug):
         if loc == locale:
             continue
         insert += (
@@ -418,26 +424,41 @@ def set_canonical_og(html: str, locale: str, slug: str) -> str:
         '<meta property="og:type" content="website" />\n' + insert,
         1,
     )
-    # Prefer locale OG art when present (en/ru); others fall back to en.
-    og_file = (
-        f"og-image-{locale}.jpg"
-        if (ROOT / "assets" / f"og-image-{locale}.jpg").exists()
-        else "og-image-en.jpg"
-        if (ROOT / "assets" / "og-image-en.jpg").exists()
-        else "og-image.jpg"
-    )
-    # Cache-bust so crawlers pick up regenerated OG art.
-    og_url = f"https://www.pulseflow.site/assets/{og_file}?v=2"
-    html = re.sub(
-        r'(property="og:image"\s+content=")https://www\.pulseflow\.site/assets/og-image[^"]*(")',
-        rf"\1{og_url}\2",
-        html,
-    )
-    html = re.sub(
-        r'(name="twitter:image"\s+content=")https://www\.pulseflow\.site/assets/og-image[^"]*(")',
-        rf"\1{og_url}\2",
-        html,
-    )
+    # Prefer locale OG art when present (en/ru); services uses its own card.
+    if slug == "services" and (ROOT / "assets" / "services-og.jpg").exists():
+        og_url = "https://www.pulseflow.site/assets/services-og.jpg?v=3"
+        html = re.sub(
+            r'(property="og:image"\s+content=")https://www\.pulseflow\.site/assets/[^"]*(")',
+            rf"\1{og_url}\2",
+            html,
+            count=1,
+        )
+        html = re.sub(
+            r'(name="twitter:image"\s+content=")https://www\.pulseflow\.site/assets/[^"]*(")',
+            rf"\1{og_url}\2",
+            html,
+            count=1,
+        )
+    else:
+        og_file = (
+            f"og-image-{locale}.jpg"
+            if (ROOT / "assets" / f"og-image-{locale}.jpg").exists()
+            else "og-image-en.jpg"
+            if (ROOT / "assets" / "og-image-en.jpg").exists()
+            else "og-image.jpg"
+        )
+        # Cache-bust so crawlers pick up regenerated OG art.
+        og_url = f"https://www.pulseflow.site/assets/{og_file}?v=2"
+        html = re.sub(
+            r'(property="og:image"\s+content=")https://www\.pulseflow\.site/assets/og-image[^"]*(")',
+            rf"\1{og_url}\2",
+            html,
+        )
+        html = re.sub(
+            r'(name="twitter:image"\s+content=")https://www\.pulseflow\.site/assets/og-image[^"]*(")',
+            rf"\1{og_url}\2",
+            html,
+        )
     html = re.sub(
         r'<meta property="og:image:width" content="[^"]+"\s*/?>',
         '<meta property="og:image:width" content="1200" />',
@@ -574,10 +595,11 @@ def write_sitemap() -> None:
         '        xmlns:xhtml="http://www.w3.org/1999/xhtml">',
     ]
     for slug in SITE_PATHS:
-        for loc in BUILD_LOCALES:
+        slug_locales = locales_for_slug(slug)
+        for loc in slug_locales:
             parts.append("  <url>")
             parts.append(f"    <loc>{page_url(loc, slug)}</loc>")
-            for alt in BUILD_LOCALES:
+            for alt in slug_locales:
                 parts.append(
                     f'    <xhtml:link rel="alternate" hreflang="{alt}" '
                     f'href="{page_url(alt, slug)}" />'
@@ -597,6 +619,7 @@ def write_sitemap() -> None:
                 "managers": "0.9",
                 "staff": "0.9",
                 "guests": "0.8",
+                "services": "0.9",
                 "terms": "0.3",
                 "privacy": "0.3",
             }[slug]

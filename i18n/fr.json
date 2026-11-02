@@ -22,7 +22,7 @@
     "support": "Assistance",
     "app": "Application",
     "version": "v{version} · {date}",
-    "operations_app": "Pulseflow Operations App"
+    "operations_app": "Pulse Flow"
   },
   "common": {
     "screenshot_soon": "Capture d'écran à venir",
@@ -602,21 +602,32 @@
     "channels_li5": "Vous pouvez déconnecter Guesty ou retirer un lien calendrier à tout moment. Nous cessons alors d'utiliser ces identifiants pour de nouvelles synchronisations."
   },
   "services": {
-    "meta_title": "Pulse Flow Services · entretien local des biens",
-    "meta_description": "Des professionnels locaux selon vos besoins. Parcourez les services ou inscrivez-vous comme personnel d’entretien. Pulse Flow n’encaisse pas le paiement du travail.",
+    "meta_title": "Pulse Flow Services · professionnels locaux",
+    "meta_description": "Plombiers, électriciens, ménage et plus — en anglais, thaï, russe et hébreu. Trouvez un pro ou créez un profil gratuit. Paiement en direct.",
     "title": "Pulse Flow Services",
-    "lead": "Des professionnels locaux selon vos besoins. Choisissez une catégorie, basez-vous sur le score de la source, ou demandez l’aide de l’agent IA et fixez le rendez-vous.",
+    "og_description": "Plombiers, électriciens, ménage et plus en anglais, thaï, russe et hébreu. Trouvez de l’aide locale ou créez un profil gratuit.",
+    "og_image_alt": "Pulse Flow Services — professionnels locaux, accessibles",
+    "lead": "Plombiers, électriciens, agents de ménage et plus encore, en anglais, thaï, russe et hébreu. Choisissez une catégorie, ou décrivez le problème et notre assistant vous aidera à réserver.",
     "orders": "Trois demandes sont gratuites. La suivante s’ouvre après l’avis sur le travail terminé. Ensuite, restez sur le plan gratuit si vous n’avez besoin d’un service qu’une fois par mois, ou activez Premium et Pro dans les réglages.",
-    "staff_title": "Personnel d’entretien",
-    "staff_body": "Inscrivez-vous ou connectez-vous comme personnel d’entretien sur Pulse Flow Services. L’inscription s’ouvre avec la carte Personnel d’entretien déjà choisie. Le QR de l’entreprise reste dans l’application d’exploitation, pas ici.",
-    "register": "S’inscrire comme personnel d’entretien",
-    "sign_in": "Se connecter",
-    "pick_title": "Choisir un service",
-    "pick_body": "Commencez à parcourir les professionnels listés dès aujourd’hui",
-    "browse": "Voir les services",
-    "headline": "Le pulse de l’entretien des biens",
-    "disclaimer": "Nous ne prenons pas le paiement du travail, et nous ne garantissons pas le résultat.",
+    "staff_title": "Vous êtes plombier, électricien, agent de ménage ou technicien ?",
+    "staff_body": "Créez un profil gratuit pour que les gens près de chez vous vous trouvent. Cela prend quelques minutes.",
+    "register": "Créer mon profil",
+    "sign_in": "Connexion",
+    "pick_title": "Besoin de faire réparer quelque chose ?",
+    "pick_body": "Trouvez un professionnel local près de chez vous",
+    "browse": "Trouver un professionnel",
+    "headline": "Le pouls des services locaux",
+    "disclaimer": "Vous payez le professionnel directement. Pulse Flow ne gère pas le paiement et ne garantit pas le travail.",
     "launch_chip_prefix": "Lancement démo : Koh Phangan, Thaïlande — contactez ",
-    "launch_chip_suffix": " pour vos questions"
+    "launch_chip_suffix": " pour vos questions",
+    "how_title": "Comment ça marche",
+    "how_intro": "Réservez en anglais, thaï, russe ou hébreu — les langues que parlent vraiment vos voisins.",
+    "how_1_title": "Choisissez",
+    "how_1_body": "Une catégorie, ou décrivez ce dont vous avez besoin.",
+    "how_2_title": "Comparez",
+    "how_2_body": "Des professionnels locaux près de chez vous.",
+    "how_3_title": "Contactez",
+    "how_3_body": "Écrivez-leur et fixez la visite.",
+    "free_pros": "Créer un profil est gratuit pour les professionnels."
   }
 }

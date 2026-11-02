@@ -19,12 +19,14 @@ const DARK_SHOT_BY_LIGHT = {
   "owner-home-hero.png": "owner-home-dark.png",
   "owner-home.png": "owner-home-dark.png",
   "owner-home-crop.png": "owner-home-dark.png",
+  "services-home-hero.png": "services-home-dark.png",
 };
 
 const LIGHT_SHOT_BY_DARK = {
   "welcome-dark-home.png": "welcome-frost.png",
   "welcome-dark.png": "welcome-frost.png",
   "owner-home-dark.png": "owner-home-hero.png",
+  "services-home-dark.png": "services-home-hero.png",
 };
 
 function syncAppShotsForAppearance(appearance) {
@@ -123,7 +125,7 @@ const dictCache = Object.create(null);
 let currentLocale = "en";
 let currentDict = null;
 let demoApplyFns = [];
-const I18N_VERSION = "52";
+const I18N_VERSION = "45";
 /** Release stamp — bump version.json (+ this cache bust) when you push a site release. */
 const SITE_VERSION_CACHE_BUST = "3";
 
