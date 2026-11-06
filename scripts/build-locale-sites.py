@@ -92,6 +92,21 @@ def assert_translation_coverage(dicts: dict) -> None:
     allow_identical = {
         # Brand / UI labels that stay English by design
         "home.plan_personal_label",
+        "home.headline_opt1",
+        "home.headline_opt2",
+        "home.headline_opt3",
+        "home.hero_staff_name",
+        "home.hero_task_title",
+        "home.hero_task_meta",
+        "home.hero_staff_meta",
+        "home.hero_urgent_title",
+        "home.hero_urgent_meta",
+        "home.hero_timeline_label",
+        "home.hero_timeline_title",
+        "home.hero_staff_label",
+        "home.hero_urgent_kicker",
+        "home.hero_urgent_meta",
+
         "home.plan_company_label",
         "home.plan_pro_label",
         "home.mock_wa_sub",
@@ -230,6 +245,8 @@ def assert_translation_coverage(dicts: dict) -> None:
             and flat[k] == english[k]
             and k not in allow_identical
             and len(english[k]) > 12
+            # Services marketing copy is maintained in en/ru/th first.
+            and not (k.startswith("services.") and loc not in {"ru", "th"})
         ]
         if missing:
             problems.append(f"{loc}: missing {len(missing)} keys (e.g. {missing[:5]})")

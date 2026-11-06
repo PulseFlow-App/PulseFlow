@@ -7,12 +7,16 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title data-i18n="services.meta_title">Pulse Flow Services · местные специалисты</title><meta
+    <title data-i18n="services.meta_title">Pulse Flow Services · найти местного мастера</title><meta
       name="description"
-      content="Сантехники, электрики, клининг и другие — на английском, тайском, русском и иврите. Найдите специалиста или создайте бесплатный профиль. Оплата напрямую."
+      content="Найдите сантехника, клининг, электрика или мастера на Ко Пангане на английском, русском или тайском. Или создайте бесплатное объявление."
       data-i18n-attr="content:services.meta_description"
     />
     <meta name="theme-color" content="#f26a36" />
+    <!-- TODO: replace app-id when Services iOS listing is live -->
+    <!-- <meta name="apple-itunes-app" content="app-id=TODO, app-argument=https://services.pulseflow.site/"> -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -30,6 +34,28 @@
     <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:locale:alternate" content="th_TH" />
     <meta property="og:locale:alternate" content="he_IL" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -230,7 +256,7 @@
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
-      content="Pulse Flow Services — местные специалисты, доступно"
+      content="Pulse Flow Services - местные специалисты, доступно"
       data-i18n-attr="content:services.og_image_alt"
     />
     <meta name="twitter:card" content="summary_large_image" />
@@ -240,17 +266,12 @@
     />
     <meta
       name="twitter:image:alt"
-      content="Pulse Flow Services — местные специалисты, доступно"
+      content="Pulse Flow Services - местные специалисты, доступно"
       data-i18n-attr="content:services.og_image_alt"
     />
-    <link
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=163" />
+    <link rel="stylesheet" href="/styles/home.css?v=10" />
+    <link rel="stylesheet" href="/styles/services.css?v=10" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -260,28 +281,28 @@
         };
     </script>
   </head>
-  <body class="services-page">
-    <a class="skip" href="#main" data-i18n="nav.skip">Перейти к содержимому</a><div class="pf-wrap">
-      <div class="pf-horizon" aria-hidden="true"><span class="pf-orb pf-orb-sky"></span><span class="pf-orb pf-orb-sun"></span></div>
-      <header class="pf-nav">
-        <a class="pf-logo" href="/ru/" aria-label="Pulse Flow">
-          <img
-            class="pf-pulse-mark"
-            src="/assets/pulse-mark.svg"
-            width="40"
-            height="40"
-            alt=""
-          />
-          <span class="pf-brand-name">Pulse Flow</span>
-        </a>
-        <nav class="pf-folders" aria-label="Pulse Flow">
-          <a class="pf-folder pf-folder-pulse" href="/ru/"><img class="pf-folder-mark" src="/assets/pulse-mark.svg" width="20" height="20" alt="" />Pulse Flow</a>
-          <a class="pf-folder pf-folder-services" href="/ru/services" aria-current="page"><img class="pf-folder-mark" src="/assets/services-mark.png?v=3" width="20" height="20" alt="" />Pulse Flow Services</a>
+  <body class="services-marketing site-redesign">
+    <a class="skip" href="#main" data-i18n="nav.skip">Перейти к содержимому</a>
+
+    <div class="site">
+      <header class="site-nav" role="banner">
+        <div class="site-nav-pill">
+          <a class="site-logo" href="/ru/" aria-label="Pulse Flow">
+            <img src="/assets/pulse-mark.svg" width="28" height="28" alt="" />
+            <span class="site-logo-name">Pulse Flow</span>
+          </a>
+          <nav class="site-switch" aria-label="Product">
+            <a href="/ru/" data-i18n="nav.property_ops">Операции</a>
+            <a href="/ru/services" aria-current="page" data-i18n="nav.services">Услуги</a>
+          </nav>
+          <nav class="site-nav-links" aria-label="On this page">
+            <a href="#categories" data-i18n="nav.features">Возможности</a>
+            <a href="#for-pros" data-i18n="services.provider_jump">Я оказываю услуги</a>
+            <a href="#faq" data-i18n="nav.faq">FAQ</a>
         </nav>
-        <div class="pf-nav-actions">
-          <label class="pf-lang">
-            <span class="pf-visually-hidden" data-i18n="nav.language"
-              >Язык</span>
+          <div class="site-nav-end">
+            <label class="site-lang">
+              <span class="pf-visually-hidden" data-i18n="nav.language">Язык</span>
             <select
               class="pf-lang-select"
               data-locale-select
@@ -289,134 +310,275 @@
               aria-label="Язык"
             ></select>
           </label>
-          <button
-            type="button"
-            class="pf-theme-toggle"
-            data-theme-toggle
-            aria-label="Appearance"
-            title="Appearance"
-          >
-            <span data-theme-icon aria-hidden="true">☾</span>
-          </button>
-          <a
-            class="pf-cta"
+            <a
+              class="site-btn site-btn-primary site-btn-nav"
             href="https://services.pulseflow.site/?lang=en"
             data-i18n="nav.open_app"
             >Открыть приложение</a>
+          </div>
         </div>
       </header>
 
-            <main id="main" class="pf-services">
-        <section class="pf-hero pf-services-hero" id="hero">
-          <div class="pf-hero-copy">
-            <h1 class="pf-headline" data-i18n="services.headline">Пульс местных услуг</h1>
-            <p class="pf-sub" data-i18n="services.lead">Найдите местного сантехника, электрика, клининг или мастера — на своём языке. Или разместите свою услугу, чтобы соседи могли заказать вас.</p>
-            <div class="pf-hero-actions">
-              <a class="pf-btn-primary" href="https://services.pulseflow.site/?lang=en" data-i18n="services.seeker_cta">Найти мастера</a>
-              <a class="pf-btn-outline" href="#for-pros" data-i18n="services.provider_jump">Я оказываю услуги</a>
+      <main id="main" class="site-main">
+        <section class="svc-hero" id="hero" aria-labelledby="hero-title">
+          <div class="svc-hero-copy">
+            <h1 id="hero-title" class="svc-hero-title" data-i18n="services.headline">Pulse Flow Services is where you find someone nearby to fix, clean or repair a place.</h1>
+            <p class="svc-hero-lead" data-i18n="services.lead">We value quality work done by hand and invite the top local professionals to join.</p>
+            <p class="svc-hero-lead" data-i18n="services.browse_line">Browse people in your area, invite the ones you want, and discuss their offers.</p>
+            <p class="svc-trial-note" data-i18n="services.trial_note">3 free orders, each one followed by a review, then 1 order a month. Or 5 USD a month, with the AI agent.</p>
+            <div class="svc-hero-actions">
+              <a
+                class="site-btn site-btn-primary"
+                href="https://services.pulseflow.site/"
+                data-svc-find
+                data-i18n="services.find_cta"
+                >Найти мастера</a>
             </div>
-            <p class="pf-launch-chip">
-              <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/></svg>
-              <span>
-                <span data-i18n="services.launch_chip_prefix">Демо запуск: Ко Панган, Таиланд — пишите на </span><a href="mailto:services@pulseflow.site">services@pulseflow.site</a><span data-i18n="services.launch_chip_suffix"> по вопросам</span>
-              </span>
-            </p>
           </div>
-          <div class="pf-hero-visual" aria-hidden="true">
-            <figure class="pf-hero-shot">
-              <div class="pf-hero-status">
-                <span class="pf-hero-status-time">9:41</span>
-                <span class="pf-hero-status-icons">
-                  <svg viewBox="0 0 17 12" width="17" height="12" aria-hidden="true"><rect x="0" y="3.5" width="3" height="8.5" rx="0.6" fill="currentColor"/><rect x="4.5" y="2" width="3" height="10" rx="0.6" fill="currentColor"/><rect x="9" y="0.5" width="3" height="11.5" rx="0.6" fill="currentColor"/><rect x="13.5" y="0" width="3" height="12" rx="0.6" fill="currentColor" opacity="0.3"/></svg>
-                  <svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true"><path fill="currentColor" d="M8 2.6c2.1 0 4 0.8 5.5 2.1l-1.4 1.4C11 4.9 9.6 4.3 8 4.3S5 4.9 3.9 6.1L2.5 4.7C4 3.4 5.9 2.6 8 2.6zm0 3.4c1.2 0 2.3 0.5 3.1 1.2L8 10.3 4.9 7.2C5.7 6.5 6.8 6 8 6zm0-6C4.7 0 1.7 1.4 0 3.6l1.5 1.5C2.9 3.4 5.3 2.2 8 2.2s5.1 1.2 6.5 2.9L16 3.6C14.3 1.4 11.3 0 8 0z"/></svg>
-                  <svg viewBox="0 0 25 12" width="25" height="12" aria-hidden="true"><rect x="0" y="1" width="21" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1"/><rect x="2" y="3" width="15" height="6" rx="1" fill="currentColor"/><path fill="currentColor" d="M22 4h1.5a1.5 1.5 0 0 1 0 4H22V4z"/></svg>
-                </span>
+
+          <div class="svc-composer" data-svc-composer>
+            <p class="svc-composer-label" data-i18n="services.composer_label">Что нужно?</p>
+            <label class="pf-visually-hidden" for="svc-need">What do you need?</label>
+            <textarea
+              id="svc-need"
+              class="svc-composer-input"
+              rows="3"
+              data-svc-input
+              data-i18n-attr="placeholder:services.composer_placeholder"
+              placeholder="Кондиционер течёт в спальне"
+            ></textarea>
+            <div class="svc-prompts" aria-label="Examples">
+              <button type="button" class="svc-prompt" data-svc-prompt="Pool is green" data-i18n="services.prompt_1">Бассейн зелёный</button>
+              <button type="button" class="svc-prompt" data-svc-prompt="No power in the kitchen" data-i18n="services.prompt_2">Нет света на кухне</button>
+              <button type="button" class="svc-prompt" data-svc-prompt="Need a cleaner tomorrow" data-i18n="services.prompt_3">Нужна уборка завтра</button>
+            </div>
+
+            <div class="svc-matches" data-svc-matches>
+              <p class="svc-match-label" data-i18n="services.matches_label">Подходящие услуги</p>
+              <div class="svc-cat-chips" data-svc-cats></div>
+              <p class="svc-match-label" data-i18n="services.pros_label">Люди рядом</p>
+              <div class="svc-pro-grid" data-svc-pros></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="site-section" id="categories" aria-labelledby="categories-title">
+          <div class="site-section-head">
+            <h2 id="categories-title" class="site-h2" data-i18n="services.categories_title">Что обычно ищут</h2>
+            <p class="site-lead" data-i18n="services.categories_lead">Восемь услуг на Ко Пангане. Нажмите, чтобы открыть Pulse Flow Services.</p>
+          </div>
+          <div class="svc-bento">
+          <a class="svc-bento-tile" href="https://services.pulseflow.site/c/plumbing">
+            <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="24" r="18" class="svc-ico-a"></circle>
+              <path class="svc-ico-b" d="M16 20h6v14h-6zm10-6h6v20h-6zm-2 8h2v8h-2z"/>
+            </svg>
+            <span data-i18n="services.cat_plumbing">Сантехника</span>
+          </a>
+          <a class="svc-bento-tile" href="https://services.pulseflow.site/c/hvac">
+            <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="24" r="18" class="svc-ico-a"></circle>
+              <path class="svc-ico-b" d="M15 22h18v3H15zm2 5h14v8H17zm3-10h8v4h-8z"/>
+            </svg>
+            <span data-i18n="services.cat_hvac">Кондиционеры</span>
+          </a>
+          <a class="svc-bento-tile" href="https://services.pulseflow.site/c/electrical">
+            <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="24" r="18" class="svc-ico-a"></circle>
+              <path class="svc-ico-b" d="M27 12l-10 14h7l-3 10 12-16h-7z"/>
+            </svg>
+            <span data-i18n="services.cat_electrical">Электрика</span>
+          </a>
+          <a class="svc-bento-tile" href="https://services.pulseflow.site/c/cleaning">
+            <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="24" r="18" class="svc-ico-a"></circle>
+              <path class="svc-ico-b" d="M22 12h4l2 8h-8zm-6 10h16v3H16zm3 5h10v9H19z"/>
+            </svg>
+            <span data-i18n="services.cat_cleaning">Уборка</span>
+          </a>
+          <a class="svc-bento-tile" href="https://services.pulseflow.site/c/pool">
+            <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="24" r="18" class="svc-ico-a"></circle>
+              <path class="svc-ico-b" d="M12 28c3 2 6 2 9 0s6-2 9 0 6 2 9 0v3c-3 2-6 2-9 0s-6-2-9 0-6 2-9 0zm0-7c3 2 6 2 9 0s6-2 9 0 6 2 9 0v3c-3 2-6 2-9 0s-6-2-9 0-6 2-9 0z"/>
+            </svg>
+            <span data-i18n="services.cat_pool">Бассейн</span>
+          </a>
+          <a class="svc-bento-tile" href="https://services.pulseflow.site/c/handyman">
+            <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="24" r="18" class="svc-ico-a"></circle>
+              <path class="svc-ico-b" d="M18 16l5 5-3 3-5-5 3-3zm9 1l5 5-11 11h-5v-5z"/>
+            </svg>
+            <span data-i18n="services.cat_handyman">Мастер на час</span>
+          </a>
+          <a class="svc-bento-tile" href="https://services.pulseflow.site/c/pest">
+            <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="24" r="18" class="svc-ico-a"></circle>
+              <path class="svc-ico-b" d="M24 14a8 8 0 018 8c0 5-3.5 9-8 9s-8-4-8-9a8 8 0 018-8zm-9 24h18v3H15z"/>
+            </svg>
+            <span data-i18n="services.cat_pest">Дезинсекция</span>
+          </a>
+          <a class="svc-bento-tile" href="https://services.pulseflow.site/c/appliance">
+            <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="24" r="18" class="svc-ico-a"></circle>
+              <path class="svc-ico-b" d="M16 13h16v22H16zm3 4h10v3H19zm0 6h10v9H19z"/>
+            </svg>
+            <span data-i18n="services.cat_appliance">Ремонт техники</span>
+          </a>
+          </div>
+        </section>
+
+        <section class="site-section" id="how" aria-labelledby="how-title">
+          <div class="site-section-head">
+            <h2 id="how-title" class="site-h2" data-i18n="services.how_title">Как это работает</h2>
+            <p class="site-lead" data-i18n="services.how_intro">Три шага от поломки до сообщения местному мастеру.</p>
+          </div>
+          <ol class="svc-steps">
+            <li>
+              <span class="svc-step-num" aria-hidden="true">1</span>
+              <div>
+                <h3 data-i18n="services.how_1_title">Опишите</h3>
+                <p data-i18n="services.how_1_body">Напишите, что сломалось, или выберите категорию.</p>
               </div>
-              <img
-                src="/assets/screenshots/services-home-hero.png?v=2"
-                width="780"
-                height="1688"
-                alt=""
-                loading="eager"
-              />
-            </figure>
-          </div>
-        </section>
-
-        <section class="pf-services-paths" id="paths" aria-labelledby="services-paths">
-          <h2 id="services-paths" class="pf-services-paths-title" data-i18n="services.paths_title">Два входа</h2>
-          <div class="pf-services-paths-grid">
-            <a class="pf-services-path" href="https://services.pulseflow.site/?lang=en" id="for-seekers">
-              <h3 data-i18n="services.seeker_title">Что-то сломалось?</h3>
-              <p data-i18n="services.seeker_body">Смотрите местных мастеров, сравнивайте и пишите им напрямую.</p>
-              <span class="pf-services-path-cta" data-i18n="services.seeker_cta">Найти мастера</span>
-            </a>
-            <a
-              class="pf-services-path pf-services-path-pro"
-              href="https://services.pulseflow.site/register?as=pro&amp;lang=en"
-              id="for-pros"
-            >
-              <h3 data-i18n="services.provider_title">Предложите свои услуги</h3>
-              <p data-i18n="services.provider_body">Техники и специалисты: создайте бесплатный профиль, чтобы вас находили рядом.</p>
-              <span class="pf-services-path-cta" data-i18n="services.provider_cta">Создать профиль</span>
-            </a>
-          </div>
-        </section>
-
-        <section class="pf-services-block pf-services-how" aria-labelledby="services-how">
-          <h2 id="services-how" data-i18n="services.how_title">Как это работает</h2>
-          <p data-i18n="services.how_intro">Запись на английском, тайском, русском или иврите — на языках, на которых говорят ваши соседи.</p>
-          <ol class="pf-services-steps">
-            <li>
-              <strong data-i18n="services.how_1_title">Выберите</strong>
-              <span data-i18n="services.how_1_body">Категорию или опишите, что нужно.</span>
             </li>
             <li>
-              <strong data-i18n="services.how_2_title">Сравните</strong>
-              <span data-i18n="services.how_2_body">Местных специалистов рядом с вами.</span>
+              <span class="svc-step-num" aria-hidden="true">2</span>
+              <div>
+                <h3 data-i18n="services.how_2_title">Подбор</h3>
+                <p data-i18n="services.how_2_body">Увидите профессии и людей рядом, которые говорят на вашем языке.</p>
+              </div>
             </li>
             <li>
-              <strong data-i18n="services.how_3_title">Свяжитесь</strong>
-              <span data-i18n="services.how_3_body">Напишите им и договоритесь о визите.</span>
+              <span class="svc-step-num" aria-hidden="true">3</span>
+              <div>
+                <h3 data-i18n="services.how_3_title">Напишите мастеру</h3>
+                <p data-i18n="services.how_3_body">Свяжитесь в WhatsApp, LINE или в приложении и договоритесь о визите.</p>
+              </div>
             </li>
           </ol>
-          <p class="pf-services-note" data-i18n="services.free_pros">Создать профиль для специалистов бесплатно.</p>
         </section>
 
-                <section class="pf-plan pf-fade" id="plans" aria-labelledby="services-plans">
-          <div class="pf-plan-card pf-plan-card-static">
-            <h2 id="services-plans" class="pf-plan-title" data-i18n="services.plans_title">Планы</h2>
-            <ul class="pf-plan-options">
-              <li>
-                <strong data-i18n="services.plan_trial_label">Пробный период</strong>
-                <span data-i18n="services.plan_trial_desc">3 бесплатных заказа, каждый с отзывом, затем 1 бесплатный заказ в месяц.</span>
-              </li>
-              <li class="is-company">
-                <strong data-i18n="services.plan_premium_label">План</strong>
-                <span data-i18n="services.plan_premium_desc">9 USD в месяц. Больше одного заказа в месяц и ИИ-помощник.</span>
-              </li>
-            </ul>
-            <p class="pf-plan-note" data-i18n="services.plan_note">Оплату пока не берём.</p>
-            <a class="pf-btn-primary pf-plan-start" href="https://services.pulseflow.site/?lang=en" data-i18n="services.seeker_cta">Найти мастера</a>
+        <section class="site-section" id="for-pros" aria-labelledby="pros-title">
+          <div class="svc-pros-panel">
+            <div class="svc-pros-copy">
+              <h2 id="pros-title" data-i18n="services.provider_title">If you do this work</h2>
+              <p data-i18n="services.provider_lead">Accept a job request and name your price. The customer pays you directly after the job is done.</p>
+              <h3 data-i18n="services.listing_title">Your listing</h3>
+              <p data-i18n="services.listing_body">Free. Your photo, areas and language settings. Hide it when you are not available, and turn it back on in Settings.</p>
+              <a
+                class="site-btn site-btn-primary"
+                href="https://services.pulseflow.site/register?track=maintenance"
+                data-i18n="services.provider_cta"
+                >Создать бесплатное объявление</a>
+            </div>
           </div>
         </section>
 
-        <p class="pf-services-disclaimer" data-i18n="services.disclaimer">Вы платите специалисту напрямую. Pulse Flow не принимает оплату и не гарантирует работу.</p>
+        <section class="site-section" id="languages" aria-labelledby="languages-title">
+          <div class="site-section-head">
+            <h2 id="languages-title" class="site-h2" data-i18n="services.languages_title">Языки и связь</h2>
+            <p class="site-lead" data-i18n="services.languages_lead">Английский, русский и тайский — основные. В объявлении указывают WhatsApp и LINE, чтобы писать как обычно.</p>
+          </div>
+          <div class="svc-lang-row" aria-label="Languages">
+            <span class="svc-pill" data-i18n="services.lang_en">English</span>
+            <span class="svc-pill" data-i18n="services.lang_ru">Русский</span>
+            <span class="svc-pill" data-i18n="services.lang_th">ไทย</span>
+          </div>
+          <div class="svc-channel-row">
+            <span class="svc-channel" data-i18n="services.channel_whatsapp">WhatsApp</span>
+            <span class="svc-channel" data-i18n="services.channel_line">LINE</span>
+            <a class="svc-channel is-link" href="mailto:services@pulseflow.site" data-i18n="services.channel_email">Почта поддержки</a>
+          </div>
+        </section>
+
+        <section class="site-section" id="trust" aria-labelledby="trust-title">
+          <div class="site-section-head">
+            <h2 id="trust-title" class="site-h2" data-i18n="services.trust_title">Как устроено доверие</h2>
+            <p class="site-lead" data-i18n="services.trust_lead">В профиле — имя, услуга, район и языки. Verified значит, что мы проверили данные объявления. Платите мастеру напрямую. Pulse Flow не держит деньги и не гарантирует работу.</p>
+          </div>
+          <p class="svc-trust-label" data-i18n="services.trust_sample_title">Примеры профилей</p>
+          <div class="svc-trust-grid">
+            <article class="svc-trust-card">
+              <div class="svc-pro-avatar" aria-hidden="true">N</div>
+              <div>
+                <strong>Niran · Plumber</strong>
+                <span>Thong Sala · TH · EN</span>
+                <span class="svc-verified" data-i18n="services.trust_verified">Проверен</span>
+              </div>
+            </article>
+            <article class="svc-trust-card">
+              <div class="svc-pro-avatar" aria-hidden="true">A</div>
+              <div>
+                <strong>Anya · AC technician</strong>
+                <span>Baan Tai · RU · EN · TH</span>
+                <span class="svc-verified" data-i18n="services.trust_verified">Проверен</span>
+              </div>
+            </article>
+            <article class="svc-trust-card">
+              <div class="svc-pro-avatar" aria-hidden="true">M</div>
+              <div>
+                <strong>Mai · Pool care</strong>
+                <span>Koh Phangan · TH · EN</span>
+                <span class="svc-verified" data-i18n="services.trust_verified">Проверен</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="site-section" id="faq" aria-labelledby="faq-title">
+          <div class="site-section-head">
+            <h2 id="faq-title" class="site-h2" data-i18n="services.faq_title">Вопросы</h2>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary data-i18n="services.faq_q1">Плачу ли я через Pulse Flow?</summary>
+              <p data-i18n="services.faq_a1">Нет. Вы платите мастеру напрямую. Pulse Flow только соединяет и не принимает оплату.</p>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="services.faq_q2">Есть ли приложение в App Store?</summary>
+              <p data-i18n="services.faq_a2">Пока нет. Откройте services.pulseflow.site в Safari или Chrome и добавьте на Home Screen. Магазины приложений будут позже.</p>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="services.faq_q3">Можно ли разместить услугу бесплатно?</summary>
+              <p data-i18n="services.faq_a3">Да. Создайте бесплатное объявление с услугой, районом и языками. Соседи найдут вас и напишут.</p>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="services.faq_q4">Какие языки поддерживаются?</summary>
+              <p data-i18n="services.faq_a4">Английский, русский и тайский — для заказчиков и мастеров.</p>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="services.faq_q5">Как связаться с мастером?</summary>
+              <p data-i18n="services.faq_a5">Откройте профиль и напишите в WhatsApp, LINE или в приложении.</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="site-section" id="close" aria-labelledby="close-title">
+          <div class="close-band">
+            <h2 id="close-title" data-i18n="services.close_title">Нужен мастер сегодня?</h2>
+            <p data-i18n="services.close_lead">Опишите задачу, получите подбор, напишите местному специалисту.</p>
+            <a class="site-btn site-btn-primary" href="https://services.pulseflow.site/" data-i18n="services.close_cta">Найти мастера</a>
+          </div>
+        </section>
       </main>
 
-      <footer class="pf-footer">
-        <div class="pf-footer-links">
+      <footer class="site-footer">
+        <div class="site-main">
+          <p class="svc-footer-note" data-i18n="services.disclaimer">You pay the professional directly. We do not guarantee the quality of the work. Base your orders on the reviews and rating of the professional.</p>
+          <div class="site-footer-links">
           <a href="/ru/" data-i18n="footer.home">Главная</a>
-          <a href="/ru/#plans" data-i18n="footer.plans">Тарифы</a>
+            <a href="/ru/#pricing" data-i18n="footer.plans">Тарифы</a>
+            <a href="/ru/services" data-i18n="nav.services">Услуги</a>
           <a href="/ru/terms" data-i18n="footer.terms">Условия</a>
           <a href="/ru/privacy" data-i18n="footer.privacy">Конфиденциальность</a>
-          <a href="mailto:support@pulseflow.site" data-i18n="footer.support">Поддержка</a>
-          <a href="https://app.pulseflow.site?lang=ru" data-i18n="footer.operations_app">Pulse Flow</a>
+            <a href="mailto:services@pulseflow.site" data-i18n="footer.support">Поддержка</a>
+            <a href="https://services.pulseflow.site?lang=en">Pulse Flow Services</a>
+          </div>
+          <p class="pf-footer-version" data-site-version>v0.9.0</p>
         </div>
-        <p class="pf-footer-version" data-site-version>v0.9.0 · 18 Oct 2026</p>
       </footer>
     </div>
 
-    <script src="/script.js?v=163" defer></script>
+    <script src="/script.js?v=164" defer></script>
+    <script src="/services-composer.js?v=4" defer></script>
   </body>
 </html>

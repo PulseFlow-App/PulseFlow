@@ -13,6 +13,10 @@
       data-i18n-attr="content:services.meta_description"
     />
     <meta name="theme-color" content="#f26a36" />
+    <!-- TODO: replace app-id when Services iOS listing is live -->
+    <!-- <meta name="apple-itunes-app" content="app-id=TODO, app-argument=https://services.pulseflow.site/"> -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -31,6 +35,28 @@
     <meta property="og:locale:alternate" content="th_TH" />
     <meta property="og:locale:alternate" content="ru_RU" />
     <meta property="og:locale:alternate" content="he_IL" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -244,14 +270,9 @@
       content="Pulse Flow Services — ဒေသခံ ပညာရှင်များ၊ လွယ်ကူစွာ ရယူနိုင်"
       data-i18n-attr="content:services.og_image_alt"
     />
-    <link
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=163" />
+    <link rel="stylesheet" href="/styles/home.css?v=10" />
+    <link rel="stylesheet" href="/styles/services.css?v=10" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -261,28 +282,28 @@
         };
     </script>
   </head>
-  <body class="services-page">
-    <a class="skip" href="#main" data-i18n="nav.skip">အကြောင်းအရာသို့ ခုန်သွားရန်</a><div class="pf-wrap">
-      <div class="pf-horizon" aria-hidden="true"><span class="pf-orb pf-orb-sky"></span><span class="pf-orb pf-orb-sun"></span></div>
-      <header class="pf-nav">
-        <a class="pf-logo" href="/my/" aria-label="Pulse Flow">
-          <img
-            class="pf-pulse-mark"
-            src="/assets/pulse-mark.svg"
-            width="40"
-            height="40"
-            alt=""
-          />
-          <span class="pf-brand-name">Pulse Flow</span>
-        </a>
-        <nav class="pf-folders" aria-label="Pulse Flow">
-          <a class="pf-folder pf-folder-pulse" href="/my/"><img class="pf-folder-mark" src="/assets/pulse-mark.svg" width="20" height="20" alt="" />Pulse Flow</a>
-          <a class="pf-folder pf-folder-services" href="/my/services" aria-current="page"><img class="pf-folder-mark" src="/assets/services-mark.png?v=3" width="20" height="20" alt="" />Pulse Flow Services</a>
+  <body class="services-marketing site-redesign">
+    <a class="skip" href="#main" data-i18n="nav.skip">အကြောင်းအရာသို့ ခုန်သွားရန်</a>
+
+    <div class="site">
+      <header class="site-nav" role="banner">
+        <div class="site-nav-pill">
+          <a class="site-logo" href="/my/" aria-label="Pulse Flow">
+            <img src="/assets/pulse-mark.svg" width="28" height="28" alt="" />
+            <span class="site-logo-name">Pulse Flow</span>
+          </a>
+          <nav class="site-switch" aria-label="Product">
+            <a href="/my/" data-i18n="nav.property_ops">ပိုင်ဆိုင်မှု ops</a>
+            <a href="/my/services" aria-current="page" data-i18n="nav.services">Services</a>
+          </nav>
+          <nav class="site-nav-links" aria-label="On this page">
+            <a href="#categories" data-i18n="nav.features">အင်္ဂါရပ်များ</a>
+            <a href="#for-pros" data-i18n="services.provider_jump">I offer services</a>
+            <a href="#faq" data-i18n="nav.faq">မေးခွန်း</a>
         </nav>
-        <div class="pf-nav-actions">
-          <label class="pf-lang">
-            <span class="pf-visually-hidden" data-i18n="nav.language"
-              >ဘာသာစကား</span>
+          <div class="site-nav-end">
+            <label class="site-lang">
+              <span class="pf-visually-hidden" data-i18n="nav.language">ဘာသာစကား</span>
             <select
               class="pf-lang-select"
               data-locale-select
@@ -290,134 +311,275 @@
               aria-label="ဘာသာစကား"
             ></select>
           </label>
-          <button
-            type="button"
-            class="pf-theme-toggle"
-            data-theme-toggle
-            aria-label="Appearance"
-            title="Appearance"
-          >
-            <span data-theme-icon aria-hidden="true">☾</span>
-          </button>
-          <a
-            class="pf-cta"
+            <a
+              class="site-btn site-btn-primary site-btn-nav"
             href="https://services.pulseflow.site/?lang=en"
             data-i18n="nav.open_app"
             >အက်ပ်ဖွင့်ရန်</a>
+          </div>
         </div>
       </header>
 
-            <main id="main" class="pf-services">
-        <section class="pf-hero pf-services-hero" id="hero">
-          <div class="pf-hero-copy">
-            <h1 class="pf-headline" data-i18n="services.headline">ဒေသခံ ဝန်ဆောင်မှုများ၏ စည်းချက်</h1>
-            <p class="pf-sub" data-i18n="services.lead">ပိုက်ဆက်၊ လျှပ်စစ်၊ သန့်ရှင်းရေးနှင့် အခြား — အင်္ဂလိပ်၊ ထိုင်း၊ ရုရှနှင့် ဟီဘရူး။ အမျိုးအစားရွေးပါ၊ သို့မဟုတ် ပြဿနာကို ဖော်ပြပါ — ကျွန်ုပ်တို့၏ အကူအညီပေးသူက ကြိုတင်စာရင်းသွင်းရန် ကူညီပါမည်။</p>
-            <div class="pf-hero-actions">
-              <a class="pf-btn-primary" href="https://services.pulseflow.site/?lang=en" data-i18n="services.seeker_cta">Find a professional</a>
-              <a class="pf-btn-outline" href="#for-pros" data-i18n="services.provider_jump">I offer services</a>
+      <main id="main" class="site-main">
+        <section class="svc-hero" id="hero" aria-labelledby="hero-title">
+          <div class="svc-hero-copy">
+            <h1 id="hero-title" class="svc-hero-title" data-i18n="services.headline">Pulse Flow Services is where you find someone nearby to fix, clean or repair a place.</h1>
+            <p class="svc-hero-lead" data-i18n="services.lead">We value quality work done by hand and invite the top local professionals to join.</p>
+            <p class="svc-hero-lead" data-i18n="services.browse_line">Browse people in your area, invite the ones you want, and discuss their offers.</p>
+            <p class="svc-trial-note" data-i18n="services.trial_note">3 free orders, each one followed by a review, then 1 order a month. Or 5 USD a month, with the AI agent.</p>
+            <div class="svc-hero-actions">
+              <a
+                class="site-btn site-btn-primary"
+                href="https://services.pulseflow.site/"
+                data-svc-find
+                data-i18n="services.find_cta"
+                >Find a pro</a>
             </div>
-            <p class="pf-launch-chip">
-              <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/></svg>
-              <span>
-                <span data-i18n="services.launch_chip_prefix">ဒီမို စတင်မည်: ကိုးဖန်ဂန်၊ ထိုင်းနိုင်ငံ - ဆက်သွယ်ရန် </span><a href="mailto:services@pulseflow.site">services@pulseflow.site</a><span data-i18n="services.launch_chip_suffix"> မေးမြန်းရန်</span>
-              </span>
-            </p>
           </div>
-          <div class="pf-hero-visual" aria-hidden="true">
-            <figure class="pf-hero-shot">
-              <div class="pf-hero-status">
-                <span class="pf-hero-status-time">9:41</span>
-                <span class="pf-hero-status-icons">
-                  <svg viewBox="0 0 17 12" width="17" height="12" aria-hidden="true"><rect x="0" y="3.5" width="3" height="8.5" rx="0.6" fill="currentColor"/><rect x="4.5" y="2" width="3" height="10" rx="0.6" fill="currentColor"/><rect x="9" y="0.5" width="3" height="11.5" rx="0.6" fill="currentColor"/><rect x="13.5" y="0" width="3" height="12" rx="0.6" fill="currentColor" opacity="0.3"/></svg>
-                  <svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true"><path fill="currentColor" d="M8 2.6c2.1 0 4 0.8 5.5 2.1l-1.4 1.4C11 4.9 9.6 4.3 8 4.3S5 4.9 3.9 6.1L2.5 4.7C4 3.4 5.9 2.6 8 2.6zm0 3.4c1.2 0 2.3 0.5 3.1 1.2L8 10.3 4.9 7.2C5.7 6.5 6.8 6 8 6zm0-6C4.7 0 1.7 1.4 0 3.6l1.5 1.5C2.9 3.4 5.3 2.2 8 2.2s5.1 1.2 6.5 2.9L16 3.6C14.3 1.4 11.3 0 8 0z"/></svg>
-                  <svg viewBox="0 0 25 12" width="25" height="12" aria-hidden="true"><rect x="0" y="1" width="21" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1"/><rect x="2" y="3" width="15" height="6" rx="1" fill="currentColor"/><path fill="currentColor" d="M22 4h1.5a1.5 1.5 0 0 1 0 4H22V4z"/></svg>
-                </span>
+
+          <div class="svc-composer" data-svc-composer>
+            <p class="svc-composer-label" data-i18n="services.composer_label">What do you need?</p>
+            <label class="pf-visually-hidden" for="svc-need">What do you need?</label>
+            <textarea
+              id="svc-need"
+              class="svc-composer-input"
+              rows="3"
+              data-svc-input
+              data-i18n-attr="placeholder:services.composer_placeholder"
+              placeholder="Aircon is leaking in the bedroom"
+            ></textarea>
+            <div class="svc-prompts" aria-label="Examples">
+              <button type="button" class="svc-prompt" data-svc-prompt="Pool is green" data-i18n="services.prompt_1">Pool is green</button>
+              <button type="button" class="svc-prompt" data-svc-prompt="No power in the kitchen" data-i18n="services.prompt_2">No power in the kitchen</button>
+              <button type="button" class="svc-prompt" data-svc-prompt="Need a cleaner tomorrow" data-i18n="services.prompt_3">Need a cleaner tomorrow</button>
+            </div>
+
+            <div class="svc-matches" data-svc-matches>
+              <p class="svc-match-label" data-i18n="services.matches_label">Matched trades</p>
+              <div class="svc-cat-chips" data-svc-cats></div>
+              <p class="svc-match-label" data-i18n="services.pros_label">People nearby</p>
+              <div class="svc-pro-grid" data-svc-pros></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="site-section" id="categories" aria-labelledby="categories-title">
+          <div class="site-section-head">
+            <h2 id="categories-title" class="site-h2" data-i18n="services.categories_title">What people ask for</h2>
+            <p class="site-lead" data-i18n="services.categories_lead">Eight trades on Koh Phangan. Tap one to open Pulse Flow Services.</p>
+          </div>
+          <div class="svc-bento">
+          <a class="svc-bento-tile" href="https://services.pulseflow.site/c/plumbing">
+            <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="24" r="18" class="svc-ico-a"></circle>
+              <path class="svc-ico-b" d="M16 20h6v14h-6zm10-6h6v20h-6zm-2 8h2v8h-2z"/>
+            </svg>
+            <span data-i18n="services.cat_plumbing">Plumbing</span>
+          </a>
+          <a class="svc-bento-tile" href="https://services.pulseflow.site/c/hvac">
+            <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="24" r="18" class="svc-ico-a"></circle>
+              <path class="svc-ico-b" d="M15 22h18v3H15zm2 5h14v8H17zm3-10h8v4h-8z"/>
+            </svg>
+            <span data-i18n="services.cat_hvac">Air conditioning</span>
+          </a>
+          <a class="svc-bento-tile" href="https://services.pulseflow.site/c/electrical">
+            <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="24" r="18" class="svc-ico-a"></circle>
+              <path class="svc-ico-b" d="M27 12l-10 14h7l-3 10 12-16h-7z"/>
+            </svg>
+            <span data-i18n="services.cat_electrical">Electrical</span>
+          </a>
+          <a class="svc-bento-tile" href="https://services.pulseflow.site/c/cleaning">
+            <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="24" r="18" class="svc-ico-a"></circle>
+              <path class="svc-ico-b" d="M22 12h4l2 8h-8zm-6 10h16v3H16zm3 5h10v9H19z"/>
+            </svg>
+            <span data-i18n="services.cat_cleaning">Cleaning</span>
+          </a>
+          <a class="svc-bento-tile" href="https://services.pulseflow.site/c/pool">
+            <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="24" r="18" class="svc-ico-a"></circle>
+              <path class="svc-ico-b" d="M12 28c3 2 6 2 9 0s6-2 9 0 6 2 9 0v3c-3 2-6 2-9 0s-6-2-9 0-6 2-9 0zm0-7c3 2 6 2 9 0s6-2 9 0 6 2 9 0v3c-3 2-6 2-9 0s-6-2-9 0-6 2-9 0z"/>
+            </svg>
+            <span data-i18n="services.cat_pool">Pool</span>
+          </a>
+          <a class="svc-bento-tile" href="https://services.pulseflow.site/c/handyman">
+            <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="24" r="18" class="svc-ico-a"></circle>
+              <path class="svc-ico-b" d="M18 16l5 5-3 3-5-5 3-3zm9 1l5 5-11 11h-5v-5z"/>
+            </svg>
+            <span data-i18n="services.cat_handyman">Handyman</span>
+          </a>
+          <a class="svc-bento-tile" href="https://services.pulseflow.site/c/pest">
+            <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="24" r="18" class="svc-ico-a"></circle>
+              <path class="svc-ico-b" d="M24 14a8 8 0 018 8c0 5-3.5 9-8 9s-8-4-8-9a8 8 0 018-8zm-9 24h18v3H15z"/>
+            </svg>
+            <span data-i18n="services.cat_pest">Pest control</span>
+          </a>
+          <a class="svc-bento-tile" href="https://services.pulseflow.site/c/appliance">
+            <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="24" r="18" class="svc-ico-a"></circle>
+              <path class="svc-ico-b" d="M16 13h16v22H16zm3 4h10v3H19zm0 6h10v9H19z"/>
+            </svg>
+            <span data-i18n="services.cat_appliance">Appliance repair</span>
+          </a>
+          </div>
+        </section>
+
+        <section class="site-section" id="how" aria-labelledby="how-title">
+          <div class="site-section-head">
+            <h2 id="how-title" class="site-h2" data-i18n="services.how_title">အလုပ်လုပ်ပုံ</h2>
+            <p class="site-lead" data-i18n="services.how_intro">အင်္ဂလိပ်၊ ထိုင်း၊ ရုရှ သို့မဟုတ် ဟီဘရူးဖြင့် ကြိုတင်စာရင်းသွင်းပါ — အိမ်နီးချင်းများ တကယ်ပြောသော ဘာသာများ။</p>
+          </div>
+          <ol class="svc-steps">
+            <li>
+              <span class="svc-step-num" aria-hidden="true">1</span>
+              <div>
+                <h3 data-i18n="services.how_1_title">ရွေးပါ</h3>
+                <p data-i18n="services.how_1_body">အမျိုးအစားရွေးပါ၊ သို့မဟုတ် လိုအပ်သည်ကို ဖော်ပြပါ။</p>
               </div>
-              <img
-                src="/assets/screenshots/en/services-home-hero.png?v=2"
-                width="780"
-                height="1688"
-                alt=""
-                loading="eager"
-              />
-            </figure>
-          </div>
-        </section>
-
-        <section class="pf-services-paths" id="paths" aria-labelledby="services-paths">
-          <h2 id="services-paths" class="pf-services-paths-title" data-i18n="services.paths_title">Two ways in</h2>
-          <div class="pf-services-paths-grid">
-            <a class="pf-services-path" href="https://services.pulseflow.site/?lang=en" id="for-seekers">
-              <h3 data-i18n="services.seeker_title">Need something fixed?</h3>
-              <p data-i18n="services.seeker_body">Browse local professionals, compare, and contact them directly.</p>
-              <span class="pf-services-path-cta" data-i18n="services.seeker_cta">Find a professional</span>
-            </a>
-            <a
-              class="pf-services-path pf-services-path-pro"
-              href="https://services.pulseflow.site/register?as=pro&amp;lang=en"
-              id="for-pros"
-            >
-              <h3 data-i18n="services.provider_title">Offer your services</h3>
-              <p data-i18n="services.provider_body">Maintenance staff and tradespeople: create a free listing so people nearby can find you.</p>
-              <span class="pf-services-path-cta" data-i18n="services.provider_cta">Create my profile</span>
-            </a>
-          </div>
-        </section>
-
-        <section class="pf-services-block pf-services-how" aria-labelledby="services-how">
-          <h2 id="services-how" data-i18n="services.how_title">အလုပ်လုပ်ပုံ</h2>
-          <p data-i18n="services.how_intro">အင်္ဂလိပ်၊ ထိုင်း၊ ရုရှ သို့မဟုတ် ဟီဘရူးဖြင့် ကြိုတင်စာရင်းသွင်းပါ — အိမ်နီးချင်းများ တကယ်ပြောသော ဘာသာများ။</p>
-          <ol class="pf-services-steps">
-            <li>
-              <strong data-i18n="services.how_1_title">ရွေးပါ</strong>
-              <span data-i18n="services.how_1_body">အမျိုးအစားရွေးပါ၊ သို့မဟုတ် လိုအပ်သည်ကို ဖော်ပြပါ။</span>
             </li>
             <li>
-              <strong data-i18n="services.how_2_title">နှိုင်းယှဉ်ပါ</strong>
-              <span data-i18n="services.how_2_body">အနီးအနားရှိ ဒေသခံ ပညာရှင်များ။</span>
+              <span class="svc-step-num" aria-hidden="true">2</span>
+              <div>
+                <h3 data-i18n="services.how_2_title">နှိုင်းယှဉ်ပါ</h3>
+                <p data-i18n="services.how_2_body">အနီးအနားရှိ ဒေသခံ ပညာရှင်များ။</p>
+              </div>
             </li>
             <li>
-              <strong data-i18n="services.how_3_title">ဆက်သွယ်ပါ</strong>
-              <span data-i18n="services.how_3_body">စာပို့ပြီး လာရောက်ချိန် သတ်မှတ်ပါ။</span>
+              <span class="svc-step-num" aria-hidden="true">3</span>
+              <div>
+                <h3 data-i18n="services.how_3_title">ဆက်သွယ်ပါ</h3>
+                <p data-i18n="services.how_3_body">စာပို့ပြီး လာရောက်ချိန် သတ်မှတ်ပါ။</p>
+              </div>
             </li>
           </ol>
-          <p class="pf-services-note" data-i18n="services.free_pros">ပညာရှင်များအတွက် ပရိုဖိုင်ဖန်တီးခြင်း အခမဲ့။</p>
         </section>
 
-                <section class="pf-plan pf-fade" id="plans" aria-labelledby="services-plans">
-          <div class="pf-plan-card pf-plan-card-static">
-            <h2 id="services-plans" class="pf-plan-title" data-i18n="services.plans_title">အစီအစဉ်များ</h2>
-            <ul class="pf-plan-options">
-              <li>
-                <strong data-i18n="services.plan_trial_label">စမ်းသုံး</strong>
-                <span data-i18n="services.plan_trial_desc">အခမဲ့ အော်ဒါ ၃ ခု၊ တစ်ခုစီ နောက်တွင် သုံးသပ်ချက်၊ ထို့နောက် တစ်လ အခမဲ့ အော်ဒါ ၁ ခု။</span>
-              </li>
-              <li class="is-company">
-                <strong data-i18n="services.plan_premium_label">အစီအစဉ်</strong>
-                <span data-i18n="services.plan_premium_desc">တစ်လ ၉ ဒေါ်လာ။ တစ်လ အော်ဒါ တစ်ခုထက် ပိုမှာနိုင်ပြီး AI လက်ထောက် ပါဝင်သည်။</span>
-              </li>
-            </ul>
-            <p class="pf-plan-note" data-i18n="services.plan_note">ငွေကောက်ခံခြင်း မရှိသေးပါ။</p>
-            <a class="pf-btn-primary pf-plan-start" href="https://services.pulseflow.site/?lang=en" data-i18n="services.seeker_cta">Find a professional</a>
+        <section class="site-section" id="for-pros" aria-labelledby="pros-title">
+          <div class="svc-pros-panel">
+            <div class="svc-pros-copy">
+              <h2 id="pros-title" data-i18n="services.provider_title">If you do this work</h2>
+              <p data-i18n="services.provider_lead">Accept a job request and name your price. The customer pays you directly after the job is done.</p>
+              <h3 data-i18n="services.listing_title">Your listing</h3>
+              <p data-i18n="services.listing_body">Free. Your photo, areas and language settings. Hide it when you are not available, and turn it back on in Settings.</p>
+              <a
+                class="site-btn site-btn-primary"
+                href="https://services.pulseflow.site/register?track=maintenance"
+                data-i18n="services.provider_cta"
+                >Create my profile</a>
+            </div>
           </div>
         </section>
 
-        <p class="pf-services-disclaimer" data-i18n="services.disclaimer">ပညာရှင်ကို တိုက်ရိုက် ပေးချေပါ။ Pulse Flow က ငွေမကိုင်ဘဲ အလုပ်ကို အာမခံ မပေးပါ။</p>
+        <section class="site-section" id="languages" aria-labelledby="languages-title">
+          <div class="site-section-head">
+            <h2 id="languages-title" class="site-h2" data-i18n="services.languages_title">Languages and contact</h2>
+            <p class="site-lead" data-i18n="services.languages_lead">English, Russian, and Thai are first-class. Pros list WhatsApp and LINE so you message them where you already talk.</p>
+          </div>
+          <div class="svc-lang-row" aria-label="Languages">
+            <span class="svc-pill" data-i18n="services.lang_en">English</span>
+            <span class="svc-pill" data-i18n="services.lang_ru">Russian</span>
+            <span class="svc-pill" data-i18n="services.lang_th">Thai</span>
+          </div>
+          <div class="svc-channel-row">
+            <span class="svc-channel" data-i18n="services.channel_whatsapp">WhatsApp</span>
+            <span class="svc-channel" data-i18n="services.channel_line">LINE</span>
+            <a class="svc-channel is-link" href="mailto:services@pulseflow.site" data-i18n="services.channel_email">Email support</a>
+          </div>
+        </section>
+
+        <section class="site-section" id="trust" aria-labelledby="trust-title">
+          <div class="site-section-head">
+            <h2 id="trust-title" class="site-h2" data-i18n="services.trust_title">How trust works</h2>
+            <p class="site-lead" data-i18n="services.trust_lead">Profiles show a real name, trade, area, and languages. Verified means we checked the listing details. You still pay the pro directly. Pulse Flow does not hold the money or guarantee the job.</p>
+          </div>
+          <p class="svc-trust-label" data-i18n="services.trust_sample_title">Sample profiles</p>
+          <div class="svc-trust-grid">
+            <article class="svc-trust-card">
+              <div class="svc-pro-avatar" aria-hidden="true">N</div>
+              <div>
+                <strong>Niran · Plumber</strong>
+                <span>Thong Sala · TH · EN</span>
+                <span class="svc-verified" data-i18n="services.trust_verified">Verified</span>
+              </div>
+            </article>
+            <article class="svc-trust-card">
+              <div class="svc-pro-avatar" aria-hidden="true">A</div>
+              <div>
+                <strong>Anya · AC technician</strong>
+                <span>Baan Tai · RU · EN · TH</span>
+                <span class="svc-verified" data-i18n="services.trust_verified">Verified</span>
+              </div>
+            </article>
+            <article class="svc-trust-card">
+              <div class="svc-pro-avatar" aria-hidden="true">M</div>
+              <div>
+                <strong>Mai · Pool care</strong>
+                <span>Koh Phangan · TH · EN</span>
+                <span class="svc-verified" data-i18n="services.trust_verified">Verified</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="site-section" id="faq" aria-labelledby="faq-title">
+          <div class="site-section-head">
+            <h2 id="faq-title" class="site-h2" data-i18n="services.faq_title">FAQ</h2>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary data-i18n="services.faq_q1">Do I pay through Pulse Flow?</summary>
+              <p data-i18n="services.faq_a1">No. You pay the professional directly. Pulse Flow connects you and does not take the payment.</p>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="services.faq_q2">Is the app on the App Store?</summary>
+              <p data-i18n="services.faq_a2">Not yet. Open services.pulseflow.site in Safari or Chrome and add it to your Home Screen. Store listings come later.</p>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="services.faq_q3">Can I list my trade for free?</summary>
+              <p data-i18n="services.faq_a3">Yes. Create a free listing with your trade, area, and languages. People nearby can find you and message you.</p>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="services.faq_q4">Which languages work?</summary>
+              <p data-i18n="services.faq_a4">English, Russian, and Thai are supported for seekers and professionals. You write in your language; they read in theirs when the listing supports it.</p>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="services.faq_q5">How do I reach a pro?</summary>
+              <p data-i18n="services.faq_a5">Open their profile and message them on WhatsApp or LINE, or in the app when both of you are there.</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="site-section" id="close" aria-labelledby="close-title">
+          <div class="close-band">
+            <h2 id="close-title" data-i18n="services.close_title">Need someone today?</h2>
+            <p data-i18n="services.close_lead">Describe the job, get matched, message a local pro.</p>
+            <a class="site-btn site-btn-primary" href="https://services.pulseflow.site/" data-i18n="services.close_cta">Find a pro</a>
+          </div>
+        </section>
       </main>
 
-      <footer class="pf-footer">
-        <div class="pf-footer-links">
+      <footer class="site-footer">
+        <div class="site-main">
+          <p class="svc-footer-note" data-i18n="services.disclaimer">You pay the professional directly. We do not guarantee the quality of the work. Base your orders on the reviews and rating of the professional.</p>
+          <div class="site-footer-links">
           <a href="/my/" data-i18n="footer.home">ပင်မစာမျက်နှာ</a>
-          <a href="/my/#plans" data-i18n="footer.plans">ပက်ကေ့ချ်</a>
+            <a href="/my/#pricing" data-i18n="footer.plans">ပက်ကေ့ချ်</a>
+            <a href="/my/services" data-i18n="nav.services">Services</a>
           <a href="/my/terms" data-i18n="footer.terms">စည်းကမ်းများ</a>
           <a href="/my/privacy" data-i18n="footer.privacy">ကိုယ်ရေးလုံခြုံမှု</a>
-          <a href="mailto:support@pulseflow.site" data-i18n="footer.support">အကူအညီ</a>
-          <a href="https://app.pulseflow.site?lang=my" data-i18n="footer.operations_app">Pulse Flow</a>
+            <a href="mailto:services@pulseflow.site" data-i18n="footer.support">အကူအညီ</a>
+            <a href="https://services.pulseflow.site?lang=en">Pulse Flow Services</a>
+          </div>
+          <p class="pf-footer-version" data-site-version>v0.9.0</p>
         </div>
-        <p class="pf-footer-version" data-site-version>v0.9.0 · 18 Oct 2026</p>
       </footer>
     </div>
 
-    <script src="/script.js?v=163" defer></script>
+    <script src="/script.js?v=164" defer></script>
+    <script src="/services-composer.js?v=4" defer></script>
   </body>
 </html>

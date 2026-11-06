@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 2026 Anastasia Boltrushevich / Pulse Flow. All rights reserved. -->
+<html lang="en" dir="ltr" translate="no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Admin · Pulse Flow</title>
+    <meta name="description" content="Unlock Pulse Flow admin for Property ops and Services." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#f26a36" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="canonical" href="https://www.pulseflow.site/admin" />
+    <link rel="stylesheet" href="/assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="/styles/home.css?v=10" />
+    <link rel="stylesheet" href="/styles/admin.css?v=2" />
+  </head>
+  <body class="site-redesign admin-hub">
+    <a class="skip" href="#main">Skip to content</a>
+
+    <div class="site">
+      <header class="site-nav" role="banner">
+        <div class="site-nav-pill">
+          <a class="site-logo" href="/" aria-label="Pulse Flow">
+            <img src="/assets/pulse-mark.svg" width="28" height="28" alt="" />
+            <span class="site-logo-name">Pulse Flow</span>
+          </a>
+          <nav class="site-switch" aria-label="Product">
+            <a href="/">Property ops</a>
+            <a href="/services">Services</a>
+          </nav>
+          <div class="site-nav-end">
+            <a
+              class="site-btn site-btn-primary site-btn-nav"
+              href="https://services.pulseflow.site/admin"
+              >Unlock admin</a>
+          </div>
+        </div>
+      </header>
+
+      <main id="main" class="site-main">
+        <section class="site-section admin-intro" aria-labelledby="admin-title">
+          <div class="site-section-head">
+            <h1 id="admin-title" class="site-h2">Admin</h1>
+            <p class="site-lead">
+              One unlock shows both apps: Property ops registrations and Services marketplace stats, plus who invited whom.
+            </p>
+          </div>
+
+          <article class="admin-card is-login">
+            <p class="admin-kicker">How to get in</p>
+            <h2>Unlock on Services admin</h2>
+            <ol class="admin-steps">
+              <li>Set <code>PROS_ADMIN_KEY</code> on the Services app in Vercel → Environment Variables (Production), then redeploy. Without that, unlock says admin is not configured.</li>
+              <li>Open Services admin and enter that string plus the word <strong>admin</strong>.</li>
+              <li>Read Property ops people/orgs/villas, Services listings, referrals, and a Plausible link for site traffic.</li>
+            </ol>
+            <div class="admin-actions">
+              <a class="site-btn site-btn-primary" href="https://services.pulseflow.site/admin">Unlock admin</a>
+              <a class="site-btn site-btn-secondary" href="https://services.pulseflow.site/admin/referrals">Who invited whom</a>
+            </div>
+          </article>
+
+          <div class="admin-grid">
+            <article class="admin-card">
+              <p class="admin-kicker">Property ops</p>
+              <h2>What you will see</h2>
+              <p>People, organizations, villas, recent registrations, referral credits, and role counts from the live database.</p>
+              <div class="admin-actions">
+                <a class="site-btn site-btn-secondary" href="https://app.pulseflow.site/">Open Property ops app</a>
+              </div>
+            </article>
+
+            <article class="admin-card is-services">
+              <p class="admin-kicker">Services</p>
+              <h2>What you will see</h2>
+              <p>Pro listings and requests from the database, plus this-device marketplace checks and who invited whom.</p>
+              <div class="admin-actions">
+                <a class="site-btn site-btn-primary" href="https://services.pulseflow.site/admin">Open Services admin</a>
+              </div>
+            </article>
+          </div>
+
+          <p class="admin-traffic-note">
+            Site traffic stays in
+            <a href="https://plausible.io/www.pulseflow.site" target="_blank" rel="noreferrer">Plausible</a>
+            for pulseflow.site. There is no separate password for this marketing page — the unlock lives on Services admin so it can read live data.
+          </p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="site-main">
+          <p>Internal hub · not linked from the public nav</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -38,5 +38,7 @@ Allow: /
 
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /admin/
 
 Sitemap: https://www.pulseflow.site/sitemap.xml

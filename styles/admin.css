@@ -1,0 +1,126 @@
+/* pulseflow.site/admin — hub for both apps */
+.admin-hub .site-nav-links {
+  display: none;
+}
+
+.admin-intro {
+  padding-top: 0.5rem;
+}
+
+.admin-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.admin-card {
+  display: grid;
+  gap: 0.65rem;
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  border: 1px solid var(--pf-line);
+  border-radius: var(--pf-radius-hero);
+  background: var(--pf-card);
+  box-shadow: var(--pf-shadow-1);
+}
+
+.admin-card.is-services {
+  background: var(--pf-panel);
+  border-color: transparent;
+  color: #f5f7fc;
+}
+
+.admin-kicker {
+  margin: 0;
+  color: var(--pf-slate-ink);
+  font-size: var(--pf-type-12);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.admin-card.is-services .admin-kicker {
+  color: #c9d0e3;
+}
+
+.admin-card h2 {
+  margin: 0;
+  color: var(--pf-navy-900);
+  font-size: clamp(1.35rem, 1.15rem + 0.7vw, 1.75rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.admin-card.is-services h2 {
+  color: #f5f7fc;
+}
+
+.admin-card > p:not(.admin-kicker) {
+  margin: 0;
+  max-width: 40ch;
+  color: var(--pf-navy-600);
+  font-size: var(--pf-type-16);
+  line-height: 1.5;
+}
+
+.admin-card.is-services > p:not(.admin-kicker) {
+  color: #c9d0e3;
+}
+
+.admin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.5rem;
+}
+
+.admin-card.is-services .site-btn-secondary {
+  background: transparent;
+  border-color: color-mix(in srgb, #f5f7fc 28%, transparent);
+  color: #f5f7fc;
+}
+
+.admin-card.is-services .site-btn-secondary:hover {
+  background: color-mix(in srgb, #f5f7fc 10%, transparent);
+}
+
+@media (min-width: 860px) {
+  .admin-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+}
+
+
+.admin-card.is-login {
+  margin-bottom: 1.25rem;
+}
+
+.admin-steps {
+  margin: 0.25rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--pf-navy-600);
+  font-size: var(--pf-type-16);
+  line-height: 1.55;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.admin-steps code {
+  font-size: 0.9em;
+  padding: 0.05rem 0.35rem;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--pf-navy-900) 6%, var(--pf-page));
+}
+
+.admin-traffic-note {
+  margin: 1.5rem 0 0;
+  max-width: 52ch;
+  color: var(--pf-slate-ink);
+  font-size: var(--pf-type-14);
+  line-height: 1.5;
+}
+
+.admin-traffic-note a {
+  color: var(--pf-navy-900);
+  font-weight: 600;
+}

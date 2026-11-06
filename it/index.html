@@ -7,9 +7,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title data-i18n="home.meta_title">Pulse Flow: gestite tutta l'operazione immobiliare in un solo posto</title><meta
+    <title data-i18n="home.meta_title">Operazioni immobiliari per ville · Pulse Flow</title><meta
       name="description"
-      content="Immobili, lavori, attività, fornitori, fatture e ospiti in un solo spazio. Ognuno vede la propria parte, nella propria lingua."
+      content="Pulse Flow è software di operazioni per ville e affitti breve a Koh Phangan."
       data-i18n-attr="content:home.meta_description"
     />
     <meta name="theme-color" content="#f26a36" />
@@ -41,6 +41,29 @@
     <meta property="og:locale:alternate" content="tr_TR" />
     <meta property="og:locale:alternate" content="he_IL" />
     <meta property="og:locale:alternate" content="ar_SA" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -355,7 +378,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles.css?v=160" />
+    <link rel="stylesheet" href="/styles/home.css?v=10" />
       <script defer data-domain="www.pulseflow.site" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible =
@@ -365,717 +388,353 @@
         };
     </script>
   </head>
-  <body class="home-page">
-    <a class="skip" href="#main" data-i18n="nav.skip">Vai al contenuto</a><div class="pf-wrap">
-      <div class="pf-horizon" aria-hidden="true"><span class="pf-orb pf-orb-sky"></span><span class="pf-orb pf-orb-sun"></span></div>
-      <header class="pf-nav">
-        <a class="pf-logo" href="/it/" aria-label="Pulse Flow">
-          <img
-            class="pf-pulse-mark"
-            src="/assets/pulse-mark.svg"
-            width="40"
-            height="40"
-            alt=""
-          />
-          <span class="pf-brand-name">Pulse Flow</span>
-        </a>
-        <nav class="pf-folders" aria-label="Pulse Flow">
-          <a class="pf-folder pf-folder-pulse" href="/it/" aria-current="page"><img class="pf-folder-mark" src="/assets/pulse-mark.svg" width="20" height="20" alt="" />Pulse Flow</a>
-          <a class="pf-folder pf-folder-services" href="/it/services"><img class="pf-folder-mark" src="/assets/services-mark.png?v=3" width="20" height="20" alt="" />Pulse Flow Services</a>
-        </nav>
-        <div class="pf-nav-actions">
-          <label class="pf-lang">
-            <span class="pf-visually-hidden" data-i18n="nav.language"
-              >Lingua</span>
-            <select
-              class="pf-lang-select"
-              data-locale-select
-              data-i18n-attr="aria-label:nav.language"
-              aria-label="Lingua"
-            ></select>
-          </label>
-          <button
-            type="button"
-            class="pf-theme-toggle"
-            data-theme-toggle
-            aria-label="Appearance"
-            title="Appearance"
-          >
-            <span data-theme-icon aria-hidden="true">☾</span>
-          </button>
-          <a
-            class="pf-cta"
-            href="https://app.pulseflow.site/login?lang=it"
-            data-i18n="nav.open_app"
-            >Apri l'app</a>
+  <body class="home-page site-redesign">
+    <a class="skip" href="#main" data-i18n="nav.skip">Vai al contenuto</a>
+
+    <div class="site">
+      <header class="site-nav" role="banner">
+        <div class="site-nav-pill">
+          <a class="site-logo" href="/it/" aria-label="Pulse Flow">
+            <img src="/assets/pulse-mark.svg" width="28" height="28" alt="" />
+            <span class="site-logo-name">Pulse Flow</span>
+          </a>
+          <nav class="site-switch" aria-label="Product">
+            <a href="/it/" aria-current="page" data-i18n="nav.property_ops">Ops proprietà</a>
+            <a href="/it/services" data-i18n="nav.services">Services</a>
+          </nav>
+          <nav class="site-nav-links" aria-label="On this page">
+            <a href="#features" data-i18n="nav.features">Funzioni</a>
+            <a href="#pricing" data-i18n="nav.pricing">Prezzi</a>
+            <a href="#faq" data-i18n="nav.faq">FAQ</a>
+          </nav>
+          <div class="site-nav-end">
+            <label class="site-lang">
+              <span class="pf-visually-hidden" data-i18n="nav.language">Lingua</span>
+              <select
+                class="pf-lang-select"
+                data-locale-select
+                data-i18n-attr="aria-label:nav.language"
+                aria-label="Lingua"
+              ></select>
+            </label>
+            <a
+              class="site-btn site-btn-primary site-btn-nav"
+              href="https://app.pulseflow.site/?lang=it"
+              data-i18n="nav.open_app"
+              >Apri l'app</a>
+          </div>
         </div>
       </header>
 
-      <main id="main">
-        <section class="pf-hero" id="hero">
-          <div class="pf-hero-copy">
-<h1 class="pf-headline" data-i18n="home.headline">Il polso delle vostre operazioni di affitto</h1>
-            <p class="pf-sub" data-i18n="home.sub">Immobili, lavori, attività, fornitori, fatture e ospiti in un solo spazio. Ognuno vede la propria parte, nella propria lingua.</p>
-            <div class="pf-hero-actions">
-              <a class="pf-btn-primary" href="https://app.pulseflow.site/register?lang=it" data-i18n="home.cta">Inizia gratis</a>
-              <a class="pf-btn-outline" href="#demo-now" data-i18n="home.cta_secondary">Guarda la prova</a>
+      <main id="main" class="site-main">
+        <section class="hero" id="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <h1 id="hero-title" class="hero-title" data-i18n="home.headline">Vedere la giornata di ogni villa senza chiedere.</h1>
+            <p class="hero-lead" data-i18n="home.sub">Task, staff, manutenzione e bollette in un’app per i team a Koh Phangan.</p>
+            <div class="hero-actions">
+              <a
+                class="site-btn site-btn-primary"
+                href="https://app.pulseflow.site/?lang=it"
+                data-i18n="home.cta"
+                >Apri l’app</a>
+              <a
+                class="site-btn site-btn-secondary"
+                href="#features"
+                data-i18n="home.cta_secondary"
+                >Vedi come funziona</a>
             </div>
-            <p class="pf-launch-chip">
-              <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/></svg>
-              <span>
-                <span data-i18n="home.launch_chip_prefix">Lancio demo: Koh Phangan, Thailandia - per domande scrivete a </span><a href="mailto:support@pulseflow.site">support@pulseflow.site</a><span data-i18n="home.launch_chip_suffix"> for queries</span>
-              </span>
-            </p>
           </div>
-          <div class="pf-hero-visual" aria-hidden="true">
-            <figure class="pf-hero-shot">
-              <div class="pf-hero-status">
-                <span class="pf-hero-status-time">9:41</span>
-                <span class="pf-hero-status-icons">
-                  <svg viewBox="0 0 17 12" width="17" height="12" aria-hidden="true"><rect x="0" y="3.5" width="3" height="8.5" rx="0.6" fill="currentColor"/><rect x="4.5" y="2" width="3" height="10" rx="0.6" fill="currentColor"/><rect x="9" y="0.5" width="3" height="11.5" rx="0.6" fill="currentColor"/><rect x="13.5" y="0" width="3" height="12" rx="0.6" fill="currentColor" opacity="0.3"/></svg>
-                  <svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true"><path fill="currentColor" d="M8 2.6c2.1 0 4 0.8 5.5 2.1l-1.4 1.4C11 4.9 9.6 4.3 8 4.3S5 4.9 3.9 6.1L2.5 4.7C4 3.4 5.9 2.6 8 2.6zm0 3.4c1.2 0 2.3 0.5 3.1 1.2L8 10.3 4.9 7.2C5.7 6.5 6.8 6 8 6zm0-6C4.7 0 1.7 1.4 0 3.6l1.5 1.5C2.9 3.4 5.3 2.2 8 2.2s5.1 1.2 6.5 2.9L16 3.6C14.3 1.4 11.3 0 8 0z"/></svg>
-                  <svg viewBox="0 0 25 12" width="25" height="12" aria-hidden="true"><rect x="0" y="1" width="21" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1"/><rect x="2" y="3" width="15" height="6" rx="1" fill="currentColor"/><path fill="currentColor" d="M22 4h1.5a1.5 1.5 0 0 1 0 4H22V4z"/></svg>
-                </span>
-              </div>
+
+          <div class="hero-bento" aria-hidden="true">
+            <article class="hero-tile hero-tile-timeline">
+              <p class="tile-label" data-i18n="home.hero_timeline_label">Today</p>
+              <h2 class="tile-title" data-i18n="home.hero_timeline_title">Your day</h2>
+              <ol class="timeline-list">
+                <li>
+                  <span class="timeline-time">09:30</span>
+                  <div class="timeline-body">
+                    <strong>Checkout · Villa Coral</strong>
+                    <span>Keys with front desk</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="timeline-time">11:00</span>
+                  <div class="timeline-body">
+                    <strong>Turnover clean</strong>
+                    <span>Assigned to Somchai</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="timeline-time">15:40</span>
+                  <div class="timeline-body">
+                    <strong>Guest arrival</strong>
+                    <span>Villa Horizon · welcome note ready</span>
+                  </div>
+                </li>
+              </ol>
+            </article>
+
+            <article class="hero-tile hero-tile-task">
               <img
-                src="/assets/screenshots/en/owner-home-hero.png?v=13"
-                width="780"
-                height="1688"
+                class="task-photo"
+                src="/assets/hero-villa-sky.webp"
+                width="1800"
+                height="1200"
                 alt=""
                 loading="eager"
+                decoding="async"
+              />
+              <p class="task-meta">
+                <strong data-i18n="home.hero_task_title">Pool filter cleaned</strong>
+                <span data-i18n="home.hero_task_meta">Photo proof · Villa Coral</span>
+              </p>
+            </article>
+
+            <article class="hero-tile hero-tile-staff">
+              <p class="tile-label" data-i18n="home.hero_staff_label">On duty</p>
+              <div class="staff-row">
+                <span class="staff-dot" aria-hidden="true"></span>
+                <p>
+                  <span data-i18n="home.hero_staff_name">Somchai</span>
+                  <span data-i18n="home.hero_staff_meta">Cleaner · morning shift</span>
+                </p>
+              </div>
+            </article>
+
+            <article class="hero-tile hero-tile-urgent">
+              <p class="urgent-kicker" data-i18n="home.hero_urgent_kicker">Needs you</p>
+              <p class="urgent-title" data-i18n="home.hero_urgent_title">AC not cooling in master bedroom</p>
+              <p class="urgent-meta" data-i18n="home.hero_urgent_meta">Villa Horizon · open</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="site-section" id="features" aria-labelledby="features-title">
+          <div class="site-section-head">
+            <h2 id="features-title" class="site-h2" data-i18n="home.features_title">Cosa fa l’app</h2>
+          </div>
+          <div class="jobs">
+            <article class="job job-a">
+              <div class="job-copy">
+                <h3 data-i18n="home.job1_title">Task e staff</h3>
+                <p data-i18n="home.job1_body">Assegna il lavoro, vedi chi lo ha preso e tieni la stessa giornata per tutti.</p>
+              </div>
+              <figure class="job-shot">
+                <img
+                  src="/assets/screenshots/en/webp/frost-owner-tasks.webp?v=2"
+                  width="780"
+                  height="1688"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+            </article>
+
+            <article class="job job-b">
+              <div class="job-copy">
+                <h3 data-i18n="home.job2_title">Manutenzione e forniture</h3>
+                <p data-i18n="home.job2_body">Ordina dai contatti, allega foto o scontrino e tieni il costo sulla villa.</p>
+              </div>
+              <figure class="job-shot">
+                <img
+                  src="/assets/screenshots/en/webp/frost-owner-contacts.webp?v=2"
+                  width="780"
+                  height="1688"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+            </article>
+
+            <article class="job job-c">
+              <div class="job-copy">
+                <h3 data-i18n="home.job3_title">Visibilità per il proprietario</h3>
+                <p data-i18n="home.job3_body">Occupazione, lavori aperti e spese senza chiamare il manager.</p>
+              </div>
+              <figure class="job-shot">
+                <img
+                  src="/assets/screenshots/en/webp/frost-owner-home.webp?v=2"
+                  width="780"
+                  height="1688"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+            </article>
+          </div>
+        </section>
+
+        <section class="site-section" id="roles" aria-labelledby="roles-title">
+          <div class="site-section-head">
+            <h2 id="roles-title" class="site-h2" data-i18n="home.roles_title">Pensato per ogni ruolo</h2>
+          </div>
+          <div class="roles-tabs" role="tablist" aria-label="Roles">
+            <button type="button" class="roles-tab" role="tab" id="tab-owner" aria-controls="panel-owner" aria-selected="true" data-i18n="home.roles_owner_tab">Proprietari</button>
+            <button type="button" class="roles-tab" role="tab" id="tab-manager" aria-controls="panel-manager" aria-selected="false" data-i18n="home.roles_manager_tab">Manager</button>
+            <button type="button" class="roles-tab" role="tab" id="tab-staff" aria-controls="panel-staff" aria-selected="false" data-i18n="home.roles_staff_tab">Staff</button>
+          </div>
+          <div class="roles-panel is-active" role="tabpanel" id="panel-owner" aria-labelledby="tab-owner">
+            <p data-i18n="home.roles_owner_body">Occupazione, urgenze e spese - senza chiedere.</p>
+                        <figure class="roles-shot">
+              <img
+              src="/assets/screenshots/en/webp/frost-owner-home.webp?v=2"
+              width="780"
+              height="1688"
+              alt=""
+              loading="lazy"
+              decoding="async"
+                />
+            </figure>
+          </div>
+          <div class="roles-panel" role="tabpanel" id="panel-manager" aria-labelledby="tab-manager" hidden>
+            <p data-i18n="home.roles_manager_body">Costruisci la giornata una volta. Passa il turno con la sua storia.</p>
+                        <figure class="roles-shot">
+              <img
+              src="/assets/screenshots/en/webp/frost-owner-properties.webp?v=2"
+              width="780"
+              height="1688"
+              alt=""
+              loading="lazy"
+              decoding="async"
+                />
+            </figure>
+          </div>
+          <div class="roles-panel" role="tabpanel" id="panel-staff" aria-labelledby="tab-staff" hidden>
+            <p data-i18n="home.roles_staff_body">I tuoi job sul telefono. Conferma con un tap, invia ricevute dal sito.</p>
+                        <figure class="roles-shot">
+              <img
+              src="/assets/screenshots/en/webp/frost-staff-home.webp?v=2"
+              width="780"
+              height="1688"
+              alt=""
+              loading="lazy"
+              decoding="async"
+                />
+            </figure>
+          </div>
+        </section>
+
+        <section class="site-section" id="services-teaser" aria-labelledby="services-teaser-title">
+          <div class="services-panel">
+            <div>
+              <h2 id="services-teaser-title" data-i18n="home.services_title">Pulse Flow Services</h2>
+              <p data-i18n="home.services_body">Un marketplace gemello per idraulici, pulizie e tecnici locali.</p>
+              <a class="site-btn site-btn-primary" href="/it/services" data-i18n="home.services_cta">Apri Services</a>
+            </div>
+            <figure class="services-shot">
+              <img
+                src="/assets/services-horizon.webp"
+                width="1280"
+                height="720"
+                alt=""
+                loading="lazy"
+                decoding="async"
               />
             </figure>
           </div>
         </section>
 
-        <section class="pf-alt pf-fade" id="alternative" aria-labelledby="alt-title">
-          <h2 id="alt-title" data-i18n="home.alt_title">Problemi della gestione degli immobili</h2>
-          <div class="pf-flip-grid" data-flip-grid>
-            <div class="pf-flip" data-flip-card role="button" tabindex="0" aria-pressed="false">
-              <div class="pf-flip-inner">
-                <div class="pf-flip-face pf-flip-front">
-                  <svg class="pf-duo" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><g fill="#8ecae6"><path d="M16 14C18.7614 14 21 15.3431 21 17C21 18.6569 18.7614 20 16 20C13.2386 20 11 18.6569 11 17C11 15.3431 13.2386 14 16 14Z"/>
-        <path d="M15 3C16.6569 3 18 4.34315 18 6C18 7.65685 16.6569 9 15 9C13.3431 9 12 7.65685 12 6C12 4.34315 13.3431 3 15 3Z"/></g><g fill="#023047"><path d="M9.00098 13.001C12.867 13.001 16.001 14.7918 16.001 17.001C16.001 19.2101 12.867 21.001 9.00098 21.001C5.13498 21.001 2.00098 19.2101 2.00098 17.001C2.00098 14.7918 5.13498 13.001 9.00098 13.001Z"/>
-        <path d="M9.00098 2C11.2101 2 13.001 3.79086 13.001 6C13.001 8.20914 11.2101 10 9.00098 10C6.79184 10 5.00098 8.20914 5.00098 6C5.00098 3.79086 6.79184 2 9.00098 2Z"/></g></svg>
-                  <span class="pf-flip-label" data-i18n="home.pain_team">Il vostro team</span>
-                </div>
-                <div class="pf-flip-face pf-flip-back">
-                  <ul>
-                    <li data-i18n="home.pain_team_1">Ogni nuovo assunto viene istruito da zero</li>
-                    <li data-i18n="home.pain_team_2">Solo una persona sa quale fornitore chiamare</li>
-                    <li data-i18n="home.pain_team_3">Il gestore non c'è - il piano se ne va con lui</li>
-                    <li data-i18n="home.pain_team_4">Nessuna vista condivisa di cosa succede oggi</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="pf-flip" data-flip-card role="button" tabindex="0" aria-pressed="false">
-              <div class="pf-flip-inner">
-                <div class="pf-flip-face pf-flip-front">
-                  <svg class="pf-duo" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><g fill="#8ecae6"><path d="M11.7598 4.08286C12.349 4.0805 12.644 4.07904 13.0138 4.2313C13.3833 4.38356 13.6289 4.6297 14.1202 5.12095L18.9454 9.94517C19.4735 10.4732 19.7383 10.738 19.8907 11.1336C20.0429 11.529 20.0263 11.8492 19.9942 12.4891C19.9405 13.5608 19.7703 15.1141 19.2823 16.8211C18.9802 17.8777 18.5039 18.9408 18.003 19.8895C16.9429 21.8974 14.4875 22.5205 12.5889 21.5516L11.3702 20.8104C8.02817 18.7773 5.22265 15.9718 3.18953 12.6297L2.44832 11.411C1.47933 9.51245 2.10249 7.05711 4.11043 5.99693C5.05913 5.49603 6.12226 5.01969 7.17879 4.71763C8.9754 4.20402 10.6467 4.08733 11.7598 4.08286Z"/>
-        <path d="M21.4698 1.46958C21.7627 1.17686 22.2375 1.17675 22.5304 1.46958C22.823 1.76243 22.823 2.23728 22.5304 2.53013L20.128 4.93247C19.9849 4.73086 19.8233 4.53796 19.6427 4.35728C19.4619 4.17654 19.2692 4.01503 19.0675 3.87193L21.4698 1.46958Z"/></g><g fill="#023047"><path d="M19.6426 4.35756C17.9067 2.62162 15.0922 2.62175 13.3562 4.35764L13.3184 4.39549C13.5498 4.55102 13.774 4.77521 14.1201 5.12119L18.9454 9.9457C19.2472 10.2475 19.4628 10.463 19.6205 10.6662L19.6427 10.644C21.3786 8.90807 21.3785 6.09349 19.6426 4.35756Z"/></g></svg>
-                  <span class="pf-flip-label" data-i18n="home.pain_jobs">I vostri incarichi</span>
-                </div>
-                <div class="pf-flip-face pf-flip-back">
-                  <ul>
-                    <li data-i18n="home.pain_jobs_1">Incarico inviato. Nessuna idea di chi l'ha preso</li>
-                    <li data-i18n="home.pain_jobs_2">Villa sbagliata - la chat ha sepolto l'indirizzo</li>
-                    <li data-i18n="home.pain_jobs_3">Lavoro fatto. Nessun registro di chi o quanto</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="pf-flip" data-flip-card role="button" tabindex="0" aria-pressed="false">
-              <div class="pf-flip-inner">
-                <div class="pf-flip-face pf-flip-front">
-                  <svg class="pf-duo" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><g fill="#ffb703"><path d="M7.24502 2H16.755C17.9139 2 18.4933 2 18.9606 2.16261C19.8468 2.47096 20.5425 3.18719 20.842 4.09946C21 4.58055 21 5.17705 21 6.37006V20.3742C21 21.2324 20.015 21.6878 19.3919 21.1176C19.0258 20.7826 18.4742 20.7826 18.1081 21.1176L17.625 21.5597C16.9834 22.1468 16.0166 22.1468 15.375 21.5597C14.7334 20.9726 13.7666 20.9726 13.125 21.5597C12.4834 22.1468 11.5166 22.1468 10.875 21.5597C10.2334 20.9726 9.26659 20.9726 8.625 21.5597C7.98341 22.1468 7.01659 22.1468 6.375 21.5597L5.8919 21.1176C5.52583 20.7826 4.97417 20.7826 4.6081 21.1176C3.985 21.6878 3 21.2324 3 20.3742V6.37006C3 5.17705 3 4.58055 3.15795 4.09946C3.45748 3.18719 4.15322 2.47096 5.03939 2.16261C5.50671 2 6.08614 2 7.24502 2Z"/></g><g fill="#023047"><path d="M7 6.75C6.58579 6.75 6.25 7.08579 6.25 7.5C6.25 7.91421 6.58579 8.25 7 8.25H7.5C7.91421 8.25 8.25 7.91421 8.25 7.5C8.25 7.08579 7.91421 6.75 7.5 6.75H7Z"/>
-        <path d="M10.5 6.75C10.0858 6.75 9.75 7.08579 9.75 7.5C9.75 7.91421 10.0858 8.25 10.5 8.25H17C17.4142 8.25 17.75 7.91421 17.75 7.5C17.75 7.08579 17.4142 6.75 17 6.75H10.5Z"/>
-        <path d="M7 10.25C6.58579 10.25 6.25 10.5858 6.25 11C6.25 11.4142 6.58579 11.75 7 11.75H7.5C7.91421 11.75 8.25 11.4142 8.25 11C8.25 10.5858 7.91421 10.25 7.5 10.25H7Z"/>
-        <path d="M10.5 10.25C10.0858 10.25 9.75 10.5858 9.75 11C9.75 11.4142 10.0858 11.75 10.5 11.75H17C17.4142 11.75 17.75 11.4142 17.75 11C17.75 10.5858 17.4142 10.25 17 10.25H10.5Z"/>
-        <path d="M7 13.75C6.58579 13.75 6.25 14.0858 6.25 14.5C6.25 14.9142 6.58579 15.25 7 15.25H7.5C7.91421 15.25 8.25 14.9142 8.25 14.5C8.25 14.0858 7.91421 13.75 7.5 13.75H7Z"/>
-        <path d="M10.5 13.75C10.0858 13.75 9.75 14.0858 9.75 14.5C9.75 14.9142 10.0858 15.25 10.5 15.25H17C17.4142 15.25 17.75 14.9142 17.75 14.5C17.75 14.0858 17.4142 13.75 17 13.75H10.5Z"/></g></svg>
-                  <span class="pf-flip-label" data-i18n="home.pain_money">I vostri soldi</span>
-                </div>
-                <div class="pf-flip-face pf-flip-back">
-                  <ul>
-                    <li data-i18n="home.pain_money_1">Nessun costo di manutenzione chiaro per immobile</li>
-                    <li data-i18n="home.pain_money_2">Ricevute perse nelle chat fino a fine mese</li>
-                    <li data-i18n="home.pain_money_3">Spese anticipate senza traccia di rimborso</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="pf-flip" data-flip-card role="button" tabindex="0" aria-pressed="false">
-              <div class="pf-flip-inner">
-                <div class="pf-flip-face pf-flip-front">
-                  <svg class="pf-duo" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><g fill="#8ecae6"><path d="M10.9976 4H12.9976C16.7688 4 18.6544 4 19.826 5.17157C20.8485 6.19404 20.9786 7.76038 20.9952 10.6494V12.2662L19.25 12.0001H4.75003L3.00244 12.2665L3 12.2679V10.6494C3.01656 7.76038 3.14669 6.19404 4.16916 5.17157C5.34073 4 7.22635 4 10.9976 4Z"/></g><g fill="#023047"><path d="M19.25 12L20.998 12.2666C21.3781 12.4854 21.6779 12.8248 21.8477 13.2344C21.9999 13.6019 22 14.0682 22 15C22 15.9319 21.9999 16.3981 21.8477 16.7656C21.6447 17.2555 21.2555 17.6447 20.7656 17.8477C20.5132 17.9522 20.2142 17.9849 19.75 17.9951V20C19.75 20.4142 19.4142 20.75 19 20.75C18.5858 20.75 18.25 20.4142 18.25 20V18H5.75V20C5.75 20.4142 5.41421 20.75 5 20.75C4.58579 20.75 4.25 20.4142 4.25 20V17.9951C3.78581 17.9849 3.48676 17.9522 3.23438 17.8477C2.74451 17.6447 2.35531 17.2555 2.15234 16.7656C2.0001 16.3981 2 15.9319 2 15C2 14.0682 2.00011 13.6019 2.15234 13.2344C2.32213 12.8247 2.6227 12.4854 3.00293 12.2666L4.75 12H19.25Z"/>
-        <path d="M11.0869 10.5H5C5 9.31352 5.00199 8.51638 5.08105 7.92188C5.15659 7.35403 5.28668 7.11057 5.44531 6.9502C5.60393 6.78984 5.84472 6.6584 6.40625 6.58203C6.99422 6.50211 7.78273 6.5 8.95605 6.5H11.0869V10.5Z"/>
-        <path d="M15.0439 6.5C16.2173 6.5 17.0058 6.50211 17.5938 6.58203C18.1553 6.6584 18.3961 6.78984 18.5547 6.9502C18.7133 7.11057 18.8434 7.35403 18.9189 7.92188C18.998 8.51638 19 9.31352 19 10.5H12.9131V6.5H15.0439Z"/></g></svg>
-                  <span class="pf-flip-label" data-i18n="home.pain_guests">I vostri ospiti</span>
-                </div>
-                <div class="pf-flip-face pf-flip-back">
-                  <ul>
-                    <li data-i18n="home.pain_guests_1">Contese sul deposito senza traccia scritta</li>
-                    <li data-i18n="home.pain_guests_2">Regole inviate. L'ospite dice di non averle mai ricevute</li>
-                    <li data-i18n="home.pain_guests_3">Gli ospiti che tornano scrivono sul numero personale per prenotare</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p class="pf-flip-hint" data-i18n="home.flip_hint">Toccate per girare</p>
-
-          <div class="pf-contrast" aria-label="Before and after">
-            <div class="pf-contrast-col">
-              <h3 data-i18n="home.before_label">Prima</h3>
-              <div class="pf-wa" aria-hidden="true">
-                <div class="pf-wa-bar">
-                  <strong data-i18n="home.mock_wa_title">Operazioni ville · Koh Phangan</strong>
-                  <span data-i18n="home.mock_wa_sub">12 partecipanti</span>
-                </div>
-                <div class="pf-wa-thread">
-                  <div class="pf-wa-day" data-i18n="home.mock_wa_day">Oggi</div>
-                  <div class="pf-wa-msg is-in">
-                    <span class="pf-wa-name" data-i18n="home.mock_wa_alex">Alex Proprietario</span>
-                    <span data-i18n="home.mock_wa_1">Qualcuno può controllare il filtro della piscina a Coral? L'ospite dice che puzza.</span>
-                    <time>09:14</time>
-                  </div>
-                  <div class="pf-wa-msg is-in">
-                    <span class="pf-wa-name" data-i18n="home.mock_wa_sam">Sam Gestore</span>
-                    <span data-i18n="home.mock_wa_2">Chi è libero? Somchai?</span>
-                    <time>09:16</time>
-                  </div>
-                  <div class="pf-wa-msg is-in">
-                    <span class="pf-wa-name" data-i18n="home.mock_wa_mai">Mai Donna delle pulizie</span>
-                    <span data-i18n="home.mock_wa_3">Sono a Lotus per il cambio. Quale villa era?</span>
-                    <time>09:41</time>
-                  </div>
-                  <div class="pf-wa-msg is-out">
-                    <span data-i18n="home.mock_wa_4">Coral. Oggi prima delle 14, per favore.</span>
-                    <time>09:42</time>
-                  </div>
-                  <div class="pf-wa-msg is-in">
-                    <span class="pf-wa-name" data-i18n="home.mock_wa_sam">Sam Gestore</span>
-                    <span data-i18n="home.mock_wa_5">E dov'è la ricevuta della settimana scorsa per il tecnico del condizionatore? Il proprietario chiede.</span>
-                    <time>10:05</time>
-                  </div>
-                  <div class="pf-wa-msg is-in">
-                    <span class="pf-wa-name" data-i18n="home.mock_wa_pom">Pom Fornitore</span>
-                    <span data-i18n="home.mock_wa_6">Finito il filtro a Coral. 800 baht in contanti.</span>
-                    <time>14:58</time>
-                  </div>
-                  <div class="pf-wa-msg is-out">
-                    <span data-i18n="home.mock_wa_7">Qualcuno ha confermato che Coral era fatto? L'ospite ha già fatto il check-in…</span>
-                    <time>16:22</time>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="pf-contrast-col">
-              <h3 data-i18n="home.after_label">Dopo</h3>
-              <div class="pf-flow" aria-hidden="true">
-                <div class="pf-flow-bar">
-                  <strong data-i18n="home.mock_flow_title">Lavoro · Villa Coral</strong>
-                  <span data-i18n="home.mock_flow_sub">Controllo filtro piscina</span>
-                </div>
-                <div class="pf-flow-body">
-                  <div class="pf-flow-head">
-                    <span class="pf-flow-status" data-i18n="home.mock_flow_status">Fatto</span>
-                    <p class="pf-flow-meta" data-i18n="home.mock_flow_meta">Oggi · entro le 14:00 · assegnato a Pom</p>
-                  </div>
-                  <ol class="pf-flow-steps">
-                    <li class="is-done">
-                      <span class="pf-flow-dot" aria-hidden="true"></span>
-                      <div class="pf-flow-step">
-                        <strong data-i18n="home.mock_flow_created">Lavoro creato</strong>
-                        <span data-i18n="home.mock_flow_created_meta">Alex · 09:14</span>
-                      </div>
-                    </li>
-                    <li class="is-done">
-                      <span class="pf-flow-dot" aria-hidden="true"></span>
-                      <div class="pf-flow-step">
-                        <strong data-i18n="home.mock_flow_accepted">Accettato</strong>
-                        <span data-i18n="home.mock_flow_accepted_meta">Pom · Letto e accettato</span>
-                      </div>
-                    </li>
-                    <li class="is-done">
-                      <span class="pf-flow-dot" aria-hidden="true"></span>
-                      <div class="pf-flow-step">
-                        <strong data-i18n="home.mock_flow_onsite">In loco</strong>
-                        <span data-i18n="home.mock_flow_onsite_meta">Pom · Coral</span>
-                      </div>
-                    </li>
-                    <li class="is-done">
-                      <span class="pf-flow-dot" aria-hidden="true"></span>
-                      <div class="pf-flow-step">
-                        <strong data-i18n="home.mock_flow_done">Completato</strong>
-                        <span data-i18n="home.mock_flow_done_meta">Pom · 14:58</span>
-                      </div>
-                    </li>
-                  </ol>
-                  <div class="pf-flow-bill">
-                    <span data-i18n="home.mock_flow_bill">Ricevuta 800 THB · in attesa della tua approvazione</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </section>
-
-        <section class="pf-features pf-fade" id="features" aria-labelledby="features-title">
-          <div class="pf-features-head">
-            <h2 id="features-title" data-i18n="home.features_title">Tutto quello che serve per lavorare</h2>
-            <p data-i18n="home.features_sub">Quattro aspetti che di solito si gestiscono con quattro strumenti diversi.</p>
-          </div>
-
-          <div class="pf-feature-carousel" data-feature-carousel>
-            <div class="pf-feature-track" data-feature-track tabindex="0" data-i18n-attr="aria-label:home.cards_label" aria-label="Funzioni del prodotto">
-              <article class="pf-feature-slide is-active" data-feature-slide>
-                <div class="pf-feature-copy">
-                  <div class="pf-card-icon" aria-hidden="true">
-                    <svg class="pf-duo" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><g fill="#219ebc"><path d="M20.9129 5.88881C21.25 6.39325 21.25 7.09549 21.25 8.49995V21.2499H21.75C22.1642 21.2499 22.5 21.5857 22.5 21.9999C22.5 22.4142 22.1642 22.7499 21.75 22.7499H1.75C1.33579 22.7499 1 22.4142 1 21.9999C1 21.5857 1.33579 21.2499 1.75 21.2499H2.25V8.49995C2.25 7.09549 2.25 6.39325 2.58706 5.88881C2.73298 5.67043 2.92048 5.48293 3.13886 5.33701C3.58008 5.04219 5.67561 5.00524 6.75702 5.00061C6.75291 5.292 6.75294 5.59649 6.75298 5.91045L6.75299 5.99995V7.24995H4.25C3.83579 7.24995 3.5 7.58573 3.5 7.99995C3.5 8.41416 3.83579 8.74995 4.25 8.74995H6.75299V10.2499H4.25C3.83579 10.2499 3.5 10.5857 3.5 10.9999C3.5 11.4142 3.83579 11.7499 4.25 11.7499H6.75299V13.2499H4.25C3.83579 13.2499 3.5 13.5857 3.5 13.9999C3.5 14.4142 3.83579 14.7499 4.25 14.7499H6.75299V21.2499H16.7529V14.7499H19.25C19.6642 14.7499 20 14.4142 20 13.9999C20 13.5857 19.6642 13.2499 19.25 13.2499H16.7529V11.7499H19.25C19.6642 11.7499 20 11.4142 20 10.9999C20 10.5857 19.6642 10.2499 19.25 10.2499H16.7529V8.74995H19.25C19.6642 8.74995 20 8.41416 20 7.99995C20 7.58573 19.6642 7.24995 19.25 7.24995H16.7529V5.99995L16.7529 5.91046V5.91043C16.753 5.59648 16.753 5.292 16.7489 5.00061C17.8303 5.00524 19.9199 5.04219 20.3611 5.33701C20.5795 5.48293 20.767 5.67043 20.9129 5.88881Z"/></g><g fill="#023047"><path fill-rule="evenodd" d="M10.75 2H12.75C14.6356 2 15.5784 2 16.1642 2.58579C16.75 3.17157 16.75 4.11438 16.75 6V21.25H18.25H21.25H21.75C22.1642 21.25 22.5 21.5858 22.5 22C22.5 22.4142 22.1642 22.75 21.75 22.75H1.75C1.33579 22.75 1 22.4142 1 22C1 21.5858 1.33579 21.25 1.75 21.25H2.25H5.25H6.75V6C6.75 4.11438 6.75 3.17157 7.33579 2.58579C7.92157 2 8.86438 2 10.75 2ZM11.75 18.25C12.1642 18.25 12.5 18.5858 12.5 19V21.25H11V19C11 18.5858 11.3358 18.25 11.75 18.25ZM9.75 14C9.33579 14 9 14.3358 9 14.75C9 15.1642 9.33579 15.5 9.75 15.5H13.75C14.1642 15.5 14.5 15.1642 14.5 14.75C14.5 14.3358 14.1642 14 13.75 14H9.75ZM9 11.75C9 11.3358 9.33579 11 9.75 11H13.75C14.1642 11 14.5 11.3358 14.5 11.75C14.5 12.1642 14.1642 12.5 13.75 12.5H9.75C9.33579 12.5 9 12.1642 9 11.75ZM9.75 8.5C9.33579 8.5 9 8.83579 9 9.25C9 9.66421 9.33579 10 9.75 10H13.75C14.1642 10 14.5 9.66421 14.5 9.25C14.5 8.83579 14.1642 8.5 13.75 8.5H9.75ZM9 6.25C9 5.83579 9.33579 5.5 9.75 5.5H13.75C14.1642 5.5 14.5 5.83579 14.5 6.25C14.5 6.66421 14.1642 7 13.75 7H9.75C9.33579 7 9 6.66421 9 6.25Z" clip-rule="evenodd"/></g></svg>
-                  </div>
-                  <h3 class="pf-tag" data-i18n="home.card_villas">Immobili</h3>
-                  <p class="pf-desc" data-i18n="home.card_villas_desc">Un elenco per il proprietario, il manager assegnato e chi è in loco. Dettagli, stato, pin mappa, date soggiorno e foto, così il team capisce gli immobili assegnati. Compilazione rapida da un link annuncio Airbnb, poi importa calendari Airbnb, Booking.com o Guesty in Bookings.</p>
-                </div>
-              </article>
-
-              <article class="pf-feature-slide" data-feature-slide>
-                <div class="pf-feature-copy">
-                  <div class="pf-card-icon" aria-hidden="true">
-                    <svg class="pf-duo" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><g fill="#8ecae6"><path d="M11.7598 4.08286C12.349 4.0805 12.644 4.07904 13.0138 4.2313C13.3833 4.38356 13.6289 4.6297 14.1202 5.12095L18.9454 9.94517C19.4735 10.4732 19.7383 10.738 19.8907 11.1336C20.0429 11.529 20.0263 11.8492 19.9942 12.4891C19.9405 13.5608 19.7703 15.1141 19.2823 16.8211C18.9802 17.8777 18.5039 18.9408 18.003 19.8895C16.9429 21.8974 14.4875 22.5205 12.5889 21.5516L11.3702 20.8104C8.02817 18.7773 5.22265 15.9718 3.18953 12.6297L2.44832 11.411C1.47933 9.51245 2.10249 7.05711 4.11043 5.99693C5.05913 5.49603 6.12226 5.01969 7.17879 4.71763C8.9754 4.20402 10.6467 4.08733 11.7598 4.08286Z"/>
-        <path d="M21.4698 1.46958C21.7627 1.17686 22.2375 1.17675 22.5304 1.46958C22.823 1.76243 22.823 2.23728 22.5304 2.53013L20.128 4.93247C19.9849 4.73086 19.8233 4.53796 19.6427 4.35728C19.4619 4.17654 19.2692 4.01503 19.0675 3.87193L21.4698 1.46958Z"/></g><g fill="#023047"><path d="M19.6426 4.35756C17.9067 2.62162 15.0922 2.62175 13.3562 4.35764L13.3184 4.39549C13.5498 4.55102 13.774 4.77521 14.1201 5.12119L18.9454 9.9457C19.2472 10.2475 19.4628 10.463 19.6205 10.6662L19.6427 10.644C21.3786 8.90807 21.3785 6.09349 19.6426 4.35756Z"/></g></svg>
-                  </div>
-                  <h3 class="pf-tag" data-i18n="home.card_jobs">Incarichi e fornitori</h3>
-                  <p class="pf-desc" data-i18n="home.card_jobs_desc">Aggiungete i contatti della manutenzione e prenotateli con una chiamata o un messaggio. Oppure invitateli nell'app per comodità di entrambi: il personale potrà accettare i lavori in-app.</p>
-                </div>
-              </article>
-
-              <article class="pf-feature-slide" data-feature-slide>
-                <div class="pf-feature-copy">
-                  <div class="pf-card-icon" aria-hidden="true">
-                    <svg class="pf-duo" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><g fill="#ffb703"><path d="M21.1394 10.0015C21.1394 8.82091 21.0965 7.55447 20.3418 6.64658C20.2689 6.55894 20.1914 6.47384 20.1088 6.39124C19.3604 5.64288 18.4114 5.31076 17.239 5.15314C16.0998 4.99997 14.6442 4.99999 12.8064 5H10.6936C8.85583 4.99999 7.40019 4.99997 6.26098 5.15314C5.08856 5.31076 4.13961 5.64288 3.39124 6.39124C2.64288 7.13961 2.31076 8.08856 2.15314 9.26098C1.99997 10.4002 1.99999 11.8558 2 13.6936V13.8064C1.99999 15.6442 1.99997 17.0998 2.15314 18.239C2.31076 19.4114 2.64288 20.3604 3.39124 21.1088C4.13961 21.8571 5.08856 22.1892 6.26098 22.3469C7.40018 22.5 8.8558 22.5 10.6935 22.5H12.8064C14.6442 22.5 16.0998 22.5 17.239 22.3469C18.4114 22.1892 19.3604 21.8571 20.1088 21.1088C20.3133 20.9042 20.487 20.6844 20.6346 20.4486C21.0851 19.7291 21.1394 18.8473 21.1394 17.9985C21.0912 18 21.0404 18 20.9882 18L18.2149 18C15.9435 18 14 16.2639 14 14C14 11.7361 15.9435 10 18.2149 10L20.9881 10C21.0403 9.99999 21.0912 9.99997 21.1394 10.0015Z"/></g><g fill="#023047"><path fill-rule="evenodd" d="M21.1885 10.0037C22.1109 10.0603 22.9263 10.7611 22.9951 11.7401C22.9996 11.8043 23 11.8741 23 11.9383V16.0613C23 16.1255 22.9996 16.1954 22.9951 16.2596C22.9263 17.2386 22.1109 17.9393 21.1885 17.9959C21.1263 17.9997 21.0585 17.9998 20.9883 17.9998H18.2148C15.9435 17.9998 14 16.2637 14 13.9998C14 11.7359 15.9435 9.99986 18.2148 9.99982H20.9883C21.0585 9.99979 21.1263 9.99991 21.1885 10.0037ZM17.9707 12.9334C17.3859 12.9334 16.9121 13.4107 16.9121 13.9998C16.9121 14.5889 17.3859 15.0662 17.9707 15.0662C18.5554 15.0662 19.0293 14.5889 19.0293 13.9998C19.0293 13.4108 18.5554 12.9335 17.9707 12.9334Z" clip-rule="evenodd"/>
-        <path d="M9.46973 8.88556C9.86895 8.88556 10.1924 9.21172 10.1924 9.61408C10.1924 10.0165 9.86897 10.3426 9.46973 10.3426H5.61426C5.21512 10.3425 4.8916 10.0164 4.8916 9.61408C4.89163 9.2118 5.21514 8.88569 5.61426 8.88556H9.46973Z"/>
-        <path d="M10.1016 2.57208C11.2301 1.80932 12.7592 1.80929 13.8877 2.57208L16 3.99982L17.9014 5.2674C17.6892 5.22148 17.4683 5.18394 17.2393 5.15314C16.1001 4.99999 14.6442 4.9998 12.8066 4.99982H10.6934C8.85875 4.9998 7.40494 4.99977 6.2666 5.15216L8 3.99201L10.1016 2.57208Z"/></g></svg>
-                  </div>
-                  <h3 class="pf-tag" data-i18n="home.card_money">Soldi</h3>
-                  <p class="pf-desc" data-i18n="home.card_money_desc">Vedete quanto costa la manutenzione in un periodo, filtrate per categorie, approvate le fatture a pagamento avvenuto. Tutti i dati si esportano per i fogli di budget.</p>
-                </div>
-              </article>
-
-              <article class="pf-feature-slide" data-feature-slide>
-                <div class="pf-feature-copy">
-                  <div class="pf-card-icon" aria-hidden="true">
-                    <svg class="pf-duo" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><g fill="#8ecae6"><path d="M18.0947 15.0312C17.6699 15 17.1487 15 16.5 15C14.8501 15 14.0251 15 13.5126 15.5126C13 16.0251 13 16.8501 13 18.5C13 19.6663 13 20.4204 13.1811 20.9433C12.7971 20.9806 12.4025 21 12 21C8.13401 21 5 19.2091 5 17C5 14.7909 8.13401 13 12 13C14.6134 13 16.8924 13.8184 18.0947 15.0312Z"/></g><g fill="#023047"><path fill-rule="evenodd" d="M16.5 15C18.1499 15 18.9747 15.0001 19.4873 15.5127C19.9999 16.0253 20 16.8501 20 18.5C20 20.1499 19.9999 20.9747 19.4873 21.4873C18.9747 21.9999 18.1499 22 16.5 22C14.8501 22 14.0253 21.9999 13.5127 21.4873C13.0001 20.9747 13 20.1499 13 18.5C13 16.8501 13.0001 16.0253 13.5127 15.5127C14.0253 15.0001 14.8501 15 16.5 15ZM16.5 16.3613C16.1779 16.3613 15.9171 16.6222 15.917 16.9443V17.917H14.9443C14.6222 17.9171 14.3613 18.1779 14.3613 18.5C14.3613 18.8221 14.6222 19.0829 14.9443 19.083H15.917V20.0557C15.9171 20.3778 16.1779 20.6387 16.5 20.6387C16.8221 20.6387 17.0829 20.3778 17.083 20.0557V19.083H18.0557C18.3778 19.0829 18.6387 18.8221 18.6387 18.5C18.6387 18.1779 18.3778 17.9171 18.0557 17.917H17.083V16.9443C17.0829 16.6222 16.8221 16.3613 16.5 16.3613Z" clip-rule="evenodd"/>
-        <path d="M12 2C14.2091 2 16 3.79086 16 6C16 8.20914 14.2091 10 12 10C9.79086 10 8 8.20914 8 6C8 3.79086 9.79086 2 12 2Z"/></g></svg>
-                  </div>
-                  <h3 class="pf-tag" data-i18n="home.card_guests">Ospiti</h3>
-                  <p class="pf-desc" data-i18n="home.card_guests_desc">Controllate tutti gli aspetti del rapporto con gli ospiti: invitate i clienti abituali a prenotare via app a tariffe locali, condividete il regolamento. Un deposito con ogni trattenuta, niente più malintesi.</p>
-                </div>
-              </article>
-            </div>
-
-            <div class="pf-feature-controls">
-              <button type="button" class="pf-feature-nav" data-feature-prev aria-label="Previous feature">
-                <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6l6 6"/></svg>
-              </button>
-              <div class="pf-dots" data-feature-dots></div>
-              <button type="button" class="pf-feature-nav" data-feature-next aria-label="Next feature">
-                <svg class="ti ti-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6l-6 6"/></svg>
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <section class="pf-lang-block pf-fade" id="translation" aria-labelledby="lang-title">
-          <div>
-            <h2 id="lang-title" data-i18n="home.lang_title">Una lingua per tutto il team</h2>
-            <p data-i18n="home.lang_desc">Il gestore scrive il lavoro in inglese, l'addetta alle pulizie lo legge in thai, il proprietario lo vede in ebraico. Ognuno imposta la lingua una volta nel profilo: lavori, chat e messaggi arrivano automaticamente nella sua lingua.</p>
-          </div>
-          <div class="pf-lang-phones" aria-hidden="true">
-            <figure class="pf-lang-phone">
-              <div class="pf-lang-phone-frame">
-                <div class="pf-lang-chat">
-                  <div class="pf-lang-chat-bar">
-                    <strong>Messages</strong>
-                    <span>Live team chat</span>
-                  </div>
-                  <div class="pf-lang-chat-thread">
-                    <div class="pf-pfchat-msg is-own">
-                      <p>Service order for Mai
-What: Deep clean before check-in
-Where: Villa Coral
-When: Today 10:00-13:00
-From: Sam Manager</p>
-                      <span class="pf-pfchat-ack">Read &amp; agreed</span>
-                    </div>
-                    <div class="pf-pfchat-msg is-other">
-                      <span class="pf-pfchat-name">Mai</span>
-                      <p>Got it. On my way to Coral.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <figcaption data-i18n="home.lang_label_en">Gestore - inglese</figcaption>
+        <section class="site-section" id="koh-phangan" aria-labelledby="koh-title">
+          <div class="koh-grid">
+            <figure class="koh-photo">
+              <img
+                src="/assets/hero-villa-sky.webp"
+                width="1800"
+                height="1200"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
             </figure>
-            <figure class="pf-lang-phone">
-              <div class="pf-lang-phone-frame">
-                <div class="pf-lang-chat">
-                  <div class="pf-lang-chat-bar">
-                    <strong>Messages</strong>
-                    <span>Live team chat</span>
-                  </div>
-                  <div class="pf-lang-chat-thread">
-                    <div class="pf-pfchat-msg is-own">
-                      <p>คำสั่งงานสำหรับ Mai
-งาน: ทำความสะอาดลึกก่อนเช็คอิน
-ที่: Villa Coral
-เวลา: วันนี้ 10:00-13:00
-จาก: Sam Manager</p>
-                      <span class="pf-pfchat-ack">อ่านแล้ว และตกลง</span>
-                    </div>
-                    <div class="pf-pfchat-msg is-other">
-                      <span class="pf-pfchat-name">Mai</span>
-                      <p>รับทราบ กำลังไป Coral</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <figcaption data-i18n="home.lang_label_th">Donna delle pulizie - thai</figcaption>
-            </figure>
-            <figure class="pf-lang-phone">
-              <div class="pf-lang-phone-frame">
-                <div class="pf-lang-chat" dir="rtl">
-                  <div class="pf-lang-chat-bar">
-                    <strong>Messages</strong>
-                    <span>Live team chat</span>
-                  </div>
-                  <div class="pf-lang-chat-thread">
-                    <div class="pf-pfchat-msg is-own">
-                      <p>הזמנת שירות עבור Mai
-מה: ניקיון עמוק לפני צ׳ק-אין
-איפה: Villa Coral
-מתי: היום 10:00-13:00
-מאת: Sam Manager</p>
-                      <span class="pf-pfchat-ack">נקרא ואושר</span>
-                    </div>
-                    <div class="pf-pfchat-msg is-other">
-                      <span class="pf-pfchat-name">Mai</span>
-                      <p>קיבלתי. בדרך ל-Coral.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <figcaption data-i18n="home.lang_label_he">Proprietario - ebraico</figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <section class="pf-audience pf-fade" id="audience" aria-labelledby="why-app">
-          <h2 id="why-app" class="pf-audience-title" data-i18n="home.why_title">Chi usa Pulse Flow?</h2>
-          <div class="pf-audience-grid">
-            <a class="pf-audience-card" href="/it/owners">
-              <div class="pf-audience-icon" aria-hidden="true">
-                <svg class="pf-duo" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><g fill="#ffb703"><path d="M14.1803 18.6963C14.6569 18.6963 15.0672 19.0327 15.1608 19.5L15.4577 21.25H8.54262L8.8395 19.5C8.93305 19.0327 9.34337 18.6963 9.81997 18.6963H14.1803Z"/>
-        <path d="M12.0006 2C13.784 2.00002 15.2536 2.15704 16.3776 2.34668C17.5161 2.53877 18.0855 2.63489 18.5612 3.2207C19.0368 3.80653 19.0118 4.43984 18.9616 5.70605C18.7808 10.259 17.7603 15.9998 12.0006 16C6.24069 16 5.22046 10.2591 5.03969 5.70605C4.98943 4.43991 4.96354 3.80651 5.43911 3.2207C5.91482 2.63481 6.48495 2.53881 7.62368 2.34668C8.74769 2.15705 10.2173 2 12.0006 2Z"/></g><g fill="#023047"><path d="M18 21.25C18.4142 21.25 18.75 21.5858 18.75 22C18.75 22.4142 18.4142 22.75 18 22.75H6C5.58579 22.75 5.25 22.4142 5.25 22C5.25 21.5858 5.58579 21.25 6 21.25H18Z"/>
-        <path d="M12.75 18.6963H11.25V15.9658C11.4906 15.9885 11.7405 16 12 16C12.2594 16 12.5094 15.9885 12.75 15.9658V18.6963Z"/>
-        <path d="M5.01758 5.08691C5.02225 5.27545 5.03012 5.48073 5.03906 5.70605C5.12737 7.93046 5.41648 10.4385 6.36035 12.4219L3.54297 10.8574C2.79055 10.4394 2.41422 10.23 2.20703 9.87793C2 9.52592 2.00002 9.0956 2 8.23535V8.16211C1.99997 7.11866 2.00009 6.59692 2.2832 6.2041C2.56635 5.81128 3.06173 5.64641 4.05176 5.31641L5 5L5.01758 5.08691Z"/>
-        <path d="M19.9482 5.31641C20.9383 5.64642 21.4337 5.81126 21.7168 6.2041C21.9999 6.59692 22 7.11865 22 8.16211V8.23535C22 9.09558 22 9.52593 21.793 9.87793C21.5858 10.23 21.2094 10.4394 20.457 10.8574L17.6406 12.4219C18.5844 10.4385 18.8726 7.93036 18.9609 5.70605C18.9699 5.47994 18.9787 5.27404 18.9834 5.08496L19 5L19.9482 5.31641Z"/>
-        <path d="M12 5C12.2841 5 12.4745 5.34079 12.8545 6.02246L12.9521 6.19922C13.0601 6.39281 13.1141 6.48982 13.1982 6.55371C13.2824 6.61762 13.388 6.64103 13.5977 6.68848L13.7881 6.73145C14.526 6.8984 14.8946 6.98237 14.9824 7.26465C15.07 7.5468 14.8191 7.84084 14.3164 8.42871L14.1855 8.58105C14.0426 8.74817 13.9716 8.83216 13.9395 8.93555C13.9074 9.03887 13.9179 9.15027 13.9395 9.37305L13.959 9.57617C14.035 10.3606 14.0732 10.7531 13.8438 10.9277C13.6139 11.1022 13.268 10.9431 12.5771 10.625L12.3984 10.543C12.2022 10.4526 12.104 10.4072 12 10.4072C11.896 10.4072 11.7978 10.4526 11.6016 10.543L11.4229 10.625C10.732 10.9431 10.3861 11.1022 10.1563 10.9277C9.92683 10.7531 9.965 10.3606 10.041 9.57617L10.0605 9.37305C10.0821 9.15027 10.0926 9.03887 10.0605 8.93555C10.0284 8.83216 9.95736 8.74817 9.81445 8.58105L9.68359 8.42871C9.18087 7.84084 8.93 7.5468 9.01758 7.26465C9.10536 6.98237 9.47401 6.8984 10.2119 6.73145L10.4023 6.68848C10.612 6.64103 10.7176 6.61762 10.8018 6.55371C10.8859 6.48982 10.9399 6.39281 11.0479 6.19922L11.1455 6.02246C11.5255 5.34079 11.7159 5 12 5Z"/></g></svg>
-              </div>
-              <h3 data-i18n="home.audience_owner_title">Proprietario</h3>
-              <p data-i18n="home.audience_owner_desc">Occupazione, lavori urgenti e spese - senza chiedere a nessuno.</p>
-              <span class="pf-audience-cta" data-i18n="home.audience_owner_cta">Apri la pagina proprietari →</span>
-            </a>
-            <a class="pf-audience-card" href="/it/managers">
-              <div class="pf-audience-icon" aria-hidden="true">
-                <svg class="pf-duo" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><g fill="#219ebc"><path d="M21 15.9983V9.99826C21 7.16983 21 5.75562 20.1213 4.87694C19.3529 4.10856 18.175 4.01211 16 4H8C5.82497 4.01211 4.64706 4.10856 3.87868 4.87694C3 5.75562 3 7.16983 3 9.99826V15.9983C3 18.8267 3 20.2409 3.87868 21.1196C4.75736 21.9983 6.17157 21.9983 9 21.9983H15C17.8284 21.9983 19.2426 21.9983 20.1213 21.1196C21 20.2409 21 18.8267 21 15.9983Z"/></g><g fill="#023047"><path d="M7.5 16.75C7.91421 16.75 8.25 17.0858 8.25 17.5C8.25 17.9142 7.91421 18.25 7.5 18.25H7C6.58579 18.25 6.25 17.9142 6.25 17.5C6.25 17.0858 6.58579 16.75 7 16.75H7.5Z"/>
-        <path d="M17 16.75C17.4142 16.75 17.75 17.0858 17.75 17.5C17.75 17.9142 17.4142 18.25 17 18.25H10.5C10.0858 18.25 9.75 17.9142 9.75 17.5C9.75 17.0858 10.0858 16.75 10.5 16.75H17Z"/>
-        <path d="M7.5 13.25C7.91421 13.25 8.25 13.5858 8.25 14C8.25 14.4142 7.91421 14.75 7.5 14.75H7C6.58579 14.75 6.25 14.4142 6.25 14C6.25 13.5858 6.58579 13.25 7 13.25H7.5Z"/>
-        <path d="M17 13.25C17.4142 13.25 17.75 13.5858 17.75 14C17.75 14.4142 17.4142 14.75 17 14.75H10.5C10.0858 14.75 9.75 14.4142 9.75 14C9.75 13.5858 10.0858 13.25 10.5 13.25H17Z"/>
-        <path d="M7.5 9.75C7.91421 9.75 8.25 10.0858 8.25 10.5C8.25 10.9142 7.91421 11.25 7.5 11.25H7C6.58579 11.25 6.25 10.9142 6.25 10.5C6.25 10.0858 6.58579 9.75 7 9.75H7.5Z"/>
-        <path d="M17 9.75C17.4142 9.75 17.75 10.0858 17.75 10.5C17.75 10.9142 17.4142 11.25 17 11.25H10.5C10.0858 11.25 9.75 10.9142 9.75 10.5C9.75 10.0858 10.0858 9.75 10.5 9.75H17Z"/>
-        <path d="M14.5 2C15.3284 2 16 2.67157 16 3.5V4.5C16 5.32843 15.3284 6 14.5 6H9.5C8.67157 6 8 5.32843 8 4.5V3.5C8 2.67157 8.67157 2 9.5 2H14.5Z"/></g></svg>
-              </div>
-              <h3 data-i18n="home.audience_manager_title">Gestore</h3>
-              <p data-i18n="home.audience_manager_desc">Gestisci una o più aziende. Costruisci il giorno una volta; passa il turno con la sua cronologia.</p>
-              <span class="pf-audience-cta" data-i18n="home.audience_manager_cta">Apri la pagina gestori →</span>
-            </a>
-            <a class="pf-audience-card" href="/it/staff">
-              <div class="pf-audience-icon" aria-hidden="true">
-                <svg class="pf-duo" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><g fill="#8ecae6"><path d="M8.34466 12.7093L2.82581 18.2281C2.48337 18.5706 2.31214 18.7418 2.2093 18.9199C1.93023 19.4033 1.93023 19.9988 2.2093 20.4822C2.31214 20.6603 2.48336 20.8315 2.82578 21.1739C3.16823 21.5164 3.33948 21.6876 3.5176 21.7905C4.00097 22.0696 4.5965 22.0696 5.07987 21.7905C5.25799 21.6876 5.42921 21.5164 5.77166 21.174L11.2905 15.6551L8.34466 12.7093Z"/>
-        <path d="M18.6551 8.29051L19.028 7.91766C19.3704 7.57521 19.5416 7.40399 19.6445 7.22587C19.9236 6.7425 19.9236 6.14696 19.6445 5.66359C19.5416 5.48547 19.3704 5.31425 19.028 4.97181C18.6855 4.62936 18.5143 4.45814 18.3362 4.3553C17.8528 4.07623 17.2573 4.07623 16.7739 4.3553C16.5958 4.45814 16.4246 4.62936 16.0821 4.97181L15.7093 5.34466L18.6551 8.29051Z"/></g><g fill="#023047"><path d="M7.60379 4.60379C9.33965 2.86793 10.2076 2 11.2861 2C12.3646 2 13.2326 2.86793 14.9684 4.60379L19.3872 9.02256C21.123 10.7584 21.991 11.6263 21.991 12.7049C21.991 13.7834 21.123 14.6513 19.3872 16.3872C17.6513 18.123 16.7834 18.991 15.7049 18.991C14.6263 18.991 13.7584 18.123 12.0226 16.3872L7.60379 11.9684C5.86793 10.2326 5 9.36462 5 8.2861C5 7.20757 5.86793 6.33965 7.60379 4.60379Z"/></g></svg>
-              </div>
-              <h3 data-i18n="home.audience_staff_title">Personale sul campo</h3>
-              <p data-i18n="home.audience_staff_desc">I vostri lavori sul telefono. Confermate con un tap, inviate le ricevute dal posto.</p>
-              <span class="pf-audience-cta" data-i18n="home.audience_staff_cta">Apri la pagina personale →</span>
-            </a>
-            <a class="pf-audience-card pf-audience-card-guest" href="/it/guests">
-              <div class="pf-audience-icon" aria-hidden="true">
-                <svg class="pf-duo" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><g fill="#8ecae6"><path d="M18.0947 15.0312C17.6699 15 17.1487 15 16.5 15C14.8501 15 14.0251 15 13.5126 15.5126C13 16.0251 13 16.8501 13 18.5C13 19.6663 13 20.4204 13.1811 20.9433C12.7971 20.9806 12.4025 21 12 21C8.13401 21 5 19.2091 5 17C5 14.7909 8.13401 13 12 13C14.6134 13 16.8924 13.8184 18.0947 15.0312Z"/></g><g fill="#023047"><path fill-rule="evenodd" d="M16.5 15C18.1499 15 18.9747 15.0001 19.4873 15.5127C19.9999 16.0253 20 16.8501 20 18.5C20 20.1499 19.9999 20.9747 19.4873 21.4873C18.9747 21.9999 18.1499 22 16.5 22C14.8501 22 14.0253 21.9999 13.5127 21.4873C13.0001 20.9747 13 20.1499 13 18.5C13 16.8501 13.0001 16.0253 13.5127 15.5127C14.0253 15.0001 14.8501 15 16.5 15ZM16.5 16.3613C16.1779 16.3613 15.9171 16.6222 15.917 16.9443V17.917H14.9443C14.6222 17.9171 14.3613 18.1779 14.3613 18.5C14.3613 18.8221 14.6222 19.0829 14.9443 19.083H15.917V20.0557C15.9171 20.3778 16.1779 20.6387 16.5 20.6387C16.8221 20.6387 17.0829 20.3778 17.083 20.0557V19.083H18.0557C18.3778 19.0829 18.6387 18.8221 18.6387 18.5C18.6387 18.1779 18.3778 17.9171 18.0557 17.917H17.083V16.9443C17.0829 16.6222 16.8221 16.3613 16.5 16.3613Z" clip-rule="evenodd"/>
-        <path d="M12 2C14.2091 2 16 3.79086 16 6C16 8.20914 14.2091 10 12 10C9.79086 10 8 8.20914 8 6C8 3.79086 9.79086 2 12 2Z"/></g></svg>
-              </div>
-              <h3 data-i18n="home.audience_guest_title">Ospiti</h3>
-              <p data-i18n="home.audience_guest_desc">Anche gli ospiti che invitate hanno il proprio schermo.</p>
-              <span class="pf-audience-cta" data-i18n="home.audience_guest_cta">Vedete cosa vede il vostro ospite →</span>
-            </a>
-          </div>
-        </section>
-
-        <section class="pf-agent pf-fade" id="connect-agent" aria-labelledby="agent-title">
-          <div class="pf-agent-layout">
-            <div class="pf-agent-copy">
-              <h2 id="agent-title" class="pf-agent-title" data-i18n="home.agent_title">Collegate il vostro agente</h2>
-              <p class="pf-agent-lead" data-i18n="home.agent_lead">Chattate con l'agente nell'app, o collegatene uno da Impostazioni. Lavora nel vostro spazio Pulse dal vivo: attività, incarichi, immobili e fatture, senza consegnare il database.</p>
-            </div>
-            <div class="pf-agent-preview" data-agent-demo>
-              <div class="pf-agent-preview-bar">
-                <div>
-                  <strong data-i18n="home.agent_preview_label">Sessione agente</strong>
-                  <span data-i18n="home.agent_preview_note">Anteprima sceneggiata. Non chiama l'app vera.</span>
-                </div>
-                <button type="button" class="pf-agent-replay" data-agent-replay data-i18n="home.agent_replay">Rigioca</button>
-              </div>
-              <ul class="pf-agent-tools" aria-label="Strumenti dell'agente" data-i18n-attr="aria-label:home.agent_tools_label">
-                <li><code>pulse_whoami</code></li>
-                <li><code>pulse_list_team</code></li>
-                <li><code>pulse_list_villas</code></li>
-                <li><code>pulse_list_tasks</code></li>
-                <li><code>pulse_create_task</code></li>
-                <li><code>pulse_update_task_status</code></li>
-                <li><code>pulse_list_jobs</code></li>
-                <li><code>pulse_create_job</code></li>
-                <li><code>pulse_list_bills</code></li>
-              </ul>
-              <div class="pf-agent-thread" data-agent-thread>
-                <div class="pf-agent-msg is-user">
-                  <p data-i18n="home.agent_demo_user1">Cosa è aperto oggi, e crea un'attività urgente per Mai: rifornire Coral prima del check-in.</p>
-                </div>
-                <div class="pf-agent-msg is-tool"><code data-i18n="home.agent_demo_tool_villas">pulse_list_villas → Coral · occupata · partenza domani</code></div>
-                <div class="pf-agent-msg is-tool"><code data-i18n="home.agent_demo_tool_team">pulse_list_team → Mai (pulizie)</code></div>
-                <div class="pf-agent-msg is-tool"><code data-i18n="home.agent_demo_tool_tasks">pulse_list_tasks → 2 aperte</code></div>
-                <div class="pf-agent-msg is-tool"><code data-i18n="home.agent_demo_tool_create">pulse_create_task → Rifornire Coral prima del check-in · urgente · Mai</code></div>
-                <div class="pf-agent-msg is-agent">
-                  <p data-i18n="home.agent_demo_agent1">Coral è occupata, partenza domani. Ho creato un'attività urgente per Mai: rifornire Coral prima del check-in.</p>
-                </div>
-                <div class="pf-agent-msg is-user">
-                  <p data-i18n="home.agent_demo_user2">Segna quell'attività come fatta quando ha finito.</p>
-                </div>
-                <div class="pf-agent-msg is-tool"><code data-i18n="home.agent_demo_tool_status">pulse_update_task_status → fatta</code></div>
-                <div class="pf-agent-msg is-agent">
-                  <p data-i18n="home.agent_demo_agent2">Segnata come fatta. L'attività di rifornimento di Mai su Coral è chiusa.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <details class="pf-agent-how">
-            <summary data-i18n="home.agent_how_summary">Come collegare</summary>
-            <p data-i18n="home.agent_how_note">Create una chiave di connessione nell'app, in Impostazioni → Collega il tuo agente. Copiate la config per il vostro OS — npx scarica il ponte. Non scaricate Pulse.</p>
-            <p class="pf-agent-os" data-i18n="home.agent_how_os_mac">Mac — incollate così com'è. /bin/zsh carica la shell così npx è nel PATH (Homebrew incluso).</p>
-            <pre class="pf-agent-code" tabindex="0"><code>{
-  "mcpServers": {
-    "pulse": {
-      "command": "/bin/zsh",
-      "args": [
-        "-lc",
-        "source \"$HOME/.zshrc\" >/dev/null 2>&1; export PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\"; exec npx -y @pulseflow/mcp"
-      ],
-      "env": {
-        "PULSE_MCP_TOKEN": "pfmcp_…"
-      }
-    }
-  }
-}</code></pre>
-            <p class="pf-agent-os" data-i18n="home.agent_how_os_win">Windows — tenete il blocco npx corto. Cursor lì vede già npx:</p>
-            <pre class="pf-agent-code" tabindex="0"><code>{
-  "mcpServers": {
-    "pulse": {
-      "command": "npx",
-      "args": ["-y", "@pulseflow/mcp"],
-      "env": {
-        "PULSE_MCP_TOKEN": "pfmcp_…"
-      }
-    }
-  }
-}</code></pre>
-          </details>
-        </section>
-
-        <section class="pf-plan pf-fade" id="plans" aria-labelledby="company-plans">
-          <div class="pf-plan-card pf-plan-card-static">
-            <h2 id="company-plans" class="pf-plan-title" data-i18n="home.plan_title">Piani</h2>
-            <ul class="pf-plan-options">
-              <li>
-                <strong data-i18n="home.plan_personal_label">Personale</strong>
-                <span data-i18n="home.plan_personal_desc">Proprietà in solitaria sulla tua lista. Gratis per sempre. Passale a un proprietario aziendale più tardi se ne porti uno.</span>
-              </li>
-              <li class="is-company">
-                <strong data-i18n="home.plan_company_label">Azienda</strong>
-                <span data-i18n="home.plan_company_desc">Hai un manager, un addetto alle pulizie o fornitori. USD 15 / mese per l'azienda, 10 posti inclusi, poi USD 2 per posto extra. Paga solo il proprietario.</span>
-              </li>
-              <li class="is-pro">
-                <strong data-i18n="home.plan_pro_label">Pro</strong>
-                <span data-i18n="home.plan_pro_desc">Aggiungete Pro per 24 USD / mese su Personale o Azienda — Collegare l'agente.</span>
-              </li>
-            </ul>
-            <a class="pf-btn-primary pf-plan-start" href="https://app.pulseflow.site/register?lang=it" data-i18n="home.plan_cta">Inizia gratis</a>
-          </div>
-        </section>
-
-        <section class="pf-sub-referral pf-sub-referral-compact pf-fade" id="referral" aria-labelledby="referral-heading">
-          <h2 id="referral-heading">
-            <svg class="pf-duo" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><g fill="#ffb703"><path d="M4.86686 2.50065C4.89685 2.39487 5.08518 2.39409 5.11588 2.49967C5.2561 2.98176 5.51583 3.69423 5.90885 4.08463C6.30198 4.47511 7.01662 4.72992 7.49967 4.86686C7.60529 4.8969 7.60596 5.08498 7.50065 5.11588C7.01854 5.25609 6.30519 5.51573 5.91471 5.90885C5.52432 6.30201 5.26941 7.01668 5.13248 7.49967C5.10236 7.60513 4.91547 7.60577 4.88444 7.50065C4.74423 7.01854 4.48362 6.30519 4.09049 5.91471C3.69739 5.52452 2.98355 5.26941 2.50065 5.13248C2.39487 5.10249 2.39409 4.91514 2.49967 4.88444C2.98178 4.74422 3.69419 4.48358 4.08463 4.09049C4.4749 3.69746 4.7299 2.98363 4.86686 2.50065Z"/>
-        <path d="M18.9997 3.24967C19.4139 3.24967 19.7497 3.58546 19.7497 3.99967V4.24967H19.9997C20.4139 4.24967 20.7497 4.58546 20.7497 4.99967C20.7497 5.41388 20.4139 5.74967 19.9997 5.74967H19.7497V5.99967C19.7497 6.41388 19.4139 6.74967 18.9997 6.74967C18.5855 6.74967 18.2497 6.41388 18.2497 5.99967V5.74967H17.9997C17.5855 5.74967 17.2497 5.41388 17.2497 4.99967C17.2497 4.58546 17.5855 4.24967 17.9997 4.24967H18.2497V3.99967C18.2497 3.58546 18.5855 3.24967 18.9997 3.24967Z"/></g><g fill="#023047"><path d="M10.0802 7.89712C11.1568 5.96571 11.6952 5 12.5 5C13.3048 5 13.8432 5.96571 14.9198 7.89712L15.1984 8.3968C15.5043 8.94564 15.6573 9.22007 15.8958 9.40114C16.1343 9.5822 16.4314 9.64942 17.0255 9.78384L17.5664 9.90622C19.6571 10.3793 20.7025 10.6158 20.9512 11.4156C21.1999 12.2153 20.4872 13.0487 19.0619 14.7154L18.6932 15.1466C18.2881 15.6203 18.0856 15.8571 17.9945 16.1501C17.9034 16.443 17.934 16.759 17.9953 17.3909L18.051 17.9662C18.2665 20.19 18.3742 21.3019 17.7231 21.7962C17.072 22.2905 16.0932 21.8398 14.1357 20.9385L13.6292 20.7053C13.073 20.4492 12.7948 20.3211 12.5 20.3211C12.2052 20.3211 11.927 20.4492 11.3708 20.7053L10.8643 20.9385C8.90677 21.8398 7.928 22.2905 7.27688 21.7962C6.62575 21.3019 6.7335 20.19 6.94899 17.9662L7.00474 17.3909C7.06597 16.759 7.09659 16.443 7.00548 16.1501C6.91438 15.8571 6.71186 15.6203 6.30683 15.1466L5.93808 14.7154C4.51276 13.0487 3.8001 12.2153 4.04881 11.4156C4.29751 10.6158 5.34288 10.3793 7.43361 9.90622L7.9745 9.78384C8.56862 9.64942 8.86568 9.5822 9.1042 9.40114C9.34272 9.22007 9.4957 8.94565 9.80165 8.3968L10.0802 7.89712Z"/></g></svg>
-            <span data-i18n="home.referral_title">Invita 5 persone, ottieni un anno di funzioni aziendali gratis</span>
-          </h2>
-          <p class="pf-sub-referral-lead" data-i18n="home.referral_lead">Il link di invito è nel profilo. L'anno gratis si conta dal giorno in cui il sistema di pagamento è attivo.</p>
-        </section>
-
-        <section class="pf-faq pf-fade" id="faq" aria-labelledby="faq-title">
-          <h2 id="faq-title" data-i18n="home.faq_title">FAQ</h2>
-          <details>
-            <summary data-i18n="home.faq_q1">Le mie addette alle pulizie non useranno un'altra app.</summary>
-            <p data-i18n="home.faq_a1">Non devono imparare nulla di nuovo. Mandate un link, lo aprono nel browser e resta sul telefono come qualsiasi app. Niente download, niente account, niente App Store. Vedono solo i loro lavori, nella loro lingua, e confermano con un tap. Se leggono WhatsApp, sanno usare questo.</p>
-          </details>
-          <details>
-            <summary data-i18n="home.faq_q2">Il mio gestore ha già un sistema. Perché cambiare?</summary>
-            <p data-i18n="home.faq_a2">Non starebbero cambiando: aggiungerebbero un posto in cui i lavori che già gestiscono diventano visibili a tutti. La chat resta. Cambia che un lavoro ha uno stato confermato, un costo collegato e uno storico che non sparisce quando qualcuno se ne va.</p>
-          </details>
-          <details>
-            <summary data-i18n="home.faq_q3">Tutto è su Airbnb e Booking. Questo li sostituisce?</summary>
-            <p data-i18n="home.faq_a3">No. Le prenotazioni restano dove sono. Pulse Flow è il dopo: chi pulisce, cosa si è rotto, quanto è costato e cosa vede l'ospite. Incolla un link annuncio Airbnb per compilare in fretta i dettagli della proprietà. Incolla il link privato di esportazione calendario (.ics) da Airbnb, Booking.com o Guesty su ogni proprietà per importare le notti riservate nel calendario Bookings. Proprietari e manager possono anche collegare Guesty Open API una volta in Impostazioni per importare annunci e calendari. Non sostituisce annunci o checkout su quelle piattaforme.</p>
-          </details>
-          <details>
-            <summary data-i18n="home.faq_q4">Quanto costa?</summary>
-            <p data-i18n="home.faq_a4">Personal è gratis per sempre. Company costa USD 15 / mese e include 10 posti team; ogni posto extra costa USD 2 / mese. Pro costa USD 24 / mese su Personal o Company per Connect your agent. La fatturazione non è ancora attiva, quindi ogni account ha 3 mesi di accesso completo, Pro incluso, dal giorno dell'iscrizione.</p>
-          </details>
-          <details>
-            <summary data-i18n="home.faq_q5">I miei ospiti dovranno fare qualcosa di complicato?</summary>
-            <p data-i18n="home.faq_a5">No. Mandate loro un link. Lo aprono, leggono le regole della casa e vedono il saldo del deposito. Niente download, niente account, niente pagamento tramite l'app. I pagamenti vanno direttamente a voi: l'app tiene solo traccia dell'importo, delle trattenute e del saldo così entrambe le parti vedono la stessa cosa.</p>
-          </details>
-          <details>
-            <summary data-i18n="home.faq_q6">Un ospite può contestare una trattenuta sul deposito?</summary>
-            <p data-i18n="home.faq_a6">Ogni trattenuta è registrata nell'app con un motivo e una data. Voi e l'ospite vedete lo stesso saldo. Non c'è «non ho mai ricevuto le regole» o «non ricordo di aver accettato»: tutto è in un posto solo, con data e ora, visibile a entrambe le parti.</p>
-          </details>
-          <details>
-            <summary data-i18n="home.faq_q7">E se un ospite vuole prenotare di nuovo?</summary>
-            <p data-i18n="home.faq_a7">Gli ospiti che tornano possono inviare una richiesta date direttamente dall'app. Va al proprietario o al gestore senza passare dal vostro numero personale o da una piattaforma terza.</p>
-          </details>
-          <details>
-            <summary data-i18n="home.faq_q8">Cosa succede quando un membro del personale se ne va?</summary>
-            <p data-i18n="home.faq_a8">Lo storico degli incarichi, i contatti dei fornitori e le note sugli immobili restano nel sistema. Niente esce dalla porta con il loro telefono. La persona successiva vede le stesse informazioni dal primo giorno.</p>
-          </details>
-          <details>
-            <summary data-i18n="home.faq_q9">Posso usarlo per un solo immobile?</summary>
-            <p data-i18n="home.faq_a9">Sì. Personal è gratis per sempre per le proprietà sulla tua lista. Lavori, spese e ospiti funzionano senza team. Quando arriva un vero proprietario, invitalo a portare quelle proprietà nella sua azienda; tu puoi restare manager.</p>
-          </details>
-          <details>
-            <summary data-i18n="home.faq_q10">I miei dati sono privati?</summary>
-            <p data-i18n="home.faq_a10">Ogni azienda e spazio personale è separato. Proprietà, team, ospiti e finanze sono visibili solo alle persone di quello spazio. Gli ospiti vedono solo ciò che condividi. Un manager su più aziende cambia spazio in Impostazioni; non mescola gli inventari. Client ID e Client secret Guesty sono crittografati; i segreti leggibili non sono mai memorizzati nei nostri database. I link di export calendario restano privati alla tua azienda.</p>
-          </details>
-          <details>
-            <summary data-i18n="home.faq_q11">Un manager può lavorare per più di un'azienda?</summary>
-            <p data-i18n="home.faq_a11">Sì. Ogni proprietario di azienda lo invita come manager. Un accesso tiene un posto in ogni azienda più una lista personale di proprietà. Cambiano l'azienda attiva in Impostazioni.</p>
-          </details>
-        </section>
-
-        <section class="pf-demo pf-demo-compact pf-fade" id="demo-now" aria-labelledby="demo-heading" data-demo-login>
-          <h2 id="demo-heading" data-i18n="home.demo_title">Prova</h2>
-          <p class="pf-demo-lead" data-i18n="home.demo_lead">Account owner, manager, staff e guest da provare. Le demo owner e manager includono Bookings con notti dai calendari canale.</p>
-
-          <div
-            class="pf-demo-roles"
-            role="group"
-            aria-label="Account di prova"
-            data-i18n-attr="aria-label:demo.account_label"
-          >
-            <button
-              type="button"
-              class="pf-demo-role is-active"
-              data-demo-role="owner"
-              data-i18n="demo.role_owner"
-            >Proprietario</button>
-            <button
-              type="button"
-              class="pf-demo-role"
-              data-demo-role="manager"
-              data-i18n="demo.role_manager"
-            >Gestore</button>
-            <button
-              type="button"
-              class="pf-demo-role"
-              data-demo-role="staff"
-              data-i18n="demo.role_staff"
-            >Personale sul campo</button>
-            <button
-              type="button"
-              class="pf-demo-role"
-              data-demo-role="guest"
-              data-i18n="demo.role_guest"
-            >Ospite</button>
-          </div>
-
-          <div class="pf-demo-grid pf-demo-grid-compact">
-            <div class="pf-demo-credentials">
-              <ul class="pf-demo-list">
-                <li>
-                  <span data-i18n="demo.email">E-mail</span><code data-demo-email>owner@pulseflow.site</code>
-                </li>
-                <li>
-                  <span data-i18n="demo.password">Parola d'accesso</span><code>TestPass123!</code>
-                </li>
-              </ul>
-              <a
-                class="pf-btn-primary pf-demo-btn"
-                data-demo-link
-                href="https://app.pulseflow.site/login?demo=owner&lang=it"
-                data-i18n="demo.open_demo"
-                >Apri la prova</a>
-            </div>
-            <div class="pf-demo-qr">
-              <a
-                data-demo-link
-                href="https://app.pulseflow.site/login?demo=owner&lang=it"
-                data-i18n-attr="aria-label:demo.open_login"
-                aria-label="Apri l'accesso demo"
-              >
-                <img
-                  class="pf-qr-img"
-                  data-demo-qr
-                  src="/assets/qr/demo-owner.svg"
-                  width="180"
-                  height="180"
-                  alt="Codice QR verso un accesso demo precompilato"
-                  data-i18n-attr="alt:demo.qr_alt"
-                  loading="lazy"
-                />
-              </a>
-              <p class="pf-demo-qr-caption" data-i18n="demo.scan">Scansionate per accedere</p>
+            <div class="koh-aside">
+              <h2 id="koh-title" class="site-h2" data-i18n="home.koh_title">Costruito a Koh Phangan</h2>
+              <p class="site-lead" data-i18n="home.koh_body">Fatto dove le ville girano davvero. Mattine di turnover, chiamate ai fornitori, chat che perdono lo scontrino.</p>
+              <p class="koh-todo" data-i18n="home.koh_note">TODO: aggiungere foto koh-phangan-tradesperson e koh-phangan-place.</p>
             </div>
           </div>
         </section>
 
-        <section class="pf-close pf-fade" id="close">
-          <img src="/assets/pulse-mark.svg" width="64" height="64" alt="" />
-          <h2 data-i18n="home.close_title">Il polso delle vostre operazioni di affitto</h2>
-          <a class="pf-btn-primary" href="https://app.pulseflow.site/register?lang=it" data-i18n="home.close_cta">Inizia gratis</a>
+        <section class="site-section" id="pricing" aria-labelledby="pricing-title">
+          <div class="site-section-head">
+            <h2 id="pricing-title" class="site-h2" data-i18n="home.plan_title">Piani</h2>
+          </div>
+          <div class="plans-grid">
+            <article class="plan-card">
+              <h3 data-i18n="home.plan_personal_label">Personale</h3>
+              <p data-i18n="home.plan_personal_desc">Proprietà personali nella tua lista. Gratis per sempre.</p>
+            </article>
+            <article class="plan-card is-accent">
+              <h3 data-i18n="home.plan_company_label">Azienda</h3>
+              <p data-i18n="home.plan_company_desc">15 USD / mese - 10 posti inclusi, poi 2 USD a posto. Paga solo il proprietario.</p>
+            </article>
+            <article class="plan-card">
+              <h3 data-i18n="home.plan_pro_label">Pro</h3>
+              <p data-i18n="home.plan_pro_desc">24 USD / mese - Connect your agent. Su Personal o Company.</p>
+            </article>
+          </div>
+          <p class="plan-note" data-i18n="home.plan_note">La fatturazione non è ancora attiva. Ogni account ha 3 mesi di accesso completo, Pro incluso.</p>
+          <div class="plans-actions">
+            <a class="site-btn site-btn-primary" href="https://app.pulseflow.site/?lang=it" data-i18n="home.plan_cta">Apri l’app</a>
+          </div>
+        </section>
+
+        <section class="site-section" id="faq" aria-labelledby="faq-title">
+          <div class="site-section-head">
+            <h2 id="faq-title" class="site-h2" data-i18n="home.faq_title">FAQ</h2>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary data-i18n="home.faq_q1">Le mie addette alle pulizie non useranno un'altra app.</summary>
+              <p data-i18n="home.faq_a1">Non devono imparare nulla di nuovo. Mandate un link, lo aprono nel browser e resta sul telefono come qualsiasi app. Niente download, niente account, niente App Store. Vedono solo i loro lavori, nella loro lingua, e confermano con un tap. Se leggono WhatsApp, sanno usare questo.</p>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="home.faq_q3">Tutto è su Airbnb e Booking. Questo li sostituisce?</summary>
+              <p data-i18n="home.faq_a3">No. Le prenotazioni restano dove sono. Pulse Flow è il dopo: chi pulisce, cosa si è rotto, quanto è costato e cosa vede l'ospite. Incolla un link annuncio Airbnb per compilare in fretta i dettagli della proprietà. Incolla il link privato di esportazione calendario (.ics) da Airbnb, Booking.com o Guesty su ogni proprietà per importare le notti riservate nel calendario Bookings. Proprietari e manager possono anche collegare Guesty Open API una volta in Impostazioni per importare annunci e calendari. Non sostituisce annunci o checkout su quelle piattaforme.</p>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="home.faq_q4">Quanto costa?</summary>
+              <p data-i18n="home.faq_a4">Personal è gratis per sempre. Company costa USD 15 / mese e include 10 posti team; ogni posto extra costa USD 2 / mese. Pro costa USD 24 / mese su Personal o Company per Connect your agent. La fatturazione non è ancora attiva, quindi ogni account ha 3 mesi di accesso completo, Pro incluso, dal giorno dell'iscrizione.</p>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="home.faq_q9">Posso usarlo per un solo immobile?</summary>
+              <p data-i18n="home.faq_a9">Sì. Personal è gratis per sempre per le proprietà sulla tua lista. Lavori, spese e ospiti funzionano senza team. Quando arriva un vero proprietario, invitalo a portare quelle proprietà nella sua azienda; tu puoi restare manager.</p>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="home.faq_q10">I miei dati sono privati?</summary>
+              <p data-i18n="home.faq_a10">Ogni azienda e spazio personale è separato. Proprietà, team, ospiti e finanze sono visibili solo alle persone di quello spazio. Gli ospiti vedono solo ciò che condividi. Un manager su più aziende cambia spazio in Impostazioni; non mescola gli inventari. Client ID e Client secret Guesty sono crittografati; i segreti leggibili non sono mai memorizzati nei nostri database. I link di export calendario restano privati alla tua azienda.</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="site-section" id="close" aria-labelledby="close-title">
+          <div class="close-band">
+            <h2 id="close-title" data-i18n="home.close_title">Fuori dalla chat di gruppo. Dentro a una giornata chiara.</h2>
+            <p data-i18n="home.close_lead">Apri Pulse Flow e gestisci le proprietà che già amministri.</p>
+            <a class="site-btn site-btn-primary" href="https://app.pulseflow.site/?lang=it" data-i18n="home.close_cta">Inizia gratis</a>
+          </div>
         </section>
       </main>
 
-      <footer class="pf-footer">
-        <div class="pf-footer-links">
-          <a href="/it/" data-i18n="footer.home">Inizio</a><a href="/it/owners" data-i18n="footer.owners">Proprietari</a><a href="/it/managers" data-i18n="footer.managers">Gestori</a><a href="/it/staff" data-i18n="footer.staff">Personale sul campo</a><a href="/it/guests" data-i18n="footer.guests">Ospiti in soggiorno</a><a href="/it/#plans" data-i18n="footer.plans">Piani</a><a href="/it/terms" data-i18n="footer.terms">Termini</a><a href="/it/privacy" data-i18n="footer.privacy">Riservatezza</a><a href="mailto:support@pulseflow.site" data-i18n="footer.support"
-            >Assistenza</a>
-          <a href="https://app.pulseflow.site?lang=it" data-i18n="footer.app">Applicazione</a></div>
-            <p class="pf-footer-version" data-site-version>v1.0.0 · 18 Oct 2026</p>
+      <footer class="site-footer">
+        <div class="site-main">
+          <div class="site-footer-links">
+            <a href="/it/" data-i18n="footer.home">Inizio</a>
+            <a href="/it/#pricing" data-i18n="footer.plans">Piani</a>
+            <a href="/it/services" data-i18n="nav.services">Services</a>
+            <a href="/it/terms" data-i18n="footer.terms">Termini</a>
+            <a href="/it/privacy" data-i18n="footer.privacy">Riservatezza</a>
+            <a href="mailto:support@pulseflow.site" data-i18n="footer.support">Assistenza</a>
+            <a href="https://app.pulseflow.site?lang=it" data-i18n="footer.operations_app">Pulse Flow</a>
+          </div>
+          <p class="pf-footer-version" data-site-version>v0.9.0</p>
+        </div>
       </footer>
     </div>
 
-    <script src="/script.js?v=56" defer></script>
+    <script src="/script.js?v=164" defer></script>
+    <script src="/home-ui.js?v=1" defer></script>
   </body>
 </html>
